@@ -3,48 +3,62 @@
   <groupId>torch-clus</groupId>
   <artifactId>torch-clus</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <build>
-    <sourceDirectory>src</sourceDirectory>
-    <resources>
-      <resource>
-        <directory>src</directory>
-        <excludes>
-          <exclude>**/*.java</exclude>
-        </excludes>
-      </resource>
-    </resources>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-      <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-shade-plugin</artifactId>
-         <executions>
-         	<execution>
-         		<phase>package</phase>
-         		<goals>
-         			<goal>shade</goal>
-         			</goals>
-         			<configuration>
-                            <transformers>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ComponentsXmlResourceTransformer"/>
-              </transformers>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-    </plugins>
-  </build>
-<properties>
-    <project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>Cp1252</project.reporting.outputEncoding>
-</properties>
+<!--  <build>-->
+<!--    <sourceDirectory>src</sourceDirectory>-->
+<!--    <resources>-->
+<!--      <resource>-->
+<!--        <directory>src</directory>-->
+<!--        <excludes>-->
+<!--          <exclude>**/*.java</exclude>-->
+<!--        </excludes>-->
+<!--      </resource>-->
+<!--    </resources>-->
+<!--    <plugins>-->
+<!--      <plugin>-->
+<!--        <artifactId>maven-compiler-plugin</artifactId>-->
+<!--        <version>3.7.0</version>-->
+<!--        <configuration>-->
+<!--          <source>1.8</source>-->
+<!--          <target>1.8</target>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
+<!--      <plugin>-->
+<!--      <groupId>org.apache.maven.plugins</groupId>-->
+<!--         <artifactId>maven-shade-plugin</artifactId>-->
+<!--         <executions>-->
+<!--         	<execution>-->
+<!--         		<phase>package</phase>-->
+<!--         		<goals>-->
+<!--         			<goal>shade</goal>-->
+<!--         			</goals>-->
+<!--         			<configuration>-->
+<!--                            <transformers>-->
+<!--                <transformer implementation="org.apache.maven.plugins.shade.resource.ComponentsXmlResourceTransformer"/>-->
+<!--              </transformers>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--    </plugins>-->
+<!--  </build>-->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.2</version>
+	</parent>
+	<properties>
+		<project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>Cp1252</project.reporting.outputEncoding>
+	</properties>
 
   <dependencies>
   	<dependency>
@@ -53,26 +67,27 @@
     	<version>26.0-jre</version>
 	</dependency>
   	
-        
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.12</version>
-</dependency>
+
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.12</version>
+	</dependency>
 
   	<dependency>
   		<groupId>me.lemire.integercompression</groupId>
   		<artifactId>JavaFastPFOR</artifactId>
   		<version>0.1.12</version>
   	</dependency>
-  	
-  	
-  	
-  	<dependency>
-  		<groupId>org.apache.commons</groupId>
-  		<artifactId>commons-lang3</artifactId>
-  		<version>3.0</version>
-  	</dependency>
+
+
+
+	  <dependency>
+		  <groupId>org.apache.commons</groupId>
+		  <artifactId>commons-lang3</artifactId>
+		  <version>3.1</version>
+	  </dependency>
+
   	<dependency>
   		<groupId>it.unimi.dsi</groupId>
   		<artifactId>fastutil</artifactId>
@@ -104,5 +119,54 @@
   		<artifactId>rtree-multi</artifactId>
   		<version>0.1-RC1</version>
   	</dependency>
-  </dependencies>
+
+
+	  <!-- web dependency -->
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-web</artifactId>
+		  <version>2.4.5</version>
+	  </dependency>
+
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-test</artifactId>
+		  <version>2.4.5</version>
+		  <scope>test</scope>
+	  </dependency>
+
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-configuration-processor</artifactId>
+		  <optional>true</optional>
+	  </dependency>
+
+	  <dependency>
+		  <groupId>log4j</groupId>
+		  <artifactId>log4j</artifactId>
+		  <version>1.2.12</version>
+	  </dependency>
+
+	  <dependency>
+		  <groupId>com.alibaba</groupId>
+		  <artifactId>fastjson</artifactId>
+		  <version>1.2.70</version>
+	  </dependency>
+
+	  <!--utils-->
+	  <dependency>
+		  <groupId>org.projectlombok</groupId>
+		  <artifactId>lombok</artifactId>
+		  <version>1.18.20</version>
+	  </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-test</artifactId>
+      </dependency>
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-test</artifactId>
+	  </dependency>
+  	</dependencies>
+
 </project>

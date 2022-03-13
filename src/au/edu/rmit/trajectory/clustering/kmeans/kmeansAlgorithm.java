@@ -2524,7 +2524,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * we test different index, and run the pure index
 	 */
-	public void experiments_index(int []setK, int testTime) throws IOException, KeySizeException, KeyDuplicateException {
+	/*public void experiments_index(int []setK, int testTime) throws IOException, KeySizeException, KeyDuplicateException {
 		String LOG_DIR = "./logs/vldb_logs1/"+datafilename+"_"+trajectoryNumber+"_"+dimension+"_"+capacity+"_index.log";
 		System.out.println("aaaaa");
 	//	plotData.runPlot("");
@@ -2613,7 +2613,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 			}
 			Util.rewrite(LOG_DIR, content+"\n");
 		}
-	}
+	}*/
 	
 	
 	/*

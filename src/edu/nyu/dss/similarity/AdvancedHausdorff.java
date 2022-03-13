@@ -91,7 +91,9 @@ public class AdvancedHausdorff extends Hausdorff{
     	int y = bCoveredPoints.size();
     	double[][] dist_matrix;
         dist_matrix = new double[x][y];
-        double cmax = 0;
+		//TODO modified to minus num
+		//double cmax = 0;
+		double cmax = -1000;
     	for(int i=0; i<x; i++) {
     		double cmin= Double.MAX_VALUE;
     		for(int j=0; j<y; j++) {
@@ -214,6 +216,8 @@ public class AdvancedHausdorff extends Hausdorff{
     					}
     				}
     			}else {
+
+    				// TODO seems always go this branch
     				// judge whether meet the stopping for outlier, and keep monitoring and infer the outlier
     				outlierID.add(mainq.getpointID());
     				outlierDis.add(ub);
@@ -464,6 +468,7 @@ public class AdvancedHausdorff extends Hausdorff{
      * we use tighter lower bounds based on balls
      */
     static double computeNewLowerBound(double pivotDis, double radiusA, double radiusB) {
+		//System.out.println(pivotDis-radiusB);
     	return pivotDis-radiusB;
     }
     
@@ -471,7 +476,9 @@ public class AdvancedHausdorff extends Hausdorff{
      * we compute the MBR upper bound, for general cases, i.e., any dimensional data
      */
     static double computeMBRUpperBound(Map<Integer, Pair<double[], double[]>> segmentA, Map<Integer, Pair<double[], double[]>> segmentB, int dimension) {
-    	double max = 0;
+    	//TODO modified to minus num
+    	//double max = 0;
+		double max = -1000;
     	for(int segid:segmentA.keySet()) {
     		Pair<double[], double[]> aaPair = segmentA.get(segid);
     		double min = Double.MAX_VALUE;
@@ -491,7 +498,9 @@ public class AdvancedHausdorff extends Hausdorff{
      * we compute the MBR lower bound, for general cases, i.e., any dimensional data
      */
     static double computeMBRLowerBound(Map<Integer, Pair<double[], double[]>> segmentA, Map<Integer, Pair<double[], double[]>> segmentB, int dimension) {
-    	double max = 0;
+		//TODO modified to minus num
+		//double max = 0;
+		double max = -1000;
     	for(int segid:segmentA.keySet()) {
     		Pair<double[], double[]> aaPair = segmentA.get(segid);
     		double min = Double.MAX_VALUE;

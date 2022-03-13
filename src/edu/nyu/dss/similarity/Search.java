@@ -84,7 +84,10 @@ public class Search {
 		int datasetid = 0;
 		double error = 0;
 		indexAlgorithm<Object> indexDSS = new indexAlgorithm<>();
-		for(int a=1; a<=limit; a++) {// access the dataset by files or in memory directly, find the datasetMapping to read
+		//TODO changed
+		//when argoDataMap's size bigger than limit would throw npe
+		int maxnum = Math.min(limit,argoDataMap.size());
+		for(int a=1; a<=/*limit*/maxnum; a++) {// access the dataset by files or in memory directly, find the datasetMapping to read
 			Pair<Double, PriorityQueue<queueMain>> aPair;
 			double[][] dataset=null;
 			if(dataMap!=null) {
@@ -132,7 +135,11 @@ public class Search {
 		Map<Integer, Double> setBound = new HashMap<Integer, Double>();
 		double[][] dataset = null;
 		indexAlgorithm<Object> indexDSS = new indexAlgorithm<>();
-		for(int a=1; a<=limit; a++) {
+
+		//TODO changed
+		//when argoDataMap's size bigger than limit would throw npe
+		int maxnum = Math.min(limit,argoDataMap.size());
+		for(int a=1; a<=/*limit*/maxnum; a++) {
 			if(dataMap!=null) {
 				dataset = dataMap.get(a);
 			}else {

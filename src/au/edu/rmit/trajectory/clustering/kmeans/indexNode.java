@@ -6,11 +6,14 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import au.edu.rmit.trajectory.clustering.kpaths.Util;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
-// this class will build the index based on the 
+
+@JsonIgnoreProperties({"nodelist"})
+// this class will build the index based on the
 public class indexNode {	
-	protected Set<Integer> pointIdList; // the leaf node, the index node is a leaf node when this is not empty, we can 
+	protected Set<Integer> pointIdList; // the leaf node, the index node is a leaf node when this is not empty, we can
 	protected Set<indexNode> nodeList; // the internal node	
 	protected Set<Integer> nodeIDList;//check whether the root is empty before use, for seralization
 	protected double pivot[];// the mean value
@@ -31,7 +34,7 @@ public class indexNode {
 	
 	
 	// used for dataset search
-	int rootToDataset = 0;// indicate the dataset id, for dataset search use only
+	public int rootToDataset = 0;// indicate the dataset id, for dataset search use only
 	double mindis=Double.MAX_VALUE;
 	int counter = 0; //number of nodes in the queue
 	int nodeid = 0;//for node identification
@@ -475,6 +478,7 @@ public class indexNode {
 	
 	/*
 	 * compute the range of intersection
+	 * TODO range query ????????????????
 	 */
 	public double intersectedArea(double querymax[], double querymin[], int dim) {
 		if(!intersected(querymax, querymin, dim)) {

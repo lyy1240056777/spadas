@@ -12,7 +12,6 @@ import java.util.Set;
 import com.google.common.base.Splitter;
 
 import au.edu.rmit.trajectory.clustering.kpaths.Util;
-import covertree.CoverTree;
 import edu.nyu.dss.similarity.Hausdorff;
 import edu.wlu.cs.levy.cg.KDTree;
 import edu.wlu.cs.levy.cg.KeyDuplicateException;
@@ -162,7 +161,7 @@ public class indexAlgorithm<E> {
 		return rootKmeans;
 	}
 	
-	
+	/*
 	public indexNode buildCoverTree(int dims, double[][] datamapEuc) {
 		//build the tree based on 
 		CoverTree<Integer> cTree = new CoverTree<Integer>();
@@ -177,7 +176,7 @@ public class indexAlgorithm<E> {
 		updateSum(rootKmeans, dims);
 		return rootKmeans;
 		
-	}
+	}*/
 	
 	/*
 	 * the right index to use
@@ -819,6 +818,11 @@ public class indexAlgorithm<E> {
 	 */
 	public double[] calculateMaxBoundBox(indexNode root, int dimension, double[][] dataMatrix) {
 		root.mbrmax = new double[dimension];
+		//TODO
+		// lat&lon likely to be minus ,so initialize it to be minus num
+		for(int i=0;i<dimension;i++){
+			root.mbrmax[i] = -1000;
+		}
 		if(root.isLeaf()) {
 			for(int pointid: root.getpointIdList()) {
 				for(int i=0; i<dimension; i++) {
@@ -843,6 +847,7 @@ public class indexAlgorithm<E> {
 	 */
 	public double[] calculateMinBoundBox(indexNode root, int dimension, double[][] dataMatrix) {
 		root.mbrmin = new double[dimension];
+		//TODO
 		for(int i = 0; i<dimension; i++)
 			root.mbrmin[i] = Double.MAX_VALUE;
 		if(root.isLeaf()) {
