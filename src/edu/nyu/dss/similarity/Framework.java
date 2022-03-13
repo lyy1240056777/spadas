@@ -2160,9 +2160,10 @@ public class Framework {
 		double  querydata[][];
 
 		if(queryid==-1){
-			//query by uploading dataset
+			// query by uploading dataset
+			// 3.13 modified: only build node for upload file not insert it into datalake index
 			querydata = readSingleFile(qo.getDsFilename());
-			queryNode = insertNewDSandUpdate(querydata,qo.getDsFilename(), qo.getDim());
+			queryNode = buildNodeforUpload(querydata,qo.getDsFilename(), qo.getDim());
 			queryid = queryNode.rootToDataset;
 			//dataMapPorto yu indexNodes,indexMap deng de size bu yi zhi
 			queryindexmap = datasetIndex==null? null:datasetIndex.get(queryid);
@@ -2205,6 +2206,22 @@ public class Framework {
 				map(item-> indexMap.get(item.getKey())).collect(Collectors.toList()));
 	}
 
+	/*-*
+	build node and not insert
+	 */
+	private static indexNode buildNodeforUpload(double[][]data,String filename,int dim) throws IOException {
+		int id = datasetIdMapping.size()+1;
+		File file = new File(aString+"/"+filename);
+		if(!file.exists())
+			throw new FileException("File not exists");
+		//create indexnode
+		indexNode newNode = indexDSS.buildBalltree2(data,dim,capacity,null,null);
+		return newNode;
+	}
+
+	/*-*
+	 build node and insert
+	 */
 	private static indexNode insertNewDSandUpdate(double[][]data,String filename,int dim) throws IOException {
 		int id = datasetIdMapping.size()+1;
 		File file = new File(aString+"/"+filename);
