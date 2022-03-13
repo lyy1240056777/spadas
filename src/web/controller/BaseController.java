@@ -4,6 +4,7 @@ package web.controller;
 import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
 import edu.nyu.dss.similarity.Framework;
 import org.apache.commons.lang3.tuple.Pair;
+import org.omg.CORBA.FREE_MEM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -42,9 +43,10 @@ public class BaseController {
     }
 
     @RequestMapping(value = "/uploaddataset",method = RequestMethod.POST)
-    public Map<String,Object> uploadDataset(@RequestParam("file") MultipartFile file) {
+    public Map<String,Object> uploadDataset(@RequestParam("file") MultipartFile file) throws IOException {
         String filename = fileService.uploadFile(file);
-        return new HashMap(){{put("filename",filename);}};
+        double [][] matrix = Framework.readSingleFile(filename);
+        return new HashMap(){{put("matrix",matrix);}};
     }
 
     @RequestMapping(value = "/dsquery",method = RequestMethod.POST)
