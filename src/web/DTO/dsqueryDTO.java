@@ -2,8 +2,6 @@ package web.DTO;
 
 import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author Tian Qi Qing
@@ -15,9 +13,8 @@ public class dsqueryDTO {
     int k=10; //top-k
     int dim; //dimension
     double[][] querydata;
-    int datasetId=-1;
+    //int datasetId=-1;
     int mode = 0; //0 ApproHaus ,1 ExactHaus 2, Grid-based
-    String dsFilename ;
     double error=0.0;
     boolean approxi = true;
     boolean useIndex = true;

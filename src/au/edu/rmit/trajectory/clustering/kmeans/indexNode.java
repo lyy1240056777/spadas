@@ -10,9 +10,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 
-@JsonIgnoreProperties({"nodelist"})
+@JsonIgnoreProperties({"nodelist","assignedCluster","bounds","prunedCounter"})
 // this class will build the index based on the
-public class indexNode {	
+public class indexNode {
+	int type; // 0 for line , 1 for point
 	protected Set<Integer> pointIdList; // the leaf node, the index node is a leaf node when this is not empty, we can
 	protected Set<indexNode> nodeList; // the internal node	
 	protected Set<Integer> nodeIDList;//check whether the root is empty before use, for seralization
@@ -977,5 +978,13 @@ public class indexNode {
 
 	public void setTotalCoveredPointsFair(double totalCoveredPointsFair) {
 		this.totalCoveredPointsFair = totalCoveredPointsFair;
+	}
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int i){
+		this.type=i;
 	}
 }

@@ -1,4 +1,4 @@
-package web.Service;
+package web.Utils;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

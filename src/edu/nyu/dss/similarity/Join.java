@@ -9,6 +9,7 @@ import java.util.TreeMap;
 import au.edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
 import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
 import au.edu.rmit.trajectory.clustering.kpaths.Util;
+import org.apache.commons.lang3.tuple.Pair;
 
 
 public class Join {
@@ -123,11 +124,66 @@ public class Join {
     	}
    // 	System.out.println(joinNearestMap.get(1));
     //	System.out.println(joinNearestMap.get(2));
-    	myObj = new File("./logs/spadas/"+folder+"/join.txt"); 
+    	myObj = new File("./logs/spadas/"+folder+"/join.txt");
     	myObj.delete();
     	combineJoinableDataset(point1xys, point2xys, joinNearestMap, dimension, "./logs/spadas/"+folder+"/join.txt");
     	return distancearray;
     }
+
+	public static Pair<ArrayList<Double>,Map<Integer, Integer>>  IncrementalJoinCustom(double [][]point1xys, double [][]point2xys, int dimension, indexNode X, indexNode Y, int splitOption, int fastMode,
+														 double error, boolean reverse, double directDis, boolean topkEarlyBreaking, double hausdorff, PriorityQueue<queueMain> aHeaps,
+														 Map<Integer, indexNode> nodelist, Map<Integer, indexNode> nodelist1, String folder, boolean nonselectedDimension[], boolean dimensionAll) {
+		if(splitOption==0)
+			fastMode = 0;
+		File myObj = new File("./logs/spadas/"+folder+"/distance.txt");
+		myObj.delete();
+		ArrayList<Double> distancearray = new ArrayList<Double>();
+		// 	System.out.println("the size of queue is "+aHeaps.size());
+		Map<Integer, Integer> joinNearestMap = new TreeMap<Integer, Integer>();
+		while(!aHeaps.isEmpty()) {
+			queueMain mainq = aHeaps.poll();
+			PriorityQueue<queueSecond> secondHeaps = mainq.getQueue();
+			queueSecond secondq = secondHeaps.peek();
+			indexNode anode = mainq.getIndexNode();
+			double ub = mainq.getbound();
+			indexNode bnode;
+			if(secondq!=null)
+				bnode = secondq.getNode();
+			else
+				continue;
+			boolean asplit = AdvancedHausdorff.stopSplitCondition(anode, splitOption);
+			boolean bsplit = AdvancedHausdorff.stopSplitCondition(bnode, splitOption);
+			if( asplit == true &&  bsplit == true) {//if two nodes are null, i.e., they are points // we can change it to radius threshold
+				//	System.out.println(secondq.getPointId());
+				joinNearestMap.put(mainq.getpointID(), secondq.getPointId());
+				Util.write("./logs/spadas/"+folder+"/distance.txt", ub+"\n");
+				distancearray.add(ub);
+				//write the distance into file for later effectiveness study
+				if(hausdorff>ub)//this will not happen if users specify one parameter.
+					hausdorff = ub; // updating the new Hausdorff, smaller distance
+			}else{
+				if(secondq.getbound()>=hausdorff)// filter by lower bound to shrink the queue
+					continue;
+				// another trick is to utilize the nearest point in the dataset for each point,
+				// and empty the queue but only maintain one, if yes, every point and node needs to store its nearest neighbor
+				boolean splitPr = AdvancedHausdorff.splitPriority(anode, bnode, 1, asplit, bsplit, dimension, nonselectedDimension, dimensionAll);//
+				if(splitPr) {
+					AdvancedHausdorff.traverseX(anode, point1xys, point2xys, secondHeaps, dimension, aHeaps, fastMode,
+							topkEarlyBreaking, directDis, true, hausdorff, nodelist, nonselectedDimension, dimensionAll);
+				}else {
+					secondHeaps.poll();
+					ub = AdvancedHausdorff.traverseY(bnode, point1xys, point2xys, secondHeaps, dimension, aHeaps,
+							ub, anode, mainq.getpointID(),fastMode, topkEarlyBreaking, directDis, true, hausdorff, nodelist1, nonselectedDimension, dimensionAll);
+				}
+			}
+		}
+		// 	System.out.println(joinNearestMap.get(1));
+		//	System.out.println(joinNearestMap.get(2));
+		myObj = new File("./logs/spadas/"+folder+"/join.txt");
+		myObj.delete();
+		combineJoinableDataset(point1xys, point2xys, joinNearestMap, dimension, "./logs/spadas/"+folder+"/join.txt");
+		return Pair.of(distancearray,joinNearestMap);
+	}
 	
 	
 	static void combineJoinableDataset(double [][]point1xys, double [][]point2xys, Map<Integer, Integer> joinNearestMap, int dimension, String fileName) {

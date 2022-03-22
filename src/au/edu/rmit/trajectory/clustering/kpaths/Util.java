@@ -59,7 +59,9 @@ public class Util {
 	 */
 	public static double EuclideanDis(double []a, double []b, int dimension) {
 		double distance = 0;
-		for(int i = 0; i<dimension; i++ ) {
+		//TODO set it 2
+		//for(int i = 0; i<a.length; i++ ) {
+		for(int i = 0; i<2; i++ ) {
 			distance += Math.pow(Math.abs(a[i]- b[i]), 2);// the l2-norm
 		}
 

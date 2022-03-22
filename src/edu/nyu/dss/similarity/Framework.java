@@ -23,7 +23,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import web.DTO.dsqueryDTO;
 import web.DTO.rangequeryDTO;
-import web.Service.FileProperties;
+import web.Utils.FileProperties;
+import web.VO.DatasetVo;
 import web.exception.FileException;
 
 @Component
@@ -37,12 +38,13 @@ public class Framework {
 	//static String aString = "/Users/sw160/Desktop/argoverse-api/dataset/train/data";
 	//static String aString = "G:\\IdeaProject\\auctus\\train2\\train\\argoData";
 	//static String aString = "G:\\IdeaProject\\spadas\\dataset\\argoverse";
-	static String aString = "G:\\IdeaProject\\spadas\\dataset\\argoverse";
-	static Map<Integer, String> datasetIdMapping = new HashMap<Integer, String>();//integer
+	public  static String aString = "G:\\IdeaProject\\spadas\\dataset\\argoverse\\";
+	public static Map<Integer, String> datasetIdMapping = new HashMap<Integer, String>();//integer
 	public static Map<Integer, double[][]> dataMapPorto = new HashMap<Integer, double[][]>();
 	static TreeMap<Integer, Integer> countHistogram = new TreeMap<Integer, Integer>();
 	static int datalakeID;// the lake id
 	static String folderString = ".";
+	static int fileNo=0;
 	
 	/*
 	 * z-curve for grid-based overlap
@@ -105,7 +107,7 @@ public class Framework {
 	static int numberofParameterChoices = 5; // 
 	static double timeMultiple[][];// the overall running time
 	static double indexMultiple[][];
-	static int fileNo = 1;
+	//static int fileNo = 1;
 
 
 	@Autowired
@@ -291,22 +293,24 @@ public class Framework {
 	 */
 	static Map<Integer, double[][]> readFolder(File folder, int limit) {
 		File[] fileNames = folder.listFiles();
-		int fileNo = 1;
-		if(storeAllDatasetMemory)
-			dataMapPorto = new HashMap<Integer, double[][]>();
+		//int fileNo = 1;
+//		if(storeAllDatasetMemory)
+//			dataMapPorto = new HashMap<Integer, double[][]>();
         for(File file : fileNames){
             if(file.isDirectory()){
             	readFolder(file, limit);
             }else{
                 try {
             		String a = file.getName();
+            		String parentDir = file.getParent();
             		if(a.length()<15){//argo
-            			datasetIdMapping.put(fileNo, a);
-            			readContent(file, fileNo++);
+            			//linux ????/
+            			datasetIdMapping.put(fileNo, parentDir.substring(parentDir.lastIndexOf(File.separator)+1)+File.separator+a);
+            			readContentCustom(file, fileNo++);
             		}
-            		else {
-            			datasetIdMapping.put(fileNo, a);
-            			readContentChicago(file, fileNo++, a);
+            		else {//poi
+            			datasetIdMapping.put(fileNo, parentDir.substring(parentDir.lastIndexOf(File.separator)+1)+File.separator+a);
+            			readContentPoi(file, fileNo++, a);
             		}
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -372,11 +376,47 @@ public class Framework {
 		if(storeAllDatasetMemory)
 			dataMapPorto.put(fileNo, a);
 		if(storeIndexMemory) {
-			createDatasetIndex(fileNo, a);
+			createDatasetIndex(fileNo, a,0);
 		}
 		if(!zcurveExist)
 			storeZcurve(a, fileNo);
-	//	return datasetMap;
+	}
+
+	public static void readContentCustom(File file, int fileNo) throws IOException {
+		long lineNumber = 0;
+		try (Stream<String> lines = Files.lines(file.toPath())) {
+			lineNumber = lines.count();
+		}
+		double[][] a = new double[(int) lineNumber-1][];// a little different
+		int i=0;
+		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+			String strLine;
+			while ((strLine = br.readLine()) != null) {
+				String[] splitString = strLine.split(",");
+				if(splitString.length<3)
+					System.out.println(file.toURI());
+				String aString = splitString[3];
+				if (aString.matches("-?\\d+(\\.\\d+)?")) {// only has float
+					a[i] = new double[3];
+					a[i][0] = Double.valueOf(splitString[6]);
+					a[i][1] = Double.valueOf(splitString[7]);
+					//a[i][2] = Double.valueOf(splitString[0]);
+					a[i][2] = Double.valueOf(splitString[1].replace("-",""));
+					i++;
+				}
+			}
+		}
+		if(countHistogram.containsKey(i))
+			countHistogram.put(i, countHistogram.get(i)+1);
+		else
+			countHistogram.put(i, 1);
+		if(storeAllDatasetMemory)
+			dataMapPorto.put(fileNo, a);
+		if(storeIndexMemory) {
+			createDatasetIndex(fileNo, a,0);
+		}
+		if(!zcurveExist)
+			storeZcurve(a, fileNo);
 	}
 	
 	/*
@@ -433,7 +473,47 @@ public class Framework {
 		}
 		return dataMapPorto;
 	}
-	
+
+	/*
+	 * read single dataset in a poi folder
+	 */
+	public static Map<Integer, double[][]> readContentPoi(File file, int fileNo, String filename) throws IOException {
+		long lineNumber = 0;
+		try (Stream<String> lines = Files.lines(file.toPath())) {
+			lineNumber = lines.count();
+		}
+		double[][] a = new double[(int) lineNumber-1][];
+		int i=0;
+		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+			String strLine;
+			while ((strLine = br.readLine()) != null) {
+				String[] splitString = strLine.split(",");
+				String aString = splitString[0];
+				if (aString.matches("-?\\d+(\\.\\d+)?")) {// only has float
+					a[i] = new double[dimension];
+					a[i][0] = Double.valueOf(splitString[0]);
+					a[i][1] = Double.valueOf(splitString[1]);
+					i++;
+				}
+			}
+		}
+		if(i>0) {
+			if(countHistogram.containsKey(i))
+				countHistogram.put(i, countHistogram.get(i)+1);
+			else
+				countHistogram.put(i, 1);
+			if(storeAllDatasetMemory)
+				dataMapPorto.put(fileNo, a);
+			if(storeIndexMemory){
+				createDatasetIndex(fileNo, a,1);
+			}
+			if(!zcurveExist)
+				storeZcurve(a, fileNo);
+		}
+		return dataMapPorto;
+	}
+
+
 	/*
 	 * read from the mnist dataset and comparing with the dataset
 	 */
@@ -656,7 +736,7 @@ public class Framework {
 	//	dataMapPorto = new HashMap<>();
 		if(aString.contains("argo")) {// read datasets in a folder, such as argoverse and chicago
 			datalakeID = 4;
-			dimension = 3;
+			dimension = 2;
 			if(testFullDataset)
 				limit = 270000;
 			edgeString = "./index/dss/index/argo/argo_edge.txt";
@@ -667,21 +747,24 @@ public class Framework {
 			indexString = "./index/dss/index/argo/";
 			dataMapPorto = readFolder(folder, limit+NumberQueryDataset);
 		}
-		/*else if(aString.contains("chicago")) {// read datasets in a folder, such as argoverse and chicago
+		aString =  "./dataset/poi";
+		folder = new File(aString);
+		if(aString.contains("poi")) {// read datasets in a folder, such as argoverse and chicago
 			datalakeID = 5;
-			dimension = 11;
+			dimension = 2;
 			if(testFullDataset)
 				limit = 280000;
-			edgeString = "./index/dss/index/chicago/chicago_edge.txt";
-			nodeString = "./index/dss/index/chicago/chicago_node.txt";
-			zcodeSer= "./index/dss/index/chicago/chicago_bitmaps";
-			distanceString = "./index/dss/index/chicago/chicago_haus_distance.txt";
-			fetureString = "./index/dss/index/chicago/chicago_haus_features.txt";
-			indexString = "./index/dss/index/chicago/";
-			dataMapPorto = readFolder(folder, limit+NumberQueryDataset);
+			edgeString = "./index/dss/index/poi/poi_edge.txt";
+			nodeString = "./index/dss/index/poi/poi_node.txt";
+			zcodeSer= "./index/dss/index/poi/poi_bitmaps";
+			distanceString = "./index/dss/index/poi/poi_haus_distance.txt";
+			fetureString = "./index/dss/index/poi/poi_haus_features.txt";
+			indexString = "./index/dss/index/poi/";
+			dataMapPorto =  readFolder(folder, limit+NumberQueryDataset);
 		//	SerializedMappingTable(indexString+"mapping.ser");
 		}
-		else if(aString.contains("mnist")){
+		aString = "./dataset/";
+		/*else if(aString.contains("mnist")){
 			dimension = 28;
 			edgeString = "./index/dss/mnist_edge.txt";
 			nodeString = "./index/dss/mnist_node.txt";
@@ -767,6 +850,27 @@ public class Framework {
 			rootBall = createRootsDataset(dataset, dimension, a);
 		}else {// create the full tree
 			rootBall = indexDSS.buildBalltree2(dataset, dimension, capacity, null, null, weight);
+			String indexFileName = indexString + String.valueOf(a) + ".txt";
+			File tempFile = new File(indexFileName);
+			if (!tempFile.exists() && saveDatasetIndex)//&& !aString.contains("porto") && !aString.contains("beijing")
+				indexDSS.storeIndex(rootBall, 1, indexFileName, 0);
+			if(indexMap==null)
+				indexMap = new HashMap<>();
+			indexMap.put(a, rootBall);
+		}
+		indexDSS.setGloabalid();
+		rootBall.setroot(a);// set an id to identify which dataset it belongs to
+		if(a<limit)
+			indexNodes.add(rootBall);
+	}
+
+	static void createDatasetIndex(int a, double[][] dataset,int type) {
+		indexNode rootBall;
+		if(buildOnlyRoots) {// just create the root node, for datalake creation
+			rootBall = createRootsDataset(dataset, dimension, a);
+		}else {// create the full tree
+			rootBall = indexDSS.buildBalltree2(dataset, dimension, capacity, null, null, weight);
+			rootBall.setType(type);
 			String indexFileName = indexString + String.valueOf(a) + ".txt";
 			File tempFile = new File(indexFileName);
 			if (!tempFile.exists() && saveDatasetIndex)//&& !aString.contains("porto") && !aString.contains("beijing")
@@ -1321,7 +1425,7 @@ public class Framework {
 	static void testJoinOutlier(int testOrder, int timeID, int queryID, int datasetID, Pair<Double, PriorityQueue<queueMain>> aPair) {
 		numberofComparisons = 4;
 		int countAlgorithm=0;
-		
+		/*
 		System.out.println("*******testing join and outlier");
 
 		// 1. brute force, too slow
@@ -1337,25 +1441,24 @@ public class Framework {
 				indexMap.get(queryID), indexMap.get(datasetID), dimension, indexDSS);
 		endtime = System.nanoTime();
 		timeMultiple[timeID][testOrder*numberofComparisons+countAlgorithm++] += (endtime-startTime1)/1000000000.0;
-		System.out.println("join with top-1 dataset with nn search baseline costs: "+(endtime-startTime1)/1000000000.0);
+		System.out.println("join with top-1 dataset with nn search baseline costs: "+(endtime-startTime1)/1000000000.0);*/
 		
 		// 3, join with our cached queue
-		startTime1 = System.nanoTime();// exact search: 0, 1, 0
-		Join.IncrementalJoin(dataMapPorto.get(queryID), dataMapPorto.get(datasetID), dimension, indexMap.get(limit+1), 
+		//startTime1 = System.nanoTime();// exact search: 0, 1, 0
+		Join.IncrementalJoin(dataMapPorto.get(queryID), dataMapPorto.get(datasetID), dimension, indexMap.get(limit+1),
 					indexMap.get(datasetID), 0, 0, 0.01, false, 0, false, aPair.getLeft(), aPair.getRight(), null, null, "haus", null, true);
-		endtime = System.nanoTime();
-		timeMultiple[timeID][testOrder*numberofComparisons+countAlgorithm++] += (endtime-startTime1)/1000000000.0;
-		System.out.println("join with top-1 dataset on reused queues costs: "+(endtime-startTime1)/1000000000.0);
+		//endtime = System.nanoTime();
+		//timeMultiple[timeID][testOrder*numberofComparisons+countAlgorithm++] += (endtime-startTime1)/1000000000.0;
+		//System.out.println("join with top-1 dataset on reused queues costs: "+(endtime-startTime1)/1000000000.0);
 		
-		
-		// 4, test self-join for outlier detection 
-		startTime1 = System.nanoTime();//exact search: 0, 1, 0
+		/*
+		// 4, test self-join for outlier detection
 		startTime1 = System.nanoTime();// exact search: 0, 1, 0
 		AdvancedHausdorff.setParameter(true, false);
 		Pair<Double, PriorityQueue<queueMain>> resultPaira = AdvancedHausdorff.IncrementalDistance(dataMapPorto.get(1), dataMapPorto.get(1), dimension, indexMap.get(1), indexMap.get(1), 0, 1, 0, false, 0, false, null, null, null, true);
 		endtime = System.nanoTime();
 		System.out.println((endtime-startTime1)/1000000000.0+ ","+ AdvancedHausdorff.disCompTime+","+AdvancedHausdorff.EuclideanCounter);
-		timeMultiple[timeID][testOrder*numberofComparisons+countAlgorithm++] += (endtime-startTime1)/1000000000.0;
+		timeMultiple[timeID][testOrder*numberofComparisons+countAlgorithm++] += (endtime-startTime1)/1000000000.0;*/
 	//	System.out.println(resultPaira.getLeft());
 	//	System.out.println();
 	}
@@ -1580,30 +1683,30 @@ public class Framework {
 			for (int j = 0; j < NumberQueryDataset; j++) {
 				int scale = ss[i];
 				limit = 2*scale;
-				storeIndexMemory = false;
-				readDatalake(limit);
-				storeIndexMemory = true;
-				indexNodes = new ArrayList<>();
-				dataMapPorto = prepareLargeDatasets(scale); // generate datasets by combining more 10, 100, 1000, 10000 datasets
-				long startTime1a = System.nanoTime();
-				for(int a:dataMapPorto.keySet()) {//we can build index to accelerate
-					if(a>limit+NumberQueryDataset)
-						break;
-					createDatasetIndex(a, dataMapPorto.get(a)); // load index structure
-				}
-				long endtimea = System.nanoTime();
-				write("./logs/spadas/efficiency/DatasetPairwiseIndexTime.txt", datalakeID+","+limit+","+dimension+","+capacity+","+(endtimea-startTime1a)/1000000000.0+"\n");
-				write("./logs/spadas/efficiency/DatasetPairwiseIndexSize.txt", datalakeID+","+limit+","+dimension+","+capacity+","+(getDatalakeIndexSize(datasetRoot, false)+getAllDatasetIndexSize())/(1024.0*1024)+"\n");
+//				storeIndexMemory = false;
+//				readDatalake(limit);
+//				storeIndexMemory = true;
+//				indexNodes = new ArrayList<>();
+				//dataMapPorto = prepareLargeDatasets(scale); // generate datasets by combining more 10, 100, 1000, 10000 datasets
+//				long startTime1a = System.nanoTime();
+//				for(int a:dataMapPorto.keySet()) {//we can build index to accelerate
+//					if(a>limit+NumberQueryDataset)
+//						break;
+//					createDatasetIndex(a, dataMapPorto.get(a)); // load index structure
+//				}
+//				long endtimea = System.nanoTime();
+//				write("./logs/spadas/efficiency/DatasetPairwiseIndexTime.txt", datalakeID+","+limit+","+dimension+","+capacity+","+(endtimea-startTime1a)/1000000000.0+"\n");
+//				write("./logs/spadas/efficiency/DatasetPairwiseIndexSize.txt", datalakeID+","+limit+","+dimension+","+capacity+","+(getDatalakeIndexSize(datasetRoot, false)+getAllDatasetIndexSize())/(1024.0*1024)+"\n");
 
 				// 1, the effect of dataset scale on pairwise
 				Pair<Double, PriorityQueue<queueMain>> resultPair = testPairwiseHausdorff(1, 2, i, 0, false);// 1, 
 				
 				// 2, the effect of dataset scale on joins
-				testJoinOutlier(i, 1, 1, 2, resultPair); // 2,
+				testJoinOutlier(i, 1, 2, 200, resultPair); // 2,
 				
 				// 3, the effect of scale on range query
-				error = spaceRange/((int) Math.pow(2, rs[0]));
-				testPairwiseRangeQuery(indexMap.get(1), dataMapPorto.get(1), i, 2);
+				/*error = spaceRange/((int) Math.pow(2, rs[0]));
+				testPairwiseRangeQuery(indexMap.get(1), dataMapPorto.get(1), i, 2);*/
 			}
 		}
 		recordRunningTime("./logs/spadas/efficiency/"+datalakeID+"-n-haus.txt", 0);
@@ -2040,9 +2143,10 @@ public class Framework {
 		//endtimea = System.nanoTime();
 		//write("./logs/spadas/efficiency/DatalakeIndexTime.txt", datalakeID+","+limit+","+dimension+","+capacity+","+(endtimea-startTime1a)/1000000000.0+"\n");
 		//write("./logs/spadas/efficiency/DatasetIndexSize.txt", datalakeID+","+limit+","+dimension+","+capacity+","+(getDatalakeIndexSize(datasetRoot, false)+getAllDatasetIndexSize())/(1024.0*1024)+"\n");
+		EvaluatePairWise();
 
 		//EvaluateRangequery(); // 3, evaluate range query by increasing range
-		EvaluateTopkHaus(); // 4, evaluate top-k query by varying k, dimension, resolution
+		//EvaluateTopkHaus(); // 4, evaluate top-k query by varying k, dimension, resolution
 		/*EvaluateHausDimension(); // 5, evaluate dimension
 		
 		if(datalakeID==5) {// restore the parameter
@@ -2098,7 +2202,7 @@ public class Framework {
 		}
 
 		//
-		tempFile = new File(indexString+"datalake"+limit+"-"+capacity+ "-" + dimension + ".txt");
+		//tempFile = new File(indexString+"datalake"+limit+"-"+capacity+ "-" + dimension + ".txt");
 		/*if(!tempFile.exists()) {
 			storeIndexMemory = true;// has to create index as the datalake index is not there
 			if(limit>=100000 && datalakeID>2)// for large datasets
@@ -2116,7 +2220,7 @@ public class Framework {
 
 	// web service part
 
-	public static List<indexNode> rangequery(rangequeryDTO qo) {
+	public static List<DatasetVo> rangequery(rangequeryDTO qo) {
 		HashMap<Integer, Double> result = new HashMap<>();
 		indexNode root = datasetRoot;
 		if(datalakeIndex!=null)
@@ -2150,26 +2254,25 @@ public class Framework {
         // List<Double> list = result.entrySet().stream().sorted((o1,o2)->o2.getValue()-o1.getValue()<0? 1:-1).map(item-> item.getValue()).collect(Collectors.toList());
         // for(Double i:list)
         // System.out.println(i);
-		return result.entrySet().stream().sorted((o1,o2)->o2.getValue()-o1.getValue()<0? 1:-1).map(item-> indexMap.get(item.getKey())).collect(Collectors.toList());
+		return result.entrySet().stream().sorted((o1,o2)->o2.getValue()-o1.getValue()<0? 1:-1).map(item-> new DatasetVo(indexMap.get(item.getKey()),datasetIdMapping.get(item.getKey()),item.getKey(),dataMapPorto.get(item.getKey()))).collect(Collectors.toList());
 	}
 
-	public static Pair<double[][],List<indexNode>> datasetQuery(dsqueryDTO qo) throws IOException {
+	public static List<DatasetVo> datasetQuery(dsqueryDTO qo) throws IOException {
 		indexNode queryNode;
 		Map<Integer, indexNode> queryindexmap = null;
-		int queryid = qo.getDatasetId();
-		double  querydata[][];
-
-		if(queryid==-1){
+		int queryid = 1;
+		queryNode = buildNode(qo.getQuerydata(), qo.getDim());
+		/*if(true){
 			// query by uploading dataset
 			// 3.13 modified: only build node for upload file not insert it into datalake index
 			querydata = readSingleFile(qo.getDsFilename());
-			queryNode = buildNodeforUpload(querydata,qo.getDsFilename(), qo.getDim());
+			queryNode = buildNode(querydata,qo.getDsFilename(), qo.getDim());
 			queryid = queryNode.rootToDataset;
-			//dataMapPorto yu indexNodes,indexMap deng de size bu yi zhi
 			queryindexmap = datasetIndex==null? null:datasetIndex.get(queryid);
 		}
 		else{
 			//query by augment ds
+			
 			if (dataMapPorto != null) {
 				querydata = dataMapPorto.get(queryid);
 			} else {
@@ -2185,16 +2288,19 @@ public class Framework {
 					queryNode = indexDSS.buildBalltree2(querydata, dimension, capacity, null, null, weight);
 				}
 			}
-		}
+		}*/
         HashMap<Integer, Double> result = new HashMap<>();
 		if(qo.getMode()==0||qo.getMode()==1){
 			//TODO  is there any difference between exact and appro except error ?
-            result = Search.pruneByIndex(dataMapPorto, datasetRoot, queryNode, queryid,
+
+			// the 4th param isnot used in the func so we set it casually
+            result = Search.pruneByIndex(dataMapPorto, datasetRoot, queryNode, -1,
                     qo.getDim(), indexMap, datasetIndex, queryindexmap, datalakeIndex, datasetIdMapping, qo.getK(),
-                    indexString, null, true, qo.getError(), capacity, weight, saveDatasetIndex, querydata);
+                    indexString, null, true, qo.getError(), capacity, weight, saveDatasetIndex, qo.getQuerydata());
         }else {
 			// GridOverlap using index
 			indexNode root = datasetRoot;//datalakeIndex.get(1);//use storee
+
 			if(datalakeIndex!=null)
 				root = datalakeIndex.get(1);
 			int[] queryzcurve = new int[zcodemap.get(queryid).size()];
@@ -2202,18 +2308,18 @@ public class Framework {
 				queryzcurve[i] = zcodemap.get(queryid).get(i);
 			result = Search.gridOverlap(root, result, queryzcurve, Double.MAX_VALUE, qo.getK(), null, datalakeIndex);
         }
-		return Pair.of(dataMapPorto.get(queryid),result.entrySet().stream().sorted((o1, o2) -> o2.getValue()-o1.getValue()>0? 1:-1).
-				map(item-> indexMap.get(item.getKey())).collect(Collectors.toList()));
+		return result.entrySet().stream().sorted((o1, o2) -> o2.getValue()-o1.getValue()>0? 1:-1).
+				map(item-> new DatasetVo(indexMap.get(item.getKey()),datasetIdMapping.get(item.getKey()),item.getKey(),dataMapPorto.get(item.getKey()))).collect(Collectors.toList());
 	}
 
 	/*-*
 	build node and not insert
 	 */
-	private static indexNode buildNodeforUpload(double[][]data,String filename,int dim) throws IOException {
-		int id = datasetIdMapping.size()+1;
-		File file = new File(aString+"/"+filename);
-		if(!file.exists())
-			throw new FileException("File not exists");
+	private static indexNode buildNode (double[][]data,int dim) throws IOException {
+//		int id = datasetIdMapping.size()+1;
+//		File file = new File(aString+"/"+filename);
+//		if(!file.exists())
+//			throw new FileException("File not exists");
 		//create indexnode
 		indexNode newNode = indexDSS.buildBalltree2(data,dim,capacity,null,null);
 		return newNode;
@@ -2240,6 +2346,39 @@ public class Framework {
 		indexNodes.add(newNode);
 		indexNodesAll.add(newNode);
 		return newNode;
+	}
+
+	public static Pair<ArrayList<Double>,Map<Integer, Integer>> pairwiseJoin(int queryID,int datasetID) throws IOException {
+		indexNode queryNode, datanode;
+		Map<Integer, indexNode> queryindexmap = null, dataindexMap=null; // datasetIndex.get(queryid);
+		double [][]querydata, dataset;
+		if(dataMapPorto==null) {
+			querydata = readSingleFile(datasetIdMapping.get(queryID));
+			dataset = readSingleFile(datasetIdMapping.get(datasetID));
+		}else {
+			querydata = dataMapPorto.get(queryID);
+			dataset = dataMapPorto.get(datasetID);
+		}
+		if(indexMap!=null) {
+			queryNode = indexMap.get(queryID);
+			datanode = indexMap.get(datasetID);
+		}else {
+			if(datasetIndex!=null) {
+				queryindexmap = datasetIndex.get(queryID);
+				dataindexMap = datasetIndex.get(datasetID);
+				queryNode = queryindexmap.get(1);
+				datanode = dataindexMap.get(1);
+			}else {
+				queryNode = indexDSS.buildBalltree2(querydata, dimension, capacity, null, null, weight);
+				datanode = indexDSS.buildBalltree2(dataset, dimension, capacity, null, null, weight);
+			}
+		}
+		// Hausdorff Pair-wise distance measure
+		AdvancedHausdorff.setBoundChoice(0);
+		Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, queryNode, datanode, 0, 1, 0, false, 0, false,queryindexmap, dataindexMap, null, true);
+		Pair<ArrayList<Double>,Map<Integer, Integer>> resultPair = Join.IncrementalJoinCustom(dataMapPorto.get(queryID), dataMapPorto.get(datasetID), dimension, indexMap.get(limit+1),
+				indexMap.get(datasetID), 0, 0, 0, false, 0, false, aPair.getLeft(), aPair.getRight(), null, null, "haus", null, true);
+		return resultPair;
 	}
 
 	public static double[][] getMatrixByDatasetId(int id){

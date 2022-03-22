@@ -62,7 +62,9 @@ public class BallTreeMatrix extends BinaryTree {
             rows[row] = row;
         }
         Ball root = new Ball(rows, itemMatrix);
-        indexNode rootKmeans = new indexNode(itemMatrix[0].length);
+        //TODO
+        //indexNode rootKmeans = new indexNode(itemMatrix[0].length);
+        indexNode rootKmeans = new indexNode(2);
         setWeight(itemMatrix[0].length, null);// set all as 1
         int depth = 0;
         if (rows.length > leafThreshold && depth < maxDepth) {
@@ -80,6 +82,8 @@ public class BallTreeMatrix extends BinaryTree {
         Ball root = new Ball(rows, itemMatrix);
         indexNode rootKmeans = new indexNode(dimension);
         setWeight(dimension, weightinput);
+        //TODO set custom wetght for argo
+        //weight[2]=0;
         int depth = 0;
         if (rows.length > leafThreshold && depth < maxDepth) {
             createChildren(root, leafThreshold, depth + 1, maxDepth);
@@ -181,7 +185,9 @@ public class BallTreeMatrix extends BinaryTree {
         }
 
         private void calculateCenter() {
-            center = new double[itemMatrix[0].length];
+            //TODO set it 2, fix it afterwards
+            //center = new double[itemMatrix[0].length];
+            center = new double[2];
 
             for (int row : rows) {
                 for (int i = 0; i < center.length; i++) {
@@ -273,8 +279,12 @@ public class BallTreeMatrix extends BinaryTree {
         for (int i = 0; i < x.length; i++) {
         	if(weight==null)//normal case
         		d += (x[i] - y[i]) * (x[i] - y[i]);
-        	else
-        		d += (x[i] - y[i]) * (x[i] - y[i])*weight[i]*weight[i];
+        	else{
+        	    //TODO weight size maybe less than sizeof x
+                if(i<weight.length)
+                    d += (x[i] - y[i]) * (x[i] - y[i])*weight[i]*weight[i];
+            }
+
         }
         return d;
     }

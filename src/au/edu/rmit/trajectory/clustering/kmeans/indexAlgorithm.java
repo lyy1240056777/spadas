@@ -205,7 +205,7 @@ public class indexAlgorithm<E> {
 	// with weight to build index
 	public indexNode buildBalltree2(double[][] itemMatrix, int dimension, int capacity, int userID[], Map<Integer, Integer> userNumber, double []weight) {
 	//	System.out.println("Building Ball-tree using Matrix...");
-		long startTime1 = System.nanoTime();
+		//long startTime1 = System.nanoTime();
 		int deepth = (int) (Math.log(itemMatrix.length)/Math.log(2));//the deepth is computed based on binary tree
 		indexNode rootKmeans = BallTreeMatrix.create(itemMatrix, capacity, deepth, weight, dimension);//we should not set the deepth too deep
 		if(userNumber==null)
@@ -746,7 +746,7 @@ public class indexAlgorithm<E> {
 				a.addNodes(indexDatasetKD(rootleft, dimension, leafSize, weight));
 				a.addNodes(indexDatasetKD(rootright, dimension, leafSize, weight));
 			}
-			a.setroot(-2);//lable it as internal node
+			a.setroot(-2);//label it as internal node
 			return a;
 		}
 	}
