@@ -155,7 +155,9 @@ public class Join {
 			boolean bsplit = AdvancedHausdorff.stopSplitCondition(bnode, splitOption);
 			if( asplit == true &&  bsplit == true) {//if two nodes are null, i.e., they are points // we can change it to radius threshold
 				//	System.out.println(secondq.getPointId());
+				//TODO mod
 				joinNearestMap.put(mainq.getpointID(), secondq.getPointId());
+				//joinNearestMap.put(mainq.getIndexNode().getpointIdList().toArray(new Integer[mainq.getIndexNode().getpointIdList().size()])[0], secondq.getNode().getpointIdList().toArray(new Integer[secondq.getNode().getpointIdList().size()])[0]);
 				Util.write("./logs/spadas/"+folder+"/distance.txt", ub+"\n");
 				distancearray.add(ub);
 				//write the distance into file for later effectiveness study
@@ -181,7 +183,7 @@ public class Join {
 		//	System.out.println(joinNearestMap.get(2));
 		myObj = new File("./logs/spadas/"+folder+"/join.txt");
 		myObj.delete();
-		combineJoinableDataset(point1xys, point2xys, joinNearestMap, dimension, "./logs/spadas/"+folder+"/join.txt");
+		//combineJoinableDataset(point1xys, point2xys, joinNearestMap, dimension, "./logs/spadas/"+folder+"/join.txt");
 		return Pair.of(distancearray,joinNearestMap);
 	}
 	

@@ -216,8 +216,6 @@ public class AdvancedHausdorff extends Hausdorff{
     					}
     				}
     			}else {
-
-    				// TODO seems always go this branch
     				// judge whether meet the stopping for outlier, and keep monitoring and infer the outlier
     				outlierID.add(mainq.getpointID());
     				outlierDis.add(ub);

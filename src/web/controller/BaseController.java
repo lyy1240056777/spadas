@@ -54,7 +54,9 @@ public class BaseController {
     @RequestMapping(value = "/uploaddataset",method = RequestMethod.POST)
     public Map<String,Object> uploadDataset(@RequestParam("file") MultipartFile file) throws IOException {
         String filename = fileService.uploadFile(file);
-        double [][] matrix = Framework.readSingleFile(filename);
+        //????argo
+        Framework.datalakeID=4;
+        double [][] matrix = Framework.readSingleFile("/argoverse/"+filename);
         return new HashMap(){{put("matrix",matrix);}};
     }
 
@@ -100,7 +102,7 @@ public class BaseController {
         //int len = querydata.getRight()[0].length+basedata.getRight()[0].length;
         String[] joinHeader = ArrayUtils.addAll(querydata.getLeft(), basedata.getLeft());
         List<String[]> joindata = pair.getRight().entrySet().stream()
-                .map(idPair-> ArrayUtils.addAll(querydata.getRight()[idPair.getKey()],basedata.getRight()[idPair.getKey()])).collect(Collectors.toList());
+                .map(idPair-> ArrayUtils.addAll(querydata.getRight()[idPair.getKey()],basedata.getRight()[idPair.getValue()])).collect(Collectors.toList());
         return new HashMap(){{put("header",joinHeader);put("joinData",joindata);}};
     }
 

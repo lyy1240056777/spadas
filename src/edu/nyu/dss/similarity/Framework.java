@@ -42,7 +42,7 @@ public class Framework {
 	public static Map<Integer, String> datasetIdMapping = new HashMap<Integer, String>();//integer
 	public static Map<Integer, double[][]> dataMapPorto = new HashMap<Integer, double[][]>();
 	static TreeMap<Integer, Integer> countHistogram = new TreeMap<Integer, Integer>();
-	static int datalakeID;// the lake id
+	public static int datalakeID;// the lake id
 	static String folderString = ".";
 	static int fileNo=0;
 	
@@ -680,12 +680,12 @@ public class Framework {
 				a = new double[(int) lineNumber-1][];
 				while ((strLine = br.readLine()) != null) {
 					String[] splitString = strLine.split(",");
-					String aString = splitString[3];
+					String aString = splitString[6];
 					if (aString.matches("-?\\d+(\\.\\d+)?")) {
 						a[i] = new double[3];
 						a[i][0] = Double.valueOf(splitString[6]);
 						a[i][1] = Double.valueOf(splitString[7]);
-						a[i][2] = Double.valueOf(splitString[0]);
+						a[i][2] = Double.valueOf(splitString[1].replace("-",""));
 						i++;
 					}
 				}
@@ -2291,7 +2291,6 @@ public class Framework {
 		}*/
         HashMap<Integer, Double> result = new HashMap<>();
 		if(qo.getMode()==0||qo.getMode()==1){
-			//TODO  is there any difference between exact and appro except error ?
 
 			// the 4th param isnot used in the func so we set it casually
             result = Search.pruneByIndex(dataMapPorto, datasetRoot, queryNode, -1,
@@ -2375,9 +2374,9 @@ public class Framework {
 		}
 		// Hausdorff Pair-wise distance measure
 		AdvancedHausdorff.setBoundChoice(0);
-		Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, queryNode, datanode, 0, 1, 0, false, 0, false,queryindexmap, dataindexMap, null, true);
+		Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, queryNode, datanode, 1, 1, 0, false, 0, false,queryindexmap, dataindexMap, null, true);
 		Pair<ArrayList<Double>,Map<Integer, Integer>> resultPair = Join.IncrementalJoinCustom(dataMapPorto.get(queryID), dataMapPorto.get(datasetID), dimension, indexMap.get(limit+1),
-				indexMap.get(datasetID), 0, 0, 0, false, 0, false, aPair.getLeft(), aPair.getRight(), null, null, "haus", null, true);
+				indexMap.get(datasetID), 1, 0, 0, false, 0, false, aPair.getLeft(), aPair.getRight(), null, null, "haus", null, true);
 		return resultPair;
 	}
 
