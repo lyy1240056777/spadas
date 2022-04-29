@@ -7,12 +7,15 @@ import java.util.Map;
 import java.util.Set;
 import au.edu.rmit.trajectory.clustering.kpaths.Util;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 
 @JsonIgnoreProperties({"nodelist","assignedCluster","bounds","prunedCounter"})
+@ApiModel(value = "indexNode",description = "dataset index node")
 // this class will build the index based on the
 public class indexNode {
+	@ApiModelProperty("dataset type, 0 for trajactory 1 for point set")
 	int type; // 0 for line , 1 for point
 	protected Set<Integer> pointIdList; // the leaf node, the index node is a leaf node when this is not empty, we can
 	protected Set<indexNode> nodeList; // the internal node	

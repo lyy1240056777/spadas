@@ -1,16 +1,10 @@
 package edu.nyu.dss.similarity;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.PriorityQueue;
-import java.util.Set;
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.Lister;
 import org.apache.commons.lang3.tuple.Pair;
 
 import au.edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
@@ -494,6 +488,45 @@ public class Search {
 		}
 		System.out.println("\n"+min_dis+", "+counter);*/
 		return result;
-	}	
+	}
+
+	// My custom method
+	static List<double[]> UnionRangeQueryForPoints(double[] querymax, double[] querymin,int unionDatasetId, indexNode unionDatasetNode,List<double[]> result,int dim,
+												   boolean nonselectedDimension[], boolean dimensionAll){
+		// not leaf node
+		if(unionDatasetNode.getpointIdList()==null||unionDatasetNode.getpointIdList().size()==0) {
+			for(indexNode childNode: unionDatasetNode.getNodelist()) {
+				if(childNode.intersected(querymax,querymin,dim,nonselectedDimension,dimensionAll))
+					result = UnionRangeQueryForPoints(querymax, querymin,unionDatasetId, childNode, result, dim, nonselectedDimension, dimensionAll);
+			}
+		}else {
+			// leaf node
+			for(Integer rowId: unionDatasetNode.getpointIdList()){
+				if(isPointInRange(Framework.dataMapPorto.get(unionDatasetId)[rowId-1],querymax,querymin,dim,nonselectedDimension,dimensionAll))
+					result.add(Framework.dataMapPorto.get(unionDatasetId)[rowId-1]);
+			}
+		}
+		return result;
+	}
+
+	private static boolean isPointInRange(double[] point,double[] mbrmax,double[] mbrmin,int dim, boolean selectedDimension[], boolean dimensionAll){
+		if(selectedDimension != null && dimensionAll==false) {
+			for(int i=0; i<dim; i++)
+				if(selectedDimension[i]==false && mbrmin[i]>mbrmax[i] || mbrmax[i]<mbrmin[i]) {
+					return false;
+				}
+			return true;
+		}else {
+			return isPointInRange(point,mbrmax, mbrmin, dim);
+		}
+	}
+
+	private static boolean isPointInRange(double[] point,double[] mbrmax,double[] mbrmin,int dim){
+		for(int i=0; i<dim; i++)
+			if(point[i] > mbrmax[i] || point[i] < mbrmin[i]) {
+				return false;
+			}
+		return true;
+	}
 	
 }

@@ -247,7 +247,7 @@ public class BallTreeMatrix extends BinaryTree {
     			Set<Integer> aIntegers = new HashSet<Integer>();
     			double []sumOfPoints = new double[dimension];
     			for(int id : rows) {
-    				aIntegers.add(id+1);// the pointid
+    				aIntegers.add(id+1);//TODO the pointid 注意此处+1
     				for(int i=0; i<dimension; i++)
     					sumOfPoints[i] += itemMatrix[id][i];
     			}

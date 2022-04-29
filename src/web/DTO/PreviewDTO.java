@@ -13,5 +13,5 @@ import java.util.List;
 @Data
 public class PreviewDTO {
     List<Integer> ids = new ArrayList<>();
-    int rows;
+    int row;
 }

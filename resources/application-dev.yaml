@@ -5,6 +5,6 @@ server:
 spadas:
   file:
     # 硬盘存储路径,起始路径为项目根路径
-    baseUri: G:\IdeaProject\spadas\dataset\argoverse
+    baseUri: ./dataset/argoverse
     # 网页请求路径
-    staticUri: /dataset/uploads
+    staticUri: /dataset/

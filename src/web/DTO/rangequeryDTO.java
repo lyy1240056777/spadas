@@ -1,5 +1,6 @@
 package web.DTO;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
 /**
@@ -8,6 +9,7 @@ import lombok.Data;
  * @date 2022/03/03/12:06
  **/
 @Data
+@ApiModel("range query DTO")
 public class rangequeryDTO {
     int k=10; //top-k
     int dim; //dimension

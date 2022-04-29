@@ -49,7 +49,7 @@ public class Framework {
 	/*
 	 * z-curve for grid-based overlap
 	 */
-	static double minx = 0, miny=500;// the range of dataset space, default values for Argo dataset
+	static double minx = -90, miny=-180;// the range of dataset space, default values for Argo dataset  TODO now have changed it to lat/lon coordination
 	static double spaceRange = 4600;
 	static int resolution = 3; // also a parameter to test the grid-based overlap, and the approximate hausdorff, and range query
 	static double error = 0.0;
@@ -1506,7 +1506,7 @@ public class Framework {
 		
 		// 3, use datalake index to rank by area
 		startTime1 = System.nanoTime();
-		Search.setScanning(false); //TODO ?1???
+		Search.setScanning(false);
 		result = new HashMap<>();
 		Search.rangeQueryRankingArea(root, result, querymax, 
 				querymin, Double.MAX_VALUE, k, null, dimension, datalakeIndex, dimNonSelected, dimensionAll);
@@ -1551,7 +1551,7 @@ public class Framework {
 		long startTime1 = System.nanoTime();
 		
 		System.out.println("*******testing top-k range query by covered points");
-		
+
 		double[] querymax = new double[dimension];
 		double[] querymin = new double[dimension];
 		for(int i=0; i<dimension; i++) {// enlarge the range for evaluation
@@ -2258,45 +2258,28 @@ public class Framework {
 	}
 
 	public static List<DatasetVo> datasetQuery(dsqueryDTO qo) throws IOException {
+		//TODO querydata???indexnode??node???????????querydata?????DTO???queryid????queryid??null?-1????
+
 		indexNode queryNode;
 		Map<Integer, indexNode> queryindexmap = null;
 		int queryid = 1;
+		//build node for querydata
 		queryNode = buildNode(qo.getQuerydata(), qo.getDim());
-		/*if(true){
-			// query by uploading dataset
-			// 3.13 modified: only build node for upload file not insert it into datalake index
-			querydata = readSingleFile(qo.getDsFilename());
-			queryNode = buildNode(querydata,qo.getDsFilename(), qo.getDim());
-			queryid = queryNode.rootToDataset;
-			queryindexmap = datasetIndex==null? null:datasetIndex.get(queryid);
-		}
-		else{
-			//query by augment ds
-			
-			if (dataMapPorto != null) {
-				querydata = dataMapPorto.get(queryid);
-			} else {
-				querydata = Framework.readSingleFile(datasetIdMapping.get(queryid));
-			}
-			if(indexMap!=null) {
-				queryNode = indexMap.get(queryid);
-			}else {
-				if(datasetIndex!=null) {
-					queryindexmap = datasetIndex.get(queryid);
-					queryNode = queryindexmap.get(1);
-				}else {
-					queryNode = indexDSS.buildBalltree2(querydata, dimension, capacity, null, null, weight);
-				}
-			}
-		}*/
         HashMap<Integer, Double> result = new HashMap<>();
-		if(qo.getMode()==0||qo.getMode()==1){
-
+		if(qo.getMode()==0){
+			// HausDist
 			// the 4th param isnot used in the func so we set it casually
             result = Search.pruneByIndex(dataMapPorto, datasetRoot, queryNode, -1,
                     qo.getDim(), indexMap, datasetIndex, queryindexmap, datalakeIndex, datasetIdMapping, qo.getK(),
                     indexString, null, true, qo.getError(), capacity, weight, saveDatasetIndex, qo.getQuerydata());
-        }else {
+        }
+		else if(qo.getMode()==1){
+			// Intersecting Area
+			Search.setScanning(false);
+			Search.rangeQueryRankingArea(datasetRoot, result, queryNode.getMBRmax(), queryNode.getMBRmin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
+					datalakeIndex, dimNonSelected, dimensionAll);
+		}
+		else {
 			// GridOverlap using index
 			indexNode root = datasetRoot;//datalakeIndex.get(1);//use storee
 
@@ -2314,7 +2297,7 @@ public class Framework {
 	/*-*
 	build node and not insert
 	 */
-	private static indexNode buildNode (double[][]data,int dim) throws IOException {
+	private static indexNode buildNode(double[][]data,int dim) throws IOException {
 //		int id = datasetIdMapping.size()+1;
 //		File file = new File(aString+"/"+filename);
 //		if(!file.exists())
@@ -2345,6 +2328,23 @@ public class Framework {
 		indexNodes.add(newNode);
 		indexNodesAll.add(newNode);
 		return newNode;
+	}
+
+	public static List<double[]> UnionRangeQuery(double[][] querydata,int unionDatasetId,int dim){
+		double[] mbrmax = new double[dim];
+		double[] mbrmin = new double[dim];
+		Arrays.fill(mbrmax,-Double.MAX_VALUE);
+		Arrays.fill(mbrmin,Double.MAX_VALUE);
+		for(double[] row:querydata){
+			for(int i=0;i<dim;i++){
+				mbrmax[i] = Double.max(mbrmax[i],row[i]);
+				mbrmin[i] = Double.min(mbrmin[i],row[i]);
+			}
+		}
+		List<double[]> result = new ArrayList<>();
+		Search.UnionRangeQueryForPoints(mbrmax,mbrmin,unionDatasetId,indexNodes.get(unionDatasetId),result,dim,null,false);
+		Collections.addAll(result,querydata);
+		return result;
 	}
 
 	public static Pair<ArrayList<Double>,Map<Integer, Integer>> pairwiseJoin(int queryID,int datasetID) throws IOException {
