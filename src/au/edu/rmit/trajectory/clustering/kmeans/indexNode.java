@@ -20,7 +20,7 @@ public class indexNode {
 	protected Set<Integer> pointIdList; // the leaf node, the index node is a leaf node when this is not empty, we can
 	protected Set<indexNode> nodeList; // the internal node	
 	protected Set<Integer> nodeIDList;//check whether the root is empty before use, for seralization
-	protected double pivot[];// the mean value
+	protected double[] pivot;// the mean value
 	protected double radius;// the radius from the pivot to the furthest point
 	protected double distanceToFarther;//this is the distance to father for bound estimation
 	protected double []sum;// the sum of all the points inside this node.

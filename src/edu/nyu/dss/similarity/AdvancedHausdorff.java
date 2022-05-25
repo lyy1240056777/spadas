@@ -110,7 +110,7 @@ public class AdvancedHausdorff extends Hausdorff{
     			cmax = cmin;
     	}
     	
-    	if(directed==false)
+    	if(!directed)
 	    	for(int j=0; j<y; j++) {
 	    		double cmin= Double.MAX_VALUE;
 	    		for(int i=0; i<x; i++) {
