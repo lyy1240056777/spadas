@@ -1900,7 +1900,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	}
 	
 	/*
-	 * 2015 Accelerating Lloyd’s Algorithm for k-Means Clustering, using heaps.
+	 * 2015 Accelerating Algorithm for k-Means Clustering, using heaps.
 	 */
 	void assignHeapBound() {
 		storeCentroid();

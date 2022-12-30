@@ -4,11 +4,11 @@ import java.io.IOException;
 import java.util.*;
 import java.util.Map.Entry;
 
-import com.sun.xml.internal.bind.v2.runtime.reflect.Lister;
 import org.apache.commons.lang3.tuple.Pair;
 
 import au.edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
 import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.nyu.dss.similarity.Framework;
 
 /*
  * this is for top-k dataset search based on similarity search, for evaluation paper
@@ -18,8 +18,8 @@ import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
  */
 public class Search {
 	
-	static boolean scanning = false; // set as true to scan every dataset indexed by our datalake, to simulate the bruteforce baseline
-	
+//	static boolean scanning = false; // set as true to scan every dataset indexed by our datalake, to simulate the bruteforce baseline
+	static boolean scanning = true;
 	
 	void kNN() {
 		/*
@@ -227,7 +227,7 @@ public class Search {
 			boolean nonselectedDimension[], boolean dimensionAll) {
 		//give a range, find all the dataset that intersect, we just need the data lake tree and ranked by intersected areas
 		if(datalakeRoot.isrootLeaf()) {
-			double distance = -datalakeRoot.intersectedArea(querymax, querymin, dim, nonselectedDimension, dimensionAll);
+			double distance = datalakeRoot.intersectedArea(querymax, querymin, dim, nonselectedDimension, dimensionAll);
 			if (distance < min_dis) {
 				result = holdingTopK(result, datalakeRoot.getDatasetID(), distance, k, queues, null);
 				if (result.size() == k)
@@ -241,7 +241,7 @@ public class Search {
 				if(!scanning) {
 					bound = childNode.intersectedArea(querymax, querymin, dim, nonselectedDimension, dimensionAll);
 				}
-				if(scanning || -bound<min_dis && bound>0) {
+				if(scanning || bound<min_dis && bound>0) {
 					result = rangeQueryRankingArea(childNode, result, querymax, querymin, min_dis, k, queues, dim, datalakeIndex, nonselectedDimension, dimensionAll);
 				}
 			}
@@ -455,7 +455,7 @@ public class Search {
 				else {// index not loaded in disk
 					if(indexMap!=null)// index in memory 
 						aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, query, 
-								indexMap.get(datasetid), 0, 1, error, false, min_dis, false, null, null, nonselectedDimension, dimensionAll);
+								indexMap.get(datasetid), 0, 1, error, true, min_dis, false, null, null, nonselectedDimension, dimensionAll);
 					else {// index not in memory
 						if(saveDatasetIndex) {// load from disk
 							Map<Integer, indexNode> dataindexMap = indexDSS.restoreSingleIndex(indexString, datasetid, dimension);
@@ -477,9 +477,9 @@ public class Search {
 				counter++;
 			}else {
 				for(indexNode childIndexNode: aIndexNode.getNodelist(datalakeIndex)) {
-					//	System.out.println(childIndexNode.getRadius());
-					qNodes = new queueForNode(query, childIndexNode);
-					aForNodes.add(qNodes);
+						//	System.out.println(childIndexNode.getRadius());
+						qNodes = new queueForNode(query, childIndexNode);
+						aForNodes.add(qNodes);
 				}
 			}
 		}

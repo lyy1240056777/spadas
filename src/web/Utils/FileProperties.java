@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Data
 public class FileProperties {
 
-    private String baseUri;
+    private String baseUri = "./dataset/";
 
-    private String staticUri;
+    private String staticUri = "/dataset/";
 }

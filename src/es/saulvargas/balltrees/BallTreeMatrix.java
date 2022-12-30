@@ -67,7 +67,10 @@ public class BallTreeMatrix extends BinaryTree {
         indexNode rootKmeans = new indexNode(2);
         setWeight(itemMatrix[0].length, null);// set all as 1
         int depth = 0;
-        if (rows.length > leafThreshold && depth < maxDepth) {
+//        if (rows.length > leafThreshold && depth < maxDepth) {
+//            createChildren(root, leafThreshold, depth + 1, maxDepth);
+//        }
+        if (rows.length > leafThreshold) {
             createChildren(root, leafThreshold, depth + 1, maxDepth);
         }
         root.traverseConvert(rootKmeans, itemMatrix[0].length);
@@ -85,7 +88,10 @@ public class BallTreeMatrix extends BinaryTree {
         //TODO set custom wetght for argo
         //weight[2]=0;
         int depth = 0;
-        if (rows.length > leafThreshold && depth < maxDepth) {
+//        if (rows.length > leafThreshold && depth < maxDepth) {
+//            createChildren(root, leafThreshold, depth + 1, maxDepth);
+//        }
+        if (rows.length > leafThreshold) {
             createChildren(root, leafThreshold, depth + 1, maxDepth);
         }
         root.traverseConvert(rootKmeans, dimension);
@@ -101,7 +107,7 @@ public class BallTreeMatrix extends BinaryTree {
 
         Ball leftChild = new Ball(leftRows.toIntArray(), parent.getItemMatrix());
         parent.setLeftChild(leftChild);
-        if (leftChild.getRows().length > leafThreshold && depth < maxDepth) {
+        if (leftChild.getRows().length > leafThreshold) {
             createChildren(leftChild, leafThreshold, depth + 1, maxDepth);
         }
 
@@ -200,12 +206,15 @@ public class BallTreeMatrix extends BinaryTree {
         }
 
         private void calculateRadius() {
-            radius = Double.NEGATIVE_INFINITY;
+            radius = 0;
 
             for (int row : rows) {
                 radius = max(radius, distance2(center, itemMatrix[row]));
             }
             radius = sqrt(radius);
+            if (radius > 100) {
+                System.out.println();
+            }
         }
 
         public double mip(double[] q) {

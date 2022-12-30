@@ -1,0 +1,24 @@
+{
+  "groups": [
+    {
+      "name": "spadas.file",
+      "type": "web.Utils.FileProperties",
+      "sourceType": "web.Utils.FileProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spadas.file.base-uri",
+      "type": "java.lang.String",
+      "sourceType": "web.Utils.FileProperties",
+      "defaultValue": ".\/dataset\/"
+    },
+    {
+      "name": "spadas.file.static-uri",
+      "type": "java.lang.String",
+      "sourceType": "web.Utils.FileProperties",
+      "defaultValue": "\/dataset\/"
+    }
+  ],
+  "hints": []
+}

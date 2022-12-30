@@ -685,7 +685,7 @@ public class indexAlgorithm<E> {
 		double maxBox[] = new double[dimension];
 		for(int dim=0; dim<dimension; dim++) {
 			minBox[dim] = Double.MAX_VALUE;
-			maxBox[dim] = Double.MIN_VALUE;
+			maxBox[dim] = -Double.MAX_VALUE;
 		}
 		// get the bounding box of all the nodes first,
 		for(indexNode aIndexNode : roots) {

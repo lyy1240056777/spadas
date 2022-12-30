@@ -177,16 +177,19 @@ public class AdvancedHausdorff extends Hausdorff{
     	PriorityQueue<queueSecond> secondHeaps = new PriorityQueue<queueSecond>();
     	queueSecond secondq = new queueSecond(Y, 0, 0);
     	secondHeaps.add(secondq);
+//    	distance is never used, so i commented it and changed it to ub.
     	double distance = 0;
     	queueMain mainq = new queueMain(X, secondHeaps, Double.MAX_VALUE, 0);
     	aHeaps.add(mainq);
+    	double ub = 0;
     	//the outlier can be put alone, here
     	while(!aHeaps.isEmpty()) {
-    		mainq = aHeaps.poll();
+//    		mainq = aHeaps.poll();
+			mainq = aHeaps.peek();
     		secondHeaps = mainq.getQueue();
     		secondq = secondHeaps.peek();// we need to think about here peek k continuous points, or we just set k=1
     		indexNode anode = mainq.getIndexNode();
-    		double ub = mainq.getbound();
+    		ub = mainq.getbound();
     		if(reverse && ub<=directDis)// for the directed early breaking
     			return new MutablePair<>(directDis, aHeaps);
     		indexNode bnode = secondq.getNode();
@@ -197,8 +200,13 @@ public class AdvancedHausdorff extends Hausdorff{
     		if( asplit == true &&  bsplit == true) {//if two nodes are null, i.e., they are points // we can change it to radius threshold
     			if(topkEarlyBreaking){// using radius to estimate the lower bound, if the lower bound still big, prune it, 
     				double temp = ub - radiusThreshold;
-    				if(anode==null && bnode==null)
-    					return new MutablePair<>(ub, aHeaps);
+//    				if(anode==null && bnode==null)
+//    					return new MutablePair<>(ub, aHeaps);
+//					push the last mainq back to aHeaps
+					if (anode == null && bnode == null) {
+//						aHeaps.add(mainq);
+						return new MutablePair<>(ub, aHeaps);
+					}
     				if(bnode==null)
     					temp = ub;
     				if(directDis < temp) {// the estimated lower bound
@@ -226,8 +234,11 @@ public class AdvancedHausdorff extends Hausdorff{
     		}
     		if(asplit == false || bsplit == false){
     			boolean splitPr = splitPriority(anode, bnode, splitCompare, asplit, bsplit, dimension, nonselectedDimension, dimensionAll);//
-    			if(splitPr) {
-    				traverseX(anode, point1xys, point2xys, secondHeaps, dimension, aHeaps, fastMode, topkEarlyBreaking, directDis, 
+    			aHeaps.poll();
+				if(splitPr) {
+//					poll the largest element from queueMain
+//					aHeaps.poll();
+    				traverseX(anode, point1xys, point2xys, secondHeaps, dimension, aHeaps, fastMode, topkEarlyBreaking, directDis,
     						false, 0, nodelist, nonselectedDimension, dimensionAll);
     			}else {
     				secondHeaps.poll();
@@ -261,7 +272,8 @@ public class AdvancedHausdorff extends Hausdorff{
     }
     
     // if it is outlier version, we exclude the self-pair
-    static void traverseX(indexNode anode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps, 
+//	before this function didn't have a return value, so i add one.
+    static void traverseX(indexNode anode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps,
     		int dimension, PriorityQueue<queueMain> aHeaps, int fastMode, boolean topkEarlyBreaking, 
     		double directDis, boolean join, double joinThreshold, Map<Integer, indexNode> nodelist, boolean nonselectedDimension[], boolean dimensionAll) {
     	ArrayList<double[]> pivtoList = new ArrayList<double[]>();
@@ -286,9 +298,10 @@ public class AdvancedHausdorff extends Hausdorff{
 			}
 		}
 		int length = pivtoList.size();
+		double minub = Double.MAX_VALUE;
 		for (int i=0; i<length; i++) {
 			PriorityQueue<queueSecond> newsecondHeaps = new PriorityQueue<queueSecond>();
-			double minub = Double.MAX_VALUE;
+
 			for (queueSecond aQueueSecond : secondHeaps) {
 				indexNode newnodeb = aQueueSecond.getNode();
 				Map<Integer, Pair<double[], double[]>> segmentB=null;
@@ -357,6 +370,7 @@ public class AdvancedHausdorff extends Hausdorff{
 				aHeaps.add(mainqa);
 			}
 		}
+//		return minub;
     }
     
     static double traverseY(indexNode bnode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps, 
@@ -420,6 +434,7 @@ public class AdvancedHausdorff extends Hausdorff{
 				continue;
 			boolean self = false;
 			if(bnode.isLeaf()) {
+//				if bnode == null, bnode is a point
 				queueSecond mainqa = new queueSecond(null, lb, arrayList.get(i));
 				if(!selfOutlier || arrayList.get(i) != apoint)// self outlier detection, avoid self-pair points
 					secondHeaps.add(mainqa);
@@ -433,6 +448,8 @@ public class AdvancedHausdorff extends Hausdorff{
 			if (fastMode == 1) {//only when early access is used
 				if(anode != null || !bnode.isLeaf()) {//no need to recompute if two are points
 					if(bnode.isLeaf())
+//						no return? then what for?
+//						need to delete
 						computeNodeDistance(anode, null, dimension, point1xys, point2xys, true, 0, arrayList.get(i));
 					else
 						computeNodeDistance(anode, arrayListnode.get(i), dimension, point1xys, point2xys, true, apoint, 0);
@@ -465,10 +482,14 @@ public class AdvancedHausdorff extends Hausdorff{
     /*
      * we use tighter lower bounds based on balls
      */
+//	need to modify, compare with 0
+//	lower bound should not be less than 0
     static double computeNewLowerBound(double pivotDis, double radiusA, double radiusB) {
 		//System.out.println(pivotDis-radiusB);
-    	return pivotDis-radiusB;
+//    	return pivotDis-radiusB;
+		return Math.max(pivotDis - radiusB, 0);
     }
+
     
     /*
      * we compute the MBR upper bound, for general cases, i.e., any dimensional data

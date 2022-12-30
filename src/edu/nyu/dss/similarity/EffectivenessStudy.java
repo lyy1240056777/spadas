@@ -19,6 +19,7 @@ import org.apache.commons.io.FileUtils;
 import au.edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
 import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
 import au.edu.rmit.trajectory.clustering.kpaths.Util;
+import edu.nyu.dss.similarity.Framework;
 
 
 public class EffectivenessStudy {
@@ -370,7 +371,8 @@ public class EffectivenessStudy {
 			String aString = "/Users/sw160/Desktop/argoverse-api/dataset/train/data";
 			int limit = 10000;
 			File folder = new File(aString);
-			dataMap = Framework.readFolder(folder, limit);
+//			debug in the future
+			dataMap = Framework.readFolder(folder, limit, Framework.cityNodeList.get(0));
 			zcodemap = storeZcurve(minx, miny, range, 2, dataMap, resolution, zcodeSer);
 		}else {
 			zcodemap = deSerializationZcurve(zcodeSer);

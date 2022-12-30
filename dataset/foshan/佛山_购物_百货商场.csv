@@ -1,0 +1,17 @@
+uid,name,cat_L1,cat_L2,province,city,area,address,street_id,detail,child_num,loc_lng,loc_lat,telephone,type,detail_url,price,shop_hours,overall_rating,taste_rating,service_rating,environment_rating,facility_rating,hygiene_rating,technology_rating,image_num,comment_num,groupon_num,discount_num,favorite_num,checkin_num,brand,content_tag,naviloc_lng,naviloc_lat,child_num
+6ee01020dedcf59252e5c5c8,大乐购物广场,购物,百货商场,广东省,佛山市,顺德区,广东省佛山市顺德区乐从镇水藤商业街,,1,1,113.079476,22.924563,,shopping,http://api.map.baidu.com/place/detail?uid=6ee01020dedcf59252e5c5c8&output=html&source=placeapi_v2,,07:30-22:30,3.6,,,,,,,,2,,,,,,,113.079422603,22.924146076743,1
+cae29a8944011ab507fef55a,沃达百货(吉利市场店),购物,百货商场,广东省,佛山市,禅城区,南庄镇吉利市场对面,,1,2,113.017117,22.975624,,shopping,http://api.map.baidu.com/place/detail?uid=cae29a8944011ab507fef55a&output=html&source=placeapi_v2,,08:00-22:00,3.6,,,,,,,,3,,,,,,,113.01656176966,22.976188363358,2
+973c414ee439d9d6c16c14dd,乐从新天地,购物,百货商场,广东省,佛山市,顺德区,佛山市顺德区乐从镇跃进路A56号,973c414ee439d9d6c16c14dd,1,2,113.090846,22.964866,,shopping,http://api.map.baidu.com/place/detail?uid=973c414ee439d9d6c16c14dd&output=html&source=placeapi_v2,,10:00-22:00,0,,,,,,,,1,,,,,,,113.09104899033,22.964401814417,2
+cb1a9375a37d32854302452e,十亩地,,,广东省,佛山市,顺德区,广东省佛山市顺德区裕和路141号,,0,3,113.122084,22.971722,,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,3
+cff2505e6fd8afd20bf5eb8c,惠旺百货商场,,,广东省,佛山市,顺德区,广东省佛山市顺德区工业二路9号,,0,0,113.124515,22.956661,,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+34d0419c3c92d49c28d7ab43,书明百货,,,广东省,佛山市,顺德区,顺德区小布村恒通大厦,,0,0,113.103935,22.979347,,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+ffd6d40378bd7a8f16b54b96,国忠百货,,,广东省,佛山市,顺德区,佛山市顺德区X519小涌市场南侧约80米,,0,0,113.136774,22.962357,"13690114202,13715419686",,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+29fcf60ef68f7b3097ec8442,木记百货商行,,,广东省,佛山市,顺德区,佛山市顺德区工业大道迅发楼西南侧约40米,,0,0,113.118539,22.954889,,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+11d52c8f989520af28b97ce5,贤珍百货,,,广东省,佛山市,顺德区,广东省佛山市顺德区商贸七路18号,,0,0,113.107953,22.961781,(0757)28978259,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+f0c4cbacb2dc6495fda778ba,昌顺百货,,,广东省,佛山市,禅城区,佛山市禅城区石头村农贸市场B15号华尔滋汉堡对面,,0,0,113.126799,22.987706,15118709073,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+ebc522709401cdb859bbbc47,魏敏百货,,,广东省,佛山市,顺德区,广东省佛山市顺德区荷岳路105~106号,,0,0,113.1218,22.96099,13612463839,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+09d9da6051c62eead8ecede3,新家旺百货,,,广东省,佛山市,顺德区,佛山市顺德区大墩工业大道保利天寰西北侧约50米,,0,0,113.126185,22.959085,,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+44984c6c518952077c29bdcc,佰兴烟酒商行,,,广东省,佛山市,顺德区,新丽百货南70米(腾冲南路),,0,0,113.104436,22.966366,18218588993,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+b0d056f230e73c7ecac3db73,升平百货(升平商贸广场店),购物,百货商场,广东省,佛山市,禅城区,广东省佛山市禅城区轻工北七街3号升平百货1楼,b0d056f230e73c7ecac3db73,1,3,113.107044,23.038714,(0757)82211898,shopping,http://api.map.baidu.com/place/detail?uid=b0d056f230e73c7ecac3db73&output=html&source=placeapi_v2,,08:30-21:45,3.3,,,,,,,,3,,,,,,,113.10737147363,23.038510229098,3
+45542d1d9d4bcf8575e5b6a7,升平百货(升平商贸广场店),购物,百货商场,广东省,佛山市,禅城区,广东省佛山市禅城区轻工北七街3号,45542d1d9d4bcf8575e5b6a7,1,1,113.107298,23.038697,(0757)82211898,shopping,http://api.map.baidu.com/place/detail?uid=45542d1d9d4bcf8575e5b6a7&output=html&source=placeapi_v2,,08:00-21:45,0.0,,,,,,,,2,,,,,,,113.10745086048,23.038721955946,1
+bd4731df8ac839c5c72ba194,乐兴百货商场,购物,百货商场,广东省,佛山市,南海区,广东省佛山市南海区大沥狮山镇横岗嫩茶村嫩北旧区十七巷一号,,1,0,113.063428,23.105598,13600206071,shopping,http://api.map.baidu.com/place/detail?uid=bd4731df8ac839c5c72ba194&output=html&source=placeapi_v2,,,,,,,,,,,,,,,,,,113.06352224294,23.105656779343,0

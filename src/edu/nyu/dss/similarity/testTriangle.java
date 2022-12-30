@@ -1,5 +1,7 @@
 package edu.nyu.dss.similarity;
 
+import edu.nyu.dss.similarity.Framework;
+
 import java.io.IOException;
 
 public class testTriangle {

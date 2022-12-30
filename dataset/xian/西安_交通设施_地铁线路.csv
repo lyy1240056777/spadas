@@ -1,0 +1,2 @@
+uid,name,cat_L1,cat_L2,province,city,area,address,street_id,detail,child_num,loc_lng,loc_lat,telephone,type,detail_url,price,shop_hours,overall_rating,taste_rating,service_rating,environment_rating,facility_rating,hygiene_rating,technology_rating,image_num,comment_num,groupon_num,discount_num,favorite_num,checkin_num,brand,content_tag,naviloc_lng,naviloc_lat,child_num
+c48890704c254ebc0d3ddad9,地铁站店,,,陕西省,西安市,碑林区,陕西西安市碑林区雁塔北路59号,,1,0,108.968447,34.249853,,life,http://api.map.baidu.com/place/detail?uid=c48890704c254ebc0d3ddad9&output=html&source=placeapi_v2,,,,,,,,,,,,,,,,,,,,0

@@ -1,0 +1,8 @@
+uid,name,cat_L1,cat_L2,province,city,area,address,street_id,detail,child_num,loc_lng,loc_lat,telephone,type,detail_url,price,shop_hours,overall_rating,taste_rating,service_rating,environment_rating,facility_rating,hygiene_rating,technology_rating,image_num,comment_num,groupon_num,discount_num,favorite_num,checkin_num,brand,content_tag,naviloc_lng,naviloc_lat,child_num
+28e700f120bc0200095cb359,东莒格庄桥,交通设施,桥,山东省,烟台市,牟平区,山东省烟台市牟平区东莒格庄桥(304省道),28e700f120bc0200095cb359,1,0,121.699565,37.174176,,life,http://api.map.baidu.com/place/detail?uid=28e700f120bc0200095cb359&output=html&source=placeapi_v2,,,,,,,,,,1,,,,,,,,,,0
+4d0952f26aea3aae88fc0600,北红石头村桥,交通设施,桥,山东省,烟台市,牟平区,烟台市牟平区,,1,0,121.647757,37.236386,,life,http://api.map.baidu.com/place/detail?uid=4d0952f26aea3aae88fc0600&output=html&source=placeapi_v2,,,,,,,,,,1,,,,,,,,121.64775993103,37.236523424262,0
+5dddf4d33590f76330169b45,孔家庄桥,交通设施,桥,山东省,烟台市,栖霞市,烟台市栖霞市孔家庄中桥,,1,0,121.261689,37.294762,,life,http://api.map.baidu.com/place/detail?uid=5dddf4d33590f76330169b45&output=html&source=placeapi_v2,,,,,,,,,,,,,,,,,,121.26165890741,37.294792452048,0
+f069fa3ebf0955d5ce04eff7,古现大街/湘潭路(路口),,,山东省,烟台市,福山区,烟台市福山区古现大街,,0,0,121.144766,37.578948,,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+32e81747f12509eea8f0cd8d,S302/衡阳路(路口),,,山东省,烟台市,福山区,烟台市福山区S302,,0,0,121.150336,37.573201,,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+87f88492dadcb7bbb74f54a1,福州路与湘福路交叉口,,,山东省,烟台市,福山区,烟台市福山区福州路,,0,0,121.157415,37.580866,,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
+0bf06daebf8bd6b7c17da2d2,福州路与深圳大街交叉口,,,山东省,烟台市,福山区,烟台市福山区深圳大街,,0,0,121.155681,37.562315,,,http://map.baidu.com/,,,,,,,,,,,,,,,,,,,,0
