@@ -13,7 +13,7 @@ import java.util.List;
 public class FileU {
     public static Pair<String[], String[][]> readPreviewDataset(String filename, int max, double[][] data) throws IOException {
 //        File file = findFiles(Framework.aString, filename);
-        File file = new File(Framework.aString + "\\" + filename);
+        File file = new File(Framework.aString + "/" + filename);
         if (file.exists()) {
             System.out.println();
         }
