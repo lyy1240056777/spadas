@@ -29,6 +29,9 @@ build/
 
 ### VS Code ###
 .vscode/
+/out/
+/target/
+/bin/
 
 # Compiled class file
 *.class
