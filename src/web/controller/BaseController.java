@@ -148,9 +148,12 @@ public class BaseController {
     })
     @RequestMapping(value = "spadas/api/rangequery", method = RequestMethod.POST)
     public Map<String, Object> rangequery(@RequestBody rangequeryDTO qo) {
-        return new HashMap() {{
-            put("nodes", Framework.rangequery(qo));
-        }};
+        HashMap<String, Object> result = new HashMap();
+        result.put("nodes", Framework.rangequery(qo));
+        if (qo.getCityName() != "") {
+            result.put("subCityNodes", Framework.cityIndexNodeMap.get(qo.getCityName()));
+        }
+        return result;
     }
 
     @ApiOperation("keywords query")

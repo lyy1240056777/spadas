@@ -49,6 +49,7 @@ public class Framework {
 
     public static List<CityNode> cityNodeList = new ArrayList<>();
 
+    public static Map<String, List<indexNode>> cityIndexNodeMap = new HashMap<>();
     /*
      * z-curve for grid-based overlap
      */
@@ -948,6 +949,7 @@ public class Framework {
             dataMapPorto = readFolder(myFolder, limit, cityNode);
             cityNode.calAttrs(dimension);
             cityNodeList.add(cityNode);
+            cityIndexNodeMap.put(cityNode.cityName, cityNode.nodeList);
             index++;
         }
         System.out.println("Totally " + filelist.length + " files/folders and " + dataPoint.size() + " lines");
@@ -1124,6 +1126,7 @@ public class Framework {
         if (a < limit) {
             indexNodes.add(rootBall);
             cityNode.nodeList.add(rootBall);
+            cityNode.nodeCount +=1;
         }
     }
 
@@ -2522,16 +2525,6 @@ public class Framework {
         Search.rangeQueryRankingArea(root, result, qo.getQuerymax(), qo.getQuerymin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
                 datalakeIndex, dimNonSelected, dimensionAll);
 
-        // dsc sort
-        // Double value is minus so we have to set it to opposite,
-        // and comparator o2-o1
-        // List<Double> list = result.entrySet().stream().sorted((o1,o2)->o2.getValue()-o1.getValue()<0? 1:-1).map(item-> item.getValue()).collect(Collectors.toList());
-        // for(Double i:list)
-        // System.out.println(i);
-//        System.out.println();
-        List<Map.Entry<Integer, Double>> list = result.entrySet().stream().sorted((o1, o2) -> o2.getValue() - o1.getValue() > 0 ? 1 : -1).collect(Collectors.toList());
-        System.out.println();
-//        return result.entrySet().stream().map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).collect(Collectors.toList());
         return result.entrySet().stream().sorted((o1, o2) -> o2.getValue() - o1.getValue() >= 0 ? 1 : -1).map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).collect(Collectors.toList());
     }
 

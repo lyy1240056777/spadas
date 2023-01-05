@@ -1,6 +1,7 @@
 package edu.nyu.dss.similarity;
 
 import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModel;
 
 import java.util.ArrayList;
@@ -12,8 +13,12 @@ import java.util.List;
 @ApiModel(value = "cityNode", description = "city index node")
 public class CityNode {
     public String cityName;
+    @JsonIgnore
     public List<indexNode> nodeList;
+    public int nodeCount;
+
     public double[] pivot;
+
     public double radius;
     public double[] maxBox;
     public double[] minBox;
@@ -21,6 +26,8 @@ public class CityNode {
     public CityNode(String cityName, int dimension) {
         this.cityName = cityName;
         this.nodeList = new ArrayList<>();
+        Framework.cityIndexNodeMap.put(cityName, new ArrayList<>());
+        this.nodeCount = 0;
         pivot = new double[dimension];
         Arrays.fill(pivot, 0);
         radius = 0;
@@ -31,6 +38,7 @@ public class CityNode {
     public CityNode(String cityName, List<indexNode> nodeList, int dimension) {
         this.cityName = cityName;
         this.nodeList = nodeList;
+        this.nodeCount = nodeList.size();
         pivot = new double[dimension];
         Arrays.fill(pivot, 0);
         for (int i = 0; i < dimension; i++) {

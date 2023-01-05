@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 import au.edu.rmit.trajectory.clustering.kpaths.Util;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -28,7 +29,9 @@ public class indexNode {
     protected double[] sum;// the sum of all the points inside this node.
     double[] bounds;//the lower bound distance to the non nearest neighbor;
     private int totalCoveredPoints;
+    @JsonIgnore
     double[][] matrixPivot;
+    @JsonIgnore
     double EMDRadius;
 
     //  used for pick-means

@@ -17,4 +17,6 @@ public class rangequeryDTO {
     double[] querymin;
     boolean useIndex=true;
     int mode=1;
+
+    String cityName = "";
 }
