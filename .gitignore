@@ -32,7 +32,7 @@ build/
 /out/
 /target/
 /bin/
-
+/.idea/
 # Compiled class file
 *.class
 
