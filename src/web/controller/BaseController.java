@@ -264,9 +264,9 @@ public class BaseController {
         Pair<String[], String[][]> basedata = FileU.readPreviewDataset(Framework.datasetIdMapping.get(datasetId), Integer.MAX_VALUE, datasetData);
 
         //int len = querydata.getRight()[0].length+basedata.getRight()[0].length;
-        String[] joinHeaderTemp = ArrayUtils.addAll(querydata.getLeft(), basedata.getLeft());
         String[] distHeader = {"distance(km)"};
-        String[] joinHeader = ArrayUtils.addAll(joinHeaderTemp, distHeader);
+        String[] joinHeaderTemp = ArrayUtils.addAll(querydata.getLeft(), distHeader);
+        String[] joinHeader = ArrayUtils.addAll(joinHeaderTemp, basedata.getLeft());
 //        List<String[]> joindata = pair.getRight().entrySet().stream()
 //                .map(idPair -> ArrayUtils.addAll(querydata.getRight()[idPair.getValue()], basedata.getRight()[idPair.getValue()])).collect(Collectors.toList());
         List<String[]> joinData = new ArrayList<>();
@@ -280,9 +280,8 @@ public class BaseController {
             double tmp = Math.round(distEntry[i] * 1000) / 1000.000;
             String tmpStr = tmp < 5 ? String.valueOf(tmp) : "INVALID";
             distEntryTemp = new String[]{tmpStr};
-            joinData.add(ArrayUtils.addAll(ArrayUtils.addAll(queryEntry, baseEntry), distEntryTemp));
+            joinData.add(ArrayUtils.addAll(ArrayUtils.addAll(queryEntry, distEntryTemp), baseEntry));
         }
-        System.out.println();
         return new HashMap() {{
             put("header", joinHeader);
             put("joinData", joinData);
