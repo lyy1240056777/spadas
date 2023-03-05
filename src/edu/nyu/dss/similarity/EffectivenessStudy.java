@@ -29,7 +29,7 @@ public class EffectivenessStudy {
 	/*
 	 * combine two integers to produce a new value
 	 */
-	public static int combine(int aid, int bid, int lengtho){
+	public static long combine(int aid, int bid, int lengtho){
 		int length = lengtho;
 		int[] a =new int[length];
 		int[] b =new int[length];
@@ -44,14 +44,15 @@ public class EffectivenessStudy {
 			com[2*i]= a[i];
 			com[2*i+1] = b[i];
 		}
-		return bitToint(com, 2*lengtho);
+		return bitToLong(com, 2*lengtho);
 	}
 	
 	/*
 	 * generate the z-curve code
 	 */
-	public static int bitToint(int[] a, int length){
-		int sum = 0;
+//	int改成了long
+	public static long bitToLong(int[] a, int length){
+		long sum = 0;
 		for(int i=0; i<length; i++){
 			sum += a[i]*Math.pow(2, length-i-1);
 		}
@@ -108,10 +109,10 @@ public class EffectivenessStudy {
 			for(int i=0; i<dataset.length; i++) {
 				int x = (int)((dataset[i][0]-minx)/unit);
 				int y = (int)((dataset[i][1]-miny)/unit);
-				int zcode = combine(x,y,resolution);
+				long zcode = combine(x,y,resolution);
 			//	System.out.println(zcode);
-				if(!zcodeaArrayList.contains(zcode))
-					zcodeaArrayList.add(zcode);
+//				if(!zcodeaArrayList.contains(zcode))
+//					zcodeaArrayList.add(zcode);
 			}
 			zcodeMap.put(datasetid, zcodeaArrayList);
 		}
@@ -158,9 +159,9 @@ public class EffectivenessStudy {
 			for(int i=0; i<dataset.length; i++) {
 				int x = (int)((dataset[i][0]-minx)/unit);
 				int y = (int)((dataset[i][1]-miny)/unit);
-				int zcode = combine(x,y,resolution);
-				if(!zcodeaArrayList.contains(zcode))
-					zcodeaArrayList.add(zcode);
+				long zcode = combine(x,y,resolution);
+//				if(!zcodeaArrayList.contains(zcode))
+//					zcodeaArrayList.add(zcode);
 			}
 			zcodeMap.put(datasetid, zcodeaArrayList);
 		}

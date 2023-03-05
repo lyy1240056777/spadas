@@ -206,7 +206,7 @@ public class BaseController {
             @DynamicParameter(name = "nodes", value = "list of DatasetVO", dataTypeClass = DatasetVo.class),
     })
     @RequestMapping(value = "spadas/api/dsquery", method = RequestMethod.POST)
-    public Map<String, Object> datasetQuery(@RequestBody dsqueryDTO qo) throws IOException {
+    public Map<String, Object> datasetQuery(@RequestBody dsqueryDTO qo) throws IOException, CloneNotSupportedException {
         List<DatasetVo> result = Framework.datasetQuery(qo);
         return new HashMap() {{
             put("nodes", result);

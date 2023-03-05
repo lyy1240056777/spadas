@@ -8,6 +8,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import au.edu.rmit.mtree.tests.Data;
+import emd.*;
+import it.unimi.dsi.fastutil.Hash;
+import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
 import org.apache.catalina.webresources.JarResource;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.tuple.Pair;
@@ -24,6 +27,8 @@ import web.Utils.FileProperties;
 import web.VO.DatasetVo;
 import web.exception.FileException;
 
+import javax.naming.InsufficientResourcesException;
+
 @Component
 public class Framework {
     /*
@@ -37,7 +42,11 @@ public class Framework {
     //static String aString = "G:\\IdeaProject\\spadas\\dataset\\argoverse";
     public static String aString = "G:\\IdeaProject\\spadas\\dataset\\argoverse\\";
     public static Map<Integer, String> datasetIdMapping = new HashMap<Integer, String>();//integer
+    //    存储数据集文件id到数据集文件名的映射，每个目录独立映射
+    public static ArrayList<Map<Integer, String>> datasetIdMappingList = new ArrayList<>();
     public static Map<Integer, double[][]> dataMapPorto = new HashMap<Integer, double[][]>();
+    //    每遍历一个目录文件（如城市）生成一个新的map，value总共组成了dataMapPorto，用于计算emd
+    public static Map<Integer, double[][]> dataMapForEachDir = new HashMap<>();
     static TreeMap<Integer, Integer> countHistogram = new TreeMap<Integer, Integer>();
     public static int datalakeID;// the lake id
     static String folderString = ".";
@@ -53,9 +62,14 @@ public class Framework {
     /*
      * z-curve for grid-based overlap
      */
-    static double minx = -90, miny = -180;// the range of dataset space, default values for Argo dataset  TODO now have changed it to lat/lon coordination
+//    对于中国地图，lat纬度范围是0-60，lng经度范围是70-140，所以minx设置成0，miny设置成70
+//    可能得对每个城市设置特定的参数，不然精度不够
+//    static double minx = -90, miny = -180;// the range of dataset space, default values for Argo dataset  TODO now have changed it to lat/lon coordination
+    static double minx = 0, miny = 70;
     static double spaceRange = 4600;
-    static int resolution = 3; // also a parameter to test the grid-based overlap, and the approximate hausdorff, and range query
+    //    对于中国地图，resolution设置为7或8比较好
+//    static int resolution = 3; // also a parameter to test the grid-based overlap, and the approximate hausdorff, and range query
+    static int resolution = 6;
     static double error = 0.0;
 
     /*
@@ -68,7 +82,11 @@ public class Framework {
     static ArrayList<indexNode> indexNodesAll;
     static indexNode datasetRoot = null; // the root node of datalake index in memory mode
     static Map<Integer, Map<Integer, indexNode>> datasetIndex; // restored dataset index
-    static HashMap<Integer, ArrayList<Integer>> zcodemap;
+    static HashMap<Integer, ArrayList<Integer>> zcodemap = new HashMap<>();
+    //    新的z顺序签名哈希表，用来计算emd
+    static HashMap<Integer, HashMap<Long, Double>> zcodeMap = new HashMap<>();
+    //    对整个数据湖建立z顺序签名哈希表，每个数据集目录独立，用来计算emd
+    static ArrayList<HashMap<Integer, HashMap<Long, Double>>> zcodeMapForLake = new ArrayList<>();
     static Map<Integer, Pair<Double, PriorityQueue<queueMain>>> resultPair =
             new HashMap<Integer, Pair<Double, PriorityQueue<queueMain>>>();
     /*
@@ -168,7 +186,7 @@ public class Framework {
                         createDatasetIndex(fileNo, a);
                     }
                     if (!zcurveExist)
-                        storeZcurve(a, fileNo);
+                        storeZcurve(a, fileNo, 0, 0, 0, 0, null);
                     //	Path sourceDirectory = file.toPath();// Paths.get("/Users/personal/tutorials/source");
                     //  Path targetDirectory = Paths.get("/Users/sw160/Desktop/spadas-dataset/Shapenet-allInOne/"+fileNo+".txt");
                     //  write("/Users/sw160/Desktop/spadas-dataset/Shapenet-allInOne/namemapping.txt", fileNo+","+file.getName()+"\n");
@@ -215,7 +233,7 @@ public class Framework {
                     createDatasetIndex(line, a);
                 }
                 if (!zcurveExist)
-                    storeZcurve(a, line);
+                    storeZcurve(a, line, 0, 0, 0, 0, null);
                 line++;
                 if (line > limit + NumberQueryDataset)
                     break;
@@ -297,10 +315,14 @@ public class Framework {
      */
     public static Map<Integer, double[][]> readFolder(File folder, int limit, CityNode cityNode) {
         File[] fileNames = folder.listFiles();
+        int datasetIDForOneDir = 0;
+        String fileName;
+        HashMap<Integer, String> datasetIdMappingItem = new HashMap<>();
 //		boolean isfolderVisited = false;
         //int fileNo = 1;
 //		if(storeAllDatasetMemory)
 //			dataMapPorto = new HashMap<Integer, double[][]>();
+//        遍历每个数据集文件
         for (File file : fileNames) {
             if (file.isDirectory()) {
                 readFolder(file, limit, cityNode);
@@ -322,16 +344,31 @@ public class Framework {
 //            			readContentPoi(file, fileNo++, a);
 //            		}
 //					datasetIdMapping.put(fileNo, parentDir.substring(parentDir.lastIndexOf(File.separator)+1)+File.separator+a);
-                datasetIdMapping.put(fileNo, parentDir.substring(parentDir.lastIndexOf(File.separator) + 1) + File.separator + a);
+//                fileNo考虑修改一下，目前表示的是数据集文件数，或许应该换成数据集目录数
+                fileName = parentDir.substring(parentDir.lastIndexOf(File.separator) + 1) + File.separator + a;
+                datasetIdMappingItem.put(datasetIDForOneDir, fileName);
+                datasetIdMapping.put(fileNo, fileName);
                 if (datalakeID == 7) {
-                    readContentCity(file, fileNo++, a, cityNode);
+                    readContentCity(file, fileNo++, a, cityNode, datasetIDForOneDir);
                 } else {
-                    readContentArgo(file, fileNo++, a, cityNode);
+//                    readContentArgo(file, fileNo++, a, cityNode);
                 }
+                datasetIDForOneDir++;
             }
             if (fileNo > limit)
                 break;
         }
+        cityNode.calAttrs(dimension);
+//        if (!zcodeMap.isEmpty()) {
+//            zcodeMap.clear();
+//        }
+        datasetIdMappingList.add(datasetIdMappingItem);
+        HashMap<Integer, HashMap<Long, Double>> zcodeMapTmp = new HashMap<>();
+        dataMapForEachDir.forEach((k, v) -> {
+            storeZcurve(v, k, cityNode.radius * 2, cityNode.radius * 2, cityNode.pivot[0] - cityNode.radius, cityNode.pivot[1] - cityNode.radius, zcodeMapTmp);
+        });
+        dataMapForEachDir.clear();
+        zcodeMapForLake.add(zcodeMapTmp);
         return dataMapPorto;
     }
 
@@ -376,7 +413,7 @@ public class Framework {
 //				createDatasetIndex(fileNo, xxx, 1, cityNode);
             }
             if (!zcurveExist)
-                storeZcurve(xxx, fileNo);
+                storeZcurve(xxx, fileNo, 0, 0, 0, 0, null);
         }
         return dataMapPorto;
     }
@@ -442,12 +479,12 @@ public class Framework {
                 createDatasetIndex(fileNo, xxx, 1, cityNode);
             }
             if (!zcurveExist)
-                storeZcurve(xxx, fileNo);
+                storeZcurve(xxx, fileNo, 0, 0, 0, 0, null);
         }
         return dataMapPorto;
     }
 
-    public static Map<Integer, double[][]> readContentCity(File file, int fileNo, String fileName, CityNode cityNode) {
+    public static Map<Integer, double[][]> readContentCity(File file, int fileNo, String fileName, CityNode cityNode, int datasetIDForOneDir) {
 //		System.out.println(file.length());
         int i = 0;
         List<double[]> list = new ArrayList<>();
@@ -494,14 +531,18 @@ public class Framework {
                 countHistogram.put(i, countHistogram.get(i) + 1);
             else
                 countHistogram.put(i, 1);
-            if (storeAllDatasetMemory)
+            if (storeAllDatasetMemory) {
                 dataMapPorto.put(fileNo, xxx);
+                dataMapForEachDir.put(datasetIDForOneDir, xxx);
+            }
             if (storeIndexMemory) {
 //				createDatasetIndex(fileNo, xxx,1);
                 createDatasetIndex(fileNo, xxx, 1, cityNode);
             }
-            if (!zcurveExist)
-                storeZcurve(xxx, fileNo);
+//            if (!zcurveExist) {
+//                storeZcurve(xxx, fileNo, 5, 5, 30, 100);
+////                EffectivenessStudy.SerializedZcurve(zcodemap);
+//            }
         }
         return dataMapPorto;
     }
@@ -509,20 +550,43 @@ public class Framework {
     /*
      * storing the z-curve
      */
-    public static void storeZcurve(double[][] dataset, int datasetid) {
-        if (zcodemap == null)
-            zcodemap = new HashMap<Integer, ArrayList<Integer>>();
+    public static void storeZcurve(double[][] dataset, int datasetid, double xRange, double yRange, double minx, double miny, HashMap<Integer, HashMap<Long, Double>> zcodeMapTmp) {
+//        设置一下参数默认值，以后需要修改
+//        xRange = 10;
+//        yRange = 10;
+//        minx = 0;
+//        miny = 70;
+
+//        if (!zcodemap.isEmpty()) {
+//            zcodemap.clear();
+//        }
+//        if (zcodemap == null)
+//            zcodemap = new HashMap<Integer, ArrayList<Integer>>();
+        int pointCnt = dataset.length;
         int numberCells = (int) Math.pow(2, resolution);
-        double unit = spaceRange / numberCells;
-        ArrayList<Integer> zcodeaArrayList = new ArrayList<Integer>();
+//        double unit = spaceRange / numberCells;
+        double xUnit = xRange / numberCells;
+        double yUnit = yRange / numberCells;
+        double weightUnit = 1.0 / pointCnt;
+        HashMap<Long, Double> zcodeItemMap = new HashMap<>();
+//        ArrayList<Integer> zcodeaArrayList = new ArrayList<Integer>();
         for (int i = 0; i < dataset.length; i++) {
-            int x = (int) ((dataset[i][0] - minx) / unit);
-            int y = (int) ((dataset[i][1] - miny) / unit);
-            int zcode = EffectivenessStudy.combine(x, y, resolution);
-            if (!zcodeaArrayList.contains(zcode))
-                zcodeaArrayList.add(zcode);
+//            int x = (int) ((dataset[i][0] - minx) / unit);
+//            int y = (int) ((dataset[i][1] - miny) / unit);
+            int x = (int) ((dataset[i][0] - minx) / xUnit);
+            int y = (int) ((dataset[i][1] - miny) / yUnit);
+            long zcode = EffectivenessStudy.combine(x, y, resolution);
+            if (zcodeItemMap.containsKey(zcode)) {
+                double val = zcodeItemMap.get(zcode);
+                zcodeItemMap.put(zcode, val + weightUnit);
+            } else {
+                zcodeItemMap.put(zcode, weightUnit);
+            }
+//                zcodeaArrayList.add(zcode);
         }
-        zcodemap.put(datasetid, zcodeaArrayList);
+//        是否需要设置zcodemap还是直接用zcodeArrayList？
+//        还是先保留zcodemap
+        zcodeMapTmp.put(datasetid, zcodeItemMap);
     }
 
     /*
@@ -564,7 +628,7 @@ public class Framework {
 //			createDatasetIndex(fileNo, a, 0, cityNode);
         }
         if (!zcurveExist)
-            storeZcurve(a, fileNo);
+            storeZcurve(a, fileNo, 0, 0, 0, 0, null);
     }
 
     public static void readContentCustom(File file, int fileNo) throws IOException {
@@ -602,7 +666,7 @@ public class Framework {
 //			createDatasetIndex(fileNo, a, 0, dataLakeMapping.get(fileNo));
         }
         if (!zcurveExist)
-            storeZcurve(a, fileNo);
+            storeZcurve(a, fileNo, 0, 0, 0, 0, null);
     }
 
     /*
@@ -655,7 +719,7 @@ public class Framework {
                 createDatasetIndex(fileNo, a);
             }
             if (!zcurveExist)
-                storeZcurve(a, fileNo);
+                storeZcurve(a, fileNo, 0, 0, 0, 0, null);
         }
         return dataMapPorto;
     }
@@ -695,7 +759,7 @@ public class Framework {
 //				createDatasetIndex(fileNo, a, 1, dataLakeMapping.get(fileNo));
             }
             if (!zcurveExist)
-                storeZcurve(a, fileNo);
+                storeZcurve(a, fileNo, 0, 0, 0, 0, null);
         }
         return dataMapPorto;
     }
@@ -917,14 +981,20 @@ public class Framework {
         return a;
     }
 
-    /*
+    /**
      * setting parameters and reading the whole datalake
+     * 需要对每个目录（argoverse、poi、beijing、shanghai等）建立z-order签名文件
+     * 这样的话样例查询就只能在同一个数据集目录下进行，但这也合理，毕竟同一个目录下数据集之间距离是最近的
+     *
+     * @param limit
+     * @throws IOException
      */
     static void readDatalake(int limit) throws IOException {
         aString = "./dataset";
         File folder = new File(aString);
         String[] filelist = folder.list();
         int index = 0;
+//        遍历每个目录
         for (String str : filelist) {
             System.out.println(str);
             String pre_str = "./index/dss/index/";
@@ -947,7 +1017,7 @@ public class Framework {
             CityNode cityNode = new CityNode(str, dimension);
 //			dataLakeMapping.put(index, new ArrayList<>());
             dataMapPorto = readFolder(myFolder, limit, cityNode);
-            cityNode.calAttrs(dimension);
+//            cityNode.calAttrs(dimension);
             cityNodeList.add(cityNode);
             cityIndexNodeMap.put(cityNode.cityName, cityNode.nodeList);
             index++;
@@ -1126,7 +1196,7 @@ public class Framework {
         if (a < limit) {
             indexNodes.add(rootBall);
             cityNode.nodeList.add(rootBall);
-            cityNode.nodeCount +=1;
+            cityNode.nodeCount += 1;
         }
     }
 
@@ -2192,9 +2262,10 @@ public class Framework {
             File tempFile = new File(zcurveFile);
             if (!tempFile.exists()) {// create the z-curve code for each dataset
                 zcurveExist = false;
-                if (dataMapPorto == null)
+                if (dataMapPorto == null) {
+//                    因为有bug所以先注释掉
                     zcodemap = EffectivenessStudy.storeZcurveFile(minx, miny, spaceRange, 2, resolution, zcurveFile, limit, datasetIdMapping);
-                else
+                } else
                     zcodemap = EffectivenessStudy.storeZcurve(minx, miny, spaceRange, 2, dataMapPorto, resolution, zcurveFile);
             } else {
                 zcurveExist = true;
@@ -2431,7 +2502,14 @@ public class Framework {
 
     //TODO custom code
 
-    public static void init() throws IOException, InterruptedException {
+    /**
+     * 网页第一次加载和每次刷新时调用，因此需要判断相关的结构和变量是否已经存在
+     *
+     * @throws IOException
+     * @throws InterruptedException
+     */
+    public static void init() throws IOException, InterruptedException, CloneNotSupportedException {
+//        判断建立索引相关的结构与变量是否已经存在
         if (fileNo > 0) {
             fileNo = 0;
         }
@@ -2456,6 +2534,7 @@ public class Framework {
         if (dataPoint != null) {
             dataPoint.clear();
         }
+//        专属于城市数据集的结构
         if (!cityNodeList.isEmpty()) {
             cityNodeList.clear();
         }
@@ -2463,16 +2542,19 @@ public class Framework {
         dimension = 2;
 //		indexString = "./index/dss/index/argo/";
 //		zcodeSer= "./index/dss/index/argo/argo_bitmaps";
+//        是否存储所有数据集到内存？是，但好像并没有真的执行存储操作，有待进一步观察
         storeAllDatasetMemory = true;
 
-        //??Zcurve
+//        Zcurve
+//        命名要改，现在的有点问题
         String zcurveFile = zcodeSer + resolution + "-" + limit + ".ser";
         File tempFile = new File(zcurveFile);
+//        z-order文件是针对一个数据集还是所有数据集？
         if (!tempFile.exists()) {// create the z-curve code for each dataset
             zcurveExist = false;
         } else {
-            zcurveExist = true;
-            zcodemap = EffectivenessStudy.deSerializationZcurve(zcurveFile);
+            zcurveExist = false;
+//            zcodemap = EffectivenessStudy.deSerializationZcurve(zcurveFile);
         }
 
         //
@@ -2487,11 +2569,41 @@ public class Framework {
 //        TimeUnit.MINUTES.sleep(1);
         readDatalake(limit);// read the first
         indexNodesAll = new ArrayList<>(indexNodes);
+//        序列化z签名文件应该在读每个目录以后进行
 //		if(!zcurveExist)
 //			EffectivenessStudy.SerializedZcurve(zcurveFile, zcodemap);
         createDatalake(limit);// create or load the index of whole data lake, and store it into disk to avoid rebuilding it
         //System.out.println(1);
-        System.out.println();
+//        System.out.println();
+//        System.out.println("test EMD");
+//        testEMD();
+//        System.out.println("test finished");
+//        testExemplarSearch();
+    }
+
+    public static void testEMD() throws CloneNotSupportedException {
+        int dataDirID = 1, datasetQueryID = 3, topk = 10;
+        EMD(dataDirID, datasetQueryID, topk);
+
+    }
+
+    public static void testExemplarSearch() throws IOException {
+//        mode = 0
+        int datasetQueryID = 115;
+        HashMap<Integer, Double> result = new HashMap<>();
+        double[][] dataQuery = dataMapPorto.get(datasetQueryID);
+        indexNode queryNode = buildNode(dataQuery, dimension);
+        Map<Integer, indexNode> queryindexmap = null;
+        int topk = 10;
+        result = Search.pruneByIndex(dataMapPorto, datasetRoot, queryNode, -1, dimension,
+                indexMap, datasetIndex, queryindexmap, datalakeIndex, datasetIdMapping, topk,
+                indexString, null, true, 0, capacity, weight, saveDatasetIndex, dataQuery);
+        System.out.println("Haus result:");
+        System.out.println("top " + topk + " results:");
+        result.forEach((k, v) -> {
+            System.out.println("id = " + k + ", name = " + datasetIdMapping.get(k));
+        });
+        System.out.println("Haus finished");
     }
 
     // web service part
@@ -2539,7 +2651,7 @@ public class Framework {
         return res;
     }
 
-    public static List<DatasetVo> datasetQuery(dsqueryDTO qo) throws IOException {
+    public static List<DatasetVo> datasetQuery(dsqueryDTO qo) throws IOException, CloneNotSupportedException {
         //TODO querydata???indexnode??node???????????querydata?????DTO???queryid????queryid??null?-1????
 
         indexNode queryNode;
@@ -2559,7 +2671,7 @@ public class Framework {
             Search.setScanning(false);
             Search.rangeQueryRankingArea(datasetRoot, result, queryNode.getMBRmax(), queryNode.getMBRmin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
                     datalakeIndex, dimNonSelected, dimensionAll);
-        } else {
+        } else if (qo.getMode() == 2) {
             // GridOverlap using index
             indexNode root = datasetRoot;//datalakeIndex.get(1);//use storee
 
@@ -2569,9 +2681,321 @@ public class Framework {
             for (int i = 0; i < zcodemap.get(queryid).size(); i++)
                 queryzcurve[i] = zcodemap.get(queryid).get(i);
             result = Search.gridOverlap(root, result, queryzcurve, Double.MAX_VALUE, qo.getK(), null, datalakeIndex);
+        } else {
+//            emd
+            int[] queryID = convertID(qo.getDatasetId());
+            PriorityQueue<relaxIndexNode> resQueue = EMD(queryID[0], queryID[1], qo.getK());
+            while (!resQueue.isEmpty()) {
+                relaxIndexNode rin = resQueue.poll();
+                result.put(convertID(queryID[0], rin.getResultId()), rin.getLb());
+            }
         }
         return result.entrySet().stream().sorted((o1, o2) -> o2.getValue() - o1.getValue() > 0 ? 1 : -1).
                 map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).collect(Collectors.toList());
+    }
+
+    public static PriorityQueue<relaxIndexNode> EMD(int dataDirID, int datasetQueryID, int topk) throws CloneNotSupportedException {
+        HashMap<Integer, HashMap<Long, Double>> mapForDir = zcodeMapForLake.get(dataDirID);
+        HashMap<Long, Double> mapQuery = mapForDir.get(datasetQueryID);
+        HashMap<Integer, ArrayList<double[]>> allHistogram = new HashMap<>();
+        double[][] iterMatrix = new double[mapForDir.size()][dimension];
+        double[] ubMove = new double[mapForDir.size()];
+        int[] histogram_name = new int[mapForDir.size()];
+//        signature_t querySignature = new signature_t();
+        double[] query = new double[dimension];
+        double radiusQuery = 0;
+        signature_t querySignature = getAllData(mapForDir, datasetQueryID, allHistogram, iterMatrix, ubMove, histogram_name, query, radiusQuery);
+        int leafThreshold = 10;
+        int maxDepth = 15;
+        indexNode ballTree = ball_tree.create(ubMove, iterMatrix, leafThreshold, maxDepth, dimension);
+        ArrayList<Integer> firstFlterResult = getBranchAndBoundResultID(ballTree, query);
+        PriorityQueue<relaxIndexNode> resultApprox = new PriorityQueue<>(new ComparatorByRelaxIndexNode());
+        relax_EMD re = new relax_EMD();
+
+        int filterCount = 0;
+        int refineCount = 0;
+
+        for (int id : firstFlterResult) {
+            signature_t data = getSignature(id - 1, allHistogram);
+            double emdLB = re.tighter_ICT(data, querySignature);
+            if (resultApprox.size() < topk) {
+                relaxIndexNode in = new relaxIndexNode(id, emdLB);
+                resultApprox.add(in);
+                refineCount++;
+            } else {
+                double best = resultApprox.peek().lb;
+                double lowerbound = emdLB;
+                if (lowerbound >= best) {
+                    filterCount++;
+                    continue;
+                }//被过滤
+                else {
+                    relaxIndexNode in = new relaxIndexNode(id, emdLB);
+                    resultApprox.poll();
+                    resultApprox.add(in);
+                    refineCount++;
+                }
+            }
+        }
+        System.out.println("query dataset is " + datasetIdMappingList.get(dataDirID).get(datasetQueryID));
+        System.out.println("EMD result:");
+        System.out.println("top " + topk + " results:");
+        for (relaxIndexNode item : resultApprox) {
+            System.out.println("id = " + item.resultId + ", name = " + datasetIdMappingList.get(dataDirID).get(item.resultId));
+        }
+        System.out.println("EMD finished");
+        return resultApprox;
+    }
+
+//    id从datasetIdMappingList转换到datasetIdMapping
+    public static int convertID(int idOfDir, int idInDir) {
+        if (!datasetIdMapping.isEmpty() && !datasetIdMappingList.isEmpty()) {
+            int tmp = 0;
+            for (int i = 0; i < idOfDir; i++) {
+                tmp += datasetIdMappingList.get(i).size();
+            }
+            return tmp + idInDir;
+        }
+        System.out.println("convert id failed");
+        return -1;
+    }
+
+//    id从datasetIdMapping转换到datasetIdMappingList
+    public static int[] convertID(int idOfLake) {
+        if (!datasetIdMapping.isEmpty() && !datasetIdMappingList.isEmpty()) {
+            int tmp = idOfLake, dirSize = datasetIdMappingList.get(0).size();
+            int idOfDir = 0, idInDir = 0;
+            while (tmp >= dirSize) {
+                tmp -= dirSize;
+                idOfDir++;
+                dirSize = datasetIdMappingList.get(idOfDir).size();
+            }
+            idInDir = tmp;
+            return new int[]{idOfDir, idInDir};
+        }
+        System.out.println("convert id failed");
+        return null;
+    }
+
+    public static signature_t getAllData(HashMap<Integer, HashMap<Long, Double>> mapForDir, int datasetQueryID, HashMap<Integer, ArrayList<double[]>> allHistogram,
+                                         double[][] iterMatrix, double[] ubMove, int[] histogram_name, double[] query, double queryRadius) {
+        ArrayList<double[]> l = new ArrayList<>();
+        DoubleArrayList ub = new DoubleArrayList();
+        ArrayList<String[]> datasetList_after_pooling = getPooling(mapForDir);
+        ArrayList<Integer> his = new ArrayList(); //his coresponding to the all histogram_name
+        ArrayList<Integer> datasetID = new ArrayList<>();
+        int numberOfLine = 0;
+        signature_t querySignature = null;
+        while (numberOfLine < mapForDir.size()) {
+            ArrayList<double[]> allPoints = new ArrayList<>();
+            HashMap<Long, Double> map1 = mapForDir.get(numberOfLine);
+            for (long key : map1.keySet()) {
+                long[] coord = resolve(key);
+                double[] d = new double[3];
+                d[0] = Double.parseDouble(String.valueOf(coord[0]));
+                d[1] = Double.parseDouble(String.valueOf(coord[1]));
+                d[2] = map1.get(key);
+                allPoints.add(d);
+            }
+            //sampleData
+            String[] buf = datasetList_after_pooling.get(numberOfLine);
+            allHistogram.put(numberOfLine, allPoints);
+//            datasetID.add(numberOfLine);
+            if (numberOfLine == datasetQueryID) {
+                //sampleData
+//                query = new double[dimension];
+                query[0] = Double.parseDouble(buf[1]);
+                query[1] = Double.parseDouble(buf[2]);
+                queryRadius = Double.parseDouble(buf[3]);
+
+                int n = allPoints.size();
+                feature_t[] features = new feature_t[n];
+                double[] weights = new double[n];
+                for (int i = 0; i < n; i++) {
+                    features[i] = new feature_t(allPoints.get(i)[0], allPoints.get(i)[1]);
+                    weights[i] = allPoints.get(i)[2];
+                }
+                querySignature = new signature_t(n, features, weights);
+            }
+            //sampleData
+            double[] corrd = new double[dimension];
+            corrd[0] = Double.parseDouble(buf[1]);
+            corrd[1] = Double.parseDouble(buf[2]);
+            l.add(corrd);
+            his.add(Integer.parseInt(buf[0]));
+            ub.add(Double.parseDouble(buf[3]));
+            numberOfLine++;
+
+        }
+        //sampleData
+        int countOfRow = numberOfLine;
+//        iterMatrix = new double[countOfRow][dimension];
+//        ubMove = new double[countOfRow];
+//        histogram_name = new int[countOfRow];
+        ubMove = ub.toDoubleArray();
+        for (int i = 0; i < countOfRow; i++) {
+            iterMatrix[i][0] = l.get(i)[0];
+            iterMatrix[i][1] = l.get(i)[1];
+            histogram_name[i] = his.get(i);
+        }
+//        return datasetID;
+        return querySignature;
+    }
+
+    public static ArrayList<String[]> getPooling(HashMap<Integer, HashMap<Long, Double>> mapForDir) {
+        ArrayList<String[]> dataSetList_after_pooling = new ArrayList<>();
+        pooling p = new pooling();
+        mapForDir.forEach((k, v) -> {
+            HashMap<Long, Double> map1 = v;
+            signature_t s1 = getSignature(map1);
+            signature_t s1_pooling = null;
+            try {
+                s1_pooling = p.poolingOperature(s1, 1);
+            } catch (CloneNotSupportedException e) {
+                throw new RuntimeException(e);
+            }
+            double ub_move = p.getUb();
+            String[] string = new String[4];
+            string[0] = String.valueOf(k);
+            string[1] = String.valueOf(s1_pooling.Features[0].X);
+            string[2] = String.valueOf(s1_pooling.Features[0].Y);
+            string[3] = String.valueOf(ub_move);
+            dataSetList_after_pooling.add(string);
+        });
+        return dataSetList_after_pooling;
+    }
+
+    public static signature_t getSignature(HashMap<Long, Double> map) {
+        int n = map.size();
+        feature_t[] Features = new feature_t[n];
+        double[] Weights = new double[n];
+        long[] Coordinates;
+        double unit = 1.0;
+        int i = 0;
+        for (long key : map.keySet()) {
+            Coordinates = resolve(key);
+            Features[i] = new feature_t(Coordinates[0] * unit, Coordinates[1] * unit);
+            Weights[i] = map.get(key);
+            i++;
+        }
+        signature_t s = new signature_t(n, Features, Weights);
+        return s;
+    }
+
+    public static signature_t getSignature(int id, HashMap<Integer, ArrayList<double[]>> allHistogram) {
+        ArrayList<double[]> a = allHistogram.get(id);
+        int n = a.size();
+        feature_t[] features = new feature_t[n];
+        double[] weights = new double[n];
+        for (int i = 0; i < n; i++) {
+            features[i] = new feature_t(a.get(i)[0], a.get(i)[1]);
+            weights[i] = a.get(i)[2];
+        }
+        signature_t dataSignature = new signature_t(n, features, weights);
+        return dataSignature;
+    }
+
+    public static long[] resolve(long code) {
+        long[] Coordinates = new long[2];
+        String str = Long.toBinaryString(code);
+
+        while (str.length() < 2 * resolution) {
+            str = "0" + str;
+        }
+
+        StringBuilder c = new StringBuilder();
+        StringBuilder d = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            if (i % 2 == 0)
+                c.append(str.charAt(i));
+            else
+                d.append(str.charAt(i));
+        }
+
+        Coordinates[0] = Long.parseLong(c.toString(), 2);
+        Coordinates[1] = Long.parseLong(d.toString(), 2);
+        return Coordinates;
+    }
+
+//    public static indexNode createBallTree() throws IOException,CloneNotSupportedException {
+////        long startTime = System.currentTimeMillis();
+//        int leafThreshold = leaf_Threshold;
+//        int maxDepth = max_Depth; //
+//        long startTime = System.currentTimeMillis();
+//        long endTime1 = System.currentTimeMillis();
+//        indexNode in = ball_tree.create(ubMove, iterMatrix, leafThreshold, maxDepth, dimension);
+//        long endTime2 = System.currentTimeMillis(); // current time
+//        return in;
+//    }
+
+    public static ArrayList<Integer> getBranchAndBoundResultID(indexNode root, double[] query) {
+        ArrayList<Integer> resultID = new ArrayList<>();
+        BranchAndBound(root, query);
+        while (!PQ_Branch.isEmpty()) {
+            indexNodeExpand in = PQ_Branch.poll();
+            resultID.addAll(in.getin().getpointIdList());
+//            System.out.println("LB = "+ in.lb+"  UB==  "+in.ub);
+        }
+        return resultID;
+    }
+
+    public static double distance(double[] x, double[] y) {
+        double d = 0.0;
+        for (int i = 0; i < x.length; i++) {
+            d += (x[i] - y[i]) * (x[i] - y[i]);
+        }
+        return Math.sqrt(d);
+    }
+
+    public static PriorityQueue<indexNodeExpand> PQ_Branch = new PriorityQueue<>(new ComparatorByIndexNodeExpand());
+    public static double LB_Branch = 1000000000;
+    public static double UB_Branch = 1000000000;
+
+    public static void BranchAndBound(indexNode root, double[] query) {
+        if (root.isLeaf()) {//leaf node
+//            System.out.println("distance(root.getPivot(), query)======"+distance(root.getPivot(), query));
+//            System.out.println("root.getEMDRadius()====="+root.getEMDRadius());
+            double LowerBound = distance(root.getPivot(), query) - root.getEMDRadius();
+            double UpperBound = distance(root.getPivot(), query) + root.getEMDRadius();
+//            System.out.print(LowerBound < 0);
+
+            indexNodeExpand in = new indexNodeExpand(root, LowerBound, UpperBound);
+            if (PQ_Branch.isEmpty()) {
+                PQ_Branch.add(in);
+            } else if (in.getLb() > UB_Branch) {
+                //Pruning
+            } else if (in.getUb() < LB_Branch) {
+//                PQ_Branch.poll();
+//                PQ_Branch.add(in);
+                while (in.getUb() < LB_Branch) {
+                    PQ_Branch.poll();
+                    if (!PQ_Branch.isEmpty()) {
+                        LB_Branch = PQ_Branch.peek().lb;
+                        UB_Branch = PQ_Branch.peek().ub;
+                    } else {
+                        break;
+                    }
+                }
+                PQ_Branch.add(in);
+            } else {
+                PQ_Branch.add(in);
+            }
+            LB_Branch = PQ_Branch.peek().lb;
+            UB_Branch = PQ_Branch.peek().ub;
+        } else {//internal node
+            Set<indexNode> listnode = root.getNodelist();
+            for (indexNode aListNode : listnode) {
+                double LowerBound = distance(aListNode.getPivot(), query) - aListNode.getEMDRadius();
+                double UpperBound = distance(aListNode.getPivot(), query) + aListNode.getEMDRadius();
+                if (LowerBound > UB_Branch) {
+                }//no sense looking here
+                else {// if (LowerBound <= UB_Branch )
+                    BranchAndBound(aListNode, query);
+                }
+            }
+
+        }
     }
 
     /*-*
@@ -2664,5 +3088,21 @@ public class Framework {
 
     public static double[][] getMatrixByDatasetId(int id) {
         return dataMapPorto.get(id);
+    }
+}
+
+class ComparatorByIndexNodeExpand implements Comparator { //ordered by distance
+    public int compare(Object o1, Object o2) {
+        indexNodeExpand in1 = (indexNodeExpand) o1;
+        indexNodeExpand in2 = (indexNodeExpand) o2;
+        return (in2.getLb() - in1.getLb() > 0) ? 1 : -1;
+    }
+}
+
+class ComparatorByRelaxIndexNode implements Comparator { //small->large
+    public int compare(Object o1, Object o2) {
+        relaxIndexNode in1 = (relaxIndexNode) o1;
+        relaxIndexNode in2 = (relaxIndexNode) o2;
+        return (in2.getLb() - in1.getLb() > 0) ? 1 : -1;
     }
 }

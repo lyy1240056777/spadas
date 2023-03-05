@@ -29,10 +29,17 @@ public class indexNode {
     protected double[] sum;// the sum of all the points inside this node.
     double[] bounds;//the lower bound distance to the non nearest neighbor;
     private int totalCoveredPoints;
-    @JsonIgnore
-    double[][] matrixPivot;
-    @JsonIgnore
+//    @JsonIgnore
+//    double[][] matrixPivot;
+//    @JsonIgnore
+//    double EMDRadius;
+
+//    用来计算EMD
+//    EMDRadius = radius + minUbMove
     double EMDRadius;
+//    一个节点内部所有点的UbMove的最小值？
+    double minUbMove;
+
 
     //  used for pick-means
     short assignedClusterID = 0;// it is set as 0 when not assigned, >0 is assigned in current iteration, <0 show the pervious assigned cluster
@@ -54,6 +61,15 @@ public class indexNode {
 
     // used for fair clustering
     private double totalCoveredPointsFair = 0; //calculate the normalized
+
+//    EMD相关
+    public void setEMDRadius(double radius, double ubMove){
+        this.EMDRadius = radius + ubMove;
+    }
+    public double getEMDRadius(){
+        return EMDRadius;
+    }
+
 
     long getMemory(int dimension) {
         long all = 0;

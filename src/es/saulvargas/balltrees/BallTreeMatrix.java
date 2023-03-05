@@ -161,18 +161,33 @@ public class BallTreeMatrix extends BinaryTree {
     //the above function can be optimized to build a balanced kd-tree, by changing the spliting rules to Median of medians or midvalue
     
 
-    public static class Ball extends NodeBall {
+    public static class Ball extends BinaryTree.NodeBall {
 
-        private double[] center;
-        private double radius;
-        private int[] rows;//it
-        private final double[][] itemMatrix;
+        public double[] center;
+        public double radius;
+        public int[] rows;//it
+        public final double[][] itemMatrix;
+        public double[] ubMove;
+        public int[] rowsID;
 
         public Ball(int[] rows, double[][] itemMatrix) {
             this.rows = rows;
             this.itemMatrix = itemMatrix;
             calculateCenter();
             calculateRadius();
+        }
+
+        public Ball(double[] ubMove, int[] rows, double[][] itemMatrix) {
+            this.rows = rows;
+            this.itemMatrix = itemMatrix;
+            this.ubMove = ubMove;
+            this.rowsID = rows;
+            this.calculateCenter();
+            this.calculateRadius();
+        }
+
+        public double[] getUbMove() {
+            return ubMove;
         }
 
         @Override
@@ -189,6 +204,8 @@ public class BallTreeMatrix extends BinaryTree {
         public Ball getRightChild() {
             return (Ball) super.getRightChild();
         }
+
+
 
         private void calculateCenter() {
             //TODO set it 2, fix it afterwards
@@ -277,6 +294,78 @@ public class BallTreeMatrix extends BinaryTree {
     			return count;
     		}		
     	}
+
+        public int traverseConvert2(indexNode rootKmeans, int dimension) {
+            double[] d = new double[this.rowsID.length];
+            int index = 0;
+            int[] var5 = this.rowsID;
+            int var6 = var5.length;
+
+            int count;
+            for(count = 0; count < var6; ++count) {
+                int row = var5[count];
+                d[index] = this.ubMove[row];
+                ++index;
+            }
+
+            double maxUbMove = this.calcateMaxUbMove(d);
+            rootKmeans.setEMDRadius(this.radius, maxUbMove);
+            rootKmeans.setPivot(this.center);
+            if (this.rows == null) {
+                count = 0;
+                indexNode childleftnodekmeans = new indexNode(dimension);
+                count = count + this.getLeftChild().traverseConvert2(childleftnodekmeans, dimension);
+                rootKmeans.addNodes(childleftnodekmeans);
+                indexNode childrightnodekmeans = new indexNode(dimension);
+                count += this.getRightChild().traverseConvert2(childrightnodekmeans, dimension);
+                rootKmeans.addNodes(childrightnodekmeans);
+                rootKmeans.setTotalCoveredPoints(count);
+                return count;
+            } else {
+                Set<Integer> aIntegers = new HashSet();
+                double[] sumOfPoints = new double[dimension];
+                int[] var9 = this.rows;
+                int var10 = var9.length;
+
+                for(int var11 = 0; var11 < var10; ++var11) {
+                    int id = var9[var11];
+                    aIntegers.add(id + 1);
+
+                    for(int i = 0; i < dimension; ++i) {
+                        sumOfPoints[i] += this.itemMatrix[id][i];
+                    }
+                }
+
+                rootKmeans.setSum(sumOfPoints);
+                rootKmeans.addPoint(aIntegers);
+                rootKmeans.setTotalCoveredPoints(aIntegers.size());
+                return aIntegers.size();
+            }
+        }
+
+        public double calcateMaxUbMove(double[] ubMove) {
+            double u = -1.0E8;
+
+            for(int i = 0; i < ubMove.length; ++i) {
+                if (u < ubMove[i]) {
+                    u = ubMove[i];
+                }
+            }
+
+            return u;
+        }
+
+        public double calcateMinUbMove(double[] ubMove) {
+            double u = 1.0E8;
+
+            for(int i = 0; i < ubMove.length; ++i) {
+                if (u > ubMove[i]) {
+                    u = ubMove[i];
+                }
+            }
+
+            return u;
+        }
     }
 
     public static double distance(double[] x, double[] y) {
