@@ -45,6 +45,7 @@ build/
 # Data files
 GTFSData/
 ProcessedData/
+/dataset/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
