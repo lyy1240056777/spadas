@@ -67,12 +67,12 @@ public class BallTreeMatrix extends BinaryTree {
         indexNode rootKmeans = new indexNode(2);
         setWeight(itemMatrix[0].length, null);// set all as 1
         int depth = 0;
-//        if (rows.length > leafThreshold && depth < maxDepth) {
-//            createChildren(root, leafThreshold, depth + 1, maxDepth);
-//        }
-        if (rows.length > leafThreshold) {
+        if (rows.length > leafThreshold && depth < maxDepth) {
             createChildren(root, leafThreshold, depth + 1, maxDepth);
         }
+//        if (rows.length > leafThreshold) {
+//            createChildren(root, leafThreshold, depth + 1, maxDepth);
+//        }
         root.traverseConvert(rootKmeans, itemMatrix[0].length);
         return rootKmeans;
     }
@@ -88,14 +88,42 @@ public class BallTreeMatrix extends BinaryTree {
         //TODO set custom wetght for argo
         //weight[2]=0;
         int depth = 0;
-//        if (rows.length > leafThreshold && depth < maxDepth) {
-//            createChildren(root, leafThreshold, depth + 1, maxDepth);
-//        }
-        if (rows.length > leafThreshold) {
+        if (rows.length > leafThreshold && depth < maxDepth) {
             createChildren(root, leafThreshold, depth + 1, maxDepth);
         }
+//        if (rows.length > leafThreshold) {
+//            createChildren(root, leafThreshold, depth + 1, maxDepth);
+//        }
+//        修正中心和半径，确保父节点包含子节点，但bound可能会不太紧密
+        refineNode(root, dimension);
         root.traverseConvert(rootKmeans, dimension);
         return rootKmeans;
+    }
+
+    /**
+     * 自上而下地递归地更新Ball对象的中心和半径
+     * 类似于树的后序遍历
+     * 测试效果并不理想
+     * @param parent
+     */
+    private static void refineNode(Ball parent, int dimension) {
+        if (parent.isLeaf()) {
+            return;
+        }
+        refineNode(parent.getLeftChild(), dimension);
+        refineNode(parent.getRightChild(), dimension);
+//        更新父节点的中心
+        double[] pivot = new double[dimension];
+        double distOfCenter = 0;
+        for (int i = 0; i < dimension; i++) {
+            pivot[i] = (parent.getLeftChild().getCenter()[i] + parent.getRightChild().getCenter()[i]) / 2;
+            distOfCenter += Math.pow((parent.getLeftChild().getCenter()[i] - parent.getRightChild().getCenter()[i]) / 2, 2);
+        }
+        parent.setCenter(pivot);
+//        更新父节点的半径
+        double radiLarger = Math.max(parent.getLeftChild().getRadius(), parent.getRightChild().getRadius());
+        distOfCenter = Math.sqrt(distOfCenter);
+        parent.setRadius(radiLarger + distOfCenter);
     }
 
     private static void createChildren(Ball parent, int leafThreshold, int depth, int maxDepth) {
@@ -107,13 +135,17 @@ public class BallTreeMatrix extends BinaryTree {
 
         Ball leftChild = new Ball(leftRows.toIntArray(), parent.getItemMatrix());
         parent.setLeftChild(leftChild);
-        if (leftChild.getRows().length > leafThreshold) {
+
+//        增加测试，看是否真的存在父节点无法包含子节点的情况
+        
+
+        if (leftChild.getRows().length > leafThreshold && depth < maxDepth) {
             createChildren(leftChild, leafThreshold, depth + 1, maxDepth);
         }
 
         Ball rightChild = new Ball(rightRows.toIntArray(), parent.getItemMatrix());
         parent.setRightChild(rightChild);
-        if (rightChild.getRows().length > leafThreshold) {
+        if (rightChild.getRows().length > leafThreshold && depth < maxDepth) {
             createChildren(rightChild, leafThreshold, depth + 1, maxDepth);
         }
     }
@@ -168,6 +200,15 @@ public class BallTreeMatrix extends BinaryTree {
         public int[] rows;//it
         public final double[][] itemMatrix;
         public double[] ubMove;
+
+        public void setCenter(double[] center) {
+            this.center = center;
+        }
+
+        public void setRadius(double radius) {
+            this.radius = radius;
+        }
+
         public int[] rowsID;
 
         public Ball(int[] rows, double[][] itemMatrix) {
@@ -267,13 +308,15 @@ public class BallTreeMatrix extends BinaryTree {
         }
         
         public int traverseConvert(indexNode rootKmeans, int dimension) {
-    		rootKmeans.setRadius(radius);    		
-    		rootKmeans.setPivot(center);//  		
+    		rootKmeans.setRadius(radius);
+            rootKmeans.setPivot(center);//
     		if(rows != null){//for the leaf node
     			Set<Integer> aIntegers = new HashSet<Integer>();
     			double []sumOfPoints = new double[dimension];
     			for(int id : rows) {
-    				aIntegers.add(id+1);//TODO the pointid 注意此处+1
+//                    他妈的为什么要+1？？？
+//                    我偏不要+1！！！
+    				aIntegers.add(id);//TODO the pointid 注意此处+1
     				for(int i=0; i<dimension; i++)
     					sumOfPoints[i] += itemMatrix[id][i];
     			}

@@ -190,8 +190,10 @@ public class AdvancedHausdorff extends Hausdorff{
     		secondq = secondHeaps.peek();// we need to think about here peek k continuous points, or we just set k=1
     		indexNode anode = mainq.getIndexNode();
     		ub = mainq.getbound();
-    		if(reverse && ub<=directDis)// for the directed early breaking
-    			return new MutablePair<>(directDis, aHeaps);
+//			<=改成了<, 不然直接终止了
+//			注释掉了这个方法出口，不知道他有什么意义
+//    		if(reverse && ub<directDis)// for the directed early breaking
+//    			return new MutablePair<>(directDis, aHeaps);
     		indexNode bnode = secondq.getNode();
     	//	if(topkEarlyBreaking && anode!=null && bnode!=null && directDis<secondq.getbound())//for top-k search and pruning, estimate the bound
     	//		continue;
@@ -284,10 +286,10 @@ public class AdvancedHausdorff extends Hausdorff{
 		double newlb, newub;
 		if(anode.isLeaf()) {
 			for (int a : anode.getpointIdList()) {
-				pivtoList.add(point1xys[a-1]);
+				pivtoList.add(point1xys[a]);
 				radiusArrayList.add(0.0);
 				if(tightBound==2)
-					mbrList.add(new MutablePair<double[], double[]>(point1xys[a-1], point1xys[a-1]));
+					mbrList.add(new MutablePair<double[], double[]>(point1xys[a], point1xys[a]));
 			}
 		}else {
 			for (indexNode a : anode.getNodelist(nodelist)) {
@@ -309,7 +311,7 @@ public class AdvancedHausdorff extends Hausdorff{
 					if(newnodeb != null)
 						segmentB = generateSegment(newnodeb.getMBRmin(), newnodeb.getMBRmax(), dimension);
 					else
-						segmentB = generateSegment(point2xys[aQueueSecond.getPointId()-1], point2xys[aQueueSecond.getPointId()-1], dimension);
+						segmentB = generateSegment(point2xys[aQueueSecond.getPointId()], point2xys[aQueueSecond.getPointId()], dimension);
 				}
 				//if it has been computed and in the second round, we can retrieve the results and avoid the calculation
 				double pivot_distance, bradius = 0;
@@ -318,7 +320,7 @@ public class AdvancedHausdorff extends Hausdorff{
 					pivot_distance = newnodeb.getPivotdistance(pivtoList.get(i));
 					bradius = newnodeb.getRadius(nonselectedDimension, dimension, dimensionAll, weight);// can be changed to get radius
 				} else {
-					pivot_distance = Hausdorff.EuclideanDis(point2xys[aQueueSecond.getPointId()-1], pivtoList.get(i), dimension);
+					pivot_distance = Hausdorff.EuclideanDis(point2xys[aQueueSecond.getPointId()], pivtoList.get(i), dimension);
 				}
 				if(tightBound == 0) {
 					newlb = computeNewLowerBound(pivot_distance, radiusArrayList.get(i), bradius);
@@ -384,7 +386,7 @@ public class AdvancedHausdorff extends Hausdorff{
 		double lb, newub;
 		if(bnode.isLeaf()) {
 			for (int a : bnode.getpointIdList()) {
-				pivtoList.add(point2xys[a-1]);
+				pivtoList.add(point2xys[a]);
 				radiusArrayList.add(0.0);
 				if(tightBound==2)//mbr bound, complex
 					mbrList.add(new MutablePair<double[], double[]>(point2xys[a-1], point2xys[a-1]));
@@ -403,7 +405,7 @@ public class AdvancedHausdorff extends Hausdorff{
 			if(anode != null)
 				segmentA = generateSegment(anode.getMBRmin(), anode.getMBRmax(), dimension);
 			else
-				segmentA = generateSegment(point1xys[apoint-1], point1xys[apoint-1], dimension);
+				segmentA = generateSegment(point1xys[apoint], point1xys[apoint], dimension);
 		}
 	//	System.out.println(segmentA.size());
 		for (int i=0; i<length; i++) {
@@ -414,7 +416,7 @@ public class AdvancedHausdorff extends Hausdorff{
 				pivot_distance = anode.getPivotdistance(pivtoList.get(i));
 				bradius = anode.getRadius(nonselectedDimension, dimension, dimensionAll, weight);
 			} else {
-				pivot_distance = Hausdorff.EuclideanDis(point1xys[apoint-1], pivtoList.get(i), dimension);
+				pivot_distance = Hausdorff.EuclideanDis(point1xys[apoint], pivtoList.get(i), dimension);
 			}
 			long endtime = System.nanoTime();
 			disCompTime += (endtime-startTime)/1000000000.0;

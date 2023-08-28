@@ -29,7 +29,7 @@ import java.util.stream.Stream;
  * @version 1.0
  * @date 2022/03/04/15:14
  **/
-//@Service
+@Service
 public class FileUtil {
 
     private final Path fileStorageLocation;
@@ -99,37 +99,30 @@ public class FileUtil {
     }
 
 
-    /**
-     * ????
-     *
-     * @param fileName ???
-     * @return ??
-     */
-    public Resource loadFileAsResource(String fileName) {
+
+    public Resource loadFileAsResource(File file) {
         try {
             //System.out.println(fileName);
-            Path filePath = fileStorageLocation.resolve(fileName).normalize();
+//             filePath = file.getAbsolutePath();
+            Path filePath = Paths.get(file.getAbsolutePath());
+//            Path filePath = fileStorageLocation.resolve(fileName).normalize();
             Resource resource = new UrlResource(filePath.toUri());
             if (resource.exists()) {
                 return resource;
             } else {
-                throw new FileException("File not found " + fileName);
+                throw new FileException("File not found ");
             }
         } catch (MalformedURLException ex) {
-            throw new FileException("File not found " + fileName, ex);
+            throw new FileException("File not found ", ex);
         }
     }
 
-    /**
-     * ????
-     *
-     * @param fileName ???
-     * @param request  ??
-     * @param response ??
-     */
-    public void downloadFile(String fileName, HttpServletRequest request, HttpServletResponse response) {
+
+    public void downloadFile(File file, HttpServletRequest request, HttpServletResponse response) {
 //     Load file as Resource
-        Resource resource = loadFileAsResource(fileName);
+        Resource resource = loadFileAsResource(file);
+        String fileName = file.getName();
+        System.out.println("file name = " + fileName);
 
         try {
             //????????ContentType

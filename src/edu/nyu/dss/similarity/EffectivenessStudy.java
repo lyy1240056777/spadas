@@ -58,6 +58,15 @@ public class EffectivenessStudy {
 		}
 		return sum;
 	}
+
+//	暂时没啥用
+	public static int bitToInt(int[] a, int length) {
+		int sum = 0;
+		for (int i = 0; i < length; i++) {
+			sum += a[i] * Math.pow(2, length - i - 1);
+		}
+		return sum;
+	}
 	
 	
 	public static void SerializedZcurve(String file, HashMap<Integer, ArrayList<Integer>> result) {
@@ -373,7 +382,7 @@ public class EffectivenessStudy {
 			int limit = 10000;
 			File folder = new File(aString);
 //			debug in the future
-			dataMap = Framework.readFolder(folder, limit, Framework.cityNodeList.get(0));
+//			dataMap = Framework.readFolder(folder, limit, Framework.cityNodeList.get(0));
 			zcodemap = storeZcurve(minx, miny, range, 2, dataMap, resolution, zcodeSer);
 		}else {
 			zcodemap = deSerializationZcurve(zcodeSer);

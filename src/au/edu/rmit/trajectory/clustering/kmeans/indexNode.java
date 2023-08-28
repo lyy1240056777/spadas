@@ -20,7 +20,10 @@ import io.swagger.annotations.ApiModelProperty;
 public class indexNode {
     @ApiModelProperty("dataset type, 0 for trajactory 1 for point set")
     int type; // 0 for line , 1 for point
-    protected Set<Integer> pointIdList; // the leaf node, the index node is a leaf node when this is not empty, we can
+    //    有些属性不能传
+    @JsonIgnore
+    protected Set<Integer> pointIdList;
+    @JsonIgnore// the leaf node, the index node is a leaf node when this is not empty, we can
     protected Set<indexNode> nodeList; // the internal node
     protected Set<Integer> nodeIDList;//check whether the root is empty before use, for seralization
     protected double[] pivot;// the mean value
@@ -34,11 +37,13 @@ public class indexNode {
 //    @JsonIgnore
 //    double EMDRadius;
 
-//    用来计算EMD
+    //    用来计算EMD
 //    EMDRadius = radius + minUbMove
     double EMDRadius;
-//    一个节点内部所有点的UbMove的最小值？
+    //    一个节点内部所有点的UbMove的最小值？
     double minUbMove;
+    //    只有数据集文件的根节点会有的文件名属性
+    String fileName;
 
 
     //  used for pick-means
@@ -62,11 +67,12 @@ public class indexNode {
     // used for fair clustering
     private double totalCoveredPointsFair = 0; //calculate the normalized
 
-//    EMD相关
-    public void setEMDRadius(double radius, double ubMove){
+    //    EMD相关
+    public void setEMDRadius(double radius, double ubMove) {
         this.EMDRadius = radius + ubMove;
     }
-    public double getEMDRadius(){
+
+    public double getEMDRadius() {
         return EMDRadius;
     }
 
@@ -226,6 +232,14 @@ public class indexNode {
 
     public void setroot(int datasetID) {
         this.rootToDataset = datasetID;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getFileName() {
+        return this.fileName;
     }
 
     public boolean isrootLeaf() {
@@ -478,9 +492,9 @@ public class indexNode {
      * selected dimensions
      */
     public boolean intersected(double querymax[], double querymin[], int dim, boolean selectedDimension[], boolean dimensionAll) {
-        if (selectedDimension != null && dimensionAll == false) {
+        if (selectedDimension != null && !dimensionAll) {
             for (int i = 0; i < dim; i++)
-                if (selectedDimension[i] == false && mbrmin[i] > querymax[i] || mbrmax[i] < querymin[i]) {
+                if (!selectedDimension[i] && mbrmin[i] > querymax[i] || mbrmax[i] < querymin[i]) {
                     return false;
                 }
             return true;
@@ -506,7 +520,7 @@ public class indexNode {
         if (!intersected(querymax, querymin, dim)) {
             return 0;
         } else {
-            boolean isQueryBigEnough = false;
+            /*boolean isQueryBigEnough = false;
             double area = 1;
             for (int i = 0; i < dim; i++) {
                 if (querymin[i] < mbrmin[i] || querymax[i] > mbrmax[i]) {
@@ -524,30 +538,51 @@ public class indexNode {
                     area *= mbrmax[i] - mbrmin[i];
                 }
             }
-            return Math.abs(area);
+            return Math.abs(area);*/
+            double area = 1, areaQ = 1, areaD = 1;
+            for (int i = 0; i < dim; i++) {
+                if (querymin[i] < mbrmin[i])
+                    area *= Math.min(querymax[i], mbrmax[i]) - mbrmin[i];
+                else
+                    area *= Math.min(querymax[i], mbrmax[i]) - querymin[i];
+                areaD *= mbrmax[i] - mbrmin[i];
+                areaQ *= querymax[i] - querymin[i];
+            }
+            double similarity = Math.abs(Math.min(area / areaD, area / areaQ));
+            return 1 / similarity;
         }
     }
 
     /*
      * compute the range of intersection
      */
+//    需要考虑 查询范围远大于节点范围 和 节点范围远大于查询范围 的情况
+//    当前的思路是：结果是较小的mbr
+//    这就会存在区分度弱的问题
+//    建议改成Min(O/Q, O/D)
+//    灵感来自李禛的毕业论文第10页
     public double intersectedArea(double querymax[], double querymin[], int dim, boolean nonselectedDimension[], boolean dimensionAll) {
-        if (nonselectedDimension != null && dimensionAll == false) {
-            if (!intersected(querymax, querymin, dim, nonselectedDimension, dimensionAll)) {
+        if (nonselectedDimension != null && !dimensionAll) {
+            /*if (!intersected(querymax, querymin, dim, nonselectedDimension, dimensionAll)) {
                 return 0;
             } else {
-                double area = 1;
+                double area = 1, areaQ = 1, areaD = 1;
                 for (int i = 0; i < dim; i++) {
-                    if (nonselectedDimension[i] == false) {//
+                    if (!nonselectedDimension[i]) {//
                         if (querymin[i] < mbrmin[i])
                             area *= Math.min(querymax[i], mbrmax[i]) - mbrmin[i];
                         else
                             area *= Math.min(querymax[i], mbrmax[i]) - querymin[i];
+                        areaD *= mbrmax[i] - mbrmin[i];
+                        areaQ *= querymax[i] - querymin[i];
                     }
                 }
-                return Math.abs(area);
-            }
-        } else {
+                double dist = Math.min(area / areaD, area / areaQ);
+                return Math.abs(dist);
+            }*/
+//            暂时不考虑需要选择维度的情况，不然太复杂了
+            return 0;
+        } else { // 选择全部维度
             return intersectedArea(querymax, querymin, dim);
         }
     }
@@ -760,6 +795,7 @@ public class indexNode {
     /*
      * compute the intersection of two sorted lists,
      */
+//    居然要求list有序，但它明明不有序，只能在创建时先进行排序了
     int computeIntersection(int arr1[], int arr2[], int m, int n) {
         int i = 0, j = 0;
         int dist = 0;

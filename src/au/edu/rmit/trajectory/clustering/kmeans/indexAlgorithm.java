@@ -177,9 +177,15 @@ public class indexAlgorithm<E> {
 		return rootKmeans;
 		
 	}*/
-	
-	/*
-	 * the right index to use
+
+	/**
+	 *
+	 * @param itemMatrix
+	 * @param dimension
+	 * @param capacity
+	 * @param userID
+	 * @param userNumber
+	 * @return 根节点
 	 */
 	public indexNode buildBalltree2(double[][] itemMatrix, int dimension, int capacity, int userID[], Map<Integer, Integer> userNumber) {// too slow	
 	//	System.out.println("Building Ball-tree using Matrix...");
@@ -206,7 +212,13 @@ public class indexAlgorithm<E> {
 	public indexNode buildBalltree2(double[][] itemMatrix, int dimension, int capacity, int userID[], Map<Integer, Integer> userNumber, double []weight) {
 	//	System.out.println("Building Ball-tree using Matrix...");
 		//long startTime1 = System.nanoTime();
-		int deepth = (int) (Math.log(itemMatrix.length)/Math.log(2));//the deepth is computed based on binary tree
+//		int deepth = (int) (Math.log(itemMatrix.length)/Math.log(2));//the deepth is computed based on binary tree
+//		试一下深度多少能不栈溢出
+		int deepth = 8;
+//		测试
+		if (itemMatrix.length == 53) {
+			System.out.println();
+		}
 		indexNode rootKmeans = BallTreeMatrix.create(itemMatrix, capacity, deepth, weight, dimension);//we should not set the deepth too deep
 		if(userNumber==null)
 			updateSum(rootKmeans, dimension);
@@ -826,8 +838,8 @@ public class indexAlgorithm<E> {
 		if(root.isLeaf()) {
 			for(int pointid: root.getpointIdList()) {
 				for(int i=0; i<dimension; i++) {
-					if(dataMatrix[pointid-1][i]>root.mbrmax[i])
-						root.mbrmax[i] = dataMatrix[pointid-1][i];
+					if(dataMatrix[pointid][i]>root.mbrmax[i])
+						root.mbrmax[i] = dataMatrix[pointid][i];
 				}
 			}
 		}else {
@@ -853,8 +865,8 @@ public class indexAlgorithm<E> {
 		if(root.isLeaf()) {
 			for(int pointid: root.getpointIdList()) {
 				for(int i=0; i<dimension; i++) {
-					if(dataMatrix[pointid-1][i]<root.mbrmin[i])
-						root.mbrmin[i] = dataMatrix[pointid-1][i];
+					if(dataMatrix[pointid][i]<root.mbrmin[i])
+						root.mbrmin[i] = dataMatrix[pointid][i];
 				}
 			}
 		}else {
