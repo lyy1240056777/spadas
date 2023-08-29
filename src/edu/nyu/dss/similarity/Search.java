@@ -349,9 +349,10 @@ public class Search {
             if (distance < min_dis) {
                 result = holdingTopK(result, datasetid, distance, k, queues, null);
                 if (result.size() == k)
-                    min_dis = result.entrySet().iterator().next().getValue();
-                else
-                    min_dis = Double.MAX_VALUE;
+//                    min_dis = result.entrySet().iterator().next().getValue();
+                    result.entrySet().iterator().next().getValue();
+//                else
+//                    min_dis = Double.MAX_VALUE;
             }
         } else {
             for (indexNode childNode : datalakeRoot.getNodelist(datalakeIndex)) {

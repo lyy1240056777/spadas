@@ -61,6 +61,11 @@ public class indexNode {
     int nodeid = 0;//for node identification
     double[] mbrmax;//MBR bounding box
     double[] mbrmin;
+
+    public void setSignautre(int[] signautre) {
+        this.signautre = signautre;
+    }
+
     int[] signautre = new int[2]; // store the signature
     int maxCoverpoints;// store the maximum number of point under it, for data lake index only, this for pruning
 
@@ -788,14 +793,21 @@ public class indexNode {
     /*
      * get the z-curve overlaps, only for two dimension
      */
-    public int GridOverlap(int[] query) {
-        return (query.length - computeIntersection(signautre, query, signautre.length, query.length)) / query.length;
+    public double GridOverlap(int[] query) {
+//        得到结果的范围是：0~1
+//        值越小，距离越近，相似度越高
+        double res = (query.length - computeIntersection(signautre, query, signautre.length, query.length)) / (double) query.length;
+        return res;
     }
 
     /*
      * compute the intersection of two sorted lists,
      */
 //    居然要求list有序，但它明明不有序，只能在创建时先进行排序了
+//    存在的问题：
+//    只是有网格重叠就判断相似不合理，更应该进行整体的考察
+//    但是论文用的就是这个算法
+//    那只能尝试增大网格密度了
     int computeIntersection(int arr1[], int arr2[], int m, int n) {
         int i = 0, j = 0;
         int dist = 0;

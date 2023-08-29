@@ -80,6 +80,7 @@ public class Framework {
 //    static double minx = -90, miny = -180;// the range of dataset space, default values for Argo dataset  TODO now have changed it to lat/lon coordination
     static double minx = -90, miny = -180;
 //    初试设为了4600，为什么？
+//    说到底这个spaceRange到底有什么用
     static double spaceRange = 100;
     //    对于中国地图，resolution设置为7或8比较好
 //    static int resolution = 3; // also a parameter to test the grid-based overlap, and the approximate hausdorff, and range query
@@ -537,6 +538,7 @@ public class Framework {
 //                metadataFile = file;
 //            }
 //        }
+        indexNode node = new indexNode(2);
         int i = 0;
         List<double[]> list = new ArrayList<>();
         double[][] xxx;
@@ -592,7 +594,7 @@ public class Framework {
             if (storeIndexMemory) { // true，要创建下层索引（数据集索引）
 //				createDatasetIndex(fileNo, xxx,1);
 //                创建下层索引，cityNode没有用
-                indexNode node = createDatasetIndex(fileNo, xxx, 1, cityNode);
+                node = createDatasetIndex(fileNo, xxx, 1, cityNode);
                 node.setFileName(fileName);
 //                为了系统前端好显示
                 samplingDataByGrid(xxx, fileNo, node);
@@ -602,6 +604,7 @@ public class Framework {
             fileIDMap.put(fileNo, dataFile);
             if (!zcurveExist) {
                 storeZcurve(xxx, fileNo);
+                node.setSignautre(zcodemap.get(fileNo).stream().mapToInt(Integer::intValue).toArray());
 //                EffectivenessStudy.SerializedZcurve(zcodemap);
             }
         }
@@ -842,12 +845,33 @@ public class Framework {
             int x = (int) ((dataset[i][0] - minx) / unit);
             int y = (int) ((dataset[i][1] - miny) / unit);
 //            图省事，日后要修改，可能导致精度丢失
-            int zcode = (int)EffectivenessStudy.combine(x, y, resolution);
+//            resolution + 1才能保证combine过程不丢失x和y的精度
+            int zcode = (int)EffectivenessStudy.combine(x, y, resolution + 1);
             if (!zcodeaArrayList.contains(zcode))
                 zcodeaArrayList.add(zcode);
         }
         Collections.sort(zcodeaArrayList);
         zcodemap.put(datasetid, zcodeaArrayList);
+    }
+
+    public static int[] generateZcurveForRange(double[] minRange, double[] maxRange) {
+        int numberCells = (int) Math.pow(2, resolution);
+        double unit = spaceRange / numberCells;
+        List<Integer> list = new ArrayList<>();
+        int minX = (int) ((minRange[0] - minx) / unit);
+        int minY = (int) ((minRange[1] - miny) / unit);
+        int maxX = (int) ((maxRange[0] - minx) / unit);
+        int maxY = (int) ((maxRange[1] - miny) / unit);
+        for (int i = minX; i < maxX; i++) {
+            for (int j = minY; j < maxY; j++) {
+                int zcode = (int) EffectivenessStudy.combine(i, j, resolution + 1);
+                if (!list.contains(zcode)) {
+                    list.add(zcode);
+                }
+            }
+        }
+        Collections.sort(list);
+        return list.stream().mapToInt(Integer::intValue).toArray();
     }
 
     /*
@@ -1297,7 +1321,7 @@ public class Framework {
             } else if (str.equals("Bus_lines")) {
                 datalakeID = 8;
                 continue;
-            } else if (Character.isUpperCase(str.charAt(0))) { // 国外的数据集
+            } else if (Character.isUpperCase(str.charAt(0)) && str.equals("Pennsylvania")) { // 国外的数据集
                 datalakeID = 8;
 //                continue;
             } else if (str.equals("poi")) {
@@ -1698,10 +1722,10 @@ public class Framework {
 
         if (datalakeIndex != null) {
             datalakeIndex.get(1).setMaxCovertpoint(datalakeIndex); // for the query that measures how many points in the intersected range
-            datalakeIndex.get(1).buildsignarture(zcodemap, datalakeIndex); // for the gird-based overlap query, need to debug for the memory mode
+//            datalakeIndex.get(1).buildsignarture(zcodemap, datalakeIndex); // for the gird-based overlap query, need to debug for the memory mode
         } else {
             datasetRoot.setMaxCovertpoint(datalakeIndex);
-            datasetRoot.buildsignarture(zcodemap, datalakeIndex);
+//            datasetRoot.buildsignarture(zcodemap, datalakeIndex);
         }
     }
 
@@ -2953,10 +2977,11 @@ public class Framework {
 			//base on grid-base overlap
 			int queryid=1;
 			if(qo.isUseIndex()){
-				int[] queryzcurve = new int[zcodemap.get(queryid).size()];
-				for (int i = 0; i < zcodemap.get(queryid).size(); i++)
-					queryzcurve[i] = zcodemap.get(queryid).get(i);
-				Search.gridOverlap(root, result, queryzcurve, Double.MAX_VALUE, qo.getK(), null, datalakeIndex);
+//				int[] queryzcurve = new int[zcodemap.get(queryid).size()];
+//				for (int i = 0; i < zcodemap.get(queryid).size(); i++)
+//					queryzcurve[i] = zcodemap.get(queryid).get(i);
+                int[] queryzcurve = generateZcurveForRange(qo.getQuerymin(), qo.getQuerymax());
+				result = Search.gridOverlap(root, result, queryzcurve, 1, qo.getK(), null, datalakeIndex);
 			}
 			else{
 				result = EffectivenessStudy.topkAlgorithmZcurveHashMap(zcodemap, zcodemap.get(queryid), qo.getK());
@@ -2974,7 +2999,7 @@ public class Framework {
 //                datalakeIndex, dimNonSelected, dimensionAll);
         System.out.println();
 
-        return result.entrySet().stream().sorted((o1, o2) -> o2.getValue() - o1.getValue() >= 0 ? 1 : -1).map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).collect(Collectors.toList());
+        return result.entrySet().stream().sorted((o1, o2) -> o1.getValue() - o2.getValue() >= 0 ? 1 : -1).map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).collect(Collectors.toList());
     }
 
     public static List<DatasetVo> keywordsQuery(keywordsDTO qo) {
@@ -3018,12 +3043,13 @@ public class Framework {
         } else if (qo.getMode() == 2) {
             // GridOverlap using index
             indexNode root = datasetRoot;//datalakeIndex.get(1);//use storee
-
-            if (datalakeIndex != null)
-                root = datalakeIndex.get(1);
-            int[] queryzcurve = new int[zcodemap.get(queryid).size()];
-            for (int i = 0; i < zcodemap.get(queryid).size(); i++)
-                queryzcurve[i] = zcodemap.get(queryid).get(i);
+//
+//            if (datalakeIndex != null)
+//                root = datalakeIndex.get(1);
+//            int[] queryzcurve = new int[zcodemap.get(queryid).size()];
+            int[] queryzcurve = zcodemap.get(qo.getDatasetId()).stream().mapToInt(Integer::intValue).toArray();
+//            for (int i = 0; i < zcodemap.get(queryid).size(); i++)
+//                queryzcurve[i] = zcodemap.get(queryid).get(i);
             result = Search.gridOverlap(root, result, queryzcurve, Double.MAX_VALUE, qo.getK(), null, datalakeIndex);
         } else {
 //            emd
