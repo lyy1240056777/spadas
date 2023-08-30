@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class UnionDTO {
     int queryId;
-    int[] unionIds;
+    int unionId;
     int preRows;
 }

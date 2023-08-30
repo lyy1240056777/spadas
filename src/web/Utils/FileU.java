@@ -26,7 +26,7 @@ public class FileU {
         lnr.skip(Long.MAX_VALUE);
         lineNumber = lnr.getLineNumber() - 1;
         lnr.close();
-        lineNumber = Math.min(lineNumber, max);
+        lineNumber = Math.max(lineNumber, max);
         lineNumber = Math.min(data.length, lineNumber);
         String[] header = null;
 //        String[][] bodies = new String[(int)lineNumber][];

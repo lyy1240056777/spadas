@@ -3473,14 +3473,21 @@ public class Framework {
         List<List<double[]>> unionData = new ArrayList<>();
         List<List<double[]>> bodies = new ArrayList<>();
         bodies.add(queryData);
+//
+//        for (int id : dto.getUnionIds()) {
+//            List<double[]> dataAll = new ArrayList<>();
+//            Search.UnionRangeQueryForPoints(maxMBR, minMBR, id, indexMap.get(id), dataAll, dimension, null, true);
+//            List<double[]> dataSample = ListUtil.sampleList(dataAll, rows);
+//            unionData.add(dataSample);
+//            bodies.add(dataSample);
+//        }
 
-        for (int id : dto.getUnionIds()) {
-            List<double[]> dataAll = new ArrayList<>();
-            Search.UnionRangeQueryForPoints(maxMBR, minMBR, id, indexMap.get(id), dataAll, dimension, null, true);
-            List<double[]> dataSample = ListUtil.sampleList(dataAll, rows);
-            unionData.add(dataSample);
-            bodies.add(dataSample);
+        double[][] unionDataAll = dataMapPorto.get(dto.getUnionId());
+        List<double[]> unionDataList = new ArrayList<>();
+        for (double[] data : unionDataAll) {
+            unionDataList.add(data);
         }
+        bodies.add(ListUtil.sampleList(unionDataList, rows));
 
 //        暂时没用，以后优化的时候会有用
         UnionVO unionVO = new UnionVO(queryData, unionData);
@@ -3522,7 +3529,7 @@ public class Framework {
         return vo;
     }
 
-    public static Pair<Double[], Map<Integer, Integer>> pairwiseJoin(int queryID, int datasetID) throws IOException {
+    public static Pair<Double[], Map<Integer, Integer>> pairwiseJoin(int rows, int queryID, int datasetID) throws IOException {
         indexNode queryNode, datanode;
         Map<Integer, indexNode> queryindexmap = null, dataindexMap = null; // datasetIndex.get(queryid);
         double[][] querydata, dataset;
@@ -3550,9 +3557,15 @@ public class Framework {
         // Hausdorff Pair-wise distance measure
         AdvancedHausdorff.setBoundChoice(0);
 //		Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, queryNode, datanode, 1, 1, 0, false, 0, false,queryindexmap, dataindexMap, null, true);
-        Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, queryNode, datanode, 1, 1, 0, false, 0, true, queryindexmap, dataindexMap, null, true);
-        Pair<Double[], Map<Integer, Integer>> resultPair = Join.IncrementalJoinCustom(dataMapPorto.get(queryID), dataMapPorto.get(datasetID), dimension, indexMap.get(limit + 1),
-                indexMap.get(datasetID), 1, 0, 0, false, 0, false, aPair.getLeft(), aPair.getRight(), null, null, "haus", null, true);
+//        splitOption: 1 -> 0;
+        Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension,
+                queryNode, datanode, 0, 1, 0, true, 0, true,
+                queryindexmap, dataindexMap, null, true);
+//        fastMode: 0 -> 1
+        Pair<Double[], Map<Integer, Integer>> resultPair = Join.IncrementalJoinCustom(rows, dataMapPorto.get(queryID), dataMapPorto.get(datasetID),
+                dimension, indexMap.get(limit + 1), indexMap.get(datasetID), 1, 0, 0, false,
+                0, true, aPair.getLeft(), aPair.getRight(), null, null, "haus",
+                null, true);
         System.out.println();
         return resultPair;
     }

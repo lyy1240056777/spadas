@@ -130,7 +130,7 @@ public class Join {
         return distancearray;
     }
 
-    public static Pair<Double[], Map<Integer, Integer>> IncrementalJoinCustom(double[][] point1xys, double[][] point2xys, int dimension, indexNode X, indexNode Y, int splitOption, int fastMode,
+    public static Pair<Double[], Map<Integer, Integer>> IncrementalJoinCustom(int rows, double[][] point1xys, double[][] point2xys, int dimension, indexNode X, indexNode Y, int splitOption, int fastMode,
                                                                               double error, boolean reverse, double directDis, boolean topkEarlyBreaking, double hausdorff, PriorityQueue<queueMain> aHeaps,
                                                                               Map<Integer, indexNode> nodelist, Map<Integer, indexNode> nodelist1, String folder, boolean nonselectedDimension[], boolean dimensionAll) {
         if (splitOption == 0)
@@ -165,7 +165,11 @@ public class Join {
 //				distancearray.add(ub);
 //                distancearray[mainq.getpointID() - 1] = ub;
 //                distancearray[mainq.getpointID() - 1] = Util.EuclideanDis(point1xys[mainq.getpointID() - 1], point2xys[secondq.getPointId() - 1], dimension);
-                distancearray[mainq.getpointID() - 1] = Util.lngNLatToDistance(point1xys[mainq.getpointID() - 1], point2xys[secondq.getPointId() - 1]);
+                distancearray[mainq.getpointID()] = Util.lngNLatToDistance(point1xys[mainq.getpointID()], point2xys[secondq.getPointId()]);
+//                达到预览的行数就停止，免得时间太长
+                if (joinNearestMap.size() == rows) {
+                    break;
+                }
                 //write the distance into file for later effectiveness study
                 if (hausdorff > ub)//this will not happen if users specify one parameter.
                     hausdorff = ub; // updating the new Hausdorff, smaller distance
@@ -181,10 +185,11 @@ public class Join {
                             topkEarlyBreaking, directDis, true, hausdorff, nodelist, nonselectedDimension, dimensionAll);
                 } else {
                     secondHeaps.poll();
+                    aHeaps.poll();
                     if (secondq.getbound() >= hausdorff) {// filter by lower bound to shrink the queue
                         continue;
                     }
-                    aHeaps.poll();
+
 //					secondHeaps.poll();
                     ub = AdvancedHausdorff.traverseY(bnode, point1xys, point2xys, secondHeaps, dimension, aHeaps,
                             ub, anode, mainq.getpointID(), fastMode, topkEarlyBreaking, directDis, true, hausdorff, nodelist1, nonselectedDimension, dimensionAll);

@@ -281,7 +281,8 @@ public class BaseController {
     @RequestMapping(value = "spadas/api/join", method = RequestMethod.GET)
 //    @GetMapping("/join")
     public Map<String, Object> datasetJoin(@RequestParam int queryId, @RequestParam int datasetId, @RequestParam int rows) throws IOException {
-        Pair<Double[], Map<Integer, Integer>> pair = Framework.pairwiseJoin(queryId, datasetId);
+        Pair<Double[], Map<Integer, Integer>> pair = Framework.pairwiseJoin(rows, queryId, datasetId);
+        Map<Integer, Integer> map = pair.getRight();
         double[][] queryData = Framework.dataMapPorto.get(queryId);
         double[][] datasetData = Framework.dataMapPorto.get(datasetId);
         Pair<String[], String[][]> querydata = FileU.readPreviewDataset(Framework.fileIDMap.get(queryId), rows, queryData);
@@ -298,10 +299,17 @@ public class BaseController {
         String[] baseEntry;
         Double[] distEntry = pair.getLeft();
         String[] distEntryTemp;
-        for (int i = 0; i < querydata.getRight().length; i++) {
-            queryEntry = querydata.getRight()[i];
-            baseEntry = basedata.getRight()[pair.getRight().get(i + 1) - 1];
-            double tmp = Math.round(distEntry[i] * 1000) / 1000.000;
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            int queryIndex = entry.getKey();
+            int datasetIndex = entry.getValue();
+            queryEntry = querydata.getRight()[queryIndex];
+            baseEntry = basedata.getRight()[datasetIndex];
+            double tmp = Math.round(distEntry[queryIndex] * 1000) / 1000.000;
+
+//            queryEntry = querydata.getRight()[i];
+//            int index = pair.getRight().get(i + 1) - 1;
+//            baseEntry = basedata.getRight()[index];
+//            double tmp = Math.round(distEntry[index] * 1000) / 1000.000;
             String tmpStr = tmp < 5 ? String.valueOf(tmp) : "INVALID";
             distEntryTemp = new String[]{tmpStr};
             joinData.add(ArrayUtils.addAll(ArrayUtils.addAll(queryEntry, distEntryTemp), baseEntry));
