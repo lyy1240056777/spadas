@@ -1372,7 +1372,7 @@ public class Framework {
             } else if (str.equals("Bus_lines")) {
                 datalakeID = 8;
                 continue;
-            } else if (Character.isUpperCase(str.charAt(0)) && str.equals("Pennsylvania")) { // 国外的数据集
+            } else if (Character.isUpperCase(str.charAt(0))) { // 国外的数据集
                 datalakeID = 8;
 //                continue;
             } else if (str.equals("poi")) {
