@@ -259,6 +259,10 @@ public class indexNode {
         return rootToDataset;
     }
 
+    public void setDatasetID(int id) {
+        this.rootToDataset = id;
+    }
+
     public void setdistanceToFarther(double distanceToFarther) {
         this.distanceToFarther = distanceToFarther;
     }

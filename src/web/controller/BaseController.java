@@ -212,7 +212,20 @@ public class BaseController {
 //        double [][] matrix = Framework.readSingleFile("/argoverse/"+filename);
 //        return new HashMap(){{put("matrix",matrix);}};
 //    }
-    public void uploadDataset(@RequestParam("file") MultipartFile[] files) throws IOException {
+    public Map<String, Object> uploadDataset(@RequestParam("file") MultipartFile file, @RequestParam("filename") String filename, @RequestParam("k") int k) throws IOException {
+        System.out.println(file.getName());
+        Pair<indexNode, double[][]> pair = Framework.readNewFile(file, filename);
+        List<DatasetVo> result = Framework.datasetQuery(pair.getLeft(), pair.getRight(), k);
+        if (pair == null) {
+            return new HashMap() {{
+                put("nodes", null);
+            }};
+        }
+        return new HashMap() {{
+            put("nodes", result);
+            put("querynode", pair.getLeft());
+            put("queryData", pair.getRight());
+        }};
 //        comment for safety
 //        for (MultipartFile file : files) {
 //            String fileName = fileService.uploadFile(file);
