@@ -347,6 +347,9 @@ public class Framework {
 //		if(storeAllDatasetMemory)
 //			dataMapPorto = new HashMap<Integer, double[][]>();
 //        遍历每个数据集文件
+        if(fileNames == null){
+            return;
+        }
         for (File file : fileNames) {
             if (file.isDirectory()) {
                 readFolder(file, limit, cityNode, datasetIDForOneDir++, datasetIdMappingItem);
