@@ -214,11 +214,8 @@ public class indexAlgorithm<E> {
 		//long startTime1 = System.nanoTime();
 //		int deepth = (int) (Math.log(itemMatrix.length)/Math.log(2));//the deepth is computed based on binary tree
 //		试一下深度多少能不栈溢出
+//		在这里设置深度可还行
 		int deepth = 8;
-//		测试
-		if (itemMatrix.length == 53) {
-			System.out.println();
-		}
 		indexNode rootKmeans = BallTreeMatrix.create(itemMatrix, capacity, deepth, weight, dimension);//we should not set the deepth too deep
 		if(userNumber==null)
 			updateSum(rootKmeans, dimension);

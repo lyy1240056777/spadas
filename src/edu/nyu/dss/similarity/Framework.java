@@ -1380,7 +1380,7 @@ public class Framework {
                 continue;
             } else { // 国内的数据集
                 datalakeID = 7;
-                continue;
+//                continue;
             }
 //            datasetIdMappingItem.clear();
             File myFolder = new File(aString + "/" + str);
