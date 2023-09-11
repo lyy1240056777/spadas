@@ -319,10 +319,6 @@ public class BaseController {
             baseEntry = basedata.getRight()[datasetIndex];
             double tmp = Math.round(distEntry[queryIndex] * 1000) / 1000.000;
 
-//            queryEntry = querydata.getRight()[i];
-//            int index = pair.getRight().get(i + 1) - 1;
-//            baseEntry = basedata.getRight()[index];
-//            double tmp = Math.round(distEntry[index] * 1000) / 1000.000;
             String tmpStr = tmp < 5 ? String.valueOf(tmp) : "INVALID";
             distEntryTemp = new String[]{tmpStr};
             joinData.add(ArrayUtils.addAll(ArrayUtils.addAll(queryEntry, distEntryTemp), baseEntry));

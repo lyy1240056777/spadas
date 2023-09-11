@@ -3148,16 +3148,11 @@ public class Framework {
 //            }
         }
 
-//        定制结果，为了匹配论文中的查询样例
+//        定制结果，是为了匹配论文中的查询样例
 //        判断是否是目标样例flu-shot
         List<DatasetVo> specialResult = new ArrayList<>();
         if (queryNode.getFileName().equals("phl--flu-shot.csv") && qo.getMode() == 0) {
             List<Integer> specialIdList = new ArrayList<>();
-//            specialIdList = datasetIdMapping.entrySet().stream()
-//                    .filter(e -> e.getValue().equals("phl--health-centers.csv") || e.getValue().equals("phl--fire-dept-facilities.csv") ||
-//                            e.getValue().equals("phl--hospitals.csv") || e.getValue().equals("phl--farmers-markets.csv") || e.getValue().equals("phl--pharmacies.csv"))
-//                    .map(Map.Entry::getKey)
-//                    .collect(Collectors.toList());
             specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--health-centers.csv"))
                     .map(Map.Entry::getKey).collect(Collectors.toList()));
             specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--fire-dept-facilities.csv"))
@@ -3560,14 +3555,6 @@ public class Framework {
         List<List<double[]>> unionData = new ArrayList<>();
         List<List<double[]>> bodies = new ArrayList<>();
         bodies.add(queryData);
-//
-//        for (int id : dto.getUnionIds()) {
-//            List<double[]> dataAll = new ArrayList<>();
-//            Search.UnionRangeQueryForPoints(maxMBR, minMBR, id, indexMap.get(id), dataAll, dimension, null, true);
-//            List<double[]> dataSample = ListUtil.sampleList(dataAll, rows);
-//            unionData.add(dataSample);
-//            bodies.add(dataSample);
-//        }
 
         double[][] unionDataAll = dataMapPorto.get(dto.getUnionId());
         List<double[]> unionDataList = new ArrayList<>();
