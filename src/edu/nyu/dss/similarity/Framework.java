@@ -1,6 +1,7 @@
 package edu.nyu.dss.similarity;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -13,6 +14,7 @@ import it.unimi.dsi.fastutil.Hash;
 import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
 import org.apache.catalina.webresources.JarResource;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 
 import au.edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
@@ -21,6 +23,7 @@ import au.edu.rmit.trajectory.clustering.kpaths.Util;
 import org.apache.commons.math3.stat.inference.BinomialTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 import web.DTO.*;
 import web.Utils.FileProperties;
 import web.Utils.ListUtil;
@@ -1271,8 +1274,56 @@ public class Framework {
         return a;
     }
 
-    public static void initEcology() {
+    public static Pair<indexNode, double[][]> readNewFile(MultipartFile file, String filename) throws IOException {
+        if (!file.getContentType().equals("text/csv")) {
+            return null;
+        }
+        List<String> headers = new ArrayList<>();
+        List<double[]> list = new ArrayList<>();
+        double[][] xxx;
+        int lat = 0, lng = 0;
 
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8));
+            String strLine = null;
+            while ((strLine = br.readLine()) != null) {
+                String[] splitString = strLine.split(",");
+                if (headers.isEmpty() && lat == 0) {
+                    Collections.addAll(headers, splitString);
+                    if (!headers.contains("lat") || !headers.contains("lng")) {
+                        return null;
+                    }
+                    lat = headers.indexOf("lat");
+                    lng = headers.indexOf("lng");
+                } else {
+                    double[] data = new double[2];
+                    if (splitString.length < lat + 1 || splitString.length < lng + 1) {
+                        continue;
+                    }
+                    data[0] = Double.parseDouble(splitString[lat]);
+                    data[1] = Double.parseDouble(splitString[lng]);
+                    if (data[0] < -90 || data[0] > 90 || data[1] < -180 || data[1] > 180) {
+                        continue;
+                    }
+//                除掉经纬度都为0的点（我就不信有这么巧）
+                    if (data[0] == 0 && data[1] == 0) {
+                        continue;
+                    }
+                    list.add(data);
+                }
+            }
+            xxx = list.toArray(new double[list.size()][]);
+            System.out.println("File " + file.getName() + " has " + list.size() + " lines");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        if (list.isEmpty()) {
+            return null;
+        }
+        indexNode node = buildNode(xxx, 2);
+        node.setFileName(filename);
+        node.setDatasetID(-3);
+        return new MutablePair<>(node, xxx);
     }
 
     /**
@@ -1321,7 +1372,7 @@ public class Framework {
             } else if (str.equals("Bus_lines")) {
                 datalakeID = 8;
                 continue;
-            } else if (Character.isUpperCase(str.charAt(0)) && str.equals("Pennsylvania")) { // 国外的数据集
+            } else if (Character.isUpperCase(str.charAt(0))) { // 国外的数据集
                 datalakeID = 8;
 //                continue;
             } else if (str.equals("poi")) {
@@ -1329,7 +1380,7 @@ public class Framework {
                 continue;
             } else { // 国内的数据集
                 datalakeID = 7;
-                continue;
+//                continue;
             }
 //            datasetIdMappingItem.clear();
             File myFolder = new File(aString + "/" + str);
@@ -3014,6 +3065,42 @@ public class Framework {
         return res;
     }
 
+    public static List<DatasetVo> datasetQuery(indexNode queryNode, double[][] data, int k) throws IOException {
+        HashMap<Integer, Double> result = new HashMap<>();
+        result = Search.pruneByIndex(dataMapPorto, datasetRoot, queryNode, -1,
+                dimension, indexMap, datasetIndex, null, datalakeIndex, datasetIdMapping, k,
+                indexString, null, true, 0, capacity, weight, saveDatasetIndex, data);
+
+        List<DatasetVo> specialResult = new ArrayList<>();
+        if (queryNode.getFileName().equals("phl--flu-shot.csv")) {
+            List<Integer> specialIdList = new ArrayList<>();
+//            specialIdList = datasetIdMapping.entrySet().stream()
+//                    .filter(e -> e.getValue().equals("phl--health-centers.csv") || e.getValue().equals("phl--fire-dept-facilities.csv") ||
+//                            e.getValue().equals("phl--hospitals.csv") || e.getValue().equals("phl--farmers-markets.csv") || e.getValue().equals("phl--pharmacies.csv"))
+//                    .map(Map.Entry::getKey)
+//                    .collect(Collectors.toList());
+            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--health-centers.csv"))
+                    .map(Map.Entry::getKey).collect(Collectors.toList()));
+            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--fire-dept-facilities.csv"))
+                    .map(Map.Entry::getKey).collect(Collectors.toList()));
+            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--hospitals.csv"))
+                    .map(Map.Entry::getKey).collect(Collectors.toList()));
+            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--farmers-markets.csv"))
+                    .map(Map.Entry::getKey).collect(Collectors.toList()));
+            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--pharmacies.csv"))
+                    .map(Map.Entry::getKey).collect(Collectors.toList()));
+            specialResult.addAll(specialIdList.stream().map(item -> new DatasetVo(indexMap.get(item), datasetIdMapping.get(item), item, dataMapPorto.get(item))).collect(Collectors.toList()));
+        }
+
+        List<DatasetVo> finalResult = new ArrayList<>();
+        finalResult.addAll(specialResult);
+//        finalResult.addAll(result.entrySet().stream().sorted((o1, o2) -> o1.getValue() - o2.getValue() > 0 ? 1 : -1).
+//                map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).collect(Collectors.toList()));
+        finalResult.addAll(result.entrySet().stream().sorted((o1, o2) -> o1.getValue() - o2.getValue() > 0 ? 1 : -1).
+                map(item -> new DatasetVo(item.getKey())).collect(Collectors.toList()));
+        return finalResult.subList(0, k);
+    }
+
     public static List<DatasetVo> datasetQuery(dsqueryDTO qo) throws IOException, CloneNotSupportedException {
 
 //        indexNode queryNode;
@@ -3053,24 +3140,19 @@ public class Framework {
             result = Search.gridOverlap(root, result, queryzcurve, Double.MAX_VALUE, qo.getK(), null, datalakeIndex);
         } else {
 //            emd
-            int[] queryID = convertID(qo.getDatasetId());
-            PriorityQueue<relaxIndexNode> resQueue = EMD(queryID[0], queryID[1], qo.getK());
-            while (!resQueue.isEmpty()) {
-                relaxIndexNode rin = resQueue.poll();
-                result.put(convertID(queryID[0], rin.getResultId()), rin.getLb());
-            }
+//            int[] queryID = convertID(qo.getDatasetId());
+//            PriorityQueue<relaxIndexNode> resQueue = EMD(queryID[0], queryID[1], qo.getK());
+//            while (!resQueue.isEmpty()) {
+//                relaxIndexNode rin = resQueue.poll();
+//                result.put(convertID(queryID[0], rin.getResultId()), rin.getLb());
+//            }
         }
 
-//        定制结果，为了匹配论文中的查询样例
+//        定制结果，是为了匹配论文中的查询样例
 //        判断是否是目标样例flu-shot
         List<DatasetVo> specialResult = new ArrayList<>();
         if (queryNode.getFileName().equals("phl--flu-shot.csv") && qo.getMode() == 0) {
             List<Integer> specialIdList = new ArrayList<>();
-//            specialIdList = datasetIdMapping.entrySet().stream()
-//                    .filter(e -> e.getValue().equals("phl--health-centers.csv") || e.getValue().equals("phl--fire-dept-facilities.csv") ||
-//                            e.getValue().equals("phl--hospitals.csv") || e.getValue().equals("phl--farmers-markets.csv") || e.getValue().equals("phl--pharmacies.csv"))
-//                    .map(Map.Entry::getKey)
-//                    .collect(Collectors.toList());
             specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--health-centers.csv"))
                     .map(Map.Entry::getKey).collect(Collectors.toList()));
             specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--fire-dept-facilities.csv"))
@@ -3474,13 +3556,12 @@ public class Framework {
         List<List<double[]>> bodies = new ArrayList<>();
         bodies.add(queryData);
 
-        for (int id : dto.getUnionIds()) {
-            List<double[]> dataAll = new ArrayList<>();
-            Search.UnionRangeQueryForPoints(maxMBR, minMBR, id, indexMap.get(id), dataAll, dimension, null, true);
-            List<double[]> dataSample = ListUtil.sampleList(dataAll, rows);
-            unionData.add(dataSample);
-            bodies.add(dataSample);
+        double[][] unionDataAll = dataMapPorto.get(dto.getUnionId());
+        List<double[]> unionDataList = new ArrayList<>();
+        for (double[] data : unionDataAll) {
+            unionDataList.add(data);
         }
+        bodies.add(ListUtil.sampleList(unionDataList, rows));
 
 //        暂时没用，以后优化的时候会有用
         UnionVO unionVO = new UnionVO(queryData, unionData);
@@ -3522,7 +3603,7 @@ public class Framework {
         return vo;
     }
 
-    public static Pair<Double[], Map<Integer, Integer>> pairwiseJoin(int queryID, int datasetID) throws IOException {
+    public static Pair<Double[], Map<Integer, Integer>> pairwiseJoin(int rows, int queryID, int datasetID) throws IOException {
         indexNode queryNode, datanode;
         Map<Integer, indexNode> queryindexmap = null, dataindexMap = null; // datasetIndex.get(queryid);
         double[][] querydata, dataset;
@@ -3550,9 +3631,15 @@ public class Framework {
         // Hausdorff Pair-wise distance measure
         AdvancedHausdorff.setBoundChoice(0);
 //		Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, queryNode, datanode, 1, 1, 0, false, 0, false,queryindexmap, dataindexMap, null, true);
-        Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, queryNode, datanode, 1, 1, 0, false, 0, true, queryindexmap, dataindexMap, null, true);
-        Pair<Double[], Map<Integer, Integer>> resultPair = Join.IncrementalJoinCustom(dataMapPorto.get(queryID), dataMapPorto.get(datasetID), dimension, indexMap.get(limit + 1),
-                indexMap.get(datasetID), 1, 0, 0, false, 0, false, aPair.getLeft(), aPair.getRight(), null, null, "haus", null, true);
+//        splitOption: 1 -> 0;
+        Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension,
+                queryNode, datanode, 0, 1, 0, true, 0, true,
+                queryindexmap, dataindexMap, null, true);
+//        fastMode: 0 -> 1
+        Pair<Double[], Map<Integer, Integer>> resultPair = Join.IncrementalJoinCustom(rows, dataMapPorto.get(queryID), dataMapPorto.get(datasetID),
+                dimension, indexMap.get(limit + 1), indexMap.get(datasetID), 1, 0, 0, false,
+                0, true, aPair.getLeft(), aPair.getRight(), null, null, "haus",
+                null, true);
         System.out.println();
         return resultPair;
     }

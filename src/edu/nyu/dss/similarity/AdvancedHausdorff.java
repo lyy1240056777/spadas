@@ -469,6 +469,10 @@ public class AdvancedHausdorff extends Hausdorff{
 		}
 	//	if(topkEarlyBreaking && anode!= null && secondHeaps.peek().getNode()!=null && directDis<secondHeaps.peek().getbound())//for top-k search and pruning, estimate the bound
 	//		return ub;
+//		增加对secondHeaps是否为空的判断，若为空，说明都被过滤了，则不添加到队列中
+		if (secondHeaps.isEmpty()) {
+			return ub;
+		}
 		queueMain mainqa = new queueMain(anode, secondHeaps, ub, apoint);
 		aHeaps.add(mainqa);
 		return ub;
