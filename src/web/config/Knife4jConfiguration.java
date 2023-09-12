@@ -15,7 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
  * @date 2022/04/28/12:32
  **/
 @Configuration
-@EnableSwagger2WebMvc
+//@EnableSwagger2WebMvc
 public class Knife4jConfiguration {
     @Bean(value = "defaultApi2")
     public Docket defaultApi2() {
