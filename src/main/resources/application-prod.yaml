@@ -1,0 +1,10 @@
+server:
+  port: 8082
+# Linux环境
+spadas:
+  file:
+    # 硬盘存储路径,起始路径为项目根路径
+#    baseUri: ./dataset/argoverse/
+    baseUri: ./dataset/
+    # 网页请求路径
+    staticUri: /dataset/

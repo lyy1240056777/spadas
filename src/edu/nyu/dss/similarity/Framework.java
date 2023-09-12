@@ -4,15 +4,11 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import au.edu.rmit.mtree.tests.Data;
 import emd.*;
-import it.unimi.dsi.fastutil.Hash;
 import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
-import org.apache.catalina.webresources.JarResource;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
@@ -20,19 +16,17 @@ import org.apache.commons.lang3.tuple.Pair;
 import au.edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
 import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
 import au.edu.rmit.trajectory.clustering.kpaths.Util;
-import org.apache.commons.math3.stat.inference.BinomialTest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-import web.DTO.*;
-import web.Utils.FileProperties;
-import web.Utils.ListUtil;
-import web.VO.DatasetVo;
-import web.VO.PreviewVO;
-import web.VO.UnionVO;
-import web.exception.FileException;
-
-import javax.naming.InsufficientResourcesException;
+import main.java.web.DTO.*;
+import main.java.web.Utils.FileProperties;
+import main.java.web.Utils.ListUtil;
+import main.java.web.VO.DatasetVo;
+import main.java.web.VO.PreviewVO;
+import main.java.web.VO.UnionVO;
+import main.java.web.exception.FileException;
 
 @Component
 public class Framework {
@@ -154,7 +148,7 @@ public class Framework {
      *
      * @param fileProperties
      */
-//    @Autowired
+    @Autowired
     public void setAString(FileProperties fileProperties) {
         aString = fileProperties.getBaseUri();
         System.out.println(aString);
@@ -2907,7 +2901,7 @@ public class Framework {
      * @throws IOException
      * @throws InterruptedException
      */
-    public static void init() throws IOException, InterruptedException, CloneNotSupportedException {
+    public static void init() throws IOException {
 //        判断建立索引相关的结构与变量是否已经存在
         if (fileNo > 0) {
             fileNo = 0;
