@@ -5,12 +5,6 @@
     <artifactId>spadas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <build>
-        <sourceDirectory>src</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -18,7 +12,7 @@
                 <version>${project.parent.version}</version>
                 <configuration>
                     <mainClass>
-                        main.java.web.SpadasWebApplication
+                        web.SpadasWebApplication
                     </mainClass>
                 </configuration>
             </plugin>

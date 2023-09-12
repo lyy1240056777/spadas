@@ -1,6 +1,6 @@
-package main.java.web.controller;
+package web.controller;
 
-import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import com.github.xiaoymin.knife4j.annotations.DynamicParameter;
 import com.github.xiaoymin.knife4j.annotations.DynamicResponseParameters;
 import edu.nyu.dss.similarity.Framework;
@@ -14,11 +14,11 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import main.java.web.DTO.*;
-import main.java.web.Utils.FileU;
-import main.java.web.Utils.FileUtil;
-import main.java.web.VO.DatasetVo;
-import main.java.web.VO.PreviewVO;
+import web.DTO.*;
+import web.Utils.FileU;
+import web.Utils.FileUtil;
+import web.VO.DatasetVo;
+import web.VO.PreviewVO;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

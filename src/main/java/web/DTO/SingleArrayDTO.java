@@ -1,4 +1,4 @@
-package main.java.web.DTO;
+package web.DTO;
 
 import lombok.Data;
 

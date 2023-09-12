@@ -1,4 +1,4 @@
-package main.java.web.Utils;
+package web.Utils;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,4 +1,4 @@
-package main.java.web.config;
+package web.config;
 
 import edu.nyu.dss.similarity.Framework;
 import org.springframework.boot.ApplicationArguments;

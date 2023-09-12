@@ -1,4 +1,4 @@
-package main.java.web.VO;
+package web.VO;
 
 import lombok.Data;
 

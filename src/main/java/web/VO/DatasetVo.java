@@ -1,6 +1,6 @@
-package main.java.web.VO;
+package web.VO;
 
-import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import edu.nyu.dss.similarity.Framework;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

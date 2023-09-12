@@ -1,4 +1,4 @@
-package main.java.web.exception.handler;
+package web.exception.handler;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import main.java.web.exception.FileException;
+import web.exception.FileException;
 
 import java.util.HashMap;
 import java.util.Map;

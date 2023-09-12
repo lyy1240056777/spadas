@@ -1,4 +1,4 @@
-package main.java.web.Utils;
+package web.Utils;
 
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Component;
