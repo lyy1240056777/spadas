@@ -1,0 +1,24 @@
+name: Deploy on Dev
+on:
+  push:
+    branches:
+    - dev
+jobs:
+  deploy:
+    name: integrate with maven
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: Install and Build
+        run: |
+          maven build -DskipTests=true
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.ftp_server }}
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_pwd }}
+          local-dir: ./target/
+          server-dir: ./
