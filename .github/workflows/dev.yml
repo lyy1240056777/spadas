@@ -18,7 +18,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Maven Package
-        run: maven package -DskipTests=true
+        run: mvn package -DskipTests=true
 
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
