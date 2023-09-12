@@ -20,11 +20,20 @@ jobs:
       - name: Maven Package
         run: mvn package -DskipTests=true
 
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      - name: Upload Package
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PWD }}
-          local-dir: ./target/
-          server-dir: ./
+          server: academicis.fun:2022
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+
+      - name: Deploy On Server
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          command_timeout: 1m
+          script: |
+            echo "Nice Job!!!"
