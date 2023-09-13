@@ -19,4 +19,4 @@ jobs:
           port: ${{ secrets.PORT }}
           command_timeout: 5m
           script: |
-            bash ~/update-spadas-dev.sh
+            echo "${{ secrets.PASSWORD }}" > sudo bash ~/update-spadas-dev.sh
