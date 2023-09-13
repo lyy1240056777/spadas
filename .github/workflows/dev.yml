@@ -31,6 +31,11 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           local-dir: 'target/'
           server-dir: 'spadas/'
+          exclude: |
+            **/target/classes/
+            **/target/generated-test-sources/
+            **/classes/
+            **/generated-sources/
 
       - name: Deploy On Server
         uses: appleboy/ssh-action@v0.1.10
