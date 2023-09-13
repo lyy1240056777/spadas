@@ -29,6 +29,8 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
+          local-dir: 'target/'
+          server-dir: 'spadas/'
 
       - name: Deploy On Server
         uses: appleboy/ssh-action@v0.1.10
@@ -39,4 +41,4 @@ jobs:
           port: ${{ secrets.PORT }}
           command_timeout: 1m
           script: |
-            echo "Nice Job!!!"
+            echo "ok!" > test.txt
