@@ -1,5 +1,5 @@
 env:
-  name: dev
+  name: 'dev'
 name: Deploy on Dev
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
       - name: Upload Package
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: academicis.fun:2022
+          server: academicis.fun:${{ secrets.FTP_PORT }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
 
