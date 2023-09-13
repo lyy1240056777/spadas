@@ -10,33 +10,6 @@ jobs:
     name: integrate with maven
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-
-      - name: Maven Package
-        run: mvn package -DskipTests=true
-
-      - name: Upload Package
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.HOST }}
-          port: ${{ secrets.FTP_PORT }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          local-dir: 'target/'
-          server-dir: 'spadas/'
-          exclude: |
-            **/target/classes/
-            **/target/generated-test-sources/
-            **/classes/
-            **/generated-sources/
-
       - name: Deploy On Server
         uses: appleboy/ssh-action@v0.1.10
         with:
@@ -44,6 +17,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          command_timeout: 1m
+          command_timeout: 5m
           script: |
-            echo "ok!" > test.txt
+            bash ~/update-spadas-dev.sh
