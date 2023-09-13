@@ -19,6 +19,6 @@ public class FileProperties {
     @Value("${spadas.file.baseUri}")
     private String baseUri = "./dataset";
 
-    @Value("${spadas.file.baseUri}")
+    @Value("${spadas.file.staticUri}")
     private String staticUri = "./dataset";
 }
