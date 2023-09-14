@@ -20,8 +20,8 @@ import web.Utils.FileUtil;
 import web.VO.DatasetVo;
 import web.VO.PreviewVO;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -256,10 +256,8 @@ public class BaseController {
     }
 
     @ApiOperation("download dataset")
-//    @GetMapping("spadas/api/file/{filename:.+}")
     @GetMapping("spadas/api/file/{id}")
     public void downloadFile(@PathVariable int id, HttpServletRequest request, HttpServletResponse response) {
-        System.out.println("call downloadFile method, id = " + id);
         fileService.downloadFile(Framework.fileIDMap.get(id), request, response);
     }
 

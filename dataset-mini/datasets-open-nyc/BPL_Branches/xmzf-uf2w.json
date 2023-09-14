@@ -1,0 +1,4 @@
+{
+  "error" : true,
+  "message" : "Non-tabular datasets do not support rows requests."
+}

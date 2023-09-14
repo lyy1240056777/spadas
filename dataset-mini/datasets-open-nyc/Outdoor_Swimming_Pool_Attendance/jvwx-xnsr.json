@@ -1,0 +1,1000 @@
+[{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1107"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"195"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"140"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"50"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"194"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"2526"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"2124"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"807"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"988"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"486"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"515"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"527"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"0"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"692"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"224"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"1652"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"489"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"588"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"732"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"645"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"1068"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"170"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"448"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"450"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"618"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"2028"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"3360"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"889"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"511"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"1910"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"619"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"325"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"1007"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"319"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"74"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"42"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"188"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"152"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"163"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"755"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"501"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"470"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"106"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"45"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"414"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"461"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"781"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"320"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"255"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"329"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"0"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"75"}
+,{"date":"2017-06-29T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"120"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1374"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"0"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"270"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"118"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"142"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"3512"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"2684"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"1143"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"1326"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"241"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"787"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"143"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"361"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"697"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"225"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"3146"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"691"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"585"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"923"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"695"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"1356"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"146"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"707"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"400"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"639"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"2282"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"3032"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"1207"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"792"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"2416"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"793"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"387"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"959"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"364"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"122"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"110"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"145"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"168"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"2197"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"870"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"765"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"599"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"56"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"448"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"534"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"993"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"352"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"457"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"32"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"150"}
+,{"date":"2017-06-30T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"149"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"634"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"178"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"254"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"30"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"79"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"1610"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"1377"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"747"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"747"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"518"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"482"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"569"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"182"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"667"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"140"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"1594"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"480"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"370"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"776"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"532"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"948"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"129"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"342"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"270"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"400"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"1060"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"1760"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"774"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"469"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"1187"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"423"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"331"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"784"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"301"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"66"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"99"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"158"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"110"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"3106"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"0"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"338"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"338"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"83"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"60"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"412"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"215"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"407"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"149"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"177"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"21"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"105"}
+,{"date":"2017-07-01T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"65"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"288"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"255"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"655"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"66"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"160"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"3691"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"3138"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"2248"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"1640"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"468"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"834"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"493"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"288"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"783"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"108"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"5451"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"973"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"866"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"950"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"762"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"2427"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"151"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"928"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"687"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"567"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"4120"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"3645"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"1445"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"1116"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"4235"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"900"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"477"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"1957"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"648"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"87"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"99"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"188"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"164"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"2161"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"859"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"522"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"957"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"136"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"120"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"374"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"529"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"607"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"365"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"361"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"42"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"135"}
+,{"date":"2017-07-02T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"54"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1520"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"310"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"356"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"45"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"290"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"2866"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"1432"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"1139"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"1318"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"270"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"776"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"374"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"0"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"772"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"280"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"3533"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"733"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"815"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"935"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"747"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"2312"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"168"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"943"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"470"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"456"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"3086"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"3206"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"1332"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"910"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"1994"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"771"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"515"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"1577"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"464"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"116"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"62"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"134"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"100"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"5050"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"733"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"559"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"791"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"272"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"55"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"383"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"610"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"1015"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"351"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"329"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"41"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"103"}
+,{"date":"2017-07-03T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"53"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"691"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"260"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"378"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"93"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"115"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"3177"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"2202"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"2096"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"910"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"392"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"0"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"287"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"296"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"807"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"90"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"3935"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"1014"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"905"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"754"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"620"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"2478"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"114"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"577"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"255"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"343"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"2107"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"2341"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"839"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"746"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"2649"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"683"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"368"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"1444"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"383"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"92"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"98"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"149"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"107"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"4005"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"1426"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"532"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"812"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"99"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"93"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"159"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"452"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"469"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"370"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"174"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"42"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"58"}
+,{"date":"2017-07-04T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"67"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"0"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"0"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"180"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"34"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"75"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"1868"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"1634"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"1014"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"574"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"181"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"383"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"81"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"60"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"498"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"87"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"1519"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"437"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"807"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"585"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"480"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"953"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"122"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"305"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"270"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"204"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"1863"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"2234"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"825"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"586"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"991"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"343"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"380"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"1049"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"328"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"77"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"99"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"71"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"40"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"4561"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"509"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"440"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"383"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"87"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"46"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"414"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"327"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"844"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"180"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"178"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"14"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"83"}
+,{"date":"2017-07-05T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"41"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"304"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"0"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"152"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"13"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"55"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"887"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"445"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"569"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"276"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"0"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"108"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"118"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"50"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"263"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"53"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"426"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"87"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"195"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"404"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"196"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"270"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"87"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"400"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"160"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"86"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"808"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"1227"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"218"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"176"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"300"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"111"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"300"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"302"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"105"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"54"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"23"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"42"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"24"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"2185"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"376"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"161"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"261"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"63"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"32"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"281"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"133"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"250"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"72"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"135"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"17"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"72"}
+,{"date":"2017-07-06T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"45"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"131"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"0"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"196"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"0"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"25"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"330"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"410"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"225"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"147"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"305"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"117"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"349"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"85"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"181"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"21"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"419"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"59"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"108"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"205"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"186"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"135"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"68"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"92"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"70"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"81"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"180"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"359"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"172"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"256"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"366"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"87"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"175"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"100"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"93"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"32"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"18"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"71"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"29"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"949"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"268"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"87"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"149"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"63"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"55"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"95"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"129"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"222"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"60"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"63"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"40"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"99"}
+,{"date":"2017-07-07T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"15"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"828"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"228"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"144"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"13"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"77"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"0"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"2211"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"2248"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"1047"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"282"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"768"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"367"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"293"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"519"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"86"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"2425"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"763"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"739"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"738"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"555"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"1245"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"81"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"376"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"340"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"347"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"1668"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"2104"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"905"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"871"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"3005"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"350"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"350"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"1125"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"272"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"62"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"85"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"129"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"71"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"682"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"663"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"445"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"575"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"212"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"3248"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"58"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"394"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"311"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"537"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"319"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"203"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"30"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"82"}
+,{"date":"2017-07-08T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"49"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1013"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"181"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"255"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"37"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"101"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"3330"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"2232"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"967"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"1158"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"233"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"768"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"189"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"50"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"523"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"100"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"1866"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"840"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"598"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"644"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"575"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"1807"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"100"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"574"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"391"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"391"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"2665"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"2860"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"995"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"825"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"2299"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"498"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"356"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"1398"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"303"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"31"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"99"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"143"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"98"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"788"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"395"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"657"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"110"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"80"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"376"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"348"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"515"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"371"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"238"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"33"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"56"}
+,{"date":"2017-07-09T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"53"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"937"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"143"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"202"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"32"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"60"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"2000"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"1466"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"1520"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"351"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"166"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"451"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"154"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"224"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"376"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"91"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"1054"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"375"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"422"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"545"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"429"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"921"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"117"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"387"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"340"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"242"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"1324"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"1828"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"563"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"666"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"2217"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"270"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"389"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"887"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"156"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"24"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"89"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"99"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"59"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"4091"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"599"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"420"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"459"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"61"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"70"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"306"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"454"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"544"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"244"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"159"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"55"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"119"}
+,{"date":"2017-07-10T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"54"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1031"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"0"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"144"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"19"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"0"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"1494"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"1266"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"957"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"624"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"352"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"496"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"310"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"240"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"313"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"89"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"601"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"190"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"280"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"567"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"298"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"748"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"110"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"539"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"308"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"259"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"1007"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"1159"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"130"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"414"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"539"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"1673"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"169"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"315"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"804"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"207"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"39"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"28"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"55"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"51"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"2421"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"412"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"362"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"225"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"36"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"85"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"180"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"163"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"621"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"213"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"194"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"23"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"44"}
+,{"date":"2017-07-11T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"43"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1103"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"119"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"222"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"54"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"146"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"2205"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"1711"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"985"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"872"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"364"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"436"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"387"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"283"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"489"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"125"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"1268"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"386"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"308"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"576"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"683"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"1054"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"471"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"266"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"322"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"1533"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"1830"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"899"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"610"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"1372"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"332"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"460"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"886"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"236"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"74"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"79"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"68"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"55"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"1506"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"780"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"477"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"474"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"132"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"85"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"413"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"386"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"540"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"260"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"197"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"64"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"130"}
+,{"date":"2017-07-12T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"65"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1202"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"254"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"450"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"40"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"115"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"3974"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"2228"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"0"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"1334"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"10"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"471"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"10"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"249"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"489"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"78"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"2033"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"701"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"540"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"579"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"620"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"1290"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"130"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"752"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"377"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"422"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"1439"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"2754"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"1029"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"1043"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"2102"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"476"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"545"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"1465"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"364"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"43"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"85"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"151"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"100"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"2648"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"846"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"647"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"790"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"69"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"3"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"339"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"264"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"602"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"330"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"195"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"3"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"96"}
+,{"date":"2017-07-13T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"45"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"34"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"17"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"197"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"51"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"21"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"227"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"22"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"326"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"3"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"80"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"3"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"63"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"64"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"60"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"2"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"1"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"85"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"47"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"5"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"87"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"55"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"101"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"98"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"90"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"7"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"6"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"11"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"6"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"16"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"4"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"3427"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"50"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"64"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"14"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"12"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"31"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"24"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"21"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"0"}
+,{"date":"2017-07-14T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"0"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1081"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"0"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"125"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"28"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"121"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"2215"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"1778"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"1650"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"798"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"337"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"678"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"383"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"243"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"421"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"69"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"1450"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"671"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"613"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"547"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"380"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"1097"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"96"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"475"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"267"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"268"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"1240"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"2254"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"678"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"687"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"1339"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"318"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"374"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"839"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"405"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"113"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"88"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"115"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"72"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"2564"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"481"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"0"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"474"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"136"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"78"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"308"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"234"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"0"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"217"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"147"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"29"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"93"}
+,{"date":"2017-07-15T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"62"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1192"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"430"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"226"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"51"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"123"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"4117"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"2993"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"2126"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"1354"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Howard","attendance":"281"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Douglas and DeGraw","attendance":"784"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Commodore Barry","attendance":"344"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Brooklyn","pool":"Bushwick","attendance":"330"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Bronx","pool":"Claremont","attendance":"574"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Bronx","pool":"Edenwald Houses","attendance":"62"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Bronx","pool":"Crotona","attendance":"1949"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Bronx","pool":"Floating Pool","attendance":"821"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Bronx","pool":"Haffen","attendance":"622"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Bronx","pool":"Mapes","attendance":"760"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Bronx","pool":"Mullaly","attendance":"523"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Bronx","pool":"Van Cortlandt","attendance":"1674"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Bronx","pool":"Bronx River Playground","attendance":"97"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Asser Levy","attendance":"690"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Tony Dapolito","attendance":"430"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Dry Dock","attendance":"459"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Hamilton Fish","attendance":"2179"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Highbridge","attendance":"3117"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Jackie Robinson","attendance":"1231"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"John Jay","attendance":"1370"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Lasker","attendance":"3891"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Marcus Garvey","attendance":"679"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Sheltering Arms","attendance":"445"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Thomas Jefferson","attendance":"1266"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Wagner","attendance":"571"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Abe Lincoln","attendance":"138"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Frederick Douglass","attendance":"63"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Vesuvio","attendance":"167"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Manhattan","pool":"Tompkins Square","attendance":"93"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Queens","pool":"Astoria","attendance":"4481"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Queens","pool":"Fisher","attendance":"752"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Queens","pool":"Liberty","attendance":"752"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Queens","pool":"Totten","attendance":"717"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Queens","pool":"Marie Curie Park","attendance":"235"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Queens","pool":"Astoria Hts PS 10","attendance":"0"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Queens","pool":"PS 186 Playground","attendance":"100"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Queens","pool":"Windmuller","attendance":"402"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Staten Island","pool":"Faber","attendance":"370"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Staten Island","pool":"Lyons","attendance":"653"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Staten Island","pool":"Tottenville","attendance":"443"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Staten Island","pool":"West Brighton","attendance":"223"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Staten Island","pool":"General Douglas","attendance":"31"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Staten Island","pool":"Mariner's Harbor","attendance":"0"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Staten Island","pool":"PS 14 Playground","attendance":"118"}
+,{"date":"2017-07-16T00:00:00.000","borough":"Staten Island","pool":"PS 46 Playground","attendance":"48"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"Betsy Head","attendance":"1021"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"PS 20 Playground","attendance":"143"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"Lindower Park","attendance":"172"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"JHS 57/HS 26 Pool","attendance":"0"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"Glenwood Houses","attendance":"64"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"David Fox/PS 251 Pool","attendance":"109"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"McCarren Park","attendance":"2093"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"Sunset Park","attendance":"1266"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"Red Hook","attendance":"1339"}
+,{"date":"2017-07-17T00:00:00.000","borough":"Brooklyn","pool":"Kosciuszko","attendance":"0"}]

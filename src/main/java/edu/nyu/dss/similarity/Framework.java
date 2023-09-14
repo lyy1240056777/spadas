@@ -7,6 +7,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import edu.nyu.dss.similarity.consts.DataLakeType;
 import emd.*;
 import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
 import org.apache.commons.io.FileUtils;
@@ -75,7 +76,7 @@ public class Framework {
 //    可能得对每个城市设置特定的参数，不然精度不够
 //    static double minx = -90, miny = -180;// the range of dataset space, default values for Argo dataset  TODO now have changed it to lat/lon coordination
     static double minx = -90, miny = -180;
-//    初试设为了4600，为什么？
+    //    初试设为了4600，为什么？
 //    说到底这个spaceRange到底有什么用
     static double spaceRange = 100;
     //    对于中国地图，resolution设置为7或8比较好
@@ -340,7 +341,7 @@ public class Framework {
 //		if(storeAllDatasetMemory)
 //			dataMapPorto = new HashMap<Integer, double[][]>();
 //        遍历每个数据集文件
-        if(fileNames == null){
+        if (fileNames == null) {
             return;
         }
         for (File file : fileNames) {
@@ -353,10 +354,6 @@ public class Framework {
 //					isfolderVisited = true;
 //				}
                 String fileName = file.getName();
-//                debug为什么会有数据集被重复读取
-                if (fileName.contains("432")) {
-                    System.out.println();
-                }
 //                String parentDir = file.getParent();
 //            		if(a.length()<15){//argo
 //            			//linux ????/
@@ -835,7 +832,7 @@ public class Framework {
         zcodeMapTmp.put(datasetid, zcodeItemMap);
     }
 
-//    旧的z-order生成方法，
+    //    旧的z-order生成方法，
     public static void storeZcurve(double[][] dataset, int datasetid) {
         int numberCells = (int) Math.pow(2, resolution);
         double unit = spaceRange / numberCells;
@@ -845,7 +842,7 @@ public class Framework {
             int y = (int) ((dataset[i][1] - miny) / unit);
 //            图省事，日后要修改，可能导致精度丢失
 //            resolution + 1才能保证combine过程不丢失x和y的精度
-            int zcode = (int)EffectivenessStudy.combine(x, y, resolution + 1);
+            int zcode = (int) EffectivenessStudy.combine(x, y, resolution + 1);
             if (!zcodeaArrayList.contains(zcode))
                 zcodeaArrayList.add(zcode);
         }
@@ -1346,38 +1343,11 @@ public class Framework {
             fetureString = pre_str + conn_str + "_haus_features.txt";
             indexString = pre_str + str + "/";
             dimension = 2;
-//            if (str.equals("poi")) {
-//                continue;
-//            } else if (str.equals("argoverse")) {
-//                datalakeID = 6;
-//            } else {
-//                datalakeID = 7;
-//            }
 
             HashMap<Integer, String> datasetIdMappingItem = new HashMap<>();
 
-//            if (str.equals("bus_lines")) {
-//                datalakeID = 7;
-//            } else {
-//                continue;
-//            }
-//            决定要读取的数据集
-            if (str.contains("movebank")) {
-                datalakeID = 9;
-                continue;
-            } else if (str.equals("Bus_lines")) {
-                datalakeID = 8;
-                continue;
-            } else if (Character.isUpperCase(str.charAt(0))) { // 国外的数据集
-                datalakeID = 8;
-//                continue;
-            } else if (str.equals("poi")) {
-                datalakeID = 10;
-                continue;
-            } else { // 国内的数据集
-                datalakeID = 7;
-//                continue;
-            }
+            DataLakeType type = DataLakeType.matchType(str);
+
 //            datasetIdMappingItem.clear();
             File myFolder = new File(aString + "/" + str);
 //            可以先计算这cityNode，但是前端不要显示它，到时候再删除
@@ -3014,26 +2984,25 @@ public class Framework {
         if (datalakeIndex != null)
             root = datalakeIndex.get(1);
 //        IA
-		if(qo.getMode()==1){
-			//base on intersecting area
-			Search.setScanning(!qo.isUseIndex());
-			Search.rangeQueryRankingArea(root, result, qo.getQuerymax(), qo.getQuerymin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
-					datalakeIndex, dimNonSelected, dimensionAll);
-		}else{
+        if (qo.getMode() == 1) {
+            //base on intersecting area
+            Search.setScanning(!qo.isUseIndex());
+            Search.rangeQueryRankingArea(root, result, qo.getQuerymax(), qo.getQuerymin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
+                    datalakeIndex, dimNonSelected, dimensionAll);
+        } else {
 //		GBO
-			//base on grid-base overlap
-			int queryid=1;
-			if(qo.isUseIndex()){
+            //base on grid-base overlap
+            int queryid = 1;
+            if (qo.isUseIndex()) {
 //				int[] queryzcurve = new int[zcodemap.get(queryid).size()];
 //				for (int i = 0; i < zcodemap.get(queryid).size(); i++)
 //					queryzcurve[i] = zcodemap.get(queryid).get(i);
                 int[] queryzcurve = generateZcurveForRange(qo.getQuerymin(), qo.getQuerymax());
-				result = Search.gridOverlap(root, result, queryzcurve, 1, qo.getK(), null, datalakeIndex);
-			}
-			else{
-				result = EffectivenessStudy.topkAlgorithmZcurveHashMap(zcodemap, zcodemap.get(queryid), qo.getK());
-			}
-		}//base on intersecting area
+                result = Search.gridOverlap(root, result, queryzcurve, 1, qo.getK(), null, datalakeIndex);
+            } else {
+                result = EffectivenessStudy.topkAlgorithmZcurveHashMap(zcodemap, zcodemap.get(queryid), qo.getK());
+            }
+        }//base on intersecting area
 //        干嘛用的？
 //        默认传值false
 //        更新静态变量scanning，在下面的核心算法中会用到
@@ -3508,7 +3477,7 @@ public class Framework {
         return newNode;
     }
 
-//    这个形参就很有说法，querydata可以是已有的数据集，也可以是用户上传的数据集，但我们并不支持用户上传啊……
+    //    这个形参就很有说法，querydata可以是已有的数据集，也可以是用户上传的数据集，但我们并不支持用户上传啊……
     public static List<double[]> UnionRangeQuery(double[][] querydata, int unionDatasetId, int dim) {
         double[] mbrmax = new double[dim];
         double[] mbrmin = new double[dim];
@@ -3529,7 +3498,7 @@ public class Framework {
         return result;
     }
 
-//    用于union range query操作，获取dataset D中落在range内部的所有点
+    //    用于union range query操作，获取dataset D中落在range内部的所有点
     public static void getPointsInRange(double[] mbrmax, double[] mbrmin, int id, int dim) {
         List<double[]> result = new ArrayList<>();
         result.addAll(Search.UnionRangeQueryForPoints(mbrmax, mbrmin, id, indexNodes.get(id), result, dim, null, true));

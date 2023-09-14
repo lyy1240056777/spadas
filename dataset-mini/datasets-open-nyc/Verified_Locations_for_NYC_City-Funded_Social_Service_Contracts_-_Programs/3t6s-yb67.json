@@ -1,0 +1,302 @@
+[{"program_id":"291","program_name":"SYEP Career FIRST","agency_name":"DYCD"}
+,{"program_id":"100","program_name":"Alternative To Detention","agency_name":"MOCJ"}
+,{"program_id":"101","program_name":"Alternative To Incarceration","mandated_program":true,"agency_name":"MOCJ"}
+,{"program_id":"102","program_name":"Anti-gun Violence Initiative","agency_name":"MOCJ"}
+,{"program_id":"103","program_name":"Appellate Indigent Criminal Defense","agency_name":"MOCJ"}
+,{"program_id":"104","program_name":"Article 10 Petition Parental Representation","agency_name":"MOCJ"}
+,{"program_id":"105","program_name":"Assigned Domestic Violence Counsel","agency_name":"MOCJ"}
+,{"program_id":"106","program_name":"Child Advocacy Center","agency_name":"MOCJ"}
+,{"program_id":"107","program_name":"Community Based Programs","agency_name":"MOCJ"}
+,{"program_id":"108","program_name":"Court Advocacy Services","agency_name":"MOCJ"}
+,{"program_id":"109","program_name":"Court Based Programs","agency_name":"MOCJ"}
+,{"program_id":"110","program_name":"Crime Victims Services","agency_name":"MOCJ"}
+,{"program_id":"111","program_name":"Family Justice Center","agency_name":"MOCJ"}
+,{"program_id":"112","program_name":"Mediation Services","agency_name":"MOCJ"}
+,{"program_id":"113","program_name":"Social Welfare","agency_name":"MOCJ"}
+,{"program_id":"114","program_name":"Trial-Level Indigent Defense Representation","agency_name":"MOCJ"}
+,{"program_id":"115","program_name":"Youth Recreational Services/Youth Athletic Leagues","agency_name":"MOCJ"}
+,{"program_id":"116","program_name":"Adult Protective Services","agency_name":"DSS"}
+,{"program_id":"117","program_name":"CareerAdvance","agency_name":"DSS"}
+,{"program_id":"118","program_name":"CareerCompass","program_aka":"CC","program_description":"Comprehensive Employment Assessment and Service Plan Coordination for Individuals over 25","mandated_program":false,"how_to_apply":"Individuals receive social services assistance  such as cash assistance benefits.","agency_name":"DSS"}
+,{"program_id":"119","program_name":"Customized Assistance Services (CAS)","program_aka":"CAS","collaborating_agencies":"[\"human resources adminsitration\"]","program_description":"Customized Assistance Services (CAS) helps Human Resources Administration (HRA) clients with health and/or mental health conditions reach their highest attainable level of functioning and self-sufficiency by providing comprehensive, integrated, individual","program_website":"https://www1.nyc.gov/site/hra/index.page","plain_language_eligibility":"CAS provides clinical expertise, recommendations, and direction to HRA in the fields of health, mental health, substance use and vocational rehabilitation. CAS staff provide psychiatric evaluation and crisis intervention services, housing eligibility serv","mandated_program":true,"how_to_apply":"CAS works with other components of HRA and with other governmental and non-governmental service providers to create new programs and to integrate and refine existing services so the people it serves can achieve their maximum functional capacity.","agency_name":"DSS"}
+,{"program_id":"120","program_name":"Homebase Homelessness Prevention","agency_name":"DSS"}
+,{"program_id":"121","program_name":"Jobs Plus","agency_name":"DSS"}
+,{"program_id":"122","program_name":"Legal Services","program_aka":"OCJ","program_description":"Low income and other vulnerable New Yorkers can apply for free legal assistance through OCJ's contracted partners.","program_website":"www.nyc.gov/civiljustice","plain_language_eligibility":"Low income and other vulnerable New Yorkers are eligible for free legal assistance in the areas of housing, immigration, employment and other civil legal needs.","mandated_program":true,"how_to_apply":"Can apply for free legal assistance through OCJ's contracted partners in person or via phone.","agency_name":"DSS"}
+,{"program_id":"124","program_name":"Placement Services","agency_name":"DSS"}
+,{"program_id":"125","program_name":"Rapid Re-Housing","program_aka":"Rapid Rehousing","collaborating_agencies":"[\"human resources adminsitration\"]","program_description":"Assisting clients in  securing permanent housing that come from DHS referrals.","plain_language_eligibility":"DHS residence.","mandated_program":false,"how_to_apply":"DHS referrals.","agency_name":"DSS"}
+,{"program_id":"126","program_name":"Teen Rapp","program_aka":"Teen RAPP  Relationship Abuse Prevention Program (RAPP)","collaborating_agencies":"[\"mayor’s office to end domestic and gender-based violence\",\"department of education\"]","program_description":"This program is Teen RAPP, an extensive school-based domestic violence prevention program that operates in New York City middle and high schools.  RAPP Coordinators, who must have a Master of Social Work degree, conduct workshop and clinical counseling.","program_website":"NA","plain_language_eligibility":"A person is eligible if they are a New York City public school student in an educational institution served by the Teen RAPP program.","mandated_program":false,"how_to_apply":"Non-Profit Providers are selected by a Competitive Request for Proposals(RFP).","agency_name":"DSS"}
+,{"program_id":"127","program_name":"WeCARE","agency_name":"DSS"}
+,{"program_id":"128","program_name":"YouthPathways","program_aka":"YP","program_description":"Services provided to young adults between the ages of 18 -24 years old in need of job training, education and other service will allow them to maintain employment","mandated_program":false,"how_to_apply":"NYC DSS/HRA referral.","agency_name":"DSS"}
+,{"program_id":"129","program_name":"Mental Health Services, Vocational","agency_name":"DSS"}
+,{"program_id":"130","program_name":"Adult Outreach Service","agency_name":"DSS"}
+,{"program_id":"131","program_name":"Victim Services, Other","agency_name":"DSS"}
+,{"program_id":"132","program_name":"Home Care/Attendant/Maker and Housekeeping Services","program_aka":"Home Care Services Program","collaborating_agencies":"[\"department for the aging\",\"new york city housing authority\"]","program_description":"To assist Medicaid-eligible individuals, who meet the medical criteria for community based long-term care, to obtain the services needed to optimally live in the community. It is our goal to provide timely Medicaid eligibility determinations and efficient","program_website":"https://www1.nyc.gov/site/hra/help/long-term-care.page","plain_language_eligibility":"Medicaid eligible and NYC residents","mandated_program":false,"how_to_apply":"CASA Centers","agency_name":"DSS"}
+,{"program_id":"133","program_name":"Job Services","mandated_program":false,"agency_name":"DSS"}
+,{"program_id":"134","program_name":"Food Pantry/Meal Services","program_aka":"Emergency Food Assistance Program (EFAP)","program_description":"This program provides funding to soup kitchens and food pantries citywide to provide nourishment for recipients.","program_website":"https://www1.nyc.gov/site/hra/help/emergency-food-assistance-program.page","plain_language_eligibility":"A person is eligible if they are a resident of New York City.","mandated_program":false,"agency_name":"DSS"}
+,{"program_id":"135","program_name":"Victim Services, Domestic Violence","program_aka":"Non-Residential Program for victims of Domestic Violence","collaborating_agencies":"[\"mayor’s office to end domestic and gender-based violence\"]","program_description":"program operated by a not-for-profit organization for the purpose of providing non-residential services for victims of domestic violence including, but not limited to, telephone hotline assistance, information and referral services, advocacy, counseling,","plain_language_eligibility":"Victim of domestic violence means any person 16 years of age or older, any married person or any parent accompanied by his or her minor child or children in situations in which such person or such person's child is a victim of an act which would constitut","mandated_program":false,"how_to_apply":"Clients call in to hotline or are referred by participating Community Based Organizations (CBOs)","agency_name":"DSS"}
+,{"program_id":"136","program_name":"Arches","program_aka":"Arches Transformative Mentoring Intervention","umbrella":"YMI","collaborating_agencies":"[\"mayor's office of criminal justice\"]","program_description":"The Arches program connects young adults on probation to mentors with similar life experience in their own neighborhoods. This transformative mentoring program focuses on high-risk young people age 16 to 24 who struggle to overcome the thinking patterns a","program_website":"https://www1.nyc.gov/site/probation/services/arches.page","plain_language_eligibility":"High risk young adults on Probation, aged 16 to 24, who are referred through their Probation Officer.","mandated_program":true,"how_to_apply":"Participants must be referred through their Probation Officer.","agency_name":"DOP"}
+,{"program_id":"137","program_name":"Next STEPS","program_aka":"Next STEPS Transformative Mentoring Intervention","umbrella":"YMI","collaborating_agencies":"[\"mayor's office of criminal justice\"]","program_description":"Next STEPS uses curriculum-based group mentoring to help at-risk young adults transform the attitudes and behaviors that have led to violence and/or criminal activity. The target population served by this intervention includes high-risk young adults betwe","plain_language_eligibility":"High-risk young adults between the ages of 16 and 24 who are: actively engaged and/or involved in serious violent activity (including domestic violence) and/or gang-affiliated, who reside in or near targeted NYCHA housing developments throughout New York","mandated_program":false,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"138","program_name":"AIM","program_aka":"Advocate Intervene Mentor","program_description":"Advocate, Intervene, Mentor (AIM) program, an Alternate to Placement (ATP) program, helps high-risk youth ages 13-18 years under probation supervision avoid out-of-home placement and recidivism.","program_website":"https://www1.nyc.gov/site/probation/services/aim.page","plain_language_eligibility":"N/A","mandated_program":true,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"139","program_name":"ECHOES","program_aka":"Every Child Has an Opportunity to Excel and Succeed (ECHOES)","program_description":"An alternative-to-placement program that connects participants to paid externships and an adult trained in life coaching.","program_website":"https://www1.nyc.gov/site/probation/services/echoes.page","plain_language_eligibility":"Probation clients who are 14 years and older, have been adjudicated through Family Court and are at risk of being sent to placement.","mandated_program":true,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"140","program_name":"Works Plus","collaborating_agencies":"[\"mayor's office of criminal justice\"]","program_description":"Works Plus will continue is the work readiness/employment part of the larger Crisis Management System, serving the same concentrated areas within the target neighborhoods which are defined by the boundaries of specific New York City Police Department Prec","plain_language_eligibility":"Participants are referred through Crisis Management System providers in targeted precincts.","mandated_program":false,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"141","program_name":"Adolescent IMPACT","program_description":"The Adolescent IMPACT program model includes intensive, in-home, family-based counseling; providing a combination of individual sessions with the identified youth, individual sessions with the parent/caregiver and possibly other family members, and family","plain_language_eligibility":"As an alternative to incarceration/detention, primarily providing services to those youth before the Adult Court on felony charges.  As an alternative to placement, program is provided to a small portion of youth adjudicated as Juvenile Delinquents (JDs)","mandated_program":true,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"142","program_name":"Neighborhood Employment Services","program_description":"The Neighborhood Employment Services Program provides job readiness services, as well as transitional subsidized work experiences and job placement assistance, serving young adults, aged 18-24 years who have been deemed in need of job readiness services.","plain_language_eligibility":"Participants who are under Probation supervision would be referred through their Probation Officer (PO).","mandated_program":false,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"143","program_name":"NeON Arts","collaborating_agencies":"[\"department of cultural affairs\",\"mayor's office - economic opportunity\"]","program_description":"NeON Arts provides free art programs to young people throughout New York City, including those on probation. It offers a variety of creative activities at seven community-based probation offices citywide.","program_website":"https://www1.nyc.gov/site/neon/programs/neon-arts.page","mandated_program":false,"agency_name":"DOP"}
+,{"program_id":"144","program_name":"ICM Plus","program_aka":"Enhanced ICM","program_description":"ICM (Intensive Community Monitoring) is designed to help juvenile probation clients make good decisions and avoid being sent to detention facilities.","plain_language_eligibility":"Probation clients aged 13-18 on Intensive Community Monitoring","mandated_program":true,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"145","program_name":"Parent Support Program","program_description":"Parent Coaches offer support to parents of juvenile probation clients and assistance in navigating systems.  With support parents are engaged and more equipped to deal with the challenges and needs of their child, increasing compliance with court mandates","plain_language_eligibility":"Parents of juvenile probation clients","mandated_program":false,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"146","program_name":"PEAK Centers","program_description":"PEAK Centers serve as Drop In Centers for youth on Probation.  PEAK Centers provide a safe secure after-school environment that will promote education support, skill building, employability, life skills, positive self-expression, improved family relations","plain_language_eligibility":"Clients under juvenile probation supervision","mandated_program":false,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"147","program_name":"Mobile Adolescent Therapy","program_aka":"MAT","program_description":"Mobile Adolescent Therapy (MAT) works with families for 4 months, specifically to help young people avoid drug use, identify and address any mental health concerns, improve family functioning, engage in positive social activities including work, and addre","plain_language_eligibility":"Probation clients aged 14 to 24","mandated_program":false,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"148","program_name":"Asthma Management","agency_name":"DOHMH"}
+,{"program_id":"149","program_name":"Cancer Screening and Patient Navigation","agency_name":"DOHMH"}
+,{"program_id":"150","program_name":"Chronic Diseases Prevention","agency_name":"DOHMH"}
+,{"program_id":"151","program_name":"Community Health Workers","agency_name":"DOHMH"}
+,{"program_id":"152","program_name":"Health Insurance Enrollment","agency_name":"DOHMH"}
+,{"program_id":"153","program_name":"Hepatitis B and C Patient Navigation","agency_name":"DOHMH"}
+,{"program_id":"154","program_name":"Food and Nutrition","agency_name":"DOHMH"}
+,{"program_id":"155","program_name":"HIV - Housing","agency_name":"DOHMH"}
+,{"program_id":"156","program_name":"Legal Services","agency_name":"DOHMH"}
+,{"program_id":"157","program_name":"HIV - Other Services","agency_name":"DOHMH"}
+,{"program_id":"158","program_name":"STI/HIV Screening and Treatment","agency_name":"DOHMH"}
+,{"program_id":"159","program_name":"Vaccination Services","agency_name":"DOHMH"}
+,{"program_id":"160","program_name":"Lead Poisoning Prevention and Outreach Services","agency_name":"DOHMH"}
+,{"program_id":"161","program_name":"Dental Services","agency_name":"DOHMH"}
+,{"program_id":"162","program_name":"Early Childhood Development","agency_name":"DOHMH"}
+,{"program_id":"163","program_name":"Early Intervention","agency_name":"DOHMH"}
+,{"program_id":"164","program_name":"Family Planning Services","agency_name":"DOHMH"}
+,{"program_id":"165","program_name":"Maternal and Infant Health","agency_name":"DOHMH"}
+,{"program_id":"166","program_name":"School Health - Nursing Services","agency_name":"DOHMH"}
+,{"program_id":"167","program_name":"School Health - School Based Health Center","agency_name":"DOHMH"}
+,{"program_id":"168","program_name":"School Health - Vision Services","agency_name":"DOHMH"}
+,{"program_id":"169","program_name":"Correctional Health Services","agency_name":"DOHMH"}
+,{"program_id":"170","program_name":"Mental Health Children/Youth/Families Services","agency_name":"DOHMH"}
+,{"program_id":"171","program_name":"Mental Health Treatment","agency_name":"DOHMH"}
+,{"program_id":"172","program_name":"Mental Health Housing","agency_name":"DOHMH"}
+,{"program_id":"173","program_name":"Mental Health Care Coordination","agency_name":"DOHMH"}
+,{"program_id":"174","program_name":"Mental Health Rehabilitation","agency_name":"DOHMH"}
+,{"program_id":"175","program_name":"Mental Health Crisis Intervention Services","agency_name":"DOHMH"}
+,{"program_id":"176","program_name":"Mental Health - Other Services","agency_name":"DOHMH"}
+,{"program_id":"177","program_name":"Developmental Disabilities","agency_name":"DOHMH"}
+,{"program_id":"178","program_name":"Harm Reduction Services","agency_name":"DOHMH"}
+,{"program_id":"179","program_name":"Compulsive Gambling Services","agency_name":"DOHMH"}
+,{"program_id":"180","program_name":"Medically Supervised Withdrawal Services","agency_name":"DOHMH"}
+,{"program_id":"181","program_name":"Methadone Maintenance","agency_name":"DOHMH"}
+,{"program_id":"182","program_name":"Substance Misuse Services","agency_name":"DOHMH"}
+,{"program_id":"183","program_name":"Mental Hygiene Drop-In Centers","agency_name":"DOHMH"}
+,{"program_id":"184","program_name":"Workforce 1 Career Centers","mandated_program":false,"agency_name":"SBS"}
+,{"program_id":"202","program_name":"Emergency Intervention Services (Domestic Violence Shelters)","program_aka":"Residential Domestic Violence Services","program_description":"Residential program for victims of domestic violence means any residential care  program approved by the department and operated by a not-for-profit organization for the purpose of providing temporary shelter, emergency services and care to victims of dom","plain_language_eligibility":"Victim of domestic violence means any person 16 years of age or older, any married person or any parent accompanied by his or her minor child or children in situations in which such person or such person's child is a victim of an act which would constitut","mandated_program":false,"how_to_apply":"Clients are referred by Non-Profit Community Based Organizations and by calls to Domestic Violence hotlines.  HRA coordinates with residential domestic violence shelters to accept clients.","agency_name":"DSS"}
+,{"program_id":"203","program_name":"Shelter/Shelter Services","agency_name":"DSS"}
+,{"program_id":"204","program_name":"Hate Crimes Prevention","agency_name":"MOCJ"}
+,{"program_id":"227","program_name":"Training","agency_name":"DOHMH"}
+,{"program_id":"228","program_name":"Employment Services","agency_name":"DOHMH"}
+,{"program_id":"229","program_name":"NYC Business Solutions","agency_name":"SBS"}
+,{"program_id":"230","program_name":"Discharge and Reentry Services","agency_name":"MOCJ"}
+,{"program_id":"233","program_name":"Young Adult Justice Program","agency_name":"DOP"}
+,{"program_id":"234","program_name":"Justice Plus","collaborating_agencies":"[\"mayor's office of criminal justice\"]","program_description":"The Justice Plus/Work Readiness enhancement is a flexible wrap-around, designed to support participants by providing a range of work readiness opportunities. These opportunities include: work experience placements, hard/vocational and soft job skills deve","plain_language_eligibility":"Young adults who may be court-involved or at-risk, primarily between the ages of 16 and 24 (but can be up to age 30) with limited work experience/sustained employment and limited work readiness skills (e.g., soft skills, vocational skills) that impact the","mandated_program":false,"how_to_apply":"Referrals are made through Crisis Management partners.","agency_name":"DOP"}
+,{"program_id":"235","program_name":"Drop-In Centers","agency_name":"DSS"}
+,{"program_id":"236","program_name":"Intake Medical Services","agency_name":"DSS"}
+,{"program_id":"237","program_name":"Shelter Intake","agency_name":"DSS"}
+,{"program_id":"238","program_name":"NeON","program_description":"Various programming affiliated with DOP NeONs and surrounding community","program_website":"https://www1.nyc.gov/site/neon/programs/programs.page","plain_language_eligibility":"Community Residents of NeON locations","mandated_program":false,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"239","program_name":"COVID19 Programs","program_description":"Programming created in response to COVID19 health crisis","plain_language_eligibility":"N/A","mandated_program":false,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"240","program_name":"Employment Focused Services","program_description":"Transitional work experiences for probation clients, along with life skills training and job coaching.","plain_language_eligibility":"High-risk individuals on probation between the ages of 18 and 24 years old who have the highest employment needs.","mandated_program":false,"how_to_apply":"N/A","agency_name":"DOP"}
+,{"program_id":"263","program_name":"Beacon","agency_name":"DYCD"}
+,{"program_id":"264","program_name":"City Council Awards","agency_name":"DYCD"}
+,{"program_id":"265","program_name":"Summer Youth Employment Program (SYEP)","agency_name":"DYCD"}
+,{"program_id":"266","program_name":"Opportunity Youth: Supported Work Experience","agency_name":"DYCD"}
+,{"program_id":"267","program_name":"Summer Youth Employment Program (SYEP) (ages 16-24)","agency_name":"DYCD"}
+,{"program_id":"268","program_name":"Work, Learn & Grow (WLG)","agency_name":"DYCD"}
+,{"program_id":"269","program_name":"Summer Youth Employment Program (SYEP) (ages 14-15)","agency_name":"DYCD"}
+,{"program_id":"270","program_name":"SYEP Emerging Leaders: Leaders Influencing Tomorrow","agency_name":"DYCD"}
+,{"program_id":"271","program_name":"COMPASS Elementary","agency_name":"DYCD"}
+,{"program_id":"272","program_name":"Adult Literacy - English for Speakers of Other Languages","agency_name":"DYCD"}
+,{"program_id":"273","program_name":"Adult Literacy - Adult Basic Education/High School Equivalency","agency_name":"DYCD"}
+,{"program_id":"274","program_name":"Seniors","agency_name":"DYCD"}
+,{"program_id":"275","program_name":"Immigrant Family Services","agency_name":"DYCD"}
+,{"program_id":"276","program_name":"Housing Support","agency_name":"DYCD"}
+,{"program_id":"277","program_name":"Learn & Earn","agency_name":"DYCD"}
+,{"program_id":"278","program_name":"Educational Support: High School Youth","agency_name":"DYCD"}
+,{"program_id":"279","program_name":"School’s Out New York City (SONYC)","agency_name":"DYCD"}
+,{"program_id":"280","program_name":"SYEP CareerReady","agency_name":"DYCD"}
+,{"program_id":"281","program_name":"Cornerstone","agency_name":"DYCD"}
+,{"program_id":"282","program_name":"Drop-in Center","agency_name":"DYCD"}
+,{"program_id":"283","program_name":"Healthy Families","agency_name":"DYCD"}
+,{"program_id":"284","program_name":"Immigrant Services","agency_name":"DYCD"}
+,{"program_id":"285","program_name":"COMPASS Explore","agency_name":"DYCD"}
+,{"program_id":"286","program_name":"COMPASS High","agency_name":"DYCD"}
+,{"program_id":"287","program_name":"Civics Classes","agency_name":"DYCD"}
+,{"program_id":"288","program_name":"Adolescent Literacy","agency_name":"DYCD"}
+,{"program_id":"289","program_name":"Train & Earn","agency_name":"DYCD"}
+,{"program_id":"290","program_name":"Intern & Earn","agency_name":"DYCD"}
+,{"program_id":"292","program_name":"Fatherhood","agency_name":"DYCD"}
+,{"program_id":"293","program_name":"SYEP Map to $uccess","agency_name":"DYCD"}
+,{"program_id":"294","program_name":"Advance & Earn","agency_name":"DYCD"}
+,{"program_id":"295","program_name":"Food Pantry","agency_name":"DYCD"}
+,{"program_id":"296","program_name":"Ladders for Leaders (LFL)","agency_name":"DYCD"}
+,{"program_id":"297","program_name":"Special Demo - City Council-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"298","program_name":"Recreation-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"299","program_name":"Transitional Employment-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"300","program_name":"Special Demo - City Council-OMH","agency_name":"DOHMH"}
+,{"program_id":"301","program_name":"Classroom Education-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"302","program_name":"Special Demo - City Council-OASAS","agency_name":"DOHMH"}
+,{"program_id":"303","program_name":"Clinic Treatment Facility-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"304","program_name":"Summer Camp-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"305","program_name":"Case Management-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"306","program_name":"Homemaker Services-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"307","program_name":"Epilepsy Services-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"308","program_name":"Supported Housing-OMH","agency_name":"DOHMH"}
+,{"program_id":"309","program_name":"Supported Housing-OASAS","agency_name":"DOHMH"}
+,{"program_id":"310","program_name":"Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"311","program_name":"Supported SRO-OMH","agency_name":"DOHMH"}
+,{"program_id":"312","program_name":"School-OMH","agency_name":"DOHMH"}
+,{"program_id":"313","program_name":"Clinic Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"314","program_name":"Crisis Intervention-OMH","agency_name":"DOHMH"}
+,{"program_id":"315","program_name":"Non-Medicaid Care Coordination; (Non-Licensed Program)-OMH","agency_name":"DOHMH"}
+,{"program_id":"316","program_name":"Advocacy Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"317","program_name":"Recovery Center-OMH","agency_name":"DOHMH"}
+,{"program_id":"318","program_name":"Self-Help-OMH","agency_name":"DOHMH"}
+,{"program_id":"319","program_name":"MICA Network-OMH","agency_name":"DOHMH"}
+,{"program_id":"320","program_name":"Assertive Community Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"321","program_name":"CPEP Crisis Outreach-OMH","agency_name":"DOHMH"}
+,{"program_id":"322","program_name":"CPEP Crisis Intervention-OMH","agency_name":"DOHMH"}
+,{"program_id":"323","program_name":"NY NY III Supported Housing-OASAS","agency_name":"DOHMH"}
+,{"program_id":"324","program_name":"On-Site Rehabilitation-OMH","agency_name":"DOHMH"}
+,{"program_id":"325","program_name":"Psychosocial Club-OMH","agency_name":"DOHMH"}
+,{"program_id":"326","program_name":"Vocational Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"327","program_name":"NY NY III Supported Housing-OMH","agency_name":"DOHMH"}
+,{"program_id":"328","program_name":"Outreach-OMH","agency_name":"DOHMH"}
+,{"program_id":"329","program_name":"Assisted Competitive Employment-OMH","agency_name":"DOHMH"}
+,{"program_id":"330","program_name":"Crisis/Respite Beds-OMH","agency_name":"DOHMH"}
+,{"program_id":"331","program_name":"Family Support Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"332","program_name":"Home Based Crisis Intervention-OMH","agency_name":"DOHMH"}
+,{"program_id":"333","program_name":"Home Based Family Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"334","program_name":"Dual Diagnosis Coordinator-OASAS","agency_name":"DOHMH"}
+,{"program_id":"335","program_name":"Drop-In Centers-OMH","agency_name":"DOHMH"}
+,{"program_id":"336","program_name":"Homeless Placement Services (Non-Licensed Program)-OMH","agency_name":"DOHMH"}
+,{"program_id":"337","program_name":"Respite-OMH","agency_name":"DOHMH"}
+,{"program_id":"338","program_name":"Special Demo - City Council-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"339","program_name":"Recreation-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"340","program_name":"Transitional Employment-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"341","program_name":"Special Demo - City Council-OMH","agency_name":"DOHMH"}
+,{"program_id":"342","program_name":"Classroom Education-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"343","program_name":"Special Demo - City Council-OASAS","agency_name":"DOHMH"}
+,{"program_id":"344","program_name":"Clinic Treatment Facility-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"345","program_name":"Summer Camp-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"346","program_name":"Case Management-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"347","program_name":"Homemaker Services-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"348","program_name":"Epilepsy Services-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"349","program_name":"Supported Housing-OMH","agency_name":"DOHMH"}
+,{"program_id":"350","program_name":"Supported Housing-OASAS","agency_name":"DOHMH"}
+,{"program_id":"351","program_name":"Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"352","program_name":"Supported SRO-OMH","agency_name":"DOHMH"}
+,{"program_id":"353","program_name":"School-OMH","agency_name":"DOHMH"}
+,{"program_id":"354","program_name":"Clinic Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"355","program_name":"Crisis Intervention-OMH","agency_name":"DOHMH"}
+,{"program_id":"356","program_name":"Non-Medicaid Care Coordination; (Non-Licensed Program)-OMH","agency_name":"DOHMH"}
+,{"program_id":"357","program_name":"Advocacy Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"358","program_name":"Recovery Center-OMH","agency_name":"DOHMH"}
+,{"program_id":"359","program_name":"Self-Help-OMH","agency_name":"DOHMH"}
+,{"program_id":"360","program_name":"MICA Network-OMH","agency_name":"DOHMH"}
+,{"program_id":"361","program_name":"Assertive Community Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"362","program_name":"CPEP Crisis Outreach-OMH","agency_name":"DOHMH"}
+,{"program_id":"363","program_name":"CPEP Crisis Intervention-OMH","agency_name":"DOHMH"}
+,{"program_id":"364","program_name":"NY NY III Supported Housing-OASAS","agency_name":"DOHMH"}
+,{"program_id":"365","program_name":"On-Site Rehabilitation-OMH","agency_name":"DOHMH"}
+,{"program_id":"366","program_name":"Psychosocial Club-OMH","agency_name":"DOHMH"}
+,{"program_id":"367","program_name":"Vocational Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"368","program_name":"NY NY III Supported Housing-OMH","agency_name":"DOHMH"}
+,{"program_id":"369","program_name":"Outreach-OMH","agency_name":"DOHMH"}
+,{"program_id":"370","program_name":"Assisted Competitive Employment-OMH","agency_name":"DOHMH"}
+,{"program_id":"371","program_name":"Crisis/Respite Beds-OMH","agency_name":"DOHMH"}
+,{"program_id":"372","program_name":"Family Support Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"373","program_name":"Home Based Crisis Intervention-OMH","agency_name":"DOHMH"}
+,{"program_id":"374","program_name":"Home Based Family Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"375","program_name":"Dual Diagnosis Coordinator-OASAS","agency_name":"DOHMH"}
+,{"program_id":"376","program_name":"Drop-In Centers-OMH","agency_name":"DOHMH"}
+,{"program_id":"377","program_name":"Homeless Placement Services (Non-Licensed Program)-OMH","agency_name":"DOHMH"}
+,{"program_id":"378","program_name":"Respite-OMH","agency_name":"DOHMH"}
+,{"program_id":"379","program_name":"Coordinated Children's Services Initiative-OMH","agency_name":"DOHMH"}
+,{"program_id":"380","program_name":"Affirmative Business/Industry-OMH","agency_name":"DOHMH"}
+,{"program_id":"381","program_name":"Community Residential-OASAS","agency_name":"DOHMH"}
+,{"program_id":"382","program_name":"Treatment Support-OASAS","agency_name":"DOHMH"}
+,{"program_id":"383","program_name":"Methadone Maintenance-OASAS","agency_name":"DOHMH"}
+,{"program_id":"384","program_name":"Vocational Rehabilitation-OASAS","agency_name":"DOHMH"}
+,{"program_id":"385","program_name":"Medically Supervised Outpatient-OASAS","agency_name":"DOHMH"}
+,{"program_id":"386","program_name":"Residential Services-OASAS","agency_name":"DOHMH"}
+,{"program_id":"387","program_name":"Job Placement Initiative-OASAS","agency_name":"DOHMH"}
+,{"program_id":"388","program_name":"Compulsive Gambling Education-OASAS","agency_name":"DOHMH"}
+,{"program_id":"389","program_name":"Primary Prevention Services-OASAS","agency_name":"DOHMH"}
+,{"program_id":"390","program_name":"Youth Clubhouse-OASAS","agency_name":"DOHMH"}
+,{"program_id":"391","program_name":"Other Prevention Services-OASAS","agency_name":"DOHMH"}
+,{"program_id":"392","program_name":"Outpatient Rehabilitation Services-OASAS","agency_name":"DOHMH"}
+,{"program_id":"393","program_name":"Medically Supervised Withdrawal Services Outpatient-OASAS","agency_name":"DOHMH"}
+,{"program_id":"394","program_name":"Medically Monitored Withdrawal-OASAS","agency_name":"DOHMH"}
+,{"program_id":"395","program_name":"Compulsive Gambling Treatment-OASAS","agency_name":"DOHMH"}
+,{"program_id":"396","program_name":"Special Demo","agency_name":"DOHMH"}
+,{"program_id":"397","program_name":"Prevention Resource Center-OASAS","agency_name":"DOHMH"}
+,{"program_id":"398","program_name":"Community Services-OASAS","agency_name":"DOHMH"}
+,{"program_id":"399","program_name":"SYEP and Work, Learn & Grow (WLG)","agency_name":"DYCD"}
+,{"program_id":"400","program_name":"Adult Literacy","agency_name":"DYCD"}
+,{"program_id":"401","program_name":"Outreach-OMH, Advocacy Services-OMH, Crisis/Respite Beds-OMH","agency_name":"DOHMH"}
+,{"program_id":"402","program_name":"Self-Help-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"403","program_name":"Medically Supervised Outpatient-OASAS, Compulsive Gambling Treatment-OASAS","agency_name":"DOHMH"}
+,{"program_id":"404","program_name":"Advocacy Services-OMH, Psychosocial Club-OMH","agency_name":"DOHMH"}
+,{"program_id":"405","program_name":"Advocacy Services-OMH, Vocational Services-OMH, Home Based Crisis Intervention-OMH, Non-Medicaid Care Coordination; (Non-Licensed Program)-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"406","program_name":"Home Based Crisis Intervention-OMH, Crisis Intervention-OMH","agency_name":"DOHMH"}
+,{"program_id":"407","program_name":"Psychosocial Club-OMH, Clinic Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"408","program_name":"Medically Supervised Outpatient-OASAS, Primary Prevention Services-OASAS","agency_name":"DOHMH"}
+,{"program_id":"409","program_name":"Supported SRO-OMH, Crisis/Respite Beds-OMH","agency_name":"DOHMH"}
+,{"program_id":"410","program_name":"Supported Housing-OMH, Supported SRO-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"411","program_name":"Non-Medicaid Care Coordination; (Non-Licensed Program)-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"412","program_name":"On-Site Rehabilitation-OMH, Supported SRO-OMH","agency_name":"DOHMH"}
+,{"program_id":"413","program_name":"Recreation-OPWDD, Case Management-OPWDD, Summer Camp-OPWDD","agency_name":"DOHMH"}
+,{"program_id":"414","program_name":"Medically Supervised Outpatient-OASAS, Vocational Rehabilitation-OASAS, Methadone Maintenance-OASAS","agency_name":"DOHMH"}
+,{"program_id":"415","program_name":"NY NY III Supported Housing-OMH, Supported Housing-OMH","agency_name":"DOHMH"}
+,{"program_id":"416","program_name":"Vocational Rehabilitation-OASAS, Community Residential-OASAS","agency_name":"DOHMH"}
+,{"program_id":"417","program_name":"Vocational Rehabilitation-OASAS, Treatment Support-OASAS, Methadone Maintenance-OASAS","agency_name":"DOHMH"}
+,{"program_id":"418","program_name":"Home Based Crisis Intervention-OMH, Advocacy Services-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"419","program_name":"Assisted Competitive Employment-OMH, Advocacy Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"420","program_name":"Psychosocial Club-OMH, Crisis/Respite Beds-OMH","agency_name":"DOHMH"}
+,{"program_id":"421","program_name":"Psychosocial Club-OMH, Supported SRO-OMH","agency_name":"DOHMH"}
+,{"program_id":"422","program_name":"Assisted Competitive Employment-OMH, Advocacy Services-OMH, Supported SRO-OMH","agency_name":"DOHMH"}
+,{"program_id":"423","program_name":"On-Site Rehabilitation-OMH, Supported Housing-OMH","agency_name":"DOHMH"}
+,{"program_id":"424","program_name":"Non-Medicaid Care Coordination; (Non-Licensed Program)-OMH, Assertive Community Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"425","program_name":"Assisted Competitive Employment-OMH, Assertive Community Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"426","program_name":"NY NY III Supported Housing-OASAS, Supported Housing-OASAS","agency_name":"DOHMH"}
+,{"program_id":"427","program_name":"Other Prevention Services-OASAS, Prevention Resource Center-OASAS, Primary Prevention Services-OASAS","agency_name":"DOHMH"}
+,{"program_id":"428","program_name":"Affirmative Business/Industry-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"429","program_name":"Home Based Crisis Intervention-OMH, Family Support Services-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"430","program_name":"CPEP Crisis Intervention-OMH, CPEP Crisis Outreach-OMH","agency_name":"DOHMH"}
+,{"program_id":"431","program_name":"Outreach-OMH, Psychosocial Club-OMH, Supported SRO-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"432","program_name":"Supported Housing-OMH, Assertive Community Treatment-OMH","agency_name":"DOHMH"}
+,{"program_id":"433","program_name":"Advocacy Services-OMH, Supported SRO-OMH","agency_name":"DOHMH"}
+,{"program_id":"434","program_name":"Medically Supervised Outpatient-OASAS, Residential Services-OASAS","agency_name":"DOHMH"}
+,{"program_id":"435","program_name":"Supported Housing-OMH, Assertive Community Treatment-OMH, Supported SRO-OMH, Respite-OMH","agency_name":"DOHMH"}
+,{"program_id":"436","program_name":"On-Site Rehabilitation-OMH, Vocational Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"437","program_name":"Home Based Crisis Intervention-OMH, Crisis Intervention-OMH, Advocacy Services-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"438","program_name":"Other Prevention Services-OASAS, Medically Supervised Outpatient-OASAS, Primary Prevention Services-OASAS, Youth Clubhouse-OASAS","agency_name":"DOHMH"}
+,{"program_id":"439","program_name":"Medically Supervised Outpatient-OASAS, Compulsive Gambling Education-OASAS","agency_name":"DOHMH"}
+,{"program_id":"440","program_name":"Medically Supervised Outpatient-OASAS, Community Residential-OASAS, Outpatient Rehabilitation Services-OASAS","agency_name":"DOHMH"}
+,{"program_id":"441","program_name":"Supported Housing-OMH, Supported SRO-OMH","agency_name":"DOHMH"}
+,{"program_id":"442","program_name":"NY NY III Supported Housing-OASAS, Supported Housing-OMH","agency_name":"DOHMH"}
+,{"program_id":"443","program_name":"Self-Help-OMH, Advocacy Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"444","program_name":"Home Based Crisis Intervention-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"445","program_name":"On-Site Rehabilitation-OMH, Assisted Competitive Employment-OMH, Advocacy Services-OMH, Supported SRO-OMH","agency_name":"DOHMH"}
+,{"program_id":"446","program_name":"Crisis Intervention-OMH, Non-Medicaid Care Coordination; (Non-Licensed Program)-OMH, Outreach-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"447","program_name":"Supported Housing-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"448","program_name":"Medically Supervised Outpatient-OASAS, Vocational Rehabilitation-OASAS, Medically Monitored Withdrawal-OASAS, Medically Supervised Withdrawal Services Outpatient-OASAS","agency_name":"DOHMH"}
+,{"program_id":"449","program_name":"Self-Help-OMH, Non-Medicaid Care Coordination; (Non-Licensed Program)-OMH, Advocacy Services-OMH","agency_name":"DOHMH"}
+,{"program_id":"450","program_name":"Supported SRO-OMH, On-Site Rehabilitation-OMH, Assisted Competitive Employment-OMH, Homeless Placement Services (Non-Licensed Program)-OMH","agency_name":"DOHMH"}
+,{"program_id":"451","program_name":"Psychosocial Club-OMH, Non-Medicaid Care Coordination (OMH)-OMH","agency_name":"DOHMH"}
+,{"program_id":"452","program_name":"Special Demo - City Council-OPWDD-OMH","agency_name":"DOHMH"}
+,{"program_id":"453","program_name":"Special Demo - City Council-OASAS-OMH","agency_name":"DOHMH"}
+,{"program_id":"454","program_name":"Special Demo - City Council-OPWDD-OASAS-OMH","agency_name":"DOHMH"}
+,{"program_id":"455","program_name":"Caregiver Services","agency_name":"DFTA"}
+,{"program_id":"456","program_name":"Case Management","agency_name":"DFTA"}
+,{"program_id":"457","program_name":"Elder Justice","agency_name":"DFTA"}
+,{"program_id":"458","program_name":"Geriatric Mental Health (DGMH)","agency_name":"DFTA"}
+,{"program_id":"459","program_name":"Home Care Services","agency_name":"DFTA"}
+,{"program_id":"460","program_name":"Home-Delivered Meals","agency_name":"DFTA"}
+,{"program_id":"461","program_name":"Legal Assistance","agency_name":"DFTA"}
+,{"program_id":"462","program_name":"Naturally Occurring Retirement Community (NORC)","agency_name":"DFTA"}
+,{"program_id":"463","program_name":"NY Connects","agency_name":"DFTA"}
+,{"program_id":"464","program_name":"Senior Centers","agency_name":"DFTA"}
+,{"program_id":"465","program_name":"Transportation","agency_name":"DFTA"}]

@@ -1,0 +1,767 @@
+[{"project_name":"Westchester Point Apartments","project_address_es":"899 Westchester Avenue","application_year":"2013"}
+,{"project_name":"Utica Place Residential","project_address_es":"1373 Lincoln Place","application_year":"2013"}
+,{"project_name":"Gateway Elton Phase II","project_address_es":"526 Schroeders Avenue","application_year":"2013"}
+,{"project_name":"Gateway Elton Phase II","project_address_es":"516 Vandalia Avenue","application_year":"2013"}
+,{"project_name":"Gateway Elton Phase II","project_address_es":"524 Vandalia Avenue","application_year":"2013"}
+,{"project_name":"101 Avenue D aka Lower East Side Girls Club","project_address_es":"101 Avenue D","application_year":"2013"}
+,{"project_name":"Barrier Free Living","project_address_es":"637 East 138th Street","application_year":"2013"}
+,{"project_name":"Barrier Free Living","project_address_es":"616 East 139th Street","application_year":"2013"}
+,{"project_name":"Hunters Point South - Borden Avenue","project_address_es":"1-55 Borden Avenue","application_year":"2013"}
+,{"project_name":"Hunters Point South - 50th Avenue","project_address_es":"1-50 50th Avenue","application_year":"2013"}
+,{"project_name":"WHFA Creston","project_address_es":"2323 Creston Avenue","application_year":"2013"}
+,{"project_name":"WHFA Creston","project_address_es":"2333 Creston Avenue","application_year":"2013"}
+,{"project_name":"WHFA Creston","project_address_es":"2239-2241 Creston Avenue","application_year":"2013"}
+,{"project_name":"1016 Washington","project_address_es":"1016 Washington Avenue","application_year":"2013"}
+,{"project_name":"456 Washington","project_address_es":"456 Washington Street","application_year":"2013"}
+,{"project_name":"The Rubin Wolf Residences","project_address_es":"3629-3645 White Plains Road","application_year":"2013"}
+,{"project_name":"Mother Arnetta Crawford","project_address_es":"1500 Hoe Avenue","application_year":"2013"}
+,{"project_name":"Creston Heights","project_address_es":"2414 Briggs Avenue","application_year":"2013"}
+,{"project_name":"Creston Heights","project_address_es":"2414 Briggs Avenue","application_year":"2013"}
+,{"project_name":"Creston Heights","project_address_es":"233 Grand Avenue","application_year":"2013"}
+,{"project_name":"Creston Heights","project_address_es":"2279 Tiebout Avenue","application_year":"2013"}
+,{"project_name":"Longwood Residence","project_address_es":"999 Eat 163rd Street","application_year":"2013"}
+,{"project_name":"Longwood Residence","project_address_es":"930 Fox Street","application_year":"2013"}
+,{"project_name":"Longwood Residence","project_address_es":"940 Fox Street","application_year":"2013"}
+,{"project_name":"Longwood Residence","project_address_es":"940 Simpson Street","application_year":"2013"}
+,{"project_name":"Longwood Residence","project_address_es":"941 Simpson Street","application_year":"2013"}
+,{"project_name":"Longwood Residence","project_address_es":"755 Southern Boulevard","application_year":"2013"}
+,{"project_name":"Longwood Residence","project_address_es":"765 Southern Boulevard","application_year":"2013"}
+,{"project_name":"Longwood Residence","project_address_es":"775 Southern Boulevard","application_year":"2013"}
+,{"project_name":"Longwood Residence","project_address_es":"783 Southern Boulevard","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"2 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"5 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"12 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"15 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"21 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"22 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"32 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"33 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"45 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"51 Carmel Court","application_year":"2013"}
+,{"project_name":"Carmel Apartments","project_address_es":"61 Carmel Court","application_year":"2013"}
+,{"project_name":"Scheuer Plaza","project_address_es":"2505 Barker Avenue","application_year":"2013"}
+,{"project_name":"Scheuer Garden","project_address_es":"2540 Barker Avenue","application_year":"2013"}
+,{"project_name":"2026 Westchester Avenue","project_address_es":"2033 Newbold Avenue","application_year":"2013"}
+,{"project_name":"2026 Westchester Avenue","project_address_es":"2016 Westchester Avenue","application_year":"2013"}
+,{"project_name":"2026 Westchester Avenue","project_address_es":"2020 Westchester Avenue","application_year":"2013"}
+,{"project_name":"2026 Westchester Avenue","project_address_es":"2030 Westchester Avenue","application_year":"2013"}
+,{"project_name":"2026 Westchester Avenue","project_address_es":"2032 Westchester Avenue","application_year":"2013"}
+,{"project_name":"2026 Westchester Avenue","project_address_es":"2034 Westchester Avenue","application_year":"2013"}
+,{"project_name":"2026 Westchester Avenue","project_address_es":"2036 Westchester Avenue","application_year":"2013"}
+,{"project_name":"2026 Westchester Avenue","project_address_es":"2040 Westchester Avenue","application_year":"2013"}
+,{"project_name":"Soundview Family","project_address_es":"391 Bronx River Avenue","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1685 Bryant Avenue","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1715-17 Bryant Avenue","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"80 Featherbed Lane","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1687 Hoe Avenue","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1595 Macombs Road","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1601 Macombs Road","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1541-51 Shakespeare Avenue","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1662 Vyse Avenue","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1668 Vyse Avenue","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1680 Vyse Avenue","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1690 Vyse Avenue","application_year":"2013"}
+,{"project_name":"PRC Shakespeare","project_address_es":"1696 Vyse Avenue","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"656 East 166th Street","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"818 East 166th Street","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"600 East 167th Street","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"729 East 168th Street","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1187 Boston Road","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1214 Boston Road","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1216 Boston Road","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"94 Brandt Place","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"95 Brandt Place","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"538 Claremont Parkway","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1268 Clay Avenue","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1109 Franklin Avenue","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"3758 Third Avenue","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1241 Webster Avenue","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1245 Webster Avenue","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1267 Webster Avenue","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1273 Webster Avenue","application_year":"2013"}
+,{"project_name":"Dunn Beulah XV","project_address_es":"1632 University Avenue","application_year":"2013"}
+,{"project_name":"Soundview Senior","project_address_es":"391 Bronx River Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"539 Alabama Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"543 Alabama Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"545 Alabama Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"970-76 Belmont Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"335 Elton Court","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"336 Elton Court","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"122-32 Doscher Street","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"973 Dumont Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"645 Georgia Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"653 Georgia Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"692 Georgia Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"523 Hindsdale Street","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"596 Logan Street","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"633 New Jersey Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"641-43 New Jersey Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"660 New Jersey Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"673 New Jersey Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"300 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"302 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"306 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"310 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"312 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"316-318 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"325 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"332 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"336 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"340 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"342 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"344 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"348 New Lots Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"518 Pennsylvania Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"611 Pennsylvania Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"2297 Pitkin Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"2299 Pitkin Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"2307 Pitkin Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"2445 Pitkin Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"2447 Pitkin Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"2449 Pitkin Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"2451 Pitkin Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"474-476 Riverdale Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"520 Riverdale Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"522 Riverdale Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"614 Riverdale Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"620 Riverdale Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"526 Riverdale Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"1163-73 Sutter Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"486 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"490 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"496 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"502 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"503 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"508 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"514 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"520 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"526 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"532 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"535 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"539 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"542 Williams Avenue","application_year":"2013"}
+,{"project_name":"ENY BRP Development","project_address_es":"584-86 Williams Avenue","application_year":"2013"}
+,{"project_name":"Arthur Avenue Residences","project_address_es":"600 East 181st Street","application_year":"2013"}
+,{"project_name":"Daly IV","project_address_es":"908 East 181st Street","application_year":"2013"}
+,{"project_name":"Daly IV","project_address_es":"924 East 181st Street","application_year":"2013"}
+,{"project_name":"Daly IV","project_address_es":"934 East 181st Street","application_year":"2013"}
+,{"project_name":"Daly IV","project_address_es":"966 East 181st Street","application_year":"2013"}
+,{"project_name":"Daly IV","project_address_es":"2103 Vyse Avenue","application_year":"2013"}
+,{"project_name":"Daly IV","project_address_es":"2131 Vyse Avenue","application_year":"2013"}
+,{"project_name":"Daly IV","project_address_es":"2030-2134 Vyse Avenue","application_year":"2013"}
+,{"project_name":"Prince Hall Plaza","project_address_es":"456-460 West 155th Street","application_year":"2013"}
+,{"project_name":"250 Ashland","project_address_es":"590 Fulton Street","application_year":"2013"}
+,{"project_name":"Compass Residence 1B","project_address_es":"1512 Boone Avenue","application_year":"2013"}
+,{"project_name":"Webster Building E","project_address_es":"3556 Webster Avenue","application_year":"2013"}
+,{"project_name":"Randolph Houses Phase 1 - South Side","project_address_es":"204-222 West 114th Street","application_year":"2013"}
+,{"project_name":"Randolph Houses Phase 1 - South Side","project_address_es":"224-242West 114th Street","application_year":"2013"}
+,{"project_name":"Randolph Houses Phase 1 - South Side","project_address_es":"244-246 West 114th Street","application_year":"2013"}
+,{"project_name":"Albert Goodman Apartments","project_address_es":"3250 3rd Avenue","application_year":"2013"}
+,{"project_name":"Albert Goodman Apartments","project_address_es":"665 East 163rd Street","application_year":"2013"}
+,{"project_name":"Albert Goodman Apartments","project_address_es":"970 Boston Road","application_year":"2013"}
+,{"project_name":"Albert Goodman Apartments","project_address_es":"955 Cauldwell Avenue","application_year":"2013"}
+,{"project_name":"Crossroads II","project_address_es":"501 Southern Boulevard","application_year":"2014"}
+,{"project_name":"Livonia Commons","project_address_es":"494 Georgia Avenue","application_year":"2014"}
+,{"project_name":"Livonia Commons","project_address_es":"491 Sheffield Avenue","application_year":"2014"}
+,{"project_name":"Livonia Commons","project_address_es":"494 Sheffield Avenue","application_year":"2014"}
+,{"project_name":"Livonia Commons","project_address_es":"481 Williams Avenue","application_year":"2014"}
+,{"project_name":"Carnegie Park Apartments","project_address_es":"220 East 94th Street","application_year":"2014"}
+,{"project_name":"810 River","project_address_es":"810 River Avenue","application_year":"2014"}
+,{"project_name":"Plaza Borinquen","project_address_es":"405 – 417 East 137th Street","application_year":"2014"}
+,{"project_name":"Plaza Borinquen","project_address_es":"419 – 423 East 137th Street","application_year":"2014"}
+,{"project_name":"Plaza Borinquen","project_address_es":"465 – 471 East 137th Street","application_year":"2014"}
+,{"project_name":"Plaza Borinquen","project_address_es":"477 East 137th Street","application_year":"2014"}
+,{"project_name":"Plaza Borinquen","project_address_es":"473 – 477 East 138th Street","application_year":"2014"}
+,{"project_name":"Plaza Borinquen","project_address_es":"479 – 483 East 138th Street","application_year":"2014"}
+,{"project_name":"Plaza Borinquen","project_address_es":"485 – 491 East 138th Street","application_year":"2014"}
+,{"project_name":"Plaza Borinquen","project_address_es":"470 – 476 East 139th Street","application_year":"2014"}
+,{"project_name":"Plaza Borinquen","project_address_es":"478 – 484 East 139th Street","application_year":"2014"}
+,{"project_name":"Plover Apartments LLC","project_address_es":"108-110 East 176th Street","application_year":"2014"}
+,{"project_name":"Plover Apartments LLC","project_address_es":"1175 Gerard Avenue","application_year":"2014"}
+,{"project_name":"Plover Apartments LLC","project_address_es":"760 Hunts Point Avenue","application_year":"2014"}
+,{"project_name":"Plover Apartments LLC","project_address_es":"2292 Loring Place North","application_year":"2014"}
+,{"project_name":"261 Hudson Street","project_address_es":"261 Hudson Street","application_year":"2014"}
+,{"project_name":"Mt. Sharon","project_address_es":"3058 Bailey Avenue","application_year":"2014"}
+,{"project_name":"Mt. Sharon","project_address_es":"3060 Bailey Avenue","application_year":"2014"}
+,{"project_name":"Mt. Sharon","project_address_es":"2085 Walton Avenue","application_year":"2014"}
+,{"project_name":"Mt. Sharon","project_address_es":"2432 University Avenue","application_year":"2014"}
+,{"project_name":"Morris Avenue Apartments","project_address_es":"655 Morris Avenue","application_year":"2014"}
+,{"project_name":"Prospect Plaza North","project_address_es":"1765 Prospect Place","application_year":"2014"}
+,{"project_name":"Williamsburg Apartments","project_address_es":"356 Bedford Avenue","application_year":"2014"}
+,{"project_name":"Williamsburg Apartments","project_address_es":"37 Maujer Street","application_year":"2014"}
+,{"project_name":"Williamsburg Apartments","project_address_es":"37 Ten Eyck Street","application_year":"2014"}
+,{"project_name":"Williamsburg Apartments","project_address_es":"33 Ten Eyck Street","application_year":"2014"}
+,{"project_name":"Home for Harlem Dowling","project_address_es":"2135 7th Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"347 West 141st Street","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"351 West 141st Street","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"340 West 145th Street","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"1702 Amsterdam Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"1780-82 Amsterdam Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"1784 Amsterdam Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"1786 Amsterdam Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"115 Edgecombe Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"161 Edgecombe Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"165-67 Edgecombe Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"169-171 Edgecombe Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"180-86 Edgecombe Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"211 Edgecombe Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"219 Edgecombe Avenue","application_year":"2014"}
+,{"project_name":"Edgecombe Preservation Portfolio","project_address_es":"618-20 St. Nicholas Avenue","application_year":"2014"}
+,{"project_name":"Gateway Elton Phase III","project_address_es":"475 Locke Street","application_year":"2014"}
+,{"project_name":"Gateway Elton Phase III","project_address_es":"1062 Elton Street","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"555 East 178th Street","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"547 East 178th Street","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"2005 Monterey Avenue","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"2015 Monterey Avenue","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"2023 Monterey Avenue","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"1665 Vyse Avenue","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"1671 Vyse Avenue","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"1681 Vyse Avenue","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"1687 Vyse Avenue","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"1693 Vyse Avenue","application_year":"2014"}
+,{"project_name":"2015 Monterey Avenue","project_address_es":"1717 Vyse Avenue","application_year":"2014"}
+,{"project_name":"Greenpoint Landing - G2 Building","project_address_es":"21 Commercial Street","application_year":"2014"}
+,{"project_name":"WFHA King Boulevard, L.P.","project_address_es":"1380 University Ave","application_year":"2014"}
+,{"project_name":"The Henry Apartments","project_address_es":"1674 Broadway","application_year":"2014"}
+,{"project_name":"The Henry Apartments","project_address_es":"1696 Broadway","application_year":"2014"}
+,{"project_name":"Greenpoint Landing - E3 Building","project_address_es":"33 Eagle Street","application_year":"2014"}
+,{"project_name":"North Shore Plaza","project_address_es":"35 Holland Avenue","application_year":"2014"}
+,{"project_name":"North Shore Plaza","project_address_es":"55 Holland Avenue","application_year":"2014"}
+,{"project_name":"North Shore Plaza","project_address_es":"65 Holland Avenue","application_year":"2014"}
+,{"project_name":"North Shore Plaza","project_address_es":"85 Holland Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"210 East 166th Street","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"256 East 169th Street","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"266 East 169th Street","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1120 Clay Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1130 Clay Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1140 Clay Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1108 Findlay Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1041 Findlay Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1055 Findlay Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1294 Grant Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"986 Morris Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"997 Morris Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1009 Morris Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1295 Morris Avenue","application_year":"2014"}
+,{"project_name":"Morrisania Preservation Portfolio","project_address_es":"1279 Sheridan Avenue","application_year":"2014"}
+,{"project_name":"Draper Hall Developers","project_address_es":"1918 First Avenue","application_year":"2014"}
+,{"project_name":"Pio Mendez-SEBCO VIP","project_address_es":"1876 Belmont Avenue","application_year":"2014"}
+,{"project_name":"Pio Mendez-SEBCO VIP","project_address_es":"1291 Lafayette Avenue","application_year":"2014"}
+,{"project_name":"Archer Avenue","project_address_es":"92-61 165th Street","application_year":"2014"}
+,{"project_name":"Summit Ridge Apartment","project_address_es":"950 Summit Avenue","application_year":"2014"}
+,{"project_name":"1770 TPT LLC","project_address_es":"1409 Prospect Avenue","application_year":"2014"}
+,{"project_name":"1770 TPT LLC","project_address_es":"1770 Townsend Avenue","application_year":"2014"}
+,{"project_name":"1770 TPT LLC","project_address_es":"62 West 176th Street","application_year":"2014"}
+,{"project_name":"1770 TPT LLC","project_address_es":"66 West 176th Street","application_year":"2014"}
+,{"project_name":"Stanley Commons","project_address_es":"910 Hendrix Place","application_year":"2014"}
+,{"project_name":"Stanley Commons","project_address_es":"924 Hendrix Place","application_year":"2014"}
+,{"project_name":"Stanley Commons","project_address_es":"656 Stanley Avenue","application_year":"2014"}
+,{"project_name":"Stanley Commons","project_address_es":"869 Van Siclen Avenue","application_year":"2014"}
+,{"project_name":"Stanley Commons","project_address_es":"879 Van Siclen Avenue","application_year":"2014"}
+,{"project_name":"Stanley Commons","project_address_es":"271 Wortman Avenue","application_year":"2014"}
+,{"project_name":"535 Carlton Ave at Pacific Park Brooklyn","project_address_es":"535 Carlton Avenue","application_year":"2014"}
+,{"project_name":"Crossroads I aka Crossroads IIIB","project_address_es":"848 East 149th Street","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"277 East 4th Street","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"279 East 4th Street","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"631-637 East 13th Street","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"4 East 117th Street","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"438-444 East 120th Street","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"510-522 East 156th Street","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"205-211 Avenue C","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"930 Halsey Street","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"1780 Madison Avenue","application_year":"2014"}
+,{"project_name":"Triborough Preservation","project_address_es":"51 Saratoga Avenue","application_year":"2014"}
+,{"project_name":"Prospect Plaza South","project_address_es":"1760 -1796 Prospect Place","application_year":"2014"}
+,{"project_name":"Park House","project_address_es":"4275 Park Avenue","application_year":"2014"}
+,{"project_name":"3160 Park Ave","project_address_es":"3160 Park Avenue","application_year":"2014"}
+,{"project_name":"Greenpoint Landing - F2 Building","project_address_es":"5 Blue Slip","application_year":"2015"}
+,{"project_name":"Hunts Point Peninsula Apartments","project_address_es":"860 Bryant Avenue","application_year":"2015"}
+,{"project_name":"Hunts Point Peninsula Apartments","project_address_es":"887-897 Bryant Avenue","application_year":"2015"}
+,{"project_name":"Hunts Point Peninsula Apartments","project_address_es":"890 Bryant Avenue","application_year":"2015"}
+,{"project_name":"Hunts Point Peninsula Apartments","project_address_es":"898 Bryant Avenue","application_year":"2015"}
+,{"project_name":"Hunts Point Peninsula Apartments","project_address_es":"1012 Garrison Avenue","application_year":"2015"}
+,{"project_name":"La Casa Del Mondo","project_address_es":"3475 Third Avenue","application_year":"2015"}
+,{"project_name":"West Farms Longfellow Apartments","project_address_es":"1939 West Farms Road","application_year":"2015"}
+,{"project_name":"West Farms Longfellow Apartments","project_address_es":"1926 Longfellow Avenue","application_year":"2015"}
+,{"project_name":"Creston Burnside Apartments","project_address_es":"2030 Creston Avenue","application_year":"2015"}
+,{"project_name":"Tremont Renaissance","project_address_es":"4215 Park Avenue","application_year":"2015"}
+,{"project_name":"Elton Crossing","project_address_es":"432 E. 162nd Street/899 Elton Avenue","application_year":"2015"}
+,{"project_name":"PRC Andrews Avenue","project_address_es":"1710 Andrews Avenue","application_year":"2015"}
+,{"project_name":"PRC Andrews Avenue","project_address_es":"1730 Andrews Avenue","application_year":"2015"}
+,{"project_name":"PRC Andrews Avenue","project_address_es":"955 East 163rd Street","application_year":"2015"}
+,{"project_name":"PRC Andrews Avenue","project_address_es":"970 Kelly Street","application_year":"2015"}
+,{"project_name":"Landing Road Residence","project_address_es":"233 Landing Road","application_year":"2015"}
+,{"project_name":"38 Sixth Ave at Pacific Park Brooklyn","project_address_es":"38 6th Avenue","application_year":"2015"}
+,{"project_name":"East 138th Street Bronx","project_address_es":"255 East 138th Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"273 Quincy Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"587 Gates Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"567 Gates Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"468 Gates Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"480 Gates Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"482 Gates Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"486A Gates Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"277 Tompkins Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"450 Lexington Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"460 Lexington Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"617 Gates Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"542 Gates Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"546 Gates Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"848 Greene Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"956 Greene Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"631 Lexington Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"254 Marcus Garvey Boulevard","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"175 Saratoga Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"179 Saratoga Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"592 Quincy Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"601 Quincy Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"722 Quincy Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"1 Brevoort Place","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"1108-1110 Fulton Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"1124 Fulton Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"1154 Fulton Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"1176 Fulton Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"48 Hancock Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"2 Spencer Place","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"226 Lefferts Place","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"29 Brevoort Place","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"35 Brevoort Place","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"44 Hancock Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"53-55 Hancock Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"25-27 Spencer Place","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"1 Spencer Place","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"660 Willoughby Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"666 Willoughby Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"689 Dekalb Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"96 Pulaski Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"721 Dekalb Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"745 Dekalb Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"753 Dekalb Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"126 Pulaski Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"795 Dekalb Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"801 Dekalb Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"218 St James Place","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"236 Greene Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"105 Quincy Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"165 Quincy Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"12-16 Pulaski Street","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"1077-79 Bedford Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"894 Kent Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"674 Myrtle Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"285 Classon Avenue","application_year":"2015"}
+,{"project_name":"IMPACCT Preservation","project_address_es":"193 Skillman Street","application_year":"2015"}
+,{"project_name":"Beach Channel Senior Residences","project_address_es":"34-11 Beach Channel Drive","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"65-69 West 127th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"125 West 137th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"145-147 West 127th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"28-30 West 127th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"131 West 137th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"104 West 138th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"137 West 138th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"69 West 130th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"4 West 131st Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"8 West 131st Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"28-30 West 131st Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"71 West 131st Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"72 West 131st Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"73 West 131st Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"78 West 131st Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"2407 Frederick Douglas Blvd.","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"2451 Frederick Douglas Blvd.","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"2467 Frederick Douglas Blvd.","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"418 St. Nicholas Avenue","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"424 St. Nicholas Avenue","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"20-22 West 129th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"24 West 129th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"26 West 129th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"30 West 129th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"2092-2094 5th Avenue","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"103 West 137th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"105 West 137th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"127 West 137th Street","application_year":"2015"}
+,{"project_name":"Genesis Year 15 Apartments","project_address_es":"129 West 137th Street","application_year":"2015"}
+,{"project_name":"Crotona Terrace Building B","project_address_es":"1825 Boston Road","application_year":"2015"}
+,{"project_name":"Rose Ellen Smith MBD L.P.","project_address_es":"1131 West Farms Road","application_year":"2015"}
+,{"project_name":"Rose Ellen Smith MBD L.P.","project_address_es":"1711 Hoe Avenue","application_year":"2015"}
+,{"project_name":"The Pavilion at Locust Manor","project_address_es":"171-04 Baisley Boulevard","application_year":"2015"}
+,{"project_name":"Affordable and Supportive Family Housing at Van Dyke","project_address_es":"603 Mother Gaston Boulevard","application_year":"2015"}
+,{"project_name":"The Glenmore","project_address_es":"91 Junius Street","application_year":"2015"}
+,{"project_name":"Essex Crossing-Site 2","project_address_es":"115 Delancey Street","application_year":"2015"}
+,{"project_name":"Essex Crossing-Site 5","project_address_es":"145 Clinton Street","application_year":"2015"}
+,{"project_name":"Beach Green North","project_address_es":"44-19 Rockaway Beach Blvd.","application_year":"2015"}
+,{"project_name":"Compass Residences Building 2B","project_address_es":"1544 Boone Avenue","application_year":"2015"}
+,{"project_name":"Compass Residences Building 2A","project_address_es":"1524 Boone Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"442 Logan Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"436 Logan Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"923 Glenmore Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"171 Milford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"180 Milford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"271 Milford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"2482 Pitkin Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"113 Montauk Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"784 Belmont Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"363 Elton Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"743 Cleveland Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"873 Hegeman Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"700 Cleveland","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"2484 Linden Boulevard","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"2474 Linden Boulevard","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"325 Ashford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"424 Ashford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"493 Ashford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"209 Bradford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"301 Bradford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"306 Bradford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"276 New Jersey Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"375 Bradford Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"459 Wynona Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"462 Wynona Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"465 Wynona Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"629 Miller Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"694 Miller Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"730 Miller Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"752 Miller Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"537-539 Sheffield Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"556 Georgia Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"543 Georgia Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"277-279 Hinsdale Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"305 Hinsdale Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"293 Hinsdale Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"311 Hinsdale Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"535 Snediker Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"547 Snediker Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"607 Snediker Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"610 Snediker Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"614 Snediker Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"550 Snediker Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"601 Snediker Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"605 Snediker Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"573 Van Siclen Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"679 Hendrix Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"566 Pennsylvania Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"659 Pennsylvania Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"549 Alabama Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"422 Newport Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"430 Newport Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"514 Chester Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"1342-1344 Bergen Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"869 Eastern Parkway","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"907 St. John's Place","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"1600 Pacific Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"1445 Pacific Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"721 Sterling Place","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"319-321 Albany Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"355 Berriman Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"1142 Willoughby Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"1414 Dekalb Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"142 Palmetto Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"16 Palmetto Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"309 Eldert Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"366 Palmetto Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"811 Knickerbocker Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"1141 Bushwick Avenue","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"180 Cooper Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"182 Cooper Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"23 Moffat Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"988 Hancock Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"110 Cornelia Street","application_year":"2015"}
+,{"project_name":"MHANY 75","project_address_es":"109 Cornelia Street","application_year":"2015"}
+,{"project_name":"Rogers Avenue","project_address_es":"1345-57 Rogers Avenue","application_year":"2015"}
+,{"project_name":"Serviam Heights","project_address_es":"2848 Bainbridge Avenue","application_year":"2015"}
+,{"project_name":"2605 Grand Concourse","project_address_es":"2605 Grand Concourse","application_year":"2015"}
+,{"project_name":"530 Exterior Street","project_address_es":"530 Exterior Street","application_year":"2015"}
+,{"project_name":"Bensonhurst Housing for the Elderly","project_address_es":"2164 78th Street","application_year":"2015"}
+,{"project_name":"Jarka Hall L.P.","project_address_es":"268 Bedford Ave","application_year":"2016"}
+,{"project_name":"Jarka Hall L.P.","project_address_es":"249 Bedford Ave","application_year":"2016"}
+,{"project_name":"Jarka Hall L.P.","project_address_es":"162 North 3rd St","application_year":"2016"}
+,{"project_name":"Jarka Hall L.P.","project_address_es":"180 North 3rd St","application_year":"2016"}
+,{"project_name":"Acacia Gardens","project_address_es":"401-411 East 120th Street","application_year":"2016"}
+,{"project_name":"Williamsburg Bridgeview Apartments","project_address_es":"105 S. 5th Street","application_year":"2016"}
+,{"project_name":"Elbee Gardens","project_address_es":"1950 Clove Road","application_year":"2016"}
+,{"project_name":"Prospect Plaza - Site 3","project_address_es":"1835 Sterling Place","application_year":"2016"}
+,{"project_name":"Story Avenue East","project_address_es":"1530 Story Avenue","application_year":"2016"}
+,{"project_name":"L2 Sites 6, 7 & 8","project_address_es":"453 Hinsdale Street","application_year":"2016"}
+,{"project_name":"L2 Sites 6, 7 & 8","project_address_es":"500 Livonia Ave","application_year":"2016"}
+,{"project_name":"L2 Sites 6, 7 & 8","project_address_es":"481 Livonia Ave","application_year":"2016"}
+,{"project_name":"Van Sinderen Plaza","project_address_es":"679 Van Sinderen Ave","application_year":"2016"}
+,{"project_name":"Van Sinderen Plaza","project_address_es":"180 New Lots Ave","application_year":"2016"}
+,{"project_name":"Norwood Gardens","project_address_es":"400 East 203rd Street","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1327 Southern Boulevard","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1345 Southern Boulevard","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1357 Southern Boulevard","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1816 Crotona Park East","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1346 Lyman Place","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1360 Lyman Place","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1365 Lyman Place","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1389 Stebbins Avenue","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1359 Lyman Place","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1366 Lyman Place","application_year":"2016"}
+,{"project_name":"Don L.W. LLC","project_address_es":"1370 Lyman Place","application_year":"2016"}
+,{"project_name":"Melrose Commons Supportive Housing","project_address_es":"425 East 161st Street","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"8-14 West 111th Street","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"32-38 West 111th Street","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"24-30 West 111th Street","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"46-50 West 111th Street","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"52-56 West 111th Street","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"40-44 West 111th Street","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"2411 Frederick Douglass Blvd","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"602-16 West 135th Street","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"618-22 West 135th Street","application_year":"2016"}
+,{"project_name":"Tahl Propp AIMCO Cluster","project_address_es":"16-22 West 111th Street","application_year":"2016"}
+,{"project_name":"491 Gerard Avenue","project_address_es":"491 Gerard Avenue","application_year":"2016"}
+,{"project_name":"148 Jamaica","project_address_es":"147-20 94th Avenue","application_year":"2016"}
+,{"project_name":"TLK Manor","project_address_es":"917 Westchester Ave","application_year":"2016"}
+,{"project_name":"TLK Manor","project_address_es":"944 Rogers Place","application_year":"2016"}
+,{"project_name":"Seaview C","project_address_es":"155-175 Friendship Lane","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"251 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"253 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"255 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"257 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"259 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"261 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"263 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"251 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"265 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"267 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"269 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"271 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"273 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"275 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"277 West 114th Street","application_year":"2016"}
+,{"project_name":"Randolph Houses - Phase 2","project_address_es":"279 West 114th Street","application_year":"2016"}
+,{"project_name":"Williamsburg Apartments","project_address_es":"356 Bedford Avenue","application_year":"2016"}
+,{"project_name":"Williamsburg Apartments","project_address_es":"37 Maujer Street","application_year":"2016"}
+,{"project_name":"Williamsburg Apartments","project_address_es":"37 Ten Eyck Street","application_year":"2016"}
+,{"project_name":"Williamsburg Apartments","project_address_es":"33 Ten Eyck Street","application_year":"2016"}
+,{"project_name":"Story Avenue West","project_address_es":"1520 Story Avenue","application_year":"2016"}
+,{"project_name":"1880 Boston Road","project_address_es":"1880 Boston Road","application_year":"2016"}
+,{"project_name":"One Flushing","project_address_es":"133-51 41st Avenue","application_year":"2016"}
+,{"project_name":"One Flushing","project_address_es":"133-45 41st Avenue","application_year":"2016"}
+,{"project_name":"PRC Fox Street","project_address_es":"1000 Fox Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"2349 2nd Avenue","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"415 East 115th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"210 East 119th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"212 East 117th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"161 East 116th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"26 East 109th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"15 East 109th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"16 East 109th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"151 East 106th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"2026 Lexington Avenue","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"155 East 117th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"140 East 117th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"11 East 109th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"2284 2nd Avenue","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"154 East 124th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"2330 2nd Avenue","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"157 East 117th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"316 East 116th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"23 East 108th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"112 East 117th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"129 East 123rd Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"425 East 115th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"423 East 115th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"2158 2nd Avenue","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"344 East 112th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"162 East 105th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"426 East 115th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"247 East 111th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"120 East 117th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"8 East 110th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"2164 2nd Avenue","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"429 East 115th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"24 East 109th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"307 East 111th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"212 East 111th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"422 East 115th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"18 East 109th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"22 East 109th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"334 East 112th Street","application_year":"2016"}
+,{"project_name":"Hope East of Fifth","project_address_es":"224 East 122nd Street","application_year":"2016"}
+,{"project_name":"The Crossing at Jamaica Station - High Rise","project_address_es":"147-40 Archer Avenue","application_year":"2016"}
+,{"project_name":"The Crossing at Jamaica Station - Mid Rise","project_address_es":"148-10 Archer Avenue","application_year":"2016"}
+,{"project_name":"Thessalonia Manor","project_address_es":"960 Prospect Avenue","application_year":"2016"}
+,{"project_name":"Fulton House","project_address_es":"425 West 18th Street","application_year":"2016"}
+,{"project_name":"Bronx Commons","project_address_es":"443 East 162nd Street","application_year":"2016"}
+,{"project_name":"Morris II Apartments","project_address_es":"2980 Park Avenue","application_year":"2017"}
+,{"project_name":"Compass Residences 5","project_address_es":"1903 West Farms Road","application_year":"2017"}
+,{"project_name":"MLK Plaza","project_address_es":"869 East 147th Street","application_year":"2017"}
+,{"project_name":"Tree of Life","project_address_es":"89-50 164th Street","application_year":"2017"}
+,{"project_name":"Gilbert on First/ Draper Hall Phase II","project_address_es":"1918 First Avenue","application_year":"2017"}
+,{"project_name":"Concourse Village West Apts","project_address_es":"180 East 156th Street","application_year":"2017"}
+,{"project_name":"Concourse Village West Apts","project_address_es":"741 Concourse Village West","application_year":"2017"}
+,{"project_name":"Concourse Village West Apts","project_address_es":"702 Grand Concourse","application_year":"2017"}
+,{"project_name":"Lexington Gardens II","project_address_es":"1461 Park Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"351 41st Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"354 41st Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"358 41st Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"555 49th Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"152 Albany Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"164 Albany Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"1439 Bedford Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"1453 Bedford Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"1455 Bedford Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"1458 Bedford Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"1057 Bergen Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"261 Buffalo Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"1347 Eastern Parkway","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"118 Fenimore Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"634 Franklin Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"645 Franklin Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"782 Franklin Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"683 Franklin Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"75 Hanson Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"67 Hanson Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"145 Hart Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"155 Hart Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"122 Kingston Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"285 Lincoln Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"1234 Lincoln Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"974 Myrtle Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"637 Park Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"723 Park Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"981 Park Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"19 Patchen Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"22a Patchen Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"581 Prospect Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"340 St. Johns Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"738 St. Johns Place","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"264 St. Marks Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"718 St. Marks Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"171 Tompkins Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"165 Van Buren Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"171 Van Buren Street","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"258A Vernon Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"264 Vernon Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"643 Willoughby Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"685 Willoughby Avenue","application_year":"2017"}
+,{"project_name":"BEC Phase II Resyndication","project_address_es":"736 Willoughby Avenue","application_year":"2017"}
+,{"project_name":"The Frederick","project_address_es":"2395 Fredrick Douglas Boulevard","application_year":"2017"}
+,{"project_name":"Bedford Green","project_address_es":"2865 Creston Avenue","application_year":"2017"}
+,{"project_name":"Westchester Mews","project_address_es":"2035 Newbold Avenue","application_year":"2017"}
+,{"project_name":"Westchester Mews","project_address_es":"2044 Westchester Avenue","application_year":"2017"}
+,{"project_name":"Wilfrid East & West","project_address_es":"1888 Bathgate Avenue","application_year":"2017"}
+,{"project_name":"Wilfrid East & West","project_address_es":"4181 Third Avenue","application_year":"2017"}
+,{"project_name":"Mill Brook Terrace","project_address_es":"570 East 137th Street","application_year":"2017"}
+,{"project_name":"Beach Green Dunes Phase II","project_address_es":"4519 Rockaway Beach Boulevard","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"475 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"479 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"481 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"483 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"485 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"487 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"489 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"491 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"493 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"494 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"495 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"496 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"497 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"498 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"500 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"502 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"504 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"506 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"508 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"Nehemiah Spring Creek 4B-1","project_address_es":"510 Vandalia Avenue","application_year":"2017"}
+,{"project_name":"La Central - Bronxchester","project_address_es":"556 Bergen Avenue","application_year":"2017"}
+,{"project_name":"La Central - Bronxchester","project_address_es":"600 Bergen Avenue","application_year":"2017"}
+,{"project_name":"985 Bruckner Boulevard","project_address_es":"985 Bruckner Boulevard","application_year":"2017"}
+,{"project_name":"600 East 156th Street","project_address_es":"735 Cauldwell Avenue","application_year":"2017"}
+,{"project_name":"Compass Residences Three","project_address_es":"1560 Boone Avenue","application_year":"2017"}
+,{"project_name":"Creston Parkview","project_address_es":"2519 Creston Avenue","application_year":"2017"}
+,{"project_name":"West 127th Street Residence","project_address_es":"302 West 127th Street","application_year":"2018"}
+,{"project_name":"West 127th Street Residence","project_address_es":"304 West 127th Street","application_year":"2018"}
+,{"project_name":"West 127th Street Residence","project_address_es":"306 West 127th Street","application_year":"2018"}
+,{"project_name":"West 127th Street Residence","project_address_es":"308 West 127th Street","application_year":"2018"}
+,{"project_name":"West 127th Street Residence","project_address_es":"310 West 127th Street","application_year":"2018"}
+,{"project_name":"West 127th Street Residence","project_address_es":"312 West 127th Street","application_year":"2018"}
+,{"project_name":"PRC Tiffany Street","project_address_es":"975 Tiffany Street","application_year":"2018"}
+,{"project_name":"Mosholu Grand","project_address_es":"150 Van Cortlandt Avenue","application_year":"2018"}
+,{"project_name":"Northeastern Towers Annex","project_address_es":"131-10 Guy R Brewer Boulevard","application_year":"2018"}
+,{"project_name":"Clarke Place Senior Residence","project_address_es":"112 Clarke Place East","application_year":"2018"}
+,{"project_name":"Augustina Apartments","project_address_es":"14-14 Central Avenue","application_year":"2018"}
+,{"project_name":"Archer Green Apartments","project_address_es":"92-29 168th Street","application_year":"2018"}
+,{"project_name":"Ebenezer Plaza (Phase 1A)","project_address_es":"94 New Lots Avenue","application_year":"2018"}
+,{"project_name":"Second Farms","project_address_es":"1932 Bryant Avenue","application_year":"2018"}
+,{"project_name":"Rockaway Village Phase 1","project_address_es":"1720 Mott Avenue","application_year":"2018"}
+,{"project_name":"Rockaway Village Phase 1","project_address_es":"1725 Mott Avenue","application_year":"2018"}
+,{"project_name":"Coney Island Phase 1","project_address_es":"2926 West 19th Street","application_year":"2018"}
+,{"project_name":"WSFSSH at West 108th Street","project_address_es":"143 West 108th Street","application_year":"2018"}
+,{"project_name":"WSFSSH at West 108th Street","project_address_es":"149 West 108th Street","application_year":"2018"}
+,{"project_name":"WSFSSH at West 108th Street","project_address_es":"151 West 108th Street","application_year":"2018"}
+,{"project_name":"Linden Terrace","project_address_es":"2858 Linden Boulevard","application_year":"2018"}
+,{"project_name":"Randy Watson Apartments","project_address_es":"1755 Watson Avenue","application_year":"2018"}
+,{"project_name":"Victory Plaza","project_address_es":"11 West 118th Street","application_year":"2018"}
+,{"project_name":"Hunters Point South Parcel C - North Tower","project_address_es":"52-03 2nd Street","application_year":"2018"}
+,{"project_name":"Hunters Point South - South Tower","project_address_es":"52-41 50th  Avenue","application_year":"2018"}
+,{"project_name":"Del Sur","project_address_es":"1490 Southern Boulevard","application_year":"2018"}
+,{"project_name":"125 MEC Center Parcel B West","project_address_es":"2319 Third Avenue","application_year":"2018"}
+,{"project_name":"Van Dyke III","project_address_es":"405 Dumont Avenue","application_year":"2018"}
+,{"project_name":"Riverwalk 8","project_address_es":"1460 Main Street","application_year":"2018"}
+,{"project_name":"Bedford Courts - Buildings 2 & 3","project_address_es":"1089 President Street","application_year":"2019"}
+,{"project_name":"Bedford Courts - Buildings 2 & 3","project_address_es":"1101 President Street","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"402 SCHROEDERS AVENUE","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"398 SCHROEDERS AVENUE","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"396 SCHROEDERS AVENUE","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"1115 ASHFORD STREET","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"516 SCHROEDERS AVENUE","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"129 GATEWAY DRIVE","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"1121 ASHFORD STREET","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"1111 ASHFORD STREET","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"502 SCHROEDERS AVENUE","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"401 SCHROEDERS AVENUE","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"1123 ASHFORD STREET","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"500 SCHROEDERS AVENUE","application_year":"2019"}
+,{"project_name":"Nehemiah Spring Creek 4B-2","project_address_es":"392 SCHROEDERS AVENUE","application_year":"2019"}
+,{"project_name":"1675 Westchester Avenue","project_address_es":"1675 WESTCHESTER AVENUE","application_year":"2019"}
+,{"project_name":"The Peninsula Building 1B","project_address_es":"720 TIFFANY STREET","application_year":"2019"}
+,{"project_name":"50 Penn","project_address_es":"50 PENNSYLVANIA AVENUE","application_year":"2019"}
+,{"project_name":"Halletts Point Building 7","project_address_es":"3-24 27 th AVENUE","application_year":"2019"}
+,{"project_name":"Park Haven","project_address_es":"345 ST ANNS AVENUE","application_year":"2019"}
+,{"project_name":"Sendero Verde B","project_address_es":"60 EAST 112th STREET","application_year":"2019"}
+,{"project_name":"Sendero Verde B","project_address_es":"75 EAST 111th STREET","application_year":"2019"}
+,{"project_name":"1769 Jerome Avenue","project_address_es":"1769 JEROME AVENUE","application_year":"2019"}
+,{"project_name":"River Crest Phase A","project_address_es":"1164 RIVER AVENUE","application_year":"2019"}
+,{"project_name":"Betances Senior Residence","project_address_es":"445 EAST 142ND STREET","application_year":"2019"}
+,{"project_name":"Ebenezer Plaza (Phase 1B)","project_address_es":"96 NEW LOTS AVENUE","application_year":"2019"}
+,{"project_name":"Apex Place","project_address_es":"11041 COLONIAL AVENUE","application_year":"2019"}
+,{"project_name":"Apex Place","project_address_es":"10875 62nd DRIVE","application_year":"2019"}
+,{"project_name":"Apex Place","project_address_es":"62-11 108th STREET","application_year":"2019"}
+,{"project_name":"RadRoc","project_address_es":"19-38 CORNAGA AVENUE","application_year":"2019"}
+,{"project_name":"RadRoc","project_address_es":"10-18 BEACH 20th STREET","application_year":"2019"}
+,{"project_name":"J2 147-07 94th Avenue LI LLC","project_address_es":"147-25 94 th AVENUE","application_year":"2019"}
+,{"project_name":"Hunters Point South F & G","project_address_es":"1-15 57th AVENUE","application_year":"2019"}
+,{"project_name":"Hunters Point South F & G","project_address_es":"57-28 2nd STREET","application_year":"2019"}
+,{"project_name":"Chestnut Commons Apartments","project_address_es":"3269 ATLANTIC AVENUE","application_year":"2019"}
+,{"project_name":"Beach 21st","project_address_es":"1047 BEACH 21st STREET","application_year":"2019"}
+,{"project_name":"Westchester Avenue","project_address_es":"980 WESTCHESTER AVENUE","application_year":"2019"}
+,{"project_name":"425 Grand Concourse","project_address_es":"425 GRAND CONCOURSE","application_year":"2019"}
+,{"project_name":"Rockaway Village Phase 2","project_address_es":"20-02 MOTT AVENUE","application_year":"2019"}
+,{"project_name":"Rockaway Village Phase 2","project_address_es":"20-10 MOTT AVENUE","application_year":"2019"}
+,{"project_name":"Parkchester Gardens","project_address_es":"1611 PURDY STREET","application_year":"2020"}
+,{"project_name":"Parkchester Gardens","project_address_es":"1701 PURDY STREET","application_year":"2020"}
+,{"project_name":"37 Hillside","project_address_es":"37 HILLSIDE AVENUE","application_year":"2020"}
+,{"project_name":"1911 Atlantic Avenue","project_address_es":"1911 ATLANTIC AVENUE","application_year":"2020"}
+,{"project_name":"Melrose North","project_address_es":"341 EAST 162ND STREET","application_year":"2020"}
+,{"project_name":"Linden Terrace II","project_address_es":"573 AMBER STREET","application_year":"2020"}
+,{"project_name":"Compass Six Residences","project_address_es":"1923 WEST FARMS ROAD","application_year":"2020"}
+,{"project_name":"Twin Parks Terrace","project_address_es":"2291 WEBSTER AVENUE","application_year":"2020"}
+,{"project_name":"Bronx Point","project_address_es":"575 EXTERIOR STREET","application_year":"2020"}
+,{"project_name":"Rockaway Village Phase 3","project_address_es":"17-21 REDFERN AVENUE","application_year":"2020"}
+,{"project_name":"The Eliza Apartments/Inwood Library","project_address_es":"4790 BROADWAY","application_year":"2021"}
+,{"project_name":"Simba Simbi: Serving Our Seniors","project_address_es":"381 CHESTER STREET","application_year":"2021"}
+,{"project_name":"Greenpoint Landing H1H2","project_address_es":"45 COMMERCIAL STREET","application_year":"2021"}
+,{"project_name":"St. Francis Commons","project_address_es":"1544 SHAKESPEARE AVENUE","application_year":"2021"}
+,{"project_name":"Sendero Verde A","project_address_es":"50 EAST 112 STREET","application_year":"2021"}
+,{"project_name":"Atrium at Sumner","project_address_es":"57 MARCUS GARVEY BOULEVARD","application_year":"2021"}
+,{"project_name":"The Willow","project_address_es":"750 EAST 134 STREET","application_year":"2021"}
+,{"project_name":"150 S. Portland/Hanson Place","project_address_es":"142-150 SOUTH PORTLAND AVENUE","application_year":"2021"}
+,{"project_name":"Atlantic Chestnut I","project_address_es":"250 EUCLID AVENUE","application_year":"2021"}
+,{"project_name":"Casa Celina","project_address_es":"1810 WATSON AVENUE","application_year":"2021"}
+,{"project_name":"River Crest Phase B","project_address_es":"1164 RIVER AVENUE","application_year":"2021"}
+,{"project_name":"HELP One Building A","project_address_es":"273 SUTTER AVENUE","application_year":"2021"}
+,{"project_name":"2080 Boston Road","project_address_es":"2080 BOSTON ROAD","application_year":"2021"}
+,{"project_name":"Rockaway Village - Phase 4","project_address_es":"1607 VILLAGE LANE","application_year":"2021"}
+,{"project_name":"Rockaway Village - Phase 4","project_address_es":"1605 VILLAGE LANE","application_year":"2021"}
+,{"project_name":"Linden Terrace III","project_address_es":"583 EMERALD STREET","application_year":"2021"}
+,{"project_name":"Coney Island Phase 2","project_address_es":"1607 SURF AVENUE","application_year":"2021"}]
