@@ -1,12 +1,12 @@
 package edu.nyu.dss.similarity;
 
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Set;
-
 import edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import edu.rmit.trajectory.clustering.kpaths.Util;
+
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Set;
 
 public class datasetFeatures {
 	
@@ -14,7 +14,7 @@ public class datasetFeatures {
 	 * in this class, we extract featurs of index which can distinguish dataset 
 	 */
 	
-	static indexAlgorithm<Object> indexkmeans = new indexAlgorithm<Object>();
+	static indexAlgorithm indexkmeans = new indexAlgorithm();
 	
 	static double feature[];
 	

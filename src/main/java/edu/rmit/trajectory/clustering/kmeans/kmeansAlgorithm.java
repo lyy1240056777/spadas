@@ -1,33 +1,15 @@
 package edu.rmit.trajectory.clustering.kmeans;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileDescriptor;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.Set;
-
-import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.apache.commons.lang3.tuple.Pair;
-
 import edu.rmit.trajectory.clustering.kpaths.KPathsOptimization;
 import edu.rmit.trajectory.clustering.kpaths.Util;
 import edu.wlu.cs.levy.cg.KeyDuplicateException;
 import edu.wlu.cs.levy.cg.KeySizeException;
+import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
+
+import java.io.*;
+import java.text.DecimalFormat;
+import java.util.*;
 
 
 /*
@@ -62,7 +44,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	int dimension_end = 0;// the dimension end in file
 	String split = null;	/*use to split the colume of dataset*/
 	
-	indexAlgorithm<Object> indexkmeans;
+	indexAlgorithm indexkmeans;
 	indexNode root;// the root node
 	indexNode rootCentroids;// the root node of centroid index
 	int capacity=30;
@@ -148,7 +130,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	double interBoundTime = 0;
 	boolean early_terminating;
 	
-	indexAlgorithm<indexNode> algorithm = new indexAlgorithm<indexNode>();
+	indexAlgorithm algorithm = new indexAlgorithm();
 	/*
 	 * set sign to test,
 	 */
@@ -372,7 +354,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	// we optimize the above algorithm using knn and join, 
 	public void computeInterCentoridEuckNN(int k, ArrayList<cluster> Center, double [][]clustData) {
 	//	AdvancedHausdorff.IncrementalDistance(point1xys, point2xys, k, X, Y, splitOption, fastMode, error, reverse, directDis, topkEarlyBreaking, nodelist, nodelist1);
-		indexAlgorithm<indexNode> algorithm = new indexAlgorithm<indexNode>();
+		indexAlgorithm algorithm = new indexAlgorithm();
 		double[] minDistnearestID = new double[4];
 		for(int i=0; i<k; i++) {
 			for(int j=0; j<4;j++)
@@ -688,7 +670,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	 * use 1nn and 2nn to assign when centroid is big, we can argumented with a bound.
 	 */
 	double[] assignPCKmenas(double pivot[], indexNode centroidRoot, double centerMatrix[][], boolean isNode) {
-		indexAlgorithm<indexNode> algorithm = new indexAlgorithm<indexNode>();
+		indexAlgorithm algorithm = new indexAlgorithm();
 		double[] minDistnearestID;
 		if(isNode) {
 			minDistnearestID = new double[4];
@@ -2622,7 +2604,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	public void experiments(int []setK, int testTime) throws IOException, KeySizeException, KeyDuplicateException {
 	//	plotData.runPlot("");
 		loadDataEuc(datafile, trajectoryNumber);	// load the data and create index
-		indexkmeans = new indexAlgorithm<>();
+		indexkmeans = new indexAlgorithm();
 		indexNode rootHKT=null, rootMtree=null, rootBall=null, rootCover=null, rootkd = null;
 		if(runBalltreeOnly)
 			rootHKT = runIndexbuildQueuePoint(0, capacity, 10);//load the dataset and build one index for all testing methods

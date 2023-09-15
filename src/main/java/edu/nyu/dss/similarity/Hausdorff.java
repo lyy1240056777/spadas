@@ -1,13 +1,9 @@
 package edu.nyu.dss.similarity;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.PriorityQueue;
-import java.util.Random;
-
 import edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.indexNode;
+
+import java.util.*;
 
 /*
  * measuring the distance between two set of points.
@@ -195,7 +191,7 @@ public class Hausdorff {
             // Generate random integers in range 0 to 999 
             int rand_int1 = rand.nextInt(point1xys.length); 
             double []point = point1xys[rand_int1];
-            indexAlgorithm<Object> indexDSS = new indexAlgorithm<Object>();
+            indexAlgorithm indexDSS = new indexAlgorithm();
             double []minDistnearestID = {Double.MAX_VALUE,0};
 			indexDSS.NearestNeighborSearchBall(point, Y, dimension, point2xys, minDistnearestID);
 			lb = minDistnearestID[0];
@@ -473,7 +469,7 @@ public class Hausdorff {
      * depth first, scan another tree again and again using the nearest neighbor search
      */
     public static double HausdorffWithIndexDFS(double [][]point1xys, double [][]point2xys, int dimension, indexNode X, 
-    		indexNode Y, double cmin, double ub, indexAlgorithm<Object> indexDSS) {
+    		indexNode Y, double cmin, double ub, indexAlgorithm indexDSS) {
     	if(ub<=cmin) {
     		return cmin;
     	}else if (X.isLeaf()) {

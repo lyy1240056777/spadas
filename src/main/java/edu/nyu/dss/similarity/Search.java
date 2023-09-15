@@ -1,15 +1,14 @@
 package edu.nyu.dss.similarity;
 
+import edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
+import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import org.apache.commons.lang3.tuple.Pair;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
-
-import org.apache.commons.lang3.tuple.Pair;
-
-import edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
 
 /*
  * this is for top-k dataset search based on similarity search, for evaluation paper
@@ -78,7 +77,7 @@ public class Search {
         double min_dis = Double.MAX_VALUE;
         int datasetid = 0;
         double error = 0;
-        indexAlgorithm<Object> indexDSS = new indexAlgorithm<>();
+        indexAlgorithm indexDSS = new indexAlgorithm();
         //TODO changed
         //when argoDataMap's size bigger than limit would throw npe
         int maxnum = Math.min(limit, argoDataMap.size());
@@ -129,7 +128,7 @@ public class Search {
                                                  indexNode querynode, int capacity, double[] weight, String indexString) throws FileNotFoundException, IOException {
         Map<Integer, Double> setBound = new HashMap<Integer, Double>();
         double[][] dataset = null;
-        indexAlgorithm<Object> indexDSS = new indexAlgorithm<>();
+        indexAlgorithm indexDSS = new indexAlgorithm();
 
         //TODO changed
         //when argoDataMap's size bigger than limit would throw npe
@@ -266,7 +265,7 @@ public class Search {
                                                                   double min_dis, int k, HashMap<Integer, PriorityQueue<queueMain>> queues, int dim,
                                                                   Map<Integer, double[][]> dataMap, Map<Integer, indexNode> datalakeIndex,
                                                                   Map<Integer, Map<Integer, indexNode>> datasetindex, Map<Integer, String> DatasetMapping,
-                                                                  String indexString, indexAlgorithm<Object> indexDSS, boolean dimSelected[], boolean dimensionAll,
+                                                                  String indexString, indexAlgorithm indexDSS, boolean dimSelected[], boolean dimensionAll,
                                                                   ArrayList<double[]> points, Map<Integer, indexNode> indexMap, int capacity, double weight[], boolean saveDatasetIndex) throws FileNotFoundException, IOException {
         if (datalakeRoot.isrootLeaf()) {
             int datasetid = datalakeRoot.getDatasetID();
@@ -443,7 +442,7 @@ public class Search {
         aForNodes.add(qNodes);
         double min_dis = Double.MAX_VALUE;
         int counter = 0;
-        indexAlgorithm<Object> indexDSS = new indexAlgorithm<>();
+        indexAlgorithm indexDSS = new indexAlgorithm();
         HashMap<Integer, Double> result = new HashMap<Integer, Double>();
         HashMap<Integer, PriorityQueue<queueMain>> queues = new HashMap<Integer, PriorityQueue<queueMain>>();
         while (!aForNodes.isEmpty()) {

@@ -1,22 +1,17 @@
 package edu.nyu.dss.similarity;
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import edu.nyu.dss.similarity.consts.DataLakeType;
-import emd.*;
-import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.tuple.MutablePair;
-import org.apache.commons.lang3.tuple.Pair;
-
 import edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import edu.rmit.trajectory.clustering.kpaths.Util;
+import emd.*;
+import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.tuple.MutablePair;
+import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
@@ -28,7 +23,15 @@ import web.VO.PreviewVO;
 import web.VO.UnionVO;
 import web.exception.FileException;
 
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 @Component
+@Slf4j
 public class Framework {
     /*
      * data set
@@ -45,26 +48,22 @@ public class Framework {
 //    public static String aString = "D:\\Projects\\Spadas\\spadas_5-16\\spadas_5-16\\dataset_bababackup";
     //    叶子节点最大容量，经常要改
     static int capacity = 1000;
-    public static Map<Integer, String> datasetIdMapping = new HashMap<Integer, String>();//integer
+    public static Map<Integer, String> datasetIdMapping = new HashMap<>();//integer
     //    存储数据集文件id到数据集文件名的映射，每个目录独立映射
-
-    //   public static HashMap<Integer, String> datasetIdMappingItem = new HashMap<>();
 
     public static HashMap<Integer, List<double[]>> dataSamplingMap = new HashMap<>();
     public static ArrayList<Map<Integer, String>> datasetIdMappingList = new ArrayList<>();
-    public static Map<Integer, double[][]> dataMapPorto = new HashMap<Integer, double[][]>();
+    public static Map<Integer, double[][]> dataMapPorto = new HashMap<>();
     //    每遍历一个目录文件（如城市）生成一个新的map，value总共组成了dataMapPorto，用于计算emd
     public static Map<Integer, double[][]> dataMapForEachDir = new HashMap<>();
-    static TreeMap<Integer, Integer> countHistogram = new TreeMap<Integer, Integer>();
+    static TreeMap<Integer, Integer> countHistogram = new TreeMap<>();
     //    维护数据集id到数据集文件路径的映射
     public static Map<Integer, File> fileIDMap = new HashMap<>();
+
     public static int datalakeID;// the lake id
-    static String folderString = ".";
     static int fileNo = 0;
     //	store the data of every point of the whole data lake
     public static List<double[]> dataPoint = new ArrayList<>();
-
-    public static Map<Integer, List<indexNode>> dataLakeMapping = new HashMap<>();
 
     public static List<CityNode> cityNodeList = new ArrayList<>();
 
@@ -87,7 +86,7 @@ public class Framework {
     /*
      * index
      */
-    static indexAlgorithm<Object> indexDSS = new indexAlgorithm<>();
+    static indexAlgorithm indexDSS = new indexAlgorithm();
     public static Map<Integer, indexNode> indexMap;// root node of dataset's index
     static Map<Integer, indexNode> datalakeIndex = null;// the global datalake index
     public static ArrayList<indexNode> indexNodes = new ArrayList<indexNode>(); // store the root nodes of all datasets in the lake
@@ -331,7 +330,7 @@ public class Framework {
      * read a folder and extract the corresponding column of each file inside
      * 读目录下的所有数据集文件，构建索引
      */
-    public static void readFolder(File folder, int limit, CityNode cityNode, int datasetIDForOneDir, HashMap<Integer, String> datasetIdMappingItem) throws IOException {
+    public static void readFolder(File folder, int limit, CityNode cityNode, int datasetIDForOneDir, HashMap<Integer, String> datasetIdMappingItem, DataLakeType type) throws IOException {
         File[] fileNames = folder.listFiles();
 //        int datasetIDForOneDir = 0;
 //        String fileName;
@@ -346,7 +345,7 @@ public class Framework {
         }
         for (File file : fileNames) {
             if (file.isDirectory()) {
-                readFolder(file, limit, cityNode, datasetIDForOneDir++, datasetIdMappingItem);
+                readFolder(file, limit, cityNode, datasetIDForOneDir++, datasetIdMappingItem, type);
             } else if (file.getName().endsWith(".csv")) {
 //				if (!isfolderVisited) {
 //					dataLakeMapping.put(index, new ArrayList<>());
@@ -370,16 +369,12 @@ public class Framework {
                 datasetIdMappingItem.put(datasetIDForOneDir, fileName);
 //                datasetIdMapping.put(fileNo, fileName);
 //                选择使用哪种读取方法
-                if (datalakeID == 7) { // 国内的百度POI数据集
-                    readContentCity(file, fileNo++, cityNode, datasetIDForOneDir, fileName);
-//                    readContentLines(file, fileNo++, cityNode, datasetIDForOneDir, fileName);
-//                    continue;
-                } else if (datalakeID == 8 || datalakeID == 9) { // 国外的数据集
-//                    readContentArgo(file, fileNo++, a, cityNode);
-                    readContentUSA(file, fileNo++, cityNode, datasetIDForOneDir, fileName);
-//                    continue;
-                } else if (datalakeID == 10) {
-                    readContentPoi(file, fileNo++, fileName, cityNode);
+                switch (type) {
+                    case BAIDU_POI -> readContentCity(file, fileNo++, cityNode, datasetIDForOneDir, fileName);
+                    case BUS_LINE, MOVE_BANK, USA ->
+                            readContentUSA(file, fileNo++, cityNode, datasetIDForOneDir, fileName);
+                    case POI -> readContentPoi(file, fileNo++, fileName, cityNode);
+                    case OPEN_NYC -> readContentOpenNyc(file, fileNo++, fileName, cityNode);
                 }
 //                一个数据集集中的索引
                 datasetIDForOneDir++;
@@ -492,7 +487,7 @@ public class Framework {
 //                }
             }
             xxx = list.toArray(new double[i][]);
-            System.out.println("File " + file.getName() + " has " + list.size() + " lines");
+//            System.out.println("File " + file.getName() + " has " + list.size() + " lines");
             dataPoint.addAll(list);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -572,7 +567,7 @@ public class Framework {
                 i++;
             }
             xxx = list.toArray(new double[i][]);
-            System.out.println("File " + dataFile.getName() + " has " + list.size() + " lines");
+//            System.out.println("File " + dataFile.getName() + " has " + list.size() + " lines");
             dataPoint.addAll(list);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -654,7 +649,7 @@ public class Framework {
                 }
             }
             xxx = list.toArray(new double[i][]);
-            System.out.println("File " + file.getName() + " has " + list.size() + " lines");
+//            System.out.println("File " + file.getName() + " has " + list.size() + " lines");
             dataPoint.addAll(list);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -731,7 +726,7 @@ public class Framework {
                 }
             }
             xxx = list.toArray(new double[i][]);
-            System.out.println("File " + file.getName() + " has " + list.size() + " lines");
+//            System.out.println("File " + file.getName() + " has " + list.size() + " lines");
             dataPoint.addAll(list);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -1022,13 +1017,15 @@ public class Framework {
                 String aString = splitString[0];
                 if (aString.matches("-?\\d+(\\.\\d+)?")) {// only has float
                     a[i] = new double[dimension];
-                    a[i][0] = Double.valueOf(splitString[0]);
-                    a[i][1] = Double.valueOf(splitString[1]);
+                    for (int j = 0; j < dimension; j++) {
+                        a[i][j] = Double.parseDouble(splitString[i]);
+                    }
                     i++;
                 }
             }
         }
         if (i > 0) {
+            // 统计数据集 size 分布
             if (countHistogram.containsKey(i))
                 countHistogram.put(i, countHistogram.get(i) + 1);
             else
@@ -1036,8 +1033,6 @@ public class Framework {
             if (storeAllDatasetMemory)
                 dataMapPorto.put(fileNo, a);
             if (storeIndexMemory) {
-//				debug in the future
-//				createDatasetIndex(fileNo, a, 1, dataLakeMapping.get(fileNo));
                 indexNode node = createDatasetIndex(fileNo, a, 1, cityNode);
                 node.setFileName(filename);
                 samplingDataByGrid(a, fileNo, node);
@@ -1050,6 +1045,39 @@ public class Framework {
         return dataMapPorto;
     }
 
+
+    /**
+     * 读取 Open NYC 的数据集
+     * <p>
+     * 先试试到底有多少数据集有坐标的（195/325）还可以
+     *
+     * @param file     文件对象
+     * @param fileNo   文件编号
+     * @param filename 文件名
+     * @param cityNode 城市节点
+     * @return
+     * @throws IOException
+     */
+    public static Map<Integer, double[][]> readContentOpenNyc(File file, int fileNo, String filename, CityNode cityNode) throws IOException {
+        if (!filename.endsWith(".csv")) {
+            return null;
+        }
+        log.info("reading {}", file.getName());
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            CSVParser parser = CSVFormat.DEFAULT.withHeader().parse(reader);
+            Map<String, Integer> headers = parser.getHeaderMap();
+            if (headers.containsKey("lat") || headers.containsKey("latitude")) {
+                log.info("[open-nyc]we get position in file {}", filename);
+            } else {
+                log.info("[open-nyc]no position in file {}", filename);
+            }
+        } catch (IOException e) {
+            log.error(e.getMessage());
+            throw e;
+        }
+        return null;
+    }
 
     /*
      * read from the mnist dataset and comparing with the dataset
@@ -1306,7 +1334,7 @@ public class Framework {
                 }
             }
             xxx = list.toArray(new double[list.size()][]);
-            System.out.println("File " + file.getName() + " has " + list.size() + " lines");
+//            System.out.println("File " + file.getName() + " has " + list.size() + " lines");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -1347,6 +1375,7 @@ public class Framework {
             HashMap<Integer, String> datasetIdMappingItem = new HashMap<>();
 
             DataLakeType type = DataLakeType.matchType(str);
+            datalakeID = type.id;
 
 //            datasetIdMappingItem.clear();
             File myFolder = new File(aString + "/" + str);
@@ -1357,7 +1386,7 @@ public class Framework {
 //            readFolder(myFolder, limit, cityNode, 0, datasetIdMappingItem);
 
 //            核心代码，这里的myFolder目录下就全部是数据集文件了
-            readFolder(myFolder, limit, cityNode, 0, datasetIdMappingItem);
+            readFolder(myFolder, limit, cityNode, 0, datasetIdMappingItem, type);
 
 //            cityNode.calAttrs(dimension);
 
@@ -2862,16 +2891,7 @@ public class Framework {
         // use pick-means
     }
 
-    //TODO custom code
-
-    /**
-     * 网页第一次加载和每次刷新时调用，因此需要判断相关的结构和变量是否已经存在
-     *
-     * @throws IOException
-     * @throws InterruptedException
-     */
-    public static void init() throws IOException {
-//        判断建立索引相关的结构与变量是否已经存在
+    private static void clearAll() {
         if (fileNo > 0) {
             fileNo = 0;
         }
@@ -2900,8 +2920,17 @@ public class Framework {
         if (!cityNodeList.isEmpty()) {
             cityNodeList.clear();
         }
-//        新增的一些数据结构需要补上
+    }
 
+    /**
+     * 网页第一次加载和每次刷新时调用，因此需要判断相关的结构和变量是否已经存在
+     *
+     * @throws IOException
+     */
+    public static void init() throws IOException {
+//        判断建立索引相关的结构与变量是否已经存在
+        clearAll();
+//        新增的一些数据结构需要补上
         dimension = 2;
 //		indexString = "./index/dss/index/argo/";
 //		zcodeSer= "./index/dss/index/argo/argo_bitmaps";
@@ -2936,11 +2965,8 @@ public class Framework {
 //		if(!zcurveExist)
 //			EffectivenessStudy.SerializedZcurve(zcurveFile, zcodemap);
         createDatalake(limit);// create or load the index of whole data lake, and store it into disk to avoid rebuilding it
-        System.out.println(1);
-//        System.out.println();
-//        System.out.println("test EMD");
+        log.info("All data loaded.");
 //        testEMD();
-//        System.out.println("test finished");
 //        testExemplarSearch();
     }
 

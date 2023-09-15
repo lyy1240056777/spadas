@@ -1,5 +1,13 @@
 package edu.rmit.trajectory.clustering.kmeans;
 
+import com.google.common.base.Splitter;
+import edu.nyu.dss.similarity.Hausdorff;
+import edu.rmit.trajectory.clustering.kpaths.Util;
+import edu.wlu.cs.levy.cg.KDTree;
+import edu.wlu.cs.levy.cg.KeyDuplicateException;
+import edu.wlu.cs.levy.cg.KeySizeException;
+import es.saulvargas.balltrees.BallTreeMatrix;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -9,16 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import com.google.common.base.Splitter;
-
-import edu.rmit.trajectory.clustering.kpaths.Util;
-import edu.nyu.dss.similarity.Hausdorff;
-import edu.wlu.cs.levy.cg.KDTree;
-import edu.wlu.cs.levy.cg.KeyDuplicateException;
-import edu.wlu.cs.levy.cg.KeySizeException;
-import es.saulvargas.balltrees.BallTreeMatrix;
-
-public class indexAlgorithm<E> {
+public class indexAlgorithm {
 
 	int distanceCompute = 0;
 	int NodeAccess = 0;
@@ -31,7 +30,7 @@ public class indexAlgorithm<E> {
 	}
 	
 	public void buildKDtree(int dims, double[][] itemMatrix) throws KeySizeException, KeyDuplicateException {
-		KDTree<Long> kt = new KDTree<Long>(dims);
+		KDTree<Long> kt = new KDTree<>(dims);
 		long idx = 1;
 		for(double[] point: itemMatrix) {
 			kt.insert(point, idx++);//fast construction: point, value
@@ -68,7 +67,7 @@ public class indexAlgorithm<E> {
 	/*
 	 * update the sum vector of index with fair constraint, for fair clustering
 	 */
-	public double[] updateSumFair(indexNode root, int dimension, int userID[], Map<Integer, Integer> userNumber, double[][] datamapDouble) {
+	public double[] updateSumFair(indexNode root, int dimension, int[] userID, Map<Integer, Integer> userNumber, double[][] datamapDouble) {
 		if(root.isLeaf()) {	
 			Set<Integer> listnode = root.getpointIdList();
 			double[] sum = new double[dimension];
@@ -97,7 +96,7 @@ public class indexAlgorithm<E> {
 	/*
 	 * update the number of points for fair clustering
 	 */
-	public double updateCoveredPointsFair(indexNode root, int dimension, int userID[], Map<Integer, Integer> userNumber, double[][] datamapDouble) {
+	public double updateCoveredPointsFair(indexNode root, int dimension, int[] userID, Map<Integer, Integer> userNumber, double[][] datamapDouble) {
 		if(root.isLeaf()) {	
 			Set<Integer> listnode = root.getpointIdList();
 			double coveredpints = 0;
@@ -178,16 +177,7 @@ public class indexAlgorithm<E> {
 		
 	}*/
 
-	/**
-	 *
-	 * @param itemMatrix
-	 * @param dimension
-	 * @param capacity
-	 * @param userID
-	 * @param userNumber
-	 * @return 根节点
-	 */
-	public indexNode buildBalltree2(double[][] itemMatrix, int dimension, int capacity, int userID[], Map<Integer, Integer> userNumber) {// too slow	
+	public indexNode buildBalltree2(double[][] itemMatrix, int dimension, int capacity, int[] userID, Map<Integer, Integer> userNumber) {// too slow
 	//	System.out.println("Building Ball-tree using Matrix...");
 		long startTime1 = System.nanoTime();
 		int deepth = (int) (Math.log(itemMatrix.length)/Math.log(2));//the deepth is computed based on binary tree
@@ -281,7 +271,7 @@ public class indexAlgorithm<E> {
 	/*
 	 * search all the points within a distance radius, known as similarity search, using M-tree may be better.
 	 */
-	public ArrayList<Integer> SimilaritySearchBall(double radius, double point[], indexNode root, int dimension, 
+	public ArrayList<Integer> SimilaritySearchBall(double radius, double[] point, indexNode root, int dimension,
 			double[][] itemMatrix) { 
 		ArrayList<Integer> result = new ArrayList<>();
 		if (root.isLeaf()) {

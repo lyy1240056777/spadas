@@ -1,24 +1,15 @@
 package edu.nyu.dss.similarity;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
+import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kpaths.Util;
+import org.apache.commons.io.FileUtils;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
-
-import org.apache.commons.io.FileUtils;
-
-import edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
-import edu.rmit.trajectory.clustering.kpaths.Util;
 
 
 public class EffectivenessStudy {
@@ -334,7 +325,7 @@ public class EffectivenessStudy {
 		 * test the index of whole data lake
 		 */
 		double joinThreshold[] = {50, 100, 150, 200, 250};
-		indexAlgorithm<Object> indexDSS = new indexAlgorithm<>();
+		indexAlgorithm indexDSS = new indexAlgorithm();
 		System.out.println("indexing datasets");
 		Map<Integer, indexNode> datalakeIndex = null;
 		indexDSS.setGloabalid();
