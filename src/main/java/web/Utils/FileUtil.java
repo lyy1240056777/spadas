@@ -2,6 +2,7 @@ package web.Utils;
 
 import edu.nyu.dss.similarity.Framework;
 import org.apache.commons.lang3.tuple.Pair;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
@@ -10,6 +11,7 @@ import web.exception.FileException;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URLConnection;
@@ -29,11 +31,14 @@ import java.util.List;
 @Service
 public class FileUtil {
 
+    @Value("${spadas.file.baseUri}")
+    private String basePath;
+
     private final Path fileStorageLocation;
 
     private final FileProperties fileProperties;
 
-//    @Autowired
+    //    @Autowired
     public FileUtil(FileProperties fileProperties) {
         this.fileProperties = fileProperties;
         this.fileStorageLocation = Paths.get(fileProperties.getBaseUri()).toAbsolutePath().normalize();
@@ -146,7 +151,7 @@ public class FileUtil {
      */
     public Pair<String[], String[][]> readPreviewDataset(String filename, int max, double[][] data) throws IOException {
 //        File file = findFiles(Framework.aString, filename);
-        File file = new File(Framework.aString + "\\" + filename);
+        File file = new File(basePath + "\\" + filename);
         if (file.exists()) {
             System.out.println();
         }

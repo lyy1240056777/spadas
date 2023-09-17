@@ -44,7 +44,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	int dimension_end = 0;// the dimension end in file
 	String split = null;	/*use to split the colume of dataset*/
 	
-	indexAlgorithm indexkmeans;
+	IndexAlgorithm indexkmeans;
 	indexNode root;// the root node
 	indexNode rootCentroids;// the root node of centroid index
 	int capacity=30;
@@ -130,7 +130,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	double interBoundTime = 0;
 	boolean early_terminating;
 	
-	indexAlgorithm algorithm = new indexAlgorithm();
+	IndexAlgorithm algorithm = new IndexAlgorithm();
 	/*
 	 * set sign to test,
 	 */
@@ -354,7 +354,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	// we optimize the above algorithm using knn and join, 
 	public void computeInterCentoridEuckNN(int k, ArrayList<cluster> Center, double [][]clustData) {
 	//	AdvancedHausdorff.IncrementalDistance(point1xys, point2xys, k, X, Y, splitOption, fastMode, error, reverse, directDis, topkEarlyBreaking, nodelist, nodelist1);
-		indexAlgorithm algorithm = new indexAlgorithm();
+		IndexAlgorithm algorithm = new IndexAlgorithm();
 		double[] minDistnearestID = new double[4];
 		for(int i=0; i<k; i++) {
 			for(int j=0; j<4;j++)
@@ -670,7 +670,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	 * use 1nn and 2nn to assign when centroid is big, we can argumented with a bound.
 	 */
 	double[] assignPCKmenas(double pivot[], indexNode centroidRoot, double centerMatrix[][], boolean isNode) {
-		indexAlgorithm algorithm = new indexAlgorithm();
+		IndexAlgorithm algorithm = new IndexAlgorithm();
 		double[] minDistnearestID;
 		if(isNode) {
 			minDistnearestID = new double[4];
@@ -2604,7 +2604,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	public void experiments(int []setK, int testTime) throws IOException, KeySizeException, KeyDuplicateException {
 	//	plotData.runPlot("");
 		loadDataEuc(datafile, trajectoryNumber);	// load the data and create index
-		indexkmeans = new indexAlgorithm();
+		indexkmeans = new IndexAlgorithm();
 		indexNode rootHKT=null, rootMtree=null, rootBall=null, rootCover=null, rootkd = null;
 		if(runBalltreeOnly)
 			rootHKT = runIndexbuildQueuePoint(0, capacity, 10);//load the dataset and build one index for all testing methods

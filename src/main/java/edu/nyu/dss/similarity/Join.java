@@ -1,6 +1,6 @@
 package edu.nyu.dss.similarity;
 
-import edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
+import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import edu.rmit.trajectory.clustering.kpaths.Util;
 import org.apache.commons.lang3.tuple.Pair;
@@ -15,7 +15,7 @@ import java.util.TreeMap;
 public class Join {
 
     // join two tables by finding nearest neighbor, can also be used in join
-    public static void joinTableBaseline(double[][] query, double[][] dataset, indexNode idxQuery, indexNode idxDataset, int dimension, indexAlgorithm indexDSS) {
+    public static void joinTableBaseline(double[][] query, double[][] dataset, indexNode idxQuery, indexNode idxDataset, int dimension, IndexAlgorithm indexDSS) {
         int i = 1;
         Map<Integer, Integer> joinNearestMap = new TreeMap<Integer, Integer>();
         for (double[] queryPoint : query) {

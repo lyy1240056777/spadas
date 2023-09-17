@@ -1,6 +1,6 @@
 package edu.nyu.dss.similarity;
 
-import edu.rmit.trajectory.clustering.kmeans.indexAlgorithm;
+import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import edu.rmit.trajectory.clustering.kpaths.Util;
 
@@ -14,7 +14,7 @@ public class datasetFeatures {
 	 * in this class, we extract featurs of index which can distinguish dataset 
 	 */
 	
-	static indexAlgorithm indexkmeans = new indexAlgorithm();
+	static IndexAlgorithm indexkmeans = new IndexAlgorithm();
 	
 	static double feature[];
 	
