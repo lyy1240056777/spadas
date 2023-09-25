@@ -3,6 +3,7 @@ package edu.nyu.dss.similarity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -14,32 +15,17 @@ import java.util.List;
 
 @Component
 @Data
+@NoArgsConstructor
 public class SSSData {
     @JsonProperty("id")
     int id;
     @JsonProperty("name")
     String name;
 
-    enum Type {
-        Fish("鱼类数据"),
-        Phytoplankton("浮游植物"),
-        Zooplankton("浮游动物"),
-        Zoobenthos("底栖动物");
-
-        String description;
-
-        Type(String description) {
-            this.description = description;
-        }
-    }
-
     @JsonIgnore
     Type type;
     @JsonProperty("previewData")
     List<List<String>> previewData;
-
-//    无参构造方法，这是spring框架创建bean实例时所需要的
-    SSSData() {}
 
     SSSData(int id, String filePath) throws IOException {
         File file = new File(filePath);
@@ -69,6 +55,19 @@ public class SSSData {
             }
         } else {
             System.out.println("Failed: " + filePath);
+        }
+    }
+
+    enum Type {
+        Fish("鱼类数据"),
+        Phytoplankton("浮游植物"),
+        Zooplankton("浮游动物"),
+        Zoobenthos("底栖动物");
+
+        String description;
+
+        Type(String description) {
+            this.description = description;
         }
     }
 }

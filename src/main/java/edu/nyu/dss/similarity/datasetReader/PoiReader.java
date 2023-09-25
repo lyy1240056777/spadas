@@ -53,7 +53,10 @@ public class PoiReader {
     /*
      * read single dataset in a poi folder
      */
-    public Map<Integer, double[][]> read(File file, int fileNo, String filename, CityNode cityNode) throws IOException {
+    public Map<Integer, double[][]> read(File file, int fileNo, CityNode cityNode) throws IOException {
+        if (!file.getName().endsWith("csv")) {
+            return null;
+        }
         long lineNumber = 0;
         try (Stream<String> lines = Files.lines(file.toPath())) {
             lineNumber = lines.count();
@@ -81,10 +84,10 @@ public class PoiReader {
                 dataMapPorto.put(fileNo, a);
             if (cacheIndex) {
                 indexNode node = indexBuilder.createDatasetIndex(fileNo, a, 1, cityNode);
-                node.setFileName(filename);
+                node.setFileName(file.getName());
                 indexBuilder.samplingDataByGrid(a, fileNo, node);
             }
-            datasetIDMapping.put(fileNo, filename);
+            datasetIDMapping.put(fileNo, file.getName());
             fileIDMap.put(fileNo, file);
 //          storeZcurve(a, fileNo, 0, 0, 0, 0, null);
         }

@@ -261,7 +261,6 @@ public class Search {
                 }
                 if (scanning || bound < min_dis && bound > 0) {
                     result = rangeQueryRankingArea(childNode, result, querymax, querymin, min_dis, k, queues, dim, datalakeIndex, nonselectedDimension, dimensionAll);
-                    System.out.println();
                 }
             }
         }
@@ -436,7 +435,7 @@ public class Search {
      * Hausdorff, we prune those index and return candidates for further purning using sequential methods
      * 样例查询的算法
      */
-    public HashMap<Integer, Double> pruneByIndex(Map<Integer, double[][]> dataMap, indexNode datalakeRoot, indexNode query, int querySet,
+    public HashMap<Integer, Double> pruneByIndex(Map<Integer, double[][]> dataMap, indexNode datalakeRoot, indexNode query,
                                                  int dimension, Map<Integer, indexNode> indexMap,
                                                  Map<Integer, Map<Integer, indexNode>> nodelist1, Map<Integer, indexNode> queryindexmap, Map<Integer, indexNode> datalakeIndex,
                                                  Map<Integer, String> argoDataMap, int k, String indexString, boolean nonselectedDimension[], boolean dimensionAll,

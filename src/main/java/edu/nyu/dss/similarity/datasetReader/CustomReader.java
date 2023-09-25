@@ -1,5 +1,11 @@
 package edu.nyu.dss.similarity.datasetReader;
 
+import edu.nyu.dss.similarity.index.DataMapPorto;
+import edu.nyu.dss.similarity.index.DatasetIDMapping;
+import edu.nyu.dss.similarity.index.IndexBuilder;
+import edu.nyu.dss.similarity.statistics.PointCounter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -13,7 +19,24 @@ import java.util.stream.Stream;
 @Component
 public class CustomReader {
 
-    public static void read(File file, int fileNo) throws IOException {
+    @Autowired
+    private PointCounter pointCounter;
+
+    @Value("${spadas.cache-index}")
+    private boolean cacheIndex;
+
+    @Value("${spadas.cache-dataset}")
+    private boolean cacheDataset;
+
+    @Autowired
+    private DataMapPorto dataMapPorto;
+    @Autowired
+    private IndexBuilder indexBuilder;
+
+    @Autowired
+    private DatasetIDMapping datasetIDMapping;
+
+    public void read(File file, int fileNo) throws IOException {
         long lineNumber;
         try (Stream<String> lines = Files.lines(file.toPath())) {
             lineNumber = lines.count();
@@ -36,15 +59,13 @@ public class CustomReader {
                 }
             }
         }
-//        if (countHistogram.containsKey(i))
-//            countHistogram.put(i, countHistogram.get(i) + 1);
-//        else
-//            countHistogram.put(i, 1);
-//        if (storeAllDatasetMemory)
-//            dataMapPorto.put(fileNo, a);
-//        if (storeIndexMemory) {
-////			createDatasetIndex(fileNo, a, 0, dataLakeMapping.get(fileNo));
-//        }
+        pointCounter.put(a.length);
+
+        if (cacheDataset)
+            dataMapPorto.put(fileNo, a);
+        if (cacheIndex) {
+//            indexBuilder.createDatasetIndex(fileNo, a, 0, datasetIDMapping.get(fileNo));
+        }
 //        if (!zcurveExist)
 //            storeZcurve(a, fileNo);
     }

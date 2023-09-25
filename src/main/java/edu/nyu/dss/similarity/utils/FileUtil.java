@@ -1,5 +1,6 @@
 package edu.nyu.dss.similarity.utils;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -9,6 +10,10 @@ public class FileUtil {
     public static void write(String fileName, String content) {
         RandomAccessFile randomFile = null;
         try {
+            File file = new File(fileName);
+            String parentDir = file.getParent();
+            File dir  = new File(parentDir);
+            dir.mkdirs();
             randomFile = new RandomAccessFile(fileName, "rw");
             long fileLength = randomFile.length();
             randomFile.seek(fileLength);

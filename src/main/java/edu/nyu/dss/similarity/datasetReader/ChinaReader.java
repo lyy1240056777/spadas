@@ -1,6 +1,7 @@
 package edu.nyu.dss.similarity.datasetReader;
 
 import edu.nyu.dss.similarity.CityNode;
+import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.nyu.dss.similarity.index.*;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
@@ -21,16 +22,8 @@ import java.util.Map;
 @Component
 @Slf4j
 public class ChinaReader {
-
-
-    @Value("${spadas.dimension}")
-    private int dimension;
-
-    @Value("${spadas.cache-dataset}")
-    private boolean cacheDataset;
-
-    @Value("${spadas.cache-index}")
-    private boolean cacheIndex;
+    @Autowired
+    private SpadasConfig config;
 
     @Autowired
     private DatasetSizeCounter datasetSizeCounter;
@@ -53,7 +46,10 @@ public class ChinaReader {
     @Autowired
     private IndexBuilder indexBuilder;
 
-    public Map<Integer, double[][]> read(File file, int fileNo, CityNode cityNode, int datasetIDForOneDir, String fileName) throws IOException {
+    public Map<Integer, double[][]> read(File file, int fileNo, CityNode cityNode, int datasetIDForOneDir) throws IOException {
+        if (!file.getName().endsWith("csv")) {
+            return null;
+        }
         int i = 0;
         List<double[]> list = new ArrayList<>();
         double[][] data;
@@ -69,7 +65,7 @@ public class ChinaReader {
                     log.warn("file {},row {} has bad content.", file.getName(), lineNumber);
                     continue;
                 }
-                double[] b = new double[dimension];
+                double[] b = new double[config.getDimension()];
                 if (!splitString[12].isEmpty() && !splitString[11].isEmpty()) {
                     try {
 //                        第一个值是纬度lat，第二个值是经度lng
@@ -95,18 +91,18 @@ public class ChinaReader {
         }
         if (i > 0) {
             datasetSizeCounter.put(i);
-            if (cacheDataset) {
+            if (config.isCacheDataset()) {
                 dataMapPorto.put(fileNo, data);
                 datasetPerDir.put(datasetIDForOneDir, data);
             }
-            if (cacheIndex) {
+            if (config.isCacheIndex()) {
 //				createDatasetIndex(fileNo, xxx,1);
                 indexNode node = indexBuilder.createDatasetIndex(fileNo, data, 1, cityNode);
 //                对数据进行基于网格的取样，减小数据量
                 indexBuilder.samplingDataByGrid(data, fileNo, node);
-                node.setFileName(fileName);
+                node.setFileName(file.getName());
             }
-            datasetIDMapping.put(fileNo, fileName);
+            datasetIDMapping.put(fileNo, file.getName());
             fileIDMap.put(fileNo, file);
 //          storeZcurve(xxx, fileNo, 5, 5, 30, 100);
 ////        EffectivenessStudy.SerializedZcurve(zcodemap);

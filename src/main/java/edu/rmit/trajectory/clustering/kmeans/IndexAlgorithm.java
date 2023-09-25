@@ -7,6 +7,8 @@ import edu.wlu.cs.levy.cg.KDTree;
 import edu.wlu.cs.levy.cg.KeyDuplicateException;
 import edu.wlu.cs.levy.cg.KeySizeException;
 import es.saulvargas.balltrees.BallTreeMatrix;
+import lombok.Data;
+import lombok.Getter;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -18,11 +20,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+@Data
 @Component
 public class IndexAlgorithm {
 
     int distanceCompute = 0;
+
     int NodeAccess = 0;
+
     int dataAccess = 0;
     int globalNodeid = 1;
 
@@ -255,17 +260,9 @@ public class IndexAlgorithm {
         this.NodeAccess = nodeAccess;
     }
 
-    public int getNodeAccess() {
-        return NodeAccess;
-    }
-
 
     public void setdataAccess(int dataAccess) {
         this.dataAccess = dataAccess;
-    }
-
-    public int getdataAccess() {
-        return dataAccess;
     }
 
     /*

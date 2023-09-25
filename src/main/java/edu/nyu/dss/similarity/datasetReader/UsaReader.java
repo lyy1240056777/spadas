@@ -1,6 +1,7 @@
 package edu.nyu.dss.similarity.datasetReader;
 
 import edu.nyu.dss.similarity.CityNode;
+import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.nyu.dss.similarity.index.*;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
@@ -19,6 +20,9 @@ import java.util.Map;
 
 @Component
 public class UsaReader {
+
+    @Autowired
+    private SpadasConfig config;
 
     @Autowired
     private DatasetSizeCounter datasetSizeCounter;
@@ -41,19 +45,13 @@ public class UsaReader {
     @Autowired
     private IndexBuilder indexBuilder;
 
-    @Value("${spadas.dimension}")
-    private int dimension;
-
-    @Value("${spadas.cache-dataset}")
-    private boolean cacheDataset;
-
-    @Value("${spadas.cache-index}")
-    private boolean cacheIndex;
-
     @Autowired
     private ZCodeMap zCodeMap;
 
-    public Map<Integer, double[][]> read(File dataFile, int fileNo, CityNode cityNode, int datasetIDForOneDir, String fileName) {
+    public Map<Integer, double[][]> read(File dataFile, int fileNo, CityNode cityNode, int datasetIDForOneDir) {
+        if (!dataFile.getName().endsWith("csv")) {
+            return null;
+        }
         indexNode node = new indexNode(2);
         int i = 0;
         List<double[]> list = new ArrayList<>();
@@ -64,7 +62,6 @@ public class UsaReader {
             while ((strLine = br.readLine()) != null) {
                 String[] splitString = strLine.split(",");
                 if (splitString.length != 2) {
-//                    System.out.println();
                     continue;
                 }
                 if (splitString[0].isEmpty() || splitString[1].isEmpty()) {
@@ -74,17 +71,12 @@ public class UsaReader {
                 if (aString.equals("lng")) {
                     continue;
                 }
-                double[] b = new double[dimension];
+                double[] b = new double[config.getDimension()];
                 b[0] = Double.parseDouble(splitString[1]);
                 b[1] = Double.parseDouble(splitString[0]);
-//                会不会造成整个数据集文件都没有有效数据的情况
-//                if (b[0] < 25 || b[0] > 50 || b[1] < -130 || b[1] > -70) {
-//                    continue;
-//                }
                 if (b[0] < -90 || b[0] > 90 || b[1] < -180 || b[1] > 180) {
                     continue;
                 }
-//                除掉经纬度都为0的点（我就不信有这么巧）
                 if (b[0] == 0 && b[1] == 0) {
                     continue;
                 }
@@ -96,22 +88,22 @@ public class UsaReader {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        if (i > 0) { // 确保读取到了数据
+        if (i > 0) {
             datasetSizeCounter.put(i);
-            if (cacheDataset) { // 这能是false？
+            if (config.isCacheDataset()) {
                 dataMapPorto.put(fileNo, data);
                 datasetPerDir.put(datasetIDForOneDir, data);
             }
-            if (cacheIndex) { // true，要创建下层索引（数据集索引）
+            if (config.isCacheIndex()) {
 //				createDatasetIndex(fileNo, xxx,1);
 //                创建下层索引，cityNode没有用
                 node = indexBuilder.createDatasetIndex(fileNo, data, 1, cityNode);
-                node.setFileName(fileName);
+                node.setFileName(dataFile.getName());
 //                为了系统前端好显示
                 indexBuilder.samplingDataByGrid(data, fileNo, node);
             }
 //            一些全部变量
-            datasetIDMapping.put(fileNo, fileName);
+            datasetIDMapping.put(fileNo, dataFile.getName());
             fileIDMap.put(fileNo, dataFile);
             indexBuilder.storeZcurve(data, fileNo);
             node.setSignautre(zCodeMap.get(fileNo).stream().mapToInt(Integer::intValue).toArray());

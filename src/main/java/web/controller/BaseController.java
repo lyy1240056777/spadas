@@ -9,7 +9,6 @@ import edu.nyu.dss.similarity.SSSOperate;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +17,7 @@ import web.DTO.*;
 import web.Utils.FileU;
 import web.Utils.FileUtil;
 import web.VO.DatasetVo;
+import web.VO.JoinVO;
 import web.VO.PreviewVO;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -59,7 +59,7 @@ public class BaseController {
     })
 
     public Map<String, Object> getDatasetById(@RequestParam int id) {
-        DatasetVo vo = framework.getDataset(id);
+        DatasetVo vo = framework.getDatasetVO(id);
         HashMap<String, Object> res = new HashMap<>();
         res.put("node", vo);
         return res;
@@ -204,41 +204,8 @@ public class BaseController {
 
     @ApiOperation("dataset join")
     @RequestMapping(value = "spadas/api/join", method = RequestMethod.GET)
-//    @GetMapping("/join")
-    public Map<String, Object> datasetJoin(@RequestParam int queryId, @RequestParam int datasetId, @RequestParam int rows) throws IOException {
-        Pair<Double[], Map<Integer, Integer>> pair = framework.pairwiseJoin(rows, queryId, datasetId);
-        Map<Integer, Integer> map = pair.getRight();
-        double[][] queryData = framework.dataMapPorto.get(queryId);
-        double[][] datasetData = framework.dataMapPorto.get(datasetId);
-        Pair<String[], String[][]> querydata = FileU.readPreviewDataset(framework.fileIDMap.get(queryId), rows, queryData);
-        Pair<String[], String[][]> basedata = FileU.readPreviewDataset(framework.fileIDMap.get(datasetId), Integer.MAX_VALUE, datasetData);
-
-        //int len = querydata.getRight()[0].length+basedata.getRight()[0].length;
-        String[] distHeader = {"distance(km)"};
-        String[] joinHeaderTemp = ArrayUtils.addAll(querydata.getLeft(), distHeader);
-        String[] joinHeader = ArrayUtils.addAll(joinHeaderTemp, basedata.getLeft());
-//        List<String[]> joindata = pair.getRight().entrySet().stream()
-//                .map(idPair -> ArrayUtils.addAll(querydata.getRight()[idPair.getValue()], basedata.getRight()[idPair.getValue()])).collect(Collectors.toList());
-        List<String[]> joinData = new ArrayList<>();
-        String[] queryEntry;
-        String[] baseEntry;
-        Double[] distEntry = pair.getLeft();
-        String[] distEntryTemp;
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            int queryIndex = entry.getKey();
-            int datasetIndex = entry.getValue();
-            queryEntry = querydata.getRight()[queryIndex];
-            baseEntry = basedata.getRight()[datasetIndex];
-            double tmp = Math.round(distEntry[queryIndex] * 1000) / 1000.000;
-
-            String tmpStr = tmp < 5 ? String.valueOf(tmp) : "INVALID";
-            distEntryTemp = new String[]{tmpStr};
-            joinData.add(ArrayUtils.addAll(ArrayUtils.addAll(queryEntry, distEntryTemp), baseEntry));
-        }
-        return new HashMap() {{
-            put("header", joinHeader);
-            put("joinData", joinData);
-        }};
+    public JoinVO datasetJoin(@RequestParam int queryId, @RequestParam int datasetId, @RequestParam int rows) throws IOException {
+        return framework.join(queryId, datasetId, rows);
     }
 
 //    Union操作

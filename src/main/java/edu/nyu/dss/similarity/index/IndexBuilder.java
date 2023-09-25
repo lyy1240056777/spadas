@@ -2,7 +2,6 @@ package edu.nyu.dss.similarity.index;
 
 import edu.nyu.dss.similarity.CityNode;
 import edu.nyu.dss.similarity.EffectivenessStudy;
-import edu.nyu.dss.similarity.Framework;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
@@ -185,7 +184,6 @@ public class IndexBuilder {
         double unit = node.getRadius() * 2 / Math.pow(2, resolution);
         int len = (int) Math.pow(2, resolution);
         HashMap<Integer, Integer> dataSamp = new HashMap<>();
-//        dataSamp.put(1,1);
         for (double[] d : data) {
             int xSamp = (int) ((d[0] - xMin) / unit);
             int ySamp = (int) ((d[1] - yMin) / unit);

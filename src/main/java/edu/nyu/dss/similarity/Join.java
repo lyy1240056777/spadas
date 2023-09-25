@@ -20,9 +20,9 @@ public class Join {
         Map<Integer, Integer> joinNearestMap = new TreeMap<Integer, Integer>();
         for (double[] queryPoint : query) {
             //search the nearest neighbor;
-            double[] minDistnearestID = {Double.MAX_VALUE, 0};
-            indexDSS.NearestNeighborSearchBall(queryPoint, idxDataset, dimension, dataset, minDistnearestID);
-            joinNearestMap.put(i++, (int) minDistnearestID[1]);
+            double[] minDistNearestID = {Double.MAX_VALUE, 0};
+            indexDSS.NearestNeighborSearchBall(queryPoint, idxDataset, dimension, dataset, minDistNearestID);
+            joinNearestMap.put(i++, (int) minDistNearestID[1]);
         }
         System.out.println(joinNearestMap.get(1));
     }
@@ -98,7 +98,7 @@ public class Join {
                 continue;
             boolean asplit = AdvancedHausdorff.stopSplitCondition(anode, splitOption);
             boolean bsplit = AdvancedHausdorff.stopSplitCondition(bnode, splitOption);
-            if (asplit == true && bsplit == true) {//if two nodes are null, i.e., they are points // we can change it to radius threshold
+            if (asplit && bsplit) {//if two nodes are null, i.e., they are points // we can change it to radius threshold
                 //	System.out.println(secondq.getPointId());
                 joinNearestMap.put(mainq.getpointID(), secondq.getPointId());
                 Util.write("./logs/spadas/" + folder + "/distance.txt", ub + "\n");
@@ -142,7 +142,6 @@ public class Join {
         // 	System.out.println("the size of queue is "+aHeaps.size());
         Map<Integer, Integer> joinNearestMap = new TreeMap<Integer, Integer>();
         while (!aHeaps.isEmpty()) {
-//			queueMain mainq = aHeaps.poll();
             queueMain mainq = aHeaps.peek();
             PriorityQueue<queueSecond> secondHeaps = mainq.getQueue();
             queueSecond secondq = secondHeaps.peek();
@@ -206,21 +205,18 @@ public class Join {
 
 
     static void combineJoinableDataset(double[][] point1xys, double[][] point2xys, Map<Integer, Integer> joinNearestMap, int dimension, String fileName) {
-        for (int ii = 1; ii <= point1xys.length; ii++) {
-            //	System.out.println(ii);
-            if (joinNearestMap.containsKey(ii)) {
-                int b = joinNearestMap.get(ii);
-                String conString = "";
-                for (int jj = 0; jj < dimension; jj++) {
-                    conString += Double.toString(point1xys[ii - 1][jj]) + ",";
+        for (int i = 1; i <= point1xys.length; i++) {
+            if (joinNearestMap.containsKey(i)) {
+                int b = joinNearestMap.get(i);
+                StringBuilder conString = new StringBuilder();
+                for (int j = 0; j < dimension; j++) {
+                    conString.append(point1xys[i - 1][j]).append(",");
                 }
-                for (int jj = 0; jj < dimension; jj++) {
-                    conString += Double.toString(point2xys[b - 1][jj]) + ",";
+                for (int j = 0; j < dimension; j++) {
+                    conString.append(point2xys[b - 1][j]).append(",");
                 }
-                conString = conString.substring(0, conString.length() - 1) + "\n";
-                Util.write(fileName, conString);
-            } else {
-                //	System.out.println("aaaaa");
+                conString = new StringBuilder(conString.substring(0, conString.length() - 1) + "\n");
+                Util.write(fileName, conString.toString());
             }
         }
     }

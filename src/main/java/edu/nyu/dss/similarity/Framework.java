@@ -1,5 +1,6 @@
 package edu.nyu.dss.similarity;
 
+import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.nyu.dss.similarity.consts.DataLakeType;
 import edu.nyu.dss.similarity.datasetReader.*;
 import edu.nyu.dss.similarity.index.*;
@@ -9,42 +10,28 @@ import edu.nyu.dss.similarity.utils.FileUtil;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 import web.DTO.*;
-import web.Utils.FileProperties;
+import web.Utils.FileU;
 import web.Utils.ListUtil;
 import web.VO.DatasetVo;
+import web.VO.JoinVO;
 
 import java.io.*;
-import java.nio.file.Files;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Component
 @Slf4j
 public class Framework {
-    @Value("${spadas.file.baseUri}")
-    private final String filePath = "./";
 
-    @Value("${spadas.resolution}")
-    private int resolution_in_config;
+    @Autowired
+    private SpadasConfig config;
 
-    @Value("${spadas.file.baseUri}")
-    private String basePath;
-
-    @Value("${spadas.frontend-limitation}")
-    private int limitation;
-
-    @Value("${spadas.cache-index}")
-    private boolean cacheIndex;
-
-    @Value("${spadas.frontend-limitation}")
-    public int datasetLimitation;
     @Autowired
     private DatasetSizeCounter datasetSizeCounter;
 
@@ -67,6 +54,9 @@ public class Framework {
     private OpenNycReader openNycReader;
 
     @Autowired
+    private ShapefileReader shapefileReader;
+
+    @Autowired
     private SingleFileReader singleFileReader;
 
     @Autowired
@@ -79,10 +69,7 @@ public class Framework {
     /*
      * data set
      */
-    static String edgeString, nodeString, distanceString, fetureString, indexString = "";
-    static String zcodeSer;
-
-    static int capacity = 1000;
+    static String indexString = "";
     //    public static Map<Integer, String> datasetIdMapping = new HashMap<>();//integer
     @Autowired
     public DatasetIDMapping datasetIdMapping;
@@ -112,24 +99,19 @@ public class Framework {
     /*
      * z-curve for grid-based overlap
      */
-//    对于中国地图，lat纬度范围是0-60，lng经度范围是70-140，所以minx设置成0，miny设置成70
-//    可能得对每个城市设置特定的参数，不然精度不够
-//    static double minx = -90, miny = -180;// the range of dataset space, default values for Argo dataset  TODO now have changed it to lat/lon coordination
+//    TODO now have changed it to lat/lon coordination
     static double minx = -90, miny = -180;
     //    初试设为了4600，为什么？
 //    说到底这个spaceRange到底有什么用
     static double spaceRange = 100;
     //    对于中国地图，resolution设置为7或8比较好
 //    static int resolution = 3; // also a parameter to test the grid-based overlap, and the approximate hausdorff, and range query
-    @Value("${spadas.resolution}")
-    public int resolution;
 
     @Autowired
     public IndexMap indexMap;// root node of dataset's index
     static Map<Integer, indexNode> datalakeIndex = null;// the global datalake index
     @Autowired
     public IndexNodes indexNodes;// store the root nodes of all datasets in the lake
-    static ArrayList<indexNode> indexNodesAll;
     static indexNode datasetRoot = null; // the root node of datalake index in memory mode
     static Map<Integer, Map<Integer, indexNode>> datasetIndex; // restored dataset index
     @Autowired
@@ -147,19 +129,7 @@ public class Framework {
     static int limit = 100000; //number of dataset to be searched
     static boolean[] dimNonSelected;// indicate which dimension is not selected
     static boolean dimensionAll = true;// indicate that all dimensions are selected.
-
-    /*
-     * settings
-     */
-    static boolean storeIndexMemory = true;// check whether need to use the index in memeory or load from disk
     static boolean saveDatasetIndex = false;// whether to store each dataset index as file
-    static boolean zcurveExist = false;
-
-    @Autowired
-    public void setAString(FileProperties fileProperties) {
-        basePath = filePath;
-    }
-
 
     //    读city node目录，递归读
     /*
@@ -182,13 +152,12 @@ public class Framework {
         for (File file : fileNames) {
             if (file.isDirectory()) {
                 readFolder(file, limit, cityNode, datasetIDForOneDir++, datasetIdMappingItem, type);
-            } else if (file.getName().endsWith(".csv")) {
+            } else {
 //				if (!isfolderVisited) {
 //					dataLakeMapping.put(index, new ArrayList<>());
 //					index++;
 //					isfolderVisited = true;
 //				}
-                String fileName = file.getName();
 //                String parentDir = file.getParent();
 //            		if(a.length()<15){//argo
 //            			//linux ????/
@@ -202,15 +171,18 @@ public class Framework {
 //					datasetIdMapping.put(fileNo, parentDir.substring(parentDir.lastIndexOf(File.separator)+1)+File.separator+a);
 //                fileNo考虑修改一下，目前表示的是数据集文件数，或许应该换成数据集目录数
 //                fileName = parentDir.substring(parentDir.lastIndexOf(File.separator) + 1) + File.separator + a;
-                datasetIdMappingItem.put(datasetIDForOneDir, fileName);
+                datasetIdMappingItem.put(datasetIDForOneDir, file.getName());
 //                datasetIdMapping.put(fileNo, fileName);
 //                选择使用哪种读取方法
+
                 switch (type) {
-                    case BAIDU_POI -> chinaReader.read(file, fileNo++, cityNode, datasetIDForOneDir, fileName);
-                    case BUS_LINE, MOVE_BANK, USA ->
-                            usaReader.read(file, fileNo++, cityNode, datasetIDForOneDir, fileName);
-                    case POI -> poiReader.read(file, fileNo++, fileName, cityNode);
-                    case OPEN_NYC -> openNycReader.read(file, fileNo++, fileName, cityNode);
+                    case BAIDU_POI -> chinaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
+                    case BUS_LINE, MOVE_BANK, USA -> usaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
+                    case POI -> poiReader.read(file, fileNo++, cityNode);
+                    case OPEN_NYC -> openNycReader.read(file, fileNo++, cityNode);
+                    case SHAPE_FILE -> shapefileReader.read(file, fileNo++, cityNode);
+                    // impossible to be here, default type is BAIDU_POI
+                    default -> throw new RuntimeException("Unknown dataset type:" + type.name());
                 }
 //                一个数据集集中的索引
                 datasetIDForOneDir++;
@@ -249,7 +221,7 @@ public class Framework {
 //        if (zcodemap == null)
 //            zcodemap = new HashMap<Integer, ArrayList<Integer>>();
         int pointCnt = dataset.length;
-        int numberCells = (int) Math.pow(2, resolution);
+        int numberCells = (int) Math.pow(2, config.getResolution());
 //        double unit = spaceRange / numberCells;
         double xUnit = xRange / numberCells;
         double yUnit = yRange / numberCells;
@@ -261,7 +233,7 @@ public class Framework {
 //            int y = (int) ((dataset[i][1] - miny) / unit);
             int x = (int) ((doubles[0] - minx) / xUnit);
             int y = (int) ((doubles[1] - miny) / yUnit);
-            long zcode = EffectivenessStudy.combine(x, y, resolution);
+            long zcode = EffectivenessStudy.combine(x, y, config.getResolution());
             if (zcodeItemMap.containsKey(zcode)) {
                 double val = zcodeItemMap.get(zcode);
                 zcodeItemMap.put(zcode, val + weightUnit);
@@ -276,7 +248,7 @@ public class Framework {
     }
 
     public int[] generateZcurveForRange(double[] minRange, double[] maxRange) {
-        int numberCells = (int) Math.pow(2, resolution);
+        int numberCells = (int) Math.pow(2, config.getResolution());
         double unit = spaceRange / numberCells;
         List<Integer> list = new ArrayList<>();
         int minX = (int) ((minRange[0] - minx) / unit);
@@ -285,7 +257,7 @@ public class Framework {
         int maxY = (int) ((maxRange[1] - miny) / unit);
         for (int i = minX; i < maxX; i++) {
             for (int j = minY; j < maxY; j++) {
-                int zcode = (int) EffectivenessStudy.combine(i, j, resolution + 1);
+                int zcode = (int) EffectivenessStudy.combine(i, j, config.getResolution() + 1);
                 if (!list.contains(zcode)) {
                     list.add(zcode);
                 }
@@ -304,32 +276,25 @@ public class Framework {
      * @throws IOException
      */
     private void readDatalake(int limit) throws IOException {
-        basePath = "./dataset-mini";
-        File folder = new File(basePath);
+        File folder = new File(config.getFile().getBaseUri());
         String[] filelist = folder.list();
         int index = 0;
-        for (String str : filelist) {
-            System.out.println(str);
+        for (File subFolder : folder.listFiles()) {
+            if (subFolder.isFile()) {
+                continue;
+            }
             String pre_str = "./index/dss/index/";
-            String conn_str = str + "/" + str;
-            edgeString = pre_str + conn_str + "_edge.txt";
-            nodeString = pre_str + conn_str + "_node.txt";
-            zcodeSer = pre_str + conn_str + "_bitmaps";
-            distanceString = pre_str + conn_str + "_haus_distance.txt";
-            fetureString = pre_str + conn_str + "_haus_features.txt";
-            indexString = pre_str + str + "/";
-            dimension = 2;
+            indexString = pre_str + subFolder.getName() + "/";
 
             HashMap<Integer, String> datasetIdMappingItem = new HashMap<>();
-
-            DataLakeType type = DataLakeType.matchType(str);
+            DataLakeType type = DataLakeType.matchType(subFolder);
             datalakeID = type.id;
 
 //            datasetIdMappingItem.clear();
-            File myFolder = new File(basePath + "/" + str);
+            File myFolder = new File(config.getFile().getBaseUri() + "/" + subFolder.getName());
 //            可以先计算这cityNode，但是前端不要显示它，到时候再删除
 //            已经没用了，以后删掉
-            CityNode cityNode = new CityNode(str, dimension);
+            CityNode cityNode = new CityNode(subFolder.getName(), config.getDimension());
 //			dataLakeMapping.put(index, new ArrayList<>());
 //            readFolder(myFolder, limit, cityNode, 0, datasetIdMappingItem);
 
@@ -339,7 +304,7 @@ public class Framework {
 //            cityNode.calAttrs(dimension);
 
 //            待删
-            cityNode.calAttrs(dimension);
+            cityNode.calAttrs(config.getDimension());
 //        if (!zcodeMap.isEmpty()) {
 //            zcodeMap.clear();
 //        }
@@ -366,15 +331,15 @@ public class Framework {
     // create datalake index based on the root nodes of all datasets, too slow
     void createDatalake(int N) {
         indexDSS.setGloabalid();
-        if (cacheIndex) {
-            datasetRoot = indexDSS.indexDatasetKD(indexNodes, dimension, capacity, weight);
-            System.out.println("index created");
+        if (config.isSaveIndex()) {
+            datasetRoot = indexDSS.indexDatasetKD(indexNodes, dimension, config.getLeafCapacity(), weight);
+            log.info("index created");
             //	if(storeIndex)
 //			indexDSS.storeDatalakeIndex(datasetRoot, 1, indexString+"datalake"+N+"-"+capacity+"-"+dimension+".txt", 0);//store the
             //	datalakeIndex = new HashMap<>();
             //	indexDSS.reorgnizeIndex(datasetRoot, 1, 0, datalakeIndex);//putting all nodes into hashmap
         } else {
-            datalakeIndex = indexDSS.restoreDatalakeIndex(indexString + "datalake" + N + "-" + capacity + "-" + dimension + ".txt", dimension);//the datalake index
+            datalakeIndex = indexDSS.restoreDatalakeIndex(indexString + "datalake" + N + "-" + config.getLeafCapacity() + "-" + dimension + ".txt", dimension);//the datalake index
         }
 
         if (datalakeIndex != null) {
@@ -402,9 +367,6 @@ public class Framework {
         if (!indexNodes.isEmpty()) {
             indexNodes.clear();
         }
-        if (indexNodesAll != null) {
-            indexNodesAll.clear();
-        }
         if (datasetRoot != null) {
             datasetRoot = null;
         }
@@ -420,21 +382,6 @@ public class Framework {
     public void init() throws IOException {
         clearAll();
         dimension = 2;
-//		indexString = "./index/dss/index/argo/";
-//		zcodeSer= "./index/dss/index/argo/argo_bitmaps";
-
-//        Zcurve
-//        命名要改，现在的有点问题
-        String zcurveFile = zcodeSer + resolution + "-" + limit + ".ser";
-        File tempFile = new File(zcurveFile);
-//        z-order文件是针对一个数据集还是所有数据集？
-        if (!tempFile.exists()) {// create the z-curve code for each dataset
-            zcurveExist = false;
-        } else {
-            zcurveExist = false;
-//            zcodemap = EffectivenessStudy.deSerializationZcurve(zcurveFile);
-        }
-
         //
         //tempFile = new File(indexString+"datalake"+limit+"-"+capacity+ "-" + dimension + ".txt");
 		/*if(!tempFile.exists()) {
@@ -446,7 +393,6 @@ public class Framework {
 		}*/
 //        TimeUnit.MINUTES.sleep(1);
         readDatalake(limit);// read the first
-        indexNodesAll = new ArrayList<>(indexNodes);
 //        序列化z签名文件应该在读每个目录以后进行
 //		if(!zcurveExist)
 //			EffectivenessStudy.SerializedZcurve(zcurveFile, zcodemap);
@@ -512,7 +458,7 @@ public class Framework {
         List<DatasetVo> res = new ArrayList<>();
         for (int i = 0; i < datasetIdMapping.size(); i++) {
             if (datasetIdMapping.get(i) != null && datasetIdMapping.get(i).contains(qo.getKws())) {
-                res.add(new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < limitation ? dataMapPorto.get(i) : null));
+                res.add(new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null));
             }
         }
         System.out.println(res.size());
@@ -521,9 +467,9 @@ public class Framework {
 
     public List<DatasetVo> datasetQuery(indexNode queryNode, double[][] data, int k) throws IOException {
         HashMap<Integer, Double> result = new HashMap<>();
-        result = search.pruneByIndex(dataMapPorto, datasetRoot, queryNode, -1,
+        result = search.pruneByIndex(dataMapPorto, datasetRoot, queryNode,
                 dimension, indexMap, datasetIndex, null, datalakeIndex, datasetIdMapping, k,
-                indexString, null, true, 0, capacity, weight, saveDatasetIndex, data);
+                indexString, null, true, 0, config.getLeafCapacity(), weight, saveDatasetIndex, data);
 
         List<DatasetVo> specialResult = new ArrayList<>();
         if (queryNode.getFileName().equals("phl--flu-shot.csv")) {
@@ -546,48 +492,40 @@ public class Framework {
 //        finalResult.addAll(result.entrySet().stream().sorted((o1, o2) -> o1.getValue() - o2.getValue() > 0 ? 1 : -1).
 //                map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).collect(Collectors.toList()));
         finalResult.addAll(result.entrySet().stream().sorted((o1, o2) -> o1.getValue() - o2.getValue() > 0 ? 1 : -1).
-                map(i -> new DatasetVo(i.getKey(), indexMap.get(i.getKey()), datasetIdMapping.get(i.getKey()), dataSamplingMap.get(i.getKey()), indexMap.get(i.getKey()).getTotalCoveredPoints() < limitation ? dataMapPorto.get(i.getKey()) : null)).collect(Collectors.toList()));
+                map(i -> new DatasetVo(i.getKey(), indexMap.get(i.getKey()), datasetIdMapping.get(i.getKey()), dataSamplingMap.get(i.getKey()), indexMap.get(i.getKey()).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i.getKey()) : null)).collect(Collectors.toList()));
         return finalResult.subList(0, k);
     }
 
-    public List<DatasetVo> datasetQuery(dsqueryDTO qo) throws IOException, CloneNotSupportedException {
-
+    public List<DatasetVo> datasetQuery(dsqueryDTO qo) throws IOException {
 //        indexNode queryNode;
         Map<Integer, indexNode> queryindexmap = null;
-        int queryid = 1;
-        //build node for querydata
-//        这data还是不从已有的里面获取的，不存在用户新提交的
-//        double[][] data = dataMapPorto.get(qo.getDatasetId());
-//        queryNode = buildNode(data, qo.getDim());
-//        比较新建的查询节点和从已有的树中获取的节点有什么区别
-//        没有区别，故直接获取，注释掉新建节点的代码
-        indexNode queryNode = indexNodes.get(qo.getDatasetId());
+        indexNode queryNode = indexMap.get(qo.getDatasetId());
         double[][] data = dataMapPorto.get(qo.getDatasetId());
         HashMap<Integer, Double> result = new HashMap<>();
 
-        if (qo.getMode() == 0) {
-            // HausDist
-            // the 4th param isnot used in the func so we set it casually
-            result = search.pruneByIndex(dataMapPorto, datasetRoot, queryNode, -1,
-                    qo.getDim(), indexMap, datasetIndex, queryindexmap, datalakeIndex, datasetIdMapping, qo.getK(),
-                    indexString, null, true, qo.getError(), capacity, weight, saveDatasetIndex, data);
-        } else if (qo.getMode() == 1) {
-            // Intersecting Area
-            search.setScanning(false);
-            search.rangeQueryRankingArea(datasetRoot, result, queryNode.getMBRmax(), queryNode.getMBRmin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
-                    datalakeIndex, dimNonSelected, dimensionAll);
-        } else if (qo.getMode() == 2) {
-            // GridOverlap using index
-            indexNode root = datasetRoot;//datalakeIndex.get(1);//use storee
-//
+        switch (qo.getMode()) {
+            case 0 -> // HausDist
+                    result = search.pruneByIndex(dataMapPorto, datasetRoot, queryNode,
+                            qo.getDim(), indexMap, datasetIndex, queryindexmap, datalakeIndex, datasetIdMapping, qo.getK(),
+                            indexString, null, true, qo.getError(), config.getLeafCapacity(), weight, saveDatasetIndex, data);
+            case 1 -> { // Intersecting Area
+                search.setScanning(false);
+                search.rangeQueryRankingArea(datasetRoot, result, queryNode.getMBRmax(), queryNode.getMBRmin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
+                        datalakeIndex, dimNonSelected, dimensionAll);
+            }
+            case 2 -> { // GridOverlap using index
+                indexNode root = datasetRoot;//datalakeIndex.get(1);//use store
+
 //            if (datalakeIndex != null)
 //                root = datalakeIndex.get(1);
 //            int[] queryzcurve = new int[zcodemap.get(queryid).size()];
-            int[] queryzcurve = zCodeMap.get(qo.getDatasetId()).stream().mapToInt(Integer::intValue).toArray();
+                int[] queryzcurve = zCodeMap.get(qo.getDatasetId()).stream().mapToInt(Integer::intValue).toArray();
 //            for (int i = 0; i < zcodemap.get(queryid).size(); i++)
 //                queryzcurve[i] = zcodemap.get(queryid).get(i);
-            result = Search.gridOverlap(root, result, queryzcurve, Double.MAX_VALUE, qo.getK(), null, datalakeIndex);
-        } else {
+                result = Search.gridOverlap(root, result, queryzcurve, Double.MAX_VALUE, qo.getK(), null, datalakeIndex);
+            }
+            default -> {
+            }
 //            emd
 //            int[] queryID = convertID(qo.getDatasetId());
 //            PriorityQueue<relaxIndexNode> resQueue = EMD(queryID[0], queryID[1], qo.getK());
@@ -597,7 +535,7 @@ public class Framework {
 //            }
         }
 
-//        定制结果，是为了匹配论文中的查询样例
+        //        定制结果，是为了匹配论文中的查询样例
 //        判断是否是目标样例flu-shot
         List<DatasetVo> specialResult = new ArrayList<>();
         if (queryNode.getFileName().equals("phl--flu-shot.csv") && qo.getMode() == 0) {
@@ -617,13 +555,22 @@ public class Framework {
 
         List<DatasetVo> finalResult = new ArrayList<>();
         finalResult.addAll(specialResult);
-        finalResult.addAll(result.entrySet().stream().sorted((o1, o2) -> o1.getValue() - o2.getValue() > 0 ? 1 : -1).
-                map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).collect(Collectors.toList()));
+        finalResult.addAll(result.entrySet().
+
+                stream().
+
+                sorted((o1, o2) -> o1.getValue() - o2.getValue() > 0 ? 1 : -1).
+
+                map(item -> new
+
+                        DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).
+
+                collect(Collectors.toList()));
         return finalResult.subList(0, qo.getK());
     }
 
     public List<List<double[]>> union(UnionDTO dto) {
-        indexNode queryNode = indexNodes.get(dto.getQueryId());
+        indexNode queryNode = indexMap.get(dto.getQueryId());
         double[][] queryDataAll = dataMapPorto.get(dto.getQueryId());
         double[] maxMBR = queryNode.getMBRmax();
         double[] minMBR = queryNode.getMBRmin();
@@ -662,52 +609,92 @@ public class Framework {
         return bodies;
     }
 
-    public Pair<Double[], Map<Integer, Integer>> pairwiseJoin(int rows, int queryID, int datasetID) throws IOException {
-        indexNode queryNode, datanode;
-        Map<Integer, indexNode> queryindexmap = null, dataindexMap = null; // datasetIndex.get(queryid);
-        double[][] querydata, dataset;
-        if (dataMapPorto == null) {
-            querydata = singleFileReader.readSingleFile(datasetIdMapping.get(queryID));
-            dataset = singleFileReader.readSingleFile(datasetIdMapping.get(datasetID));
-        } else {
-            querydata = dataMapPorto.get(queryID);
-            dataset = dataMapPorto.get(datasetID);
-        }
-        if (indexMap != null) {
-            queryNode = indexMap.get(queryID);
-            datanode = indexMap.get(datasetID);
-        } else {
-            if (datasetIndex != null) {
-                queryindexmap = datasetIndex.get(queryID);
-                dataindexMap = datasetIndex.get(datasetID);
-                queryNode = queryindexmap.get(1);
-                datanode = dataindexMap.get(1);
-            } else {
-                queryNode = indexDSS.buildBalltree2(querydata, dimension, capacity, null, null, weight);
-                datanode = indexDSS.buildBalltree2(dataset, dimension, capacity, null, null, weight);
-            }
-        }
+    public Pair<Double[], Map<Integer, Integer>> pairwiseJoin(int queryID, int datasetID, int rows) throws IOException {
+        Map<Integer, indexNode> queryIndexMap = null;
+        Map<Integer, indexNode> targetIndexMap = null; // datasetIndex.get(queryid);
+        double[][] queryDataset = queryDataset(queryID);
+        double[][] targetDataset = queryDataset(datasetID);
+
+        indexNode queryNode = queryNode(queryID, queryDataset, queryIndexMap);
+        indexNode targetNode = queryNode(datasetID, targetDataset, targetIndexMap);
         // Hausdorff Pair-wise distance measure
         AdvancedHausdorff.setBoundChoice(0);
 //		Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, queryNode, datanode, 1, 1, 0, false, 0, false,queryindexmap, dataindexMap, null, true);
 //        splitOption: 1 -> 0;
-        Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension,
-                queryNode, datanode, 0, 1, 0, true, 0, true,
-                queryindexmap, dataindexMap, null, true);
+        Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(queryDataset, targetDataset, dimension,
+                queryNode, targetNode, 0, 1, 0, true, 0, true,
+                queryIndexMap, targetIndexMap, null, true);
 //        fastMode: 0 -> 1
         Pair<Double[], Map<Integer, Integer>> resultPair = Join.IncrementalJoinCustom(rows, dataMapPorto.get(queryID), dataMapPorto.get(datasetID),
                 dimension, indexMap.get(limit + 1), indexMap.get(datasetID), 1, 0, 0, false,
                 0, true, aPair.getLeft(), aPair.getRight(), null, null, "haus",
                 null, true);
-        System.out.println();
         return resultPair;
+    }
+
+
+    public JoinVO join(int queryId, int datasetId, int rowLimit) throws IOException {
+        Pair<Double[], Map<Integer, Integer>> pair = pairwiseJoin(queryId, datasetId, rowLimit);
+        Map<Integer, Integer> map = pair.getRight();
+        double[][] queryData = dataMapPorto.get(queryId);
+        double[][] datasetData = dataMapPorto.get(datasetId);
+        Pair<String[], String[][]> querydata = FileU.readPreviewDataset(fileIDMap.get(queryId), rowLimit, queryData);
+        Pair<String[], String[][]> basedata = FileU.readPreviewDataset(fileIDMap.get(datasetId), Integer.MAX_VALUE, datasetData);
+
+        //int len = querydata.getRight()[0].length+basedata.getRight()[0].length;
+        String[] distHeader = {"distance(km)"};
+        String[] joinHeaderTemp = ArrayUtils.addAll(querydata.getLeft(), distHeader);
+        String[] joinHeader = ArrayUtils.addAll(joinHeaderTemp, basedata.getLeft());
+//        List<String[]> joindata = pair.getRight().entrySet().stream()
+//                .map(idPair -> ArrayUtils.addAll(querydata.getRight()[idPair.getValue()], basedata.getRight()[idPair.getValue()])).collect(Collectors.toList());
+        List<List<String>> joinData = new ArrayList<>();
+        String[] queryEntry;
+        String[] baseEntry;
+        Double[] distEntry = pair.getLeft();
+        String[] distEntryTemp;
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            int queryIndex = entry.getKey();
+            int datasetIndex = entry.getValue();
+            queryEntry = querydata.getRight()[queryIndex];
+            baseEntry = basedata.getRight()[datasetIndex];
+            double tmp = Math.round(distEntry[queryIndex] * 1000) / 1000.000;
+
+            String tmpStr = tmp < 5 ? String.valueOf(tmp) : "INVALID";
+            distEntryTemp = new String[]{tmpStr};
+            joinData.add(Arrays.stream(ArrayUtils.addAll(ArrayUtils.addAll(queryEntry, distEntryTemp), baseEntry)).toList());
+        }
+        JoinVO result = new JoinVO();
+        result.setHeader(Arrays.stream(joinHeader).toList());
+        result.setBody(joinData);
+        return result;
     }
 
     public Pair<indexNode, double[][]> readNewFile(MultipartFile file, String fileName) throws IOException {
         return uploadReader.read(file, fileName);
     }
 
-    public DatasetVo getDataset(int i) {
-        return new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < limitation ? dataMapPorto.get(i) : null);
+    public DatasetVo getDatasetVO(int i) {
+        return new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null);
+    }
+
+    private indexNode queryNode(int datasetID, double[][] dataset, Map<Integer, indexNode> indexMap) {
+        if (indexMap != null) {
+            return indexMap.get(datasetID);
+        } else if (datasetIndex != null) {
+            indexMap = datasetIndex.get(datasetID);
+            return datasetIndex.get(datasetID).get(1);
+        } else {
+            return indexDSS.buildBalltree2(dataset, dimension, config.getLeafCapacity(), null, null, weight);
+
+        }
+    }
+
+    private double[][] queryDataset(int datasetID) throws IOException {
+        if (dataMapPorto == null || dataMapPorto.isEmpty()) {
+
+            return singleFileReader.readSingleFile(datasetIdMapping.get(datasetID));
+        } else {
+            return dataMapPorto.get(datasetID);
+        }
     }
 }

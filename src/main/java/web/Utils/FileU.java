@@ -99,7 +99,6 @@ public class FileU {
 //                i++;
 //            }
         }
-        System.out.println("bodies:" + bodiesList.size());
         String[][] bodies = new String[bodiesList.size()][];
         for (int i = 0; i < bodiesList.size(); i++) {
             bodies[i] = bodiesList.get(i);

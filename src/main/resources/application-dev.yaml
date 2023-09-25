@@ -10,7 +10,7 @@ spadas:
   dimension: 2
   resolution: 10
   leaf-capacity: 1000
-  cache-dataset: false
+  cache-dataset: true
   cache-index: true
   save-index: false
   frontend-limitation: 10000

@@ -11,7 +11,7 @@ import java.util.Set;
 public class datasetFeatures {
 	
 	/*
-	 * in this class, we extract featurs of index which can distinguish dataset 
+	 * in this class, we extract features of index which can distinguish dataset
 	 */
 	
 	static IndexAlgorithm indexkmeans = new IndexAlgorithm();
