@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Main-Class: main.java.web.SpadasWebApplication
+Main-Class: web.SpadasWebApplication
 Class-Path: j2objc-annotations-1.1.jar snakeyaml-1.28.jar animal-sniffer
  -annotations-1.14.jar spring-core-5.3.8.jar jheaps-0.9.jar jakarta.anno
  tation-api-1.3.5.jar spring-boot-starter-2.5.2.jar spring-aop-5.3.8.jar

@@ -1,0 +1,1001 @@
+"extract_run_date","randomized_id","ccrb_received_year","days_between_incident_date","case_type","complaint_received_place","complaint_received_mode","borough_of_incident","patrol_borough_of_incident","reason_for_initial_contact"
+"2018-05-25T00:00:00.000","1","2000","2","IAB","CCRB","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","2","2000","86","OCD","Other NYPD unit","In-person","Brooklyn","Brooklyn North","Parking violation"
+"2018-05-25T00:00:00.000","3","2000","0","OCD","CCRB","Phone","Queens","Other",
+"2018-05-25T00:00:00.000","4","2000","0","OCD","Other NYPD unit","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","5","2000","117","OCD","CCRB","Phone","Manhattan","Manhattan North","Traffic accident"
+"2018-05-25T00:00:00.000","6","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","7","2000","15","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Other violation of VTL"
+"2018-05-25T00:00:00.000","8","2000","10","CCRB","IAB","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","9","2000","11","CCRB","IAB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","10","2000","6","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - auto"
+"2018-05-25T00:00:00.000","11","2000","145","OCD","CCRB","In-person","Brooklyn","Brooklyn North","Report-dispute"
+"2018-05-25T00:00:00.000","12","2000","0","OCD","Precinct","Phone","Brooklyn","Brooklyn South","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","13","2000","4","CCRB","IAB","Phone","Manhattan","Manhattan South","Report-dispute"
+"2018-05-25T00:00:00.000","14","2000","10","CCRB","CCRB","Phone","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","15","2000","69","OCD","CCRB","Phone","Queens","Queens North","Report of other crime"
+"2018-05-25T00:00:00.000","16","2000","3","OCD","CCRB","Phone",,"Other","Other"
+"2018-05-25T00:00:00.000","17","2000","4","OCD","CCRB","Call Processing System","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","18","2000","13","CCRB","IAB","Phone","Manhattan","Manhattan North","Report-domestic dispute"
+"2018-05-25T00:00:00.000","19","2000","2","CCRB","CCRB","Phone","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","20","2000","3","CCRB","CCRB","Call Processing System","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","21","2000","12","OCD","IAB","Phone","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","22","2000","3","CCRB","Other","Phone","Brooklyn","Brooklyn North","Parking violation"
+"2018-05-25T00:00:00.000","23","2000","4","OCD","CCRB","Phone","Queens","Queens North","Moving violation"
+"2018-05-25T00:00:00.000","24","2000","58","OCD","CCRB","Mail",,"Other","Other"
+"2018-05-25T00:00:00.000","25","2000","8","OCD","CCRB","Phone","Bronx","Bronx","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","26","2000","9","CCRB","IAB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","27","2000","106","OCD","CCRB","In-person","Brooklyn","Other","Execution of search warrant"
+"2018-05-25T00:00:00.000","28","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","29","2000","3","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn South","Report of other crime"
+"2018-05-25T00:00:00.000","30","2000","7","CCRB","IAB","Phone","Bronx","Bronx","Moving violation"
+"2018-05-25T00:00:00.000","31","2000","0","CCRB","Precinct","In-person","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","32","2000","81","OCD","CCRB","Phone","Brooklyn","Other",
+"2018-05-25T00:00:00.000","33","2000","4","CCRB","Precinct","Call Processing System","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","34","2000","0","CCRB","Precinct","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","35","2000","7","CCRB","IAB","Phone","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","36","2000","0","OCD","Precinct","Phone","Staten Island","Staten Island","Report-dispute"
+"2018-05-25T00:00:00.000","37","2000","9","OCD","IAB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","38","2000","28","OCD","Precinct","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","39","2000","20","OCD","IAB","Phone","Manhattan","Manhattan South","PD suspected C/V of violation/crime - auto"
+"2018-05-25T00:00:00.000","40","2000","0","OCD","CCRB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","41","2000","1","CCRB","Precinct","In-person","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","42","2000","25","CCRB","IAB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","43","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","44","2000","3","CCRB","CCRB","Phone","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","45","2000","7","OCD","Precinct","Mail","Queens","Queens North",
+"2018-05-25T00:00:00.000","46","2000","4","CCRB","Precinct","Phone","Manhattan","Manhattan South","Report-dispute"
+"2018-05-25T00:00:00.000","47","2000","5","CCRB","IAB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","48","2000","36","OCD","CCRB","Phone","Queens","Other",
+"2018-05-25T00:00:00.000","49","2000","10","CCRB","IAB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","50","2000","1","OCD","CCRB","Call Processing System","Bronx","Other","Moving violation"
+"2018-05-25T00:00:00.000","51","2000","67","OCD","CCRB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","52","2000","2","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","53","2000","10","OCD","Other City agency","Phone","Queens","Other",
+"2018-05-25T00:00:00.000","54","2000","12","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","55","2000","128","CCRB","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","56","2000","1","IAB","Precinct","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","57","2000","0","OCD","Other NYPD unit","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","58","2000","3","OCD","CCRB","Phone","Staten Island","Staten Island",
+"2018-05-25T00:00:00.000","59","2000","3","CCRB","CCRB","Phone","Manhattan","Manhattan South","Report-dispute"
+"2018-05-25T00:00:00.000","60","2000","1","OCD","Precinct","Call Processing System","Staten Island","Other",
+"2018-05-25T00:00:00.000","61","2000","11","IAB","CCRB","On-line website","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","62","2000","0","OCD","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","63","2000","1","OCD","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","64","2000","0","OCD","Precinct","In-person","Staten Island","Staten Island","Parking violation"
+"2018-05-25T00:00:00.000","65","2000","0","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","66","2000","4","OCD","Precinct","In-person","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","67","2000","1","OCD","Precinct","In-person","Brooklyn","Brooklyn South","C/V at PCT to file complaint of crime"
+"2018-05-25T00:00:00.000","68","2000","23","OCD","IAB","In-person","Queens","Other","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","69","2000","0","CCRB","Precinct","In-person","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","70","2000","2","OCD","Precinct","In-person","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","71","2000","0","CCRB","CCRB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","72","2000","2","CCRB","Precinct","Phone","Staten Island","Staten Island","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","73","2000","10","OCD","CCRB","Phone","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","74","2000","29","OCD","CCRB","Mail","Queens","Queens South",
+"2018-05-25T00:00:00.000","75","2000","0","OCD","Precinct","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","76","2000","0","OCD","Precinct","Phone",,"Other",
+"2018-05-25T00:00:00.000","77","2000","1","CCRB","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","78","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","79","2000","22","CCRB","IAB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","80","2000","9","CCRB","IAB","Phone","Manhattan","Manhattan South","Report-dispute"
+"2018-05-25T00:00:00.000","81","2000","32","CCRB","IAB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","82","2000","147","OCD","CCRB","In-person","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","83","2000","9","CCRB","IAB","In-person","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","84","2000","5","OCD","CCRB","Phone","Manhattan","Manhattan South","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","85","2000","9","CCRB","IAB","Phone","Bronx","Bronx","Execution of search warrant"
+"2018-05-25T00:00:00.000","86","2000","11","CCRB","IAB","Mail","Brooklyn","Brooklyn North","Execution of arrest/bench warrant"
+"2018-05-25T00:00:00.000","87","2000","28","CCRB","IAB","Mail",,"Queens North","Other"
+"2018-05-25T00:00:00.000","88","2000","4","OCD","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","89","2000","9","CCRB","IAB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","90","2000","1","OCD","CCRB","Phone","Manhattan","Manhattan North","Report-dispute"
+"2018-05-25T00:00:00.000","91","2000","12","OCD","CCRB","Phone","Brooklyn","Brooklyn South","C/V requested investigation of crime"
+"2018-05-25T00:00:00.000","92","2000","1","OCD","CCRB","Phone","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","93","2000","8","OCD","Precinct","Phone","Queens","Manhattan South","Other"
+"2018-05-25T00:00:00.000","94","2000","3","OCD","Other NYPD unit","In-person","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","95","2000","1","OCD","Precinct","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","96","2000","15","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","97","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","98","2000","3","OCD","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","99","2000","0","OCD","CCRB","Phone","Queens","Other","Other"
+"2018-05-25T00:00:00.000","100","2000","1","OCD","CCRB","Phone","Manhattan","Manhattan North","Traffic accident"
+"2018-05-25T00:00:00.000","101","2000","2","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Report-dispute"
+"2018-05-25T00:00:00.000","102","2000","19","CCRB","CCRB","Phone","Manhattan","Manhattan South","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","103","2000","31","CCRB","IAB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","104","2000","0","OCD","CCRB","Phone","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","105","2000","0","OCD","Other NYPD unit","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","106","2000","1353","OCD","Other NYPD unit","Phone","Queens","Queens South","Aided case"
+"2018-05-25T00:00:00.000","107","2000","26","OCD","CCRB","Call Processing System",,"Other",
+"2018-05-25T00:00:00.000","108","2000","328","CCRB","CCRB","In-person","Manhattan","Other",
+"2018-05-25T00:00:00.000","109","2000","12","CCRB","IAB","Mail","Brooklyn","Brooklyn North","Report of other crime"
+"2018-05-25T00:00:00.000","110","2000","17","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Report-gun possession/shots fired"
+"2018-05-25T00:00:00.000","111","2000","5","CCRB","IAB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","112","2000","72","OCD","CCRB","Phone","Staten Island","Staten Island","Traffic accident"
+"2018-05-25T00:00:00.000","113","2000","19","OCD","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","114","2000","78","CCRB","Precinct","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","115","2000","1","OCD","CCRB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","116","2000","2","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Traffic accident"
+"2018-05-25T00:00:00.000","117","2000","10","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","118","2000","1","OCD","CCRB","Call Processing System","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","119","2000","0","OCD","Precinct","Phone","Brooklyn","Brooklyn South","Traffic accident"
+"2018-05-25T00:00:00.000","120","2000","2","OCD","CCRB","Phone","Brooklyn","Other","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","121","2000","1","OCD","Other NYPD unit","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","122","2000","28","CCRB","Other NYPD unit","Phone","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","123","2000","9","OCD","Precinct","Mail","Manhattan","Other","Moving violation"
+"2018-05-25T00:00:00.000","124","2000","0","OCD","Precinct","Phone","Brooklyn","Brooklyn South","Traffic accident"
+"2018-05-25T00:00:00.000","125","2000","10","CCRB","Precinct","In-person","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","126","2000","1","OCD","Precinct","In-person","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","127","2000","130","OCD","CCRB","Call Processing System","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","128","2000","0","CCRB","CCRB","Phone","Queens","Other","Other"
+"2018-05-25T00:00:00.000","129","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","130","2000","24","OCD","Precinct","Mail","Manhattan","Manhattan North","Report-dispute"
+"2018-05-25T00:00:00.000","131","2000","8","CCRB","IAB","Mail","Manhattan","Manhattan South","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","132","2000","0","REFERRAL","CCRB","Phone","Queens","Other","Report-dispute"
+"2018-05-25T00:00:00.000","133","2000","2","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","134","2000","9","OCD","IAB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","135","2000","1","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Report of other crime"
+"2018-05-25T00:00:00.000","136","2000","19","CCRB","IAB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","137","2000","59","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","138","2000","4","CCRB","IAB","Mail","Manhattan","Manhattan North","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","139","2000","12","CCRB","IAB","Mail","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","140","2000","1","OCD","CCRB","Phone","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","141","2000","9","OCD","IAB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","142","2000","1","CCRB","CCRB","Phone","Queens","Queens South","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","143","2000","21","OCD","CCRB","Phone","Brooklyn","Brooklyn South","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","144","2000","12","CCRB","IAB","Mail","Bronx","Bronx",
+"2018-05-25T00:00:00.000","145","2000","287","CCRB","IAB","Phone","Manhattan","Manhattan South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","146","2000","0","OCD","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","147","2000","0","OCD","CCRB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","148","2000","35","OCD","CCRB","Mail","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","149","2000","153","IAB","CCRB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","150","2000","0","CCRB","Precinct","In-person","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","151","2000","124","OCD","CCRB","Phone","Manhattan","Other",
+"2018-05-25T00:00:00.000","152","2000","0","IAB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","153","2000","25","CCRB","IAB","Phone","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","154","2000","37","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Parking violation"
+"2018-05-25T00:00:00.000","155","2000","0","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","156","2000","1","CCRB","Precinct","Phone","Queens","Queens South","Moving violation"
+"2018-05-25T00:00:00.000","157","2000","1","CCRB","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","158","2000","8","CCRB","Precinct","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","159","2000","3","CCRB","IAB","Phone","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","160","2000","1","OCD","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","161","2000","2","OCD","Precinct","In-person","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","162","2000","0","OCD","Precinct","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","163","2000","1","OCD","CCRB","Call Processing System","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","164","2000","0","CCRB","CCRB","Phone","Manhattan","Manhattan South","C/V requested info from officer"
+"2018-05-25T00:00:00.000","165","2000","1","OCD","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","166","2000","0","OCD","Other NYPD unit","Phone","Manhattan","Manhattan South","Parking violation"
+"2018-05-25T00:00:00.000","167","2000","13","OCD","IAB","Mail","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","168","2000","35","REFERRAL","CCRB","Mail","Manhattan","Manhattan North","Moving violation"
+"2018-05-25T00:00:00.000","169","2000","3","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Report-dispute"
+"2018-05-25T00:00:00.000","170","2000","12","OCD","IAB","Mail","Brooklyn","Brooklyn South","Report-dispute"
+"2018-05-25T00:00:00.000","171","2000","14","CCRB","CCRB","Mail","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","172","2000","15","CCRB","CCRB","Phone","Queens","Queens South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","173","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","174","2000","10","CCRB","IAB","Mail","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","175","2000","18","CCRB","IAB","Phone","Brooklyn","Brooklyn North","EDP aided case"
+"2018-05-25T00:00:00.000","176","2000","0","CCRB","Precinct","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","177","2000","0","REFERRAL","CCRB","Phone","Staten Island","Other","Other"
+"2018-05-25T00:00:00.000","178","2000","9","OCD","IAB","Mail","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","179","2000","0","OCD","CCRB","Phone","Manhattan","Manhattan South","Moving violation"
+"2018-05-25T00:00:00.000","180","2000","20","CCRB","CCRB","Mail","Bronx","Bronx","Other violation of VTL"
+"2018-05-25T00:00:00.000","181","2000","1","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn South","Demonstration/protest"
+"2018-05-25T00:00:00.000","182","2000","0","CCRB","CCRB","Phone","Bronx","Other","Other"
+"2018-05-25T00:00:00.000","183","2000","293","CCRB","CCRB","On-line website","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","184","2000","22","CCRB","IAB","In-person","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","185","2000","13","CCRB","IAB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","186","2000","5","OCD","Precinct","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","187","2000","0","OCD","Precinct","In-person","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","188","2000","0","OCD","Precinct","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","189","2000","11","OCD","CCRB","Phone","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","190","2000","477","OCD","CCRB","Mail",,"Other",
+"2018-05-25T00:00:00.000","191","2000","13","CCRB","IAB","Mail","Outside NYC","Other","Other"
+"2018-05-25T00:00:00.000","192","2000","2","OCD","CCRB","Call Processing System","Manhattan","Other","Report of other crime"
+"2018-05-25T00:00:00.000","193","2000","10","CCRB","Other","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","194","2000","0","CCRB","Precinct","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","195","2000","8","CCRB","IAB","Mail","Bronx","Bronx","PD auto checkpoint"
+"2018-05-25T00:00:00.000","196","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","197","2000","2","OCD","Precinct","In-person","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","432","2000","2","OCD","CCRB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","198","2000","17","CCRB","IAB","Mail","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","199","2000","5","REFERRAL","CCRB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","200","2000","9","OCD","IAB","Phone","Queens","Other",
+"2018-05-25T00:00:00.000","201","2000","2","CCRB","Precinct","In-person","Brooklyn","Brooklyn South","Parking violation"
+"2018-05-25T00:00:00.000","202","2000","11","CCRB","CCRB","Phone","Manhattan","Manhattan South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","203","2000","22","CCRB","Precinct","Phone","Staten Island","Staten Island","Report-gun possession/shots fired"
+"2018-05-25T00:00:00.000","204","2000","20","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Report of other crime"
+"2018-05-25T00:00:00.000","205","2000","0","REFERRAL","Precinct","In-person","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","206","2000","12","CCRB","CCRB","On-line website","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","207","2000","3","OCD","Precinct","Phone","Brooklyn","Brooklyn North","Traffic accident"
+"2018-05-25T00:00:00.000","208","2000","6","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Traffic accident"
+"2018-05-25T00:00:00.000","209","2000","13","OCD","CCRB","Phone","Manhattan","Other","Traffic accident"
+"2018-05-25T00:00:00.000","210","2000","67","OCD","CCRB","In-person","Bronx","Other",
+"2018-05-25T00:00:00.000","211","2000","9","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","212","2000","5","OCD","CCRB","Call Processing System","Brooklyn","Other","Report of other crime"
+"2018-05-25T00:00:00.000","213","2000","5","OCD","CCRB","Phone","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","214","2000","1","CCRB","Precinct","In-person","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","215","2000","25","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Report of other crime"
+"2018-05-25T00:00:00.000","216","2000","9","CCRB","Precinct","In-person","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","217","2000","0","OCD","Precinct","In-person","Bronx","Bronx","Moving violation"
+"2018-05-25T00:00:00.000","218","2000","1","CCRB","Precinct","Phone",,"Other",
+"2018-05-25T00:00:00.000","219","2000","2","OCD","Precinct","Phone","Queens","Queens North","Report-dispute"
+"2018-05-25T00:00:00.000","220","2000","0","OCD","CCRB","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","221","2000","8","OCD","IAB","Mail","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","222","2000","8","CCRB","IAB","Phone","Manhattan","Manhattan South","Moving violation"
+"2018-05-25T00:00:00.000","223","2000","1","OCD","CCRB","Phone","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","224","2000","10","OCD","IAB","Phone","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","225","2000","20","OCD","IAB","Mail","Brooklyn","Other","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","226","2000","8","OCD","Precinct","In-person","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","227","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Parking violation"
+"2018-05-25T00:00:00.000","228","2000","7","CCRB","Other NYPD unit","Phone","Brooklyn","Brooklyn South","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","229","2000","0","OCD","CCRB","Phone","Queens","Other","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","230","2000","1","OCD","CCRB","Call Processing System","Brooklyn","Brooklyn North","C/V requested investigation of crime"
+"2018-05-25T00:00:00.000","231","2000","3","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","232","2000","0","OCD","Precinct","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","233","2000","54","OCD","IAB","Mail","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","234","2000","21","IAB","IAB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","235","2000","0","IAB","CCRB","Phone","Queens","Queens North","Traffic accident"
+"2018-05-25T00:00:00.000","590","2000","0","OCD","CCRB","Phone","Manhattan","Queens South","Other"
+"2018-05-25T00:00:00.000","236","2000","0","OCD","CCRB","Phone","Staten Island","Staten Island","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","237","2000","0","CCRB","Precinct","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","238","2000","110","OCD","CCRB","Mail","Manhattan","Manhattan North","Report of other crime"
+"2018-05-25T00:00:00.000","239","2000","13","OCD","IAB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","240","2000","47","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","241","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","242","2000","-361","CCRB","CCRB","Mail","Brooklyn","Brooklyn South","Traffic accident"
+"2018-05-25T00:00:00.000","243","2000","13","CCRB","IAB","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","244","2000","147","OCD","CCRB","Phone","Staten Island","Staten Island",
+"2018-05-25T00:00:00.000","245","2000","20","CCRB","IAB","Phone","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","246","2000","1","CCRB","Precinct","In-person","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","247","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Report-dispute"
+"2018-05-25T00:00:00.000","248","2000","3","OCD","CCRB","Phone","Bronx","Bronx","Moving violation"
+"2018-05-25T00:00:00.000","249","2000","0","OCD","CCRB","Phone","Manhattan","Other","Parking violation"
+"2018-05-25T00:00:00.000","250","2000","7","CCRB","IAB","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","251","2000","255","CCRB","CCRB","Mail","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","252","2000","0","OCD","Precinct","In-person","Queens","Queens North",
+"2018-05-25T00:00:00.000","253","2000","1","OCD","Precinct","Phone","Brooklyn","Brooklyn North","Moving violation"
+"2018-05-25T00:00:00.000","254","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Execution of search warrant"
+"2018-05-25T00:00:00.000","255","2000","0","OCD","CCRB","Phone","Brooklyn","Other","Parking violation"
+"2018-05-25T00:00:00.000","256","2000","0","OCD","CCRB","Call Processing System","Manhattan","Other",
+"2018-05-25T00:00:00.000","257","2000","1","OCD","Precinct","In-person","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","258","2000","9","OCD","IAB","Phone","Manhattan","Manhattan South","Report-dispute"
+"2018-05-25T00:00:00.000","259","2000","7","OCD","Precinct","In-person","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","260","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","261","2000","1","CCRB","Precinct","In-person","Manhattan","Manhattan South","Moving violation"
+"2018-05-25T00:00:00.000","262","2000","168","OCD","CCRB","Phone","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","263","2000","2","OCD","CCRB","Phone","Bronx","Bronx","Report-domestic dispute"
+"2018-05-25T00:00:00.000","264","2000","2","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Traffic accident"
+"2018-05-25T00:00:00.000","265","2000","1","OCD","CCRB","E-mail","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","266","2000","0","CCRB","Precinct","In-person","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","267","2000","3","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","268","2000","1","CCRB","Precinct","In-person","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","269","2000","31","OCD","CCRB","Phone","Brooklyn","Other",
+"2018-05-25T00:00:00.000","270","2000","0","CCRB","Other NYPD unit","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","271","2000","6","CCRB","Precinct","Mail","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","272","2000","10","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Traffic accident"
+"2018-05-25T00:00:00.000","273","2000","338","OCD","CCRB","Call Processing System","Staten Island","Other","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","274","2000","283","IAB","CCRB","Mail","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","275","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Parking violation"
+"2018-05-25T00:00:00.000","276","2000","2","OCD","Precinct","Call Processing System","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","277","2000","30","OCD","CCRB","On-line website","Staten Island","Staten Island","C/V at PCT to file complaint of crime"
+"2018-05-25T00:00:00.000","278","2000","60","OCD","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","279","2000","9","CCRB","IAB","Phone","Manhattan","Manhattan South","Report of other crime"
+"2018-05-25T00:00:00.000","280","2000","2","OCD","CCRB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","281","2000","4","OCD","CCRB","Phone","Queens","Queens North","Report-dispute"
+"2018-05-25T00:00:00.000","282","2000","1","OCD","CCRB","Mail","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","283","2000","0","OCD","Precinct","Call Processing System","Manhattan","Other",
+"2018-05-25T00:00:00.000","284","2000","3","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Report of other crime"
+"2018-05-25T00:00:00.000","285","2000","0","CCRB","Precinct","In-person","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","286","2000","0","CCRB","Precinct","In-person","Bronx","Bronx","C/V requested info from officer"
+"2018-05-25T00:00:00.000","287","2000","4","OCD","CCRB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","288","2000","5","OCD","Precinct","Phone","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","289","2000","0","OCD","Precinct","In-person","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","290","2000","3","CCRB","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","291","2000","4","CCRB","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","292","2000","0","CCRB","CCRB","Phone","Queens","Other","Other"
+"2018-05-25T00:00:00.000","293","2000","34","OCD","CCRB","Mail","Queens","Queens South",
+"2018-05-25T00:00:00.000","294","2000","342","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","295","2000","5","CCRB","IAB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","296","2000","172","CCRB","CCRB","In-person","Queens","Queens South","Parking violation"
+"2018-05-25T00:00:00.000","297","2000","0","CCRB","Precinct","In-person","Manhattan","Manhattan North","Report-dispute"
+"2018-05-25T00:00:00.000","298","2000","3","OCD","CCRB","Call Processing System","Staten Island","Other","Other"
+"2018-05-25T00:00:00.000","299","2000","0","CCRB","Precinct","In-person","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","300","2000","72","OCD","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","301","2000","5","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","302","2000","27","OCD","Precinct","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","303","2000","74","IAB","CCRB","Phone","Queens","Other","C/V intervened on behalf of/observed encounter w/3rd party"
+"2018-05-25T00:00:00.000","304","2000","12","CCRB","IAB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","305","2000","0","OCD","Precinct","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","306","2000","27","CCRB","IAB","Mail","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","307","2000","1","OCD","CCRB","Phone","Queens","Queens South","Report of other crime"
+"2018-05-25T00:00:00.000","308","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","309","2000","1","OCD","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","310","2000","10","OCD","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","311","2000","7","OCD","IAB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","312","2000","0","CCRB","Precinct","In-person","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","313","2000","3","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn North","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","314","2000","170","CCRB","CCRB","Phone","Queens","Queens North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","315","2000","36","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","316","2000","6","OCD","Precinct","In-person","Queens","Queens South",
+"2018-05-25T00:00:00.000","317","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","318","2000","7","OCD","IAB","Mail","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","319","2000","0","CCRB","Precinct","In-person","Bronx","Bronx","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","320","2000","3","OCD","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","321","2000","9","OCD","CCRB","Phone","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","322","2000","131","OCD","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","323","2000","29","CCRB","CCRB","In-person","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","324","2000","16","CCRB","IAB","Phone","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","325","2000","8","CCRB","CCRB","In-person","Manhattan","Manhattan South","Parking violation"
+"2018-05-25T00:00:00.000","326","2000","140","CCRB","IAB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","327","2000","0","OCD","CCRB","Phone","Staten Island","Staten Island",
+"2018-05-25T00:00:00.000","328","2000","0","CCRB","CCRB","Phone","Manhattan","Other","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","329","2000","0","OCD","Precinct","In-person","Brooklyn","Brooklyn South","C/V at PCT to obtain information"
+"2018-05-25T00:00:00.000","330","2000","37","OCD","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","331","2000","53","CCRB","IAB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","332","2000","1","OCD","CCRB","Phone","Bronx","Bronx","Report-domestic dispute"
+"2018-05-25T00:00:00.000","333","2000","70","IAB","Precinct","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","334","2000","4","CCRB","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","335","2000","1","CCRB","CCRB","Phone","Bronx","Bronx","Report of other crime"
+"2018-05-25T00:00:00.000","336","2000","6","OCD","Precinct","Phone","Brooklyn","Other","Parking violation"
+"2018-05-25T00:00:00.000","337","2000","0","OCD","Precinct","In-person","Queens","Queens South","Moving violation"
+"2018-05-25T00:00:00.000","338","2000","95","CCRB","CCRB","In-person","Brooklyn","Brooklyn North","Execution of search warrant"
+"2018-05-25T00:00:00.000","339","2000","1","OCD","Precinct","Call Processing System","Brooklyn","Brooklyn South","PD auto checkpoint"
+"2018-05-25T00:00:00.000","340","2000","0","OCD","Precinct","In-person","Queens","Queens North","Parking violation"
+"2018-05-25T00:00:00.000","341","2000","20","CCRB","IAB","Phone","Bronx","Manhattan North",
+"2018-05-25T00:00:00.000","342","2000","0","OCD","CCRB","Phone","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","343","2000","2","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","344","2000","13","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","345","2000","23","CCRB","CCRB","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","346","2000","4","CCRB","IAB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","347","2000","167","OCD","CCRB","Phone","Bronx","Bronx","Report of other crime"
+"2018-05-25T00:00:00.000","348","2000","4","OCD","CCRB","Phone","Brooklyn","Brooklyn South","C/V at PCT to file complaint of crime"
+"2018-05-25T00:00:00.000","349","2000","3","CCRB","Precinct","Phone","Staten Island","Staten Island","Report-dispute"
+"2018-05-25T00:00:00.000","350","2000","0","OCD","CCRB","Phone","Bronx","Bronx","Moving violation"
+"2018-05-25T00:00:00.000","351","2000","2","OCD","CCRB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","352","2000","31","OCD","CCRB","Mail","Bronx","Bronx","Traffic accident"
+"2018-05-25T00:00:00.000","353","2000","4","CCRB","Precinct","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","354","2000","2","CCRB","Precinct","In-person","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","355","2000","70","OCD","CCRB","In-person","Brooklyn","Brooklyn South","Report of other crime"
+"2018-05-25T00:00:00.000","356","2000","0","OCD","CCRB","Phone","Manhattan","Other","C/V requested investigation of crime"
+"2018-05-25T00:00:00.000","357","2000","0","CCRB","CCRB","Call Processing System","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","358","2000","0","OCD","Precinct","In-person","Manhattan","Other",
+"2018-05-25T00:00:00.000","359","2000","0","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","360","2000","2","OCD","CCRB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","361","2000","84","CCRB","CCRB","Phone","Bronx","Bronx","Report-domestic dispute"
+"2018-05-25T00:00:00.000","362","2000","0","CCRB","Precinct","In-person","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","363","2000","0","OCD","Precinct","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","364","2000","8","OCD","Other NYPD unit","In-person","Bronx","Bronx",
+"2018-05-25T00:00:00.000","365","2000","4","CCRB","CCRB","Phone","Manhattan","Manhattan North","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","366","2000","15","OCD","Precinct","Phone","Queens","Queens South","C/V at PCT to obtain information"
+"2018-05-25T00:00:00.000","367","2000","4","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","368","2000","69","OCD","CCRB","Phone","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","369","2000","60","CCRB","CCRB","Mail","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","370","2000","1","OCD","CCRB","Phone","Brooklyn","Other",
+"2018-05-25T00:00:00.000","371","2000","4","OCD","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","372","2000","55","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","373","2000","2","CCRB","Precinct","In-person","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","374","2000","11","OCD","IAB","Mail","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","375","2000","30","OCD","Precinct","In-person","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","376","2000","164","OCD","CCRB","Mail","Bronx","Other",
+"2018-05-25T00:00:00.000","377","2000","1","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","378","2000","0","OCD","Precinct","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","379","2000","55","OCD","Precinct","Phone","Bronx","Bronx","Traffic accident"
+"2018-05-25T00:00:00.000","380","2000","0","OCD","CCRB","Phone","Bronx","Bronx","Report of other crime"
+"2018-05-25T00:00:00.000","381","2000","62","OCD","Precinct","In-person","Brooklyn","Brooklyn North","Moving violation"
+"2018-05-25T00:00:00.000","382","2000","0","OCD","CCRB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","383","2000","137","CCRB","CCRB","In-person","Brooklyn","Brooklyn South","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","384","2000","2","OCD","CCRB","Call Processing System","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","385","2000","0","OCD","Precinct","Phone","Brooklyn","Brooklyn South","Parking violation"
+"2018-05-25T00:00:00.000","386","2000","0","OCD","Precinct","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","387","2000","15","CCRB","IAB","Mail","Manhattan","Manhattan South","Parking violation"
+"2018-05-25T00:00:00.000","388","2000","0","CCRB","Precinct","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","389","2000","13","OCD","IAB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","390","2000","0","CCRB","CCRB","Phone","Brooklyn","Bronx","Execution of search warrant"
+"2018-05-25T00:00:00.000","391","2000","10","OCD","Precinct","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","392","2000","0","CCRB","CCRB","Mail","Brooklyn","Brooklyn South","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","393","2000","8","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Report-domestic dispute"
+"2018-05-25T00:00:00.000","394","2000","0","OCD","Precinct","In-person","Brooklyn","Brooklyn South","Moving violation"
+"2018-05-25T00:00:00.000","395","2000","13","OCD","CCRB","Mail","Queens","Queens South",
+"2018-05-25T00:00:00.000","396","2000","0","OCD","CCRB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","397","2000","98","OCD","CCRB","Mail","Manhattan","Other",
+"2018-05-25T00:00:00.000","398","2000","8","OCD","Precinct","Call Processing System","Manhattan","Manhattan South","Report-dispute"
+"2018-05-25T00:00:00.000","399","2000","2","CCRB","CCRB","Phone","Manhattan","Manhattan North","Report-dispute"
+"2018-05-25T00:00:00.000","400","2000","8","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","401","2000","3","CCRB","CCRB","Phone","Bronx","Bronx","C/V at PCT to file complaint of crime"
+"2018-05-25T00:00:00.000","402","2000","1","OCD","Precinct","Phone","Brooklyn","Brooklyn South","Parking violation"
+"2018-05-25T00:00:00.000","403","2000","11","OCD","CCRB","Phone","Staten Island","Staten Island","Report-dispute"
+"2018-05-25T00:00:00.000","404","2000","1","OCD","CCRB","Phone","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","405","2000","6","CCRB","IAB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","406","2000","1","CCRB","CCRB","Call Processing System","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","407","2000","5","CCRB","IAB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","408","2000","14","CCRB","CCRB","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","409","2000","42","CCRB","CCRB","On-line website","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","410","2000","0","OCD","Precinct","In-person","Brooklyn","Brooklyn South","Moving violation"
+"2018-05-25T00:00:00.000","411","2000","3","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Report of other crime"
+"2018-05-25T00:00:00.000","412","2000","4","OCD","CCRB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","413","2000","0","OCD","Precinct","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","414","2000","15","OCD","IAB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","415","2000","1","OCD","CCRB","Call Processing System","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","416","2000","3","CCRB","Precinct","Call Processing System","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","417","2000","1","OCD","CCRB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","418","2000","5","CCRB","IAB","Phone","Queens","Queens South","Report of other crime"
+"2018-05-25T00:00:00.000","419","2000","7","CCRB","IAB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","420","2000","9","OCD","Precinct","In-person","Bronx","Bronx",
+"2018-05-25T00:00:00.000","421","2000","15","OCD","CCRB","In-person","Manhattan","Other","Other violation of VTL"
+"2018-05-25T00:00:00.000","422","2000","35","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Report of other crime"
+"2018-05-25T00:00:00.000","423","2000","46","OCD","CCRB","Phone","Manhattan","Other","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","424","2000","17","OCD","CCRB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","425","2000","2","OCD","CCRB","Call Processing System","Manhattan","Other",
+"2018-05-25T00:00:00.000","426","2000","32","OCD","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","427","2000","12","CCRB","IAB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","428","2000","392","CCRB","IAB","Phone","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","429","2000","14","OCD","Precinct","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","430","2000","1","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","431","2000","4","OCD","CCRB","Phone","Queens","Queens North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","433","2000","0","CCRB","Precinct","In-person","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","434","2000","2","CCRB","CCRB","Call Processing System","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","435","2000","8","OCD","CCRB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","436","2000","1","OCD","CCRB","Call Processing System","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","437","2000","9","OCD","CCRB","In-person","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","438","2000","0","OCD","CCRB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","439","2000","0","OCD","CCRB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","440","2000","-359","CCRB","IAB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","441","2000","146","OCD","CCRB","Phone","Queens","Queens South","Parking violation"
+"2018-05-25T00:00:00.000","442","2000","0","CCRB","Precinct","In-person","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","443","2000","7","OCD","IAB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","444","2000","0","CCRB","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","445","2000","42","IAB","IAB","Mail","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","446","2000","8","CCRB","CCRB","In-person","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","447","2000","221","CCRB","CCRB","Phone","Brooklyn","Queens South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","448","2000","6","CCRB","IAB","Mail","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","449","2000","0","CCRB","Precinct","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","450","2000","0","CCRB","CCRB","Call Processing System","Staten Island","Staten Island","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","451","2000","5","OCD","Other NYPD unit","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","452","2000","5","CCRB","Precinct","In-person","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","453","2000","12","OCD","IAB","Phone","Staten Island","Other",
+"2018-05-25T00:00:00.000","454","2000","0","CCRB","Precinct","Phone","Queens","Other",
+"2018-05-25T00:00:00.000","455","2000","33","CCRB","IAB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","456","2000","10","OCD","CCRB","In-person","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","457","2000","0","CCRB","IAB","Phone",,"Other",
+"2018-05-25T00:00:00.000","458","2000","11","OCD","IAB","Phone","Brooklyn","Brooklyn North","Report-dispute"
+"2018-05-25T00:00:00.000","459","2000","2","CCRB","CCRB","In-person","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","460","2000","0","OCD","CCRB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","461","2000","0","OCD","Precinct","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","462","2000","5","OCD","CCRB","Phone","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","463","2000","1","OCD","CCRB","Call Processing System","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","464","2000","0","OCD","CCRB","Phone","Manhattan","Other",
+"2018-05-25T00:00:00.000","465","2000","2","OCD","CCRB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","466","2000","1","CCRB","Precinct","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","467","2000","12","CCRB","Precinct","Mail","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","468","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Report-dispute"
+"2018-05-25T00:00:00.000","469","2000","8","CCRB","CCRB","Phone","Manhattan","Manhattan South","Traffic accident"
+"2018-05-25T00:00:00.000","470","2000","1","OCD","Precinct","Call Processing System","Bronx","Bronx","C/V requested investigation of crime"
+"2018-05-25T00:00:00.000","471","2000","0","OCD","CCRB","Phone","Manhattan","Other","Parking violation"
+"2018-05-25T00:00:00.000","472","2000","1","REFERRAL","Other NYPD unit","Phone","Queens","Other",
+"2018-05-25T00:00:00.000","473","2000","14","CCRB","CCRB","Phone","Brooklyn","Manhattan South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","474","2000","112","OCD","CCRB","Phone","Brooklyn","Other","Parking violation"
+"2018-05-25T00:00:00.000","475","2000","2","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","476","2000","13","OCD","CCRB","Phone","Brooklyn","Brooklyn North","PD auto checkpoint"
+"2018-05-25T00:00:00.000","477","2000","15","CCRB","CCRB","On-line website","Brooklyn","Brooklyn North","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","478","2000","2","CCRB","Precinct","Call Processing System","Brooklyn","Brooklyn South","Traffic accident"
+"2018-05-25T00:00:00.000","479","2000","4","CCRB","Precinct","In-person","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","480","2000","21","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Report-dispute"
+"2018-05-25T00:00:00.000","481","2000","3","OCD","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","482","2000","38","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Report of other crime"
+"2018-05-25T00:00:00.000","483","2000","1","OCD","CCRB","Call Processing System","Queens","Queens South","C/V requested investigation of crime"
+"2018-05-25T00:00:00.000","484","2000","8","CCRB","Precinct","In-person","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","485","2000","8","CCRB","IAB","Mail","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","486","2000","3","OCD","CCRB","Phone","Manhattan","Other",
+"2018-05-25T00:00:00.000","487","2000","7","CCRB","IAB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","488","2000","3","OCD","CCRB","Phone","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","489","2000","0","OCD","Precinct","Phone","Brooklyn","Brooklyn South","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","490","2000","11","CCRB","IAB","Phone","Bronx","Bronx","Report of other crime"
+"2018-05-25T00:00:00.000","491","2000","19","CCRB","IAB","Mail","Manhattan","Manhattan South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","492","2000","12","OCD","Precinct","In-person","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","493","2000","3","CCRB","CCRB","Phone","Staten Island","Staten Island","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","494","2000","2","CCRB","CCRB","Call Processing System","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","495","2000","2","CCRB","CCRB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","496","2000","1","OCD","CCRB","Phone","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","497","2000","6","CCRB","IAB","Phone","Staten Island","Staten Island","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","498","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Report-dispute"
+"2018-05-25T00:00:00.000","499","2000","0","OCD","Precinct","In-person","Queens","Queens South","Parking violation"
+"2018-05-25T00:00:00.000","500","2000","71","IAB","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","501","2000","15","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","502","2000","59","CCRB","IAB","Phone","Staten Island","Staten Island",
+"2018-05-25T00:00:00.000","503","2000","22","CCRB","CCRB","Mail","Brooklyn","Brooklyn South","Other violation of VTL"
+"2018-05-25T00:00:00.000","504","2000","13","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","505","2000","6","OCD","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","506","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","507","2000","2","CCRB","Precinct","In-person","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","508","2000","1","OCD","Precinct","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","509","2000","0","OCD","CCRB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","510","2000","0","OCD","Precinct","Phone","Brooklyn","Brooklyn South","C/V at PCT to obtain information"
+"2018-05-25T00:00:00.000","511","2000","0","OCD","CCRB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","512","2000","8","OCD","IAB","Mail","Staten Island","Staten Island","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","513","2000","11","CCRB","IAB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","514","2000","0","OCD","CCRB","Phone","Bronx","Bronx","Report of other crime"
+"2018-05-25T00:00:00.000","515","2000","4","IAB","Precinct","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","516","2000","1","OCD","CCRB","Call Processing System","Brooklyn","Other","C/V at PCT to file complaint of crime"
+"2018-05-25T00:00:00.000","517","2000","60","OCD","Precinct","Phone","Brooklyn","Brooklyn South","Traffic accident"
+"2018-05-25T00:00:00.000","518","2000","0","CCRB","Precinct","Phone","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","519","2000","4","REFERRAL","CCRB","Phone","Queens","Queens North","Moving violation"
+"2018-05-25T00:00:00.000","520","2000","89","OCD","CCRB","In-person","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","521","2000","118","CCRB","CCRB","Phone","Bronx","Bronx","Report of other crime"
+"2018-05-25T00:00:00.000","522","2000","5","CCRB","IAB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","523","2000","41","CCRB","IAB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","524","2000","7","CCRB","IAB","Phone","Manhattan","Manhattan South","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","525","2000","1","OCD","Precinct","In-person","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","526","2000","10","CCRB","CCRB","Phone","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","527","2000","0","CCRB","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","528","2000","35","CCRB","CCRB","In-person","Brooklyn","Brooklyn North","Moving violation"
+"2018-05-25T00:00:00.000","529","2000","0","CCRB","Precinct","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - auto"
+"2018-05-25T00:00:00.000","530","2000","7","OCD","CCRB","Call Processing System","Queens","Other","Report-dispute"
+"2018-05-25T00:00:00.000","531","2000","2","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","532","2000","10","CCRB","IAB","Mail","Manhattan","Manhattan South","Moving violation"
+"2018-05-25T00:00:00.000","533","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","534","2000","25","OCD","CCRB","Mail","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","535","2000","2","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Execution of search warrant"
+"2018-05-25T00:00:00.000","536","2000","715","OCD","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","537","2000","3","OCD","CCRB","Phone","Queens","Queens South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","538","2000","19","CCRB","Precinct","Phone","Manhattan","Manhattan North","Report of other crime"
+"2018-05-25T00:00:00.000","539","2000","3","CCRB","CCRB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","540","2000","0","OCD","CCRB","Phone","Manhattan","Other",
+"2018-05-25T00:00:00.000","541","2000","1","OCD","Precinct","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","542","2000","3","CCRB","CCRB","Phone","Bronx","Bronx","C/V at PCT to obtain information"
+"2018-05-25T00:00:00.000","543","2000","3","CCRB","Precinct","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","544","2000","10","CCRB","IAB","Phone","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","545","2000","3","CCRB","IAB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","546","2000","2","CCRB","Precinct","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","547","2000","1","CCRB","Precinct","In-person","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","548","2000","2","CCRB","Precinct","In-person","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","549","2000","0","OCD","Precinct","Phone","Staten Island","Staten Island","Parking violation"
+"2018-05-25T00:00:00.000","550","2000","1","OCD","Precinct","Call Processing System","Brooklyn","Brooklyn North","Other violation of VTL"
+"2018-05-25T00:00:00.000","551","2000","4","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn South","Report of other crime"
+"2018-05-25T00:00:00.000","552","2000","80","CCRB","IAB","Phone","Brooklyn","Brooklyn South","C/V requested investigation of crime"
+"2018-05-25T00:00:00.000","553","2000","1","CCRB","CCRB","Phone","Bronx","Other","Other"
+"2018-05-25T00:00:00.000","554","2000","0","OCD","Precinct","Phone","Queens","Queens North","Report-dispute"
+"2018-05-25T00:00:00.000","555","2000","1","CCRB","Precinct","In-person","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","556","2000","0","CCRB","Precinct","In-person","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","557","2000","3","CCRB","CCRB","Phone","Queens","Queens South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","558","2000","24","OCD","CCRB","Phone","Queens","Queens North","C/V at PCT to file complaint of crime"
+"2018-05-25T00:00:00.000","559","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","560","2000","12","OCD","Precinct","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","561","2000","0","OCD","Precinct","Phone","Manhattan","Manhattan South","Parking violation"
+"2018-05-25T00:00:00.000","562","2000","5","CCRB","IAB","Phone","Brooklyn","Brooklyn North","C/V requested info from officer"
+"2018-05-25T00:00:00.000","563","2000","4","OCD","CCRB","Phone","Manhattan","Manhattan North","C/V intervened on behalf of/observed encounter w/3rd party"
+"2018-05-25T00:00:00.000","564","2000","16","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","565","2000","11","CCRB","IAB","Phone","Queens","Queens South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","566","2000","0","OCD","Precinct","Phone","Queens","Queens South","Parking violation"
+"2018-05-25T00:00:00.000","567","2000","28","OCD","Other NYPD unit","In-person","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","568","2000","1","OCD","Precinct","In-person","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","569","2000","25","OCD","CCRB","Mail","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","570","2000","5","CCRB","IAB","Mail","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","571","2000","1","CCRB","Precinct","Call Processing System","Bronx","Bronx","Traffic accident"
+"2018-05-25T00:00:00.000","572","2000","12","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Report-dispute"
+"2018-05-25T00:00:00.000","573","2000","9","CCRB","IAB","Phone","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","574","2000","28","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","575","2000","0","REFERRAL","CCRB","Mail","Outside NYC","Other",
+"2018-05-25T00:00:00.000","576","2000","7","CCRB","IAB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","577","2000","1","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Parking violation"
+"2018-05-25T00:00:00.000","578","2000","2","OCD","CCRB","Phone","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","579","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Report-domestic dispute"
+"2018-05-25T00:00:00.000","580","2000","0","OCD","Precinct","Phone","Staten Island","Staten Island",
+"2018-05-25T00:00:00.000","581","2000","76","OCD","CCRB","Mail","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","582","2000","0","CCRB","Precinct","Phone","Brooklyn","Brooklyn North","Report-dispute"
+"2018-05-25T00:00:00.000","583","2000","13","OCD","IAB","E-mail","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","584","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","585","2000","0","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","586","2000","2","REFERRAL","CCRB","Call Processing System","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","587","2000","0","OCD","CCRB","Phone","Brooklyn","Other",
+"2018-05-25T00:00:00.000","588","2000","1","CCRB","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","589","2000","8","OCD","Precinct","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","591","2000","471","CCRB","Precinct","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","592","2000","69","OCD","CCRB","In-person","Manhattan","Manhattan South","Report-dispute"
+"2018-05-25T00:00:00.000","593","2000","8","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Traffic accident"
+"2018-05-25T00:00:00.000","594","2000","22","CCRB","Precinct","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","595","2000","246","OCD","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","596","2000","0","CCRB","CCRB","Phone","Bronx","Bronx","Execution of search warrant"
+"2018-05-25T00:00:00.000","597","2000","2","REFERRAL","CCRB","On-line website","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","598","2000","19","CCRB","Precinct","In-person","Queens","Queens North",
+"2018-05-25T00:00:00.000","599","2000","0","OCD","Precinct","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","600","2000","4","CCRB","CCRB","Phone","Manhattan","Brooklyn South",
+"2018-05-25T00:00:00.000","601","2000","105","OCD","CCRB","In-person","Bronx","Bronx","C/V at PCT to file complaint of crime"
+"2018-05-25T00:00:00.000","602","2000","9","CCRB","Precinct","In-person","Queens","Queens North","Aided case"
+"2018-05-25T00:00:00.000","603","2000","2","CCRB","CCRB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","604","2000","6","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","605","2000","2","OCD","Other NYPD unit","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","606","2000","26","CCRB","CCRB","Mail","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","607","2000","5","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","608","2000","7","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Report-gun possession/shots fired"
+"2018-05-25T00:00:00.000","609","2000","0","OCD","Precinct","Phone","Staten Island","Staten Island","Parking violation"
+"2018-05-25T00:00:00.000","610","2000","17","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","611","2000","168","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Traffic accident"
+"2018-05-25T00:00:00.000","612","2000","3","CCRB","CCRB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","613","2000","144","CCRB","Precinct","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","614","2000","0","OCD","CCRB","Call Processing System","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","615","2000","4","OCD","Precinct","Phone","Brooklyn","Brooklyn South","Report of other crime"
+"2018-05-25T00:00:00.000","616","2000","0","OCD","Precinct","In-person","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","617","2000","5","CCRB","IAB","Phone","Manhattan","Manhattan South","Parking violation"
+"2018-05-25T00:00:00.000","618","2000","1","OCD","CCRB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","619","2000","0","CCRB","CCRB","Phone","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","620","2000","1","OCD","Precinct","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","621","2000","1","OCD","CCRB","Phone","Queens","Queens South","Moving violation"
+"2018-05-25T00:00:00.000","622","2000","3","CCRB","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","623","2000","10","CCRB","CCRB","In-person","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","624","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","625","2000","0","OCD","CCRB","Phone","Staten Island","Staten Island","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","626","2000","10","CCRB","IAB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","627","2000","1004","OCD","CCRB","Mail","Queens","Queens South",
+"2018-05-25T00:00:00.000","628","2000","2","OCD","CCRB","Call Processing System","Manhattan","Other","Moving violation"
+"2018-05-25T00:00:00.000","629","2000","10","OCD","CCRB","Phone","Queens","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","630","2000","4","CCRB","IAB","Phone","Bronx","Bronx","Execution of arrest/bench warrant"
+"2018-05-25T00:00:00.000","631","2000","4","OCD","Precinct","In-person","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","632","2000","16","CCRB","IAB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","633","2000","13","CCRB","IAB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","634","2000","4","CCRB","CCRB","Phone","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","635","2000","26","OCD","CCRB","Mail","Manhattan","Other",
+"2018-05-25T00:00:00.000","636","2000","0","CCRB","Precinct","Phone","Brooklyn","Brooklyn South","Report-dispute"
+"2018-05-25T00:00:00.000","637","2000","74","CCRB","IAB","Mail","Bronx","Bronx",
+"2018-05-25T00:00:00.000","638","2000","0","CCRB","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","639","2000","53","OCD","IAB","Mail","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","640","2000","184","OCD","CCRB","Mail","Manhattan","Other",
+"2018-05-25T00:00:00.000","641","2000","0","OCD","CCRB","Phone","Queens","Other","Parking violation"
+"2018-05-25T00:00:00.000","642","2000","4","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Aided case"
+"2018-05-25T00:00:00.000","643","2000","37","OCD","IAB","Phone",,"Brooklyn South",
+"2018-05-25T00:00:00.000","644","2000","1","CCRB","CCRB","Call Processing System","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","645","2000","12","OCD","IAB","Phone","Brooklyn","Brooklyn South","Execution of arrest/bench warrant"
+"2018-05-25T00:00:00.000","646","2000","247","OCD","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","647","2000","141","OCD","CCRB","Mail","Queens","Queens South","Moving violation"
+"2018-05-25T00:00:00.000","648","2000","3","CCRB","Precinct","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","649","2000","5","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","650","2000","19","OCD","CCRB","Mail","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","651","2000","5","OCD","CCRB","Phone","Brooklyn","Brooklyn South","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","652","2000","2","CCRB","CCRB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","653","2000","6","CCRB","IAB","Mail","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","654","2000","0","IAB","Precinct","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","655","2000","4","CCRB","IAB","In-person","Manhattan","Manhattan South","Report-domestic dispute"
+"2018-05-25T00:00:00.000","656","2000","406","CCRB","CCRB","Phone","Manhattan","Manhattan North","Report of other crime"
+"2018-05-25T00:00:00.000","657","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","658","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Moving violation"
+"2018-05-25T00:00:00.000","659","2000","0","OCD","Precinct","In-person","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","660","2000","2","OCD","CCRB","Call Processing System","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","661","2000","18","CCRB","IAB","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","662","2000","18","OCD","IAB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","663","2000","0","CCRB","Precinct","In-person","Brooklyn","Brooklyn South","Moving violation"
+"2018-05-25T00:00:00.000","664","2000","73","CCRB","CCRB","Phone","Bronx","Bronx","Execution of search warrant"
+"2018-05-25T00:00:00.000","665","2000","0","CCRB","CCRB","Phone","Manhattan","Manhattan South","Parking violation"
+"2018-05-25T00:00:00.000","666","2000","13","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","667","2000","19","IAB","CCRB","On-line website","Queens","Queens North",
+"2018-05-25T00:00:00.000","668","2000","0","OCD","CCRB","Phone","Bronx","Bronx","Traffic accident"
+"2018-05-25T00:00:00.000","669","2000","9","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Parking violation"
+"2018-05-25T00:00:00.000","670","2000","10","OCD","CCRB","Fax","Bronx","Other","Other"
+"2018-05-25T00:00:00.000","671","2000","8","CCRB","Precinct","In-person","Queens","Queens North",
+"2018-05-25T00:00:00.000","672","2000","0","OCD","Precinct","In-person","Bronx","Bronx","Moving violation"
+"2018-05-25T00:00:00.000","673","2000","8","CCRB","IAB","Phone","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","674","2000","0","OCD","CCRB","Phone","Manhattan","Other",
+"2018-05-25T00:00:00.000","675","2000","2","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Report-dispute"
+"2018-05-25T00:00:00.000","676","2000","2","CCRB","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","677","2000","0","OCD","CCRB","Phone","Queens","Queens North","Parking violation"
+"2018-05-25T00:00:00.000","678","2000","7","CCRB","IAB","Phone","Manhattan","Other",
+"2018-05-25T00:00:00.000","679","2000","16","OCD","IAB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","680","2000","385","CCRB","CCRB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","681","2000","21","REFERRAL","Precinct","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","682","2000","11","CCRB","IAB","Phone","Manhattan","Manhattan North","Execution of search warrant"
+"2018-05-25T00:00:00.000","683","2000","81","CCRB","CCRB","In-person","Manhattan","Manhattan South","Execution of arrest/bench warrant"
+"2018-05-25T00:00:00.000","684","2000","1","CCRB","Precinct","In-person","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","685","2000","1","CCRB","Precinct","Phone","Queens","Queens North","Execution of search warrant"
+"2018-05-25T00:00:00.000","686","2000","1","CCRB","CCRB","Phone","Queens","Queens North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","687","2000","0","OCD","CCRB","Call Processing System","Brooklyn","Brooklyn North","Other violation of VTL"
+"2018-05-25T00:00:00.000","688","2000","2","CCRB","Precinct","In-person","Manhattan","Manhattan South","Report of other crime"
+"2018-05-25T00:00:00.000","689","2000","0","CCRB","Precinct","In-person","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","690","2000","62","CCRB","CCRB","In-person","Manhattan","Manhattan North","Execution of search warrant"
+"2018-05-25T00:00:00.000","691","2000","6","OCD","CCRB","Call Processing System","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","692","2000","595","OCD","Precinct","In-person","Queens","Queens North",
+"2018-05-25T00:00:00.000","693","2000","9","OCD","Precinct","Phone","Manhattan","Manhattan North","Report-dispute"
+"2018-05-25T00:00:00.000","694","2000","17","CCRB","IAB","Mail","Manhattan","Manhattan South","C/V at PCT to obtain information"
+"2018-05-25T00:00:00.000","695","2000","1","OCD","Precinct","In-person","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","696","2000","143","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Traffic accident"
+"2018-05-25T00:00:00.000","697","2000","6","OCD","CCRB","Phone","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","698","2000","62","CCRB","CCRB","Mail","Queens","Queens North","PD auto checkpoint"
+"2018-05-25T00:00:00.000","699","2000","7","CCRB","CCRB","Phone","Manhattan","Manhattan South","Execution of search warrant"
+"2018-05-25T00:00:00.000","700","2000","31","CCRB","IAB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","701","2000","0","OCD","Precinct","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","702","2000","45","OCD","CCRB","Mail","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","703","2000","0","OCD","CCRB","Phone","Queens","Queens North","Parking violation"
+"2018-05-25T00:00:00.000","704","2000","12","CCRB","Precinct","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","705","2000","5","CCRB","IAB","Mail","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","706","2000","2","CCRB","CCRB","Phone","Queens","Queens North","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","707","2000","0","OCD","CCRB","Call Processing System","Brooklyn","Other","Moving violation"
+"2018-05-25T00:00:00.000","708","2000","121","CCRB","IAB","Phone","Queens","Queens South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","709","2000","2","OCD","CCRB","Phone","Queens","Queens South","Report-domestic dispute"
+"2018-05-25T00:00:00.000","710","2000","1","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","711","2000","0","OCD","Precinct","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","712","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","713","2000","327","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","714","2000","12","CCRB","IAB","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","715","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Report-dispute"
+"2018-05-25T00:00:00.000","716","2000","4","OCD","Other NYPD unit","In-person","Bronx","Bronx",
+"2018-05-25T00:00:00.000","717","2000","23","OCD","CCRB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","718","2000","2","OCD","CCRB","In-person","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","719","2000","2","OCD","CCRB","Phone","Queens","Queens South","Parking violation"
+"2018-05-25T00:00:00.000","720","2000","1","CCRB","CCRB","Phone","Bronx","Bronx","Other violation of VTL"
+"2018-05-25T00:00:00.000","721","2000","4","CCRB","CCRB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","722","2000","14","OCD","CCRB","In-person","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","723","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","724","2000","0","OCD","CCRB","Phone","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","725","2000","29","OCD","CCRB","Phone","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","726","2000","0","CCRB","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","727","2000","1","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Report-dispute"
+"2018-05-25T00:00:00.000","728","2000","5","CCRB","Precinct","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","729","2000","20","CCRB","Precinct","Mail","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","730","2000","0","OCD","CCRB","Phone","Manhattan","Other","Report of other crime"
+"2018-05-25T00:00:00.000","731","2000","16","CCRB","IAB","Phone",,"Other","Other"
+"2018-05-25T00:00:00.000","732","2000","57","OCD","IAB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","733","2000","13","CCRB","IAB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","734","2000","4","OCD","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","735","2000","11","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn North","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","736","2000","7","OCD","Other NYPD unit","Phone","Manhattan","Manhattan South","Other violation of VTL"
+"2018-05-25T00:00:00.000","737","2000","13","CCRB","IAB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","738","2000","6","CCRB","IAB","On-line website","Manhattan","Manhattan North","Other violation of VTL"
+"2018-05-25T00:00:00.000","739","2000","4","OCD","Precinct","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","740","2000","1","OCD","CCRB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","741","2000","0","CCRB","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","742","2000","2","OCD","CCRB","Call Processing System","Bronx","Other",
+"2018-05-25T00:00:00.000","743","2000","0","OCD","Precinct","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","744","2000","4","OCD","Precinct","Phone","Queens","Queens South","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","745","2000","6","OCD","CCRB","Phone","Bronx","Other",
+"2018-05-25T00:00:00.000","746","2000","8","CCRB","IAB","Phone","Bronx","Bronx","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","747","2000","4","OCD","CCRB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","748","2000","4","OCD","CCRB","Phone","Queens","Queens South","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","749","2000","0","CCRB","CCRB","Phone","Queens","Queens South","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","750","2000","4","CCRB","Precinct","In-person","Staten Island","Staten Island","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","751","2000","7","CCRB","IAB","Phone","Queens","Queens North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","752","2000","7","CCRB","IAB","Mail","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","753","2000","9","CCRB","CCRB","Call Processing System","Manhattan","Manhattan South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","754","2000","29","OCD","IAB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","755","2000","6","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn South","Moving violation"
+"2018-05-25T00:00:00.000","756","2000","4","OCD","CCRB","Phone","Bronx","Bronx","Report of other crime"
+"2018-05-25T00:00:00.000","757","2000","1","CCRB","Precinct","Phone","Manhattan","Manhattan South","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","758","2000","2","OCD","CCRB","Phone","Bronx","Bronx","Moving violation"
+"2018-05-25T00:00:00.000","759","2000","2","CCRB","CCRB","Mail","Bronx","Bronx","C/V intervened on behalf of/observed encounter w/3rd party"
+"2018-05-25T00:00:00.000","760","2000","41","CCRB","CCRB","Mail","Brooklyn","Brooklyn North","Traffic accident"
+"2018-05-25T00:00:00.000","761","2000","0","OCD","Precinct","In-person","Queens","Queens North","Traffic accident"
+"2018-05-25T00:00:00.000","762","2000","0","OCD","Precinct","In-person","Manhattan","Manhattan South","Parking violation"
+"2018-05-25T00:00:00.000","763","2000","3","CCRB","IAB","Phone","Queens","Queens North","Report-dispute"
+"2018-05-25T00:00:00.000","764","2000","3","OCD","Precinct","In-person","Queens","Queens South","Moving violation"
+"2018-05-25T00:00:00.000","765","2000","11","OCD","IAB","Phone",,"Other","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","766","2000","5","OCD","CCRB","Call Processing System","Staten Island","Staten Island","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","767","2000","0","CCRB","Precinct","In-person","Bronx","Bronx","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","768","2000","20","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Report-domestic dispute"
+"2018-05-25T00:00:00.000","769","2000","3","OCD","CCRB","Phone","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","770","2000","7","CCRB","IAB","Phone","Queens","Queens South","PD suspected C/V of violation/crime - auto"
+"2018-05-25T00:00:00.000","771","2000","7","CCRB","IAB","Phone","Manhattan","Manhattan North","Execution of search warrant"
+"2018-05-25T00:00:00.000","772","2000","74","OCD","CCRB","Phone","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","773","2000","0","CCRB","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","774","2000","3","OCD","CCRB","Call Processing System","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","775","2000","2","CCRB","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","776","2000","4","OCD","CCRB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","777","2000","1","OCD","Other NYPD unit","Phone","Bronx","Bronx","Report-dispute"
+"2018-05-25T00:00:00.000","778","2000","1","OCD","Precinct","In-person","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","779","2000","1","CCRB","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","780","2000","0","REFERRAL","CCRB","Call Processing System","Queens","Other",
+"2018-05-25T00:00:00.000","781","2000","20","CCRB","IAB","Mail","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","782","2000","0","CCRB","Precinct","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","783","2000","240","IAB","CCRB","Mail","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","784","2000","44","OCD","CCRB","Phone","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","785","2000","1","CCRB","Precinct","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","786","2000","45","CCRB","Precinct","In-person","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","787","2000","13","CCRB","Other NYPD unit","In-person","Queens","Queens South","Execution of search warrant"
+"2018-05-25T00:00:00.000","788","2000","12","CCRB","IAB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","789","2000","0","CCRB","Precinct","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","790","2000","48","OCD","IAB","Mail","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","791","2000","11","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","792","2000","5","CCRB","IAB","Mail","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","793","2000","1","OCD","CCRB","Call Processing System","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","794","2000","6","CCRB","Precinct","In-person","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","795","2000","61","IAB","CCRB","In-person",,"Other",
+"2018-05-25T00:00:00.000","796","2000","2","OCD","CCRB","Phone","Manhattan","Manhattan North","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","797","2000","6","OCD","Precinct","In-person","Queens","Queens South",
+"2018-05-25T00:00:00.000","798","2000","1","CCRB","Precinct","In-person","Queens","Queens North","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","799","2000","13","OCD","IAB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","800","2000","2","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","801","2000","4","OCD","CCRB","Phone","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","802","2000","0","OCD","Precinct","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","803","2000","10","CCRB","IAB","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","804","2000","1","REFERRAL","Precinct","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","805","2000","2","OCD","CCRB","Phone","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","806","2000","7","OCD","Precinct","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","807","2000","0","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","808","2000","18","CCRB","IAB","Mail","Queens","Queens North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","809","2000","9","CCRB","CCRB","In-person","Queens","Queens North",
+"2018-05-25T00:00:00.000","810","2000","13","CCRB","IAB","Mail","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","811","2000","13","CCRB","IAB","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","812","2000","0","OCD","CCRB","Phone","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","813","2000","14","OCD","IAB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","814","2000","1","CCRB","CCRB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","815","2000","1","OCD","CCRB","Phone","Queens","Queens North","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","816","2000","3","OCD","CCRB","Phone","Queens","Queens North","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","817","2000","9","CCRB","IAB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","818","2000","12","CCRB","IAB","Phone","Brooklyn","Brooklyn South","C/V intervened on behalf of/observed encounter w/3rd party"
+"2018-05-25T00:00:00.000","819","2000","6","OCD","Precinct","Phone","Manhattan","Manhattan North","Parking violation"
+"2018-05-25T00:00:00.000","820","2000","5","OCD","Precinct","In-person","Bronx","Bronx","Moving violation"
+"2018-05-25T00:00:00.000","821","2000","16","CCRB","IAB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","822","2000","0","OCD","CCRB","Phone","Queens","Queens South","Report of other crime"
+"2018-05-25T00:00:00.000","823","2000","11","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Execution of search warrant"
+"2018-05-25T00:00:00.000","824","2000","0","OCD","CCRB","Phone","Queens","Queens South","C/V at PCT to file complaint of crime"
+"2018-05-25T00:00:00.000","825","2000","3","OCD","CCRB","Phone","Queens","Queens North","C/V at PCT to obtain information"
+"2018-05-25T00:00:00.000","826","2000","0","OCD","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","827","2000","0","CCRB","CCRB","Phone","Bronx","Bronx","Execution of arrest/bench warrant"
+"2018-05-25T00:00:00.000","828","2000","16","CCRB","IAB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","829","2000","10","OCD","IAB","Phone","Manhattan","Brooklyn South","Moving violation"
+"2018-05-25T00:00:00.000","830","2000","9","OCD","CCRB","In-person","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","831","2000","13","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Traffic accident"
+"2018-05-25T00:00:00.000","832","2000","4","CCRB","CCRB","Call Processing System","Bronx","Other","Report-dispute"
+"2018-05-25T00:00:00.000","833","2000","15","CCRB","IAB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","834","2000","0","CCRB","Precinct","In-person","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","835","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Parking violation"
+"2018-05-25T00:00:00.000","836","2000","13","CCRB","IAB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","837","2000","3","OCD","CCRB","Call Processing System","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","838","2000","0","CCRB","Other City agency","Phone","Queens","Queens South","C/V at PCT to obtain information"
+"2018-05-25T00:00:00.000","839","2000","4","OCD","IAB","Mail","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","840","2000","14","CCRB","IAB","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","841","2000","33","REFERRAL","CCRB","On-line website","Manhattan","Manhattan North","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","842","2000","11","CCRB","IAB","Phone","Manhattan","Manhattan North","Execution of arrest/bench warrant"
+"2018-05-25T00:00:00.000","843","2000","9","CCRB","IAB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","844","2000","12","CCRB","IAB","Phone","Staten Island","Staten Island","Report-domestic dispute"
+"2018-05-25T00:00:00.000","845","2000","12","OCD","IAB","Mail","Brooklyn","Brooklyn South","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","846","2000","19","OCD","Precinct","In-person","Bronx","Bronx",
+"2018-05-25T00:00:00.000","847","2000","12","OCD","IAB","Phone","Brooklyn","Queens North",
+"2018-05-25T00:00:00.000","848","2000","145","CCRB","IAB","Mail","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","849","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","Execution of arrest/bench warrant"
+"2018-05-25T00:00:00.000","850","2000","1","CCRB","CCRB","Phone","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","851","2000","1321","OCD","CCRB","Phone","Queens","Queens South","Report of other crime"
+"2018-05-25T00:00:00.000","852","2000","11","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","853","2000","32","CCRB","CCRB","In-person","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","854","2000","0","OCD","CCRB","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","855","2000","9","OCD","Precinct","Phone","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","856","2000","0","CCRB","Precinct","In-person","Queens","Queens South",
+"2018-05-25T00:00:00.000","857","2000","19","CCRB","IAB","Mail","Bronx","Bronx",
+"2018-05-25T00:00:00.000","858","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","859","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn North","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","860","2000","1","CCRB","CCRB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","861","2000","1","CCRB","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","862","2000","3","OCD","CCRB","Call Processing System","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","863","2000","1","OCD","CCRB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","864","2000","8","CCRB","IAB","Mail","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","865","2000","0","REFERRAL","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","866","2000","97","CCRB","Other NYPD unit","Mail","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","867","2000","0","OCD","Precinct","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","868","2000","4","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","869","2000","0","OCD","Police Commissioner's Office","In-person","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","870","2000","10","CCRB","Precinct","In-person","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","871","2000","1","CCRB","Precinct","In-person","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","872","2000","1","CCRB","IAB","Phone","Bronx","Bronx","EDP aided case"
+"2018-05-25T00:00:00.000","873","2000","0","OCD","CCRB","Phone","Bronx","Bronx","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","874","2000","4","OCD","CCRB","Call Processing System","Manhattan","Manhattan North","Report-dispute"
+"2018-05-25T00:00:00.000","875","2000","4","OCD","Precinct","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","876","2000","17","CCRB","CCRB","Mail","Queens","Queens South","Traffic accident"
+"2018-05-25T00:00:00.000","877","2000","5","CCRB","CCRB","Phone","Bronx","Bronx","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","878","2000","14","CCRB","IAB","Phone","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","879","2000","16","OCD","Precinct","In-person","Queens","Queens North",
+"2018-05-25T00:00:00.000","880","2000","2","CCRB","CCRB","Call Processing System","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","881","2000","1","CCRB","Precinct","Call Processing System","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","882","2000","0","CCRB","CCRB","Phone","Staten Island","Staten Island","Aided case"
+"2018-05-25T00:00:00.000","883","2000","11","OCD","IAB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","884","2000","1","OCD","Precinct","In-person","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","885","2000","0","CCRB","Precinct","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","886","2000","15","CCRB","CCRB","Phone","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","887","2000","1","CCRB","CCRB","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","888","2000","2","OCD","CCRB","Call Processing System","Brooklyn","Other","Other"
+"2018-05-25T00:00:00.000","889","2000","21","CCRB","CCRB","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","890","2000","5","CCRB","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","891","2000","101","OCD","CCRB","Phone","Queens","Queens North","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","892","2000","14","OCD","CCRB","In-person","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","893","2000","1","OCD","CCRB","Phone","Manhattan","Other","Report-dispute"
+"2018-05-25T00:00:00.000","894","2000","5","CCRB","IAB","Mail","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","895","2000","2","OCD","CCRB","In-person","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","896","2000","166","IAB","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","897","2000","0","CCRB","CCRB","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","898","2000","6","OCD","CCRB","Phone","Brooklyn","Other",
+"2018-05-25T00:00:00.000","899","2000","2","CCRB","Precinct","In-person","Staten Island","Staten Island",
+"2018-05-25T00:00:00.000","900","2000","1","OCD","CCRB","Phone","Manhattan","Other","Report-noise/disturbance"
+"2018-05-25T00:00:00.000","901","2000","2","OCD","Precinct","Call Processing System","Queens","Other",
+"2018-05-25T00:00:00.000","902","2000","194","CCRB","IAB","Mail","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","903","2000","19","OCD","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","904","2000","1","CCRB","Precinct","In-person","Bronx","Bronx","EDP aided case"
+"2018-05-25T00:00:00.000","905","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn North","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","906","2000","12","CCRB","CCRB","In-person","Manhattan","Manhattan South","Parking violation"
+"2018-05-25T00:00:00.000","907","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","Parking violation"
+"2018-05-25T00:00:00.000","908","2000","29","OCD","Precinct","Call Processing System","Queens","Queens South",
+"2018-05-25T00:00:00.000","909","2000","17","CCRB","IAB","Mail","Manhattan","Manhattan North",
+"2018-05-25T00:00:00.000","910","2000","17","CCRB","CCRB","Phone","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","911","2000","3","OCD","CCRB","Call Processing System","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","912","2000","35","OCD","CCRB","Phone","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","913","2000","78","OCD","CCRB","In-person","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","914","2000","1","OCD","Precinct","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","915","2000","29","CCRB","CCRB","Phone","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","916","2000","6","OCD","CCRB","Phone","Queens","Queens North","Traffic accident"
+"2018-05-25T00:00:00.000","917","2000","1","OCD","Precinct","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","918","2000","2","CCRB","CCRB","In-person","Staten Island","Staten Island","Other violation of VTL"
+"2018-05-25T00:00:00.000","919","2000","28","OCD","CCRB","Mail","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","920","2000","43","OCD","CCRB","Call Processing System","Queens","Queens South","C/V at PCT to obtain information"
+"2018-05-25T00:00:00.000","921","2000","3","CCRB","CCRB","Phone","Queens","Queens North","Other"
+"2018-05-25T00:00:00.000","922","2000","31","REFERRAL","Precinct","In-person","Brooklyn","Brooklyn North",
+"2018-05-25T00:00:00.000","923","2000","0","OCD","CCRB","Phone","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","924","2000","6","OCD","CCRB","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","925","2000","-12","CCRB","IAB","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","926","2000","0","CCRB","CCRB","Phone","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","927","2000","9","CCRB","IAB","Phone","Manhattan","Other","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","928","2000","2","CCRB","Other NYPD unit","Phone","Bronx","Bronx","C/V requested investigation of crime"
+"2018-05-25T00:00:00.000","929","2000","3","OCD","CCRB","On-line website","Brooklyn","Brooklyn North","C/V requested investigation of crime"
+"2018-05-25T00:00:00.000","930","2000","9","CCRB","IAB","Mail","Brooklyn","Brooklyn South","Other violation of VTL"
+"2018-05-25T00:00:00.000","931","2000","3","CCRB","CCRB","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","932","2000","10","CCRB","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","933","2000","2","CCRB","CCRB","In-person","Brooklyn","Brooklyn North","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","934","2000","1","CCRB","CCRB","In-person","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","935","2000","12","CCRB","IAB","Phone","Manhattan","Manhattan North","Report-dispute"
+"2018-05-25T00:00:00.000","936","2000","1","CCRB","CCRB","Phone","Queens","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","937","2000","7","CCRB","IAB","In-person","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","938","2000","2","CCRB","Precinct","Phone","Bronx","Bronx","Execution of search warrant"
+"2018-05-25T00:00:00.000","939","2000","0","OCD","Precinct","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","940","2000","43","OCD","CCRB","Phone","Manhattan","Manhattan North","Moving violation"
+"2018-05-25T00:00:00.000","941","2000","1","OCD","Other NYPD unit","Phone","Staten Island","Staten Island","Report-dispute"
+"2018-05-25T00:00:00.000","942","2000","114","IAB","IAB","Phone","Queens","Queens South",
+"2018-05-25T00:00:00.000","943","2000","88","IAB","CCRB","Phone","Staten Island","Staten Island","Report-dispute"
+"2018-05-25T00:00:00.000","944","2000","11","CCRB","IAB","Phone","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","945","2000","0","CCRB","CCRB","Phone",,"Other","Execution of arrest/bench warrant"
+"2018-05-25T00:00:00.000","946","2000","7","CCRB","IAB","Mail","Bronx","Bronx","Other"
+"2018-05-25T00:00:00.000","947","2000","1","OCD","Precinct","In-person","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","948","2000","13","CCRB","IAB","Mail","Staten Island","Staten Island","PD suspected C/V of violation/crime - bldg"
+"2018-05-25T00:00:00.000","949","2000","16","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","950","2000","178","OCD","CCRB","In-person","Staten Island","Staten Island","Report-dispute"
+"2018-05-25T00:00:00.000","951","2000","0","CCRB","IAB","Phone",,"Other",
+"2018-05-25T00:00:00.000","952","2000","649","IAB","IAB","Mail","Bronx","Bronx",
+"2018-05-25T00:00:00.000","953","2000","0","CCRB","Other NYPD unit","Phone","Manhattan","Other","Parking violation"
+"2018-05-25T00:00:00.000","954","2000","0","OCD","Precinct","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","955","2000","3","OCD","CCRB","Phone","Brooklyn","Brooklyn South","C/V at PCT to file complaint of crime"
+"2018-05-25T00:00:00.000","956","2000","18","CCRB","Precinct","Mail","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","957","2000","72","OCD","CCRB","Phone","Queens","Queens South","C/V requested info from officer"
+"2018-05-25T00:00:00.000","958","2000","410","CCRB","IAB","Phone","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","959","2000","14","CCRB","IAB","Phone","Queens","Queens South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","960","2000","0","OCD","Precinct","In-person","Manhattan","Manhattan South","Report of other crime"
+"2018-05-25T00:00:00.000","961","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Moving violation"
+"2018-05-25T00:00:00.000","962","2000","5","CCRB","Precinct","In-person","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","963","2000","0","CCRB","Other City agency","Phone","Queens","Queens South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","964","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn North","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","965","2000","0","OCD","Precinct","In-person","Queens","Queens South",
+"2018-05-25T00:00:00.000","966","2000","0","CCRB","Precinct","Phone","Brooklyn","Brooklyn North","Other"
+"2018-05-25T00:00:00.000","967","2000","0","OCD","CCRB","Phone","Brooklyn","Brooklyn South",
+"2018-05-25T00:00:00.000","968","2000","3","OCD","IAB","Phone","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","969","2000","2","CCRB","CCRB","Phone","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","970","2000","3","CCRB","CCRB","Phone","Queens","Other","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","971","2000","6","CCRB","CCRB","Phone","Staten Island","Staten Island","Other"
+"2018-05-25T00:00:00.000","972","2000","0","OCD","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","973","2000","0","CCRB","CCRB","Phone","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","974","2000","25","CCRB","IAB","Mail","Manhattan","Manhattan South","Other"
+"2018-05-25T00:00:00.000","975","2000","1","CCRB","Precinct","In-person","Bronx","Bronx","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","976","2000","30","OCD","CCRB","Phone","Bronx","Bronx","Traffic accident"
+"2018-05-25T00:00:00.000","977","2000","7","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","Other violation of VTL"
+"2018-05-25T00:00:00.000","978","2000","31","OCD","CCRB","Phone","Manhattan","Manhattan North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","979","2000","0","CCRB","CCRB","Phone","Queens","Queens North","C/V telephoned PCT"
+"2018-05-25T00:00:00.000","980","2000","7","OCD","CCRB","Phone","Queens","Queens North","Parking violation"
+"2018-05-25T00:00:00.000","981","2000","10","OCD","Precinct","In-person","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","982","2000","3","OCD","CCRB","Phone","Staten Island","Staten Island","Traffic accident"
+"2018-05-25T00:00:00.000","983","2000","1","OCD","CCRB","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","984","2000","0","CCRB","CCRB","Phone","Manhattan","Other","Other"
+"2018-05-25T00:00:00.000","985","2000","48","OCD","Precinct","In-person","Queens","Queens South","Other"
+"2018-05-25T00:00:00.000","986","2000","11","CCRB","IAB","Phone","Brooklyn","Brooklyn South","Other"
+"2018-05-25T00:00:00.000","987","2000","0","CCRB","Precinct","In-person","Brooklyn","Brooklyn North","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","988","2000","2","CCRB","CCRB","Phone","Manhattan","Manhattan North","PD suspected C/V of violation/crime - auto"
+"2018-05-25T00:00:00.000","989","2000","1","CCRB","Precinct","Phone","Bronx","Bronx",
+"2018-05-25T00:00:00.000","990","2000","33","CCRB","CCRB","Mail","Brooklyn","Brooklyn South","PD suspected C/V of violation/crime - street"
+"2018-05-25T00:00:00.000","991","2000","1","OCD","CCRB","Phone","Brooklyn","Brooklyn South","Parking violation"
+"2018-05-25T00:00:00.000","992","2000","30","OCD","Precinct","In-person","Brooklyn","Brooklyn North","Report-dispute"
+"2018-05-25T00:00:00.000","993","2000","7","OCD","Precinct","In-person","Bronx","Bronx","Parking violation"
+"2018-05-25T00:00:00.000","994","2000","9","CCRB","IAB","In-person","Queens","Queens South","Report-dispute"
+"2018-05-25T00:00:00.000","995","2000","12","OCD","Precinct","Mail","Manhattan","Manhattan South",
+"2018-05-25T00:00:00.000","996","2000","5","OCD","Precinct","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","997","2000","1","CCRB","Other NYPD unit","Phone","Manhattan","Manhattan North","Other"
+"2018-05-25T00:00:00.000","998","2000","6","CCRB","IAB","Phone","Manhattan","Manhattan South","Report-possession/sale of narcotics"
+"2018-05-25T00:00:00.000","999","2000","21","OCD","Precinct","Phone","Queens","Queens North",
+"2018-05-25T00:00:00.000","1000","2000","6","OCD","CCRB","Phone","Bronx","Bronx",

@@ -1,0 +1,1000 @@
+[{"provider_id":"438","provider_name":"JBI INTERNATIONAL INC"}
+,{"provider_id":"31","provider_name":"CAMBA INC","hq_address_1":"1720 Church Avenue","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11226"}
+,{"provider_id":"1","provider_name":"MAKE THE ROAD NEW YORK","hq_address_1":"301 Grove Street","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11237","latitude":"40.698448","longitude":"-73.915629","community_board":"304","council_district":"37","census_tract":"433","bin":"3075926","bbl":"3033170041","nta":"Bushwick North"}
+,{"provider_id":"2","provider_name":"NEW YORK URBAN LEAGUE INC"}
+,{"provider_id":"3","provider_name":"SCO FAMILY OF SERVICES"}
+,{"provider_id":"4","provider_name":"JEWISH HOME LIFECARE, MANHATTAN"}
+,{"provider_id":"5","provider_name":"HARTLEY HOUSE, INC."}
+,{"provider_id":"6","provider_name":"THE CHILD CENTER OF NY INC"}
+,{"provider_id":"7","provider_name":"ONE STOP RICHMOND HILL COMMUNITY CENTER, INC"}
+,{"provider_id":"8","provider_name":"HAMILTON MADISON HOUSE INC"}
+,{"provider_id":"9","provider_name":"CENTER FOR ALTERNATIVE SENTENCING AND EMPLOYMENT SERVICES IN","hq_address_1":"151 Lawrence Street","hq_address_2":"3rd Floor","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11201","provider_ein":"132668080","provider_website":"www.cases.org","latitude":"40.691506","longitude":"-73.986297","community_board":"302","council_district":"33","census_tract":"11","bin":"3000404","bbl":"3001520006","nta":"DUMBO-Vinegar Hill-Downtown Brooklyn-Boerum Hill"}
+,{"provider_id":"10","provider_name":"SANCTUARY FOR FAMILIES INC","hq_address_1":"PO Box 1406, Wall Street Station","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10268","provider_ein":"13-3193119"}
+,{"provider_id":"11","provider_name":"PROJECT RENEWAL INC"}
+,{"provider_id":"12","provider_name":"DORCHESTER SENIOR CITIZEN CENTER INC"}
+,{"provider_id":"13","provider_name":"ASTOR SERVICES FOR CHILDREN & FAMILIES"}
+,{"provider_id":"14","provider_name":"SOUTH BRONX OVERALL ECONOMIC DEVELOPMENT CORPORATION"}
+,{"provider_id":"15","provider_name":"THE BRIDGE INC"}
+,{"provider_id":"16","provider_name":"YMCA OF GREATER NEW YORK"}
+,{"provider_id":"17","provider_name":"NEW YORK ASIAN WOMENS CENTER INC","hq_address_1":"32 BROADWAY","hq_address_2":"10th Floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10004","provider_ein":"13-3286250","provider_website":"https://www.iamwomankind.org/","latitude":"40.706045","longitude":"-74.013096","community_board":"101","council_district":"1","census_tract":"9","bin":"1078979","bbl":"1000220017","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"18","provider_name":"EDITH & CARL MARKS JEWISH COMMUNITY HOUSE OF BENSONHURST INC"}
+,{"provider_id":"19","provider_name":"CYPRESS HILLS FULTON ST SENIOR CITIZENS CTR INC"}
+,{"provider_id":"20","provider_name":"BEREAN COMMUNITY & FAMILY LIFE CENTER INC"}
+,{"provider_id":"21","provider_name":"NEW YORK LEGAL ASSISTANCE GROUP  INC","hq_address_1":"7 Hanover Square","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10004","latitude":"40.70447","longitude":"-74.009406","community_board":"101","council_district":"1","census_tract":"9","bin":"1000855","bbl":"1000300019","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"22","provider_name":"THE 84TH PRECINCT COMMUNITY COUNCIL CORP"}
+,{"provider_id":"23","provider_name":"Health Essential Association"}
+,{"provider_id":"24","provider_name":"USA MALI CHARITABLE ASSOCIATION OF NEW YORK"}
+,{"provider_id":"25","provider_name":"BELLA ABZUG LEADERSHIP INSTITUTE INC"}
+,{"provider_id":"26","provider_name":"ASIAN AMERICAN COALITION FOR CHILDREN AND FAMILIES INC"}
+,{"provider_id":"27","provider_name":"RIDGEWOOD PROPERTY OWNERS AND CIVIC ASSOCIATION INC"}
+,{"provider_id":"28","provider_name":"SELFHELP COMMUNITY SERVICES, INC.","hq_address_1":"520 8th Avenue","hq_address_2":"5th Fl","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10018","provider_ein":"13-1624178","provider_website":"www.selfhelp.net","latitude":"40.753612","longitude":"-73.992417","community_board":"105","council_district":"3","census_tract":"109","bin":"1083624","bbl":"1007860001","nta":"Midtown-Midtown South"}
+,{"provider_id":"29","provider_name":"WILDCAT SERVICE CORPORATION","hq_address_1":"633 3RD AVENUE","hq_address_2":"6th Floor","hq_city":"New York","hq_state":"NY","hq_zip":"10017","provider_ein":"132725423"}
+,{"provider_id":"30","provider_name":"THE LEGAL AID SOCIETY","hq_address_1":"199 Water Street","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10038","provider_ein":"13-5562265","provider_website":"n/a","latitude":"40.70727","longitude":"-74.004314","community_board":"101","council_district":"1","census_tract":"1502","bin":"1001162","bbl":"1000747501","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"158","provider_name":"ILLUMINA, INC"}
+,{"provider_id":"32","provider_name":"FEDERATION OF PROTESTANT WELFARE AGENCIES INC"}
+,{"provider_id":"33","provider_name":"Chinese American Social Services Center Inc"}
+,{"provider_id":"34","provider_name":"WEST SIDE CENTER FOR COMMUNITY LIFE INC"}
+,{"provider_id":"35","provider_name":"HARLEM DOWLING-WEST SIDE CTR FOR CHILDREN & FAMILY SERVICES"}
+,{"provider_id":"36","provider_name":"TEACHERS COLLEGE"}
+,{"provider_id":"37","provider_name":"SAMUEL FIELD YM & YWHA INC"}
+,{"provider_id":"38","provider_name":"HENRY STREET SETTLEMENT"}
+,{"provider_id":"39","provider_name":"AGAPE COMMUNITY SERVICES CORPO RATION"}
+,{"provider_id":"40","provider_name":"BRONXWORKS INC","hq_address_1":"60 East Tremont Avenue","hq_borough":"Bronx","hq_city":"Bronx","hq_state":"NY","hq_zip":"10453","latitude":"40.851063","longitude":"-73.908004","community_board":"205","council_district":"14","census_tract":"23301","bin":"2007915","bbl":"2028280020","nta":"Mount Hope"}
+,{"provider_id":"41","provider_name":"THE INSTITUTE FOR FAMILY HEALTH INC"}
+,{"provider_id":"42","provider_name":"NON TRADITIONAL EMPLOYMENT FOR WOMEN"}
+,{"provider_id":"43","provider_name":"ASTORIA QUEENS SHAREING & CAREING INC"}
+,{"provider_id":"44","provider_name":"FOOD BANK FOR NEW YORK CITY","hq_address_1":"39 Broadway","hq_address_2":"10th Floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10006","provider_ein":"13-3179546","provider_website":"www.foodbanknyc.org","latitude":"40.706251","longitude":"-74.012952","community_board":"101","council_district":"1","census_tract":"13","bin":"1000803","bbl":"1000200004","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"45","provider_name":"RIVERDALE SENIOR SERVICES INC"}
+,{"provider_id":"46","provider_name":"SEPHARDIC COMMUNITY  YOUTH CENTER INC"}
+,{"provider_id":"47","provider_name":"FRIENDS OF THE HIGH LINE INC"}
+,{"provider_id":"48","provider_name":"GIVING ALTERNATIVE LEARNERS UPLIFTING OPPORTUNITIES INC"}
+,{"provider_id":"49","provider_name":"LOWER EASTSIDE GIRLS CLUB OF NY"}
+,{"provider_id":"50","provider_name":"SEEDS IN THE MIDDLE INC"}
+,{"provider_id":"51","provider_name":"HARLEM JUNIOR TENNIS AND EDUCATION PROGRAM INC"}
+,{"provider_id":"52","provider_name":"A BETTER JAMAICA INC"}
+,{"provider_id":"53","provider_name":"GIRLS WHO CODE INC"}
+,{"provider_id":"54","provider_name":"RIVERSTONE SENIOR LIFE SERVICES INC"}
+,{"provider_id":"55","provider_name":"PROJECT LEAD, INC."}
+,{"provider_id":"56","provider_name":"Queens Jewish Community Council inc"}
+,{"provider_id":"57","provider_name":"BETANCES HEALTH CENTER"}
+,{"provider_id":"58","provider_name":"THE HORTICULTURAL SOCIETY OF NEW YORK"}
+,{"provider_id":"59","provider_name":"JUNIOR ACHIEVEMENT OF NEW YORK INC"}
+,{"provider_id":"60","provider_name":"THE CENTER FOR ANTI-VIOLENCE EDUCATION INC"}
+,{"provider_id":"61","provider_name":"CARMEL RICHMOND NURSING HOME, INC."}
+,{"provider_id":"62","provider_name":"BERGEN BASIN COMMUNITY DEVELOPMENT CORPORATION"}
+,{"provider_id":"63","provider_name":"ON YOUR MARK, INC"}
+,{"provider_id":"64","provider_name":"NEW YORK CITY GAY AND LESBIAN ANTI-VIOLENCE PROJECT INC","hq_address_1":"116 Nassau Street","hq_address_2":"3rd Floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10038","provider_ein":"13-3149200","provider_website":"www.avp.org","latitude":"40.710844","longitude":"-74.006998","community_board":"101","council_district":"1","census_tract":"1501","bin":"1079094","bbl":"1000920024","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"65","provider_name":"HANAC INC"}
+,{"provider_id":"66","provider_name":"FIRST FAITH BAPTIST CHURCH"}
+,{"provider_id":"67","provider_name":"KOREAN COMMUNITY SERVICES OF METROPOLITAN NEW YORK INC"}
+,{"provider_id":"68","provider_name":"COALITION FOR HISPANIC FAMILY SERVICES"}
+,{"provider_id":"69","provider_name":"JAPANESE AMERICAN SOCIAL SERVICES"}
+,{"provider_id":"70","provider_name":"BROOKLYN COMMUNITY PRIDE CENTER INC"}
+,{"provider_id":"71","provider_name":"CHARLES B. WANG COMMUNITY HEALTH CENTER, INC"}
+,{"provider_id":"72","provider_name":"Brooklyn Legal Services Corporation A","hq_address_1":"260 Broadway","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11211","latitude":"40.708935","longitude":"-73.959386","community_board":"301","council_district":"33","census_tract":"525","bin":"3059650","bbl":"3021400021","nta":"North Side-South Side"}
+,{"provider_id":"73","provider_name":"COMMUNITY CENTER OF THE ROCKAWAY PENINSULA  INC"}
+,{"provider_id":"74","provider_name":"SADIE NASH LEADERSHIP PROJECT INC"}
+,{"provider_id":"75","provider_name":"TRANSITIONAL SERVICES FOR NEW YORK, INC","hq_address_1":"10-16 162 Street","hq_borough":"Queens","hq_city":"Whitestone","hq_state":"NY","hq_zip":"11357","provider_ein":"23-7376074","provider_website":"www.tsi.org","latitude":"40.792241","longitude":"-73.799889","community_board":"407","council_district":"19","census_tract":"991","bin":"4104035","bbl":"4045790001","nta":"Whitestone"}
+,{"provider_id":"76","provider_name":"THE FORTUNE SOCIETY INC","hq_address_1":"29-76 Northern Blvd","hq_borough":"Queens","hq_city":"Long Island City","hq_state":"NY","hq_zip":"11101","provider_ein":"132645436","provider_website":"fortunesociety.org","latitude":"40.750433","longitude":"-73.935323","community_board":"401","council_district":"26","census_tract":"171","bin":"4003410","bbl":"4002390049","nta":"Hunters Point-Sunnyside-West Maspeth"}
+,{"provider_id":"77","provider_name":"BE PROUD INC"}
+,{"provider_id":"78","provider_name":"CITY GROWERS INC"}
+,{"provider_id":"79","provider_name":"CENTER FOR COMPREHENSIVE HEALTH PRACTICE INC"}
+,{"provider_id":"80","provider_name":"CHINESE AMERICAN PLANNING COUNCIL INC"}
+,{"provider_id":"81","provider_name":"ARAB AMERICAN ASSOCIATION OF NY INC"}
+,{"provider_id":"82","provider_name":"THE JEWISH ASSOCIATION FOR SERVICES FOR THE AGED","hq_address_1":"247 W 37 Street","hq_address_2":"9th Floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10018","provider_ein":"13-1624178","provider_website":"www.jasa.org","latitude":"40.753475","longitude":"-73.990594","community_board":"105","council_district":"3","census_tract":"109","bin":"1014454","bbl":"1007870011","nta":"Midtown-Midtown South"}
+,{"provider_id":"83","provider_name":"New York United Jewish Association,Inc."}
+,{"provider_id":"84","provider_name":"JEWISH COMMUNITY COUNCIL OF PELHAM PARKWAY INC"}
+,{"provider_id":"85","provider_name":"NEW YORK CITY PARENTS OF LESBIANS AND GAY MEN INC"}
+,{"provider_id":"86","provider_name":"THE POINT COMMUNITY DEVELOP- MENT CORP"}
+,{"provider_id":"87","provider_name":"Lenny's Lighthouse, Inc."}
+,{"provider_id":"88","provider_name":"MT. MORIAH A.M.E. CHURCH"}
+,{"provider_id":"89","provider_name":"NATIONAL COMMITTEE FOR FURTHERANCE OF JEWISH ED"}
+,{"provider_id":"90","provider_name":"The Rhapsody Players INC"}
+,{"provider_id":"91","provider_name":"LENOX HILL NEIGHBORHOOD HOUSE INC."}
+,{"provider_id":"92","provider_name":"NEIGHBORHOOD COALITION FOR SHELTER INC"}
+,{"provider_id":"93","provider_name":"GETTING OUT AND STAYING OUT INC","hq_address_1":"75 E 116th St","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10029","provider_ein":"061711370","latitude":"40.799656","longitude":"-73.944034","community_board":"111","council_district":"8","census_tract":"184","bin":"1074189","bbl":"1016220020","nta":"East Harlem North"}
+,{"provider_id":"94","provider_name":"BORO PARK JEWISH COMMUNITY COUNCIL INC"}
+,{"provider_id":"95","provider_name":"SERVICES NOW FOR ADULT PERSONS INC"}
+,{"provider_id":"96","provider_name":"LEGAL INFORMATION FOR FAMILIES TODAY","hq_address_1":"32 Court Street","hq_borough":"Brooklyn","hq_state":"NY","hq_zip":"11201","latitude":"40.693014","longitude":"-73.990758","community_board":"302","council_district":"33","census_tract":"9","bin":"3002248","bbl":"3002550044","nta":"Brooklyn Heights-Cobble Hill"}
+,{"provider_id":"98","provider_name":"METROPOLITAN NEW YORK COORDINATING COUNCIL ON JEWISH POVERTY","hq_address_1":"77 Water Street 7th Floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10005","provider_ein":"13-2738818","latitude":"40.704275","longitude":"-74.008681","community_board":"101","council_district":"1","census_tract":"7","bin":"1000863","bbl":"1000330001","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"99","provider_name":"GOOD SHEPHERD SERVICES","hq_address_1":"305 SEVENTH AVE 9TH FL","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10001","provider_ein":"135598710","provider_website":"goodshepherds.org","latitude":"40.746817","longitude":"-73.993655","community_board":"105","council_district":"3","census_tract":"95","bin":"1015060","bbl":"1008037502","nta":"Midtown-Midtown South"}
+,{"provider_id":"100","provider_name":"HUDSON RIVER PARK TRUST"}
+,{"provider_id":"101","provider_name":"THE YWCA OF BROOKLYN INC"}
+,{"provider_id":"102","provider_name":"THE INTERFAITH CENTER OF NEW YORK, INC."}
+,{"provider_id":"103","provider_name":"WORKFORCE PROFESSIONALS TRAINING INSTITUTE"}
+,{"provider_id":"104","provider_name":"STRYCKER'S BAY NEIGHBORHOOD COUNCIL INC"}
+,{"provider_id":"105","provider_name":"NEW ALTERNATIVES FOR CHILDREN INC"}
+,{"provider_id":"106","provider_name":"SUNSET PARK HEALTH COUNCIL INC"}
+,{"provider_id":"107","provider_name":"THE OSBORNE ASSOCIATION, INC","hq_address_1":"809 Westchester Ave","hq_borough":"Bronx","hq_city":"Bronx","hq_state":"NY","hq_zip":"10455","provider_ein":"135563028","latitude":"40.819143","longitude":"-73.902661","community_board":"201","council_district":"17","census_tract":"77","bin":"2004795","bbl":"2026660041","nta":"Melrose South-Mott Haven North"}
+,{"provider_id":"108","provider_name":"CHRISTOPHER ROSE COMMUNITY EMPOWERMENT CAMPAIGN CRCEC"}
+,{"provider_id":"109","provider_name":"THE LESLIE-LOHMAN MUSEUM OF GAY AND LESBIAN ART"}
+,{"provider_id":"110","provider_name":"ST VINCENT'S SERVICES INC"}
+,{"provider_id":"111","provider_name":"VIETNAM VETERANS OF AMERICA CHAPTER 32 QUEENS NEW YORK INC"}
+,{"provider_id":"112","provider_name":"GENERATION CITIZEN INC"}
+,{"provider_id":"113","provider_name":"FOREST HILLS CHAMBER OF COMMERCE OF QUEENS INC"}
+,{"provider_id":"114","provider_name":"BLOOMINGDALE SCHOOL OF MUSIC"}
+,{"provider_id":"115","provider_name":"SESAME FLYERS INTERNATIONAL INC"}
+,{"provider_id":"116","provider_name":"CONTINENTAL CASUALTY COMPANY"}
+,{"provider_id":"117","provider_name":"Kings County Tennis League"}
+,{"provider_id":"118","provider_name":"GREATER NEW YORK COUNCILS BOY SCOUTS OF AMERICA"}
+,{"provider_id":"119","provider_name":"GRANDMAS LOVE INC"}
+,{"provider_id":"120","provider_name":"DOCTOR THEODORE A ATLAS FOUNDATION"}
+,{"provider_id":"121","provider_name":"NEWTOWN HISTORICAL SOCIETY"}
+,{"provider_id":"122","provider_name":"FLUSHING JEWISH COMMUNITY COUNCIL INC"}
+,{"provider_id":"123","provider_name":"THE ROMAN CATHOLIC CHURCH OF ST. MEL"}
+,{"provider_id":"124","provider_name":"INWOOD COMMUNITY SERVICES INC."}
+,{"provider_id":"125","provider_name":"INSTITUTE FOR COMMUNITY LIVING, INC."}
+,{"provider_id":"126","provider_name":"ROOSEVELT ISLAND DISABLED ASSO CIATION"}
+,{"provider_id":"127","provider_name":"HIGHLAND PARK COMMUNITY DEVELOPMENT CORP."}
+,{"provider_id":"128","provider_name":"GILDA'S CLUB OF NYC, INC.,"}
+,{"provider_id":"129","provider_name":"EAC INC EDUCATION AND ASSISTANCE CORP"}
+,{"provider_id":"130","provider_name":"URBAN HEALTH PLAN INC"}
+,{"provider_id":"131","provider_name":"BIOBUS INC"}
+,{"provider_id":"132","provider_name":"LATINAS ON THE VERGE OF EXCELLENCE LOVE INC"}
+,{"provider_id":"133","provider_name":"BOYS & GIRLS CLUB OF METRO QUEENS, INC","hq_address_1":"110-04 Atlantic Avenue","hq_borough":"Queens","hq_city":"Richmond Hill","hq_state":"NY","hq_zip":"11419","latitude":"40.691903","longitude":"-73.835613","community_board":"409","council_district":"28","census_tract":"118","bin":"4197430","bbl":"4093960001","nta":"Richmond Hill"}
+,{"provider_id":"134","provider_name":"CHILDREN'S ARTS & SCIENCE WORKSHOPS INC"}
+,{"provider_id":"135","provider_name":"UNITED TASK FORCE INC"}
+,{"provider_id":"136","provider_name":"RECREATIONAL INNERCITY SPORTS & EDUCATION INC."}
+,{"provider_id":"137","provider_name":"109th Precinct Community Council"}
+,{"provider_id":"138","provider_name":"KIDS CREATIVE 404 INC"}
+,{"provider_id":"139","provider_name":"AMUDIM COMMUNITY RESOURCES INC"}
+,{"provider_id":"140","provider_name":"SOUTH ASIAN COUNCIL FOR SOCIAL SERVICES"}
+,{"provider_id":"141","provider_name":"BENSONHURST COUNCIL OF JEW- ISH ORGANIZATION INC"}
+,{"provider_id":"142","provider_name":"FIRST CHINESE PRESBYTERIAN COMM. AFFAIRS HOME ATTENDANT CORP","hq_address_1":"30 Broad St","hq_address_2":"6 Floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10004","provider_ein":"133011752","latitude":"40.70618","longitude":"-74.01125","community_board":"101","council_district":"1","census_tract":"9","bin":"1000819","bbl":"1000240029","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"143","provider_name":"BINA STROKE & BRAIN INJURY ASSISTANCE INC"}
+,{"provider_id":"144","provider_name":"Wesley Parrott Youth Programs Inc"}
+,{"provider_id":"145","provider_name":"SUNNYSIDE COMMUNITY SERVICES INC"}
+,{"provider_id":"146","provider_name":"NEW YORK CARES, INC."}
+,{"provider_id":"147","provider_name":"NYC VERRAZANO 10-13 ASSOCIATION INC"}
+,{"provider_id":"148","provider_name":"HOME HEALTH MANAGEMENT SERVICES INC","hq_address_1":"424 East 147 Street","hq_address_2":"4 Floor","hq_borough":"Bronx","hq_city":"Bronx","hq_state":"NY","hq_zip":"10455","provider_ein":"133020559","latitude":"40.814344","longitude":"-73.917762","community_board":"201","council_district":"8","census_tract":"43","bin":"2000506","bbl":"2022910012","nta":"Mott Haven-Port Morris"}
+,{"provider_id":"149","provider_name":"LESBIAN AND GAY COMMUNITY SERVICE CENTER INC"}
+,{"provider_id":"150","provider_name":"AFRICAN SERVICES COMMITTEE, INC"}
+,{"provider_id":"151","provider_name":"Brooklyn Center for Quality Life"}
+,{"provider_id":"152","provider_name":"FUND FOR THE CITY OF NEW YORK, INC.","hq_address_1":"121 Avenue of the Americas, 6th Floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10013","provider_ein":"132612524","provider_website":"www.fcny.org","latitude":"40.723903","longitude":"-74.00469","community_board":"102","council_district":"3","census_tract":"37","bin":"1083493","bbl":"1004777501","nta":"SoHo-TriBeCa-Civic Center-Little Italy"}
+,{"provider_id":"153","provider_name":"Summer on the Hill"}
+,{"provider_id":"154","provider_name":"FEDERATION OF ORGANIZATIONS FOR THE NEW YORK STATE MENTALLY"}
+,{"provider_id":"155","provider_name":"ASSOCIATION OF COMMUNITY EMPLOYMENT PROGRAMS FOR THEHOMELESS"}
+,{"provider_id":"156","provider_name":"THE YOUNG AIRMANS ASSOCIATION"}
+,{"provider_id":"157","provider_name":"SAFE HORIZON INC","hq_address_1":"2 Lafayette Street","hq_city":"New York","hq_state":"NY","hq_zip":"10007"}
+,{"provider_id":"159","provider_name":"ASSOCIATION TO BENEFIT CHILDREN"}
+,{"provider_id":"160","provider_name":"ADAPTIVE DESIGN ASSOCIATION INC"}
+,{"provider_id":"161","provider_name":"NYC AUTISM CHARTER SCHOOLS"}
+,{"provider_id":"162","provider_name":"MONTEFIORE MEDICAL CENTER"}
+,{"provider_id":"163","provider_name":"RIVERDALE NEIGHBORHOOD HOUSE INC"}
+,{"provider_id":"164","provider_name":"Harlem Needle Arts, Inc."}
+,{"provider_id":"165","provider_name":"UNITED JEWISH ORGANIZATIONS OF WILLIAMSBURG, INC"}
+,{"provider_id":"166","provider_name":"PESACH TIKVAH HOPE DEVELOPMENT INC"}
+,{"provider_id":"167","provider_name":"SERVICE PROGRAM FOR OLDER PEOPLE INC"}
+,{"provider_id":"168","provider_name":"AND-HOF ANIMALS SANCTUARY FOR FARM ANIMALS INC"}
+,{"provider_id":"169","provider_name":"LOWER EAST SIDE CONSERVANCY"}
+,{"provider_id":"170","provider_name":"WHERE TO TURN INC"}
+,{"provider_id":"171","provider_name":"COMUNILIFE INC"}
+,{"provider_id":"172","provider_name":"NOTRE DAME SCHOOL OF MANHATTAN"}
+,{"provider_id":"173","provider_name":"CENTER FOR THE INTEGRATION AND ADVANCEMENT OF NEW AMERICANS"}
+,{"provider_id":"174","provider_name":"OPPORTUNITIES FOR A BETTER TOMORROW INC"}
+,{"provider_id":"175","provider_name":"NEW YORK COMMITTEE FOR OCCUPATIONAL SAFETY AND HEALTH INC"}
+,{"provider_id":"176","provider_name":"Van Cortlandt Titans Youth Football Program Inc"}
+,{"provider_id":"177","provider_name":"ZIMMER CLUB YOUTH CONSERVATION PROGRAM OF STATEN ISLAND INC"}
+,{"provider_id":"178","provider_name":"CARE FOR SPECIAL NEEDS CHILDREN FOUNDATION INC"}
+,{"provider_id":"179","provider_name":"COUNCIL OF JEWISH ORGANIZATIONS OF FLATBUSH INC"}
+,{"provider_id":"180","provider_name":"HETRICK-MARTIN INSTITUTE INC"}
+,{"provider_id":"181","provider_name":"ALLEY POND ENVIRONMENTAL CENTER INC"}
+,{"provider_id":"182","provider_name":"DAVIDSON COMMUNITY CENTER INC."}
+,{"provider_id":"183","provider_name":"ACE AMERICAN INSURANCE CO."}
+,{"provider_id":"184","provider_name":"KINGSBRIDGE HEIGHTS COMMUNITY CENTER INC"}
+,{"provider_id":"185","provider_name":"AMERICAN-ITALIAN CANCER FOUNDATION"}
+,{"provider_id":"186","provider_name":"ST JOHNS BREAD & LIFE PROGRAM INC"}
+,{"provider_id":"187","provider_name":"CONCOURSE VILLAGE INC SPECIAL ADULTS"}
+,{"provider_id":"188","provider_name":"POWERMYLEARNING INC"}
+,{"provider_id":"189","provider_name":"CONNECT, INC."}
+,{"provider_id":"190","provider_name":"GODDARD RIVERSIDE COMMUNITY CENTER","hq_address_1":"593 Columbus Avenue","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10024","latitude":"40.788212","longitude":"-73.970904","community_board":"107","council_district":"6","census_tract":"173","bin":"1079511","bbl":"1012020001","nta":"Upper West Side"}
+,{"provider_id":"191","provider_name":"WORKING IN SUPPORT OF EDUCATION"}
+,{"provider_id":"192","provider_name":"NYSARC INC NEW YORK CITY CHAPTER"}
+,{"provider_id":"193","provider_name":"CHHAYA COMMUNITY DEVELOPMENT CORP"}
+,{"provider_id":"194","provider_name":"BONNIE BOYS CLUB INC."}
+,{"provider_id":"195","provider_name":"EAST FLATBUSH VILLAGE INC"}
+,{"provider_id":"196","provider_name":"STATEN ISLAND YOUTH SOCCER LEAGUE INC"}
+,{"provider_id":"197","provider_name":"RISEBORO COMMUNITY PARTNERSHIP INC","hq_address_1":"565 Bushwick Avenue","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11206","provider_ein":"112453853","provider_website":"www.riseboro.org","latitude":"40.699023","longitude":"-73.935359","community_board":"304","council_district":"34","census_tract":"391","bin":"3071908","bbl":"3031510012","nta":"Bushwick South"}
+,{"provider_id":"198","provider_name":"MANHATTAN LEGAL SERVICES"}
+,{"provider_id":"199","provider_name":"IlluminArt Productions"}
+,{"provider_id":"200","provider_name":"WOMEN FOR AFGHAN WOMEN INC"}
+,{"provider_id":"201","provider_name":"THE CHILDREN'S VILLAGE","hq_address_1":"One Echo Hills","hq_city":"Dobbs Ferry","hq_state":"NY","hq_zip":"10522","provider_ein":"131739945"}
+,{"provider_id":"202","provider_name":"RIVERDALE COMMUNITY CENTER, INC."}
+,{"provider_id":"203","provider_name":"HEARTSHARE HUMAN SERVICES OF NEW YORK"}
+,{"provider_id":"204","provider_name":"THE YALDEINU SCHOOL"}
+,{"provider_id":"205","provider_name":"JEWISH INSTITUTE OF QUEENS"}
+,{"provider_id":"206","provider_name":"ROCKAWAY HOME ATTENDANT SERVICES INC"}
+,{"provider_id":"207","provider_name":"URBAN JUSTICE CENTER","hq_address_1":"40 Rector Street","hq_address_2":"9th floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10006","provider_ein":"13-3442022","provider_website":"www.urbanjustice.org","latitude":"40.708356","longitude":"-74.014814","community_board":"101","council_district":"1","census_tract":"13","bin":"1088750","bbl":"1000557501","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"208","provider_name":"CARIBBEAN WOMENS HEALTH ASSOCIATION INC"}
+,{"provider_id":"209","provider_name":"COMMUNITY HEALTH ACTION OF STATEN ISLAND, INC."}
+,{"provider_id":"210","provider_name":"WENDY HILLIARD FOUNDATION"}
+,{"provider_id":"211","provider_name":"MID- BRONX SENIOR CITIZENS COUNCIL INC"}
+,{"provider_id":"212","provider_name":"RABBI ISRAEL MEYER HACOHEN RABBINICAL SEMINARY OF AMERICA"}
+,{"provider_id":"213","provider_name":"HOMECREST COMMUNITY SERVICES INC"}
+,{"provider_id":"214","provider_name":"HARTFORD INSURANCE"}
+,{"provider_id":"215","provider_name":"Dancing Dreams"}
+,{"provider_id":"216","provider_name":"NEW YORK SCORES"}
+,{"provider_id":"217","provider_name":"CHURCH OF THE HOLY APOSTLES"}
+,{"provider_id":"218","provider_name":"CATHOLIC CHARITIES NEIGHBORHOOD SERVICES INC"}
+,{"provider_id":"219","provider_name":"Two Bridges Neighborhood Council, Inc."}
+,{"provider_id":"220","provider_name":"THE NEIGHBORHOOD SELF-HELP BY OLDER PERSONS PROJECT INC"}
+,{"provider_id":"221","provider_name":"URBAN RESOURCE INSTITUTE","hq_address_1":"75 Broad Street","hq_address_2":"Suite 505","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10004","provider_ein":"11-2561648","provider_website":"www.urinyc.org","latitude":"40.704541","longitude":"-74.011552","community_board":"101","council_district":"1","census_tract":"9","bin":"1000849","bbl":"1000290070","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"222","provider_name":"SBH COMMUNITY SERVICE NETWORK INC"}
+,{"provider_id":"223","provider_name":"BEDFORD STUYVESANT NEW BEGINNINGS CHARTER SCHOOL"}
+,{"provider_id":"224","provider_name":"CORO NEW YORK LEADERSHIP CEN- TER"}
+,{"provider_id":"225","provider_name":"NAZARETH HOUSING, INC"}
+,{"provider_id":"226","provider_name":"THE CRENULATED COMPANY LTD"}
+,{"provider_id":"227","provider_name":"SHOREFRONT YM-YWHA OF BRIGHTON MANHATTAN BEACH INC"}
+,{"provider_id":"228","provider_name":"OHEL CHILDREN'S HOME AND FAMILY SERVICES INC."}
+,{"provider_id":"229","provider_name":"ATLANTIC THEATER CO"}
+,{"provider_id":"230","provider_name":"East New York Restoration Local Development Corp"}
+,{"provider_id":"231","provider_name":"ESIS INC"}
+,{"provider_id":"232","provider_name":"GRAHAM-WINDHAM"}
+,{"provider_id":"233","provider_name":"THE COALITION FOR BEHAVIORAL HEALTH INC"}
+,{"provider_id":"234","provider_name":"FRESH YOUTH INITIATIVES INC"}
+,{"provider_id":"235","provider_name":"SOUTHSIDE UNITED HOUSING DEVELOPMENT FUND CORPORATION"}
+,{"provider_id":"236","provider_name":"CROWN HEIGHTS YOUTH COLLECTIVE, INC."}
+,{"provider_id":"237","provider_name":"TURNING POINT BROOKLYN INC"}
+,{"provider_id":"239","provider_name":"THE GREATER RIDGEWOOD RESTORATION CORPORATION"}
+,{"provider_id":"240","provider_name":"CAMELOT OF STATEN ISLAND, INC"}
+,{"provider_id":"241","provider_name":"EMERALD ISLE IMMIGRATION CENTER INC","hq_address_1":"59-26 Woodside Avenue","hq_borough":"Queens","hq_city":"Woodside","hq_state":"NY","hq_zip":"11377","latitude":"40.745293","longitude":"-73.905216","community_board":"402","council_district":"26","census_tract":"249","bin":"4031221","bbl":"4013310054","nta":"Woodside"}
+,{"provider_id":"242","provider_name":"BIG BROTHERS BIG SISTERS OF NEW YORK CITY INC"}
+,{"provider_id":"243","provider_name":"LITTLE SISTERS OF THE ASSUMPTION FAM HEALTH SER"}
+,{"provider_id":"244","provider_name":"NEW YORK CITY ALLIANCE AGAINST SEXUAL ASSAULT"}
+,{"provider_id":"245","provider_name":"SERVICES AND ADVOCACY FOR GAY LESBIAN BISEXUAL AND TRANSGEND"}
+,{"provider_id":"246","provider_name":"TURNING POINT FOR WOMEN AND FAMILIES"}
+,{"provider_id":"247","provider_name":"MASA-MEXED INC"}
+,{"provider_id":"248","provider_name":"RAMAPO FOR CHILDREN INC"}
+,{"provider_id":"249","provider_name":"VERA INSTITUTE OF JUSTICE, INC"}
+,{"provider_id":"250","provider_name":"RESOURCES FOR CHILDREN SPECIAL NEEDS INC"}
+,{"provider_id":"251","provider_name":"HEALTHCARE INDUSTRY GRANT CORP"}
+,{"provider_id":"252","provider_name":"ASSOCIATION OF THE BAR OF THE CITY OF NEW YORK FUND INC"}
+,{"provider_id":"253","provider_name":"RENAISSANCE YOUTH CENTER"}
+,{"provider_id":"254","provider_name":"CHURCHES UNITED FOR FAIR HOUSING INC"}
+,{"provider_id":"255","provider_name":"SEPTEMBER 11 FAMILY GROUP"}
+,{"provider_id":"256","provider_name":"FEDERATION OF ITALIAN-AMERICAN ORGANIZATIONS OF BROOKLYN LTD"}
+,{"provider_id":"257","provider_name":"GIRLS WRITE NOW INC"}
+,{"provider_id":"258","provider_name":"GUYANESE GIRLS ROCK FOUNDATION INC"}
+,{"provider_id":"259","provider_name":"NEIGHBORS ALLIED FOR GOOD GROWTH INC"}
+,{"provider_id":"260","provider_name":"NEW YORK POPS INC"}
+,{"provider_id":"261","provider_name":"PUBLIC UTILITY LAW PROJECT OF NEW YORK INC"}
+,{"provider_id":"262","provider_name":"MAKE MUSIC NEW YORK INC"}
+,{"provider_id":"263","provider_name":"DANCES FOR A VARIABLE POPULATION"}
+,{"provider_id":"264","provider_name":"BROADWAY MALL ASSOCIATION INC"}
+,{"provider_id":"265","provider_name":"NORTHERN MANHATTAN IMPROVEMENT CORPORATION"}
+,{"provider_id":"266","provider_name":"ACMH, INC"}
+,{"provider_id":"267","provider_name":"CATHOLIC HEALTH CARE SYSTEM"}
+,{"provider_id":"268","provider_name":"RIVERDALE MENTAL HEALTH ASSOCIATION INC"}
+,{"provider_id":"269","provider_name":"ST. JOHN'S UNIVERSITY"}
+,{"provider_id":"270","provider_name":"BioFire Diagnostics, LLC"}
+,{"provider_id":"271","provider_name":"ELITE LEARNERS INC"}
+,{"provider_id":"272","provider_name":"CHESS-IN-THE-SCHOOLS INC"}
+,{"provider_id":"273","provider_name":"YOUNG DANCERS IN REPERTORY INC"}
+,{"provider_id":"274","provider_name":"ASIAN AMERICAN FEDERATION INC"}
+,{"provider_id":"275","provider_name":"CEC STUYVESANT COVE INC"}
+,{"provider_id":"276","provider_name":"LIBERIAN CULTURAL ASSOCIATION INC"}
+,{"provider_id":"277","provider_name":"HELEN KELLER SERVICES"}
+,{"provider_id":"278","provider_name":"C C M S"}
+,{"provider_id":"279","provider_name":"Hub-Third Ave Merchants District Management Association Inc"}
+,{"provider_id":"280","provider_name":"EL PUENTE DE WILLIAMSBURG INC"}
+,{"provider_id":"281","provider_name":"PETER CARDELLA SENIOR CITIZEN CENTER INC."}
+,{"provider_id":"282","provider_name":"YOUTH SERVICE OPPORTUNITIES PROJECT INC"}
+,{"provider_id":"283","provider_name":"NEW YORK CITY STREET TREE CONSORTIUM INC"}
+,{"provider_id":"284","provider_name":"ST EPHREM YOUTH PROGRAM INC"}
+,{"provider_id":"285","provider_name":"SHALOM TASK FORCE"}
+,{"provider_id":"286","provider_name":"THE SAMARITANS OF NEW YORK INC"}
+,{"provider_id":"287","provider_name":"BAY RIDGE CENTER, INC"}
+,{"provider_id":"288","provider_name":"Richmond County Board of Advocates for Mental Health"}
+,{"provider_id":"289","provider_name":"YOUNG ADULT INSTITUTE INC"}
+,{"provider_id":"290","provider_name":"JEWISH COMMUNITY COUNCIL OF THE ROCKAWAY PENINSULA INC"}
+,{"provider_id":"291","provider_name":"POLONIANS ORGANIZED TO MINISTER TO OUR COMMUNITY, INC"}
+,{"provider_id":"292","provider_name":"WOODSIDE ON THE MOVE, INC."}
+,{"provider_id":"293","provider_name":"CHRIST DISCIPLES INTERNATIONAL MINISTRIES"}
+,{"provider_id":"294","provider_name":"BROOKLYN DEFENDER SERVICES","hq_address_1":"177 Livingston Street","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11201","latitude":"40.690019","longitude":"-73.986701","community_board":"302","council_district":"33","census_tract":"37","bin":"3391746","bbl":"3001567501","nta":"DUMBO-Vinegar Hill-Downtown Brooklyn-Boerum Hill"}
+,{"provider_id":"295","provider_name":"FORDHAM UNIVERSITY"}
+,{"provider_id":"296","provider_name":"BRONX JEWISH COMMUNITY COUNCIL INC"}
+,{"provider_id":"297","provider_name":"Destination Tomorrow Inc"}
+,{"provider_id":"298","provider_name":"SHARE SELF HELP FOR WOMEN WITH BREAST OR OVARIAN CANCER INC"}
+,{"provider_id":"299","provider_name":"ENTERTAINERS FOR EDUCATION ALLIANCE INC"}
+,{"provider_id":"300","provider_name":"DWARF-GIRAFFE ATHLETIC LEAGUE OF WHITESTONE INC"}
+,{"provider_id":"301","provider_name":"ITALIAN SENIOR CITIZENS INC"}
+,{"provider_id":"302","provider_name":"JEWISH COMMUNITY CENTER OF STATEN ISLAND INC"}
+,{"provider_id":"303","provider_name":"Community Software Solutions, Inc."}
+,{"provider_id":"304","provider_name":"AMITY LITTLE LEAGUE, INC."}
+,{"provider_id":"305","provider_name":"Heights-Hill Mental Health Svc SBPC Community Advisory Board"}
+,{"provider_id":"306","provider_name":"VOCAL EASE INC"}
+,{"provider_id":"307","provider_name":"THE NEW YORK IMMIGRATION COALITION INC"}
+,{"provider_id":"308","provider_name":"QSAC INC"}
+,{"provider_id":"309","provider_name":"VISITING NEIGHBORS, INC."}
+,{"provider_id":"310","provider_name":"SHIELD OF DAVID INC"}
+,{"provider_id":"311","provider_name":"THE EDUCATIONAL ALLIANCE INC"}
+,{"provider_id":"312","provider_name":"RENAISSANCE TECHNICAL INSTITUTE INC","hq_address_1":"173 East 112th Street","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10029","latitude":"40.795653","longitude":"-73.942449","community_board":"111","council_district":"8","census_tract":"182","bin":"1089897","bbl":"1016400021","nta":"East Harlem North"}
+,{"provider_id":"313","provider_name":"ONOS FOOTPRINTS INC"}
+,{"provider_id":"314","provider_name":"VISION URBANA, INC."}
+,{"provider_id":"315","provider_name":"LANTERN COMMUNITY SERVICES INC"}
+,{"provider_id":"316","provider_name":"ROMAN CATHOLIC CHURCH OF ST. MARGARET"}
+,{"provider_id":"317","provider_name":"ALLIED VETERANS MEMORIAL COMMITTEE OF RIDGEWOOD AND GLENDALE"}
+,{"provider_id":"318","provider_name":"NEW YORK CITY H2O INC"}
+,{"provider_id":"319","provider_name":"THE BOYS CLUB OF NEW YORK INC"}
+,{"provider_id":"320","provider_name":"CATHOLIC MIGRATION SERVICES INC"}
+,{"provider_id":"321","provider_name":"MARBLE HILL NURSERY SCHOOL"}
+,{"provider_id":"322","provider_name":"CHEKPEDS INC"}
+,{"provider_id":"323","provider_name":"OUR LADY OF THE MIRACULOUS MEDAL ROMAN CATHOLIC CHURCH"}
+,{"provider_id":"324","provider_name":"NEW YORK EDGE INC"}
+,{"provider_id":"325","provider_name":"REACH OUT AND READ OF GREATER NEW YORK INC"}
+,{"provider_id":"326","provider_name":"HARLEM EDUCATIONAL ACTIVITIES FUND INC"}
+,{"provider_id":"327","provider_name":"BK ROT Inc"}
+,{"provider_id":"328","provider_name":"BANGLADESHI AMERICAN COMMUNITY DEVELOPMENT & YOUTH SERVICES"}
+,{"provider_id":"329","provider_name":"THE GREATER RIDGEWOOD YOUTH COUNCIL INC"}
+,{"provider_id":"330","provider_name":"BOBBI AND THE STRAYS, INC."}
+,{"provider_id":"331","provider_name":"JACOB A RIIS NEIGHBORHOOD SETTLEMENT"}
+,{"provider_id":"332","provider_name":"The Union Grove Baptist Church"}
+,{"provider_id":"333","provider_name":"KOREAN FAMILY COUNSELING AND RESEARCH CENTER INC"}
+,{"provider_id":"334","provider_name":"UNITED CHINESE ASSOCIATION OF BROOKLYN INC"}
+,{"provider_id":"335","provider_name":"EAST SIDE HOUSE INC"}
+,{"provider_id":"336","provider_name":"PER SCHOLAS INCORPORATED"}
+,{"provider_id":"337","provider_name":"STREB INC"}
+,{"provider_id":"338","provider_name":"STATEN ISLAND ECONOMIC DEVELOPMENT CORPORATION"}
+,{"provider_id":"339","provider_name":"BOOM HEALTH"}
+,{"provider_id":"340","provider_name":"WOODYCREST CENTER FOR HUMAN DEVELOPMENT, INC."}
+,{"provider_id":"341","provider_name":"THE ARMORY FOUNDATION"}
+,{"provider_id":"342","provider_name":"BAILEY HOUSE, INC"}
+,{"provider_id":"343","provider_name":"HOME ATTENDANT VENDOR AGENCY INC"}
+,{"provider_id":"344","provider_name":"REACHING-OUT COMMUNITY SERVICE INC"}
+,{"provider_id":"345","provider_name":"PART OF THE SOLUTION"}
+,{"provider_id":"346","provider_name":"HARVEST HOME FARMERS MARKET INC"}
+,{"provider_id":"347","provider_name":"YOUNG MENS AND YOUNG WOMENS HEBREW ASSOCIATION OF THE BRONX"}
+,{"provider_id":"348","provider_name":"BCT BROOKLYN CHILDRENS THEATRE INC"}
+,{"provider_id":"349","provider_name":"HISPANIC FEDERATION INC"}
+,{"provider_id":"350","provider_name":"Guyana Cultural Association of New York Inc."}
+,{"provider_id":"351","provider_name":"WILD BIRD FUND INC"}
+,{"provider_id":"352","provider_name":"NEW ECONOMY PROJECT INC"}
+,{"provider_id":"353","provider_name":"JAMAICA SERVICE PROGRAM FOR OLDER ADULTS INC"}
+,{"provider_id":"354","provider_name":"Long Island Gay and Lesbian Youth, Inc."}
+,{"provider_id":"355","provider_name":"MOSHOLU MONTEFIORE COMMUNITY CENTER INC"}
+,{"provider_id":"356","provider_name":"JEWISH CHILD CARE ASSOCIATION OF NEW YORK"}
+,{"provider_id":"357","provider_name":"BROOKLYN CHINESE-AMERICAN ASSOCIATION INC"}
+,{"provider_id":"358","provider_name":"THE CAMPAIGN AGAINST HUNGER INC"}
+,{"provider_id":"359","provider_name":"PROJECT HOPE-THE NEW DIRECTION INC"}
+,{"provider_id":"360","provider_name":"SOUTHSIDE COMMUNITY MISSION INC"}
+,{"provider_id":"361","provider_name":"NIA COMMUNITY SERVICES NETWORK INC"}
+,{"provider_id":"362","provider_name":"DREAM DARE TO REVITALIZE EDUCATION THRU ARTS & MEDIATION"}
+,{"provider_id":"363","provider_name":"MIRABAL SISTERS CULTURAL AND COMMUNITY CENTER INC"}
+,{"provider_id":"364","provider_name":"REACH FOR THE STARS LEARNING CENTER"}
+,{"provider_id":"365","provider_name":"UNIVERSITY SETTLEMENT SOCIETY OF NEW YORK"}
+,{"provider_id":"366","provider_name":"GREATER WOODHAVEN DEVELOP CORPORATION"}
+,{"provider_id":"367","provider_name":"WOMENS HOUSING & ECONOMIC DEVELOPMENT CORP"}
+,{"provider_id":"368","provider_name":"EAST RIVER DEVELOPMENT ALLIANCE, INC.","hq_borough":"Queens","hq_state":"NY"}
+,{"provider_id":"369","provider_name":"LEARNING THROUGH AN EXPANDED ARTS PROGRAM INC"}
+,{"provider_id":"370","provider_name":"NEW YORK HARBOR FOUNDATION INC"}
+,{"provider_id":"371","provider_name":"NORTHSIDE CENTER FOR CHILD DEVELOPMENT INC"}
+,{"provider_id":"372","provider_name":"ST. VINCENT DE PAUL RESIDENCE"}
+,{"provider_id":"373","provider_name":"COUNCIL OF BELMONT ORGANIZATIONS INC"}
+,{"provider_id":"374","provider_name":"Chinese-American Sunshine House, Inc."}
+,{"provider_id":"375","provider_name":"UNION OF ORTHODOX JEWISH CONGREGATION OF AMERICA"}
+,{"provider_id":"376","provider_name":"CENTER FOR THE WOMEN OF NEW YORK"}
+,{"provider_id":"377","provider_name":"ST PAULS EVANGELICAL LUTHERAN CHURCH"}
+,{"provider_id":"378","provider_name":"NORTHERN MANHATTAN COALITION FOR IMMIGRANTS RIGHTS"}
+,{"provider_id":"379","provider_name":"BATTALION PENTECOSTAL ASSEMBLY"}
+,{"provider_id":"380","provider_name":"ARAB-AMERICAN FAMILY SUPPORT CENTER INC"}
+,{"provider_id":"381","provider_name":"MY TIME INC"}
+,{"provider_id":"382","provider_name":"ANIMAL CARE AND CONTROL OF NEW YORK CITY, INC"}
+,{"provider_id":"383","provider_name":"Ditmas park youth group"}
+,{"provider_id":"384","provider_name":"AIDS SERVICE CENTER OF LOWER MANHATTAN INC"}
+,{"provider_id":"385","provider_name":"Amida Care Inc."}
+,{"provider_id":"386","provider_name":"GLOBAL KIDS INC"}
+,{"provider_id":"387","provider_name":"CHABAD OF QUEENS COLLEGE INC"}
+,{"provider_id":"388","provider_name":"THE HUDSON GUILD"}
+,{"provider_id":"389","provider_name":"ZMI Foundation, Inc."}
+,{"provider_id":"390","provider_name":"BNAI BRITH HILLEL FOUNDATION INC AT QUEENS COLLEGE"}
+,{"provider_id":"391","provider_name":"FAMILY LIFE ACADEMY CHARTER SCHOOL"}
+,{"provider_id":"392","provider_name":"NEW IMMIGRANT COMMUNITY EMPOWERMENT INC"}
+,{"provider_id":"393","provider_name":"APNA BROOKLYN COMMUNITY CENTER INC"}
+,{"provider_id":"394","provider_name":"United Military Veterans of Kings County, Inc."}
+,{"provider_id":"395","provider_name":"VOLUNTEERS OF AMERICA GREATER NEW YORK INC"}
+,{"provider_id":"396","provider_name":"AMERICAN ITALIAN COALITION OF ORGANIZATIONS INC AMICO"}
+,{"provider_id":"397","provider_name":"THE MENTAL HEALTH ASSOCIATION OF NEW YORK CITY INC"}
+,{"provider_id":"398","provider_name":"ROCHDALE VILLAGE SOCIAL SERVICES INC"}
+,{"provider_id":"399","provider_name":"BROADWAY HOUSING COMMUNITIES INC"}
+,{"provider_id":"400","provider_name":"161ST STREET MERCHANTS ASSOCIATION INC"}
+,{"provider_id":"401","provider_name":"THE SALVATION ARMY"}
+,{"provider_id":"402","provider_name":"Emergency Children's Help Organization, Inc."}
+,{"provider_id":"403","provider_name":"LA CASA DE LA HERENCIA CULTURAL PUERTORRIQUENA INC"}
+,{"provider_id":"404","provider_name":"BROOKLYN BALLERS SPORTS YOUTH & EDUCATIONAL CORP"}
+,{"provider_id":"405","provider_name":"UNITED COMMUNITY CENTERS INC","hq_address_1":"613 NEW LOTS AVE","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11207","provider_ein":"111950787","provider_website":"ucceny.com","latitude":"40.664728","longitude":"-73.886561","community_board":"305","council_district":"42","census_tract":"1124","bin":"3090717","bbl":"3040890025","nta":"East New York"}
+,{"provider_id":"406","provider_name":"THE KOREAN AMERICAN FAMILY SERVICE CENTER INC"}
+,{"provider_id":"407","provider_name":"PROJECT HOPE CHARITIES INC"}
+,{"provider_id":"408","provider_name":"YOU GOTTA BELIEVE! The Older Child Adoption & Permanency Mov"}
+,{"provider_id":"409","provider_name":"JEWISH COMMUNITY COUNCIL OF GREATER CONEY ISLAND INC","hq_address_1":"3001 WEST 37TH STREET","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11224","provider_ein":"112665181","provider_website":"www.jccgci.org","latitude":"40.573177","longitude":"-74.002509","community_board":"313","council_district":"47","census_tract":"340","bin":"3189617","bbl":"3070650001","nta":"Seagate-Coney Island"}
+,{"provider_id":"410","provider_name":"MOBILIZATION FOR JUSTICE INC"}
+,{"provider_id":"411","provider_name":"JEWISH CHILDRENS MUSEUM"}
+,{"provider_id":"412","provider_name":"MINKWON CENTER FOR COMMUNITY ACTION, INC"}
+,{"provider_id":"413","provider_name":"THE YOUNG WOMENS CHRISTIAN ASSOCIATION OF QUEENS"}
+,{"provider_id":"414","provider_name":"ROCKING THE BOAT INC"}
+,{"provider_id":"415","provider_name":"ARIVA INC"}
+,{"provider_id":"416","provider_name":"DRAG QUEEN STORY HOUR NYC LTD"}
+,{"provider_id":"417","provider_name":"JEWISH BOARD OF FAMILY AND CHILDREN'S SERVICES INC"}
+,{"provider_id":"418","provider_name":"BROOKLYN BUREAU OF COMMUNITY SERVICE","hq_address_1":"151 LAWRENCE STREET","hq_address_2":"4th Floor","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11201","provider_ein":"111630780","latitude":"40.691506","longitude":"-73.986297","community_board":"302","council_district":"33","census_tract":"11","bin":"3000404","bbl":"3001520006","nta":"DUMBO-Vinegar Hill-Downtown Brooklyn-Boerum Hill"}
+,{"provider_id":"419","provider_name":"PHIPPS NEIGHBORHOODS INC","hq_address_1":"902 BROADWAY 13TH FL","hq_city":"New York","hq_state":"NY","hq_zip":"10010","provider_ein":"132707665","provider_website":"WWW.PHIPPSNY.ORG"}
+,{"provider_id":"420","provider_name":"DRAMA CLUB INC"}
+,{"provider_id":"421","provider_name":"MOTHERS ALIGNED SAVING KIDS, INC. / MASK"}
+,{"provider_id":"422","provider_name":"FAILTE CARE CORPORATION NEW YORK IRISH CENTER"}
+,{"provider_id":"423","provider_name":"FRIENDS OF HUDSON RIVER PARK INC"}
+,{"provider_id":"424","provider_name":"CENTRAL AMERICAN LEGAL ASSISTANCE","hq_address_1":"240 Hooper Street","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11211","latitude":"40.705758","longitude":"-73.955828","community_board":"301","council_district":"33","census_tract":"529","bin":"3379706","bbl":"3022070002","nta":"Williamsburg"}
+,{"provider_id":"425","provider_name":"WASHINGTON HEIGHTS INWOOD PRESERVATION AND RESTORATION CORP"}
+,{"provider_id":"426","provider_name":"JUDAH INTERNATIONAL CHRISTIAN CENTER INC"}
+,{"provider_id":"427","provider_name":"MORE GARDENS! FUND"}
+,{"provider_id":"428","provider_name":"FAMILY LIFE DEVELOPMENT CENTER , INC."}
+,{"provider_id":"429","provider_name":"TADA ! THEATRE AND DANCE ALLIANCE, INC."}
+,{"provider_id":"430","provider_name":"QKINGDOM MINISTRIES INC"}
+,{"provider_id":"431","provider_name":"UNIVERSITY OF NOTRE DAME ALUM- NI CLUB OF STATEN ISLAND"}
+,{"provider_id":"432","provider_name":"MEKIMI"}
+,{"provider_id":"433","provider_name":"FAMILY PRESERVATION SERVICES OF NEW YORK CORPORATION"}
+,{"provider_id":"434","provider_name":"INTERFAITH MEDICAL CENTER"}
+,{"provider_id":"435","provider_name":"DOROT, INC."}
+,{"provider_id":"436","provider_name":"PENCIL INC"}
+,{"provider_id":"437","provider_name":"STONEWALL COMMUNITY DEVELOPMENT CORPORATION"}
+,{"provider_id":"439","provider_name":"MERCY CENTER INC"}
+,{"provider_id":"440","provider_name":"IMMIGRANT JUSTICE CORPS INC"}
+,{"provider_id":"441","provider_name":"HOUSING CONSERVATION COORDINATORS INC"}
+,{"provider_id":"442","provider_name":"LSNYBRONX  CORPORATION LEGAL SERVICES NYCBRONX"}
+,{"provider_id":"443","provider_name":"YOUNG MENS AND WOMENS HEBREW ASSO WASHINGTON HEIGHTS INWOOD"}
+,{"provider_id":"444","provider_name":"GRAND STREET SETTLEMENT INC"}
+,{"provider_id":"445","provider_name":"TEMPLE UNIVERSITY-OF THE COMMONWEALTH SYSTEM OF HIGHER EDUCA"}
+,{"provider_id":"446","provider_name":"LEGAL SERVICES NYC","hq_address_1":"40 Worth Street","hq_address_2":"Suite 606","hq_borough":"Brooklyn","hq_city":"New York","hq_state":"NY","hq_zip":"10013","provider_ein":"13-2600199"}
+,{"provider_id":"447","provider_name":"SCHOOL SETTLEMENT ASSOC INC"}
+,{"provider_id":"448","provider_name":"THE DOOR-A CENTER OF ALTERNATIVES INC","hq_address_1":"121 Avenue of the Americas","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10013","latitude":"40.723903","longitude":"-74.00469","community_board":"102","council_district":"3","census_tract":"37","bin":"1083493","bbl":"1004777501","nta":"SoHo-TriBeCa-Civic Center-Little Italy"}
+,{"provider_id":"449","provider_name":"JEWISH COMMUNITY CENTER IN MANHATTAN"}
+,{"provider_id":"450","provider_name":"Mid Island Little League Inc"}
+,{"provider_id":"451","provider_name":"COALITION OF INSTITUTIONALIZED AGED AND DISABLED"}
+,{"provider_id":"452","provider_name":"SENIORS HELPING SENIORS INC"}
+,{"provider_id":"453","provider_name":"BROOKLYN NEIGHBORHOOD IMPROVEMENT ASSOCIATION"}
+,{"provider_id":"454","provider_name":"STATE OF NEW YORK"}
+,{"provider_id":"455","provider_name":"ROSEDALE JETS FOOTBALL ASSOCIATION"}
+,{"provider_id":"456","provider_name":"MERRILL PARK CIVIC ASSOCIATION OF SPRINGFIELD GARDENS INC"}
+,{"provider_id":"457","provider_name":"THE GRACE FOUNDATION OF NEW YORK"}
+,{"provider_id":"458","provider_name":"ATLAS DIY CORPORATION"}
+,{"provider_id":"459","provider_name":"NEW YORK RESTORATION PROJECT"}
+,{"provider_id":"460","provider_name":"Timbers Legacy Inc"}
+,{"provider_id":"461","provider_name":"ST. NICKS ALLIANCE CORP."}
+,{"provider_id":"462","provider_name":"BRIDGE STREET DEVELOPMENT CORPORATION"}
+,{"provider_id":"463","provider_name":"CENTER FOR URBAN COMMUNITY SERVICES INC"}
+,{"provider_id":"464","provider_name":"COMMUNITY SERVICE SOCIETY OF NEW YORK"}
+,{"provider_id":"465","provider_name":"ASIAN AMERICANS FOR EQUALITY INC"}
+,{"provider_id":"466","provider_name":"QUEENS COMMUNITY HOUSE, INC.","hq_address_1":"108-25 62nd Drive","hq_borough":"Queens","hq_city":"Forest Hills","hq_state":"NY","hq_zip":"11375","latitude":"40.73591","longitude":"-73.850212","community_board":"406","council_district":"29","census_tract":"745","bin":"4432108","bbl":"4021590002","nta":"Forest Hills"}
+,{"provider_id":"467","provider_name":"GIRL VOW INC"}
+,{"provider_id":"468","provider_name":"FIFTH AVENUE COMMITTEE, INC."}
+,{"provider_id":"469","provider_name":"LINCOLN HOUSE OUTREACH, INC"}
+,{"provider_id":"470","provider_name":"ATLANTIC AVENUE ASSOCIATION LOCAL DEVELOPMENT CORPORATION"}
+,{"provider_id":"471","provider_name":"SAFE FOUNDATION INC"}
+,{"provider_id":"472","provider_name":"CHINATOWN MANPOWER PROJECT INC."}
+,{"provider_id":"473","provider_name":"BOTTOMLESS CLOSET"}
+,{"provider_id":"474","provider_name":"association of east european jewry corp"}
+,{"provider_id":"475","provider_name":"COMMUNITIES OF MASPETH-ELM- HURST TOGETHER INC"}
+,{"provider_id":"476","provider_name":"JOB PATH INC"}
+,{"provider_id":"477","provider_name":"COALITION FOR THE HOMELESS INC"}
+,{"provider_id":"478","provider_name":"KWATNY FOUNDATION INC"}
+,{"provider_id":"479","provider_name":"ASPIRA OF NEW YORK INC"}
+,{"provider_id":"480","provider_name":"FRIENDS OF GANTRY PLAZA STATE PARK INC"}
+,{"provider_id":"481","provider_name":"HER JUSTICE INC"}
+,{"provider_id":"482","provider_name":"IMAGINE FOUNDATION, INC"}
+,{"provider_id":"483","provider_name":"ALZHEIMERS DISEASE AND RELATED DISORDERS NEW YORK CITY INC"}
+,{"provider_id":"484","provider_name":"BNOS MALKA ACADEMY"}
+,{"provider_id":"485","provider_name":"BRIGHTON BALLET THEATER CO INC"}
+,{"provider_id":"486","provider_name":"ST KEVIN'S ROMAN CATHOLIC CHURCH 4346"}
+,{"provider_id":"487","provider_name":"THE NEW YORK FOUNDLING HOSPITAL"}
+,{"provider_id":"488","provider_name":"THE NEW YORK PUBLIC LIBRARY ASTOR LENOX AND TILDEN FOUNDATIO"}
+,{"provider_id":"489","provider_name":"TERENCE CARDINAL COOKE HEALTH CARE CENTER"}
+,{"provider_id":"490","provider_name":"INDOCHINA SINO- AMERICAN SENIOR CITIZEN CENTER INC"}
+,{"provider_id":"491","provider_name":"CHARLES A. WALBURG MULTI- SERVICE ORGANIZATION INC."}
+,{"provider_id":"492","provider_name":"POLISH AND SLAVIC CENTER, INC."}
+,{"provider_id":"493","provider_name":"INSTITUTE FOR THE PUERTO RICAN HISPANIC ELDERLY INC"}
+,{"provider_id":"494","provider_name":"SEAMEN'S SOCIETY FOR CHILDREN AND FAMILIES","hq_address_1":"50 Bay Street","hq_borough":"Staten Island","hq_city":"Staten Island","hq_state":"NY","hq_zip":"10301","provider_ein":"13-5563010","provider_website":"www.seamenssociety.org","latitude":"40.640901","longitude":"-74.075766","community_board":"501","council_district":"49","census_tract":"3","bin":"5000034","bbl":"5000050099","nta":"West New Brighton-New Brighton-St. George"}
+,{"provider_id":"495","provider_name":"POSITIVE EXPOSURE PRODUCTION INC"}
+,{"provider_id":"496","provider_name":"GAY MENS HEALTH CRISIS INC"}
+,{"provider_id":"497","provider_name":"CENTRAL ASTORIA LOCAL DEVELOPMENT COALITION INCORPORATED"}
+,{"provider_id":"498","provider_name":"Quest Youth Organization, Inc."}
+,{"provider_id":"499","provider_name":"FLATBUSH DEVELOPMENT CORPORATION"}
+,{"provider_id":"500","provider_name":"ITALIAN AMERICAN CIVIL RIGHTS LEAGUE CANARSIE INC"}
+,{"provider_id":"501","provider_name":"NEIGHBORHOOD HOUSING SERVICES OF BROOKLYN BEDFORD-STUYVESANT"}
+,{"provider_id":"502","provider_name":"THE BROTHERHOOD/SISTER SOL, INC.","hq_address_1":"140 Hamilton Pl","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10031","latitude":"40.824275","longitude":"-73.948624","community_board":"109","council_district":"7","census_tract":"229","bin":"1061887","bbl":"1020750026","nta":"Hamilton Heights"}
+,{"provider_id":"503","provider_name":"THE CHILDRENS AID SOCIETY","hq_address_1":"711 3rd Ave","hq_address_2":"Room 300","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10017","provider_ein":"135562191","provider_website":"www.childrensaidsociety.org","latitude":"40.752374","longitude":"-73.973266","community_board":"106","council_district":"4","census_tract":"90","bin":"1037568","bbl":"1013180001","nta":"Turtle Bay-East Midtown"}
+,{"provider_id":"504","provider_name":"MASPETH TOWN HALL, INC."}
+,{"provider_id":"505","provider_name":"MAZii Learning Center Inc"}
+,{"provider_id":"506","provider_name":"Sapna NYC Inc."}
+,{"provider_id":"507","provider_name":"CATHOLIC CHARITIES COMMUNITY SERVICES ARCHDIOCESE OF NY","hq_address_1":"1011 FIRST AVENUE","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10022","latitude":"40.757271","longitude":"-73.963692","community_board":"106","council_district":"5","census_tract":"108","bin":"1039972","bbl":"1013480023","nta":"Turtle Bay-East Midtown"}
+,{"provider_id":"508","provider_name":"CENTER FOR COMMUNITY ALTERNATIVES INC.","hq_address_1":"115 East Jefferson Street","hq_address_2":"Suite 3000","hq_borough":"Not in NYC","hq_city":"Syracuse","hq_state":"NY","hq_zip":"13202","provider_ein":"161395992","provider_website":"www.communityalternatives.org"}
+,{"provider_id":"509","provider_name":"CHINESE-AMERICAN PLANNING COUNCIL INC"}
+,{"provider_id":"510","provider_name":"SAMARITAN DAYTOP VILLAGE INC"}
+,{"provider_id":"511","provider_name":"CROWN HEIGHTS NORTH ASSOCIATION, INC."}
+,{"provider_id":"512","provider_name":"PROJECT HOSPITALITY INC"}
+,{"provider_id":"513","provider_name":"NATIONAL SOCIETY FOR HEBREW DAY SCHOOLS"}
+,{"provider_id":"514","provider_name":"COMMUNITY MEDIATION SERVICES, INC.","hq_address_1":"89-64 163rd Street","hq_borough":"Queens","hq_city":"Jamaica","hq_state":"NY","hq_zip":"11432","provider_ein":"112663007","provider_website":"www.mediatenyc.org","latitude":"40.70664","longitude":"-73.798033","community_board":"412","council_district":"24","census_tract":"44601","bin":"4208888","bbl":"4097610080","nta":"Jamaica"}
+,{"provider_id":"515","provider_name":"GREATER FLUSHING COMMUNITY COUNCIL INC"}
+,{"provider_id":"516","provider_name":"HAITIAN CENTERS COUNCIL INC"}
+,{"provider_id":"517","provider_name":"EVERYONE READING INC"}
+,{"provider_id":"518","provider_name":"BROOKLYN ARTS EXCHANGE"}
+,{"provider_id":"519","provider_name":"HIGHBRIDGE ISLAMIC CENTER INC"}
+,{"provider_id":"520","provider_name":"NEW YORK MEMORY CENTER, INC."}
+,{"provider_id":"521","provider_name":"THE FATHERS HEART MINISTRIES"}
+,{"provider_id":"522","provider_name":"UNITED JEWISH COUNCIL OF THE EAST SIDE INC"}
+,{"provider_id":"523","provider_name":"Gunhill Basketball Association, Inc."}
+,{"provider_id":"524","provider_name":"BERGEN BEACH YOUTH ORGANIZ- ATION INC"}
+,{"provider_id":"525","provider_name":"GEORGE WALKER JR COMMUNITY COALITION INC THE"}
+,{"provider_id":"526","provider_name":"CYPRESS HILLS LOCAL DEVELOPMENT CORP. INC."}
+,{"provider_id":"527","provider_name":"STATEN ISLAND AID FOR RETARDED CHILDREN INC"}
+,{"provider_id":"528","provider_name":"NORTHERN MANHATTAN IMPROVEMENT CORP","hq_address_1":"8 Clinton Place","hq_borough":"Bronx","hq_city":"Bronx","hq_state":"NY","hq_zip":"10453","latitude":"40.856526","longitude":"-73.905437","community_board":"205","council_district":"14","census_tract":"251","bin":"2116591","bbl":"2031950083","nta":"University Heights-Morris Heights"}
+,{"provider_id":"529","provider_name":"STANLEY M ISAACS NEIGHBORHOOD CENTER INC"}
+,{"provider_id":"530","provider_name":"ARC XVI FT WASHINGTON INC"}
+,{"provider_id":"531","provider_name":"COUNCIL OF SENIOR CENTERS AND SERVICES OF NYC INC"}
+,{"provider_id":"532","provider_name":"SEPHARDIC MULTI-SERVICES SENIOR CITIZEN CENTER, INC."}
+,{"provider_id":"533","provider_name":"RESEARCH FOUNDATION OF THE CITY UNIVERSITY OF NEW YORK"}
+,{"provider_id":"534","provider_name":"INDIA HOME INC"}
+,{"provider_id":"535","provider_name":"THE ANSOB CENTER FOR REFUGEES, INC."}
+,{"provider_id":"536","provider_name":"PUERTO RICAN FAMILY INSTITUTE INC"}
+,{"provider_id":"537","provider_name":"BOWERY RESIDENTS' COMMITTEE, INC."}
+,{"provider_id":"538","provider_name":"ST GABRIELS EPISCOPAL CHURCH"}
+,{"provider_id":"539","provider_name":"YOUNG MENS AND YOUNG WOMENS HEBREW ASSOCIATION OF BORO PAR"}
+,{"provider_id":"541","provider_name":"CODYCARES FOR KIDS INC"}
+,{"provider_id":"542","provider_name":"THE TREVOR PROJECT INC"}
+,{"provider_id":"543","provider_name":"CITIZEN SCHOOLS INC"}
+,{"provider_id":"544","provider_name":"YOUNG ISRAEL PROGRAMS INC"}
+,{"provider_id":"545","provider_name":"CATHOLIC CHARITIES OF STATEN ISLAND INC"}
+,{"provider_id":"546","provider_name":"CROWN HEIGHTS PRESERVATION COMMITTEE CORP."}
+,{"provider_id":"547","provider_name":"ALLEN AME CHURCH"}
+,{"provider_id":"548","provider_name":"CANAAN BAPTIST CHURCH OF CHRIST"}
+,{"provider_id":"549","provider_name":"REGIONAL AID FOR INTERIM NEEDS INC"}
+,{"provider_id":"550","provider_name":"RIDGEWOOD OLDER ADULT CENTER & SERVICES INC"}
+,{"provider_id":"551","provider_name":"WASHINGTON HEIGHT'S COMMUNITY SERVICES CORPORATION"}
+,{"provider_id":"552","provider_name":"FLATBUSH SHOMRIM SAFETY PATROL NC."}
+,{"provider_id":"553","provider_name":"CHAI LIFELINE INC"}
+,{"provider_id":"554","provider_name":"FORT GREENE COUNCIL, INC"}
+,{"provider_id":"555","provider_name":"BROOKLYN SECTION NATIONAL COUNCIL OF JEWISH WOMEN INC"}
+,{"provider_id":"556","provider_name":"KIPS BAY BOYS AND GIRLS CLUB INC"}
+,{"provider_id":"557","provider_name":"WEST SIDE FEDERATION FOR SENIOR AND SUPPORTIVE HOUSING INC"}
+,{"provider_id":"558","provider_name":"BRONX HOUSE INC"}
+,{"provider_id":"559","provider_name":"COTHOA LUNCHEON CLUB INC"}
+,{"provider_id":"560","provider_name":"UNION SETTLEMENT ASSOCIATION INC","hq_address_1":"237 East 104th Street","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10029","provider_ein":"131632530","provider_website":"unionsettlement.org","latitude":"40.789687","longitude":"-73.944267","community_board":"111","council_district":"8","census_tract":"170","bin":"1080671","bbl":"1016540011","nta":"East Harlem South"}
+,{"provider_id":"561","provider_name":"THE SPANISH SPEAKING ELDERLY COUNCIL-RAICES INC"}
+,{"provider_id":"562","provider_name":"I CHALLENGE MYSELF INC."}
+,{"provider_id":"563","provider_name":"ALPHA PHI ALPHA SENIOR CITIZENS CENTER"}
+,{"provider_id":"564","provider_name":"SENIOR CITIZENS LEAGUE OF FLATBUSH, INC."}
+,{"provider_id":"565","provider_name":"L WHITE CONSULTING LLC"}
+,{"provider_id":"566","provider_name":"STATEN ISLAND URBAN CENTER  INC"}
+,{"provider_id":"567","provider_name":"THE FLOATING HOSPITAL INC"}
+,{"provider_id":"568","provider_name":"FLUSHING DAY CARE CENTER, INC."}
+,{"provider_id":"569","provider_name":"RADICAL HEALTH INC"}
+,{"provider_id":"570","provider_name":"HELP SOCIAL SERVICE CORPORATION","hq_address_1":"115 EAST 13 STREET","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10003","provider_ein":"13-3678724","provider_website":"helpusa.org","latitude":"40.733304","longitude":"-73.989316","community_board":"103","council_district":"2","census_tract":"42","bin":"1084305","bbl":"1005590055","nta":"East Village"}
+,{"provider_id":"571","provider_name":"UNDER 21"}
+,{"provider_id":"642","provider_name":"SUNNYSIDE HOME CARE PROJECT"}
+,{"provider_id":"572","provider_name":"EDWIN GOULD SERVICES FOR CHILDREN & FAMILIES","hq_address_1":"151 LAWRENCE STREET","hq_borough":"Brooklyn","hq_city":"BROOKLYN","hq_state":"NY","hq_zip":"11201","provider_ein":"13-5675643","provider_website":"www.risingground.org","latitude":"40.691506","longitude":"-73.986297","community_board":"302","council_district":"33","census_tract":"11","bin":"3000404","bbl":"3001520006","nta":"DUMBO-Vinegar Hill-Downtown Brooklyn-Boerum Hill"}
+,{"provider_id":"573","provider_name":"HEIGHTS AND HILLS, INC"}
+,{"provider_id":"574","provider_name":"AGUDATH ISRAEL OF AMERICA COMMUNITY SERVICES INC"}
+,{"provider_id":"575","provider_name":"COMMUNITY HOME CARE REFERRAL SERVICE INC."}
+,{"provider_id":"576","provider_name":"STEIN SENIOR CENTER, INC."}
+,{"provider_id":"577","provider_name":"NORTHEAST BRONX SENIOR CITIZENS INC"}
+,{"provider_id":"578","provider_name":"PRESBYTERIAN SENIOR SERVICES"}
+,{"provider_id":"579","provider_name":"WAYSIDE OUT-REACH DEVELOPMENT INC"}
+,{"provider_id":"580","provider_name":"Big Duck Studio"}
+,{"provider_id":"581","provider_name":"FIND AID FOR THE AGED INC"}
+,{"provider_id":"582","provider_name":"ENCORE COMMUNITY SERVICES"}
+,{"provider_id":"583","provider_name":"BROOKS SENIOR CENTER"}
+,{"provider_id":"584","provider_name":"Queens World Film Initiative, Inc."}
+,{"provider_id":"585","provider_name":"GREENWICH HOUSE INC"}
+,{"provider_id":"586","provider_name":"STATEN ISLAND COMMUNITY SERVICES FRIENDSHIP CLUBS INC"}
+,{"provider_id":"587","provider_name":"CHILD DEVELOPMENT CENTER OF THE MOSHOLU-MONTEFIORE COMM CTR"}
+,{"provider_id":"588","provider_name":"NEW YORK CENTER FOR INTERPERSONAL DEVELOPMENT INC","hq_address_1":"130 Stuyvesant Place","hq_address_2":"5th Floor","hq_borough":"Staten Island","hq_city":"Staten Island","hq_state":"NY","hq_zip":"10301","provider_ein":"237085239","latitude":"40.642907","longitude":"-74.076889","community_board":"501","council_district":"49","census_tract":"3","bin":"5000085","bbl":"5000080070","nta":"West New Brighton-New Brighton-St. George"}
+,{"provider_id":"589","provider_name":"EAST HARLEM COUNCIL FOR HUMAN SERVICES INC"}
+,{"provider_id":"590","provider_name":"SEBCO DEVELOPMENT INC"}
+,{"provider_id":"591","provider_name":"NEW YORK FOUNDATION FOR SENIOR CITIZENS, INC."}
+,{"provider_id":"592","provider_name":"DIASORIN INC"}
+,{"provider_id":"593","provider_name":"CENTRAL HARLEM SENIOR CITIZEN'S CENTERS, INC."}
+,{"provider_id":"595","provider_name":"HANDS IN 4 YOUTH INC"}
+,{"provider_id":"596","provider_name":"SOUTH BRONX CONCERNED CITIZENS INC"}
+,{"provider_id":"597","provider_name":"BROOKLYN PITBULLS YOUTH FOOTBALL INC."}
+,{"provider_id":"598","provider_name":"PARTNERSHIP WITH CHILDREN, INC."}
+,{"provider_id":"599","provider_name":"BANK STREET COLLEGE OF EDUCATION"}
+,{"provider_id":"600","provider_name":"BJHI INC"}
+,{"provider_id":"601","provider_name":"UNITED SENIOR CITIZENS OF SUNSET PARK INC"}
+,{"provider_id":"602","provider_name":"COMMUNITY AGENCY FOR SENIOR CITIZENS INC"}
+,{"provider_id":"603","provider_name":"SERIOUS FUN AFTER SCHOOL INC"}
+,{"provider_id":"604","provider_name":"SPECIAL PATHOGENS LABORATORY LLC"}
+,{"provider_id":"605","provider_name":"EMLab P&K LLC"}
+,{"provider_id":"606","provider_name":"DIRECTIONS FOR OUR YOUTH INC"}
+,{"provider_id":"607","provider_name":"POLICE ATHLETIC LEAGUE INC"}
+,{"provider_id":"608","provider_name":"CORONA CONGREGATIONAL CHURCH"}
+,{"provider_id":"609","provider_name":"ASSOCIATION OF BLACK SOCIAL WORKERS"}
+,{"provider_id":"610","provider_name":"CARTER BURDEN NETWORK INC"}
+,{"provider_id":"611","provider_name":"MANHATTAN YOUTH RECREATION AND RESOURCES INC"}
+,{"provider_id":"612","provider_name":"WILLIAM HODSON COMMUNITY CENTER INC"}
+,{"provider_id":"613","provider_name":"HOPE OF ISRAEL SENIOR CITIZENS CENTER INC"}
+,{"provider_id":"614","provider_name":"IMANI HOUSE, INC."}
+,{"provider_id":"615","provider_name":"THE LOUKOUMI MAKE A DIFFERENCE FOUNDATION INC"}
+,{"provider_id":"616","provider_name":"IMMIGRATION EQUALITY","hq_address_1":"40 Exchange Pl","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10004","latitude":"40.705939","longitude":"-74.010283","community_board":"101","council_district":"1","census_tract":"9","bin":"1000825","bbl":"1000250027","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"617","provider_name":"BANANA KELLY COMMUNITY IMPROVEMENT ASSOCIATION INC"}
+,{"provider_id":"618","provider_name":"BROOKLYN LEGAL SERVICES INC","hq_address_1":"260 Broadway","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11211","latitude":"40.708935","longitude":"-73.959386","community_board":"301","council_district":"33","census_tract":"525","bin":"3059650","bbl":"3021400021","nta":"North Side-South Side"}
+,{"provider_id":"619","provider_name":"ELMCOR YOUTH & ADULT ACTIVITIES INC"}
+,{"provider_id":"620","provider_name":"SURVEYMONKEY INC"}
+,{"provider_id":"621","provider_name":"AMERICAN BROTHERHOOD FOR THE RUSSIAN DISABLED, INC."}
+,{"provider_id":"622","provider_name":"ST NICKS ALLIANCE HOME CARE CORP"}
+,{"provider_id":"623","provider_name":"FUTURES AND OPTIONS INC."}
+,{"provider_id":"624","provider_name":"ECLINICALWORKS, LLC"}
+,{"provider_id":"625","provider_name":"CONCRETE SAFARIS INC"}
+,{"provider_id":"626","provider_name":"BIOPOOL US INC TRINITY BIOTECH DISTRIBUTI"}
+,{"provider_id":"627","provider_name":"BRIDGING ACCESS TO CARE INC"}
+,{"provider_id":"628","provider_name":"BROOKLYN ON FUN ASSOCIATION USA INC"}
+,{"provider_id":"629","provider_name":"DB GRANT ASSOCIATES INC"}
+,{"provider_id":"630","provider_name":"THE MARAMONT CORPORATION"}
+,{"provider_id":"631","provider_name":"BEDFORD PARK-MULTI-SERVICE CENTER FOR SENIOR CITIZENS INC"}
+,{"provider_id":"632","provider_name":"THE PUERTO RICAN ORGANIZATION TO MOTIVATE, ENLIGHTEN AND SER"}
+,{"provider_id":"633","provider_name":"SOUTHERN QUEENS PARK ASSOC. INC."}
+,{"provider_id":"634","provider_name":"REACHING ACROSS THE WORLD MINISTRIES INC"}
+,{"provider_id":"636","provider_name":"ASCEND LEARNING, INC"}
+,{"provider_id":"637","provider_name":"UNITED ACTIVITIES UNLIMITED UAU"}
+,{"provider_id":"638","provider_name":"NATIONAL ALLIANCE ON MENTAL ILLNESS OF NEW YORK CITY INC"}
+,{"provider_id":"639","provider_name":"Westhab, Inc."}
+,{"provider_id":"640","provider_name":"WOMEN IN NEED, INC."}
+,{"provider_id":"641","provider_name":"ROCKAWAY WATERFRONT ALLIANCE"}
+,{"provider_id":"924","provider_name":"BRONXCARE HEALTH SYSTEM"}
+,{"provider_id":"643","provider_name":"INFINITY EDUCATIONAL PROGRAMS INC"}
+,{"provider_id":"645","provider_name":"BEDFORD STUYVESANT RESTORATION CORP"}
+,{"provider_id":"646","provider_name":"COMMUNITY ACCESS INC"}
+,{"provider_id":"647","provider_name":"NEIGHBORHOOD INITIATIVES DEVELOPMENT CORPORATION"}
+,{"provider_id":"648","provider_name":"NORTH FORK HELICOPTERS LTD"}
+,{"provider_id":"649","provider_name":"SCAN-HARBOR INC","hq_address_1":"345 E 102ND ST, SUITE 301","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10029","provider_ein":"132912963","provider_website":"www.scanny.org","latitude":"40.787394","longitude":"-73.942709","community_board":"111","council_district":"8","census_tract":"164","bin":"1086440","bbl":"1016747501","nta":"East Harlem South"}
+,{"provider_id":"650","provider_name":"SCAN NEW YORK VOLUNTEER PARENT AIDES ASSOCIATION INC."}
+,{"provider_id":"651","provider_name":"YOUNG ATHLETES INC"}
+,{"provider_id":"652","provider_name":"EL BARRIOS OPERATION FIGHTBACK INC"}
+,{"provider_id":"653","provider_name":"SIMPSON STREET DEVELOPMENT ASSOCIATION INC"}
+,{"provider_id":"654","provider_name":"ROADS TO SUCCESS INC"}
+,{"provider_id":"655","provider_name":"Girls Incorporated of New York City"}
+,{"provider_id":"656","provider_name":"NATIONAL ASSOCIATION ON DRUG ABUSE PROBLEMS (NYS) INC"}
+,{"provider_id":"657","provider_name":"THE YOUNG WOMEN'S CHRISTIAN ASSOCIATION OF THE CITY OF NY"}
+,{"provider_id":"658","provider_name":"CABS HOME ATTENDANTS SERVICE, INC."}
+,{"provider_id":"659","provider_name":"DAY ONE NEW YORK INC.","hq_address_1":"PO Box 3220 Church Street Station","hq_address_2":"Church Street Station","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10008","provider_ein":"06-1103000","provider_website":"www.dayoneny.org"}
+,{"provider_id":"660","provider_name":"ST JOHNS COMMUNITY HDFC"}
+,{"provider_id":"661","provider_name":"NEW YORK CITY MISSION SOCIETY"}
+,{"provider_id":"662","provider_name":"COMMUNITY ASSOCIATION OF PROGRESSIVE DOMINICIANS INC"}
+,{"provider_id":"663","provider_name":"COMMUNITY LEAGUE OF THE HEIGHTS, INC."}
+,{"provider_id":"664","provider_name":"SOUTH ASIAN YOUTH ACTION SAYA INC","hq_address_1":"54-05 SEABURY STREET","hq_borough":"Queens","hq_city":"Elmhurst","hq_state":"NY","hq_zip":"11373","provider_ein":"133943630","provider_website":"www.saya.org","latitude":"40.735303","longitude":"-73.877474","community_board":"404","council_district":"25","census_tract":"475","bin":"4064688","bbl":"4028520006","nta":"Elmhurst"}
+,{"provider_id":"665","provider_name":"TRUSTEES OF COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK"}
+,{"provider_id":"666","provider_name":"HAITIAN AMERICANS UNITED FOR PROGRESS INC"}
+,{"provider_id":"667","provider_name":"BUSHWICK STUYVESANT HEIGHTS HOME ATTENDANTS INC"}
+,{"provider_id":"668","provider_name":"THE STELLA ORTON HOME CARE AGENCY INC","hq_address_1":"3155 Amboy Road","hq_borough":"Staten Island","hq_city":"Staten Island","hq_state":"NY","hq_zip":"10306","provider_ein":"133137595","latitude":"40.564389","longitude":"-74.131879","community_board":"503","council_district":"51","census_tract":"14606","bin":"5107641","bbl":"5044720001","nta":"Great Kills"}
+,{"provider_id":"669","provider_name":"CITYMEALS-ON-WHEELS"}
+,{"provider_id":"670","provider_name":"BROOKLYN COMMUNITY HOUSING & SERVICES,INC."}
+,{"provider_id":"671","provider_name":"RESEARCH FOUNDATION FOR MENTAL HYGIENE, INC."}
+,{"provider_id":"672","provider_name":"QUEENS LEGAL SERVICES CORPORATION","hq_address_1":"8900 Sutphin Boulevard","hq_borough":"Queens","hq_city":"Jamaica","hq_state":"NY","hq_zip":"11435","latitude":"40.703702","longitude":"-73.808746","community_board":"412","council_district":"24","census_tract":"240","bin":"4206748","bbl":"4096760007","nta":"Jamaica"}
+,{"provider_id":"673","provider_name":"SHELTERING ARMS CHILDREN AND FAMILY SERVICES INC","hq_address_1":"25 Broadway - 18th Fl.","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10004","provider_ein":"133709095","provider_website":"www.shelteringarmsny.org"}
+,{"provider_id":"674","provider_name":"SCHOOL SETTLEMENT HOME ATTENDANT SERVICE CORP","hq_address_1":"357 Manhattan Ave","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11211","provider_ein":"112578076","latitude":"40.716381","longitude":"-73.946409","community_board":"301","council_district":"34","census_tract":"501","bin":"3068417","bbl":"3027480021","nta":"East Williamsburg"}
+,{"provider_id":"675","provider_name":"NEW YORK JUNIOR TENNIS LEAGUE INC"}
+,{"provider_id":"676","provider_name":"UPPER MANHATTAN MENTAL HEALTH CENTER, INC."}
+,{"provider_id":"677","provider_name":"BOYS AND GIRLS HARBOR INC"}
+,{"provider_id":"678","provider_name":"HOMES FOR THE HOMELESS INC"}
+,{"provider_id":"679","provider_name":"FOUNTAIN HOUSE, INC."}
+,{"provider_id":"680","provider_name":"HARLEM UNITED COMMUNITY AIDS CENTER, INC."}
+,{"provider_id":"681","provider_name":"COLORED GIRLS HUSTLE LLC"}
+,{"provider_id":"682","provider_name":"BALTIC STREET AEH, INC"}
+,{"provider_id":"683","provider_name":"GOODWILL INDUSTRIES OF GREATER NY & NORTHERN NEW JERSEY INC"}
+,{"provider_id":"684","provider_name":"RISING GROUND INC","hq_address_1":"463 HAWTHORNE AVE","hq_borough":"Not in NYC","hq_city":"YONKERS","hq_state":"NY","hq_zip":"10705","provider_ein":"13-1860451","provider_website":"www.RisingGround.org"}
+,{"provider_id":"685","provider_name":"COUNTY OF ROCKLAND"}
+,{"provider_id":"686","provider_name":"COMMUNITY HOUSE HOUSING DEVELOPMENT FUND COMPANY INC"}
+,{"provider_id":"687","provider_name":"BIRCH FAMILY SERVICES INC."}
+,{"provider_id":"689","provider_name":"VISITING NURSE SERVICE OF NEW YORK HOMECARE II"}
+,{"provider_id":"690","provider_name":"QUEENS BOROUGH PUBLIC LIBRARY"}
+,{"provider_id":"691","provider_name":"WELLLIFE NETWORK INC."}
+,{"provider_id":"692","provider_name":"GEEL COMMUNITY SERVICES INC"}
+,{"provider_id":"693","provider_name":"RENAISSANCE CHARTER SCHOOL"}
+,{"provider_id":"694","provider_name":"YESHIVATH KEHILATH YAKOV, INC."}
+,{"provider_id":"695","provider_name":"DREAMYARD PROJECT INC"}
+,{"provider_id":"696","provider_name":"NORTH BROOKLYN DEVELOPMENT CORPORATION"}
+,{"provider_id":"697","provider_name":"THE DOE FUND INC"}
+,{"provider_id":"698","provider_name":"THE JERICHO PROJECT"}
+,{"provider_id":"699","provider_name":"CECIL HOUSING DEVELOPMENT FUND"}
+,{"provider_id":"700","provider_name":"MUHLENBERG COMMUNITY HOUSING DEVELOPMENT FUND CORPORATION"}
+,{"provider_id":"701","provider_name":"SINERGIA INCORPORATED"}
+,{"provider_id":"702","provider_name":"COMMUNITY ASSISTANCE RESOURCES & EXTENDED SERVICES INC"}
+,{"provider_id":"703","provider_name":"CHILDREN OF PROMISE NYC"}
+,{"provider_id":"704","provider_name":"CARDINAL MCCLOSKEY SCHOOL & HOME FOR CHILDREN"}
+,{"provider_id":"705","provider_name":"URBAN PATHWAYS INC"}
+,{"provider_id":"706","provider_name":"PROVIDENCE HOUSE INC."}
+,{"provider_id":"707","provider_name":"BANDUJO ADVERTISING AND DESIGN, INC"}
+,{"provider_id":"708","provider_name":"RED HOOK INITIATIVE INC","hq_address_1":"767 Hicks St","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11231","provider_ein":"203904662","provider_website":"www.rhicenter.org","latitude":"40.676803","longitude":"-74.004705","community_board":"306","council_district":"38","census_tract":"59","bin":"3393808","bbl":"3005350001","nta":"Carroll Gardens-Columbia Street-Red Hook"}
+,{"provider_id":"709","provider_name":"POSTGRADUATE CENTER FOR MENTAL HEALTH"}
+,{"provider_id":"710","provider_name":"THE EPILEPSY INSTITUTE"}
+,{"provider_id":"711","provider_name":"VISIONS/SERVICES FOR THE BLIND AND VISUALLY IMPAIRED"}
+,{"provider_id":"712","provider_name":"WEST HARLEM GROUP ASSISTANCE INC"}
+,{"provider_id":"713","provider_name":"VOCATIONAL INSTRUCTION PROJECT COMMUNITY SERVICES INC"}
+,{"provider_id":"714","provider_name":"PUBLIC PREP CHARTER SCHOOL ACADEMIES"}
+,{"provider_id":"715","provider_name":"MORNINGSIDE CTR FOR TEACHING SOCIAL RESPONSIBILITY INC"}
+,{"provider_id":"716","provider_name":"1199 SEIU EMPLOYER CHILD CARE CORPORATION"}
+,{"provider_id":"717","provider_name":"ROCKAWAY DEVELOPMENT REVITALIZATION CORP","hq_address_1":"1920 MOTT AVE 2ND FL","hq_borough":"Queens","hq_city":"Far Rockaway","hq_state":"NY","hq_zip":"11691","provider_ein":"112575794","provider_website":"www.rdrc.org","latitude":"40.603898","longitude":"-73.752247","community_board":"414","council_district":"31","census_tract":"103202","bin":"4457760","bbl":"4155590012","nta":"Far Rockaway-Bayswater"}
+,{"provider_id":"718","provider_name":"PIBLY RESIDENTIAL PROGRAMS, INC."}
+,{"provider_id":"719","provider_name":"BERKSHIRE FARM CENTER & SERVICES FOR YOUTH"}
+,{"provider_id":"720","provider_name":"LUTHERAN SOCIAL SERVICES OF METROPOLITAN NEW YORK INC"}
+,{"provider_id":"721","provider_name":"THE CENTER FOR ARCHITECTURE INC"}
+,{"provider_id":"722","provider_name":"MADISON SQUARE BOYS & GIRLS CLUB INC"}
+,{"provider_id":"723","provider_name":"EXPANDED SCHOOLS INC"}
+,{"provider_id":"724","provider_name":"LEXINGTON CENTER FOR MENTAL HEALTH SERVICES INC"}
+,{"provider_id":"725","provider_name":"ST FRANCIS FRIENDS OF THE POOR INC"}
+,{"provider_id":"726","provider_name":"THE MOMENTUM PROJECT INC"}
+,{"provider_id":"727","provider_name":"AIDS CENTER OF QUEENS COUNTY INC ADVOCACY CENTER OF QUEENS"}
+,{"provider_id":"728","provider_name":"RICHMOND MEDICAL CENTER"}
+,{"provider_id":"729","provider_name":"CASITA MARIA INC"}
+,{"provider_id":"730","provider_name":"SERVICES FOR THE UNDERSERVED INC"}
+,{"provider_id":"731","provider_name":"PRAXIS HOUSING INITIATIVES INC"}
+,{"provider_id":"732","provider_name":"MEALS ON WHEELS OF STATEN ISLAND INC"}
+,{"provider_id":"733","provider_name":"BEAM CENTER INC"}
+,{"provider_id":"735","provider_name":"UNIQUE PEOPLE SERVICES INC."}
+,{"provider_id":"736","provider_name":"WELFARE RESEARCH, INC"}
+,{"provider_id":"737","provider_name":"UNITED CEREBRAL PALSY OF NEW YORK CITY INC"}
+,{"provider_id":"738","provider_name":"ISABELLA GERIATRIC CENTER INC."}
+,{"provider_id":"739","provider_name":"HEBREW EDUCATIONAL SOCIETY OF BROOKLYN"}
+,{"provider_id":"740","provider_name":"LOWER EASTSIDE SERVICE CENTER INC"}
+,{"provider_id":"741","provider_name":"ST. JOSEPH'S HOSPITAL"}
+,{"provider_id":"742","provider_name":"BREAKING GROUND HOUSING DEVELOPMENT FUND CORPORATION"}
+,{"provider_id":"743","provider_name":"ST LUKE'S-ROOSEVELT HOSPITAL CENTER"}
+,{"provider_id":"744","provider_name":"COMMUNITY RESOURCE EXCHANGE INC"}
+,{"provider_id":"745","provider_name":"PEERPLACE NETWORKS LLC"}
+,{"provider_id":"746","provider_name":"SINGLE PARENT RESOURCE CENTER INC"}
+,{"provider_id":"748","provider_name":"RECREATION ROOMS AND SETTLEMENT INC"}
+,{"provider_id":"749","provider_name":"A.F. PAREDES & CO."}
+,{"provider_id":"750","provider_name":"XINCON HOME-HEALTHCARE SERVICES INC."}
+,{"provider_id":"751","provider_name":"HOUR CHILDREN, INC"}
+,{"provider_id":"753","provider_name":"UNIVERSITY BEHAVIORAL ASSOCIATES,INC."}
+,{"provider_id":"754","provider_name":"NEW YORK AND PRESBYTERIAN HOSPITAL"}
+,{"provider_id":"755","provider_name":"RESEARCH TRIANGLE INSTITUTE"}
+,{"provider_id":"756","provider_name":"PADILLA & COMPANY LLP"}
+,{"provider_id":"757","provider_name":"CENTERLIGHT HEALTH SYSTEM INC"}
+,{"provider_id":"759","provider_name":"WESTCHESTER COUNTY"}
+,{"provider_id":"761","provider_name":"CHINESE-AMERICAN PLANNING COUNCIL HOME ATTENDANT PROGRAM INC","hq_address_1":"1 York St.","hq_address_2":"2 Floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10013","provider_ein":"133203211","latitude":"40.721085","longitude":"-74.005754","community_board":"101","council_district":"1","census_tract":"33","bin":"1002736","bbl":"1002127503","nta":"SoHo-TriBeCa-Civic Center-Little Italy"}
+,{"provider_id":"762","provider_name":"ARBOR E&T LLC","hq_address_1":"9901 Linn Station Road","hq_borough":"Bronx","hq_city":"Louisville","hq_state":"KY","hq_zip":"40223","provider_website":"https://www.rescare.com/"}
+,{"provider_id":"763","provider_name":"POMONOK HOME SERVICES INC","hq_address_1":"61-34 188 St","hq_address_2":"Suite 219","hq_borough":"Queens","hq_city":"Fresh Meadows","hq_state":"NY","hq_zip":"11365","provider_ein":"112694987","latitude":"40.739732","longitude":"-73.786165","community_board":"408","council_district":"23","census_tract":"1347","bin":"4439481","bbl":"4070750001","nta":"Fresh Meadows-Utopia"}
+,{"provider_id":"765","provider_name":"HARLEM RBI INCORPORATED"}
+,{"provider_id":"766","provider_name":"CAMBA LEGAL SERVICES","hq_address_1":"1720 Church Avenue","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11226","latitude":"40.649339","longitude":"-73.963307","community_board":"314","council_district":"40","census_tract":"512","bin":"3341487","bbl":"3050970085","nta":"Flatbush"}
+,{"provider_id":"767","provider_name":"CORE SERVICES GROUP, INC."}
+,{"provider_id":"768","provider_name":"NEIGHBORHOOD ASSOCIATION FOR INTER-CULTURAL AFFAIRS INC","hq_address_1":"1075 Grand Concourse","hq_borough":"Bronx","hq_city":"Bronx","hq_state":"NY","hq_zip":"10452","latitude":"40.831448","longitude":"-73.920162","community_board":"204","council_district":"16","census_tract":"195","bin":"2002889","bbl":"2024720011","nta":"West Concourse"}
+,{"provider_id":"769","provider_name":"THE PARTNERSHIP FOR THE HOMELESS INC"}
+,{"provider_id":"770","provider_name":"CLINTON HOUSING DEVELOPMENT COMPANY INC"}
+,{"provider_id":"771","provider_name":"MAXIMUS HUMAN SERVICES, INC."}
+,{"provider_id":"772","provider_name":"Brienzas Educare"}
+,{"provider_id":"773","provider_name":"THE BRONX DEFENDERS","hq_address_1":"360 East 161st Street","hq_borough":"Bronx","hq_city":"Bronx","hq_state":"NY","hq_zip":"10451","latitude":"40.824456","longitude":"-73.914732","community_board":"203","council_district":"17","census_tract":"141","bin":"2116642","bbl":"2024077501","nta":"Morrisania-Melrose"}
+,{"provider_id":"774","provider_name":"HOME CARE SERV FOR INDEPENDENT LIVING INC.","hq_address_1":"2044 Ocean Ave","hq_address_2":"Suite B4","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11230","provider_ein":"112516716","latitude":"40.612086","longitude":"-73.953826","community_board":"314","council_district":"48","census_tract":"546","bin":"3182045","bbl":"3067660036","nta":"Midwood"}
+,{"provider_id":"775","provider_name":"Voces Latinas Corp."}
+,{"provider_id":"776","provider_name":"ALI FORNEY CENTER"}
+,{"provider_id":"777","provider_name":"SAUTI YETU CENTER FOR AFRICAN WOMEN INC"}
+,{"provider_id":"778","provider_name":"STRIVE INTERNATIONAL INC"}
+,{"provider_id":"856","provider_name":"FRIENDS OF CROWN HEIGHTS EDUCATIONAL CENTERS INC"}
+,{"provider_id":"779","provider_name":"WHITE GLOVE COMMUNITY CARE INC","hq_address_1":"89 Bartlett St","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11206","provider_ein":"113270257","latitude":"40.702105","longitude":"-73.944975","community_board":"301","council_district":"33","census_tract":"507","bin":"3424167","bbl":"3022707501","nta":"Bedford"}
+,{"provider_id":"780","provider_name":"SOUTHEAST BRONX NEIGHBORHOOD CENTERS INC"}
+,{"provider_id":"781","provider_name":"PLANNED PARENTHOOD OF NYC INC"}
+,{"provider_id":"782","provider_name":"PUBLIC HEALTH SOLUTIONS"}
+,{"provider_id":"783","provider_name":"CENTER FOR EMPLOYMENT OPPORTUNITIES INC","hq_address_1":"50 Broadway","hq_address_2":"Suite 1604","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10004","provider_ein":"133843322","provider_website":"http://www.ceoworks.org","latitude":"40.706449","longitude":"-74.012761","community_board":"101","council_district":"1","census_tract":"9","bin":"1000813","bbl":"1000220024","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"784","provider_name":"THE HOPE PROGRAM INC"}
+,{"provider_id":"785","provider_name":"ODYSSEY HOUSE INC"}
+,{"provider_id":"786","provider_name":"WEST SIDE FEDERATION FOR SR & SUPPORTIVE HOUSING INC"}
+,{"provider_id":"787","provider_name":"RAJ SOMAS"}
+,{"provider_id":"788","provider_name":"THE ARTS CONNECTION INC"}
+,{"provider_id":"789","provider_name":"ST. MARY'S HDFC"}
+,{"provider_id":"790","provider_name":"THE SECOND HENRY STREET HDFC"}
+,{"provider_id":"791","provider_name":"ENSIGN ENGINEERING PC"}
+,{"provider_id":"792","provider_name":"HAMASPIK OF ROCKLAND COUNTY INC"}
+,{"provider_id":"793","provider_name":"NEW VENTURES CHARTER SCHOOL"}
+,{"provider_id":"794","provider_name":"ARGUS COMMUNITY INC"}
+,{"provider_id":"795","provider_name":"WEST BRONX HOUSING AND NEIGHBORHOOD RESOURCE CENTER INC"}
+,{"provider_id":"796","provider_name":"NEW YORK UNIVERSITY"}
+,{"provider_id":"797","provider_name":"African Refuge Inc"}
+,{"provider_id":"798","provider_name":"QED INC"}
+,{"provider_id":"799","provider_name":"HARLEM COMMONWEALTH COUNCIL INC.","hq_address_1":"361 West 125th Street","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10027","provider_ein":"136271908","provider_website":"https://harlemcommonwealth.org","latitude":"40.810952","longitude":"-73.953005","community_board":"109","council_district":"9","census_tract":"20901","bin":"1059308","bbl":"1019520009","nta":"Morningside Heights"}
+,{"provider_id":"800","provider_name":"GEN-PROBE SALES & SERVICE INC"}
+,{"provider_id":"801","provider_name":"BEER HAGOLAH INSTITUTES INC"}
+,{"provider_id":"802","provider_name":"COMPULINK TECHNOLOGIES INC"}
+,{"provider_id":"803","provider_name":"IMMIGRANT SOCIAL SERVICES INC"}
+,{"provider_id":"804","provider_name":"PKA TECHNOLOGIES, INC"}
+,{"provider_id":"805","provider_name":"WEST 28TH STREET CORP"}
+,{"provider_id":"806","provider_name":"BREAKING GROUND II HOUSING DEVELOPMENT FUND CORPORATION"}
+,{"provider_id":"807","provider_name":"INNOVATIVE CUSTOMER SOLUTIONS"}
+,{"provider_id":"808","provider_name":"GEEL COMMUNITY UNION AVENUE HDFC"}
+,{"provider_id":"809","provider_name":"WOODSTOCK HDFC FOR SENIOR CITIZENS"}
+,{"provider_id":"810","provider_name":"URBAN STRATEGIES INC"}
+,{"provider_id":"811","provider_name":"CONSCIENTIOUS MUSICAL REVUES"}
+,{"provider_id":"812","provider_name":"EAST HARLEM TUTORIAL PROGRAM INC"}
+,{"provider_id":"813","provider_name":"ACCENTCARE OF NEW YORK INC","hq_address_1":"27 Main St.","hq_borough":"Not in NYC","hq_city":"Yorker","hq_state":"NY","hq_zip":"10701","provider_ein":"731628974"}
+,{"provider_id":"814","provider_name":"Bridge Builders Community Partnership, Inc."}
+,{"provider_id":"815","provider_name":"MEDCO CONSULTANTS, INC"}
+,{"provider_id":"816","provider_name":"Hunts Point Alliance for Children"}
+,{"provider_id":"818","provider_name":"BROOKLYN CHILDRENS MUSEUM CORP"}
+,{"provider_id":"819","provider_name":"FORDHAM BEDFORD COMMUNITY SERVICES, INC."}
+,{"provider_id":"820","provider_name":"THERACARE NURSES REGISTRY LLC"}
+,{"provider_id":"821","provider_name":"LONG ISLAND JEWISH MEDICAL CENTER"}
+,{"provider_id":"822","provider_name":"THE MOUNT SINAI HOSPITAL"}
+,{"provider_id":"823","provider_name":"P2L PATHWAYS TO LEADERSHIP INC."}
+,{"provider_id":"824","provider_name":"HARLEM CHILDRENS ZONE INC"}
+,{"provider_id":"826","provider_name":"WEILL MEDICAL COLLEGE OF CORNELL UNIVERSITY"}
+,{"provider_id":"827","provider_name":"YMS MANAGEMENT ASSOCIATES INC"}
+,{"provider_id":"828","provider_name":"ECUMENICAL COMMUNITY DEVELOPMENT ORGANIZATION"}
+,{"provider_id":"829","provider_name":"BROOKLYN PROSPECT CHARTER SCHOOL"}
+,{"provider_id":"830","provider_name":"SHOREFRONT JEWISH COMMUNITY COUNCIL INC"}
+,{"provider_id":"831","provider_name":"DIVAS FOR SOCIAL JUSTICE INC."}
+,{"provider_id":"833","provider_name":"Apex for Youth Inc"}
+,{"provider_id":"834","provider_name":"LITERACY ASSISTANCE CENTER"}
+,{"provider_id":"835","provider_name":"OLDER ADULTS TECHNOLOGY SERVICES INC"}
+,{"provider_id":"837","provider_name":"After-School All-Stars"}
+,{"provider_id":"838","provider_name":"GIRLS EDUCATIONAL & MENTORING SERVICES"}
+,{"provider_id":"839","provider_name":"CENTRAL BROOKLYN ECONOMIC DEVELOPMENT CORP"}
+,{"provider_id":"840","provider_name":"CLAREMONT NEIGHBORHOOD CENTERS INC"}
+,{"provider_id":"841","provider_name":"COUNCIL OF PEOPLES ORGANIZATION INC"}
+,{"provider_id":"843","provider_name":"JEWISH COMMUNITY COUNCIL OF CANARSIE"}
+,{"provider_id":"844","provider_name":"EPISCOPAL HEALTH SERVICES INC"}
+,{"provider_id":"845","provider_name":"MCCLANAHAN ASSOCIATES INC"}
+,{"provider_id":"846","provider_name":"JOHN SNOW,INC"}
+,{"provider_id":"847","provider_name":"THE COMMITTEE FOR HISPANIC CHILDREN AND FAMILIES INC"}
+,{"provider_id":"848","provider_name":"AL-MADINAH SCHOOL INC."}
+,{"provider_id":"849","provider_name":"InnovateEDU Inc."}
+,{"provider_id":"851","provider_name":"COMMUNITY PARTNERSHIP CHARTER SCHOOL EDUCATION CORPORATION"}
+,{"provider_id":"852","provider_name":"IMEINU INC"}
+,{"provider_id":"853","provider_name":"MORRIS HGTS HLTH CTR"}
+,{"provider_id":"854","provider_name":"COUNSELING IN SCHOOLS INC"}
+,{"provider_id":"855","provider_name":"THE B.E.L.L. FOUNDATION, INC."}
+,{"provider_id":"857","provider_name":"NY TIBETAN SERVICE CENTER, INC."}
+,{"provider_id":"858","provider_name":"CENTERS FOR DISEASE CONTROL"}
+,{"provider_id":"859","provider_name":"BLACK SPECTRUM THEATER COMPANY INC"}
+,{"provider_id":"860","provider_name":"CROWN HEIGHTS JEWISH COMMUNITY COUNCIL INC"}
+,{"provider_id":"861","provider_name":"THE NOEL POINTER FOUNDATION INC."}
+,{"provider_id":"862","provider_name":"Together We Are"}
+,{"provider_id":"863","provider_name":"HOUSING AND FAMILY SERVICES OF GREATER NEW YORK INC"}
+,{"provider_id":"864","provider_name":"THE YOUNG WOMENS CHRISTIAN ASSOCIATION OF THE CITY OF NEW YO"}
+,{"provider_id":"865","provider_name":"HUMAN SERVICES COUNCIL OF NEW YORK"}
+,{"provider_id":"866","provider_name":"MARTIN DE PORRES GROUP HOMES"}
+,{"provider_id":"867","provider_name":"PURELEMENTS AN EVOLUTION IN DANCE INC"}
+,{"provider_id":"868","provider_name":"SI BEHAVIORAL NETWORK INC"}
+,{"provider_id":"869","provider_name":"COMMON GROUND MANAGEMENT CORP"}
+,{"provider_id":"870","provider_name":"TEAM FIRST INC."}
+,{"provider_id":"871","provider_name":"WESTON UNITED COMMUNITY RENEWAL INC."}
+,{"provider_id":"872","provider_name":"PALLADIA, INC.","hq_address_1":"305 Seventh Avenue","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10001","provider_ein":"23-7089380","provider_website":"www.sus.org","latitude":"40.746817","longitude":"-73.993655","community_board":"105","council_district":"3","census_tract":"95","bin":"1015060","bbl":"1008037502","nta":"Midtown-Midtown South"}
+,{"provider_id":"873","provider_name":"ART START INC"}
+,{"provider_id":"874","provider_name":"KINGS BAY YM -YWHA INC"}
+,{"provider_id":"875","provider_name":"MENTAL HEALTH PROVIDERS OF WESTERN QUEENS INC"}
+,{"provider_id":"876","provider_name":"BETH ISRAEL MEDICAL CENTER"}
+,{"provider_id":"877","provider_name":"HISPANIC AIDS FORUM, INC."}
+,{"provider_id":"878","provider_name":"WEST END RESIDENCES HDFC, INC."}
+,{"provider_id":"879","provider_name":"VIOLENCE INTERVENTION PROGRAM INC","hq_address_1":"P.O. Box 1161","hq_borough":"Bronx","hq_city":"New York","hq_state":"NY","hq_zip":"10035","provider_ein":"13-3540337","provider_website":"www.vipmujeres.org"}
+,{"provider_id":"880","provider_name":"KIPP ACADEMY CHARTER SCHOOL"}
+,{"provider_id":"881","provider_name":"ST DOMINICS FAMILY SERVICES"}
+,{"provider_id":"882","provider_name":"AMETHYST HOUSE INC."}
+,{"provider_id":"883","provider_name":"FUND FOR PUBLIC HEALTH IN NEW YORK INC"}
+,{"provider_id":"884","provider_name":"BARRIER FREE LIVING INC","hq_address_1":"637 EAST 138 STREET","hq_address_2":"Basement","hq_borough":"Bronx","hq_city":"Bronx","hq_state":"NY","hq_zip":"10454","provider_ein":"13-3059155","provider_website":"www.bflnyc.org","latitude":"40.805828","longitude":"-73.915128","community_board":"201","council_district":"8","census_tract":"2702","bin":"2119743","bbl":"2025510040","nta":"Mott Haven-Port Morris"}
+,{"provider_id":"885","provider_name":"FEDCAP REHABILITATION SERVICES INC","hq_address_1":"633 Third Ave, 6th Fl","hq_city":"New York","hq_state":"NY","hq_zip":"10017","provider_ein":"135645879","provider_website":"www.fedcap.org"}
+,{"provider_id":"886","provider_name":"XPOSURE FOUNDATION INC."}
+,{"provider_id":"887","provider_name":"ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI"}
+,{"provider_id":"888","provider_name":"82ND STREET ACADEMICS"}
+,{"provider_id":"889","provider_name":"CENTRAL QUEENS YM & YWHA INC"}
+,{"provider_id":"890","provider_name":"PLAY STUDY WIN INC."}
+,{"provider_id":"891","provider_name":"ADDY SYSTEMS LLC"}
+,{"provider_id":"892","provider_name":"CITY YEAR INC"}
+,{"provider_id":"893","provider_name":"NEW YORK COUNTY HEALTH SERVICES REVIEW ORGANIZATIONS INC","hq_address_1":"199 Water St","hq_address_2":"27 Floor","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10038","provider_ein":"237379635","latitude":"40.70727","longitude":"-74.004314","community_board":"101","council_district":"1","census_tract":"1502","bin":"1001162","bbl":"1000747501","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"894","provider_name":"Harriman Summer Camp, S-11 Inc"}
+,{"provider_id":"895","provider_name":"AMERICAN INSTITUTES FOR RESEARCH IN THE BEHAVIORAL SCIENCES"}
+,{"provider_id":"896","provider_name":"TOBY PROJECT INC"}
+,{"provider_id":"897","provider_name":"BROWNSVILLE COMMUNITY DEVELOPMENT CORPORATION"}
+,{"provider_id":"898","provider_name":"VARIETY BOYS AND GIRLS CLUB OF QUEENS INC"}
+,{"provider_id":"899","provider_name":"FARMERS MARKET FEDERATION OF NY"}
+,{"provider_id":"900","provider_name":"AMERICAN SOCIETY FOR THE PREVENTION OF CRUELTY TO ANIMALS"}
+,{"provider_id":"901","provider_name":"VILLAGE CENTER FOR CARE","hq_address_1":"120 Broadway","hq_address_2":"Suite 2840","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10271","provider_ein":"13-2911059","provider_website":"www.facebook.com/villagecareny","latitude":"40.708546","longitude":"-74.011041","community_board":"101","council_district":"1","census_tract":"7","bin":"1001026","bbl":"1000477501","nta":"Battery Park City-Lower Manhattan"}
+,{"provider_id":"902","provider_name":"STATEN ISLAND UNIVERSITY HOSPITAL"}
+,{"provider_id":"903","provider_name":"NURSE FAMILY PARTNERSHIP"}
+,{"provider_id":"904","provider_name":"ACACIA NETWORK HOUSING INC"}
+,{"provider_id":"905","provider_name":"COMMUNITY HEALTHCARE NETWORK, INC."}
+,{"provider_id":"906","provider_name":"DIASPORA COMMUNITY SERVICES INC"}
+,{"provider_id":"907","provider_name":"Brooklyn Plaza Medical Center, Inc."}
+,{"provider_id":"908","provider_name":"NEW YORK CITY HEALTH AND HOSP"}
+,{"provider_id":"909","provider_name":"PARTNERSHIP FOR AFTER SCHOOL EDUCATION"}
+,{"provider_id":"910","provider_name":"WILLIAM F RYAN COMMUNITY CENTER INC"}
+,{"provider_id":"911","provider_name":"AFRICAN AMERICAN PLANNING COMMISSION INC","hq_address_1":"PO Box 330-707","hq_borough":"Brooklyn","hq_city":"Brooklyn","hq_state":"NY","hq_zip":"11233","provider_ein":"11-3305070"}
+,{"provider_id":"912","provider_name":"RESEARCH FOUNDATION OF THE STATE UNIVERSITY OF NEW YORK"}
+,{"provider_id":"913","provider_name":"RFRS RADIOLOGY PC RADIOLOGY FILM READING"}
+,{"provider_id":"914","provider_name":"SUS-URGENT HOUSING PROGRAMS INC"}
+,{"provider_id":"915","provider_name":"RYAN/CHELSEA-CLINTON CHC"}
+,{"provider_id":"916","provider_name":"JAMAICA HOSPITAL MEDICAL CENTER"}
+,{"provider_id":"918","provider_name":"OPUS DANCE THEATRE & COMMUNITY SERVICES, INC."}
+,{"provider_id":"919","provider_name":"INTERBOROUGH DEVELOPMENTAL & CONSULTATION  CENTER, INC."}
+,{"provider_id":"920","provider_name":"FRIENDS OF ISLAND ACADEMY INC","hq_address_1":"127 West 127th Street, Suite 127","hq_city":"New York","hq_state":"NY","hq_zip":"10027","provider_ein":"133576756","provider_website":"friendsny.org"}
+,{"provider_id":"921","provider_name":"ABT ASSOCIATES INC"}
+,{"provider_id":"922","provider_name":"ECKERD YOUTH ALTERNATIVES INC"}
+,{"provider_id":"923","provider_name":"SUPPORT CENTER FOR NONPROFIT MANAGEMENT INC"}
+,{"provider_id":"925","provider_name":"FISCAL MANAGEMENT ASSOC, LLC"}
+,{"provider_id":"926","provider_name":"FACES NY, INC."}
+,{"provider_id":"927","provider_name":"PEOPLE CARE INC."}
+,{"provider_id":"928","provider_name":"NEW YORK FOUNDATION FOR SENIOR CITIZENS HOME ATTENDANT SVC","hq_address_1":"11 park Ave","hq_address_2":"Suite 1416","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10007","provider_ein":"133083582","latitude":"40.747378","longitude":"-73.98111","community_board":"106","council_district":"2","census_tract":"72","bin":"1018515","bbl":"1008900003","nta":"Murray Hill-Kips Bay"}
+,{"provider_id":"929","provider_name":"PERSONAL - TOUCH HOME CARE OF N.Y., INC."}
+,{"provider_id":"930","provider_name":"IRIS HOUSE: A CENTER FOR WOMEN LIVING WITH HIV, INC."}
+,{"provider_id":"931","provider_name":"GALLAGHER & CO. ADJUSTERS INC."}
+,{"provider_id":"932","provider_name":"FORESTDALE INC"}
+,{"provider_id":"933","provider_name":"MORNINGSIDE RETIREMENT AND HEALTH SERVICES INC"}
+,{"provider_id":"934","provider_name":"HEALTH RESEARCH INC"}
+,{"provider_id":"935","provider_name":"NEW YORK FOUNDATION FOR SENIOR CITIZENS GUARDIAN SERVICES IN","hq_address_1":"11 Park Place","hq_address_2":"Suite 1116","hq_borough":"Manhattan","hq_city":"New York","hq_state":"NY","hq_zip":"10007","provider_ein":"13-3501671","provider_website":"www.nyfsc.org","latitude":"40.712828","longitude":"-74.008296","community_board":"101","council_district":"1","census_tract":"21","bin":"1001399","bbl":"1001240004","nta":"SoHo-TriBeCa-Civic Center-Little Italy"}
+,{"provider_id":"936","provider_name":"PENN SOUTH SOCIAL SERVICES INC"}
+,{"provider_id":"937","provider_name":"GOTHAM PER DIEM INC"}
+,{"provider_id":"938","provider_name":"HOUSING WORKS INC"}
+,{"provider_id":"939","provider_name":"RIVERSIDE LANGUAGE PROGRAM INC"}
+,{"provider_id":"940","provider_name":"VENTURE HOUSE INC"}
+,{"provider_id":"941","provider_name":"RICHMOND HOME NEED SERVICES INC"}
+,{"provider_id":"942","provider_name":"ALLEN WOMEN'S RESOURCE CENTER LTD","hq_address_1":"PO Box 340316","hq_borough":"Queens","hq_city":"11434","hq_state":"NY","hq_zip":"11434","provider_ein":"11-2822398","provider_website":"awrcny.org"}
+,{"provider_id":"943","provider_name":"EDEN II SCHOOL FOR AUTISTIC CHILDREN INC"}
+,{"provider_id":"944","provider_name":"SPRING CREEK SENIOR PARTNERS, INC"}
+,{"provider_id":"945","provider_name":"ASSOCIATION FOR NEUROGICALLY IMPAIRED BRAIN INJURED CHILDREN"}
+,{"provider_id":"946","provider_name":"UNIVERSITY CONSULTATION AND TREATMENT CENTER FOR MENTAL HYGI"}
+,{"provider_id":"947","provider_name":"EDUCATIONAL DATA SYSTEMS INC","hq_address_1":"15300 Commerce Drive North","hq_address_2":"Ste 200","hq_city":"Dearborn","hq_state":"MI","hq_zip":"48120","provider_website":"https://www.edsisolutions.com/"}
+,{"provider_id":"948","provider_name":"THE GUILD FOR EXCEPTIONAL CHILDREN INC"}
+,{"provider_id":"950","provider_name":"COLUMBA SERVICES,  INC."}
+,{"provider_id":"951","provider_name":"CITYBRIDGE LLC"}
+,{"provider_id":"952","provider_name":"EMPLOYMENT PROGRAM FOR RECOVERED ALCOHOLICS, INC"}
+,{"provider_id":"953","provider_name":"THE CENTER FOR FAMILY SUPPORT, INC."}
+,{"provider_id":"954","provider_name":"CLINTON HOUSING DEVELOPMENT CO INC"}
+,{"provider_id":"955","provider_name":"RUTGERS THE STATE UNIVERSITY OF NEW JERSEY"}
+,{"provider_id":"956","provider_name":"AMERICA WORKS OF NEW YORK INC"}
+,{"provider_id":"957","provider_name":"FREEDOM HOUSE FOR PEOPLE WITH DISABLILITIES, INC."}
+,{"provider_id":"958","provider_name":"Food First Family Project Inc"}
+,{"provider_id":"959","provider_name":"COMPREHENSIVE YOUTH  DEVELOPMENT INC"}
+,{"provider_id":"961","provider_name":"EMERGENCY SKILLS INC"}
+,{"provider_id":"962","provider_name":"AMERICAN ITALIAN COALITION OF ORGANIZATIONS"}
+,{"provider_id":"963","provider_name":"CONVENT AVENUE BAPTIST CHURCH"}
+,{"provider_id":"965","provider_name":"ST JOHN/ST MATTHEW EMMANUEL LUTHERAN CHURCH Y"}
+,{"provider_id":"967","provider_name":"NORTHWELL HEALTH LABORATORIES"}
+,{"provider_id":"970","provider_name":"WOMEN'S PRISON ASSOCIATION & HOME INC"}
+,{"provider_id":"973","provider_name":"EPILEPSY INSTITUTE"}
+,{"provider_id":"974","provider_name":"EAST HARLEM COUNCIL FOR COMM IMPROVEMENT INC"}
+,{"provider_id":"975","provider_name":"NEW YORK ROAD RUNNERS, INC."}
+,{"provider_id":"976","provider_name":"GOWANUS CANAL CONSERVANCY INC"}
+,{"provider_id":"977","provider_name":"BROOKLYN KINGS COUNTY HISPANIC CHAMBER OF COMMERCE"}
+,{"provider_id":"978","provider_name":"WNET"}
+,{"provider_id":"979","provider_name":"QUEENS ECONOMIC DEVELOPMENT CORPORATION"}
+,{"provider_id":"980","provider_name":"WESTCHESTER SQUARE DISTRICT MANAGEMENT ASSOCIATION INC"}
+,{"provider_id":"982","provider_name":"Faith At Work Christian Church"}
+,{"provider_id":"984","provider_name":"TEACHERS AND WRITERS COLLABORATIVE"}
+,{"provider_id":"985","provider_name":"VOCAL VILLAGE INC"}
+,{"provider_id":"987","provider_name":"ASTORIA PERFORMING ARTS CENTER INC"}
+,{"provider_id":"988","provider_name":"HSS SCREENING AND EARLY DETECTION INC."}
+,{"provider_id":"989","provider_name":"GERRITSEN BEACH CARES INC"}
+,{"provider_id":"990","provider_name":"SAKHI FOR SOUTH ASIAN WOMEN"}
+,{"provider_id":"991","provider_name":"Tell Every Amazing Lady About Ovarian Cancer Louisa M McGre"}
+,{"provider_id":"1002","provider_name":"Accion East, Inc."}
+,{"provider_id":"1016","provider_name":"CHINATOWN DISTRICT MANAGEMENT ASSOCIATION INC"}
+,{"provider_id":"1022","provider_name":"NEW YORK SUN WORKS INC."}
+,{"provider_id":"1026","provider_name":"LEGAL MOMENTUM"}
+,{"provider_id":"1028","provider_name":"INTERNATIONAL LANGUAGE SERVICES INC"}
+,{"provider_id":"1030","provider_name":"THE NEW BRONX CHAMBER OF COMMERCE, INC."}
+,{"provider_id":"1031","provider_name":"BROOKLYN ARTS COUNCIL INC"}
+,{"provider_id":"1038","provider_name":"MOSHOLU PRESERVATION CORP"}
+,{"provider_id":"1044","provider_name":"BIG APPLE GREETER INC"}
+,{"provider_id":"1052","provider_name":"EVERGREEN INC - YOUR NORTH BROOKLYN BUSINESS EXCHANGE"}
+,{"provider_id":"1053","provider_name":"SUNNYSIDE DISTRICT MANAGEMENT ASSOCIATION INC"}
+,{"provider_id":"1061","provider_name":"BELMONT DISTRICT MANAGEMENT ASSOCIATION INC"}
+,{"provider_id":"1065","provider_name":"CHURCH AVE DMA"}
+,{"provider_id":"1074","provider_name":"ALVIN AILEY DANCE FOUNDATION INC."}
+,{"provider_id":"1083","provider_name":"CARNEGIE HILL NEIGHBORS INC"}
+,{"provider_id":"1088","provider_name":"WEST BRIGHTON COMMUNITY LOCAL DEVELOPMENT CORP"}
+,{"provider_id":"1091","provider_name":"PUBLICOLOR INC"}
+,{"provider_id":"1092","provider_name":"HARLEM BUSINESS ALLIANCE INC"}
+,{"provider_id":"1099","provider_name":"CENTRAL FULTON STREET DISTRICT MANAGEMENT ASSOCIATION INC"}
+,{"provider_id":"1100","provider_name":"VOLUNTEERS OF LEGAL SERVICE INC."}
+,{"provider_id":"1101","provider_name":"BROOKLYN ACADEMY OF MUSIC"}
+,{"provider_id":"1104","provider_name":"ALLEN AME NEIGHBORHOOD PRESERVATION & DEVELOPMENT CORP"}
+,{"provider_id":"1107","provider_name":"FOURTH ARTS BLOCK, INC."}
+,{"provider_id":"1108","provider_name":"NEW YORK WOMENS CHAMBER OF COMMERCE INC"}
+,{"provider_id":"1109","provider_name":"UPPER WEST STRATEGIES LLC"}
+,{"provider_id":"1111","provider_name":"20/20 VISION FOR SCHOOLS INC."}
+,{"provider_id":"1113","provider_name":"GROUNDSWELL COMMUNITY MURAL PROJECT INC."}
+,{"provider_id":"1117","provider_name":"STATEN ISLAND NFP ASSOCIATION INC"}
+,{"provider_id":"1120","provider_name":"PURSUIT TRANSFORMATION COMPANY INC"}
+,{"provider_id":"1124","provider_name":"BRIC ARTS MEDIA BKLYN, INC."}
+,{"provider_id":"1132","provider_name":"COUNCIL ON THE ENVIRONMENT INC"}
+,{"provider_id":"1139","provider_name":"YOUTH REFERRAL & PLACEMENT UNIT INC"}
+,{"provider_id":"1141","provider_name":"CITY UNIVERSITY OF NEW YORK SENIOR COLLEGES"}
+,{"provider_id":"1146","provider_name":"HARLEM PARK TO PARK"}
+,{"provider_id":"1147","provider_name":"WOODHAVEN DISTRICT MANAGEMENT ASSOCIATION INC"}
+,{"provider_id":"1148","provider_name":"PRATT AREA COMMUNITY COUNCIL INC"}
+,{"provider_id":"1152","provider_name":"FIFTH AVE ASSOCIATION BID"}
+,{"provider_id":"1153","provider_name":"FLATBUSH AVE DMA"}
+,{"provider_id":"1154","provider_name":"ROW NEW YORK INC"}
+,{"provider_id":"1156","provider_name":"PITKIN AVENUE DISTRICT MANAGEMENT ASSOCIATION INC"}]

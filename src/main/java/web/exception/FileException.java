@@ -1,4 +1,4 @@
-package main.java.web.exception;
+package web.exception;
 
 /**
  * @author Tian Qi Qing

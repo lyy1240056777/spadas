@@ -1,0 +1,845 @@
+[{"organization_id":"1","name":"LEGAL SERVICES NYC","tax_id":"13-2600199"}
+,{"organization_id":"2","name":"THE LEGAL AID SOCIETY","tax_id":"13-5562265"}
+,{"organization_id":"3","name":"GOODWILL INDUSTRIES OF GREATER NEW YORK AND NORTHERN NEW JERSEY INC","tax_id":"13-1641068"}
+,{"organization_id":"4","name":"AMERICA WORKS OF NEW YORK INC","tax_id":"04-3030234"}
+,{"organization_id":"5","name":"FEDCAP REHABILITATION SERVICES INC","tax_id":"13-5645879"}
+,{"organization_id":"6","name":"NATIONAL ASSOCIATION ON DRUG ABUSE PROBLEMS (NEW YORK STATE) INC","tax_id":"13-3185808"}
+,{"organization_id":"7","name":"EDUCATIONAL DATA SYSTEMS INC","tax_id":"38-2272565"}
+,{"organization_id":"8","name":"DB GRANT ASSOCIATES INC","tax_id":"13-3961389"}
+,{"organization_id":"9","name":"MAXIMUS HUMAN SERVICES INC","tax_id":"45-0553376"}
+,{"organization_id":"10","name":"GAY MEN'S HEALTH CRISIS INC","tax_id":"13-3130146"}
+,{"organization_id":"11","name":"SANCTUARY FOR FAMILIES INC","tax_id":"13-3193119"}
+,{"organization_id":"12","name":"COMMUNITY MEDIATION SERVICES INC","tax_id":"11-2663007"}
+,{"organization_id":"13","name":"NEW YORK CITY GAY AND LESBIAN ANTI-VIOLENCE PROJECT INC","tax_id":"13-3149200"}
+,{"organization_id":"14","name":"BARRIER FREE LIVING INC","tax_id":"13-3059155"}
+,{"organization_id":"15","name":"HELP SOCIAL SERVICE CORPORATION","tax_id":"13-3678724"}
+,{"organization_id":"16","name":"NEW YORK ASIAN WOMEN'S CENTER INC","tax_id":"13-3286250"}
+,{"organization_id":"17","name":"URBAN JUSTICE CENTER","tax_id":"13-3442022"}
+,{"organization_id":"18","name":"EDWIN GOULD SERVICES FOR CHILDREN AND FAMILIES","tax_id":"13-5675643"}
+,{"organization_id":"19","name":"SEAMEN'S SOCIETY FOR CHILDREN AND FAMILIES","tax_id":"13-5563010"}
+,{"organization_id":"20","name":"VIOLENCE INTERVENTION PROGRAM INC","tax_id":"13-3540337"}
+,{"organization_id":"21","name":"HRA"}
+,{"organization_id":"22","name":"CAMBA INC","tax_id":"11-2480339"}
+,{"organization_id":"23","name":"CATHOLIC CHARITIES NEIGHBORHOOD SERVICES INC","tax_id":"11-2047151"}
+,{"organization_id":"24","name":"BRONXWORKS INC","tax_id":"13-3254484"}
+,{"organization_id":"25","name":"CATHOLIC CHARITIES COMMUNITY SERVICES ARCHDIOCESE OF NEW YORK","tax_id":"13-5562185"}
+,{"organization_id":"26","name":"RISEBORO"}
+,{"organization_id":"27","name":"SUS - URGENT HOUSING PROGRAMS INC","tax_id":"32-0353562"}
+,{"organization_id":"28","name":"EAST SIDE HOUSE INC","tax_id":"13-1623989"}
+,{"organization_id":"29","name":"HENRY STREET SETTLEMENT","tax_id":"13-1562242"}
+,{"organization_id":"30","name":"BEDFORD-STUYVESANT RESTORATION CORPORATION","tax_id":"11-6083182"}
+,{"organization_id":"31","name":"ARBOR E&T LLC","tax_id":"46-0508470"}
+,{"organization_id":"32","name":"URBAN UPBOUND"}
+,{"organization_id":"33","name":"JEWISH COMMUNITY COUNCIL OF GREATER CONEY ISLAND INC","tax_id":"11-2665181"}
+,{"organization_id":"34","name":"CENTER FOR THE ELIMINATION OF VIOLENCE IN THE FAMILY INC","tax_id":"11-2415837"}
+,{"organization_id":"35","name":"DAY ONE NEW YORK INC","tax_id":"06-1103000"}
+,{"organization_id":"36","name":"THE BOYS' CLUB OF NEW YORK","tax_id":"13-5591750"}
+,{"organization_id":"37","name":"BRONXCONNECT"}
+,{"organization_id":"38","name":"BROOKLYN COMMUNITY SERVICES/BROOKLYN BUREAU OF COMMUNITY SERVICE"}
+,{"organization_id":"39","name":"CDI"}
+,{"organization_id":"40","name":"CENTRAL QUEENS Y"}
+,{"organization_id":"41","name":"CEO"}
+,{"organization_id":"42","name":"CHCF"}
+,{"organization_id":"43","name":"EXALT YOUTH","tax_id":"20-5540955"}
+,{"organization_id":"44","name":"FORESTDALE INC","tax_id":"11-1631747"}
+,{"organization_id":"45","name":"FUTURES AND OPTIONS","tax_id":"13-4063658"}
+,{"organization_id":"46","name":"GOOD SHEPHERD SERVICES","tax_id":"13-5598710"}
+,{"organization_id":"47","name":"GOSO"}
+,{"organization_id":"48","name":"GRAHAM WINDHAM","tax_id":"13-2926426"}
+,{"organization_id":"49","name":"HEARTSHARE / ST VINCENT'S SERVICES INC"}
+,{"organization_id":"50","name":"THE HUDSON GUILD","tax_id":"13-5562989"}
+,{"organization_id":"51","name":"JCCA"}
+,{"organization_id":"52","name":"MOSHOLU MONTEFIORE COMMUNITY CENTER INC","tax_id":"13-3622107"}
+,{"organization_id":"53","name":"NEW YORK FOUNDLING HOSPITAL"}
+,{"organization_id":"54","name":"NYU LUTHERAN FAMILY HEALTH CENTER"}
+,{"organization_id":"55","name":"OSBORNE ASSOCIATION INC"}
+,{"organization_id":"56","name":"QUEENS COMMUNITY HOUSE INC","tax_id":"11-2375583"}
+,{"organization_id":"57","name":"RECONNECT"}
+,{"organization_id":"58","name":"RED HOOK INITIATIVE INC","tax_id":"20-3904662"}
+,{"organization_id":"59","name":"ROCKING THE BOAT INC","tax_id":"13-4177814"}
+,{"organization_id":"60","name":"SAMUEL FIELD YM & YWHA INC","tax_id":"11-3071518"}
+,{"organization_id":"61","name":"SHELTERING ARMS CHILDREN AND FAMILY SERVICES INC","tax_id":"13-3709095"}
+,{"organization_id":"62","name":"SOBRO"}
+,{"organization_id":"63","name":"STANLEY M ISAACS NEIGHBORHOOD CENTER INC","tax_id":"13-2572034"}
+,{"organization_id":"64","name":"STRIVE"}
+,{"organization_id":"65","name":"SUNNYSIDE COMMUNITY SERVICES INC","tax_id":"51-0189327"}
+,{"organization_id":"66","name":"THE CHILDREN'S AID SOCIETY","tax_id":"13-5562191"}
+,{"organization_id":"67","name":"THE HOPE PROGRAM INC","tax_id":"13-3268539"}
+,{"organization_id":"68","name":"THE KNOWLEDGE HOUSE FELLOWSHIP INC","tax_id":"47-2056164"}
+,{"organization_id":"69","name":"THE NEW JEWISH HOME"}
+,{"organization_id":"70","name":"UNION SETTLEMENT ASSOCIATION INC","tax_id":"13-1632530"}
+,{"organization_id":"71","name":"YOUTH ACTION"}
+,{"organization_id":"72","name":"YWCA BROOKLYN"}
+,{"organization_id":"73","name":"EAST RIVER DEVELOPMENT ALLIANCE INC","tax_id":"86-1096987"}
+,{"organization_id":"74","name":"NEW YORK FOUNDATION FOR SENIOR CITIZENS GUARDIAN SERVICES INC","tax_id":"13-3501671"}
+,{"organization_id":"75","name":"SELFHELP COMMUNITY SERVICES INC","tax_id":"13-1624178"}
+,{"organization_id":"76","name":"THE JEWISH ASSOCIATION FOR SERVICES FOR THE AGED","tax_id":"13-2620896"}
+,{"organization_id":"77","name":"TRANSITIONAL SERVICES FOR NEW YORK INC","tax_id":"23-7376074"}
+,{"organization_id":"78","name":"VILLAGE CENTER FOR CARE","tax_id":"13-2911059"}
+,{"organization_id":"79","name":"ASIAN AMERICANS FOR EQUALITY INC","tax_id":"13-3187792"}
+,{"organization_id":"80","name":"BOOM!HEALTH","tax_id":"13-3599121"}
+,{"organization_id":"81","name":"BORO PARK JEWISH COMMUNITY COUNCIL","tax_id":"11-3475993"}
+,{"organization_id":"82","name":"BOYS & GIRLS CLUB OF METRO QUEENS INC","tax_id":"11-1966067"}
+,{"organization_id":"83","name":"BROOKLYN CHINESE-AMERICAN ASSOCIATION INC","tax_id":"11-3065859"}
+,{"organization_id":"84","name":"BROOKLYN DEFENDER SERVICES","tax_id":"11-3305406"}
+,{"organization_id":"85","name":"BROOKLYN LEGAL SERVICES CORPORATION A","tax_id":"13-2605599"}
+,{"organization_id":"86","name":"CAMBA LEGAL SERVICES INC","tax_id":"11-3153831"}
+,{"organization_id":"87","name":"CARIBBEAN WOMEN'S HEALTH ASSOCIATION INC","tax_id":"13-3323168"}
+,{"organization_id":"88","name":"CATHOLIC MIGRATION SERVICES INC","tax_id":"11-2634818"}
+,{"organization_id":"89","name":"CENTRAL AMERICAN LEGAL ASSISTANCE","tax_id":"11-2859151"}
+,{"organization_id":"90","name":"COMPREHENSIVE DEVELOPMENT INC","tax_id":"13-3861648"}
+,{"organization_id":"91","name":"COUNCIL OF JEWISH ORGANIZATIONS OF FLATBUSH INC","tax_id":"11-2864728"}
+,{"organization_id":"92","name":"EMERALD ISLE IMMIGRATION CENTER INC","tax_id":"11-2932528"}
+,{"organization_id":"93","name":"EVICTION INTERVENTION SERVICES","tax_id":"13-3311582"}
+,{"organization_id":"94","name":"GODDARD RIVERSIDE COMMUNITY CENTER","tax_id":"13-1893908"}
+,{"organization_id":"95","name":"HANAC INC","tax_id":"11-2290832"}
+,{"organization_id":"96","name":"HOUSING CONSERVATION COORDINATORS INC","tax_id":"51-0141489"}
+,{"organization_id":"97","name":"LSNY -BRONX CORPORATION","tax_id":"16-1759590"}
+,{"organization_id":"98","name":"MAKE THE ROAD NEW YORK","tax_id":"11-3344389"}
+,{"organization_id":"99","name":"MANHATTAN LEGAL SERVICES","tax_id":"13-2613958"}
+,{"organization_id":"100","name":"MFY LEGAL SERVICES INC"}
+,{"organization_id":"101","name":"MINKWON CENTER FOR COMMUNITY ACTION INC","tax_id":"11-2710506"}
+,{"organization_id":"102","name":"NEIGHBORHOOD ASSOCIATION FOR INTER-CULTURAL AFFAIRS INC","tax_id":"13-2995128"}
+,{"organization_id":"103","name":"NEW YORK LAWYERS FOR THE PUBLIC INTEREST INC","tax_id":"13-2860703"}
+,{"organization_id":"104","name":"NEW YORK LEGAL ASSISTANCE GROUP INC","tax_id":"13-3505428"}
+,{"organization_id":"105","name":"NORTHERN MANHATTAN COALITION FOR IMMIGRANT'S RIGHTS","tax_id":"13-3255591"}
+,{"organization_id":"106","name":"NORTHERN MANHATTAN IMPROVEMENT CORPORATION","tax_id":"13-2972415"}
+,{"organization_id":"107","name":"POLISH AND SLAVIC CENTER INC","tax_id":"11-2285970"}
+,{"organization_id":"108","name":"QUEENS LEGAL SERVICES CORPORATION","tax_id":"13-2605604"}
+,{"organization_id":"109","name":"RIDGEWOOD BUSHWICK SENIOR CITIZENS COUNCIL INC","tax_id":"11-2453853"}
+,{"organization_id":"110","name":"SAFE HORIZON INC","tax_id":"13-2946970"}
+,{"organization_id":"111","name":"SBH COMMUNITY SERVICE NETWORK INC","tax_id":"23-7406410"}
+,{"organization_id":"112","name":"THE ANSOB CENTER FOR REFUGEES INC","tax_id":"11-3534833"}
+,{"organization_id":"113","name":"THE BRONX DEFENDERS","tax_id":"13-3931074"}
+,{"organization_id":"114","name":"THE DOOR - A CENTER OF ALTERNATIVES INC","tax_id":"13-6127348"}
+,{"organization_id":"115","name":"THE HAITIAN AMERICANS UNITED FOR PROGRESS INC","tax_id":"11-2423857"}
+,{"organization_id":"116","name":"UNITED JEWISH ORGANIZATIONS OF WILLIAMSBURG INC","tax_id":"11-2728233"}
+,{"organization_id":"117","name":"UNLOCAL INC","tax_id":"41-2278265"}
+,{"organization_id":"118","name":"VERA INSTITUTE OF JUSTICE INC","tax_id":"13-1941627"}
+,{"organization_id":"119","name":"WEST BRONX HOUSING AND NEIGHBORHOOD RESOURCE CENTER INC","tax_id":"13-2941841"}
+,{"organization_id":"120","name":"YOUTH MINISTRIES FOR PEACE AND JUSTICE","tax_id":"13-4006535"}
+,{"organization_id":"121","name":"SOUTH ASIAN YOUTH ACTION (SAYA!) INC","tax_id":"13-3943630"}
+,{"organization_id":"122","name":"BOYS & GIRLS HARBOR INC","tax_id":"13-6015256"}
+,{"organization_id":"123","name":"JOHN W. LAVELLE PREPARATORY CHARTER SCHOOL"}
+,{"organization_id":"124","name":"GLOBAL KIDS INC","tax_id":"13-3629485"}
+,{"organization_id":"125","name":"MANHATTAN YOUTH RECREATION AND RESOURCES INC","tax_id":"13-3323378"}
+,{"organization_id":"126","name":"THE EDUCATIONAL ALLIANCE INC","tax_id":"13-5562210"}
+,{"organization_id":"127","name":"UNIVERSITY SETTLEMENT SOCIETY OF NEW YORK INC","tax_id":"13-5562374"}
+,{"organization_id":"128","name":"YMCA OF GREATER NEW YORK/CORPORATE"}
+,{"organization_id":"129","name":"COALITION FOR HISPANIC FAMILY SERVICES","tax_id":"13-3546023"}
+,{"organization_id":"130","name":"JEWISH COMMUNITY CENTER OF STATEN ISLAND INC","tax_id":"13-5562256"}
+,{"organization_id":"131","name":"POLICE ATHLETIC LEAGUE INC","tax_id":"13-5596811"}
+,{"organization_id":"132","name":"AFTER-SCHOOL ALL-STARS","tax_id":"95-4441208"}
+,{"organization_id":"133","name":"PRATT AREA COMMUNITY COUNCIL INC","tax_id":"11-2451752"}
+,{"organization_id":"134","name":"UNITED ACTIVITIES UNLIMITED INC","tax_id":"13-2921483"}
+,{"organization_id":"135","name":"PHIPPS NEIGHBORHOODS INC","tax_id":"13-2707665"}
+,{"organization_id":"136","name":"AMERICAN INSTITUTES FOR RESEARCH","tax_id":"25-0965219"}
+,{"organization_id":"137","name":"BERGEN BASIN COMMUNITY DEVELOPMENT CORPORATION","tax_id":"11-3199040"}
+,{"organization_id":"138","name":"PARTNERSHIP WITH CHILDREN INC","tax_id":"13-5596751"}
+,{"organization_id":"139","name":"SESAME FLYERS INTERNATIONAL INC","tax_id":"11-2692485"}
+,{"organization_id":"140","name":"SPORTS AND ARTS IN SCHOOL FOUNDATION INC","tax_id":"11-3112635"}
+,{"organization_id":"141","name":"WESTHAB INC","tax_id":"06-1064281"}
+,{"organization_id":"142","name":"THE LOWER EASTSIDE GIRLS CLUB OF NEW YORK INC","tax_id":"13-3942063"}
+,{"organization_id":"143","name":"ST NICKS ALLIANCE CORP.","tax_id":"51-0192170"}
+,{"organization_id":"144","name":"BROOKLYN BUREAU OF COMMUNITY SERVICES","tax_id":"11-1630780"}
+,{"organization_id":"145","name":"THE GREATER RIDGEWOOD YOUTH COUNCIL INC","tax_id":"11-2518141"}
+,{"organization_id":"146","name":"SCAN-NEW YORK VOLUNTEER PARENT-AIDES ASSOCIATION INC","tax_id":"13-2912963"}
+,{"organization_id":"147","name":"RESEARCH FOUNDATION OF THE CITY UNIVERSITY OF NEW YORK","tax_id":"13-1988190"}
+,{"organization_id":"148","name":"JACOB A RIIS NEIGHBORHOOD SETTLEMENT","tax_id":"11-1729398"}
+,{"organization_id":"149","name":"CITY YEAR INC","tax_id":"22-2882549"}
+,{"organization_id":"150","name":"BERGEN BEACH YOUTH ORGANIZATION INC","tax_id":"11-2598350"}
+,{"organization_id":"151","name":"YMCA OF GREATER NEW YORK/CROSS ISLAND"}
+,{"organization_id":"152","name":"GIRLS INCORPORATED OF NEW YORK CITY","tax_id":"13-4028433"}
+,{"organization_id":"153","name":"NEW YORK CENTER FOR INTERPERSONAL DEVELOPMENT INC","tax_id":"23-7085239"}
+,{"organization_id":"154","name":"CITY PARKS FOUNDATION INC","tax_id":"13-3561657"}
+,{"organization_id":"155","name":"P2L PATHWAYS TO LEADERSHIP","tax_id":"38-3886413"}
+,{"organization_id":"156","name":"SHOREFRONT YM-YWHA OF BRIGHTON-MANHATTAN BEACH INC","tax_id":"11-3070228"}
+,{"organization_id":"157","name":"TEAM FIRST INC","tax_id":"27-5273049"}
+,{"organization_id":"158","name":"PLAY STUDY WIN INC","tax_id":"26-1486500"}
+,{"organization_id":"159","name":"CONSCIENTIOUS MUSICAL REVUES CORPORATION","tax_id":"06-1278112"}
+,{"organization_id":"160","name":"YMCA OF GREATER NEW YORK/JAMAICA BRANCH"}
+,{"organization_id":"161","name":"SOUTHERN QUEENS PARK ASSOCIATION INC","tax_id":"11-2432846"}
+,{"organization_id":"162","name":"DREAMYARD PROJECT INC","tax_id":"13-3759661"}
+,{"organization_id":"163","name":"FEDERATION OF ITALIAN-AMERICAN ORGANIZATIONS OF BROOKLYN LTD","tax_id":"11-2507910"}
+,{"organization_id":"164","name":"BLACK SPECTRUM THEATRE COMPANY INC","tax_id":"51-0135262"}
+,{"organization_id":"165","name":"THE SALVATION ARMY","tax_id":"13-5562351"}
+,{"organization_id":"166","name":"BROOKLYN CHILDREN'S MUSEUM CORPORATION","tax_id":"11-2495664"}
+,{"organization_id":"167","name":"FLATBUSH DEVELOPMENT CORPORATION","tax_id":"51-0188251"}
+,{"organization_id":"168","name":"YWCA OF THE CITY OF NEW YORK (MAIN BRANCH)"}
+,{"organization_id":"169","name":"GRAND STREET SETTLEMENT INC","tax_id":"13-5562230"}
+,{"organization_id":"170","name":"SAUTI YETU CENTER FOR AFRICAN WOMEN INC","tax_id":"20-1209795"}
+,{"organization_id":"171","name":"ASPIRA OF NEW YORK INC","tax_id":"13-6204790"}
+,{"organization_id":"172","name":"LEARNING THROUGH AN EXPANDED ARTS PROGRAM INC","tax_id":"13-2925233"}
+,{"organization_id":"173","name":"POLICY STUDIES ASSOCIATES INC","tax_id":"52-1265755"}
+,{"organization_id":"174","name":"COMMUNITY PARTNERSHIP CHARTER SCHOOL EDUCATION CORPORATION","tax_id":"13-4120509"}
+,{"organization_id":"175","name":"EL PUENTE DE WILLIAMSBURG INC","tax_id":"11-2614265"}
+,{"organization_id":"176","name":"THE NEIGHBORHOOD SELF HELP BY OLDER PERSONS PROJECT INC","tax_id":"13-3077047"}
+,{"organization_id":"177","name":"CHINESE-AMERICAN PLANNING COUNCIL INC","tax_id":"13-6202692"}
+,{"organization_id":"178","name":"CHILD DEVELOPMENT CENTER OF THE MOSHOLU MONTEFIORE COMMUNITY CENTER INC","tax_id":"13-3622106"}
+,{"organization_id":"179","name":"JEWISH COMMUNITY COUNCIL OF CANARSIE INC","tax_id":"11-2608645"}
+,{"organization_id":"180","name":"NIA COMMUNITY SERVICES NETWORK INC","tax_id":"11-2697931"}
+,{"organization_id":"181","name":"NEW YORK PUBLIC LIBRARY"}
+,{"organization_id":"182","name":"XPOSURE FOUNDATION INC","tax_id":"26-0160228"}
+,{"organization_id":"183","name":"CATHOLIC CHARITIES OF STATEN ISLAND INC","tax_id":"13-5562286"}
+,{"organization_id":"184","name":"THE CHILDREN'S VILLAGE","tax_id":"13-1739945"}
+,{"organization_id":"185","name":"SCHOOL SETTLEMENT ASSOCIATION","tax_id":"11-1646304"}
+,{"organization_id":"186","name":"URBAN STRATEGIES INC","tax_id":"11-2484364"}
+,{"organization_id":"187","name":"THE CHILD CENTER OF NY INC","tax_id":"11-1733454"}
+,{"organization_id":"188","name":"BED-STUY CAMPAIGN AGAINST HUNGER INC","tax_id":"20-0934854"}
+,{"organization_id":"189","name":"WOMEN'S HOUSING AND ECONOMIC DEVELOPMENT CORPORATION","tax_id":"11-3099604"}
+,{"organization_id":"190","name":"SOUTH BRONX OVERALL ECONOMIC DEVELOPMENT CORPORATION","tax_id":"13-2736022"}
+,{"organization_id":"191","name":"KIPP NEW YORK INC","tax_id":"20-3971209"}
+,{"organization_id":"192","name":"ASCEND LEARNING INC","tax_id":"33-1200239"}
+,{"organization_id":"193","name":"HARLEM DOWLING - WEST SIDE CENTER FOR CHILDREN AND FAMILY SERVICES","tax_id":"13-3030378"}
+,{"organization_id":"194","name":"NORTH BROOKLYN DEVELOPMENT CORPORATION","tax_id":"11-2555446"}
+,{"organization_id":"195","name":"RISEBORO COMMUNITY PARTNERSHIP INC"}
+,{"organization_id":"196","name":"PROJECT HOSPITALITY INC","tax_id":"13-3234441"}
+,{"organization_id":"197","name":"SHOREFRONT JEWISH COMMUNITY COUNCIL INC","tax_id":"11-2986161"}
+,{"organization_id":"198","name":"CHILDRENS ARTS & SCIENCE WORKSHOPS INC","tax_id":"13-2752494"}
+,{"organization_id":"199","name":"ACHIEVEMENT FIRST","tax_id":"65-1203744"}
+,{"organization_id":"200","name":"NEW YORK JUNIOR TENNIS LEAGUE INC","tax_id":"23-7442256"}
+,{"organization_id":"201","name":"HARRIMAN SUMMER CAMP S-11 INC","tax_id":"20-8600191"}
+,{"organization_id":"202","name":"HARLEM CHILDREN'S ZONE INC","tax_id":"23-7112974"}
+,{"organization_id":"203","name":"BROOKLYN LEGAL SERVICES","tax_id":"13-2605605"}
+,{"organization_id":"204","name":"SCO FAMILY OF SERVICES","tax_id":"11-2777066"}
+,{"organization_id":"205","name":"DIRECTIONS FOR OUR YOUTH INC","tax_id":"06-1308851"}
+,{"organization_id":"206","name":"FAMILY LIFE ACADEMY CHARTER SCHOOLS","tax_id":"13-4170389"}
+,{"organization_id":"207","name":"YMCA OF GREATER NEW YORK/STATEN ISLAND SOUTH SHORE"}
+,{"organization_id":"208","name":"AFRICAN REFUGE INC","tax_id":"01-0873188"}
+,{"organization_id":"209","name":"ITALIAN AMERICAN CIVIL RIGHTS LEAGUE","tax_id":"11-2352099"}
+,{"organization_id":"210","name":"YMCA OF GREATER NEW YORK/FLATBUSH BRANCH"}
+,{"organization_id":"211","name":"CENTER FOR THE INTEGRATION AND ADVANCEMENT OF NEW AMERICANS INC (CIANA)","tax_id":"74-3184835"}
+,{"organization_id":"212","name":"YESHIVA KEHILATH YAKOV","tax_id":"11-6003354"}
+,{"organization_id":"213","name":"HOMECREST COMMUNITY SERVICES INC","tax_id":"11-3373115"}
+,{"organization_id":"214","name":"THE CRENULATED COMPANY LTD.","tax_id":"14-1719016"}
+,{"organization_id":"215","name":"ECUMENICAL COMMUNITY DEVELOPMENT ORGANIZATION","tax_id":"13-3160099"}
+,{"organization_id":"216","name":"BROOKLYN NEIGHBORHOOD IMPROVEMENT ASSN INC","tax_id":"11-2538550"}
+,{"organization_id":"217","name":"THE FRIENDS OF CROWN HEIGHTS EDUCATIONAL CENTERS INC","tax_id":"11-2305641"}
+,{"organization_id":"218","name":"82ND STREET ACADEMICS","tax_id":"20-0788352"}
+,{"organization_id":"219","name":"THE ARAB-AMERICAN FAMILY SUPPORT CENTER INC","tax_id":"11-3167245"}
+,{"organization_id":"220","name":"REEL STORIES TEEN FILMMAKING INC","tax_id":"20-0936377"}
+,{"organization_id":"221","name":"YMCA OF GREATER NEW YORK/WEST SIDE"}
+,{"organization_id":"222","name":"LEAKE AND WATTS SERVICES INC","tax_id":"13-1860451"}
+,{"organization_id":"223","name":"WOODYCREST CENTER FOR HUMAN DEVELOPMENT INC","tax_id":"13-3184179"}
+,{"organization_id":"224","name":"YMCA OF GREATER NEW YORK/FLUSHING"}
+,{"organization_id":"225","name":"RESEARCH FOUNDATION OF CUNY/ MEDGAR EVERS COLLEGE"}
+,{"organization_id":"226","name":"OASIS COMMUNTIY CORPORATION DBA ROADS TO SUCCESS"}
+,{"organization_id":"227","name":"NATIONAL SOCIETY FOR HEBREW DAY SCHOOLS","tax_id":"13-5564128"}
+,{"organization_id":"228","name":"COMMUNITY ASSOCIATION OF PROGRESSIVE DOMINICANS INC","tax_id":"13-3266145"}
+,{"organization_id":"229","name":"TOGETHER WE ARE","tax_id":"27-0213447"}
+,{"organization_id":"230","name":"MIDWOOD DEVELOPMENT CORP","tax_id":"11-2420752"}
+,{"organization_id":"231","name":"CITIZEN SCHOOLS INC","tax_id":"04-3259160"}
+,{"organization_id":"232","name":"ART START INCORPORATED","tax_id":"13-4048380"}
+,{"organization_id":"233","name":"OPPORTUNITIES FOR A BETTER TOMORROW INC","tax_id":"11-2934620"}
+,{"organization_id":"234","name":"COMMUNITY COUNSELING AND MEDIATION SERVICES INC"}
+,{"organization_id":"235","name":"QUEENS BOROUGH PUBLIC LIBRARY","tax_id":"11-1904262"}
+,{"organization_id":"236","name":"HOUSING AND FAMILY SERVICES OF GREATER NEW YORK INC","tax_id":"11-2412584"}
+,{"organization_id":"237","name":"PURELEMENTS: AN EVOLUTION IN DANCE INC","tax_id":"20-5332584"}
+,{"organization_id":"238","name":"INDOCHINA SINO-AMERICAN SENIOR CITIZEN CENTER","tax_id":"13-3584616"}
+,{"organization_id":"239","name":"THE B.E.L.L. FOUNDATION INC","tax_id":"04-3182053"}
+,{"organization_id":"240","name":"NOEL POINTER FOUNDATION INC","tax_id":"11-3271472"}
+,{"organization_id":"241","name":"NEW YORK CITY MISSION SOCIETY","tax_id":"13-5562301"}
+,{"organization_id":"242","name":"NASRY MICHELEN DAY CARE CENTER INC","tax_id":"20-3108162"}
+,{"organization_id":"243","name":"HOMES FOR THE HOMELESS INC","tax_id":"13-3351420"}
+,{"organization_id":"244","name":"IMANI HOUSE INC","tax_id":"11-3055131"}
+,{"organization_id":"245","name":"EAST HARLEM TUTORIAL PROGRAM INC","tax_id":"23-7439789"}
+,{"organization_id":"246","name":"ROCKAWAY DEVELOPMENT AND REVITALIZATION CORPORATION","tax_id":"11-2575794"}
+,{"organization_id":"247","name":"KIPS BAY BOYS & GIRLS CLUB INC","tax_id":"13-1623850"}
+,{"organization_id":"248","name":"YMCA OF GREATER NEW YORK/PROSPECT PARK"}
+,{"organization_id":"249","name":"YMCA OF GREATER NEW YORK/BEDFORD STUYVESANT"}
+,{"organization_id":"250","name":"MORNINGSIDE CENTER FOR TEACHING SOCIAL RESPONSIBILITY INC","tax_id":"13-3185340"}
+,{"organization_id":"251","name":"YMCA OF GREATER NEWYORK-BRONX YMCA"}
+,{"organization_id":"252","name":"SUNSET PARK HEALTH COUNCIL INC","tax_id":"20-2508411"}
+,{"organization_id":"253","name":"HARLEM RBI INCORPORATED","tax_id":"13-4025290"}
+,{"organization_id":"254","name":"RESEARCH FOUNDATION OF CUNY/ CUNY CREATIVE ARTS TEAM"}
+,{"organization_id":"255","name":"STRYCKER'S BAY NEIGHBORHOOD COUNCIL","tax_id":"13-1943516"}
+,{"organization_id":"256","name":"INWOOD COMMUNITY SERVICES INC","tax_id":"13-3087407"}
+,{"organization_id":"257","name":"KOREAN COMMUNITY SERVICES OF METROPOLITAN NEW YORK INC","tax_id":"23-7348989"}
+,{"organization_id":"258","name":"THE LESBIAN GAY BISEXUAL & TRANSGENDER COMMUNITY CENTER"}
+,{"organization_id":"259","name":"NEW YORK PUBLIC LIBRARY - WEST FARMS LIBRARY"}
+,{"organization_id":"260","name":"YMCA OF GREATER NEW YORK/DODGE"}
+,{"organization_id":"261","name":"THE COMMITTEE FOR HISPANIC CHILDREN AND FAMILIES INC","tax_id":"11-2622003"}
+,{"organization_id":"262","name":"VARIETY BOYS & GIRLS CLUB OF QUEENS INC","tax_id":"11-6014770"}
+,{"organization_id":"263","name":"COMMUNITY LEAGUE OF THE HEIGHTS INC","tax_id":"13-2564241"}
+,{"organization_id":"264","name":"THE BROTHERHOOD/SISTER SOL INC","tax_id":"13-3857387"}
+,{"organization_id":"265","name":"ECKERD YOUTH ALTERNATIVES INC","tax_id":"59-2551416"}
+,{"organization_id":"266","name":"YMCA OF GREATER NEW YORK/HARLEM BRANCH"}
+,{"organization_id":"267","name":"MADISON SQUARE BOYS & GIRLS CLUB INC","tax_id":"13-5596792"}
+,{"organization_id":"268","name":"CITY GROWERS INC","tax_id":"45-2149344"}
+,{"organization_id":"269","name":"AGUDATH ISRAEL OF AMERICA COMMUNITY SERVICES INC","tax_id":"13-3975090"}
+,{"organization_id":"270","name":"DIVAS FOR SOCIAL JUSTICE INC","tax_id":"30-0475160"}
+,{"organization_id":"271","name":"CENTRAL QUEENS YOUNG MEN'S AND YOUNG WOMEN'S HEBREW ASSOCIATION INC","tax_id":"11-1633509"}
+,{"organization_id":"272","name":"HELLENIC AMERICAN NEIGHBORHOOD ACTION COMMITTEE (HANAC)"}
+,{"organization_id":"273","name":"SAPNA NYC INC","tax_id":"26-3124969"}
+,{"organization_id":"274","name":"CASITA MARIA INC","tax_id":"13-1623994"}
+,{"organization_id":"275","name":"YMCA OF GREATER NEW YORK/VANDERBILT"}
+,{"organization_id":"276","name":"BRONX HOUSE INC","tax_id":"13-1739935"}
+,{"organization_id":"277","name":"NYSARC INC NYC CHAPTER","tax_id":"13-5596746"}
+,{"organization_id":"278","name":"KIPP ACADEMY CHARTER SCHOOL","tax_id":"11-3550982"}
+,{"organization_id":"279","name":"INNOVATEEDU INC","tax_id":"46-3636238"}
+,{"organization_id":"280","name":"CYPRESS HILLS LOCAL DEVELOPMENT CORPORATION INC","tax_id":"11-2683663"}
+,{"organization_id":"281","name":"RIVERSIDE LANGUAGE PROGRAM INC","tax_id":"13-3280364"}
+,{"organization_id":"282","name":"BRIDGE STREET DEVELOPMENT CORPORATION","tax_id":"11-3250772"}
+,{"organization_id":"283","name":"SOUTHEAST BRONX NEIGHBORHOOD CENTERS INC","tax_id":"13-2675560"}
+,{"organization_id":"284","name":"KINGSBRIDGE HEIGHTS COMMUNITY CENTER","tax_id":"13-2813809"}
+,{"organization_id":"285","name":"SERIOUS FUN AFTER SCHOOL INC","tax_id":"27-3013125"}
+,{"organization_id":"286","name":"YMCA OF GREATER NEW YORK/VIRTUAL Y"}
+,{"organization_id":"287","name":"RESEARCH FOUNDATION OF CUNY ON BEHALF OF LAGUARDIA COMM COLL"}
+,{"organization_id":"288","name":"RESEARCH FOUNDATION OF CUNY/LAGUARDIA COMMUNITY COLLEGE"}
+,{"organization_id":"289","name":"CONEY ISLAND GENERATION GAP REUNION COMMITTEE CORP","tax_id":"20-8562533"}
+,{"organization_id":"290","name":"FIFTH AVENUE COMMITTEE INC","tax_id":"11-2475743"}
+,{"organization_id":"291","name":"RIVERDALE NEIGHBORHOOD HOUSE INC","tax_id":"13-1740024"}
+,{"organization_id":"292","name":"THE FORTUNE SOCIETY INC","tax_id":"13-2645436"}
+,{"organization_id":"293","name":"PENCIL INC","tax_id":"22-3384302"}
+,{"organization_id":"294","name":"LONG ISLAND UNIVERSITY","tax_id":"11-1633516"}
+,{"organization_id":"295","name":"BROOKLYN PROSPECT CHARTER SCHOOL","tax_id":"26-3206518"}
+,{"organization_id":"296","name":"NEIGHBORHOOD INITIATIVES DEVELOPMENT CORP","tax_id":"13-3110811"}
+,{"organization_id":"297","name":"KINGS BAY YM-YWHA INC","tax_id":"11-3068515"}
+,{"organization_id":"298","name":"YM-YWHA OF WASHINGTON HEIGHTS INWOOD"}
+,{"organization_id":"299","name":"NY TIBETAN SERVICE CENTER INC","tax_id":"46-1719758"}
+,{"organization_id":"300","name":"NEW YORK PUBLIC LIBRARY - BRONX LIBRARY CENTER"}
+,{"organization_id":"301","name":"FUND FOR THE CITY OF NEW YORK INC","tax_id":"13-2612524"}
+,{"organization_id":"302","name":"YMCA OF GREATER NEW YORK/LONG ISLAND CITY"}
+,{"organization_id":"303","name":"HANDS IN 4 YOUTH OF NY INC","tax_id":"13-6140816"}
+,{"organization_id":"304","name":"ALI FORNEY CENTER","tax_id":"30-0104507"}
+,{"organization_id":"305","name":"APEX FOR YOUTH INC","tax_id":"13-3650718"}
+,{"organization_id":"306","name":"MERCY CENTER INC","tax_id":"13-3865634"}
+,{"organization_id":"307","name":"CARDINAL MCCLOSKEY COMMUNITY SERVICES"}
+,{"organization_id":"308","name":"WOODSIDE ON THE MOVE INC","tax_id":"11-2435565"}
+,{"organization_id":"309","name":"CENTRAL HARLEM SENIOR CITIZENS' CENTERS INC","tax_id":"13-2754783"}
+,{"organization_id":"310","name":"ABRAHAM HOUSE","tax_id":"13-3721924"}
+,{"organization_id":"311","name":"SUNSET BAY COMMUNITY SERVICES INC","tax_id":"11-2439925"}
+,{"organization_id":"312","name":"RENAISSANCE YOUTH CENTER","tax_id":"13-4122438"}
+,{"organization_id":"313","name":"NORTHSIDE CENTER FOR CHILD DEVELOPMENT INC","tax_id":"13-1656679"}
+,{"organization_id":"314","name":"ST JOHN'S UNIVERSITY NEW YORK","tax_id":"11-1630830"}
+,{"organization_id":"315","name":"THE RENAISSANCE CHARTER SCHOOL"}
+,{"organization_id":"316","name":"CLAREMONT NEIGHBORHOOD CENTERS INC","tax_id":"13-6016450"}
+,{"organization_id":"317","name":"ST MARY'S DEVELOPMENTAL CENTER FOR CHILDREN AND FAMILIES INC","tax_id":"45-2563642"}
+,{"organization_id":"318","name":"HARLEM COMMONWEALTH COUNCIL INC","tax_id":"13-6271908"}
+,{"organization_id":"319","name":"CHHAYA COMMUNITY DEVELOPMENT CORPORATION","tax_id":"11-3580935"}
+,{"organization_id":"320","name":"MASPETH TOWN HALL INC","tax_id":"23-7259702"}
+,{"organization_id":"321","name":"WISE-WORKING IN SUPPORT OF EDUCATION INC","tax_id":"13-4024627"}
+,{"organization_id":"322","name":"AL-MADINAH SCHOOL","tax_id":"11-3582303"}
+,{"organization_id":"323","name":"CROWN HEIGHTS JEWISH COMMUNITY COUNCIL INC","tax_id":"23-7390996"}
+,{"organization_id":"324","name":"FRIENDS OF ISLAND ACADEMY INC","tax_id":"13-3576756"}
+,{"organization_id":"325","name":"MONTEFIORE MEDICAL CENTER","tax_id":"13-1740114"}
+,{"organization_id":"326","name":"EL BARRIO'S OPERATION FIGHTBACK INC","tax_id":"13-3248777"}
+,{"organization_id":"327","name":"COUNSELING IN SCHOOLS","tax_id":"13-3637647"}
+,{"organization_id":"328","name":"THE YOUNG WOMEN'S CHRISTIAN ASSOCIATION OF QUEENS","tax_id":"20-0351906"}
+,{"organization_id":"329","name":"TURNING POINT BROOKLYN INC","tax_id":"11-2838138"}
+,{"organization_id":"330","name":"AFRICAN SERVICES COMMITTEE INC","tax_id":"13-3749744"}
+,{"organization_id":"331","name":"DEVELOPMENT OUTREACH INC","tax_id":"13-2997764"}
+,{"organization_id":"332","name":"GIRLS PREPARATORY CHARTER SCHOOL OF NEW YORK","tax_id":"81-0650329"}
+,{"organization_id":"333","name":"CENTRAL BROOKLYN ECONOMIC DEVELOPMENT CORPORATION","tax_id":"11-2981085"}
+,{"organization_id":"334","name":"THE KOREAN-AMERICAN FAMILY SERVICE CENTER INC","tax_id":"13-3609811"}
+,{"organization_id":"335","name":"FRESH YOUTH INITIATIVES INC","tax_id":"13-3723207"}
+,{"organization_id":"336","name":"BROOKLYN PUBLIC LIBRARY - BEDFORD LEARNING CENTER"}
+,{"organization_id":"337","name":"CHILDREN OF PROMISE NYC","tax_id":"83-0440009"}
+,{"organization_id":"338","name":"BRIENZA'S EDUCARE INC","tax_id":"26-1537523"}
+,{"organization_id":"339","name":"I CHALLENGE MYSELF","tax_id":"56-2423423"}
+,{"organization_id":"340","name":"COUNCIL OF PEOPLES ORGANIZATION INC","tax_id":"75-3046891"}
+,{"organization_id":"341","name":"WILDCAT SERVICE CORPORATION","tax_id":"13-2725423"}
+,{"organization_id":"342","name":"ROCKAWAY WATERFRONT ALLIANCE","tax_id":"11-3783397"}
+,{"organization_id":"343","name":"YOUNG ATHLETES INC","tax_id":"13-3967852"}
+,{"organization_id":"344","name":"JEWISH INSTITUTE OF QUEENS","tax_id":"54-2068797"}
+,{"organization_id":"345","name":"THE ARTS CONNECTION INC","tax_id":"13-2953240"}
+,{"organization_id":"346","name":"RIVERDALE COMMUNITY CENTER INC","tax_id":"13-2899410"}
+,{"organization_id":"347","name":"BROOKLYN PUBLIC LIBRARY - NEW LOTS BRANCH"}
+,{"organization_id":"348","name":"POLONIANS ORGANIZED TO MINISTER TO OUR COMMUNITY INC","tax_id":"11-2594500"}
+,{"organization_id":"349","name":"BE'ER HAGOLAH INSITUTES INC","tax_id":"11-2501388"}
+,{"organization_id":"350","name":"CHINATOWN MANPOWER PROJECT INC","tax_id":"13-2755214"}
+,{"organization_id":"351","name":"NEW YORK URBAN LEAGUE"}
+,{"organization_id":"352","name":"ARGUS COMMUNITY INC","tax_id":"23-7359002"}
+,{"organization_id":"353","name":"YMCA OF GREATER NEW YORK/GREENPOINT"}
+,{"organization_id":"354","name":"YMCA OF GREATER NEW YORK/STATEN ISLAND BROADWAY CENTER"}
+,{"organization_id":"355","name":"EDITH AND CARL MARKS JEWISH COMMUNITY HOUSE OF BENSONHURST INC","tax_id":"11-1633484"}
+,{"organization_id":"356","name":"YOUNG DANCERS IN REPERTORY INC","tax_id":"11-2799128"}
+,{"organization_id":"357","name":"IMMIGRANT SOCIAL SERVICES INC","tax_id":"13-2689273"}
+,{"organization_id":"358","name":"YMCA OF GREATER NEW YORK/CHINATOWN"}
+,{"organization_id":"359","name":"BEDFORD STUYVESANT NEW BEGINNINGS CHARTER SCHOOL","tax_id":"27-1993286"}
+,{"organization_id":"360","name":"NEW YORK CITY HOUSING AUTHORITY"}
+,{"organization_id":"361","name":"HEBREW EDUCATIONAL SOCIETY","tax_id":"11-1642720"}
+,{"organization_id":"362","name":"FORT GREENE COUNCIL INC","tax_id":"11-2300840"}
+,{"organization_id":"363","name":"SIMPSON STREET DEVELOPMENT ASSOCIATION INC","tax_id":"13-3082529"}
+,{"organization_id":"364","name":"OPUS DANCE THEATRE & COMMUNITY SERVICES INC","tax_id":"13-3548252"}
+,{"organization_id":"365","name":"RIVERSTONE SENIOR LIFE SERVICES INC","tax_id":"13-3355074"}
+,{"organization_id":"366","name":"ST VINCENT'S SERVICES INC","tax_id":"11-1631823"}
+,{"organization_id":"367","name":"INTERBOROUGH DEVELOPMENTAL AND CONSULTATION CENTER INC","tax_id":"23-7358415"}
+,{"organization_id":"368","name":"COMMUNITY SERVICE SOCIETY OF NEW YORK","tax_id":"13-5562202"}
+,{"organization_id":"369","name":"THE NEW YORK FOUNDLING HOSPITAL","tax_id":"13-1624123"}
+,{"organization_id":"370","name":"PLANNED PARENTHOOD OF NEW YORK CITY INC","tax_id":"13-2621497"}
+,{"organization_id":"371","name":"TURNAROUND FOR CHILDREN INC","tax_id":"06-1495529"}
+,{"organization_id":"372","name":"COVENANT HOUSE"}
+,{"organization_id":"373","name":"PROVIDENCE HOUSE INC","tax_id":"11-2594653"}
+,{"organization_id":"374","name":"GEEL COMMUNITY SERVICES INC","tax_id":"13-3042012"}
+,{"organization_id":"375","name":"ODYSSEY HOUSE INC","tax_id":"13-6217765"}
+,{"organization_id":"376","name":"INSTITUTE FOR COMMUNITY LIVING INC","tax_id":"13-3306195"}
+,{"organization_id":"377","name":"WEST END RESIDENCES HOUSING DEVELOPMENT FUND COMPANY INC","tax_id":"13-3442001"}
+,{"organization_id":"378","name":"CENTER FOR ALTERNATIVE SENTENCING EMPLOYMENT SERVICES INC","tax_id":"13-2668080"}
+,{"organization_id":"379","name":"QSAC INC","tax_id":"11-2482974"}
+,{"organization_id":"380","name":"ASSOCIATION FOR METROAREA AUTISTIC CHILDREN INC","tax_id":"13-1974582"}
+,{"organization_id":"381","name":"ASSOCIATION TO BENEFIT CHILDREN","tax_id":"13-3303089"}
+,{"organization_id":"382","name":"A VERY SPECIAL PLACE INC","tax_id":"13-3005006"}
+,{"organization_id":"383","name":"BROOKLYN COMMUNITY HOUSING AND SERVICES INC","tax_id":"11-2549027"}
+,{"organization_id":"384","name":"OHEL CHILDREN'S HOME AND FAMILY SERVICES INC","tax_id":"11-6078704"}
+,{"organization_id":"385","name":"LESBIAN AND GAY COMMUNITY SERVICES CENTER INC","tax_id":"13-3217805"}
+,{"organization_id":"386","name":"FEDERATION OF ORGANIZATIONS FOR THE NEW YORK STATE MENTALLY DISABLED INC","tax_id":"23-7237931"}
+,{"organization_id":"387","name":"COMMUNITY ACCESS INC","tax_id":"23-7399839"}
+,{"organization_id":"388","name":"GREENWICH HOUSE INC","tax_id":"13-5562204"}
+,{"organization_id":"389","name":"JEWISH CHILD CARE ASSOCIATION OF NEW YORK","tax_id":"13-1624060"}
+,{"organization_id":"390","name":"THE BRIDGE INC","tax_id":"13-1919799"}
+,{"organization_id":"391","name":"FAITH MISSION ALCOHOL CRISIS CENTER INC","tax_id":"11-3017720"}
+,{"organization_id":"392","name":"LIFESPIRE INC","tax_id":"13-2526022"}
+,{"organization_id":"393","name":"JEWISH BOARD OF FAMILY AND CHILDREN'S SERVICES INC","tax_id":"13-5564937"}
+,{"organization_id":"394","name":"CENTER FOR URBAN COMMUNITY SERVICES INC","tax_id":"13-3687891"}
+,{"organization_id":"395","name":"POSTGRADUATE CENTER FOR MENTAL HEALTH","tax_id":"13-1656681"}
+,{"organization_id":"396","name":"THE MENTAL HEALTH ASSOCIATION OF NEW YORK CITY INC","tax_id":"13-2637308"}
+,{"organization_id":"397","name":"AMETHYST HOUSE INC","tax_id":"22-2321612"}
+,{"organization_id":"398","name":"WESTON UNITED COMMUNITY RENEWAL INC","tax_id":"13-3466166"}
+,{"organization_id":"399","name":"STATEN ISLAND MENTAL HEALTH SOCIETY INC","tax_id":"13-5623279"}
+,{"organization_id":"400","name":"BALTIC STREET AEH INC","tax_id":"11-3046556"}
+,{"organization_id":"401","name":"NATIONAL ALLIANCE FOR THE MENTALLY ILL OF NEW YORK CITY INC"}
+,{"organization_id":"402","name":"MENTAL HEALTH PROVIDERS OF WESTERN QUEENS INC","tax_id":"11-2700062"}
+,{"organization_id":"403","name":"FOUNTAIN HOUSE INC","tax_id":"13-1624009"}
+,{"organization_id":"404","name":"LONG ISLAND JEWISH MEDICAL CENTER","tax_id":"11-2241326"}
+,{"organization_id":"405","name":"LANTERN COMMUNITY SERVICES INC","tax_id":"13-3910692"}
+,{"organization_id":"406","name":"BETH ISRAEL MEDICAL CENTER","tax_id":"13-5564934"}
+,{"organization_id":"407","name":"LEXINGTON CENTER FOR MENTAL HEALTH SERVICES INC","tax_id":"11-2542317"}
+,{"organization_id":"408","name":"ST DOMINIC'S HOME"}
+,{"organization_id":"409","name":"STATEN ISLAND BEHAVIORAL NETWORK INC"}
+,{"organization_id":"410","name":"SERVICES FOR THE UNDERSERVED INC","tax_id":"91-1918247"}
+,{"organization_id":"411","name":"ON YOUR MARK INC","tax_id":"13-3128315"}
+,{"organization_id":"412","name":"PROJECT RENEWAL INC","tax_id":"13-2602882"}
+,{"organization_id":"413","name":"COMUNILIFE INC","tax_id":"13-3530299"}
+,{"organization_id":"414","name":"EPISCOPAL HEALTH SERVICES INC","tax_id":"11-1665825"}
+,{"organization_id":"489","name":"PALLADIA INC","tax_id":"23-7089380"}
+,{"organization_id":"415","name":"THE RESEARCH FOUNDATION FOR THE STATE UNIVERSITY OF NEW YORK","tax_id":"14-1368361"}
+,{"organization_id":"416","name":"URBAN PATHWAYS INC","tax_id":"13-2933675"}
+,{"organization_id":"417","name":"ST LUKE'S - ROOSEVELT HOSPITAL"}
+,{"organization_id":"418","name":"VISITING NURSE SERVICE OF NEW YORK HOME CARE II","tax_id":"13-1624211"}
+,{"organization_id":"419","name":"THE MOMENTUM PROJECT INC","tax_id":"13-3556768"}
+,{"organization_id":"420","name":"MIDDLE COLLEGIATE CHURCH"}
+,{"organization_id":"421","name":"ST PETER'S LUTHERAN CHURCH"}
+,{"organization_id":"422","name":"CHURCH OF GOD OF PROPHECY"}
+,{"organization_id":"423","name":"HARM REDUCTION CENTER"}
+,{"organization_id":"424","name":"ST JOHN'S LUTHERAN CHURCH"}
+,{"organization_id":"425","name":"BROOKDALE UNIVERSITY HOSPITAL AND MEDICAL CENTER","tax_id":"11-1631746"}
+,{"organization_id":"426","name":"INTERFAITH MEDICAL CENTER","tax_id":"11-2626155"}
+,{"organization_id":"427","name":"PUBLIC HEALTH SOLUTIONS","tax_id":"13-5669201"}
+,{"organization_id":"428","name":"RICHMOND HOME NEED SERVICES INC","tax_id":"13-2688124"}
+,{"organization_id":"429","name":"THE MOUNT SINAI HOSPITAL","tax_id":"13-1624096"}
+,{"organization_id":"430","name":"NEW YORK DISASTER INTERFAITH SERVICES"}
+,{"organization_id":"431","name":"MORRIS HEIGHTS HEALTH CENTER INC","tax_id":"06-1081232"}
+,{"organization_id":"432","name":"ROCKLAND COUNTY"}
+,{"organization_id":"433","name":"VOLUNTEERS OF AMERICA - GREATER NEW YORK INC","tax_id":"58-1959781"}
+,{"organization_id":"434","name":"BAILEY HOUSE INC","tax_id":"13-3165181"}
+,{"organization_id":"435","name":"HARLEM UNITED: COMMUNITY AIDS CENTER INC","tax_id":"13-3461695"}
+,{"organization_id":"436","name":"ENCORE COMMUNITY SERVICES","tax_id":"13-3104293"}
+,{"organization_id":"437","name":"WEST SIDE FEDERATION FOR SENIOR AND SUPPORTIVE HOUSING INC","tax_id":"13-2926433"}
+,{"organization_id":"438","name":"HERITAGE HEALTH AND HOUSING INC","tax_id":"13-2661509"}
+,{"organization_id":"439","name":"CECIL HOUSING DEVELOPMENT FUND CORPORATION","tax_id":"14-2012874"}
+,{"organization_id":"440","name":"THE JERICHO PROJECT","tax_id":"13-3213525"}
+,{"organization_id":"441","name":"THE LOWER EAST SIDE SERVICE CENTER INC","tax_id":"13-1972876"}
+,{"organization_id":"442","name":"PIBLY RESIDENTIAL PROGRAMS INC","tax_id":"13-3396313"}
+,{"organization_id":"443","name":"PROMESA INC","tax_id":"13-2663328"}
+,{"organization_id":"444","name":"PRAXIS HOUSING INITIATIVES INC","tax_id":"13-3832223"}
+,{"organization_id":"445","name":"SERVICE PROGRAM FOR OLDER PEOPLE INC","tax_id":"13-2947616"}
+,{"organization_id":"446","name":"THE DOE FUND INC","tax_id":"13-3412540"}
+,{"organization_id":"447","name":"UNIQUE PEOPLE SERVICES INC","tax_id":"13-3636555"}
+,{"organization_id":"448","name":"SINGLE PARENT RESOURCE CENTER INC","tax_id":"13-3030376"}
+,{"organization_id":"449","name":"STATEN ISLAND AID FOR RETARDED CHILDREN INC","tax_id":"13-5660279"}
+,{"organization_id":"450","name":"AIDS CENTER OF QUEENS COUNTY INC","tax_id":"11-2837894"}
+,{"organization_id":"451","name":"NATIONAL COMMITTEE FOR THE FURTHERANCE OF JEWISH EDUCATION","tax_id":"11-6003180"}
+,{"organization_id":"452","name":"THE NEIGHBORHOOD COALITION FOR SHELTER INC","tax_id":"13-3176586"}
+,{"organization_id":"453","name":"HAMILTON-MADISON HOUSE INC","tax_id":"13-5562412"}
+,{"organization_id":"454","name":"THE EPILEPSY INSTITUTE","tax_id":"13-2608325"}
+,{"organization_id":"455","name":"UPPER MANHATTAN MENTAL HEALTH CENTER INC","tax_id":"13-3389470"}
+,{"organization_id":"456","name":"LUTHERAN SOCIAL SERVICES OF METROPOLITAN NEW YORK INC","tax_id":"13-2658548"}
+,{"organization_id":"457","name":"BERKSHIRE FARM CENTER AND SERVICES FOR YOUTH","tax_id":"14-1368125"}
+,{"organization_id":"458","name":"BREAKING GROUND HOUSING DEVELOPMENT FUND CORPORATION","tax_id":"11-3048002"}
+,{"organization_id":"459","name":"BOWERY RESIDENTS' COMMITTEE INC","tax_id":"13-2736659"}
+,{"organization_id":"460","name":"LENOX HILL NEIGHBORHOOD HOUSE INC","tax_id":"13-1628180"}
+,{"organization_id":"461","name":"HOUR CHILDREN INC","tax_id":"13-3647412"}
+,{"organization_id":"462","name":"VOCATIONAL INSTRUCTION PROJECT COMMUNITY SERVICES INC","tax_id":"13-3224700"}
+,{"organization_id":"463","name":"RIVERDALE MENTAL HEALTH ASSOCIATION"}
+,{"organization_id":"464","name":"PSCH INC","tax_id":"11-2542430"}
+,{"organization_id":"465","name":"HEIGHTS HILL MENTAL HEALTH SERVICE COMMUNITY ADVISORY BOARD INC","tax_id":"11-2785605"}
+,{"organization_id":"466","name":"NEW YORK AND PRESBYTERIAN HOSPITAL"}
+,{"organization_id":"467","name":"ST FRANCIS FRIENDS OF THE POOR INC"}
+,{"organization_id":"468","name":"HUMAN SERVICES COUNCIL OF NEW YORK INC","tax_id":"13-3620059"}
+,{"organization_id":"469","name":"STATEN ISLAND UNIVERSITY HOSPITAL","tax_id":"11-2868878"}
+,{"organization_id":"470","name":"LIFTING UP WESTCHESTER INC"}
+,{"organization_id":"471","name":"RECAP (ORANGE COUNTY)"}
+,{"organization_id":"472","name":"PATHSTONE (ORANGE COUNTY)"}
+,{"organization_id":"473","name":"ST JOSEPH'S HOSPITAL"}
+,{"organization_id":"474","name":"NEW YORK PRESBYTERIAN HOSPITAL"}
+,{"organization_id":"475","name":"THE OSBORNE ASSOCIATION INC","tax_id":"13-5563028"}
+,{"organization_id":"476","name":"TOWNSHIP OF WOODBRIDGE"}
+,{"organization_id":"477","name":"OCEAN COUNTY BOARD OF SOCIAL SERVICES"}
+,{"organization_id":"478","name":"COUNTY OF MONMOUTH NJ"}
+,{"organization_id":"479","name":"BLUE STATE DIGITAL INC"}
+,{"organization_id":"480","name":"UNITED JEWISH COUNCIL OF THE EAST SIDE INC","tax_id":"13-2735378"}
+,{"organization_id":"481","name":"RICHMOND MEDICAL CENTER","tax_id":"74-3177454"}
+,{"organization_id":"482","name":"THE CENTER FOR FAMILY SUPPORT INC","tax_id":"13-1913807"}
+,{"organization_id":"483","name":"EMPLOYMENT PROGRAM FOR RECOVERED ALCOHOLICS INC","tax_id":"13-3344661"}
+,{"organization_id":"484","name":"CLINTON HOUSING DEVELOPMENT COMPANY INC","tax_id":"13-2851988"}
+,{"organization_id":"485","name":"COLUMBA SERVICES INC","tax_id":"13-4119067"}
+,{"organization_id":"486","name":"JOB PATH INC","tax_id":"13-4038495"}
+,{"organization_id":"487","name":"YOUNG ADULT INSTITUTE INC","tax_id":"11-2030172"}
+,{"organization_id":"488","name":"URBAN RESOURCE INSTITUTE","tax_id":"11-2561648"}
+,{"organization_id":"490","name":"THE GUILD FOR EXCEPTIONAL CHILDREN INC","tax_id":"11-6037766"}
+,{"organization_id":"491","name":"ACMH INC","tax_id":"23-7293784"}
+,{"organization_id":"492","name":"ASSOCIATION FOR NEUROLGICALLY IMPAIRED BRAIN INJURED CHILDREN INC","tax_id":"11-2348663"}
+,{"organization_id":"493","name":"UNIVERSITY CONSULTATION AND TREATMENT CENTER FOR MENTAL HYGIENE INC","tax_id":"13-1944395"}
+,{"organization_id":"494","name":"EDEN II SCHOOL FOR AUTISTIC CHILDREN INC","tax_id":"13-2872916"}
+,{"organization_id":"495","name":"ASTOR SERVICES FOR CHILDREN AND FAMILIES","tax_id":"14-1397918"}
+,{"organization_id":"496","name":"HOUSING WORKS INC","tax_id":"13-3584089"}
+,{"organization_id":"497","name":"AHRC HEALTH CARE INC","tax_id":"13-4032078"}
+,{"organization_id":"498","name":"WEST HARLEM GROUP ASSISTANCE INC","tax_id":"23-7169558"}
+,{"organization_id":"499","name":"UNITED CEREBRAL PALSY OF NEW YORK CITY DBA ADAPT COMMUNITY NETWORK","tax_id":"13-5654532"}
+,{"organization_id":"500","name":"VENTURE HOUSE INC","tax_id":"11-2890587"}
+,{"organization_id":"501","name":"GOTHAM PER DIEM INC","tax_id":"13-3081475"}
+,{"organization_id":"502","name":"RESEARCH FOUNDATION FOR MENTAL HYGIENE INC","tax_id":"14-1410842"}
+,{"organization_id":"503","name":"THE SAMARITANS OF NEW YORK INC","tax_id":"13-3164464"}
+,{"organization_id":"504","name":"BROWNSVILLE COMMUNITY DEVELOPMENT CORPORATION","tax_id":"11-2544630"}
+,{"organization_id":"505","name":"IRIS HOUSE: A CENTER FOR WOMEN LIVING WITH HIV INC","tax_id":"13-3699201"}
+,{"organization_id":"506","name":"COMMUNITY HEALTH ACTION OF STATEN ISLAND INC","tax_id":"13-3556132"}
+,{"organization_id":"507","name":"FACES NY INC","tax_id":"13-3449087"}
+,{"organization_id":"508","name":"BRIDGING ACCESS TO CARE INC","tax_id":"11-3031208"}
+,{"organization_id":"509","name":"BRONX-LEBANON HOSPITAL CENTER","tax_id":"13-1974191"}
+,{"organization_id":"510","name":"WOMEN IN NEED INC","tax_id":"13-3164477"}
+,{"organization_id":"511","name":"COMMUNITY HEALTH PROJECT INC","tax_id":"13-3409680"}
+,{"organization_id":"512","name":"HHC BELLEVUE HOSPITAL CENTER"}
+,{"organization_id":"513","name":"HHC WOODHULL MEDICAL AND MENTAL HEALTH CENTER"}
+,{"organization_id":"514","name":"HHC JACOBI MEDICAL CENTER"}
+,{"organization_id":"515","name":"HHC HARLEM HOSPITAL CENTER"}
+,{"organization_id":"516","name":"HHC KINGS COUNTY HOSPITAL CENTER"}
+,{"organization_id":"517","name":"ST BARNABAS HOSPITAL","tax_id":"13-1740122"}
+,{"organization_id":"518","name":"HHC ELMHURST HOSPITAL CENTER"}
+,{"organization_id":"519","name":"APICHA COMMUNITY HEALTH CENTER","tax_id":"13-3706365"}
+,{"organization_id":"520","name":"WYCKOFF HEIGHTS MEDICAL CENTER"}
+,{"organization_id":"521","name":"THE INSTITUTE FOR FAMILY HEALTH","tax_id":"13-3273402"}
+,{"organization_id":"522","name":"VOCES LATINAS CORP","tax_id":"20-2312651"}
+,{"organization_id":"523","name":"WILLIAM F RYAN COMMUNITY HEALTH CENTER INC","tax_id":"13-2884976"}
+,{"organization_id":"524","name":"GOD'S LOVE WE DELIVER INC","tax_id":"13-3366846"}
+,{"organization_id":"525","name":"AIDS SERVICE CENTER OF LOWER MANHATTAN INC","tax_id":"13-3562071"}
+,{"organization_id":"526","name":"LA NUEVA ESPERANZA INC","tax_id":"20-4393724"}
+,{"organization_id":"527","name":"CARE FOR THE HOMELESS","tax_id":"13-3666994"}
+,{"organization_id":"528","name":"HHC METROPOLITAN HOSPITAL CENTER"}
+,{"organization_id":"529","name":"HHC QUEENS HOSPITAL CENTER"}
+,{"organization_id":"530","name":"HHC LINCOLN MEDICAL & MENTAL HEALTH CENTER"}
+,{"organization_id":"531","name":"THE HETRICK-MARTIN INSTITUTE INC","tax_id":"13-3104537"}
+,{"organization_id":"532","name":"HISPANIC AIDS FORUM INC","tax_id":"13-3422748"}
+,{"organization_id":"533","name":"AFTER HOURS PROJECT","tax_id":"33-1007278"}
+,{"organization_id":"534","name":"COMMUNITY HEALTHCARE NETWORK INC","tax_id":"13-3083068"}
+,{"organization_id":"535","name":"FAMILY SERVICES NETWORK OF NEW YORK INC","tax_id":"11-2592651"}
+,{"organization_id":"536","name":"UNITED COMMUNITY CENTERS INC","tax_id":"11-1950787"}
+,{"organization_id":"537","name":"WASHINGTON HEIGHTS CORNER PROJECT INC","tax_id":"20-8672015"}
+,{"organization_id":"538","name":"QUEENS LESBIAN & GAY COMMUNITY CENTER INC (D/B/A QUEENS PRIDE HOUSE)"}
+,{"organization_id":"539","name":"NEW YORK HARM REDUCTION EDUCATORS INC","tax_id":"13-3678499"}
+,{"organization_id":"540","name":"TOLENTINE-ZEISER COMMUNITY LIFE CENTER INC","tax_id":"13-3131888"}
+,{"organization_id":"541","name":"COUNTY OF ROCKLAND DEPARTMENT OF HEALTH"}
+,{"organization_id":"542","name":"TOUCH - TOGETHER OUR UNITY CAN HEAL INC"}
+,{"organization_id":"543","name":"HUDSON VALLEY COMMUNITY SERVICES INC"}
+,{"organization_id":"544","name":"THE FAMILY CENTER INC","tax_id":"13-3910716"}
+,{"organization_id":"545","name":"LATINO COMMISSION ON AIDS INC","tax_id":"13-3629466"}
+,{"organization_id":"546","name":"VOICES OF COMMUNITY ACTIVISTS & LEADERS (VOCAL-NY) INC","tax_id":"13-4094385"}
+,{"organization_id":"547","name":"HHC"}
+,{"organization_id":"548","name":"OPEN DOOR FAMILY MEDICAL CENTER INC"}
+,{"organization_id":"549","name":"MOUNT VERNON NEIGHBORHOOD HEALTH CENTER INC"}
+,{"organization_id":"550","name":"GREYSTON HEALTH SERVICES INC"}
+,{"organization_id":"551","name":"ST JOHN'S RIVERSIDE HOSPITAL"}
+,{"organization_id":"552","name":"WESTCHESTER COUNTY HEALTH CARE CORP"}
+,{"organization_id":"553","name":"HUDSON RIVER HEALTHCARE INC"}
+,{"organization_id":"554","name":"FAMILY SERVICES OF WESTCHESTER INC"}
+,{"organization_id":"555","name":"HAITIAN CENTERS COUNCIL INC","tax_id":"11-2648501"}
+,{"organization_id":"556","name":"ST ANN'S CORNER OF HARM REDUCTION INC","tax_id":"13-3724008"}
+,{"organization_id":"557","name":"NEW YORK COUNCIL ON ADOPTABLE CHILDREN INC","tax_id":"23-7269678"}
+,{"organization_id":"558","name":"LA CASA DE SALUD INC","tax_id":"02-0693325"}
+,{"organization_id":"559","name":"TRANSLATINA NETWORK INC","tax_id":"47-4807380"}
+,{"organization_id":"560","name":"GILDA'S CLUB NEW YORK CITY INC","tax_id":"13-4046652"}
+,{"organization_id":"561","name":"COMMUNITY RESEARCH INITIATIVE ON AIDS INC","tax_id":"13-3632234"}
+,{"organization_id":"562","name":"GAY MEN OF AFRICAN DESCENT INC","tax_id":"13-3597820"}
+,{"organization_id":"563","name":"HARM REDUCTION COALITION INC","tax_id":"94-3204958"}
+,{"organization_id":"564","name":"DIASPORA COMMUNITY SERVICES INC","tax_id":"11-3122295"}
+,{"organization_id":"565","name":"CLERGY UNITED FOR COMMUNITY EMPOWERMENT","tax_id":"11-3030795"}
+,{"organization_id":"566","name":"COALITION ON POSITIVE HEALTH EMPOWERMENT INC","tax_id":"27-2654975"}
+,{"organization_id":"567","name":"NATIONAL BLACK LEADERSHIP COMMISSION ON AIDS INC","tax_id":"13-3530740"}
+,{"organization_id":"568","name":"AID FOR AIDS INTERNATIONAL","tax_id":"13-3954568"}
+,{"organization_id":"569","name":"SECOND CHANCE RESOURCES GROUP INC","tax_id":"45-4345759"}
+,{"organization_id":"570","name":"TRANSGENDER LEGAL DEFENSE & EDUCATION FUND INC","tax_id":"04-3762842"}
+,{"organization_id":"571","name":"WOMEN'S PRISON ASSOCIATION AND HOME INC"}
+,{"organization_id":"572","name":"EXPONENTS INC","tax_id":"13-3572677"}
+,{"organization_id":"573","name":"THE BEDFORD STUYVESANT FAMILY HEALTH CENTER INC","tax_id":"11-2412205"}
+,{"organization_id":"574","name":"HEALTH PEOPLE INC","tax_id":"51-0418243"}
+,{"organization_id":"575","name":"LOVE HEALS INC","tax_id":"13-3693776"}
+,{"organization_id":"576","name":"ARTHUR ASHE INSTITUTE FOR URBAN HEALTH INC","tax_id":"11-3185372"}
+,{"organization_id":"577","name":"AMIDA CARE INC","tax_id":"13-4154068"}
+,{"organization_id":"578","name":"UNITY FELLOWSHIP/BREAKING GROUND INC","tax_id":"11-3352350"}
+,{"organization_id":"579","name":"COMMUNITY HEALTH & AWARENESS MINISTRY INC"}
+,{"organization_id":"580","name":"JAMAICA SERVICE PROGRAM FOR OLDER ADULTS INC","tax_id":"51-0204121"}
+,{"organization_id":"581","name":"YET INC","tax_id":"20-4824991"}
+,{"organization_id":"582","name":"CONGREGATION BEIT SIMCHAT TORAH","tax_id":"23-7406899"}
+,{"organization_id":"583","name":"JUST A FRIEND AWAY OF STATEN ISLAND"}
+,{"organization_id":"584","name":"BEREAN COMMUNITY AND FAMILY LIFE CENTER INC","tax_id":"11-2870465"}
+,{"organization_id":"585","name":"BROOKLYN CENTER FOR QUALITY LIFE","tax_id":"26-2651830"}
+,{"organization_id":"586","name":"THE CENTRAL FAMILY LIFE CENTER INC","tax_id":"13-3626127"}
+,{"organization_id":"587","name":"CHURCH OF GOD'S CHILDREN","tax_id":"13-3905414"}
+,{"organization_id":"588","name":"CHURCHES UNITED FOR FAIR HOUSING INC","tax_id":"26-4698161"}
+,{"organization_id":"589","name":"EMMANUEL BAPTIST CHURCH IN BROOKLYN INC","tax_id":"11-1666232"}
+,{"organization_id":"590","name":"FRIENDSHIP BAPTIST CHURCH INC","tax_id":"11-3657224"}
+,{"organization_id":"591","name":"GRACE BAPTIST CHURCH","tax_id":"03-0570727"}
+,{"organization_id":"592","name":"GREATER ALLEN AME CATHEDRAL OF NEW YORK"}
+,{"organization_id":"593","name":"IN THE LIFE MINISTRIES","tax_id":"03-0585577"}
+,{"organization_id":"594","name":"LOVE ALIVE INTERNATIONAL INC","tax_id":"26-4819108"}
+,{"organization_id":"595","name":"MOUNT HOREB BAPTIST CHURCH OF FLUSHING","tax_id":"11-2074467"}
+,{"organization_id":"596","name":"MT MORIAH AME CHURCH","tax_id":"11-2831746"}
+,{"organization_id":"597","name":"NEW HOPE FOR THE WORLD MINISTRIES INC"}
+,{"organization_id":"598","name":"PARKCHESTER BAPTIST CHURCH","tax_id":"13-2836302"}
+,{"organization_id":"599","name":"ST LUKE'S EPISCOPAL CHURCH","tax_id":"13-2747442"}
+,{"organization_id":"600","name":"YOUNG WOMEN OF COLOR HIV/AIDS COALITION"}
+,{"organization_id":"601","name":"CITY OF TRUTH COVENANT CHURCH INC","tax_id":"20-3368851"}
+,{"organization_id":"602","name":"ST MARGARET'S EPISCOPAL CHURCH"}
+,{"organization_id":"603","name":"BLACK VETERANS FOR SOCIAL JUSTICE INC","tax_id":"11-2608983"}
+,{"organization_id":"604","name":"HELP/PSI INC D/B/A/ BRIGHTPOINT HEALTH"}
+,{"organization_id":"605","name":"MUSLIM WOMEN'S INSTITUTE FOR RESEARCH AND DEVELOPMENT","tax_id":"80-0010627"}
+,{"organization_id":"606","name":"MORE GRACE REDEMPTIVE CENTER INC","tax_id":"11-3360284"}
+,{"organization_id":"607","name":"CHARLES B WANG COMMUNITY HEALTH CENTER INC","tax_id":"13-2739694"}
+,{"organization_id":"608","name":"POSITIVE HEALTH PROJECT INC","tax_id":"13-3845305"}
+,{"organization_id":"609","name":"HHC NORTH CENTRAL BRONX HOSPITAL"}
+,{"organization_id":"610","name":"HOUSING WORKS HEALTH SERVICES III"}
+,{"organization_id":"611","name":"DESTINATION TOMORROW INC","tax_id":"80-0259180"}
+,{"organization_id":"612","name":"NEW YORK TRANSGENDER ADVOCACY GROUP"}
+,{"organization_id":"613","name":"PRINCESS JANAE PLACE INC","tax_id":"47-4812838"}
+,{"organization_id":"614","name":"EMPIRE LIVER FOUNDATION INC","tax_id":"46-2121958"}
+,{"organization_id":"615","name":"ASTRAEA FOUNDATION INC"}
+,{"organization_id":"616","name":"NEW YORK BLOOD CENTER INC","tax_id":"13-1949477"}
+,{"organization_id":"617","name":"THE BLACK LGBT ALLIANCE OF NEW YORK INC"}
+,{"organization_id":"618","name":"CICATELLI ASSOCIATES INC","tax_id":"13-3020576"}
+,{"organization_id":"619","name":"HIV LAW PROJECT INC","tax_id":"13-3730564"}
+,{"organization_id":"620","name":"LEGAL SERVICES OF THE HUDSON VALLEY","tax_id":"13-6265606"}
+,{"organization_id":"621","name":"LEGAL AID SOCIETY OF ROCKLAND COUNTY INC"}
+,{"organization_id":"622","name":"ASSESSMENT AND REFERRAL TEAM"}
+,{"organization_id":"623","name":"THE TRUSTEES OF COLUMBIA UNIVERSITY IN THE CITY OF NEW YORK","tax_id":"13-5598093"}
+,{"organization_id":"624","name":"ICAHN SCHOOL OF MEDICINE AT MOUNT SINAI","tax_id":"13-6171197"}
+,{"organization_id":"625","name":"ALLEN AME CHURCH ALLEN COMMUNITY SENIOR CENTER"}
+,{"organization_id":"626","name":"ALPHA PHI ALPHA SENIOR CITIZENS CENTER INC","tax_id":"23-7436147"}
+,{"organization_id":"627","name":"AMERICAN-ITALIAN COALITION OF ORGANIZATIONS INC","tax_id":"11-2488439"}
+,{"organization_id":"628","name":"ARC XVI FT WASHINGTON INC","tax_id":"13-2745426"}
+,{"organization_id":"629","name":"ASSOCIATION OF BLACK SOCIAL WORKERS","tax_id":"13-2797551"}
+,{"organization_id":"630","name":"BAY RIDGE CENTER INC","tax_id":"80-0559714"}
+,{"organization_id":"631","name":"BEDFORD PARK MULTI-SERVICE CENTER FOR SENIOR CITIZENS INC","tax_id":"13-2745303"}
+,{"organization_id":"632","name":"BETH ABRAHAM HEALTH SERVICES","tax_id":"13-1739920"}
+,{"organization_id":"633","name":"BRONX JEWISH COMMUNITY COUNCIL INC","tax_id":"13-2744533"}
+,{"organization_id":"634","name":"BROOKLYN SECTION NATIONAL COUNCIL OF JEWISH WOMEN"}
+,{"organization_id":"635","name":"BROOKS SENIOR CENTER"}
+,{"organization_id":"636","name":"CANAAN BAPTIST CHURCH OF CHRIST","tax_id":"13-6013037"}
+,{"organization_id":"637","name":"CHARLES A. WALBURG MULTI-SERVICE ORGANIZATION INC","tax_id":"23-7337180"}
+,{"organization_id":"638","name":"COMMUNITY AGENCY FOR SENIOR CITIZENS INC","tax_id":"13-3263537"}
+,{"organization_id":"639","name":"CONGREGATION YETEV LEV DSATMAR INC","tax_id":"11-2314175"}
+,{"organization_id":"640","name":"CONVENT AVENUE BAPTIST CHURCH","tax_id":"13-1769584"}
+,{"organization_id":"641","name":"CORONA CONGREGATIONAL CHURCH","tax_id":"11-1802803"}
+,{"organization_id":"642","name":"COTHOA LUNCHEON CLUB INC","tax_id":"13-3608860"}
+,{"organization_id":"643","name":"CROWN HEIGHTS PRESERVATION COMMITTEE CORPORATION","tax_id":"11-2322490"}
+,{"organization_id":"644","name":"CYPRESS HILLS-FULTON STREET SENIOR CITIZENS CENTER INC","tax_id":"11-2297647"}
+,{"organization_id":"645","name":"DORCHESTER SENIOR CITIZENS CENTER INC","tax_id":"11-2305581"}
+,{"organization_id":"646","name":"EAST HARLEM COUNCIL FOR HUMAN SERVICES INC","tax_id":"13-6213532"}
+,{"organization_id":"647","name":"ELMCOR YOUTH & ADULT ACTIVITIES INC","tax_id":"11-2224539"}
+,{"organization_id":"648","name":"FIND AID FOR THE AGED INC","tax_id":"13-2666921"}
+,{"organization_id":"649","name":"FOOD BANK FOR NEW YORK CITY","tax_id":"13-3179546"}
+,{"organization_id":"650","name":"HEIGHTS AND HILLS INC","tax_id":"23-7237927"}
+,{"organization_id":"651","name":"HOPE OF ISRAEL SENIOR CITIZENS CENTER INC","tax_id":"13-2749857"}
+,{"organization_id":"652","name":"INSTITUTE FOR THE PUERTO RICAN HISPANIC ELDERLY INC","tax_id":"13-2987263"}
+,{"organization_id":"653","name":"ISABELLA GERIATRIC CENTER INC","tax_id":"13-3623808"}
+,{"organization_id":"654","name":"ITALIAN SENIOR CITIZENS CENTER INC","tax_id":"11-2308129"}
+,{"organization_id":"655","name":"LINCOLN SQUARE NEIGHBORHOOD CENTER INC","tax_id":"13-1825918"}
+,{"organization_id":"656","name":"MEALS ON WHEELS OF STATEN ISLAND INC","tax_id":"13-2894978"}
+,{"organization_id":"657","name":"MERRILL PARK CIVIC ASSOCIATION","tax_id":"11-2304928"}
+,{"organization_id":"658","name":"MID BRONX SENIOR CITIZENS COUNCIL INC","tax_id":"23-7354073"}
+,{"organization_id":"659","name":"MOBILIZATION FOR JUSTICE INC","tax_id":"13-2622748"}
+,{"organization_id":"660","name":"MORNINGSIDE RETIREMENT AND HEALTH SERVICES INC","tax_id":"13-6206256"}
+,{"organization_id":"661","name":"NEW YORK FOUNDATION FOR SENIOR CITIZENS HOME ATTENDANT SERVICES INC","tax_id":"13-3083582"}
+,{"organization_id":"662","name":"NEW YORK FOUNDATION FOR SENIOR CITIZENS INC","tax_id":"13-2618568"}
+,{"organization_id":"663","name":"NORTHEAST BRONX SENIOR CITIZENS INC","tax_id":"13-2759045"}
+,{"organization_id":"664","name":"PENN SOUTH SOCIAL SERVICES INC","tax_id":"13-3413349"}
+,{"organization_id":"665","name":"PEOPLE CARE INCORPORATED","tax_id":"13-2860748"}
+,{"organization_id":"666","name":"PERSONAL TOUCH HOME CARE OF NY INC","tax_id":"11-2339876"}
+,{"organization_id":"667","name":"PETER CARDELLA SENIOR CITIZEN CENTER INC","tax_id":"11-2328536"}
+,{"organization_id":"668","name":"PRESBYTERIAN SENIOR SERVICES","tax_id":"13-1981482"}
+,{"organization_id":"669","name":"RABBI ISRAEL MEYER HACOHEN RABBINICAL SEMINARY OF AMERICA","tax_id":"11-1752021"}
+,{"organization_id":"670","name":"RECREATION ROOMS AND SETTLEMENT","tax_id":"11-1820725"}
+,{"organization_id":"671","name":"REGIONAL AID FOR INTERIM NEEDS INC","tax_id":"13-6213586"}
+,{"organization_id":"672","name":"RIDGEWOOD OLDER ADULT CENTER & SERVICES INC","tax_id":"05-0607283"}
+,{"organization_id":"673","name":"RIVERDALE SENIOR SERVICES INC","tax_id":"23-7357997"}
+,{"organization_id":"674","name":"ROCHDALE VILLAGE SOCIAL SERVICES INC","tax_id":"11-3397470"}
+,{"organization_id":"675","name":"SAMARITAN DAYTOP VILLAGE INC","tax_id":"11-2635374"}
+,{"organization_id":"676","name":"SEBCO DEVELOPMENT INC","tax_id":"13-2944013"}
+,{"organization_id":"677","name":"SENIOR CITIZENS LEAGUE OF FLATBUSH INC","tax_id":"11-2347331"}
+,{"organization_id":"678","name":"SEPHARDIC MULTI- SERVICE SENIOR CITIZENS CENTER INC.","tax_id":"11-2301220"}
+,{"organization_id":"679","name":"SERVICES AND ADVOCACY FOR GAY LESBIAN BISEXUAL AND TRANSGENDER ELDERS INC","tax_id":"13-2947657"}
+,{"organization_id":"680","name":"SERVICES NOW FOR ADULT PERSONS INC","tax_id":"11-2591783"}
+,{"organization_id":"681","name":"SOUTHSIDE UNITED HOUSING DEVELOPMENT FUND CORPORATION","tax_id":"11-2268359"}
+,{"organization_id":"682","name":"SPRING CREEK SENIOR PARTNERS INC","tax_id":"74-3158439"}
+,{"organization_id":"683","name":"ST GABRIEL'S EPISCOPAL CHURCH INC","tax_id":"11-2463892"}
+,{"organization_id":"684","name":"ST JOHN ST MATTHEW EMANUEL LUTHERAN CHURCH"}
+,{"organization_id":"685","name":"STATEN ISLAND COMMUNITY SERVICES INC","tax_id":"13-2516926"}
+,{"organization_id":"686","name":"STEIN SENIOR CENTER INC","tax_id":"23-7378342"}
+,{"organization_id":"687","name":"THE CARTER BURDEN CENTER FOR THE AGING INC","tax_id":"23-7129499"}
+,{"organization_id":"688","name":"SPANISH SPEAKING ELDERLY COUNCIL-RAICES INC","tax_id":"11-2730462"}
+,{"organization_id":"689","name":"UNITED SENIOR CITIZENS OF SUNSET PARK INC","tax_id":"11-2358277"}
+,{"organization_id":"690","name":"VISIONS/SERVICES FOR THE BLIND AND VISUALLY IMPAIRED","tax_id":"13-1624210"}
+,{"organization_id":"691","name":"WASHINGTON HEIGHTS COMMUNITY SERVICES INC","tax_id":"13-2792876"}
+,{"organization_id":"692","name":"WAYSIDE OUT-REACH DEVELOPMENT INC","tax_id":"11-3528680"}
+,{"organization_id":"693","name":"WEILL MEDICAL COLLEGE OF CORNELL UNIVERSITY"}
+,{"organization_id":"694","name":"WILLIAM HODSON COMMUNITY CENTER INC","tax_id":"13-1660334"}
+,{"organization_id":"695","name":"YM YWHA OF THE BRONX/RIVERDALE YM YWHA"}
+,{"organization_id":"696","name":"YM YWHA OF WASHINGTON HEIGHTS AND INWOOD INC"}
+,{"organization_id":"697","name":"YOUNG ISRAEL PROGRAMS INC","tax_id":"03-0381957"}
+,{"organization_id":"698","name":"YOUNG MENS AND YOUNG WOMENS HEBREW ASSOCIATION OF"}
+,{"organization_id":"699","name":"DOMINICAN SISTERS FAMILY HEALTH SERVICE INC","tax_id":"13-1740242"}
+,{"organization_id":"700","name":"MERCYFIRST","tax_id":"11-1635089"}
+,{"organization_id":"701","name":"LITTLE SISTERS OF THE ASSUMPTION FAMILY HEALTH SERVICE INC","tax_id":"13-2867881"}
+,{"organization_id":"702","name":"SAFE SPACE NYC INC","tax_id":"11-1711014"}
+,{"organization_id":"703","name":"CATHOLIC GUARDIAN SERVICES","tax_id":"13-5562186"}
+,{"organization_id":"704","name":"LOWER EAST SIDE FAMILY UNION INC","tax_id":"23-7412423"}
+,{"organization_id":"705","name":"BOYS TOWN NEW YORK INC","tax_id":"20-5960877"}
+,{"organization_id":"706","name":"C.C.M.S.","tax_id":"11-2675243"}
+,{"organization_id":"707","name":"PUERTO RICAN FAMILY INSTITUTE INC","tax_id":"13-6167177"}
+,{"organization_id":"708","name":"1332 FULTON AVENUE DAY CARE CENTER INC","tax_id":"13-2690309"}
+,{"organization_id":"709","name":"ACTION NURSERY","tax_id":"11-3239606"}
+,{"organization_id":"710","name":"ADDIE MAE COLLINS COMMUNITY SERVICE INC","tax_id":"13-6183590"}
+,{"organization_id":"711","name":"AFRO-AMERICAN PARENTS DAY CARE CENTER INC","tax_id":"13-2727406"}
+,{"organization_id":"712","name":"ALL MY CHILDREN DAY CARE AND NURSERY SCHOOL","tax_id":"11-3371679"}
+,{"organization_id":"713","name":"ALONZO A DAUGHTRY MEMORIAL DAYCARE CENTER INC","tax_id":"11-2248164"}
+,{"organization_id":"714","name":"ALPHA KAPPA ALPHA SORORITY EPSILON PI OMEGA CHAPTER DAY CARE CENTER INC","tax_id":"22-2547491"}
+,{"organization_id":"715","name":"ATLED INC","tax_id":"13-3550709"}
+,{"organization_id":"716","name":"B'ABOVE WORLDWIDE INSTITUTE INC","tax_id":"11-3036967"}
+,{"organization_id":"717","name":"BELLEVUE DAY CARE CENTER INC","tax_id":"13-2676567"}
+,{"organization_id":"718","name":"BELMONT COMMUNITY DAY CARE CENTER INC","tax_id":"13-2681079"}
+,{"organization_id":"719","name":"BETH JACOB DAY CARE CENTER INC","tax_id":"11-2290419"}
+,{"organization_id":"720","name":"BETHEL MISSION STATION CHURCH INC / BETHEL EMANUEL TEMPLE INC","tax_id":"06-0983254"}
+,{"organization_id":"721","name":"BILLY MARTIN CHILD DEVELOPMENT DAY CARE CENTER","tax_id":"11-2233228"}
+,{"organization_id":"722","name":"BIRCH FAMILY SERVICES","tax_id":"11-2503193"}
+,{"organization_id":"723","name":"BLANCHE COMMUNITY PROGRESS DAY CARE CENTER INC","tax_id":"11-2243236"}
+,{"organization_id":"724","name":"BLOOMINGDALE FAMILY PROGRAM INC","tax_id":"13-2638566"}
+,{"organization_id":"725","name":"BNOS ZION OF BOBOV INC","tax_id":"11-2288765"}
+,{"organization_id":"726","name":"BOULEVARD NURSERY SCHOOL INC","tax_id":"11-1710362"}
+,{"organization_id":"727","name":"BRONX COMMUNITY COLLEGE ASSOCIATION INC","tax_id":"23-7327307"}
+,{"organization_id":"728","name":"BRONXDALE TENANTS LEAGUE DAY CARE CENTER INC","tax_id":"13-2681414"}
+,{"organization_id":"729","name":"BROOKLYN DEVELOPMENT CENTER EARLY CHILDHOOD SERVICES INC"}
+,{"organization_id":"730","name":"BROOKLYN KINDERGARTEN SOCIETY","tax_id":"11-1631820"}
+,{"organization_id":"731","name":"BUMBLEBEES-R-US INC","tax_id":"26-3876544"}
+,{"organization_id":"732","name":"BUSHWICK IMPROVEMENT SOCIETY INC","tax_id":"11-2478788"}
+,{"organization_id":"733","name":"BUSHWICK UNITED HOUSING DEVELOPMENT FUND CORPORATION","tax_id":"11-2504368"}
+,{"organization_id":"734","name":"CARDINAL MCCLOSKEY SCHOOL AND HOME FOR CHILDREN","tax_id":"13-1740443"}
+,{"organization_id":"735","name":"CHILD PRODIGY LEARNING CENTER II","tax_id":"45-2987832"}
+,{"organization_id":"736","name":"CHRISTINA DAY CARE INC","tax_id":"51-0443444"}
+,{"organization_id":"737","name":"CITIZENS CARE DAY CARE CENTER INC","tax_id":"13-2535389"}
+,{"organization_id":"738","name":"CLIFFORD GLOVER DAY CARE CENTER INC","tax_id":"11-2501328"}
+,{"organization_id":"739","name":"COLONY-SOUTH BROOKLYN HOUSES INC","tax_id":"11-2197984"}
+,{"organization_id":"740","name":"COMMITTEE FOR EARLY CHILDHOOD DEVELOPMENT DAY CARE CENTER INC","tax_id":"11-2343437"}
+,{"organization_id":"741","name":"COMMUNITY LIFE CENTER INC"}
+,{"organization_id":"742","name":"COMMUNITY PARENTS INC","tax_id":"11-2207085"}
+,{"organization_id":"743","name":"CORNERSTONE DAY CARE CENTER INC","tax_id":"11-2164436"}
+,{"organization_id":"744","name":"CYPRESS HILLS CHILD CARE CORPORATION","tax_id":"11-3116118"}
+,{"organization_id":"745","name":"DAWNING VILLAGE INC","tax_id":"13-3214064"}
+,{"organization_id":"746","name":"DEWITT REFORMED CHURCH HEAD START","tax_id":"13-2642057"}
+,{"organization_id":"747","name":"DOMINICAN WOMEN'S DEVELOPMENT CENTER INC","tax_id":"13-3593885"}
+,{"organization_id":"748","name":"EAST CALVARY DAY CARE CENTER INC","tax_id":"13-1789741"}
+,{"organization_id":"749","name":"EAST TREMONT CHILD CARE AND DEVELOPMENT CENTER INC","tax_id":"13-2710021"}
+,{"organization_id":"750","name":"ESCUELA HISPANA MONTESSORI INC","tax_id":"13-2543563"}
+,{"organization_id":"751","name":"FLUSHING DAY CARE CENTER INC","tax_id":"11-2196556"}
+,{"organization_id":"752","name":"FORDHAM-BEDFORD HOUSING CORPORATION","tax_id":"13-3010578"}
+,{"organization_id":"753","name":"FT GEORGE COMMUNITY ENRICHMENT CENTER INC","tax_id":"13-3099325"}
+,{"organization_id":"754","name":"GAN DAY CARE CENTER INC","tax_id":"11-2302049"}
+,{"organization_id":"755","name":"GREATER FLUSHING COMMUNITY COUNCIL INC","tax_id":"23-7006635"}
+,{"organization_id":"756","name":"HAWTHORNE CORNERS DAY CARE CENTER INC","tax_id":"11-2288235"}
+,{"organization_id":"757","name":"HEBREW KINDERGARTEN INFANTS HOME INC","tax_id":"11-1808218"}
+,{"organization_id":"758","name":"HELP DAYCARE CORP","tax_id":"13-3660919"}
+,{"organization_id":"759","name":"HIGHBRIDGE ADVISORY COUNCIL FAMILY SERVICES INC","tax_id":"13-2724492"}
+,{"organization_id":"760","name":"HOSPITAL CLINIC HOME CENTER INSTRUCTIONAL CORP.","tax_id":"11-2629532"}
+,{"organization_id":"761","name":"INNER FORCE TOTS INC","tax_id":"20-2445783"}
+,{"organization_id":"762","name":"LA PENINSULA COMMUNITY ORGANIZATION INC","tax_id":"13-3061340"}
+,{"organization_id":"763","name":"LABOR AND INDUSTRY FOR EDUCATION INC","tax_id":"11-4088055"}
+,{"organization_id":"764","name":"L.A.B.O.R BATHGATE COMMUNITY CHILD CARE CENTER INC","tax_id":"13-2762139"}
+,{"organization_id":"765","name":"THE LEAGUE FOR BETTER COMMUNITY LIFE INC","tax_id":"11-6106597"}
+,{"organization_id":"766","name":"LEXINGTON CHILDREN'S CENTER INC","tax_id":"13-2842393"}
+,{"organization_id":"767","name":"MARC ACADEMY AND FAMILY CENTER INC","tax_id":"13-3966229"}
+,{"organization_id":"768","name":"MID BRONX CCRP EARLY CHILDHOOD CENTER INC","tax_id":"13-3854137"}
+,{"organization_id":"769","name":"MONTESSORI PROGRESSIVE LEARNING CENTER INC","tax_id":"22-3001223"}
+,{"organization_id":"770","name":"NATIONAL ASSOCIATION OF FAMILY DEVELOPMENT CENTERS INC","tax_id":"11-2707362"}
+,{"organization_id":"771","name":"NEW LIFE CHILD DEVELOPMENT CENTER INC","tax_id":"23-7165024"}
+,{"organization_id":"772","name":"NICHOLAS CARDELL DAY CARE CENTER","tax_id":"13-2742773"}
+,{"organization_id":"773","name":"NORTH BRONX NATIONAL COUNCIL OF NEGRO WOMEN CHILD DEVELOPMENT CENTER INC","tax_id":"13-3338239"}
+,{"organization_id":"774","name":"NORTHEAST BRONX DAY CARE CENTER INC","tax_id":"13-1993875"}
+,{"organization_id":"775","name":"NORTHERN MANHATTAN PERINATAL PARTNERSHIP INC","tax_id":"13-3782555"}
+,{"organization_id":"776","name":"NUESTROS NINOS DAY CARE CENTER INC","tax_id":"11-2315327"}
+,{"organization_id":"777","name":"OMEGA PSI PHI FRATERNITY-NU OMICRON CHAPTER DAY CARE CENTER INC","tax_id":"11-2698494"}
+,{"organization_id":"778","name":"OPEN DOOR ASSOCIATES INC","tax_id":"13-1624215"}
+,{"organization_id":"779","name":"OUR CHILDREN THE LEADERS OF TOMORROW INC","tax_id":"27-0787205"}
+,{"organization_id":"780","name":"PRINCE HALL SERVICE FUND INC","tax_id":"13-3263543"}
+,{"organization_id":"781","name":"QUEENS COUNTY EDUCATORS FOR TOMORROW","tax_id":"11-2475654"}
+,{"organization_id":"782","name":"QUICK START DAY CARE CENTER INC","tax_id":"11-2219525"}
+,{"organization_id":"783","name":"RENA DAY CARE INC","tax_id":"13-2724410"}
+,{"organization_id":"784","name":"ROCHDALE VILLAGE NURSERY SCHOOL","tax_id":"11-2034932"}
+,{"organization_id":"785","name":"ST JEMUEL GROUP FAMILY DAY CARE INC","tax_id":"30-0270618"}
+,{"organization_id":"786","name":"ST MARKS FAMILY SERVICES COUNCIL"}
+,{"organization_id":"787","name":"SEVENTH AVENUE CENTER FOR FAMILY SERVICES","tax_id":"54-2120059"}
+,{"organization_id":"788","name":"SHARON BAPTIST BOARD OF DIRECTORS INC","tax_id":"13-6017875"}
+,{"organization_id":"789","name":"SHIRLEY CHISHOLM DAY CARE CENTER INC","tax_id":"11-2305568"}
+,{"organization_id":"790","name":"SHOLOM DAY CARE INC","tax_id":"26-2831269"}
+,{"organization_id":"791","name":"SOUTH BRONX HEAD START INC","tax_id":"13-2661989"}
+,{"organization_id":"792","name":"SOUTH JAMAICA CENTER FOR CHILDREN AND PARENTS INC","tax_id":"51-0179375"}
+,{"organization_id":"793","name":"ST ALBANS MONTESSORI DAY CARE CENTER INC","tax_id":"46-1560690"}
+,{"organization_id":"794","name":"ST JOHN'S PLACE FAMILY CENTER HDFC","tax_id":"13-3441465"}
+,{"organization_id":"795","name":"STRONG PLACE DAY CARE CENTER INC","tax_id":"11-2203754"}
+,{"organization_id":"796","name":"SUNNY SKIES PROSPECT CORP.","tax_id":"46-4433882"}
+,{"organization_id":"797","name":"SUNSET PARK CHILDREN'S SCHOOL","tax_id":"11-2713800"}
+,{"organization_id":"798","name":"THE EAST HARLEM BLOCK NURSERY INC"}
+,{"organization_id":"799","name":"THE YOUNG WOMEN'S CHRISTIAN ASSOCIATION OF THE CITY OF NEW YORK","tax_id":"13-1624230"}
+,{"organization_id":"800","name":"TRABAJAMOS COMMUNITY HEAD START","tax_id":"13-2600799"}
+,{"organization_id":"801","name":"TRADITIONAL DAY CARE CENTER INC","tax_id":"11-3438908"}
+,{"organization_id":"802","name":"TREMONT CROTONA DAY CARE CENTER INC","tax_id":"13-2724087"}
+,{"organization_id":"803","name":"TREMONT MONTEREY DAY CARE CENTER INC","tax_id":"13-2676543"}
+,{"organization_id":"804","name":"UNITED ACADEMY INC","tax_id":"11-3075161"}
+,{"organization_id":"805","name":"UNITED BRONX PARENTS INC","tax_id":"13-6203312"}
+,{"organization_id":"806","name":"UNITED COMMUNITY DAY CARE CENTER INC","tax_id":"23-7129582"}
+,{"organization_id":"807","name":"UNITED FEDERATION OF BLACK COMMUNITY ORGANIZATIONS INC","tax_id":"13-2783581"}
+,{"organization_id":"808","name":"UTOPIA CHILDREN'S CENTER INC","tax_id":"13-1624243"}
+,{"organization_id":"809","name":"WASHINGTON HEIGHTS CHILD CARE CENTER","tax_id":"13-2709329"}
+,{"organization_id":"810","name":"WEST HARLEM COMMUNITY ORGANIZATION INC","tax_id":"13-6193685"}
+,{"organization_id":"811","name":"WESTCHESTER TREMONT DAY CARE CENTER","tax_id":"13-2603939"}
+,{"organization_id":"812","name":"THE DENNELISSE CORP","tax_id":"13-3224954"}
+,{"organization_id":"813","name":"VIP HEALTH CARE / KWIK CARE LTD"}
+,{"organization_id":"814","name":"Youth Advocate Programs, Inc."}
+,{"organization_id":"815","name":"Exodus Transitional Community"}
+,{"organization_id":"816","name":"Phipps CDC"}
+,{"organization_id":"817","name":"NY Center of Inter' Dev of Staten Island"}
+,{"organization_id":"818","name":"Young Men's Christian Association of Greater New York"}
+,{"organization_id":"819","name":"Esperanza NY, Inc."}
+,{"organization_id":"820","name":"Fedcap Rehabilitation Services, Inc."}
+,{"organization_id":"821","name":"Center for Community Alternatives, Inc."}
+,{"organization_id":"822","name":"URBAN YOUTH ALLIANCE INTERNATIONAL INC"}
+,{"organization_id":"823","name":"MAN UP INC"}
+,{"organization_id":"824","name":"GETTING OUT AND STAYING OUT"}
+,{"organization_id":"825","name":"CARNEGIE HALL CORPORATION"}
+,{"organization_id":"826","name":"NYCID- Staten Island (Now Known as YPIS & NYSID)"}
+,{"organization_id":"827","name":"Community Connections for Youth"}
+,{"organization_id":"828","name":"ABBOTT HOUSE"}
+,{"organization_id":"829","name":"ARAB-AMERICAN FAMILY SUPPORT CENTER INC"}
+,{"organization_id":"830","name":"CATHOLIC GUARDIAN SERVICES / FORMERLY CATHOLIC GUARDIAN SOCIETY AND HOME BUREAU"}
+,{"organization_id":"831","name":"CAYUGA HOME FOR CHILDREN INC"}
+,{"organization_id":"832","name":"CHINATOWN YMCA (YMCA OF GREATER NEW YORK)"}
+,{"organization_id":"833","name":"COMMUNITY SOLUTIONS INC"}
+,{"organization_id":"834","name":"HARLEM DOWLING-WEST SIDE CTR FOR CHILDREN & FAMILY SERVICES"}
+,{"organization_id":"835","name":"INWOOD HOUSE, INC."}
+,{"organization_id":"836","name":"LITTLE FLOWER CHILDREN'S & FAMILY SERVICES OF NEW YORK"}
+,{"organization_id":"837","name":"MARTIN DE PORRES GROUP HOMES"}
+,{"organization_id":"838","name":"MENTAL HEALTH ASSOCIATION OF NYC"}
+,{"organization_id":"839","name":"NEW ALTERNATIVES FOR CHILDREN INC"}
+,{"organization_id":"840","name":"RISING GROUND (FORMERLY - LEAKE AND WATTS SERVICES, INC.)"}
+,{"organization_id":"841","name":"ST DOMINICS FAMILY SERVICES"}
+,{"organization_id":"842","name":"ST. JOHNS PLACE FAMILY CENTER DAY CARE CORPORATION"}
+,{"organization_id":"843","name":"ST. LUKE'S-ROOSEVELT HOSPITAL"}
+,{"organization_id":"844","name":"UNIVERSITY BEHAVIORAL ASSOCIATES,INC."}
+,{"organization_id":"845","name":"VIP HEALTH CARE SERVICES INC"}]

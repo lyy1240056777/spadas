@@ -1,4 +1,4 @@
-package main.java.web.Utils;
+package web.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

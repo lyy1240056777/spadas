@@ -1,10 +1,13 @@
 server:
-  port: 8082
-# Linux环境
+  port: 8081
 spadas:
+  dimension: 2
+  resolution: 10
+  leaf-capacity: 1000
+  cache-dataset: false
+  cache-index: true
+  save-index: false
+  frontend-limitation: 10000
   file:
-    # 硬盘存储路径,起始路径为项目根路径
-#    baseUri: ./dataset/argoverse/
     baseUri: ./dataset/
-    # 网页请求路径
     staticUri: /dataset/

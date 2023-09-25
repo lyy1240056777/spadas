@@ -1,4 +1,4 @@
-package main.java.web.VO;
+package web.VO;
 
 import edu.nyu.dss.similarity.CityNode;
 import io.swagger.annotations.ApiModel;

@@ -1,0 +1,1000 @@
+[{"service_id":"116","organization_id":"23","name":"PSYCHOSOCIAL CLUB"}
+,{"service_id":"1","organization_id":"1","name":"CUSTOMIZED ASSISTANCE SERVICES (CAS)"}
+,{"service_id":"2","organization_id":"1","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"3","organization_id":"1","name":"LEGAL SERVICES"}
+,{"service_id":"4","organization_id":"2","name":"CUSTOMIZED ASSISTANCE SERVICES (CAS)"}
+,{"service_id":"5","organization_id":"2","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"6","organization_id":"2","name":"LEGAL SERVICES NYC","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"7","organization_id":"2","name":"LEGAL SERVICES"}
+,{"service_id":"8","organization_id":"3","name":"CAREERCOMPASS"}
+,{"service_id":"9","organization_id":"3","name":"CAREERADVANCE"}
+,{"service_id":"10","organization_id":"3","name":"JOBS-PLUS","status":"NYCHA ONLY"}
+,{"service_id":"11","organization_id":"3","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"12","organization_id":"3","name":"YOUTHPATHWAYS","status":"HRA CLIENTS ONLY"}
+,{"service_id":"13","organization_id":"3","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"14","organization_id":"3","name":"IMMIGRANT SERVICES"}
+,{"service_id":"15","organization_id":"3","name":"ASSISTED COMPETITIVE EMPLOYMENT"}
+,{"service_id":"16","organization_id":"3","name":"PSYCHOSOCIAL CLUB"}
+,{"service_id":"17","organization_id":"3","name":"ADVOCACY SERVICES"}
+,{"service_id":"18","organization_id":"4","name":"CAREERCOMPASS"}
+,{"service_id":"19","organization_id":"4","name":"CAREERADVANCE"}
+,{"service_id":"20","organization_id":"4","name":"YOUTHPATHWAYS","status":"HRA CLIENTS ONLY"}
+,{"service_id":"21","organization_id":"5","name":"CAREERCOMPASS"}
+,{"service_id":"22","organization_id":"5","name":"CAREERADVANCE"}
+,{"service_id":"23","organization_id":"5","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"24","organization_id":"5","name":"YOUTHPATHWAYS","status":"HRA CLIENTS ONLY"}
+,{"service_id":"25","organization_id":"5","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"26","organization_id":"5","name":"PSYCHOSOCIAL CLUB"}
+,{"service_id":"27","organization_id":"6","name":"CAREERCOMPASS"}
+,{"service_id":"28","organization_id":"7","name":"CAREERCOMPASS"}
+,{"service_id":"29","organization_id":"8","name":"CAREERCOMPASS"}
+,{"service_id":"30","organization_id":"8","name":"CAREERADVANCE"}
+,{"service_id":"31","organization_id":"8","name":"JOBS-PLUS","status":"NYCHA ONLY"}
+,{"service_id":"32","organization_id":"8","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"33","organization_id":"9","name":"CAREERCOMPASS"}
+,{"service_id":"34","organization_id":"9","name":"CAREERADVANCE"}
+,{"service_id":"35","organization_id":"9","name":"YOUTHPATHWAYS","status":"HRA CLIENTS ONLY"}
+,{"service_id":"36","organization_id":"10","name":"CAREERADVANCE"}
+,{"service_id":"37","organization_id":"10","name":"HIV/AIDS SERVICES ADMINISTRATION (HASA)","status":"HRA Staff Closed to Public"}
+,{"service_id":"38","organization_id":"10","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"39","organization_id":"10","name":"HIV HOUSING"}
+,{"service_id":"40","organization_id":"10","name":"FOOD AND NUTRITION","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"41","organization_id":"10","name":"HIV TESTING SERVICES: SOCIAL NETWORK STRATEGY TESTING IN NON-CLINICAL SETTINGS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"42","organization_id":"10","name":"TRANSITIONAL CARE COORDINATION","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"43","organization_id":"10","name":"EARLY INTERVENTION SERVICES: PRIORITY POPULATIONS TESTING IN NON-CLINICAL SETTINGS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"44","organization_id":"10","name":"SHORT-TERM RENTAL ASSISTANCE","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"117","organization_id":"23","name":"ADVOCACY SERVICES"}
+,{"service_id":"45","organization_id":"10","name":"SUPPORTIVE COUNSELING & FAMILY STABILIZATION SERVICES - GENERAL","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"46","organization_id":"10","name":"CITY COUNCIL INITIATIVES [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"47","organization_id":"10","name":"OUTREACH AND EDUCATION IN CBOS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"48","organization_id":"10","name":"HARM REDUCTION SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"49","organization_id":"10","name":"MENTAL HEALTH SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"50","organization_id":"10","name":"LEGAL SERVICES NYC","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"51","organization_id":"11","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"52","organization_id":"11","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"53","organization_id":"11","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"54","organization_id":"12","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"55","organization_id":"12","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"56","organization_id":"12","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"57","organization_id":"12","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"58","organization_id":"12","name":"AIM (Advocate, Intervene, Mentor) Program"}
+,{"service_id":"59","organization_id":"12","name":"Arches: A Transformative Mentoring Intervention"}
+,{"service_id":"60","organization_id":"12","name":"Next STEPS"}
+,{"service_id":"61","organization_id":"12","name":"PREVENTIVE SERVICES"}
+,{"service_id":"62","organization_id":"13","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"63","organization_id":"14","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"64","organization_id":"14","name":"SUPPORTED SRO"}
+,{"service_id":"65","organization_id":"15","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"66","organization_id":"15","name":"HOMEBASE HOMELESSNESS PREVENTION"}
+,{"service_id":"67","organization_id":"16","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"68","organization_id":"16","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"69","organization_id":"17","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"70","organization_id":"17","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"71","organization_id":"17","name":"FAMILY SUPPORT"}
+,{"service_id":"72","organization_id":"17","name":"ADVOCACY SERVICES"}
+,{"service_id":"73","organization_id":"18","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"74","organization_id":"18","name":"TEEN RAPP","status":"SCHOOL BASED NO FIXED LOCATION"}
+,{"service_id":"75","organization_id":"18","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"76","organization_id":"18","name":"PREVENTIVE SERVICES"}
+,{"service_id":"77","organization_id":"18","name":"FOSTER CARE"}
+,{"service_id":"78","organization_id":"19","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"79","organization_id":"19","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"80","organization_id":"19","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"81","organization_id":"19","name":"FOSTER CARE"}
+,{"service_id":"82","organization_id":"19","name":"PREVENTIVE SERVICES"}
+,{"service_id":"83","organization_id":"20","name":"EMERGENCY INTERVENTION SERVICES","status":"HQ-DV SHELTER PROVIDER"}
+,{"service_id":"84","organization_id":"21","name":"SNAP CENTER","status":"HRA STAFF"}
+,{"service_id":"85","organization_id":"21","name":"JOB CENTER","status":"HRA Staff"}
+,{"service_id":"86","organization_id":"21","name":"HIV/AIDS SERVICES ADMINISTRATION (HASA)","status":"HRA Staff Closed to Public"}
+,{"service_id":"87","organization_id":"22","name":"HOMEBASE HOMELESSNESS PREVENTION"}
+,{"service_id":"88","organization_id":"22","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"89","organization_id":"22","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"90","organization_id":"22","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"91","organization_id":"22","name":"FAMILY SUPPORT"}
+,{"service_id":"92","organization_id":"22","name":"READING & WRITING"}
+,{"service_id":"93","organization_id":"22","name":"SUPPORTED SRO"}
+,{"service_id":"94","organization_id":"22","name":"HIV HOUSING"}
+,{"service_id":"95","organization_id":"22","name":"SUPPORTED HOUSING"}
+,{"service_id":"96","organization_id":"22","name":"NY NY III SUPPORTED HOUSING"}
+,{"service_id":"97","organization_id":"22","name":"FOOD AND NUTRITION","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"98","organization_id":"22","name":"TRANSITIONAL CARE COORDINATION","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"99","organization_id":"22","name":"CONDOM DISTRIBUTION SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"100","organization_id":"22","name":"STRUCTURAL-LEVEL CHANGE TO ADDRESS BARRIERS TO HIV PREVENTION AMONG HIGH-RISK/HIGH-PREVALENCE POPULATIONS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"101","organization_id":"22","name":"SHORT-TERM HOUSING SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"102","organization_id":"22","name":"SUPPORTIVE COUNSELING & FAMILY STABILIZATION SERVICES - GENERAL","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"103","organization_id":"22","name":"OUTREACH AND STATUS NEUTRAL PREVENTION AND CARE NAVIGATION IN BROOKLYN","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"104","organization_id":"22","name":"OUTREACH AND EDUCATION IN CBOS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"105","organization_id":"22","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"106","organization_id":"22","name":"PREVENTIVE SERVICES"}
+,{"service_id":"107","organization_id":"23","name":"HOMEBASE HOMELESSNESS PREVENTION"}
+,{"service_id":"108","organization_id":"23","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"109","organization_id":"23","name":"FAMILY SUPPORT"}
+,{"service_id":"110","organization_id":"23","name":"IMMIGRANT SERVICES"}
+,{"service_id":"111","organization_id":"23","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"112","organization_id":"23","name":"READING & WRITING"}
+,{"service_id":"113","organization_id":"23","name":"SUPPORTED SRO"}
+,{"service_id":"114","organization_id":"23","name":"OUTREACH"}
+,{"service_id":"115","organization_id":"23","name":"NON-MEDICAID CARE COORDINATION (OMH)"}
+,{"service_id":"118","organization_id":"23","name":"ASSISTED COMPETITIVE EMPLOYMENT"}
+,{"service_id":"119","organization_id":"23","name":"SUPPORTED HOUSING"}
+,{"service_id":"120","organization_id":"23","name":"HIV HOUSING"}
+,{"service_id":"121","organization_id":"23","name":"MEDICALLY SUPERVISED OUTPATIENT"}
+,{"service_id":"122","organization_id":"23","name":"OUTPATIENT REHABILITATION SERVICES"}
+,{"service_id":"123","organization_id":"23","name":"SENIOR CENTER"}
+,{"service_id":"124","organization_id":"23","name":"HOME DELIVERED MEALS"}
+,{"service_id":"125","organization_id":"23","name":"CASE MANAGEMENT ONLY"}
+,{"service_id":"126","organization_id":"23","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"127","organization_id":"23","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"128","organization_id":"23","name":"PREVENTIVE SERVICES"}
+,{"service_id":"129","organization_id":"24","name":"HOMEBASE HOMELESSNESS PREVENTION"}
+,{"service_id":"130","organization_id":"24","name":"JOBS-PLUS","status":"NYCHA ONLY"}
+,{"service_id":"131","organization_id":"24","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"132","organization_id":"24","name":"RAPID RE-HOUSING"}
+,{"service_id":"133","organization_id":"24","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"134","organization_id":"24","name":"READING & WRITING"}
+,{"service_id":"135","organization_id":"24","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"136","organization_id":"24","name":"IMMIGRANT SERVICES"}
+,{"service_id":"137","organization_id":"24","name":"FAMILY SUPPORT"}
+,{"service_id":"138","organization_id":"24","name":"MICA NETWORK"}
+,{"service_id":"139","organization_id":"24","name":"SUPPORTED SRO"}
+,{"service_id":"140","organization_id":"24","name":"FOOD AND NUTRITION","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"141","organization_id":"24","name":"HARM REDUCTION SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"142","organization_id":"24","name":"SENIOR CENTER"}
+,{"service_id":"143","organization_id":"24","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"144","organization_id":"24","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"145","organization_id":"24","name":"PREVENTIVE SERVICES"}
+,{"service_id":"146","organization_id":"25","name":"HOMEBASE HOMELESSNESS PREVENTION"}
+,{"service_id":"147","organization_id":"25","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"148","organization_id":"25","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"149","organization_id":"25","name":"FAMILY SUPPORT"}
+,{"service_id":"150","organization_id":"25","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"151","organization_id":"26","name":"HOMEBASE HOMELESSNESS PREVENTION"}
+,{"service_id":"152","organization_id":"27","name":"HOMEBASE HOMELESSNESS PREVENTION"}
+,{"service_id":"153","organization_id":"28","name":"JOBS-PLUS","status":"NYCHA ONLY"}
+,{"service_id":"154","organization_id":"28","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"155","organization_id":"28","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"156","organization_id":"28","name":"FAMILY SUPPORT"}
+,{"service_id":"157","organization_id":"28","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"158","organization_id":"28","name":"READING & WRITING"}
+,{"service_id":"159","organization_id":"28","name":"SENIOR CENTER"}
+,{"service_id":"160","organization_id":"28","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"161","organization_id":"28","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"162","organization_id":"29","name":"JOBS-PLUS","status":"NYCHA ONLY"}
+,{"service_id":"163","organization_id":"29","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"164","organization_id":"29","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"165","organization_id":"29","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"166","organization_id":"29","name":"READING & WRITING"}
+,{"service_id":"167","organization_id":"29","name":"SUPPORTED SRO"}
+,{"service_id":"168","organization_id":"29","name":"SENIOR CENTER"}
+,{"service_id":"169","organization_id":"29","name":"HOME DELIVERED MEALS"}
+,{"service_id":"170","organization_id":"29","name":"NORC SITES"}
+,{"service_id":"171","organization_id":"29","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"172","organization_id":"30","name":"JOBS-PLUS","status":"NYCHA ONLY"}
+,{"service_id":"173","organization_id":"30","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"174","organization_id":"30","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"175","organization_id":"30","name":"FAMILY SUPPORT"}
+,{"service_id":"176","organization_id":"31","name":"JOBS-PLUS","status":"NYCHA ONLY"}
+,{"service_id":"177","organization_id":"31","name":"YOUTHPATHWAYS","status":"HRA CLIENTS ONLY"}
+,{"service_id":"178","organization_id":"32","name":"JOBS-PLUS","status":"NYCHA ONLY"}
+,{"service_id":"179","organization_id":"33","name":"PLACEMENT SERVICES","status":"HRA REFERRAL ONLY"}
+,{"service_id":"180","organization_id":"33","name":"READING & WRITING"}
+,{"service_id":"181","organization_id":"33","name":"IMMIGRANT SERVICES"}
+,{"service_id":"182","organization_id":"33","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"183","organization_id":"33","name":"FAMILY SUPPORT"}
+,{"service_id":"184","organization_id":"33","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"185","organization_id":"33","name":"TRANSPORTATION ONLY"}
+,{"service_id":"186","organization_id":"33","name":"SENIOR CENTER"}
+,{"service_id":"187","organization_id":"33","name":"HOME DELIVERED MEALS"}
+,{"service_id":"188","organization_id":"34","name":"TEEN RAPP","status":"SCHOOL BASED NO FIXED LOCATION"}
+,{"service_id":"189","organization_id":"35","name":"TEEN RAPP","status":"SCHOOL BASED NO FIXED LOCATION"}
+,{"service_id":"190","organization_id":"36","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"191","organization_id":"37","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"192","organization_id":"38","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"193","organization_id":"38","name":"PREVENTIVE SERVICES"}
+,{"service_id":"194","organization_id":"39","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"195","organization_id":"40","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"196","organization_id":"41","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"197","organization_id":"42","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"198","organization_id":"43","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"199","organization_id":"44","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"200","organization_id":"44","name":"FAMILY SUPPORT"}
+,{"service_id":"201","organization_id":"44","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"202","organization_id":"44","name":"PREVENTIVE SERVICES"}
+,{"service_id":"203","organization_id":"44","name":"FOSTER CARE"}
+,{"service_id":"204","organization_id":"45","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"205","organization_id":"46","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"206","organization_id":"46","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"207","organization_id":"46","name":"IMMIGRANT SERVICES"}
+,{"service_id":"208","organization_id":"46","name":"FAMILY SUPPORT"}
+,{"service_id":"209","organization_id":"46","name":"SUPPORTED SRO"}
+,{"service_id":"210","organization_id":"46","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"211","organization_id":"46","name":"AIM (Advocate, Intervene, Mentor) Program"}
+,{"service_id":"212","organization_id":"46","name":"Arches: A Transformative Mentoring Intervention"}
+,{"service_id":"213","organization_id":"46","name":"Next STEPS"}
+,{"service_id":"214","organization_id":"46","name":"Justice Plus/ Job Readiness Program"}
+,{"service_id":"215","organization_id":"46","name":"Parent Support Program"}
+,{"service_id":"216","organization_id":"46","name":"FOSTER CARE"}
+,{"service_id":"217","organization_id":"46","name":"PREVENTIVE SERVICES"}
+,{"service_id":"218","organization_id":"47","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"219","organization_id":"48","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"220","organization_id":"48","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"221","organization_id":"48","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"222","organization_id":"48","name":"FOSTER CARE"}
+,{"service_id":"223","organization_id":"48","name":"PREVENTIVE SERVICES"}
+,{"service_id":"224","organization_id":"49","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"225","organization_id":"49","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"226","organization_id":"49","name":"FOSTER CARE"}
+,{"service_id":"227","organization_id":"49","name":"PREVENTIVE SERVICES"}
+,{"service_id":"228","organization_id":"50","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"229","organization_id":"50","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"230","organization_id":"50","name":"SENIOR CENTER"}
+,{"service_id":"231","organization_id":"50","name":"NORC SITES"}
+,{"service_id":"232","organization_id":"50","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"233","organization_id":"51","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"234","organization_id":"52","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"235","organization_id":"52","name":"READING & WRITING"}
+,{"service_id":"236","organization_id":"52","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"237","organization_id":"52","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"238","organization_id":"52","name":"IMMIGRANT SERVICES"}
+,{"service_id":"239","organization_id":"52","name":"FAMILY SUPPORT"}
+,{"service_id":"240","organization_id":"53","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"241","organization_id":"53","name":"FOSTER CARE"}
+,{"service_id":"242","organization_id":"53","name":"PREVENTIVE SERVICES"}
+,{"service_id":"243","organization_id":"54","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"244","organization_id":"55","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"245","organization_id":"56","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"246","organization_id":"56","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"247","organization_id":"56","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"248","organization_id":"56","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"249","organization_id":"56","name":"READING & WRITING"}
+,{"service_id":"250","organization_id":"56","name":"SENIOR CENTER"}
+,{"service_id":"251","organization_id":"56","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"252","organization_id":"56","name":"HOME DELIVERED MEALS"}
+,{"service_id":"253","organization_id":"56","name":"CASE MANAGEMENT ONLY"}
+,{"service_id":"254","organization_id":"56","name":"NORC SITES"}
+,{"service_id":"255","organization_id":"57","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"256","organization_id":"58","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"257","organization_id":"58","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"258","organization_id":"59","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"259","organization_id":"59","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"260","organization_id":"60","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"261","organization_id":"60","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"262","organization_id":"60","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"263","organization_id":"60","name":"RECREATION"}
+,{"service_id":"264","organization_id":"60","name":"CLINIC TREATMENT"}
+,{"service_id":"265","organization_id":"60","name":"SENIOR CENTER"}
+,{"service_id":"266","organization_id":"60","name":"GERIATRIC MENTAL HEALTH"}
+,{"service_id":"267","organization_id":"60","name":"NORC SITES"}
+,{"service_id":"268","organization_id":"61","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"269","organization_id":"61","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"270","organization_id":"61","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"271","organization_id":"61","name":"RUNAWAY & HOMELESS YOUTH"}
+,{"service_id":"272","organization_id":"61","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"273","organization_id":"61","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"274","organization_id":"61","name":"Arches: A Transformative Mentoring Intervention"}
+,{"service_id":"275","organization_id":"61","name":"FOSTER CARE"}
+,{"service_id":"276","organization_id":"61","name":"PREVENTIVE SERVICES"}
+,{"service_id":"277","organization_id":"62","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"278","organization_id":"63","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"279","organization_id":"63","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"280","organization_id":"63","name":"READING & WRITING"}
+,{"service_id":"281","organization_id":"63","name":"SENIOR CENTER"}
+,{"service_id":"282","organization_id":"63","name":"HOME DELIVERED MEALS"}
+,{"service_id":"283","organization_id":"63","name":"NORC SITES"}
+,{"service_id":"284","organization_id":"64","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"285","organization_id":"65","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"286","organization_id":"65","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"287","organization_id":"65","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"288","organization_id":"65","name":"READING & WRITING"}
+,{"service_id":"289","organization_id":"65","name":"SENIOR CENTER"}
+,{"service_id":"290","organization_id":"65","name":"CAREGIVER"}
+,{"service_id":"291","organization_id":"65","name":"CASE MANAGEMENT ONLY"}
+,{"service_id":"292","organization_id":"66","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"293","organization_id":"66","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"294","organization_id":"66","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"295","organization_id":"66","name":"FAMILY SUPPORT"}
+,{"service_id":"296","organization_id":"66","name":"READING & WRITING"}
+,{"service_id":"297","organization_id":"66","name":"OTHER PREVENTION SERVICES"}
+,{"service_id":"298","organization_id":"66","name":"PRIMARY PREVENTION SERVICES"}
+,{"service_id":"299","organization_id":"66","name":"PREVENTION RESOURCE CENTER"}
+,{"service_id":"300","organization_id":"66","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"301","organization_id":"66","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"302","organization_id":"66","name":"HOMEMAKER SERVICES"}
+,{"service_id":"303","organization_id":"66","name":"Every Child Has an Opportunity to Excel and Succeed (ECHOES)"}
+,{"service_id":"304","organization_id":"66","name":"FOSTER CARE"}
+,{"service_id":"305","organization_id":"66","name":"PREVENTIVE SERVICES"}
+,{"service_id":"306","organization_id":"67","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"307","organization_id":"68","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"308","organization_id":"69","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"309","organization_id":"70","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"310","organization_id":"70","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"311","organization_id":"70","name":"READING & WRITING"}
+,{"service_id":"312","organization_id":"70","name":"NON-MEDICAID CARE COORDINATION (OMH)"}
+,{"service_id":"313","organization_id":"70","name":"SENIOR CENTER"}
+,{"service_id":"314","organization_id":"70","name":"NORC SITES"}
+,{"service_id":"315","organization_id":"70","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"316","organization_id":"70","name":"AIM (Advocate, Intervene, Mentor) Program"}
+,{"service_id":"317","organization_id":"71","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"318","organization_id":"72","name":"WORK PROGRESS PROGRAM","status":"HRA CLIENTS ONLY"}
+,{"service_id":"319","organization_id":"73","name":"YOUTHPATHWAYS","status":"HRA CLIENTS ONLY"}
+,{"service_id":"320","organization_id":"74","name":"ADULT PROTECTIVE SERVICES"}
+,{"service_id":"321","organization_id":"75","name":"ADULT PROTECTIVE SERVICES"}
+,{"service_id":"322","organization_id":"75","name":"SENIOR CENTER"}
+,{"service_id":"323","organization_id":"75","name":"CASE MANAGEMENT ONLY"}
+,{"service_id":"324","organization_id":"75","name":"NEW YORK CONNECTS"}
+,{"service_id":"325","organization_id":"75","name":"NORC SITES"}
+,{"service_id":"326","organization_id":"75","name":"HOMEMAKER SERVICES"}
+,{"service_id":"327","organization_id":"76","name":"ADULT PROTECTIVE SERVICES"}
+,{"service_id":"328","organization_id":"76","name":"PSYCHOSOCIAL CLUB"}
+,{"service_id":"329","organization_id":"76","name":"CLINIC TREATMENT"}
+,{"service_id":"330","organization_id":"76","name":"SENIOR CENTER"}
+,{"service_id":"331","organization_id":"76","name":"HOME DELIVERED MEALS"}
+,{"service_id":"332","organization_id":"76","name":"ABUSE PREVENTION"}
+,{"service_id":"333","organization_id":"76","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"334","organization_id":"76","name":"GERIATRIC MENTAL HEALTH"}
+,{"service_id":"335","organization_id":"76","name":"CASE MANAGEMENT ONLY"}
+,{"service_id":"336","organization_id":"76","name":"HOME DELIVERED MEALS ONLY"}
+,{"service_id":"337","organization_id":"76","name":"NEW YORK CONNECTS"}
+,{"service_id":"338","organization_id":"76","name":"CAREGIVER"}
+,{"service_id":"339","organization_id":"76","name":"SOCIAL SERVICES ONLY"}
+,{"service_id":"340","organization_id":"76","name":"LEGAL SERVICES"}
+,{"service_id":"341","organization_id":"76","name":"NORC SITES"}
+,{"service_id":"342","organization_id":"77","name":"ADULT PROTECTIVE SERVICES"}
+,{"service_id":"343","organization_id":"77","name":"AFFIRMATIVE BUSINESS/INDUSTRY"}
+,{"service_id":"344","organization_id":"77","name":"NON-MEDICAID CARE COORDINATION (OMH)"}
+,{"service_id":"345","organization_id":"77","name":"CRISIS/RESPITE BEDS"}
+,{"service_id":"346","organization_id":"77","name":"ADVOCACY SERVICES"}
+,{"service_id":"347","organization_id":"77","name":"OUTREACH"}
+,{"service_id":"348","organization_id":"77","name":"SUPPORTED HOUSING"}
+,{"service_id":"349","organization_id":"78","name":"ADULT PROTECTIVE SERVICES"}
+,{"service_id":"350","organization_id":"79","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"351","organization_id":"79","name":"IMMIGRANT SERVICES"}
+,{"service_id":"352","organization_id":"79","name":"FAMILY SUPPORT"}
+,{"service_id":"353","organization_id":"79","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"354","organization_id":"80","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"355","organization_id":"80","name":"HIV TESTING SERVICES: PRIORITY POPULATIONS TESTING IN NON-CLINICAL SETTINGS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"356","organization_id":"80","name":"CONDOM DISTRIBUTION SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"357","organization_id":"80","name":"SUPPORTIVE COUNSELING & FAMILY STABILIZATION SERVICES - SEP","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"358","organization_id":"80","name":"CITY COUNCIL INITIATIVES [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"359","organization_id":"80","name":"FAITH-BASED INITIATIVE","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"360","organization_id":"80","name":"CHECK HEP C [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"361","organization_id":"80","name":"OUTREACH AND EDUCATION IN SHELTERS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"362","organization_id":"80","name":"LEGAL SERVICES NYC","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"363","organization_id":"81","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"364","organization_id":"82","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"365","organization_id":"82","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"366","organization_id":"83","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"367","organization_id":"83","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"368","organization_id":"83","name":"FAMILY SUPPORT"}
+,{"service_id":"369","organization_id":"83","name":"IMMIGRANT SERVICES"}
+,{"service_id":"370","organization_id":"83","name":"READING & WRITING"}
+,{"service_id":"371","organization_id":"83","name":"SENIOR CENTER"}
+,{"service_id":"372","organization_id":"83","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"373","organization_id":"84","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"374","organization_id":"85","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"375","organization_id":"86","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"376","organization_id":"87","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"377","organization_id":"87","name":"OUTREACH AND EDUCATION IN CBOS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"378","organization_id":"87","name":"FAITH-BASED INITIATIVE","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"379","organization_id":"88","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"380","organization_id":"89","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"381","organization_id":"90","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"382","organization_id":"90","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"383","organization_id":"91","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"384","organization_id":"91","name":"READING & WRITING"}
+,{"service_id":"385","organization_id":"91","name":"FAMILY SUPPORT"}
+,{"service_id":"386","organization_id":"91","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"387","organization_id":"91","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"388","organization_id":"92","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"389","organization_id":"92","name":"IMMIGRANT SERVICES"}
+,{"service_id":"390","organization_id":"93","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"391","organization_id":"94","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"392","organization_id":"94","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"393","organization_id":"94","name":"ASSERTIVE COMMUNITY TREATMENT"}
+,{"service_id":"394","organization_id":"94","name":"ASSISTED COMPETITIVE EMPLOYMENT"}
+,{"service_id":"395","organization_id":"94","name":"SUPPORTED SRO"}
+,{"service_id":"396","organization_id":"94","name":"PSYCHOSOCIAL CLUB"}
+,{"service_id":"397","organization_id":"94","name":"SENIOR CENTER"}
+,{"service_id":"398","organization_id":"94","name":"NORC SITES"}
+,{"service_id":"399","organization_id":"94","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"400","organization_id":"95","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"401","organization_id":"95","name":"READING & WRITING"}
+,{"service_id":"402","organization_id":"95","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"403","organization_id":"95","name":"TRANSPORTATION ONLY"}
+,{"service_id":"404","organization_id":"95","name":"SENIOR CENTER"}
+,{"service_id":"405","organization_id":"95","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"406","organization_id":"95","name":"NORC SITES"}
+,{"service_id":"407","organization_id":"95","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"408","organization_id":"95","name":"PREVENTIVE SERVICES"}
+,{"service_id":"409","organization_id":"96","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"410","organization_id":"97","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"411","organization_id":"97","name":"LEGAL SERVICES"}
+,{"service_id":"412","organization_id":"98","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"413","organization_id":"98","name":"READING & WRITING"}
+,{"service_id":"414","organization_id":"98","name":"IMMIGRANT SERVICES"}
+,{"service_id":"415","organization_id":"98","name":"OUTREACH AND EDUCATION IN CBOS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"416","organization_id":"99","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"417","organization_id":"99","name":"FAMILY SUPPORT"}
+,{"service_id":"418","organization_id":"99","name":"LEGAL SERVICES NYC","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"419","organization_id":"100","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"420","organization_id":"100","name":"ADVOCACY SERVICES"}
+,{"service_id":"421","organization_id":"101","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"422","organization_id":"102","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"423","organization_id":"102","name":"FAMILY SUPPORT"}
+,{"service_id":"424","organization_id":"103","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"425","organization_id":"104","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"426","organization_id":"104","name":"IMMIGRANT SERVICES"}
+,{"service_id":"427","organization_id":"105","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"428","organization_id":"106","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"429","organization_id":"106","name":"FAMILY SUPPORT"}
+,{"service_id":"430","organization_id":"106","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"431","organization_id":"106","name":"READING & WRITING"}
+,{"service_id":"432","organization_id":"106","name":"IMMIGRANT SERVICES"}
+,{"service_id":"433","organization_id":"107","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"434","organization_id":"107","name":"SENIOR CENTER"}
+,{"service_id":"435","organization_id":"107","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"436","organization_id":"108","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"437","organization_id":"109","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"438","organization_id":"109","name":"RAPID RE-HOUSING"}
+,{"service_id":"439","organization_id":"109","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"440","organization_id":"109","name":"SENIOR CENTER"}
+,{"service_id":"441","organization_id":"109","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"442","organization_id":"109","name":"HOME DELIVERED MEALS"}
+,{"service_id":"443","organization_id":"109","name":"CASE MANAGEMENT ONLY"}
+,{"service_id":"444","organization_id":"109","name":"Next STEPS"}
+,{"service_id":"445","organization_id":"110","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"446","organization_id":"110","name":"RUNAWAY & HOMELESS YOUTH"}
+,{"service_id":"447","organization_id":"110","name":"COMMUNITY-LEVEL INTERVENTIONS FOR HIV PREVENTION","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"448","organization_id":"110","name":"HEP-C PEER NAVIGATION [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"449","organization_id":"111","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"450","organization_id":"112","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"451","organization_id":"113","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"452","organization_id":"114","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"453","organization_id":"114","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"454","organization_id":"114","name":"READING & WRITING"}
+,{"service_id":"455","organization_id":"114","name":"RUNAWAY & HOMELESS YOUTH"}
+,{"service_id":"456","organization_id":"114","name":"CHLAMYDIA SCREENING PROGRAM"}
+,{"service_id":"457","organization_id":"114","name":"SUPPORTED SRO"}
+,{"service_id":"458","organization_id":"115","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"459","organization_id":"115","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"460","organization_id":"116","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"461","organization_id":"116","name":"FAMILY SUPPORT"}
+,{"service_id":"462","organization_id":"117","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"463","organization_id":"118","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"464","organization_id":"119","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"465","organization_id":"119","name":"FAMILY SUPPORT"}
+,{"service_id":"466","organization_id":"120","name":"LEGAL SERVICES INITIATIVES"}
+,{"service_id":"467","organization_id":"121","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"468","organization_id":"122","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"469","organization_id":"122","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"470","organization_id":"123","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"471","organization_id":"124","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"472","organization_id":"124","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"473","organization_id":"125","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"474","organization_id":"126","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"475","organization_id":"126","name":"SENIOR CENTER"}
+,{"service_id":"476","organization_id":"126","name":"NORC SITES"}
+,{"service_id":"477","organization_id":"126","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"478","organization_id":"127","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"479","organization_id":"127","name":"FAMILY SUPPORT"}
+,{"service_id":"480","organization_id":"127","name":"HOME BASED CRISIS INTERVENTION"}
+,{"service_id":"481","organization_id":"127","name":"NON-MEDICAID CARE COORDINATION (OMH)"}
+,{"service_id":"482","organization_id":"127","name":"SENIOR CENTER"}
+,{"service_id":"483","organization_id":"127","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"484","organization_id":"127","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"485","organization_id":"128","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"486","organization_id":"128","name":"IMMIGRANT SERVICES"}
+,{"service_id":"487","organization_id":"128","name":"READING & WRITING"}
+,{"service_id":"488","organization_id":"129","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"489","organization_id":"129","name":"FAMILY SUPPORT"}
+,{"service_id":"490","organization_id":"129","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"491","organization_id":"129","name":"FOSTER CARE"}
+,{"service_id":"492","organization_id":"130","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"493","organization_id":"130","name":"READING & WRITING"}
+,{"service_id":"494","organization_id":"130","name":"SENIOR CENTER"}
+,{"service_id":"495","organization_id":"130","name":"CAREGIVER"}
+,{"service_id":"496","organization_id":"131","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"497","organization_id":"131","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"498","organization_id":"131","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"499","organization_id":"132","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"500","organization_id":"133","name":"FAMILY SUPPORT"}
+,{"service_id":"501","organization_id":"134","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"502","organization_id":"134","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"503","organization_id":"134","name":"FAMILY SUPPORT"}
+,{"service_id":"504","organization_id":"134","name":"READING & WRITING"}
+,{"service_id":"505","organization_id":"135","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"506","organization_id":"135","name":"READING & WRITING"}
+,{"service_id":"507","organization_id":"135","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"508","organization_id":"135","name":"FAMILY SUPPORT"}
+,{"service_id":"509","organization_id":"135","name":"SUPPORTED SRO"}
+,{"service_id":"510","organization_id":"136","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"511","organization_id":"137","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"512","organization_id":"137","name":"SENIOR CENTER"}
+,{"service_id":"513","organization_id":"138","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"514","organization_id":"139","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"515","organization_id":"139","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"516","organization_id":"140","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"517","organization_id":"141","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"518","organization_id":"142","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"519","organization_id":"142","name":"READING & WRITING"}
+,{"service_id":"520","organization_id":"143","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"521","organization_id":"143","name":"READING & WRITING"}
+,{"service_id":"522","organization_id":"143","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"523","organization_id":"144","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"524","organization_id":"144","name":"FAMILY SUPPORT"}
+,{"service_id":"525","organization_id":"144","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"526","organization_id":"144","name":"PSYCHOSOCIAL CLUB"}
+,{"service_id":"527","organization_id":"144","name":"ON-SITE REHABILITATION"}
+,{"service_id":"528","organization_id":"144","name":"VOCATIONAL SERVICES"}
+,{"service_id":"529","organization_id":"144","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"530","organization_id":"144","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"531","organization_id":"145","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"532","organization_id":"145","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"533","organization_id":"146","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"534","organization_id":"146","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"535","organization_id":"146","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"536","organization_id":"146","name":"PREVENTIVE SERVICES"}
+,{"service_id":"537","organization_id":"147","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"538","organization_id":"147","name":"READING & WRITING"}
+,{"service_id":"539","organization_id":"147","name":"Young Adult Justice"}
+,{"service_id":"540","organization_id":"148","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"541","organization_id":"148","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"542","organization_id":"148","name":"FAMILY SUPPORT"}
+,{"service_id":"543","organization_id":"148","name":"IMMIGRANT SERVICES"}
+,{"service_id":"544","organization_id":"148","name":"READING & WRITING"}
+,{"service_id":"545","organization_id":"148","name":"SENIOR CENTER"}
+,{"service_id":"546","organization_id":"149","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"547","organization_id":"150","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"548","organization_id":"150","name":"SENIOR CENTER"}
+,{"service_id":"549","organization_id":"151","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"550","organization_id":"152","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"551","organization_id":"153","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"552","organization_id":"153","name":"Next STEPS"}
+,{"service_id":"553","organization_id":"154","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"554","organization_id":"155","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"555","organization_id":"156","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"556","organization_id":"156","name":"READING & WRITING"}
+,{"service_id":"557","organization_id":"156","name":"IMMIGRANT SERVICES"}
+,{"service_id":"558","organization_id":"157","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"559","organization_id":"158","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"560","organization_id":"159","name":"FAMILY SUPPORT"}
+,{"service_id":"561","organization_id":"160","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"562","organization_id":"161","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"563","organization_id":"161","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"564","organization_id":"161","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"565","organization_id":"161","name":"PREVENTIVE SERVICES"}
+,{"service_id":"566","organization_id":"162","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"567","organization_id":"163","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"568","organization_id":"164","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"569","organization_id":"165","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"570","organization_id":"165","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"571","organization_id":"166","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"572","organization_id":"167","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"573","organization_id":"168","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"574","organization_id":"169","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"575","organization_id":"169","name":"FAMILY SUPPORT"}
+,{"service_id":"576","organization_id":"169","name":"SENIOR CENTER"}
+,{"service_id":"577","organization_id":"169","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"578","organization_id":"170","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"579","organization_id":"170","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"580","organization_id":"170","name":"PREVENTIVE SERVICES"}
+,{"service_id":"581","organization_id":"171","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"582","organization_id":"171","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"583","organization_id":"172","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"584","organization_id":"173","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"585","organization_id":"174","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"586","organization_id":"175","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"587","organization_id":"176","name":"FAMILY SUPPORT"}
+,{"service_id":"588","organization_id":"176","name":"SENIOR CENTER"}
+,{"service_id":"589","organization_id":"176","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"590","organization_id":"176","name":"ABUSE PREVENTION"}
+,{"service_id":"591","organization_id":"176","name":"SOCIAL SERVICES ONLY"}
+,{"service_id":"592","organization_id":"176","name":"NEW YORK CONNECTS"}
+,{"service_id":"593","organization_id":"176","name":"CASE MANAGEMENT ONLY"}
+,{"service_id":"594","organization_id":"177","name":"IMMIGRANT SERVICES"}
+,{"service_id":"595","organization_id":"177","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"596","organization_id":"177","name":"READING & WRITING"}
+,{"service_id":"597","organization_id":"177","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"598","organization_id":"177","name":"FAMILY SUPPORT"}
+,{"service_id":"599","organization_id":"177","name":"SENIOR CENTER"}
+,{"service_id":"600","organization_id":"177","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"601","organization_id":"177","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"602","organization_id":"177","name":"PREVENTIVE SERVICES"}
+,{"service_id":"603","organization_id":"178","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"604","organization_id":"178","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"605","organization_id":"178","name":"SENIOR CENTER"}
+,{"service_id":"606","organization_id":"178","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"607","organization_id":"179","name":"FAMILY SUPPORT"}
+,{"service_id":"608","organization_id":"180","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"609","organization_id":"181","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"610","organization_id":"181","name":"READING & WRITING"}
+,{"service_id":"611","organization_id":"182","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"612","organization_id":"183","name":"FAMILY SUPPORT"}
+,{"service_id":"613","organization_id":"183","name":"SENIOR CENTER"}
+,{"service_id":"614","organization_id":"184","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"615","organization_id":"184","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"616","organization_id":"184","name":"Arches: A Transformative Mentoring Intervention"}
+,{"service_id":"617","organization_id":"184","name":"Next STEPS"}
+,{"service_id":"618","organization_id":"184","name":"Young Adult Justice"}
+,{"service_id":"619","organization_id":"184","name":"FOSTER CARE"}
+,{"service_id":"620","organization_id":"184","name":"PREVENTIVE SERVICES"}
+,{"service_id":"621","organization_id":"185","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"622","organization_id":"186","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"623","organization_id":"186","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"624","organization_id":"187","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"625","organization_id":"187","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"626","organization_id":"187","name":"HOME BASED CRISIS INTERVENTION"}
+,{"service_id":"627","organization_id":"187","name":"VOCATIONAL SERVICES"}
+,{"service_id":"628","organization_id":"187","name":"NON-MEDICAID CARE COORDINATION (OMH)"}
+,{"service_id":"629","organization_id":"187","name":"ADVOCACY SERVICES"}
+,{"service_id":"630","organization_id":"187","name":"NON-MEDICAID CARE COORDINATION; (NON-LICENSED PROGRAM)"}
+,{"service_id":"631","organization_id":"187","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"632","organization_id":"187","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"633","organization_id":"187","name":"PREVENTIVE SERVICES"}
+,{"service_id":"634","organization_id":"188","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"635","organization_id":"188","name":"FAMILY SUPPORT"}
+,{"service_id":"636","organization_id":"189","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"637","organization_id":"189","name":"FAMILY SUPPORT"}
+,{"service_id":"638","organization_id":"189","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"639","organization_id":"190","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"640","organization_id":"190","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"641","organization_id":"191","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"642","organization_id":"192","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"643","organization_id":"193","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"644","organization_id":"193","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"645","organization_id":"194","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"646","organization_id":"195","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"647","organization_id":"195","name":"READING & WRITING"}
+,{"service_id":"648","organization_id":"195","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"649","organization_id":"195","name":"FAMILY SUPPORT"}
+,{"service_id":"650","organization_id":"196","name":"RUNAWAY & HOMELESS YOUTH"}
+,{"service_id":"651","organization_id":"196","name":"HIV HOUSING"}
+,{"service_id":"652","organization_id":"196","name":"MEDICALLY MONITORED WITHDRAWAL"}
+,{"service_id":"653","organization_id":"196","name":"DROP-IN CENTERS"}
+,{"service_id":"654","organization_id":"196","name":"SUPPORTED HOUSING"}
+,{"service_id":"655","organization_id":"196","name":"FOOD AND NUTRITION","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"656","organization_id":"196","name":"SHORT-TERM HOUSING SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"657","organization_id":"196","name":"NON-MEDICAL CASE MANAGEMENT GENERAL","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"658","organization_id":"196","name":"OUTREACH AND EDUCATION IN SHELTERS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"659","organization_id":"196","name":"EARLY INTERVENTION SERVICES: PRIORITY POPULATIONS TESTING IN NON-CLINICAL SETTINGS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"660","organization_id":"196","name":"HARM REDUCTION SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"661","organization_id":"196","name":"MENTAL HEALTH SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"662","organization_id":"196","name":"LEGAL SERVICES NYC","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"663","organization_id":"197","name":"FAMILY SUPPORT"}
+,{"service_id":"664","organization_id":"198","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"665","organization_id":"198","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"666","organization_id":"199","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"667","organization_id":"200","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"668","organization_id":"201","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"669","organization_id":"202","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"670","organization_id":"202","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"671","organization_id":"202","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"672","organization_id":"202","name":"PREVENTIVE SERVICES"}
+,{"service_id":"673","organization_id":"203","name":"FAMILY SUPPORT"}
+,{"service_id":"674","organization_id":"203","name":"LEGAL SERVICES NYC","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"675","organization_id":"204","name":"FAMILY SUPPORT"}
+,{"service_id":"676","organization_id":"204","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"677","organization_id":"204","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"678","organization_id":"204","name":"RUNAWAY & HOMELESS YOUTH"}
+,{"service_id":"679","organization_id":"204","name":"IMMIGRANT SERVICES"}
+,{"service_id":"680","organization_id":"204","name":"NON-MEDICAID CARE COORDINATION (OMH)"}
+,{"service_id":"681","organization_id":"204","name":"NURSE-FAMILY PARTNERSHIP SERVICES"}
+,{"service_id":"682","organization_id":"204","name":"SUPPORTED HOUSING"}
+,{"service_id":"683","organization_id":"204","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"684","organization_id":"204","name":"FOSTER CARE"}
+,{"service_id":"685","organization_id":"204","name":"PREVENTIVE SERVICES"}
+,{"service_id":"686","organization_id":"205","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"687","organization_id":"206","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"688","organization_id":"207","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"689","organization_id":"208","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"690","organization_id":"208","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"691","organization_id":"209","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"692","organization_id":"209","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"693","organization_id":"210","name":"READING & WRITING"}
+,{"service_id":"694","organization_id":"210","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"695","organization_id":"211","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"696","organization_id":"212","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"697","organization_id":"212","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"698","organization_id":"213","name":"FAMILY SUPPORT"}
+,{"service_id":"699","organization_id":"213","name":"SENIOR CENTER"}
+,{"service_id":"700","organization_id":"214","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"701","organization_id":"215","name":"FAMILY SUPPORT"}
+,{"service_id":"702","organization_id":"215","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"703","organization_id":"215","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"704","organization_id":"216","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"705","organization_id":"217","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"706","organization_id":"217","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"707","organization_id":"218","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"708","organization_id":"219","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"709","organization_id":"219","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"710","organization_id":"220","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"711","organization_id":"221","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"712","organization_id":"222","name":"FAMILY SUPPORT"}
+,{"service_id":"713","organization_id":"222","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"714","organization_id":"222","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"715","organization_id":"223","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"716","organization_id":"223","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"717","organization_id":"224","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"718","organization_id":"225","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"719","organization_id":"226","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"720","organization_id":"227","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"721","organization_id":"228","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"722","organization_id":"228","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"723","organization_id":"228","name":"SCHOOL"}
+,{"service_id":"724","organization_id":"229","name":"FAMILY SUPPORT"}
+,{"service_id":"725","organization_id":"230","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"726","organization_id":"231","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"727","organization_id":"232","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"728","organization_id":"233","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"729","organization_id":"233","name":"IMMIGRANT SERVICES"}
+,{"service_id":"730","organization_id":"233","name":"READING & WRITING"}
+,{"service_id":"731","organization_id":"233","name":"Justice Plus/ Job Readiness Program"}
+,{"service_id":"732","organization_id":"234","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"733","organization_id":"234","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"734","organization_id":"234","name":"SUPPORTED SRO"}
+,{"service_id":"735","organization_id":"234","name":"PREVENTIVE SERVICES"}
+,{"service_id":"736","organization_id":"235","name":"READING & WRITING"}
+,{"service_id":"737","organization_id":"235","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"738","organization_id":"235","name":"IMMIGRANT SERVICES"}
+,{"service_id":"739","organization_id":"236","name":"FAMILY SUPPORT"}
+,{"service_id":"740","organization_id":"237","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"741","organization_id":"238","name":"READING & WRITING"}
+,{"service_id":"742","organization_id":"239","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"743","organization_id":"240","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"744","organization_id":"241","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"745","organization_id":"241","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"746","organization_id":"242","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"747","organization_id":"243","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"748","organization_id":"243","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"749","organization_id":"244","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"750","organization_id":"245","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"751","organization_id":"246","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"752","organization_id":"246","name":"Justice Plus/ Job Readiness Program"}
+,{"service_id":"753","organization_id":"247","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"754","organization_id":"247","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"755","organization_id":"247","name":"SENIOR CENTER"}
+,{"service_id":"756","organization_id":"248","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"757","organization_id":"249","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"758","organization_id":"250","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"759","organization_id":"251","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"760","organization_id":"252","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"761","organization_id":"252","name":"READING & WRITING"}
+,{"service_id":"762","organization_id":"252","name":"SCHOOL BASED HEALTH CENTER FAMILY PLANNING - TEENAGE PREGNANCY INITIATIVE"}
+,{"service_id":"763","organization_id":"252","name":"MEDICAL CASE MANAGEMENT","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"764","organization_id":"252","name":"EARLY INTERVENTION SERVICES: PRIORITY POPULATIONS TESTING IN NON-CLINICAL SETTINGS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"765","organization_id":"252","name":"EARLY INTERVENTION SERVICES: ROUTINE TESTING IN CLINICAL SETTINGS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"766","organization_id":"252","name":"CHECK HEP B [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"767","organization_id":"252","name":"COUNCIL LINKAGE PROGRAMS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"768","organization_id":"252","name":"SENIOR CENTER"}
+,{"service_id":"769","organization_id":"253","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"770","organization_id":"254","name":"READING & WRITING"}
+,{"service_id":"771","organization_id":"255","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"772","organization_id":"256","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"773","organization_id":"256","name":"READING & WRITING"}
+,{"service_id":"774","organization_id":"256","name":"IMMIGRANT SERVICES"}
+,{"service_id":"775","organization_id":"256","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"776","organization_id":"256","name":"MEDICALLY SUPERVISED OUTPATIENT"}
+,{"service_id":"777","organization_id":"256","name":"PRIMARY PREVENTION SERVICES"}
+,{"service_id":"778","organization_id":"256","name":"OTHER PREVENTION SERVICES"}
+,{"service_id":"779","organization_id":"257","name":"IMMIGRANT SERVICES"}
+,{"service_id":"780","organization_id":"257","name":"READING & WRITING"}
+,{"service_id":"781","organization_id":"257","name":"CHECK HEP B [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"782","organization_id":"257","name":"SENIOR CENTER"}
+,{"service_id":"783","organization_id":"258","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"784","organization_id":"259","name":"READING & WRITING"}
+,{"service_id":"785","organization_id":"260","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"786","organization_id":"261","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"787","organization_id":"262","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"788","organization_id":"263","name":"READING & WRITING"}
+,{"service_id":"789","organization_id":"263","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"790","organization_id":"264","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"791","organization_id":"265","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"792","organization_id":"266","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"793","organization_id":"267","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"794","organization_id":"268","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"795","organization_id":"269","name":"READING & WRITING"}
+,{"service_id":"796","organization_id":"269","name":"SENIOR CENTER"}
+,{"service_id":"797","organization_id":"270","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"798","organization_id":"271","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"799","organization_id":"271","name":"FAMILY SUPPORT"}
+,{"service_id":"800","organization_id":"271","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"801","organization_id":"271","name":"READING & WRITING"}
+,{"service_id":"802","organization_id":"272","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"803","organization_id":"273","name":"FAMILY SUPPORT"}
+,{"service_id":"804","organization_id":"274","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"805","organization_id":"275","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"806","organization_id":"275","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"807","organization_id":"276","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"808","organization_id":"276","name":"SENIOR CENTER"}
+,{"service_id":"809","organization_id":"277","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"810","organization_id":"277","name":"RECREATION"}
+,{"service_id":"811","organization_id":"277","name":"CASE MANAGEMENT"}
+,{"service_id":"812","organization_id":"277","name":"SUMMER CAMP"}
+,{"service_id":"813","organization_id":"278","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"814","organization_id":"279","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"815","organization_id":"280","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"816","organization_id":"280","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"817","organization_id":"280","name":"FAMILY SUPPORT"}
+,{"service_id":"818","organization_id":"280","name":"READING & WRITING"}
+,{"service_id":"819","organization_id":"281","name":"READING & WRITING"}
+,{"service_id":"820","organization_id":"282","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"821","organization_id":"282","name":"FAMILY SUPPORT"}
+,{"service_id":"822","organization_id":"283","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"823","organization_id":"283","name":"FAMILY SUPPORT"}
+,{"service_id":"824","organization_id":"283","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"825","organization_id":"283","name":"RECREATION"}
+,{"service_id":"826","organization_id":"283","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"827","organization_id":"284","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"828","organization_id":"284","name":"READING & WRITING"}
+,{"service_id":"829","organization_id":"284","name":"IMMIGRANT SERVICES"}
+,{"service_id":"830","organization_id":"284","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"831","organization_id":"285","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"832","organization_id":"286","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"833","organization_id":"287","name":"IMMIGRANT SERVICES"}
+,{"service_id":"834","organization_id":"287","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"835","organization_id":"288","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"836","organization_id":"289","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"837","organization_id":"290","name":"READING & WRITING"}
+,{"service_id":"838","organization_id":"291","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"839","organization_id":"292","name":"FAMILY SUPPORT"}
+,{"service_id":"840","organization_id":"292","name":"READING & WRITING"}
+,{"service_id":"841","organization_id":"292","name":"SUPPORTED SRO"}
+,{"service_id":"842","organization_id":"292","name":"SUPPORTED HOUSING"}
+,{"service_id":"843","organization_id":"292","name":"STRUCTURAL-LEVEL CHANGE TO ADDRESS BARRIERS TO HIV PREVENTION AMONG HIGH-RISK/HIGH-PREVALENCE POPULATIONS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"844","organization_id":"292","name":"NON-MEDICAL CASE MANAGEMENT FOR CURRENTLY INCARCERATED OR RECENTLY RELEASED INDIVIDUALS LIVING WITH HIV","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"845","organization_id":"293","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"846","organization_id":"294","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"847","organization_id":"295","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"848","organization_id":"296","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"849","organization_id":"297","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"850","organization_id":"298","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"851","organization_id":"298","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"852","organization_id":"299","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"853","organization_id":"300","name":"READING & WRITING"}
+,{"service_id":"854","organization_id":"301","name":"FAMILY SUPPORT"}
+,{"service_id":"855","organization_id":"301","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"856","organization_id":"301","name":"CITY COUNCIL INITIATIVES [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"857","organization_id":"301","name":"AIM (Advocate, Intervene, Mentor) Program"}
+,{"service_id":"858","organization_id":"301","name":"Young Adult Justice"}
+,{"service_id":"859","organization_id":"301","name":"Justice Plus/ Job Readiness Program"}
+,{"service_id":"860","organization_id":"301","name":"Parent Support Program"}
+,{"service_id":"861","organization_id":"302","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"862","organization_id":"303","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"863","organization_id":"304","name":"RUNAWAY & HOMELESS YOUTH"}
+,{"service_id":"864","organization_id":"305","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"865","organization_id":"306","name":"IMMIGRANT SERVICES"}
+,{"service_id":"866","organization_id":"306","name":"READING & WRITING"}
+,{"service_id":"867","organization_id":"307","name":"RUNAWAY & HOMELESS YOUTH"}
+,{"service_id":"868","organization_id":"308","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"869","organization_id":"309","name":"FAMILY SUPPORT"}
+,{"service_id":"870","organization_id":"309","name":"SENIOR CENTER"}
+,{"service_id":"871","organization_id":"309","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"872","organization_id":"310","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"873","organization_id":"311","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"874","organization_id":"311","name":"SENIOR CENTER"}
+,{"service_id":"875","organization_id":"311","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"876","organization_id":"312","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"877","organization_id":"313","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"878","organization_id":"313","name":"HOME BASED CRISIS INTERVENTION"}
+,{"service_id":"879","organization_id":"313","name":"TO BE DETERMINED - UNKNOWN"}
+,{"service_id":"880","organization_id":"313","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"881","organization_id":"313","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"882","organization_id":"313","name":"PREVENTIVE SERVICES"}
+,{"service_id":"883","organization_id":"314","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"884","organization_id":"314","name":"READING & WRITING"}
+,{"service_id":"885","organization_id":"315","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"886","organization_id":"316","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"887","organization_id":"316","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"888","organization_id":"317","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"889","organization_id":"318","name":"READING & WRITING"}
+,{"service_id":"890","organization_id":"318","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"891","organization_id":"318","name":"Arches: A Transformative Mentoring Intervention"}
+,{"service_id":"892","organization_id":"318","name":"Next STEPS"}
+,{"service_id":"893","organization_id":"319","name":"FAMILY SUPPORT"}
+,{"service_id":"894","organization_id":"320","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"895","organization_id":"321","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"896","organization_id":"322","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"897","organization_id":"323","name":"FAMILY SUPPORT"}
+,{"service_id":"898","organization_id":"324","name":"FAMILY SUPPORT"}
+,{"service_id":"899","organization_id":"324","name":"Arches: A Transformative Mentoring Intervention"}
+,{"service_id":"900","organization_id":"324","name":"Parent Support Program"}
+,{"service_id":"901","organization_id":"325","name":"FAMILY SUPPORT"}
+,{"service_id":"902","organization_id":"325","name":"SCHOOL BASED HEALTH CENTER FAMILY PLANNING - TEENAGE PREGNANCY INITIATIVE"}
+,{"service_id":"903","organization_id":"325","name":"MEDICALLY SUPERVISED OUTPATIENT"}
+,{"service_id":"904","organization_id":"325","name":"METHADONE MAINTENANCE"}
+,{"service_id":"905","organization_id":"325","name":"VOCATIONAL REHABILITATION"}
+,{"service_id":"906","organization_id":"325","name":"PREP FOR ADOLESCENTS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"907","organization_id":"325","name":"CHECK HEP C [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"908","organization_id":"325","name":"PEP CENTERS OF EXCELLENCE","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"909","organization_id":"326","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"910","organization_id":"327","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"911","organization_id":"328","name":"IMMIGRANT SERVICES"}
+,{"service_id":"912","organization_id":"328","name":"FAMILY SUPPORT"}
+,{"service_id":"913","organization_id":"328","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"914","organization_id":"328","name":"READING & WRITING"}
+,{"service_id":"915","organization_id":"329","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"916","organization_id":"329","name":"IMMIGRANT SERVICES"}
+,{"service_id":"917","organization_id":"330","name":"FAMILY SUPPORT"}
+,{"service_id":"918","organization_id":"330","name":"HIV HOUSING"}
+,{"service_id":"919","organization_id":"330","name":"EARLY INTERVENTION SERVICES: PRIORITY POPULATIONS TESTING IN NON-CLINICAL SETTINGS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"920","organization_id":"330","name":"SUPPORTIVE COUNSELING & FAMILY STABILIZATION SERVICES - GENERAL","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"921","organization_id":"330","name":"OUTREACH AND EDUCATION IN CBOS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"922","organization_id":"330","name":"CHECK HEP B [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"923","organization_id":"330","name":"LEGAL SERVICES NYC","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"924","organization_id":"331","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"925","organization_id":"332","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"926","organization_id":"333","name":"READING & WRITING"}
+,{"service_id":"927","organization_id":"333","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"928","organization_id":"334","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"929","organization_id":"335","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"930","organization_id":"336","name":"READING & WRITING"}
+,{"service_id":"931","organization_id":"337","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"932","organization_id":"338","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"933","organization_id":"339","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"934","organization_id":"340","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"935","organization_id":"341","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"936","organization_id":"342","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"937","organization_id":"343","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"938","organization_id":"344","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"939","organization_id":"345","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"940","organization_id":"346","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"941","organization_id":"347","name":"READING & WRITING"}
+,{"service_id":"942","organization_id":"348","name":"FAMILY SUPPORT"}
+,{"service_id":"943","organization_id":"349","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"944","organization_id":"350","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"945","organization_id":"350","name":"READING & WRITING"}
+,{"service_id":"946","organization_id":"351","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"947","organization_id":"352","name":"READING & WRITING"}
+,{"service_id":"948","organization_id":"352","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"949","organization_id":"352","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"950","organization_id":"352","name":"MEDICAL CASE MANAGEMENT","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"951","organization_id":"352","name":"NON-MEDICAL CASE MANAGEMENT GENERAL","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"952","organization_id":"352","name":"STATUS-NEUTRAL CARE COORDINATION","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"953","organization_id":"353","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"954","organization_id":"354","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"955","organization_id":"355","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"956","organization_id":"355","name":"IMMIGRANT SERVICES"}
+,{"service_id":"957","organization_id":"355","name":"READING & WRITING"}
+,{"service_id":"958","organization_id":"355","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"959","organization_id":"355","name":"SENIOR CENTER"}
+,{"service_id":"960","organization_id":"356","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"961","organization_id":"357","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"962","organization_id":"358","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"963","organization_id":"359","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"964","organization_id":"360","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"965","organization_id":"361","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"966","organization_id":"361","name":"EARLY LEARN NYC: NEW YORK CITY'S EARLY CARE AND EDUCATION SERVICES"}
+,{"service_id":"967","organization_id":"362","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"968","organization_id":"362","name":"SENIOR CENTER"}
+,{"service_id":"969","organization_id":"362","name":"SENIOR CENTER AFFILIATED SITE"}
+,{"service_id":"970","organization_id":"363","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"971","organization_id":"363","name":"JOBS & INTERNSHIPS"}
+,{"service_id":"972","organization_id":"364","name":"AFTERSCHOOL PROGRAMS"}
+,{"service_id":"973","organization_id":"365","name":"FAMILY SUPPORT"}
+,{"service_id":"974","organization_id":"365","name":"SENIOR CENTER"}
+,{"service_id":"975","organization_id":"366","name":"SUPPORTED HOUSING"}
+,{"service_id":"976","organization_id":"366","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"977","organization_id":"367","name":"SCHOOL"}
+,{"service_id":"978","organization_id":"368","name":"HARLEM HEALTH ADVOCACY PARTNERS"}
+,{"service_id":"979","organization_id":"369","name":"SCHOOL"}
+,{"service_id":"980","organization_id":"369","name":"SUPPORTED HOUSING"}
+,{"service_id":"981","organization_id":"369","name":"GENERAL PREVENTIVE CARE (PC)"}
+,{"service_id":"982","organization_id":"370","name":"CHLAMYDIA SCREENING PROGRAM"}
+,{"service_id":"983","organization_id":"370","name":"EARLY INTERVENTION SERVICES: PRIORITY POPULATIONS TESTING IN NON-CLINICAL SETTINGS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"984","organization_id":"370","name":"COMMUNITY MOBILIZATION INTERVENTIONS FOR HIV PREVENTION","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"985","organization_id":"370","name":"NON-MEDICAL CASE MANAGEMENT GENERAL","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"986","organization_id":"370","name":"CITY COUNCIL INITIATIVES [574]","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"987","organization_id":"370","name":"FAITH-BASED INITIATIVE","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"988","organization_id":"370","name":"COUNCIL LINKAGE PROGRAMS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"989","organization_id":"370","name":"HARM REDUCTION SERVICES","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"990","organization_id":"371","name":"SCHOOL"}
+,{"service_id":"991","organization_id":"372","name":"ON-SITE REHABILITATION"}
+,{"service_id":"992","organization_id":"372","name":"OUTREACH AND EDUCATION IN CBOS","status":"Master Contract with Public Health Solutions"}
+,{"service_id":"993","organization_id":"373","name":"SUPPORTED SRO"}
+,{"service_id":"994","organization_id":"374","name":"SUPPORTED SRO"}
+,{"service_id":"995","organization_id":"374","name":"SUPPORTED HOUSING"}
+,{"service_id":"996","organization_id":"375","name":"OUTREACH"}
+,{"service_id":"997","organization_id":"375","name":"SUPPORTED HOUSING"}
+,{"service_id":"998","organization_id":"376","name":"NON-MEDICAID CARE COORDINATION; (NON-LICENSED PROGRAM)"}
+,{"service_id":"999","organization_id":"376","name":"ASSERTIVE COMMUNITY TREATMENT"}
+,{"service_id":"1000","organization_id":"376","name":"SUPPORTED HOUSING"}]

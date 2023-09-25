@@ -1,6 +1,6 @@
-package main.java.web.controller;
+package web.controller;
 
-import au.edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import com.github.xiaoymin.knife4j.annotations.DynamicParameter;
 import com.github.xiaoymin.knife4j.annotations.DynamicResponseParameters;
 import edu.nyu.dss.similarity.Framework;
@@ -9,25 +9,24 @@ import edu.nyu.dss.similarity.SSSOperate;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import main.java.web.DTO.*;
-import main.java.web.Utils.FileU;
-import main.java.web.Utils.FileUtil;
-import main.java.web.VO.DatasetVo;
-import main.java.web.VO.PreviewVO;
+import web.DTO.*;
+import web.Utils.FileU;
+import web.Utils.FileUtil;
+import web.VO.DatasetVo;
+import web.VO.JoinVO;
+import web.VO.PreviewVO;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 
 
 /**
@@ -42,70 +41,15 @@ public class BaseController {
     @Autowired
     private FileUtil fileService;
 
-    //    @ApiOperation("load dataset")
-//    @DynamicResponseParameters(name = "LoadDataHashMapModel", properties = {
-//            @DynamicParameter(name = "nodes", value = "dataset node", dataTypeClass = indexNode.class),
-//            @DynamicParameter(name = "filenames", value = "dataset's id-filename map"),
-//    })
-//    @DynamicResponseParameters(name = "cityModel", properties = {
-//            @DynamicParameter(name = "cityNodeList", value = "city node list"),
-//            @DynamicParameter(name = "indexNodes", value = "index nodes"),
-//            @DynamicParameter(name = "datasetIdMapping", value = "dataset id mapping")
-//    })
-//    @ApiImplicitParam(name = "id", value = "no.id data")
-//    本来是设计的只传cityNode，但对于不存在城市形式的数据集集来说，需要重新设计传参
+    @Autowired
+    private Framework framework;
+
+    //    本来是设计的只传cityNode，但对于不存在城市形式的数据集集来说，需要重新设计传参
 //    直接传List<indexNode>，因为indexNode中有些属性会被忽略，所以对象大小不会太大
     @RequestMapping(value = "spadas/api/load", method = RequestMethod.GET)
-    public List<indexNode> loadData(@RequestParam int id) throws IOException, InterruptedException {
-//        System.out.println("load data!");
-//        Framework.init();
-//        System.out.println("stop here!");
-//        int len = Framework.cityNodeList.size();
-//        int batch = 10;
-//        int end = Math.min(batch * (id + 1), len);
-//        CityVo vo = new CityVo(Framework.cityNodeList.subList(batch * id, end));
-//        CityVo vo = new CityVo(Framework.cityNodeList);
-//        TimeUnit.MINUTES.sleep(1);
-//        System.out.println("sleep for 1 minute!");
-//        HashMap a = new HashMap() {{
-//            put("nodes", Framework.indexNodes);
-//            put("filenames", Framework.datasetIdMapping);
-//        }};
-////        return new HashMap(){{put("nodes", Framework.indexNodes); put("filenames",Framework.datasetIdMapping); }};
-//        return a;
-//        CityVo dlv = new CityVo(Framework.cityNodeList, Framework.indexNodes, Framework.datasetIdMapping);
-//        CityVo dlv = new CityVo(Framework.cityNodeList);
-//        return vo;
-        return Framework.indexNodes;
+    public List<indexNode> loadData(@RequestParam int id) {
+        return framework.indexNodes;
     }
-//    @ApiOperation("load dataset")
-//    @DynamicResponseParameters(name = "LoadDataHashMapModel", properties = {
-//            @DynamicParameter(name = "data", value = "data point"),
-//            @DynamicParameter(name = "filenames", value = "dataset's id-filename map"),
-//    })
-//    @RequestMapping(value = "/loaddata", method = RequestMethod.GET)
-//    public HashMap<String, Object> loadData() throws IOException {
-//        System.out.println("load data!");
-//        Framework.init();
-//        System.out.println("stop here!");
-//        HashMap a = new HashMap() {{
-//            put("data", Framework.dataPoint);
-//            put("filenames", Framework.datasetIdMapping);
-//        }};
-////        return new HashMap(){{put("nodes", Framework.indexNodes); put("filenames",Framework.datasetIdMapping); }};
-//        return a;
-//    }
-
-//    @ApiOperation("test")
-//    @DynamicResponseParameters(name = "testModel", properties = {
-//            @DynamicParameter(name = "points", value = "data point")
-//    })
-//    @RequestMapping(value = "/test", method = RequestMethod.GET)
-//    public double[][] test() {
-//        System.out.println("test");
-//        System.out.println(Framework.dataMapPorto.size());
-//        return Framework.dataMapPorto.get(6);
-//    }
 
     @ApiOperation("get dataset by id")
     @RequestMapping(value = "/spadas/api/getds", method = RequestMethod.GET)
@@ -113,46 +57,18 @@ public class BaseController {
     @DynamicResponseParameters(name = "SingleDatasetDataVO", properties = {
             @DynamicParameter(name = "node", value = "node summary", dataTypeClass = DatasetVo.class),
     })
+
     public Map<String, Object> getDatasetById(@RequestParam int id) {
-        System.out.println(id);
-        DatasetVo vo = new DatasetVo(id);
+        DatasetVo vo = framework.getDatasetVO(id);
         HashMap<String, Object> res = new HashMap<>();
         res.put("node", vo);
         return res;
-//        return new HashMap() {{
-//            put("node", new DatasetVo() {{
-//                        setNode(Framework.indexNodes.get(id));
-//                        setId(id);
-////                        setMatrix(Framework.dataMapPorto.get(id));
-////                        setMatrix(null);
-//                        setFilename(Framework.datasetIdMapping.get(id));
-//                    }}
-//            );
-//        }};
     }
-
-//    @ApiOperation("test")
-//    @DynamicResponseParameters(name = "testModel", properties = {
-//            @DynamicParameter(name = "list", value = "list of double")
-//    })
-////    @ApiImplicitParam(name = "length", value = "length of list")
-//    @RequestMapping(value = "/test", method = RequestMethod.POST)
-//    public List<Double> test(@RequestBody String lengthStr) {
-//        System.out.println(lengthStr);
-//
-//        int realLength = 10000 * 100;
-//        List<Double> res = new ArrayList<>();
-//        Random rd = new Random();
-//        while (realLength > 0) {
-//            res.add(rd.nextDouble() * 100);
-//            realLength--;
-//        }
-//        return res;
-//    }
 
     /**
      * range query 范围查询
      * 之前把城市查询和范围查询集成在了一起，现在不需要城市查询了，所以需要修改代码逻辑
+     *
      * @param qo
      * @return
      */
@@ -180,7 +96,7 @@ public class BaseController {
             result.put("nodes", Framework.rangequery(qo));
         }*/
 //        直接调用范围查询方法
-        result.put("nodes", Framework.rangequery(qo));
+        result.put("nodes", framework.rangequery(qo));
         return result;
     }
 
@@ -191,7 +107,7 @@ public class BaseController {
     @RequestMapping(value = "spadas/api/keywordsquery", method = RequestMethod.POST)
     public Map<String, Object> keywordsquery(@RequestBody keywordsDTO qo) {
         return new HashMap() {{
-            put("nodes", Framework.keywordsQuery(qo));
+            put("nodes", framework.keywordsQuery(qo));
         }};
     }
 
@@ -212,8 +128,8 @@ public class BaseController {
 //    }
     public Map<String, Object> uploadDataset(@RequestParam("file") MultipartFile file, @RequestParam("filename") String filename, @RequestParam("k") int k) throws IOException {
         System.out.println(file.getName());
-        Pair<indexNode, double[][]> pair = Framework.readNewFile(file, filename);
-        List<DatasetVo> result = Framework.datasetQuery(pair.getLeft(), pair.getRight(), k);
+        Pair<indexNode, double[][]> pair = framework.readNewFile(file, filename);
+        List<DatasetVo> result = framework.datasetQuery(pair.getLeft(), pair.getRight(), k);
         if (pair == null) {
             return new HashMap() {{
                 put("nodes", null);
@@ -249,18 +165,16 @@ public class BaseController {
     @RequestMapping(value = "spadas/api/dsquery", method = RequestMethod.POST)
 //    样例查询
     public Map<String, Object> datasetQuery(@RequestBody dsqueryDTO qo) throws IOException, CloneNotSupportedException {
-        List<DatasetVo> result = Framework.datasetQuery(qo);
+        List<DatasetVo> result = framework.datasetQuery(qo);
         return new HashMap() {{
             put("nodes", result);
         }};
     }
 
     @ApiOperation("download dataset")
-//    @GetMapping("spadas/api/file/{filename:.+}")
     @GetMapping("spadas/api/file/{id}")
     public void downloadFile(@PathVariable int id, HttpServletRequest request, HttpServletResponse response) {
-        System.out.println("call downloadFile method, id = " + id);
-        fileService.downloadFile(Framework.fileIDMap.get(id), request, response);
+        fileService.downloadFile(framework.fileIDMap.get(id), request, response);
     }
 
     @ApiOperation("data preview after join or union")
@@ -274,7 +188,7 @@ public class BaseController {
         List<String[][]> bodies = new ArrayList<>();
         dto.getIds().forEach(id -> {
             try {
-                Pair<String[], String[][]> pair = FileU.readPreviewDataset(Framework.fileIDMap.get(id), dto.getRows(), Framework.dataMapPorto.get(id));
+                Pair<String[], String[][]> pair = FileU.readPreviewDataset(framework.fileIDMap.get(id), dto.getRows(), framework.dataMapPorto.get(id));
                 headers.add(pair.getLeft());
                 bodies.add(pair.getRight());
             } catch (IOException e) {
@@ -290,41 +204,8 @@ public class BaseController {
 
     @ApiOperation("dataset join")
     @RequestMapping(value = "spadas/api/join", method = RequestMethod.GET)
-//    @GetMapping("/join")
-    public Map<String, Object> datasetJoin(@RequestParam int queryId, @RequestParam int datasetId, @RequestParam int rows) throws IOException {
-        Pair<Double[], Map<Integer, Integer>> pair = Framework.pairwiseJoin(rows, queryId, datasetId);
-        Map<Integer, Integer> map = pair.getRight();
-        double[][] queryData = Framework.dataMapPorto.get(queryId);
-        double[][] datasetData = Framework.dataMapPorto.get(datasetId);
-        Pair<String[], String[][]> querydata = FileU.readPreviewDataset(Framework.fileIDMap.get(queryId), rows, queryData);
-        Pair<String[], String[][]> basedata = FileU.readPreviewDataset(Framework.fileIDMap.get(datasetId), Integer.MAX_VALUE, datasetData);
-
-        //int len = querydata.getRight()[0].length+basedata.getRight()[0].length;
-        String[] distHeader = {"distance(km)"};
-        String[] joinHeaderTemp = ArrayUtils.addAll(querydata.getLeft(), distHeader);
-        String[] joinHeader = ArrayUtils.addAll(joinHeaderTemp, basedata.getLeft());
-//        List<String[]> joindata = pair.getRight().entrySet().stream()
-//                .map(idPair -> ArrayUtils.addAll(querydata.getRight()[idPair.getValue()], basedata.getRight()[idPair.getValue()])).collect(Collectors.toList());
-        List<String[]> joinData = new ArrayList<>();
-        String[] queryEntry;
-        String[] baseEntry;
-        Double[] distEntry = pair.getLeft();
-        String[] distEntryTemp;
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            int queryIndex = entry.getKey();
-            int datasetIndex = entry.getValue();
-            queryEntry = querydata.getRight()[queryIndex];
-            baseEntry = basedata.getRight()[datasetIndex];
-            double tmp = Math.round(distEntry[queryIndex] * 1000) / 1000.000;
-
-            String tmpStr = tmp < 5 ? String.valueOf(tmp) : "INVALID";
-            distEntryTemp = new String[]{tmpStr};
-            joinData.add(ArrayUtils.addAll(ArrayUtils.addAll(queryEntry, distEntryTemp), baseEntry));
-        }
-        return new HashMap() {{
-            put("header", joinHeader);
-            put("joinData", joinData);
-        }};
+    public JoinVO datasetJoin(@RequestParam int queryId, @RequestParam int datasetId, @RequestParam int rows) throws IOException {
+        return framework.join(queryId, datasetId, rows);
     }
 
 //    Union操作
@@ -339,12 +220,18 @@ public class BaseController {
 
     @PostMapping("spadas/api/union")
     public PreviewVO datasetUnion(@RequestBody UnionDTO dto) {
-        return Framework.union(dto);
+        String type = "union";
+        List<String> headers = Arrays.asList("lat", "lng");
+        List<List<double[]>> body = framework.union(dto);
+        return new PreviewVO(type, headers, body);
     }
 
     @PostMapping("spadas/api/unionRangeQuery")
     public PreviewVO datasetUnionRangeQuery(@RequestBody UnionRangeQueryDTO dto) {
-        return Framework.unionRangeQuery(dto);
+        String type = "union";
+        List<String> headers = Arrays.asList("lat", "lng");
+        List<List<double[]>> body = framework.unionRangeQuery(dto);
+        return new PreviewVO(type, headers, body);
     }
 
     @GetMapping("spadas/api/sss/load")

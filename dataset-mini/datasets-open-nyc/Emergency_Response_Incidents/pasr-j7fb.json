@@ -1,0 +1,1000 @@
+[{"incident_type":"Utility-Water Main","location":"136-17 72 Avenue","borough":"Queens","creation_date":"2017-01-16T13:13:38.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Sidewalk Collapse","location":"927 Broadway","borough":"Manhattan","creation_date":"2016-10-29T12:13:31.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Other","borough":"Manhattan","creation_date":"2016-11-22T08:53:17.000"}
+,{"incident_type":"Administration-Other","location":"Seagirt Blvd & Beach 9 Street","borough":"Queens","creation_date":"2016-11-14T15:53:54.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Law Enforcement-Other","borough":"Brooklyn","creation_date":"2016-10-29T17:35:28.000"}
+,{"incident_type":"Utility-Water Main","location":"2-17 54 Avenue","borough":"Queens","creation_date":"2016-12-02T16:40:13.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-2nd Alarm","location":"238 East 24 Street","borough":"Manhattan","creation_date":"2016-11-25T04:06:09.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Water Main","location":"7th Avenue & West 27 Street","borough":"Manhattan","creation_date":"2016-12-03T04:17:30.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"130 East 57 Street","borough":"Manhattan","creation_date":"2016-11-26T05:45:43.000"}
+,{"incident_type":"Structural-Crane","borough":"Brooklyn","creation_date":"2016-11-18T13:12:51.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"24 Charles Street","borough":"Manhattan","creation_date":"2016-12-14T22:26:17.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-3rd Alarm","location":"581 3 ave","borough":"new york","creation_date":"2016-11-30T00:25:38.000","closed_date":"2016-11-30T04:22:22.000","latitude":"40.66748970288859","longitude":"-73.99428600039778"}
+,{"incident_type":"Structural-Collapse","location":"55 Thompson St","borough":"Manhattan","creation_date":"2016-11-28T21:51:55.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Other","location":"Hylan Blvd & Arbutus Avenue","borough":"Staten Island","creation_date":"2016-11-29T06:49:45.000","latitude":"40.52609318085672","longitude":"-74.18029750962154"}
+,{"incident_type":"Fire-2nd Alarm","location":"53-09 Beach Channel Drive","borough":"Far Rockaway","creation_date":"2016-12-18T17:52:37.000","latitude":"40.59508344584543","longitude":"-73.78400535855963"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"Manhattan","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-2nd Alarm","location":"1747 West 6 Street","borough":"Brooklyn","creation_date":"2016-12-15T17:05:32.000","latitude":"40.604676759625875","longitude":"-73.97901517750762"}
+,{"incident_type":"Structural-Crane","borough":"Brooklyn","creation_date":"2016-12-08T21:38:34.000"}
+,{"incident_type":"Structural-Crane","location":"225 Park Avenue South","borough":"Manhattan","creation_date":"2016-12-09T12:20:14.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Gas Low Pressure","location":"Noble Avenue & Watson Avenue","borough":"Bronx","creation_date":"2017-01-30T21:47:09.000","latitude":"40.82730091310776","longitude":"-73.86917897682753"}
+,{"incident_type":"Structural-Crane","borough":"Brooklyn","creation_date":"2016-11-18T13:12:51.000"}
+,{"incident_type":"Fire-2nd Alarm","borough":"Brooklyn","creation_date":"2016-12-16T04:45:58.000"}
+,{"incident_type":"Structural-Crane","location":"229 Cherry Street","borough":"Manhattan","creation_date":"2016-11-30T16:29:12.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Administration-Meeting","location":"720 Hunts Point Avenue","borough":"Bronx","creation_date":"2016-12-14T14:50:25.000","latitude":"40.81509289332348","longitude":"-73.88636923265318"}
+,{"incident_type":"Utility-Water Main","location":"Watson Avenue  & Colgate Avenue","borough":"Bronx","creation_date":"2016-12-17T23:32:26.000","latitude":"40.825653541278996","longitude":"-73.88134827090516"}
+,{"incident_type":"Fire-1st Alarm","location":"126 West 53rd Street","borough":"Manhattan","creation_date":"2016-12-25T22:42:56.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"Manhattan","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-3rd Alarm","location":"75 East 21 Street","borough":"Brooklyn","creation_date":"2017-06-02T19:50:53.000","latitude":"40.65296715281295","longitude":"-73.96044472854061"}
+,{"incident_type":"Fire-2nd Alarm","location":"112 Taylor STreet","borough":"Staten Island","creation_date":"2016-12-16T04:45:58.000","latitude":"40.63617530834489","longitude":"-74.12338634300454"}
+,{"incident_type":"Transportation-Car","location":"Cross Bronx Expressway & Webster Avenue","borough":"Bronx","creation_date":"2016-12-27T06:21:42.000","latitude":"40.84442117829582","longitude":"-73.90277738766548"}
+,{"incident_type":"Administration-Other","location":"188 Street & 75 Avenue","borough":"Queens","creation_date":"2017-05-10T13:36:12.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Administration-Planned Event","location":"1227 Tinton Avenue","borough":"Bronx","creation_date":"2016-06-01T14:29:27.000","latitude":"40.83008667276402","longitude":"-73.9000468719392"}
+,{"incident_type":"Transportation-Other","borough":"Queens","creation_date":"2017-01-19T04:08:25.000","latitude":"40.74419565512141","longitude":"-73.77154423626095"}
+,{"incident_type":"Fire-2nd Alarm","location":"155-26 115 Avenue","borough":"Queens","creation_date":"2016-12-17T09:04:03.000"}
+,{"incident_type":"Administration-Other","location":"188 Street & 75 Avenue","borough":"Queens","creation_date":"2017-05-10T13:36:12.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Street Collapse","location":"Madison Avenue & East 56 Street","borough":"Manhattan","creation_date":"2017-01-26T16:52:25.000"}
+,{"incident_type":"Fire-5th Alarm","borough":"Brooklyn","creation_date":"2017-12-28T19:12:14.000"}
+,{"incident_type":"Utility-Power Outage","location":"107-10 Shore Front Parkway","borough":"Queens","creation_date":"2017-01-21T08:59:38.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Transportation-Train Subway","location":"West 128th Street & St. Nicholas Avenue","borough":"Manhattan","creation_date":"2017-06-27T10:05:40.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-5th Alarm","location":"60 East 9th Street","borough":"Manhattan","creation_date":"2017-06-28T18:04:26.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Fire-3rd Alarm","location":"75 East 21 Street","borough":"Brooklyn","creation_date":"2017-06-02T19:50:53.000","latitude":"40.65296715281295","longitude":"-73.96044472854061"}
+,{"incident_type":"Utility-Gas Low Pressure","location":"Noble Avenue & Watson Avenue","borough":"Bronx","creation_date":"2017-01-30T21:47:09.000","latitude":"40.82730091310776","longitude":"-73.86917897682753"}
+,{"incident_type":"Utility-Gas Low Pressure","location":"Noble Avenue & Watson Avenue","borough":"Bronx","creation_date":"2017-01-30T21:47:09.000","latitude":"40.82730091310776","longitude":"-73.86917897682753"}
+,{"incident_type":"Fire-5th Alarm","location":"72-10 Myrtle ave","borough":"Queens","creation_date":"2017-06-24T21:30:28.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-5th Alarm","location":"72-10 Myrtle ave","borough":"Queens","creation_date":"2017-06-24T21:30:28.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Crane","borough":"Brooklyn","creation_date":"2016-11-18T13:12:51.000"}
+,{"incident_type":"Utility-Power Outage","location":"107-10 Shore Front Parkway","borough":"Queens","creation_date":"2017-01-21T08:59:38.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Water Service Line","location":"West 167th Street & Edgecombe Avenue","borough":"Manhattan","creation_date":"2017-01-23T03:54:00.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-3rd Alarm","location":"1170 44 Street","borough":"Brooklyn","creation_date":"2017-08-28T04:05:15.000","latitude":"40.6396450069249","longitude":"-73.99227762796457"}
+,{"incident_type":"Utility-Water Main","borough":"Queens","creation_date":"2017-06-21T03:00:54.000"}
+,{"incident_type":"Fire-4th Alarm","location":"860 Hunts Point Avenue","borough":"Bronx","creation_date":"2017-07-04T13:27:14.000"}
+,{"incident_type":"Structural-Construction Accident","location":"31-25 28 Road","borough":"Queens","creation_date":"2017-06-20T15:57:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-1st Alarm","location":"150-05 Cohancy Street","borough":"Queens","creation_date":"2016-11-20T13:03:30.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Rescue-Technical","location":"81-10 134 Street","borough":"Queens","creation_date":"2016-11-22T12:24:02.000","closed_date":"2016-11-22T18:27:30.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-2nd Alarm","location":"726 East 141 Street","borough":"Bronx","creation_date":"2017-06-30T02:01:05.000"}
+,{"incident_type":"Fire-5th Alarm","location":"60 East 9th Street","borough":"Manhattan","creation_date":"2017-06-28T18:04:26.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Fire-4th Alarm","location":"135-42 Roosevelt Avenue","borough":"Queens","creation_date":"2017-01-25T14:20:02.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-2nd Alarm","location":"447 Wales Avenue","borough":"Bronx","creation_date":"2017-07-26T03:06:44.000","latitude":"40.81028097169481","longitude":"-73.90820617557257"}
+,{"incident_type":"Fire-5th Alarm","location":"60 East 9th Street","borough":"Manhattan","creation_date":"2017-06-28T18:04:26.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Law Enforcement-Other","borough":"Brooklyn","creation_date":"2017-07-05T00:59:11.000"}
+,{"incident_type":"Fire-3rd Alarm","location":"117 e 179 st","borough":"Bronx","creation_date":"2017-07-05T05:23:56.000","latitude":"40.83721305773555","longitude":"-73.87145922837472"}
+,{"incident_type":"Utility-Water Main","location":"West 81st Street & Central Park West","borough":"Manhattan","creation_date":"2017-01-14T00:15:09.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Water Service Line","borough":"Bronx","creation_date":"2017-07-11T04:50:50.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"2350 Beaumont Avenue","borough":"Bronx","creation_date":"2017-01-16T06:24:46.000","latitude":"40.853695370346145","longitude":"-73.88465007064343"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"Manhattan","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Manhole","location":"2061 broadway","borough":"Manhattan","creation_date":"2017-07-13T18:04:36.000","latitude":"40.77818030835592","longitude":"-73.98216976868244"}
+,{"incident_type":"Fire-2nd Alarm","location":"474 Coney Island Avenue","borough":"Brooklyn","creation_date":"2017-07-22T06:20:55.000","latitude":"40.646172258670454","longitude":"-73.9708338706791"}
+,{"incident_type":"Fire-5th Alarm","location":"60 East 9th Street","borough":"Manhattan","creation_date":"2017-06-28T18:04:26.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Fire-5th Alarm","location":"255 Mill Road","borough":"Staten Island","creation_date":"2017-05-21T04:28:08.000","latitude":"40.56272020977093","longitude":"-74.11140916120303"}
+,{"incident_type":"Fire-Haz Mat","location":"41-12 12 Street","borough":"Queens","creation_date":"2017-06-12T13:36:36.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Water Main","location":"Watson Avenue  & Colgate Avenue","borough":"Bronx","creation_date":"2016-12-17T23:32:26.000","latitude":"40.825653541278996","longitude":"-73.88134827090516"}
+,{"incident_type":"Fire-2nd Alarm","location":"152 23 Street","borough":"Brooklyn","creation_date":"2016-12-18T03:42:20.000","latitude":"40.66208512363062","longitude":"-73.99773597963093"}
+,{"incident_type":"Structural-Street Collapse","location":"205 East 33 Street","borough":"Manhattan","creation_date":"2017-02-14T09:13:41.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2017-02-10T02:36:18.000"}
+,{"incident_type":"Transportation-Other","location":"Van Wyck Expressway North and South Bound","borough":"Queens","creation_date":"2017-02-10T05:18:05.000"}
+,{"incident_type":"Fire-4th Alarm","location":"511 Amsterdam Avenue","borough":"Manhattan","creation_date":"2017-02-24T18:21:05.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-Collapse","location":"3000 Jerome Avenue","borough":"Bronx","creation_date":"2017-02-19T06:22:00.000","latitude":"40.874108528386955","longitude":"-73.88906744340699"}
+,{"incident_type":"Utility-Other","location":"434 Beach 54 Street","borough":"Queens","creation_date":"2017-01-09T12:54:45.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-4th Alarm","location":"1342 College Avenue","borough":"Bronx","creation_date":"2017-03-01T13:53:39.000","latitude":"40.83625315865743","longitude":"-73.91128251637423"}
+,{"incident_type":"Utility-Steam Main","location":"35 Madison Street","borough":"Manhattan","creation_date":"2017-02-15T10:53:15.000"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"Manhattan","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-3rd Alarm","location":"7 East 84 Street","borough":"Manhattan","creation_date":"2017-03-14T03:04:32.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"HazMat-High Carbon Monoxide","location":"30 Cooper Square","borough":"Manhattan","creation_date":"2017-01-12T14:30:24.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Law Enforcement-Other","borough":"Brooklyn","creation_date":"2017-02-21T15:32:14.000"}
+,{"incident_type":"Fire-3rd Alarm","location":"64 Driggs Street","borough":"Staten Island","creation_date":"2017-03-06T04:10:57.000","latitude":"40.541946569279844","longitude":"-74.14887190311504"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Street Collapse","location":"205 East 33 Street","borough":"Manhattan","creation_date":"2017-02-14T09:13:41.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-4th Alarm","location":"657 Crotona Park North","borough":"Bronx","creation_date":"2017-03-06T18:40:53.000","latitude":"40.84251557063817","longitude":"-73.89461654911366"}
+,{"incident_type":"HazMat-High Carbon Monoxide","location":"1472 Boston Road","borough":"Bronx","creation_date":"2017-03-08T18:11:16.000","latitude":"40.83414587353434","longitude":"-73.89497320315002"}
+,{"incident_type":"Fire-3rd Alarm","location":"64 Driggs Street","borough":"Staten Island","creation_date":"2017-03-06T04:10:57.000","latitude":"40.541946569279844","longitude":"-74.14887190311504"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Other","location":"71-17 Roosevelt Avenue","borough":"Queens","creation_date":"2017-03-03T10:33:21.000"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Collapse","location":"2461 amsterdam","borough":"manhattan","creation_date":"2017-08-07T15:31:53.000","latitude":"40.84880706021704","longitude":"-73.9303471436034"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"390 Madison Avenue","borough":"Manhattan","creation_date":"2017-03-02T23:41:36.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Gas Low Pressure","location":"Noble Avenue & Watson Avenue","borough":"Bronx","creation_date":"2017-01-30T21:47:09.000","closed_date":"2017-02-10T19:40:58.000","latitude":"40.82730091310776","longitude":"-73.86917897682753"}
+,{"incident_type":"Utility-Water Main","location":"156 Montague Street","borough":"Brooklyn","creation_date":"2017-03-02T16:00:43.000","latitude":"40.6944042074893","longitude":"-73.99298759520053"}
+,{"incident_type":"Utility-Power Outage","location":"2635 3rd Avenue","borough":"Bronx","creation_date":"2017-08-14T03:06:55.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"447 Wales Avenue","borough":"Bronx","creation_date":"2017-07-26T03:06:44.000","latitude":"40.81028097169481","longitude":"-73.90820617557257"}
+,{"incident_type":"Fire-2nd Alarm","location":"447 Wales Avenue","borough":"Bronx","creation_date":"2017-07-26T03:06:44.000","latitude":"40.81028097169481","longitude":"-73.90820617557257"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Law Enforcement-Explosion","location":"145-23 222 Street","borough":"Queens","creation_date":"2017-07-28T17:14:42.000","latitude":"40.66324403329684","longitude":"-73.75676400678067"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Fire-3rd Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Structural-Sidewalk Collapse","location":"836 5 Avenue","borough":"Brooklyn","creation_date":"2019-04-20T13:52:16.000","latitude":"40.653204201511834","longitude":"-74.00191389275187"}
+,{"incident_type":"Structural-Street Collapse","location":"205 East 33 Street","borough":"Manhattan","creation_date":"2017-02-14T09:13:41.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Street Collapse","location":"205 East 33 Street","borough":"Manhattan","creation_date":"2017-02-14T09:13:41.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Gas Low Pressure","location":"Noble Avenue & Watson Avenue","borough":"Bronx","creation_date":"2017-01-30T21:47:09.000","latitude":"40.82730091310776","longitude":"-73.86917897682753"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"Manhattan","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-2nd Alarm","location":"1580 Edison Avenue","borough":"Bronx","creation_date":"2019-04-21T04:03:19.000","latitude":"40.843378089647416","longitude":"-73.8329157352127"}
+,{"incident_type":"Transportation-Train Subway","location":"Hanson Place & Ashland Place","borough":"Brooklyn","creation_date":"2017-01-04T08:28:01.000","latitude":"40.685060114733574","longitude":"-73.97796750329684"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"Manhattan","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Other","location":"434 Beach 54 Street","borough":"Queens","creation_date":"2017-01-09T12:54:45.000","closed_date":"2017-01-10T04:22:29.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Steam Service Line","location":"5th Avenue  & 57th Street","borough":"Manhattan","creation_date":"2017-01-06T11:44:57.000"}
+,{"incident_type":"Fire-6th Alarm","location":"324 East 93rd","borough":"Manhattan","creation_date":"2016-10-27T03:40:16.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-6th Alarm","location":"24 Murray Street","borough":"Manhattan","creation_date":"2017-09-01T19:10:52.000","latitude":"40.71366897945644","longitude":"-74.00862482959197"}
+,{"incident_type":"Fire-3rd Alarm","location":"7 East 84 Street","borough":"Manhattan","creation_date":"2017-03-14T03:04:32.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Partial Collapse","location":"246 West Fordham Road","borough":"Bronx","creation_date":"2017-04-01T09:55:47.000","latitude":"40.861716573861884","longitude":"-73.91068343209389"}
+,{"incident_type":"Structural-Street Collapse","location":"Broad Street & Water Street","borough":"Manhattan","creation_date":"2017-03-19T21:03:04.000"}
+,{"incident_type":"Utility-Water Service Line","location":"West End Avenue & West 95 Street","borough":"Manhattan","creation_date":"2017-08-20T04:43:18.000","latitude":"40.794579","longitude":"-73.9737045"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Utility-Other","location":"10 Nathan Perlman Place","borough":"Manhattan","creation_date":"2019-05-02T11:30:49.000","latitude":"40.733605005828394","longitude":"-73.98293627906979"}
+,{"incident_type":"Structural-Collapse","location":"496 Avenue P","borough":"Brooklyn","creation_date":"2019-05-06T23:43:08.000","latitude":"40.60921162724344","longitude":"-73.96917757354724"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Utility-Water Main","location":"St.Nicholas Avenue c/s West 162 Street","borough":"Manhattan","creation_date":"2017-01-19T21:30:45.000","latitude":"40.78997515208777","longitude":"-74.01747454754952"}
+,{"incident_type":"Fire-2nd Alarm","location":"41-45 70 Street","borough":"Queens","creation_date":"2017-02-05T06:38:30.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Power Outage","location":"2800 W 5 St","borough":"Brooklyn","creation_date":"2016-11-18T14:13:08.000","closed_date":"2016-11-18T23:31:39.000","latitude":"40.57967988661858","longitude":"-73.97190927609142"}
+,{"incident_type":"Administration-Other","location":"Seagirt Blvd & Beach 9 Street","borough":"Queens","creation_date":"2016-11-14T15:53:54.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Administration-Planned Event","location":"1227 Tinton Avenue","borough":"Bronx","creation_date":"2016-06-01T14:29:27.000","latitude":"40.83008667276402","longitude":"-73.9000468719392"}
+,{"incident_type":"Law Enforcement-Other","borough":"Brooklyn","creation_date":"2016-10-29T17:35:28.000"}
+,{"incident_type":"Structural-Crane","borough":"Brooklyn","creation_date":"2016-11-18T13:12:51.000"}
+,{"incident_type":"Utility-Gas Low Pressure","location":"Noble Avenue & Watson Avenue","borough":"Bronx","creation_date":"2017-01-30T21:47:09.000","latitude":"40.82730091310776","longitude":"-73.86917897682753"}
+,{"incident_type":"Fire-3rd Alarm","location":"7 East 84 Street","borough":"Manhattan","creation_date":"2017-03-14T03:04:32.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Water Main","location":"145 Avenue  & 229 Street","borough":"Queens","creation_date":"2017-09-26T20:24:46.000","latitude":"40.66173000000001","longitude":"-73.7506305"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Utility-Gas Service Line","location":"21-24 31 Street","borough":"Queens","creation_date":"2017-03-21T19:39:32.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-1st Alarm","location":"826 Broadway","borough":"Manhattan","creation_date":"2017-03-31T07:57:15.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Street Collapse","location":"44 Street & East 4th Street","borough":"Brooklyn","creation_date":"2017-03-30T19:58:26.000","latitude":"40.651493140455166","longitude":"-73.99822557617236"}
+,{"incident_type":"Fire-Other","location":"172 wythe ave","borough":"Brooklyn","creation_date":"2017-04-01T17:29:36.000","latitude":"40.71935245685148","longitude":"-73.96067200790606"}
+,{"incident_type":"Fire-5th Alarm","location":"56-11 94 Street","borough":"Queens","creation_date":"2017-04-11T18:35:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Law Enforcement-Haz Mat","location":"150 dreiser loop","borough":"Bronx","creation_date":"2017-04-13T23:22:35.000","latitude":"40.876856856559755","longitude":"-73.82979888840714"}
+,{"incident_type":"Structural-Partial Collapse","location":"246 West Fordham Road","borough":"Bronx","creation_date":"2017-04-01T09:55:47.000","latitude":"40.861716573861884","longitude":"-73.91068343209389"}
+,{"incident_type":"Fire-3rd Alarm","location":"6 East 32nd Street","borough":"Manhattan","creation_date":"2019-04-24T11:32:39.000","latitude":"40.746822779069795","longitude":"-73.98478502415024"}
+,{"incident_type":"Fire-5th Alarm","location":"60 East 9th Street","borough":"Manhattan","creation_date":"2017-06-28T18:04:26.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Structural-Collapse","location":"496 Avenue P","borough":"Brooklyn","creation_date":"2019-05-06T23:43:08.000","latitude":"40.60921162724344","longitude":"-73.96917757354724"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-2nd Alarm","location":"155-26 115 Avenue","borough":"Queens","creation_date":"2016-12-17T09:04:03.000"}
+,{"incident_type":"HazMat-High Carbon Monoxide","location":"1750 Grand Course","borough":"Bronx","creation_date":"2019-05-02T04:39:54.000","latitude":"40.84970163252355","longitude":"-73.91319386037867"}
+,{"incident_type":"Utility-Other","location":"10 Nathan Perlman Place","borough":"Manhattan","creation_date":"2019-05-02T11:30:49.000","latitude":"40.733605005828394","longitude":"-73.98293627906979"}
+,{"incident_type":"Fire-5th Alarm","location":"1136 Olmstead Avenue","borough":"Bronx","creation_date":"2017-06-22T15:51:02.000","latitude":"40.830418496617426","longitude":"-73.85380655212987"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-5th Alarm","location":"1920 Walton Street","borough":"Bronx","creation_date":"2017-09-27T06:44:58.000","latitude":"40.85053252400602","longitude":"-73.90891950415494"}
+,{"incident_type":"Fire-5th Alarm","location":"1920 Walton Street","borough":"Bronx","creation_date":"2017-09-27T06:44:58.000","latitude":"40.85053252400602","longitude":"-73.90891950415494"}
+,{"incident_type":"Structural-Collapse","location":"27 West 38 Street","borough":"Manhattan","creation_date":"2015-10-30T10:39:24.000","latitude":"40.75142369548083","longitude":"-73.98379813957992"}
+,{"incident_type":"Fire-2nd Alarm","location":"2582 briggs ave","borough":"bronx","creation_date":"2017-04-16T15:30:51.000","latitude":"40.863822693463646","longitude":"-73.8934929748201"}
+,{"incident_type":"Transportation-Train Subway","location":"West 31 Street & 7 Avenue","borough":"Manhattan","creation_date":"2017-04-03T09:22:36.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-Sensitive Location","location":"64 Norfolk Street","borough":"Manhattan","creation_date":"2017-05-14T19:15:30.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-4th Alarm","location":"112-23 208 Street","borough":"Jamaica","creation_date":"2017-04-23T14:48:20.000","latitude":"40.70178228962209","longitude":"-73.80841857965294"}
+,{"incident_type":"Fire-4th Alarm","location":"112-23 208 Street","borough":"Jamaica","creation_date":"2017-04-23T14:48:20.000","latitude":"40.70178228962209","longitude":"-73.80841857965294"}
+,{"incident_type":"Fire-Manhole","location":"Nostrand Avenue & Gates Avenue","borough":"Brooklyn","creation_date":"2017-04-24T19:45:14.000","latitude":"40.68618050452773","longitude":"-73.95073715859218"}
+,{"incident_type":"Fire-5th Alarm","location":"56-11 94 Street","borough":"Queens","creation_date":"2017-04-11T18:35:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-Sensitive Location","location":"64 Norfolk Street","borough":"Manhattan","creation_date":"2017-05-14T19:15:30.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Water Service Line","location":"10502 Avenue D","borough":"Brooklyn","creation_date":"2017-04-25T06:22:07.000"}
+,{"incident_type":"Fire-5th Alarm","location":"1920 Walton Street","borough":"Bronx","creation_date":"2017-09-27T06:44:58.000","latitude":"40.85053252400602","longitude":"-73.90891950415494"}
+,{"incident_type":"Utility-Other","location":"10 Nathan Perlman Place","borough":"Manhattan","creation_date":"2019-05-02T11:30:49.000","latitude":"40.733605005828394","longitude":"-73.98293627906979"}
+,{"incident_type":"Fire-5th Alarm","location":"1920 Walton Street","borough":"Bronx","creation_date":"2017-09-27T06:44:58.000","latitude":"40.85053252400602","longitude":"-73.90891950415494"}
+,{"incident_type":"Fire-3rd Alarm","location":"2062 62 Street","borough":"Brooklyn","creation_date":"2017-04-28T15:21:31.000","closed_date":"2017-04-29T01:07:02.000","latitude":"40.61729599351639","longitude":"-73.9825560692064"}
+,{"incident_type":"Administration-Drill","location":"317 East 67 Street","borough":"Manhattan","creation_date":"2017-02-23T14:55:01.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-5th Alarm","location":"56-11 94 Street","borough":"Queens","creation_date":"2017-04-11T18:35:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-5th Alarm","location":"56-11 94 Street","borough":"Queens","creation_date":"2017-04-11T18:35:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-5th Alarm","location":"56-11 94 Street","borough":"Queens","creation_date":"2017-04-11T18:35:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-5th Alarm","location":"56-11 94 Street","borough":"Queens","creation_date":"2017-04-11T18:35:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Gas High Pressure","location":"50-15 Beach Channel Drive","borough":"Queens","creation_date":"2016-12-19T11:25:52.000","closed_date":"2016-12-19T14:57:04.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"Manhattan","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-6th Alarm","location":"24 Murray Street","borough":"Manhattan","creation_date":"2017-09-01T19:10:52.000","latitude":"40.71366897945644","longitude":"-74.00862482959197"}
+,{"incident_type":"Utility-Water Main","location":"5601 16 Avenue","borough":"Brooklyn","creation_date":"2016-12-20T07:16:23.000","latitude":"40.62681840384738","longitude":"-73.98983948870062"}
+,{"incident_type":"Fire-Haz Mat","location":"41-12 12 Street","borough":"Queens","creation_date":"2017-06-12T13:36:36.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Water Main","location":"Nugent Avenue & Graham Boulevard","borough":"Staten Island","creation_date":"2017-05-08T21:02:06.000","latitude":"40.57830423325487","longitude":"-74.09107816522436"}
+,{"incident_type":"Administration-Other","location":"188 Street & 75 Avenue","borough":"Queens","creation_date":"2017-05-10T13:36:12.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Fire-Sensitive Location","location":"1315 54 Street","borough":"Brooklyn","creation_date":"2019-05-07T02:13:47.000","latitude":"40.631990007501834","longitude":"-73.99460738314393"}
+,{"incident_type":"Structural-Collapse","location":"496 Avenue P","borough":"Brooklyn","creation_date":"2019-05-06T23:43:08.000","latitude":"40.60921162724344","longitude":"-73.96917757354724"}
+,{"incident_type":"Fire-3rd Alarm","location":"64 Driggs Street","borough":"Staten Island","creation_date":"2017-03-06T04:10:57.000","latitude":"40.541946569279844","longitude":"-74.14887190311504"}
+,{"incident_type":"Fire-2nd Alarm","location":"88 prospect park west","borough":"Brooklyn","creation_date":"2017-03-04T21:26:13.000","latitude":"40.66733561934444","longitude":"-73.97463035030961"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-4th Alarm","location":"653 Crotona Park North","borough":"Bronx","creation_date":"2017-03-06T18:40:53.000","latitude":"40.84252576265493","longitude":"-73.89462388938017"}
+,{"incident_type":"Utility-Electric Overhead","borough":"Brooklyn","creation_date":"2019-05-21T19:37:34.000"}
+,{"incident_type":"Fire-5th Alarm","location":"72-10 Myrtle ave","borough":"Queens","creation_date":"2017-06-24T21:30:28.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Fire-2nd Alarm","location":"615 Hudson Street","borough":"Manhattan","creation_date":"2017-06-25T16:26:09.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Partial Collapse","location":"246 West Fordham Road","borough":"Bronx","creation_date":"2017-04-01T09:55:47.000","latitude":"40.861716573861884","longitude":"-73.91068343209389"}
+,{"incident_type":"Administration-Other","location":"188 Street & 75 Avenue","borough":"Queens","creation_date":"2017-05-10T13:36:12.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Other","location":"12th Road & 152 Street","borough":"Queens","creation_date":"2019-05-26T03:14:12.000","latitude":"40.79073599999999","longitude":"-73.81008"}
+,{"incident_type":"Fire-Haz Mat","location":"02 East 61 Street","borough":"Manhattan","creation_date":"2019-05-28T07:20:21.000","latitude":"40.76534681181839","longitude":"-73.97179263350449"}
+,{"incident_type":"Fire-Collapse","location":"1406 Prospect Avenue","borough":"Bronx","creation_date":"2019-06-01T15:04:29.000","latitude":"40.83226532139767","longitude":"-73.89658564902774"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-4th Alarm","location":"112-23 208 Street","borough":"Jamaica","creation_date":"2017-04-23T14:48:20.000","latitude":"40.70178228962209","longitude":"-73.80841857965294"}
+,{"incident_type":"Fire-3rd Alarm","location":"115 East 138 Street","borough":"Bronx","creation_date":"2017-04-09T00:53:44.000"}
+,{"incident_type":"Structural-Collapse","location":"496 Avenue P","borough":"Brooklyn","creation_date":"2019-05-06T23:43:08.000","latitude":"40.60921162724344","longitude":"-73.96917757354724"}
+,{"incident_type":"Fire-4th Alarm","location":"112-23 208 Street","borough":"Jamaica","creation_date":"2017-04-23T14:48:20.000","latitude":"40.70178228962209","longitude":"-73.80841857965294"}
+,{"incident_type":"Utility-Water Main","borough":"Brooklyn","creation_date":"2019-11-02T18:22:49.000","closed_date":"2019-11-02T20:28:47.000"}
+,{"incident_type":"Structural-Construction Accident","location":"570 broome street","borough":"manhattan","creation_date":"2019-04-13T03:51:16.000","latitude":"40.724526361959875","longitude":"-74.006652011276"}
+,{"incident_type":"Fire-5th Alarm","location":"56-11 94 Street","borough":"Queens","creation_date":"2017-04-11T18:35:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Water Main","location":"East 20 Street & 5th Avenue","borough":"New York","creation_date":"2019-05-29T08:12:21.000","latitude":"40.73966100000002","longitude":"-73.990944"}
+,{"incident_type":"Structural-Crane","borough":"Brooklyn","creation_date":"2016-12-08T21:38:34.000","closed_date":"2016-12-10T12:25:33.000"}
+,{"incident_type":"Transportation-Train Subway","location":"West 31 Street & 7 Avenue","borough":"Manhattan","creation_date":"2017-04-03T09:22:36.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-Collapse","location":"1406 Prospect Avenue","borough":"Bronx","creation_date":"2019-06-01T15:04:29.000","closed_date":"2019-06-03T06:49:44.000","latitude":"40.83226532139767","longitude":"-73.89658564902774"}
+,{"incident_type":"Utility-Manhole","location":"51 Junius Street","borough":"Brooklyn","creation_date":"2017-04-27T04:41:08.000","latitude":"40.67366936285191","longitude":"-73.90398627524559"}
+,{"incident_type":"Law Enforcement-Haz Mat","location":"150 dreiser loop","borough":"Bronx","creation_date":"2017-04-13T23:22:35.000","latitude":"40.876856856559755","longitude":"-73.82979888840714"}
+,{"incident_type":"Utility-Water Main","borough":"Queens","creation_date":"2017-04-26T03:23:22.000","latitude":"40.66245165162724","longitude":"-73.8003999900227"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"New York","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Life Safety Violations","location":"2028 East 9 Street","borough":"Brooklyn","creation_date":"2016-12-16T12:35:45.000","closed_date":"2016-12-16T15:58:08.000","latitude":"40.59972440715677","longitude":"-73.96242613555688"}
+,{"incident_type":"Structural-Collapse","location":"1294 Park Pl","borough":"Brooklyn","creation_date":"2017-10-17T10:00:47.000"}
+,{"incident_type":"Utility-Water Main","location":"Rockaway Boulevard   & Brookville Boulevard","borough":"Queens","creation_date":"2017-05-17T06:56:05.000"}
+,{"incident_type":"Structural-Collapse","location":"173-07 Liberty Avenue","borough":"Queens","creation_date":"2017-09-29T12:25:04.000","latitude":"40.70468961180166","longitude":"-73.78479944067074"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Utility-Water Main","location":"207 Madison Street","borough":"Manhattan","creation_date":"2017-05-03T09:03:18.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Crane","location":"225 Park Avenue South","borough":"Manhattan","creation_date":"2016-12-09T12:20:14.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Water Main","location":"832 Post Avenue","borough":"Staten Island","creation_date":"2017-05-03T06:45:39.000","latitude":"40.63102364992261","longitude":"-74.12878859121969"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"New York","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Collapse","location":"705 Lafayette Ave","borough":"Brooklyn","creation_date":"2019-06-04T12:23:48.000","latitude":"40.69063440550517","longitude":"-73.94488659409082"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"645 Madison Avenue","borough":"New York","creation_date":"2019-04-19T13:13:40.000","closed_date":"2019-04-19T15:45:29.000","latitude":"40.7639929036875","longitude":"-73.9710743845289"}
+,{"incident_type":"Fire-Hospital","location":"121 Dekalb Ave","borough":"Brooklyn","creation_date":"2019-04-15T06:50:17.000","latitude":"40.68991568098562","longitude":"-73.97812328922043"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Administration-Other","location":"188 Street & 75 Avenue","borough":"Queens","creation_date":"2017-05-10T13:36:12.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Structural-Street Collapse","location":"54 East 181 Street","borough":"Bronx","creation_date":"2017-06-10T19:11:46.000","latitude":"40.855235040265995","longitude":"-73.9045235859939"}
+,{"incident_type":"Fire-5th Alarm","location":"72-10 Myrtle ave","borough":"Queens","creation_date":"2017-06-24T21:30:28.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"800 2nd Avenue","borough":"Manhattan","creation_date":"2017-10-26T15:17:12.000","latitude":"40.780869475028496","longitude":"-73.96769187839601"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Transportation-Other","location":"Long Island Expressway & Kissena Blvd","borough":"Queens","creation_date":"2017-10-23T14:17:33.000"}
+,{"incident_type":"Fire-1st Alarm","location":"490 East 91 Street","borough":"Manhattan","creation_date":"2017-10-22T15:11:56.000"}
+,{"incident_type":"Fire-3rd Alarm","location":"1216 Halsey Street","borough":"Brooklyn","creation_date":"2017-10-23T06:32:59.000"}
+,{"incident_type":"Structural-Collapse","location":"1294 Park Pl","borough":"Brooklyn","creation_date":"2017-10-17T10:00:47.000"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Structural-Collapse","borough":"Brooklyn","creation_date":"2016-11-15T21:28:27.000","closed_date":"2016-11-15T21:51:00.000"}
+,{"incident_type":"Administration-Other","location":"188 Street & 75 Avenue","borough":"Queens","creation_date":"2017-05-10T13:36:12.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-5th Alarm","location":"56-11 94 Street","borough":"Queens","creation_date":"2017-04-11T18:35:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"HazMat-Other","borough":"Staten Island","creation_date":"2017-11-13T10:28:56.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"328 East 14th Street","borough":"Manhattan","creation_date":"2017-05-26T05:47:04.000"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Utility-Water Main","location":"1526 Pacific Street","borough":"Brooklyn","creation_date":"2017-11-02T05:17:31.000"}
+,{"incident_type":"Fire-4th Alarm","location":"150 Nagle Avenue","borough":"Manhattan","creation_date":"2017-11-12T10:17:16.000"}
+,{"incident_type":"HazMat-Chemical","borough":"Brooklyn","creation_date":"2017-11-09T18:50:46.000"}
+,{"incident_type":"Structural-Stability Problem","location":"300 East 96 Street","borough":"Manhattan","creation_date":"2017-11-09T14:33:16.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Utility-Water Main","borough":"Brooklyn","creation_date":"2017-11-11T09:13:05.000"}
+,{"incident_type":"HazMat-Chemical","borough":"Brooklyn","creation_date":"2017-11-09T18:50:46.000"}
+,{"incident_type":"Structural-Stability Problem","location":"300 East 96 Street","borough":"Manhattan","creation_date":"2017-11-09T14:33:16.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"1335 Ave of the Americas","borough":"Manhattan","creation_date":"2017-11-12T07:15:39.000"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Utility-Water Main","borough":"Brooklyn","creation_date":"2017-11-11T09:13:05.000"}
+,{"incident_type":"Utility-Gas Main Rupture","location":"Fulton Street  & Hoyt Street","borough":"Brooklyn","creation_date":"2019-06-05T02:23:38.000","latitude":"40.69057499999999","longitude":"-73.985121"}
+,{"incident_type":"Fire-2nd Alarm","location":"328 East 14th Street","borough":"Manhattan","creation_date":"2017-05-26T05:47:04.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Structural-Collapse","location":"705 Lafayette Ave","borough":"Brooklyn","creation_date":"2019-06-04T12:23:48.000","latitude":"40.69063440550517","longitude":"-73.94488659409082"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Structural-Other","location":"526 Logan Street","borough":"Brooklyn","creation_date":"2019-06-06T16:13:08.000","latitude":"40.673153399388326","longitude":"-73.87583541355524"}
+,{"incident_type":"Fire-3rd Alarm","location":"134-14 Franklin Ave","borough":"Queens","creation_date":"2019-06-08T12:42:28.000","latitude":"40.75366153424913","longitude":"-73.8293131270992"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Fire-3rd Alarm","location":"787 7th Avenue","borough":"Manhattan","creation_date":"2019-06-10T14:08:22.000","latitude":"40.76221276879802","longitude":"-73.98240503384511"}
+,{"incident_type":"Structural-Other","location":"526 Logan Street","borough":"Brooklyn","creation_date":"2019-06-06T16:13:08.000","latitude":"40.673153399388326","longitude":"-73.87583541355524"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-5th Alarm","location":"255 Mill Road","borough":"Staten Island","creation_date":"2017-05-21T04:28:08.000","latitude":"40.56272020977093","longitude":"-74.11140916120303"}
+,{"incident_type":"Fire-5th Alarm","location":"60 East 9th Street","borough":"Manhattan","creation_date":"2017-06-28T18:04:26.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Structural-Other","location":"156 Erasmus Street","borough":"Brooklyn","creation_date":"2017-08-17T11:52:31.000","latitude":"40.64971448845881","longitude":"-73.95052135928213"}
+,{"incident_type":"HazMat-Chemical","borough":"Brooklyn","creation_date":"2017-11-09T18:50:46.000"}
+,{"incident_type":"Fire-4th Alarm","location":"1686 clay ave","borough":"Bronx","creation_date":"2017-12-17T05:31:57.000","latitude":"40.84387029225576","longitude":"-73.90486685899367"}
+,{"incident_type":"Structural-Stability Problem","location":"300 East 96 Street","borough":"Manhattan","creation_date":"2017-11-09T14:33:16.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Fire-6th Alarm","location":"565 West 144 Street","borough":"Manhattan","creation_date":"2017-11-17T15:35:42.000"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Fire-6th Alarm","location":"702 44th street","borough":"Brooklyn","creation_date":"2019-04-03T17:10:29.000","latitude":"40.64567498528483","longitude":"-74.0022560985342"}
+,{"incident_type":"Fire-4th Alarm","location":"1488 East 17th Street","borough":"Brooklyn","creation_date":"2019-06-13T04:22:10.000","latitude":"40.61386341104509","longitude":"-73.95735567903502"}
+,{"incident_type":"Utility-Gas Service Line","location":"186th street & 73rd Avenue","borough":"Brooklyn","creation_date":"2019-06-12T13:28:57.000","latitude":"40.732541999999995","longitude":"-73.78479899999999"}
+,{"incident_type":"Fire-3rd Alarm","location":"787 7th Avenue","borough":"Manhattan","creation_date":"2019-06-10T14:08:22.000","latitude":"40.76221276879802","longitude":"-73.98240503384511"}
+,{"incident_type":"Fire-4th Alarm","location":"1488 East 17th Street","borough":"Brooklyn","creation_date":"2019-06-13T04:22:10.000","latitude":"40.61386341104509","longitude":"-73.95735567903502"}
+,{"incident_type":"Fire-2nd Alarm","location":"23-49 93rd St","borough":"Queens","creation_date":"2019-07-10T16:49:33.000","latitude":"40.76661069830919","longitude":"-73.87691282817833"}
+,{"incident_type":"Administration-Other","location":"Seagirt Blvd & Beach 9 Street","borough":"Queens","creation_date":"2016-11-14T15:53:54.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Law Enforcement-Other","location":"400 West 59th Street","borough":"Manhattan","creation_date":"2019-06-20T12:35:39.000","latitude":"40.769518767961294","longitude":"-73.98555390036927"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"New York","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-1st Alarm","location":"Northern Boulevard & 39 Street","borough":"Queens","creation_date":"2017-05-10T07:08:59.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-3rd Alarm","location":"2828 West 19 Street","borough":"Brooklyn","creation_date":"2019-06-17T00:23:48.000","latitude":"40.57797132722604","longitude":"-73.98615914239129"}
+,{"incident_type":"Structural-Sidewalk Collapse","location":"927 Broadway","borough":"Manhattan","creation_date":"2016-10-29T12:13:31.000","closed_date":"2016-11-17T18:06:54.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Administration-Other","location":"188 Street & 75 Avenue","borough":"Queens","creation_date":"2017-05-10T13:36:12.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-4th Alarm","location":"1516A  Schenectady Avenue","borough":"Brooklyn","creation_date":"2017-11-26T02:40:24.000"}
+,{"incident_type":"Fire-5th Alarm","location":"56-11 94 Street","borough":"Queens","creation_date":"2017-04-11T18:35:24.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-4th Alarm","location":"1163 Fulton Street","borough":"Brooklyn","creation_date":"2017-12-07T05:37:05.000","latitude":"40.68105021233186","longitude":"-73.95517661726011"}
+,{"incident_type":"Fire-3rd Alarm","location":"144 West  9th Street","borough":"Manhattan","creation_date":"2017-12-25T15:44:31.000","latitude":"40.73407738818652","longitude":"-73.99909933303947"}
+,{"incident_type":"Transportation-Train Subway","location":"East 53 Street  & Lexington Avenue","borough":"Manhattan","creation_date":"2017-12-27T05:20:16.000"}
+,{"incident_type":"Fire-3rd Alarm","location":"1163 Fulton Street","borough":"Brooklyn","creation_date":"2017-12-07T05:37:05.000","latitude":"40.68105021233186","longitude":"-73.95517661726011"}
+,{"incident_type":"Fire-4th Alarm","location":"1163 Fulton Street","borough":"Brooklyn","creation_date":"2017-12-07T05:37:05.000","latitude":"40.68105021233186","longitude":"-73.95517661726011"}
+,{"incident_type":"Fire-4th Alarm","location":"3414 Knox Place","borough":"Bronx","creation_date":"2017-12-27T04:51:28.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"109-02 Lefferts Blvd","borough":"Queens","creation_date":"2019-06-14T15:43:32.000","latitude":"40.68210090867915","longitude":"-73.82218280310445"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Medical-Public Health","borough":"Brooklyn","creation_date":"2020-04-30T07:28:49.000"}
+,{"incident_type":"Aviation-Small Aircraft","location":"New Dorp Lane & Hylan Blvd","borough":"Staten Island","creation_date":"2019-05-01T17:59:50.000","latitude":"40.570515","longitude":"-74.109843"}
+,{"incident_type":"Structural-Other","location":"315 Avenue C","borough":"Manhattan","creation_date":"2017-05-10T12:05:03.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Fire-4th Alarm","location":"1516A  Schenectady Avenue","borough":"Brooklyn","creation_date":"2017-11-26T02:40:24.000"}
+,{"incident_type":"Fire-1st Alarm","location":"2441 Adam Clayton Powell Boulevard","borough":"New York","creation_date":"2019-05-08T02:51:10.000","latitude":"40.81980588536563","longitude":"-73.94026593502242"}
+,{"incident_type":"Fire-Sensitive Location","location":"60 Norfolk Street","borough":"Manhattan","creation_date":"2017-05-14T19:15:30.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-3rd Alarm","location":"1945 East 14 Street","borough":"Brooklyn","creation_date":"2017-12-18T02:27:02.000","latitude":"40.602280588954926","longitude":"-73.95796689035728"}
+,{"incident_type":"Fire-5th Alarm","location":"1486 Watson Avenue","borough":"Bronx","creation_date":"2017-10-01T14:50:56.000","latitude":"40.82577659449483","longitude":"-73.88016707063305"}
+,{"incident_type":"Fire-5th Alarm","location":"1920 Walton Street","borough":"Bronx","creation_date":"2017-09-27T06:44:58.000","latitude":"40.85053252400602","longitude":"-73.90891950415494"}
+,{"incident_type":"Fire-2nd Alarm","location":"1318 franklin ave","borough":"Bronx","creation_date":"2018-04-09T16:29:06.000","latitude":"40.832270665272134","longitude":"-73.90142592587583"}
+,{"incident_type":"Fire-3rd Alarm","location":"795 Garden Street","borough":"Bronx","creation_date":"2017-12-27T04:14:38.000"}
+,{"incident_type":"Fire-7th Alarm","location":"1547 Commonwealth Avenue","borough":"Bronx","creation_date":"2018-01-02T05:49:15.000","latitude":"40.83944073105778","longitude":"-73.86930858604073"}
+,{"incident_type":"Fire-2nd Alarm","borough":"Queens","creation_date":"2018-01-05T18:54:24.000"}
+,{"incident_type":"Fire-3rd Alarm","location":"93-20 211 Street","borough":"Queens","creation_date":"2018-04-29T00:17:29.000","latitude":"40.71756078322474","longitude":"-73.75035792619293"}
+,{"incident_type":"Administration-Other","borough":"Brooklyn","creation_date":"2017-10-02T06:18:48.000"}
+,{"incident_type":"Utility-Other","borough":"Brooklyn","creation_date":"2018-01-06T02:13:47.000"}
+,{"incident_type":"Structural-Stability Problem","location":"3030 Jerome Avenue","borough":"Bronx","creation_date":"2017-04-22T01:05:25.000","latitude":"40.87461553557961","longitude":"-73.88887046849652"}
+,{"incident_type":"Fire-3rd Alarm","location":"134-14 Franklin Ave","borough":"Queens","creation_date":"2019-06-08T12:42:28.000","latitude":"40.75366153424913","longitude":"-73.8293131270992"}
+,{"incident_type":"Utility-Water Main","location":"785 St Nicholas Avenue","borough":"New York","creation_date":"2019-06-23T14:02:48.000","latitude":"40.826923092705826","longitude":"-73.94300422511381"}
+,{"incident_type":"Law Enforcement-Other","location":"208 west 23rd street","borough":"manhattan","creation_date":"2019-06-20T14:29:24.000","latitude":"40.74432687731555","longitude":"-73.99628248710249"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"3080 Park Ave","borough":"Bronx","creation_date":"2019-07-10T16:12:05.000","latitude":"40.823142276703855","longitude":"-73.91862361045077"}
+,{"incident_type":"Fire-4th Alarm","location":"259 Monitor Street","borough":"Brooklyn","creation_date":"2019-08-01T00:55:54.000","latitude":"40.72838802331353","longitude":"-73.94309536831317"}
+,{"incident_type":"Structural-Scaffold","location":"500 Brightwater Court","borough":"Brooklyn","creation_date":"2019-06-29T19:23:38.000","latitude":"40.57573452899767","longitude":"-73.96208080099832"}
+,{"incident_type":"Fire-4th Alarm","location":"259 Monitor Street","borough":"Brooklyn","creation_date":"2019-08-01T00:55:54.000","latitude":"40.72838802331353","longitude":"-73.94309536831317"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"New York","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","closed_date":"2017-11-21T11:04:53.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Fire-3rd Alarm","location":"4769 White Plains Road","borough":"Bronx","creation_date":"2017-11-05T16:19:24.000"}
+,{"incident_type":"Utility-Water Main","borough":"Brooklyn","creation_date":"2018-01-07T06:02:18.000"}
+,{"incident_type":"Fire-7th Alarm","location":"1547 Commonwealth Avenue","borough":"Bronx","creation_date":"2018-01-02T05:49:15.000","latitude":"40.83944073105778","longitude":"-73.86930858604073"}
+,{"incident_type":"Fire-3rd Alarm","location":"570 Saint Marys Street","borough":"Bronx","creation_date":"2018-01-22T20:20:32.000","latitude":"40.810319780454776","longitude":"-73.91491491257429"}
+,{"incident_type":"Utility-Water Service Line","location":"Anderson Street  & Maryland Avenue","borough":"Staten Island","creation_date":"2019-07-09T01:31:22.000","latitude":"40.612572","longitude":"-74.06712"}
+,{"incident_type":"HazMat-High Carbon Monoxide","location":"1750 Grand Course","borough":"Bronx","creation_date":"2019-05-02T04:39:54.000","latitude":"40.84970163252355","longitude":"-73.91319386037867"}
+,{"incident_type":"Structural-Collapse","location":"496 Avenue P","borough":"Brooklyn","creation_date":"2019-05-06T23:43:08.000","latitude":"40.60921162724344","longitude":"-73.96917757354724"}
+,{"incident_type":"Structural-Collapse","location":"705 Lafayette Ave","borough":"Brooklyn","creation_date":"2019-06-04T12:23:48.000","latitude":"40.69063440550517","longitude":"-73.94488659409082"}
+,{"incident_type":"Utility-Water Main","location":"Himrod Street & Fairview Avenue","borough":"Queens","creation_date":"2019-05-30T19:42:13.000","latitude":"40.70943","longitude":"-73.9104435"}
+,{"incident_type":"Fire-Manhole","location":"651 West 168 Street","borough":"Manhattan","creation_date":"2017-11-27T04:53:34.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"2250 Aqueduct Avenue","borough":"Bronx","creation_date":"2017-11-21T20:50:24.000"}
+,{"incident_type":"Fire-6th Alarm","location":"565 West 144 Street","borough":"Manhattan","creation_date":"2017-11-17T15:35:42.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"703 Avenue K","borough":"Brooklyn","creation_date":"2017-11-27T04:16:20.000"}
+,{"incident_type":"Fire-4th Alarm","location":"1686 clay ave","borough":"Bronx","creation_date":"2017-12-17T05:31:57.000","latitude":"40.84387029225576","longitude":"-73.90486685899367"}
+,{"incident_type":"Fire-6th Alarm","location":"565 West 144 Street","borough":"Manhattan","creation_date":"2017-11-17T15:35:42.000"}
+,{"incident_type":"Fire-3rd Alarm","location":"1945 East 14 Street","borough":"Brooklyn","creation_date":"2017-12-18T02:27:02.000","latitude":"40.602280588954926","longitude":"-73.95796689035728"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"508 w 114th st","borough":"new york","creation_date":"2017-11-29T23:40:03.000","latitude":"40.71426940400045","longitude":"-74.00596992899966"}
+,{"incident_type":"Utility-Water Main","location":"East 198 Street  & Grand Concourse","borough":"Bronx","creation_date":"2017-12-19T08:01:41.000","latitude":"40.87023300000001","longitude":"-73.891134"}
+,{"incident_type":"Fire-1st Alarm","location":"150-05 Cohancy Street","borough":"Queens","creation_date":"2016-11-20T13:03:30.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Other","location":"245 East 62","borough":"Manhattan","creation_date":"2017-12-20T01:58:26.000"}
+,{"incident_type":"Fire-1st Alarm","location":"625 8th Avenue","borough":"Manhattan","creation_date":"2018-01-24T12:12:36.000","latitude":"40.756313870390656","longitude":"-73.99049891799864"}
+,{"incident_type":"Fire-Haz Mat","location":"20 Lincoln Center Plaza","borough":"Manhattan","creation_date":"2018-01-10T13:00:56.000","latitude":"40.7724319940919","longitude":"-73.98282299502323"}
+,{"incident_type":"Fire-3rd Alarm","location":"4769 White Plains Road","borough":"Bronx","creation_date":"2017-11-05T16:19:24.000"}
+,{"incident_type":"Utility-Other","location":"337 Lenox Road","borough":"Brooklyn","creation_date":"2018-01-09T13:38:12.000","latitude":"40.65426345657562","longitude":"-73.94835572745109"}
+,{"incident_type":"Structural-Life Safety Violations","location":"85 Bowery","borough":"Manhattan","creation_date":"2018-01-18T16:19:55.000","latitude":"40.71691558006811","longitude":"-73.99561290562072"}
+,{"incident_type":"Fire-4th Alarm","location":"259 Monitor Street","borough":"Brooklyn","creation_date":"2019-08-01T00:55:54.000","latitude":"40.72838802331353","longitude":"-73.94309536831317"}
+,{"incident_type":"Fire-4th Alarm","location":"1466 Watson Avenue","borough":"Bronx","creation_date":"2019-07-12T06:35:31.000","latitude":"40.82568468884546","longitude":"-73.88088613321604"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"3080 Park Ave","borough":"Bronx","creation_date":"2019-07-10T16:12:05.000","latitude":"40.823142276703855","longitude":"-73.91862361045077"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"3080 Park Ave","borough":"Bronx","creation_date":"2019-07-10T16:12:05.000","latitude":"40.823142276703855","longitude":"-73.91862361045077"}
+,{"incident_type":"Fire-4th Alarm","location":"917 Ogden Avenue (BX)","borough":"Bronx","creation_date":"2019-07-26T00:00:21.000","latitude":"40.83122913711119","longitude":"-73.93037144269714"}
+,{"incident_type":"Utility-Power Outage","location":"87-84 Parson BLVD","borough":"Queens","creation_date":"2019-07-20T16:52:58.000","latitude":"40.707047786082505","longitude":"-73.8024685933215"}
+,{"incident_type":"Law Enforcement-Other","location":"100 centre street","borough":"Manhattan","creation_date":"2019-07-15T14:09:22.000","latitude":"40.71615238245143","longitude":"-74.00136262779168"}
+,{"incident_type":"Structural-Partial Collapse","location":"2708 schurz ave","borough":"Bronx","creation_date":"2019-07-21T14:58:50.000","latitude":"40.813564348866116","longitude":"-73.82180960407413"}
+,{"incident_type":"Fire-4th Alarm","location":"1875 Carter Avenue","borough":"Bronx","creation_date":"2019-07-20T18:27:37.000","latitude":"40.84737550165673","longitude":"-73.90193213350007"}
+,{"incident_type":"Fire-7th Alarm","location":"225 McClellan Street","borough":"Bronx","creation_date":"2019-08-05T05:48:49.000","latitude":"40.83227874216628","longitude":"-73.91658338106646"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"3080 Park Ave","borough":"Bronx","creation_date":"2019-07-10T16:12:05.000","latitude":"40.823142276703855","longitude":"-73.91862361045077"}
+,{"incident_type":"Fire-4th Alarm","location":"1686 clay ave","borough":"Bronx","creation_date":"2017-12-17T05:31:57.000","latitude":"40.84387029225576","longitude":"-73.90486685899367"}
+,{"incident_type":"Fire-2nd Alarm","location":"529 56 Street","borough":"Brooklyn","creation_date":"2018-01-16T01:06:00.000","latitude":"40.64128004025041","longitude":"-74.01302860185243"}
+,{"incident_type":"Structural-Partial Collapse","location":"2708 schurz ave","borough":"bronx","creation_date":"2019-07-21T14:58:50.000","latitude":"40.813564348866116","longitude":"-73.82180960407413"}
+,{"incident_type":"Fire-2nd Alarm","location":"447 Wales Avenue","borough":"Bronx","creation_date":"2017-07-26T03:06:44.000","latitude":"40.81028097169481","longitude":"-73.90820617557257"}
+,{"incident_type":"Utility-Electric Feeder Cable","location":"321 East 153rd Street","borough":"Bronx","creation_date":"2019-08-02T20:00:06.000","latitude":"40.81971300141364","longitude":"-73.91950363015762"}
+,{"incident_type":"Fire-4th Alarm","location":"1875 Carter Avenue","borough":"Bronx","creation_date":"2019-07-20T18:27:37.000","latitude":"40.84737550165673","longitude":"-73.90193213350007"}
+,{"incident_type":"Structural-Demolition","location":"1374 Leland Avenue","borough":"Bronx","creation_date":"2017-07-21T06:54:15.000","latitude":"40.835117608661754","longitude":"-73.86402592350989"}
+,{"incident_type":"HazMat-High Carbon Monoxide","location":"211 Jackson Street","borough":"Brooklyn","creation_date":"2019-08-03T06:45:50.000","latitude":"40.716927387183304","longitude":"-73.94210198473655"}
+,{"incident_type":"Structural-Partial Collapse","location":"2708 schurz ave","borough":"bronx","creation_date":"2019-07-21T14:58:50.000","latitude":"40.813564348866116","longitude":"-73.82180960407413"}
+,{"incident_type":"Fire-Manhole","location":"East 20 Street  & 3rd Avenue","borough":"Manhattan","creation_date":"2019-08-07T22:49:51.000","closed_date":"2019-08-08T19:33:49.000","latitude":"40.73695200000001","longitude":"-73.984509"}
+,{"incident_type":"Fire-6th Alarm","location":"225 McClellan Street","borough":"Bronx","creation_date":"2019-08-05T05:48:49.000","latitude":"40.83227874216628","longitude":"-73.91658338106646"}
+,{"incident_type":"Fire-4th Alarm","location":"808 Freeman Street","borough":"Bronx","creation_date":"2019-08-05T04:21:29.000","latitude":"40.83027456174627","longitude":"-73.8978966829015"}
+,{"incident_type":"Utility-Water Service Line","location":"73 Avenue & 218 Street","borough":"Queens","creation_date":"2019-08-08T10:07:13.000","latitude":"40.74137999999999","longitude":"-73.7564895"}
+,{"incident_type":"Fire-2nd Alarm","location":"71 Vermilyea Avenue","borough":"Manhattan","creation_date":"2019-08-19T11:35:02.000","latitude":"40.865725823730216","longitude":"-73.92321583015469"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Administration-Other","location":"188 Street & 75 Avenue","borough":"Queens","creation_date":"2017-05-10T13:36:12.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Water Main","location":"31 MacKay Place","borough":"Brooklyn","creation_date":"2018-01-16T07:15:18.000","latitude":"40.63694168388245","longitude":"-74.03487118789316"}
+,{"incident_type":"Fire-7th Alarm","location":"1547 Commonwealth Avenue","borough":"Bronx","creation_date":"2018-01-02T05:49:15.000","latitude":"40.83944073105778","longitude":"-73.86930858604073"}
+,{"incident_type":"Fire-6th Alarm","location":"565 West 144 Street","borough":"Manhattan","creation_date":"2017-11-17T15:35:42.000","latitude":"40.82561021371684","longitude":"-73.9505288664955"}
+,{"incident_type":"Fire-4th Alarm","location":"1163 Fulton Street","borough":"Brooklyn","creation_date":"2017-12-07T05:37:05.000","latitude":"40.68105021233186","longitude":"-73.95517661726011"}
+,{"incident_type":"Structural-Other","location":"526 Logan Street","borough":"Brooklyn","creation_date":"2019-06-06T16:13:08.000","latitude":"40.673153399388326","longitude":"-73.87583541355524"}
+,{"incident_type":"Fire-3rd Alarm","location":"134-14 Franklin Ave","borough":"Queens","creation_date":"2019-06-08T12:42:28.000","latitude":"40.75366153424913","longitude":"-73.8293131270992"}
+,{"incident_type":"Fire-Sensitive Location","location":"64 Norfolk Street","borough":"Manhattan","creation_date":"2017-05-14T19:15:30.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-Sensitive Location","location":"60 Norfolk Street","borough":"Manhattan","creation_date":"2017-05-14T19:15:30.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-6th Alarm","location":"225 McClellan Street","borough":"Bronx","creation_date":"2019-08-05T05:48:49.000","latitude":"40.83227874216628","longitude":"-73.91658338106646"}
+,{"incident_type":"Fire-2nd Alarm","location":"71 Vermilyea Avenue","borough":"Manhattan","creation_date":"2019-08-19T11:35:02.000","latitude":"40.865725823730216","longitude":"-73.92321583015469"}
+,{"incident_type":"Structural-Falling Debris","location":"66 Rockwell Place","borough":"Brooklyn","creation_date":"2017-05-18T21:07:04.000","latitude":"40.68809894461168","longitude":"-73.97930223570881"}
+,{"incident_type":"Medical-EMS MCI (Multiple Casualty Incident)","location":"7 Avenue & West 42 Street","borough":"Manhattan","creation_date":"2017-05-18T12:15:35.000","closed_date":"2017-05-19T03:14:26.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-2nd Alarm","location":"71 Vermilyea Avenue","borough":"Manhattan","creation_date":"2019-08-19T11:35:02.000","latitude":"40.865725823730216","longitude":"-73.92321583015469"}
+,{"incident_type":"Transportation-Car","location":"FDR Drive & East 20th Street","borough":"Manhattan","creation_date":"2019-08-29T06:55:02.000","latitude":"40.73257416389054","longitude":"-73.97426804937537"}
+,{"incident_type":"Utility-Water Main","location":"Broadway  & West 63rd Street","borough":"manhattan","creation_date":"2019-08-22T14:25:06.000","latitude":"40.77134099999999","longitude":"-73.9820385"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Fire-4th Alarm","location":"3414 Knox Place","borough":"Bronx","creation_date":"2017-12-27T04:51:28.000","latitude":"40.88157493865778","longitude":"-73.88386113099433"}
+,{"incident_type":"Fire-7th Alarm","location":"775 Riverside Drive","borough":"Manhattan","creation_date":"2018-01-08T14:13:28.000","latitude":"40.834790360811354","longitude":"-73.94773493966737"}
+,{"incident_type":"Structural-Other","location":"103 Featherbed Lane","borough":"Bronx","creation_date":"2018-01-12T09:31:21.000","latitude":"40.846245296150904","longitude":"-73.9183378513763"}
+,{"incident_type":"Law Enforcement-Other","location":"405 East 54 Street","borough":"Manhattan","creation_date":"2018-02-12T11:06:31.000"}
+,{"incident_type":"Fire-Explosion","location":"4683 Park Avenue c/s E 188th street","borough":"Bronx","creation_date":"2018-03-02T01:32:31.000","latitude":"40.858762903139244","longitude":"-73.8927703230711"}
+,{"incident_type":"Structural-Life Safety Violations","location":"85 Bowery","borough":"Manhattan","creation_date":"2018-01-18T16:19:55.000","latitude":"40.71691558006811","longitude":"-73.99561290562072"}
+,{"incident_type":"Structural-Stability Problem","location":"118-18 Union Turnpike","borough":"Queens","creation_date":"2018-02-10T16:44:26.000","latitude":"40.71260968549858","longitude":"-73.83408588450024"}
+,{"incident_type":"Fire-Explosion","location":"820 Friel Place","borough":"Brooklyn","creation_date":"2019-09-30T13:33:08.000","latitude":"40.64731066971553","longitude":"-73.97189923022104"}
+,{"incident_type":"Utility-Water Main","location":"OsbornStreet & Pitkin Avenue","borough":"Brooklyn","creation_date":"2019-09-02T01:42:36.000","latitude":"40.66999199999999","longitude":"-73.9089"}
+,{"incident_type":"Utility-Other","location":"337 Lenox Road","borough":"Brooklyn","creation_date":"2018-01-09T13:38:12.000","latitude":"40.65426345657562","longitude":"-73.94835572745109"}
+,{"incident_type":"Administration-Other","location":"Seagirt Blvd & Beach 9 Street","borough":"Queens","creation_date":"2016-11-14T15:53:54.000","closed_date":"2016-11-19T13:26:07.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Partial Collapse","location":"87-13 164th Street","borough":"Queens","creation_date":"2018-02-05T00:07:19.000","latitude":"40.70986132889949","longitude":"-73.79955435455028"}
+,{"incident_type":"Fire-7th Alarm","location":"1547 Commonwealth Avenue","borough":"Bronx","creation_date":"2018-01-02T05:49:15.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"6709 11 Avenue","borough":"Brooklyn","creation_date":"2017-11-09T07:13:03.000"}
+,{"incident_type":"Fire-7th Alarm","location":"775 Riverside Drive","borough":"Manhattan","creation_date":"2018-01-08T14:13:28.000","latitude":"40.834790360811354","longitude":"-73.94773493966737"}
+,{"incident_type":"Fire-Explosion","location":"151 Bay 49 Street","borough":"Brooklyn","creation_date":"2018-01-20T08:39:59.000","latitude":"40.586554802383326","longitude":"-73.98699970607079"}
+,{"incident_type":"Fire-7th Alarm","location":"1547 Commonwealth Avenue","borough":"Bronx","creation_date":"2018-01-02T05:49:15.000","latitude":"40.83944073105778","longitude":"-73.86930858604073"}
+,{"incident_type":"Structural-Stability Problem","location":"118-18 Union Turnpike","borough":"Queens","creation_date":"2018-02-10T16:44:26.000","latitude":"40.71260968549858","longitude":"-73.83408588450024"}
+,{"incident_type":"Structural-Collapse","location":"705 Lafayette Ave","borough":"Brooklyn","creation_date":"2019-06-04T12:23:48.000","latitude":"40.69063440550517","longitude":"-73.94488659409082"}
+,{"incident_type":"Structural-Stability Problem","location":"118-18 Union Turnpike","borough":"Queens","creation_date":"2018-02-10T16:44:26.000","latitude":"40.71260968549858","longitude":"-73.83408588450024"}
+,{"incident_type":"Utility-Water Main","location":"40-06 74 Street","borough":"Queens","creation_date":"2018-01-12T05:55:30.000","latitude":"40.746507276155604","longitude":"-73.8913987228921"}
+,{"incident_type":"Utility-Water Main","location":"West 157 Street & Broadway","borough":"Manhattan","creation_date":"2018-01-24T22:28:51.000","latitude":"40.834080000000014","longitude":"-73.94497199999999"}
+,{"incident_type":"Fire-7th Alarm","location":"775 Riverside Drive","borough":"Manhattan","creation_date":"2018-01-08T14:13:28.000","latitude":"40.834790360811354","longitude":"-73.94773493966737"}
+,{"incident_type":"Fire-4th Alarm","location":"240 East 194 Street","borough":"Bronx","creation_date":"2018-01-30T23:35:10.000","latitude":"40.86511125644876","longitude":"-73.89300266778228"}
+,{"incident_type":"Utility-Water Main","location":"3351 Fenton Ave","borough":"Bronx","creation_date":"2019-06-07T15:36:02.000","latitude":"40.8755220560621","longitude":"-73.84771208479998"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"241 East 51 Street","borough":"Manhattan","creation_date":"2018-02-20T18:11:08.000","closed_date":"2018-02-20T21:35:07.000","latitude":"40.755806213716866","longitude":"-73.96872245031453"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-4th Alarm","location":"657 Crotona Park North","borough":"Bronx","creation_date":"2017-03-06T18:40:53.000","latitude":"40.84251557063817","longitude":"-73.89461654911366"}
+,{"incident_type":"Fire-3rd Alarm","location":"60-15 Main Street","borough":"Queens","creation_date":"2017-03-12T16:25:15.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-3rd Alarm","location":"7 East 84 Street","borough":"Manhattan","creation_date":"2017-03-14T03:04:32.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-3rd Alarm","location":"667 Jefferson Avenue","borough":"Brooklyn","creation_date":"2018-03-05T00:49:27.000","latitude":"40.685477405505175","longitude":"-73.93117632001268"}
+,{"incident_type":"Fire-4th Alarm","location":"2000 2nd Avenue","borough":"Manhattan","creation_date":"2018-03-24T01:16:50.000","latitude":"40.78878085261705","longitude":"-73.94375789174227"}
+,{"incident_type":"Fire-5th Alarm","location":"1555 Grand Concourse","borough":"Bronx","creation_date":"2019-10-04T20:39:33.000","latitude":"40.84228477269314","longitude":"-73.91246178310915"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Utility-Water Service Line","location":"240 Broadway","borough":"Staten Island","creation_date":"2019-09-30T03:16:20.000","latitude":"40.63590970246413","longitude":"-74.1175237201508"}
+,{"incident_type":"Fire-Explosion","location":"820 Friel Place","borough":"Brooklyn","creation_date":"2019-09-30T13:33:08.000","latitude":"40.64731066971553","longitude":"-73.97189923022104"}
+,{"incident_type":"Fire-Haz Mat","location":"154-22 118 Avenue","borough":"Queens","creation_date":"2019-09-04T17:09:57.000","latitude":"40.6812998151366","longitude":"-73.78809838092222"}
+,{"incident_type":"Fire-2nd Alarm","location":"85 Cooper Street","borough":"Brooklyn","creation_date":"2019-10-07T01:25:44.000","latitude":"40.68589980850017","longitude":"-73.90923962629114"}
+,{"incident_type":"Fire-4th Alarm","location":"240 East 194 Street","borough":"Bronx","creation_date":"2018-01-30T23:35:10.000","latitude":"40.86511125644876","longitude":"-73.89300266778228"}
+,{"incident_type":"Fire-Manhole","location":"155 East 38th Street","borough":"Manhattan","creation_date":"2019-10-06T01:39:44.000","latitude":"40.748714400076246","longitude":"-73.97721740049033"}
+,{"incident_type":"Fire-1st Alarm","location":"151 West 100 Street","borough":"New York","creation_date":"2016-12-23T13:36:49.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-Haz Mat","location":"41-12 12 Street","borough":"Queens","creation_date":"2017-06-12T13:36:36.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Demolition","location":"169-12 116 Avenue","borough":"Queens","creation_date":"2018-03-07T17:27:32.000","latitude":"40.68773545432525","longitude":"-73.77835322494091"}
+,{"incident_type":"Structural-Street Collapse","location":"East 7th Street & 1st Avenue","borough":"Manhattan","creation_date":"2018-03-13T12:36:24.000","latitude":"40.726980000000005","longitude":"-73.985751"}
+,{"incident_type":"Fire-3rd Alarm","location":"667 Jefferson Avenue","borough":"Brooklyn","creation_date":"2018-03-05T00:49:27.000","latitude":"40.685477405505175","longitude":"-73.93117632001268"}
+,{"incident_type":"Fire-5th Alarm","location":"187-40 Jamaica Ave","borough":"Queens","creation_date":"2018-03-16T13:24:26.000","latitude":"40.71019846741915","longitude":"-73.77184724501586"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Utility-Other","borough":"Brooklyn","creation_date":"2018-03-22T21:10:33.000"}
+,{"incident_type":"Fire-5th Alarm","location":"773 st nicholas ave","borough":"new york","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Fire-2nd Alarm","location":"1332 Prospect Place","borough":"Brooklyn","creation_date":"2018-03-26T00:11:37.000","latitude":"40.673307510675805","longitude":"-73.9324040342778"}
+,{"incident_type":"Law Enforcement-Haz Mat","location":"1279 E 68th Street","borough":"Brooklyn","creation_date":"2018-03-24T01:49:54.000","latitude":"40.62317568610417","longitude":"-73.9152795659012"}
+,{"incident_type":"Fire-Explosion","location":"820 Friel Place","borough":"Brooklyn","creation_date":"2019-09-30T13:33:08.000","latitude":"40.64731066971553","longitude":"-73.97189923022104"}
+,{"incident_type":"Fire-3rd Alarm","location":"667 Jefferson Avenue","borough":"Brooklyn","creation_date":"2018-03-05T00:49:27.000","latitude":"40.685477405505175","longitude":"-73.93117632001268"}
+,{"incident_type":"Structural-Demolition","location":"169-12 116 Avenue","borough":"Queens","creation_date":"2018-03-07T17:27:32.000","latitude":"40.68773545432525","longitude":"-73.77835322494091"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Structural-Collapse","location":"2383 2nd Avenue","borough":"Manhattan","creation_date":"2018-03-27T13:50:31.000","latitude":"40.80101411463438","longitude":"-73.93486806829578"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Structural-Street Collapse","location":"East 7th Street & 1st Avenue","borough":"Manhattan","creation_date":"2018-03-13T12:36:24.000","latitude":"40.726980000000005","longitude":"-73.985751"}
+,{"incident_type":"HazMat-Other","location":"127-76 Willets Point Boulevard","borough":"Queens","creation_date":"2019-10-09T12:42:54.000","latitude":"40.760384878152266","longitude":"-73.84085995891287"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Fire-4th Alarm","location":"2000 2nd Avenue","borough":"Manhattan","creation_date":"2018-03-24T01:16:50.000","latitude":"40.78878085261705","longitude":"-73.94375789174227"}
+,{"incident_type":"Utility-Water Main","location":"136-17 72 Avenue","borough":"Queens","creation_date":"2017-01-16T13:13:38.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"1774 3 Avenue","borough":"Manhattan","creation_date":"2017-01-16T09:08:12.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Steam Service Line","location":"5th Avenue  & 57th Street","borough":"Manhattan","creation_date":"2017-01-06T11:44:57.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"3269 3rd Avenue","borough":"Bronx","creation_date":"2018-03-29T05:20:43.000","latitude":"40.82483714654625","longitude":"-73.90843615335557"}
+,{"incident_type":"Fire-2nd Alarm","location":"667 Jefferson Avenue","borough":"Brooklyn","creation_date":"2018-03-05T00:49:27.000","latitude":"40.685477405505175","longitude":"-73.93117632001268"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Utility-Water Main","location":"4320 5th Avenue","borough":"Brooklyn","creation_date":"2019-11-24T06:14:27.000","latitude":"40.64863500000001","longitude":"-74.006847"}
+,{"incident_type":"Fire-Manhole","location":"155 East 38th Street","borough":"Manhattan","creation_date":"2019-10-06T01:39:44.000","latitude":"40.748714400076246","longitude":"-73.97721740049033"}
+,{"incident_type":"Fire-Collapse","location":"60 Norfolk Street","borough":"Manhattan","creation_date":"2019-10-21T10:07:20.000","latitude":"40.71725173567444","longitude":"-73.98789547742892"}
+,{"incident_type":"Utility-Power Outage","location":"3159 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-10-29T20:11:03.000","latitude":"40.58908229199595","longitude":"-73.89950293254094"}
+,{"incident_type":"Utility-Water Main","location":"58-03 Rockaway Beach Boulevard","borough":"Queens","creation_date":"2019-11-13T07:44:53.000","latitude":"40.592104785446416","longitude":"-73.78824765015293"}
+,{"incident_type":"Fire-5th Alarm","location":"1486 Watson Avenue","borough":"Bronx","creation_date":"2017-10-01T14:50:56.000","latitude":"40.82577659449483","longitude":"-73.88016707063305"}
+,{"incident_type":"Fire-Residential","location":"5910 Fort Hamilton Parkway","borough":"Brooklyn","creation_date":"2019-10-30T14:55:41.000","latitude":"40.633334569536544","longitude":"-74.00522669553922"}
+,{"incident_type":"Fire-4th Alarm","location":"1466 Watson Avenue","borough":"Bronx","creation_date":"2019-07-12T06:35:31.000","latitude":"40.82568468884546","longitude":"-73.88088613321604"}
+,{"incident_type":"HazMat-Other","location":"63-84 Saunders Street","borough":"Queens","creation_date":"2017-09-01T06:11:41.000","latitude":"40.729007464856835","longitude":"-73.86213163976556"}
+,{"incident_type":"Utility-Power Outage","location":"107-10 Shore Front Parkway","borough":"Queens","creation_date":"2017-01-21T08:59:38.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"800 2nd Avenue","borough":"Manhattan","creation_date":"2017-10-26T15:17:12.000","latitude":"40.780869475028496","longitude":"-73.96769187839601"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Fire-4th Alarm","location":"721 5th Avenue","borough":"Manhattan","creation_date":"2018-04-07T18:04:46.000","latitude":"40.76257247680206","longitude":"-73.9742043796528"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Fire-Manhole","location":"155 East 38th Street","borough":"Manhattan","creation_date":"2019-10-06T01:39:44.000","latitude":"40.748714400076246","longitude":"-73.97721740049033"}
+,{"incident_type":"Transportation-Other","location":"Lily Pond Avenue  & Narrows Road South","borough":"Staten Island","creation_date":"2019-10-25T04:06:37.000","latitude":"40.60118700000001","longitude":"-74.06508149999999"}
+,{"incident_type":"Structural-Other","borough":"Brooklyn","creation_date":"2019-10-16T21:09:40.000"}
+,{"incident_type":"Structural-Sidewalk Shed","location":"50 East Fordham Road","borough":"Bronx","creation_date":"2019-10-17T00:20:18.000","latitude":"40.862258999999995","longitude":"-73.9001925"}
+,{"incident_type":"Utility-Water Main","location":"85-08 215th Street","borough":"Queens","creation_date":"2019-06-21T10:16:48.000","latitude":"40.730268520947604","longitude":"-73.75439292258626"}
+,{"incident_type":"Utility-Other","location":"66 beaver street","borough":"manhattan","creation_date":"2019-06-16T07:25:04.000","latitude":"40.70515410674308","longitude":"-74.00957933606146"}
+,{"incident_type":"Fire-3rd Alarm","location":"787 7th Avenue","borough":"Manhattan","creation_date":"2019-06-10T14:08:22.000","latitude":"40.76221276879802","longitude":"-73.98240503384511"}
+,{"incident_type":"Structural-Collapse","location":"705 Lafayette Ave","borough":"Brooklyn","creation_date":"2019-06-04T12:23:48.000","latitude":"40.69063440550517","longitude":"-73.94488659409082"}
+,{"incident_type":"Structural-Partial Collapse","location":"2708 schurz ave","borough":"Bronx","creation_date":"2019-07-21T14:58:50.000","latitude":"40.813564348866116","longitude":"-73.82180960407413"}
+,{"incident_type":"Fire-2nd Alarm","location":"91-58 117th Street","borough":"Richmond Hill","creation_date":"2019-07-21T09:59:09.000","latitude":"40.69382490146579","longitude":"-73.82984833585304"}
+,{"incident_type":"Fire-2nd Alarm","location":"218 E. 9th Street","borough":"Manhattan","creation_date":"2018-04-21T16:03:09.000","closed_date":"2018-04-21T18:43:53.000","latitude":"40.72967981181837","longitude":"-73.98848296586642"}
+,{"incident_type":"Fire-4th Alarm","location":"1945 63 Street","borough":"Brooklyn","creation_date":"2018-04-11T15:34:28.000","latitude":"40.61835509132084","longitude":"-73.98571677670385"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","closed_date":"2018-04-13T22:12:16.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Structural-Parapet","location":"849 Sound View Avenue","borough":"Bronx","creation_date":"2018-04-23T13:06:25.000","latitude":"40.82236969214837","longitude":"-73.86729977418626"}
+,{"incident_type":"Fire-4th Alarm","location":"316 East 194th Street","borough":"Bronx","creation_date":"2018-04-24T05:50:05.000"}
+,{"incident_type":"Fire-5th Alarm","location":"316 East 194th Street","borough":"Bronx","creation_date":"2018-04-24T05:50:05.000","latitude":"40.86420309463907","longitude":"-73.89149695934556"}
+,{"incident_type":"Fire-5th Alarm","location":"316 East 194th Street","borough":"Bronx","creation_date":"2018-04-24T05:50:05.000"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Fire-5th Alarm","location":"316 East 194th Street","borough":"Bronx","creation_date":"2018-04-24T05:50:05.000","latitude":"40.86420309463907","longitude":"-73.89149695934556"}
+,{"incident_type":"Structural-Other","location":"2831 Church Avenue","borough":"Brooklyn","creation_date":"2018-05-02T14:24:31.000","latitude":"40.65080048932419","longitude":"-73.9503317828207"}
+,{"incident_type":"Utility-Water Main","location":"East 173 Street & Clay Avenue","borough":"Bronx","creation_date":"2017-05-21T04:23:59.000","latitude":"40.84337164338774","longitude":"-73.90493845584427"}
+,{"incident_type":"Structural-Partial Collapse","location":"3138 Bailey Avenue","borough":"Bronx","creation_date":"2018-05-13T12:07:17.000","latitude":"40.878933182064785","longitude":"-73.90162522993259"}
+,{"incident_type":"Structural-Other","location":"2831 Church Avenue","borough":"Brooklyn","creation_date":"2018-05-02T14:24:31.000","latitude":"40.65080048932419","longitude":"-73.9503317828207"}
+,{"incident_type":"Fire-Other","location":"215 8th ave","borough":"Manhattan","creation_date":"2018-05-10T19:43:54.000","closed_date":"2018-05-10T22:33:07.000","latitude":"40.743937812106836","longitude":"-73.99950702735288"}
+,{"incident_type":"Fire-3rd Alarm","location":"2077 Anthony Ave","borough":"Bronx","creation_date":"2018-05-21T06:04:08.000","closed_date":"2018-05-21T23:38:43.000","latitude":"40.853004464337225","longitude":"-73.90184721080266"}
+,{"incident_type":"Structural-Street Collapse","borough":"Brooklyn","creation_date":"2019-10-31T05:59:11.000"}
+,{"incident_type":"Fire-Manhole","location":"155 East 38th Street","borough":"Manhattan","creation_date":"2019-10-06T01:39:44.000","latitude":"40.748714400076246","longitude":"-73.97721740049033"}
+,{"incident_type":"Structural-Partial Collapse","location":"3111 Heath Avenue","borough":"Bronx","creation_date":"2018-05-13T12:07:17.000","latitude":"40.87854737552654","longitude":"-73.90074761824106"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"329 Beach 59 Street","borough":"Queens","creation_date":"2018-05-03T11:50:38.000","latitude":"40.593598177073126","longitude":"-73.78911835348241"}
+,{"incident_type":"Utility-Power Outage","location":"2900 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-10-29T00:17:57.000","latitude":"40.5996100532635","longitude":"-73.91135152902633"}
+,{"incident_type":"Fire-Other","location":"215 8th ave","borough":"Manhattan","creation_date":"2018-05-10T19:43:54.000","latitude":"40.743937812106836","longitude":"-73.99950702735288"}
+,{"incident_type":"Administration-Equipment Failure","borough":"Brooklyn","creation_date":"2018-05-05T20:37:57.000"}
+,{"incident_type":"Structural-Life Safety Violations","location":"734 Amsterdam Ave","borough":"Manhattan","creation_date":"2018-05-11T23:21:47.000","latitude":"40.79393387039063","longitude":"-73.97049633417961"}
+,{"incident_type":"Fire-2nd Alarm","location":"40-46 Case Street","borough":"Queens","creation_date":"2018-05-11T05:33:38.000","latitude":"40.74766395002607","longitude":"-73.87541512199196"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"260 Audubon Avenue","borough":"Manhattan","creation_date":"2018-05-19T09:58:17.000","latitude":"40.84708662611826","longitude":"-73.93349615647224"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"260 Audubon Avenue","borough":"Manhattan","creation_date":"2018-05-19T09:58:17.000","latitude":"40.84708662611826","longitude":"-73.93349615647224"}
+,{"incident_type":"Utility-Water Main","location":"East 76th Street & 1st Avenue","borough":"Manhattan","creation_date":"2018-05-23T23:31:13.000","latitude":"40.770387","longitude":"-73.95410249999999"}
+,{"incident_type":"Utility-Water Main","location":"418 West 56th Street","borough":"Manhattan","creation_date":"2018-05-26T05:54:08.000","latitude":"40.767678786283156","longitude":"-73.98726160075591"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"260 Audubon Avenue","borough":"Manhattan","creation_date":"2018-05-19T09:58:17.000","latitude":"40.84708662611826","longitude":"-73.93349615647224"}
+,{"incident_type":"Fire-Collapse","location":"02 Aberdeen Street","borough":"Brooklyn","creation_date":"2018-06-23T11:06:46.000","latitude":"40.68137729418902","longitude":"-73.90656176184446"}
+,{"incident_type":"Fire-5th Alarm","location":"1555 Grand Concourse","borough":"Bronx","creation_date":"2019-10-04T20:39:33.000","latitude":"40.84228477269314","longitude":"-73.91246178310915"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Structural-Other","location":"526 Logan Street","borough":"Brooklyn","creation_date":"2019-06-06T16:13:08.000","latitude":"40.673153399388326","longitude":"-73.87583541355524"}
+,{"incident_type":"Structural-Other","location":"2831 Church Avenue","borough":"Brooklyn","creation_date":"2018-05-02T14:24:31.000","latitude":"40.65080048932419","longitude":"-73.9503317828207"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-05-03T17:28:27.000"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2016-12-12T02:21:32.000","closed_date":"2016-12-12T03:24:46.000"}
+,{"incident_type":"Fire-Residential","location":"121 Fort George Avenue","borough":"Manhattan","creation_date":"2019-11-04T05:26:54.000","latitude":"40.8574489320791","longitude":"-73.92710061348508"}
+,{"incident_type":"Utility-Steam Main","borough":"Brooklyn","creation_date":"2019-11-18T17:25:37.000"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"260 Audubon Avenue","borough":"Manhattan","creation_date":"2018-05-19T09:58:17.000","latitude":"40.84708662611826","longitude":"-73.93349615647224"}
+,{"incident_type":"Fire-2nd Alarm","location":"5710 Preston Court","borough":"Brooklyn","creation_date":"2019-11-14T15:11:37.000","latitude":"40.63962526726879","longitude":"-73.92197066166545"}
+,{"incident_type":"Fire-2nd Alarm","location":"458 Lorimer Street","borough":"Brooklyn","creation_date":"2019-11-09T02:36:27.000","latitude":"40.71064330252755","longitude":"-73.94878669649151"}
+,{"incident_type":"Structural-Collapse","location":"217 9 street","borough":"Brooklyn","creation_date":"2018-05-17T23:20:00.000","latitude":"40.670854772981606","longitude":"-73.98973948874726"}
+,{"incident_type":"Fire-2nd Alarm","location":"147-09 41st Avenue","borough":"queens","creation_date":"2018-06-04T02:32:23.000","latitude":"40.76160000141365","longitude":"-73.81765751194521"}
+,{"incident_type":"Fire-2nd Alarm","location":"147-09 41st Avenue","borough":"queens","creation_date":"2018-06-04T02:32:23.000","latitude":"40.76160000141365","longitude":"-73.81765751194521"}
+,{"incident_type":"Law Enforcement-Other","location":"East 64th Street & Madison Avenue","borough":"Manhattan","creation_date":"2018-06-01T07:18:18.000","latitude":"40.766715000000005","longitude":"-73.9691325"}
+,{"incident_type":"Fire-3rd Alarm","location":"952 Rogers Place","borough":"Bronx","creation_date":"2019-11-18T20:44:10.000","latitude":"40.822579508742564","longitude":"-73.8978128598304"}
+,{"incident_type":"Utility-Water Main","location":"58-03 Rockaway Beach Boulevard","borough":"Queens","creation_date":"2019-11-13T07:44:53.000","latitude":"40.592104785446416","longitude":"-73.78824765015293"}
+,{"incident_type":"Fire-Haz Mat","location":"4311 4th Avenue","borough":"Brooklyn","creation_date":"2019-11-08T07:02:08.000","latitude":"40.650108035518564","longitude":"-74.00865303551853"}
+,{"incident_type":"Fire-3rd Alarm","location":"59 Van Dam Street","borough":"Brooklyn","creation_date":"2019-11-08T03:19:54.000","latitude":"40.72696143435861","longitude":"-73.9371340469155"}
+,{"incident_type":"Fire-6th Alarm","location":"565 West 144 Street","borough":"Manhattan","creation_date":"2017-11-17T15:35:42.000","latitude":"40.82561021371684","longitude":"-73.9505288664955"}
+,{"incident_type":"Structural-Demolition","location":"350 West 52nd Street","borough":"New York","creation_date":"2019-05-30T12:06:51.000","latitude":"40.764220837353584","longitude":"-73.98691352415024"}
+,{"incident_type":"Fire-Manhole","location":"155 East 38th Street","borough":"Manhattan","creation_date":"2019-10-06T01:39:44.000","latitude":"40.748714400076246","longitude":"-73.97721740049033"}
+,{"incident_type":"Fire-4th Alarm","location":"259 Monitor Street","borough":"Brooklyn","creation_date":"2019-08-01T00:55:54.000","latitude":"40.72838802331353","longitude":"-73.94309536831317"}
+,{"incident_type":"Fire-5th Alarm","location":"1486 Watson Avenue","borough":"Bronx","creation_date":"2017-10-01T14:50:56.000","latitude":"40.82577659449483","longitude":"-73.88016707063305"}
+,{"incident_type":"Fire-4th Alarm","location":"1163 Fulton Street","borough":"Brooklyn","creation_date":"2017-12-07T05:37:05.000","latitude":"40.68105021233186","longitude":"-73.95517661726011"}
+,{"incident_type":"Utility-Gas Main Rupture","location":"47-48 37 Street","borough":"Queens","creation_date":"2017-12-08T20:22:39.000"}
+,{"incident_type":"Structural-Stability Problem","location":"300 East 96 Street","borough":"Manhattan","creation_date":"2017-11-09T14:33:16.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"77 5th Avenue","borough":"Manhattan","creation_date":"2017-03-25T01:00:22.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Other","location":"1040 Bronx River Avenue","borough":"Bronx","creation_date":"2018-01-04T11:30:58.000"}
+,{"incident_type":"Fire-4th Alarm","location":"3414 Knox Place","borough":"Bronx","creation_date":"2017-12-27T04:51:28.000"}
+,{"incident_type":"Structural-Partial Collapse","location":"7301 19th avenue","borough":"Brooklyn","creation_date":"2018-06-01T06:15:53.000","latitude":"40.6132148351319","longitude":"-73.9928390456461"}
+,{"incident_type":"Fire-Collapse","location":"02 Aberdeen Street","borough":"Brooklyn","creation_date":"2018-06-23T11:06:46.000","latitude":"40.68137729418902","longitude":"-73.90656176184446"}
+,{"incident_type":"Law Enforcement-Device","location":"234 Avenue Z","borough":"Brooklyn","creation_date":"2018-06-13T07:28:36.000","latitude":"40.58459559059971","longitude":"-73.984568464193"}
+,{"incident_type":"Fire-Manhole","location":"2nd street & union Avenue","borough":"Brooklyn","creation_date":"2018-06-22T01:58:34.000","latitude":"40.709142000000014","longitude":"-73.950813"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Water Main","location":"275 Central Park West","borough":"Manhattan","creation_date":"2018-07-10T02:16:10.000","latitude":"40.78639123120199","longitude":"-73.96856991508444"}
+,{"incident_type":"Fire-Other","location":"666 west end avenue","borough":"manhattan","creation_date":"2018-07-05T15:01:05.000","latitude":"40.79285787425713","longitude":"-73.97491533288154"}
+,{"incident_type":"Structural-Construction Accident","location":"West 145th & St. Nicholas Avenue","borough":"New York","creation_date":"2018-07-11T14:17:32.000","latitude":"40.824036","longitude":"-73.9447605"}
+,{"incident_type":"Structural-Street Collapse","borough":"Brooklyn","creation_date":"2018-07-24T21:36:21.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"119-56 Long Street","borough":"Queens","creation_date":"2016-11-21T05:15:46.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-1st Alarm","location":"150-05 Cohancy Street","borough":"Queens","creation_date":"2016-11-20T13:03:30.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-5th Alarm","location":"1555 Grand Concourse","borough":"Bronx","creation_date":"2019-10-04T20:39:33.000","latitude":"40.84228477269314","longitude":"-73.91246178310915"}
+,{"incident_type":"Fire-5th Alarm","location":"316 East 194th Street","borough":"Bronx","creation_date":"2018-04-24T05:50:05.000","latitude":"40.86420309463907","longitude":"-73.89149695934556"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Fire-Explosion","location":"820 Friel Place","borough":"Brooklyn","creation_date":"2019-09-30T13:33:08.000","latitude":"40.64731066971553","longitude":"-73.97189923022104"}
+,{"incident_type":"Administration-Planned Event","location":"East 161 Street & River Avenue","borough":"Bronx","creation_date":"2018-07-18T16:55:42.000","latitude":"40.827690000000004","longitude":"-73.92607199999999"}
+,{"incident_type":"Structural-Partial Collapse","location":"3111 Heath Avenue","borough":"Bronx","creation_date":"2018-05-13T12:07:17.000","latitude":"40.87854737552654","longitude":"-73.90074761824106"}
+,{"incident_type":"Utility-Water Main","location":"75 Longview Road","borough":"Staten Island","creation_date":"2019-10-07T11:45:58.000","latitude":"40.61150529476592","longitude":"-74.09053113601466"}
+,{"incident_type":"Fire-Other","location":"666 west end avenue","borough":"manhattan","creation_date":"2018-07-05T15:01:05.000","latitude":"40.79285787425713","longitude":"-73.97491533288154"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Structural-Crane","borough":"Brooklyn","creation_date":"2016-11-18T13:12:51.000"}
+,{"incident_type":"Structural-Partial Collapse","location":"3111 Heath Avenue","borough":"Bronx","creation_date":"2018-05-13T12:07:17.000","latitude":"40.87854737552654","longitude":"-73.90074761824106"}
+,{"incident_type":"Fire-Other","location":"666 west end avenue","borough":"manhattan","creation_date":"2018-07-05T15:01:05.000","latitude":"40.79285787425713","longitude":"-73.97491533288154"}
+,{"incident_type":"Utility-Water Main","location":"275 Central Park West","borough":"Manhattan","creation_date":"2018-07-10T02:16:10.000","latitude":"40.78639123120199","longitude":"-73.96856991508444"}
+,{"incident_type":"Fire-Other","location":"666 west end avenue","borough":"manhattan","creation_date":"2018-07-05T15:01:05.000","latitude":"40.79285787425713","longitude":"-73.97491533288154"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-3rd Alarm","location":"952 Rogers Place","borough":"Bronx","creation_date":"2019-11-18T20:44:10.000","latitude":"40.822579508742564","longitude":"-73.8978128598304"}
+,{"incident_type":"Utility-Water Main","location":"73rd Avenue & 193rd Street","borough":"Queens","creation_date":"2019-11-23T23:18:18.000","latitude":"40.734278999999994","longitude":"-73.7795115"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"120 Broadway","borough":"Manhattan","creation_date":"2019-11-23T07:15:16.000","latitude":"40.80810448882693","longitude":"-73.9636467788011"}
+,{"incident_type":"Structural-Street Collapse","location":"1622 Adams Street","borough":"Bronx","creation_date":"2017-08-18T16:51:18.000","latitude":"40.84027204108713","longitude":"-73.87025070647482"}
+,{"incident_type":"Structural-Other","location":"508 West 126 Street","borough":"Manhattan","creation_date":"2017-08-15T11:55:01.000","closed_date":"2017-08-15T19:48:53.000","latitude":"40.81443510684409","longitude":"-73.95599463033051"}
+,{"incident_type":"Structural-Street Collapse","location":"1622 Adams Street","borough":"Bronx","creation_date":"2017-08-18T16:51:18.000","latitude":"40.84027204108713","longitude":"-73.87025070647482"}
+,{"incident_type":"Fire-Other","location":"1729 Lexington Avenue","borough":"Manhattan","creation_date":"2017-08-21T11:38:11.000","latitude":"40.79335365944375","longitude":"-73.9454271248775"}
+,{"incident_type":"Structural-Falling Debris","location":"West 58th Street  & 7th Avenue","borough":"Manhattan","creation_date":"2019-12-18T10:50:43.000","latitude":"40.766192999999994","longitude":"-73.97955"}
+,{"incident_type":"Utility-Water Main","location":"Watchogue Road and Hawthorne Avenue","borough":"Staten Island","creation_date":"2019-11-20T05:25:42.000","latitude":"40.617045000000005","longitude":"-74.14710299999999"}
+,{"incident_type":"Utility-Steam Main","location":"West 49th Street  & 8th Avenue","borough":"Manhattan","creation_date":"2019-11-18T17:25:37.000","latitude":"40.761638999999995","longitude":"-73.9865295"}
+,{"incident_type":"Utility-Water Main","location":"4320 5th Avenue","borough":"Brooklyn","creation_date":"2019-11-24T06:14:27.000","latitude":"40.64863500000001","longitude":"-74.006847"}
+,{"incident_type":"HazMat-Other","location":"462 1st avenue","borough":"Manhattan","creation_date":"2019-08-13T10:28:06.000","latitude":"40.73960510407413","longitude":"-73.9765115636795"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"725 5th Avenue","borough":"new york","creation_date":"2018-07-27T18:07:56.000","latitude":"40.7624606672115","longitude":"-73.97424936286971"}
+,{"incident_type":"Utility-Other","location":"625 Castle Hill Avenue, Bronx, NY","borough":"Bronx","creation_date":"2018-07-06T12:20:27.000","latitude":"40.81967091672924","longitude":"-73.84821524277184"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-4th Alarm","location":"917 Ogden Avenue (BX)","borough":"Bronx","creation_date":"2019-07-26T00:00:21.000","latitude":"40.83122913711119","longitude":"-73.93037144269714"}
+,{"incident_type":"Fire-Collapse","location":"60 Norfolk Street","borough":"Manhattan","creation_date":"2019-10-21T10:07:20.000","latitude":"40.71725173567444","longitude":"-73.98789547742892"}
+,{"incident_type":"Fire-4th Alarm","location":"1488 East 17th Street","borough":"Brooklyn","creation_date":"2019-06-13T04:22:10.000","latitude":"40.61386341104509","longitude":"-73.95735567903502"}
+,{"incident_type":"Law Enforcement-Other","location":"West 5 Street  & Surf Avenue","borough":"Brooklyn","creation_date":"2019-07-11T13:45:12.000","latitude":"40.57480799999999","longitude":"-73.97344799999999"}
+,{"incident_type":"Structural-Partial Collapse","location":"3111 Heath Avenue","borough":"Bronx","creation_date":"2018-05-13T12:07:17.000","latitude":"40.87854737552654","longitude":"-73.90074761824106"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Fire-3rd Alarm","location":"409 East 69th Street","borough":"Manhattan","creation_date":"2019-12-25T12:10:12.000","latitude":"40.76584284710218","longitude":"-73.95715140420253"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Water Main","location":"327 Beach 19th Street","borough":"Queens","creation_date":"2019-12-10T08:45:12.000","latitude":"40.598565013330195","longitude":"-73.75277644298559"}
+,{"incident_type":"Utility-Other","location":"327 Beach 19th Street","borough":"Queens","creation_date":"2019-12-12T08:57:53.000","latitude":"40.598565013330195","longitude":"-73.75277644298559"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"322 east 14 street","borough":"Manhattan","creation_date":"2019-12-09T14:21:45.000","latitude":"40.731872170806405","longitude":"-73.98400601319916"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Water Main","location":"Beach 81 Street  & Beach Channel Drive","borough":"Queens","creation_date":"2019-12-12T07:36:42.000","latitude":"40.589901","longitude":"-73.80747"}
+,{"incident_type":"Structural-Collapse","location":"391 East 149 Street","borough":"Bronx","creation_date":"2017-09-24T22:58:03.000"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"800 2 Avenue","borough":"Manhattan","creation_date":"2017-09-15T14:37:12.000","latitude":"40.75018796197129","longitude":"-73.97191430792324"}
+,{"incident_type":"Utility-Water Main","location":"Beach 81 Street  & Beach Channel Drive","borough":"Queens","creation_date":"2019-12-12T07:36:42.000","latitude":"40.589901","longitude":"-73.80747"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Fire-5th Alarm","location":"1920 Walton Street","borough":"Bronx","creation_date":"2017-09-27T06:44:58.000","latitude":"40.85053252400602","longitude":"-73.90891950415494"}
+,{"incident_type":"Fire-Other","location":"1729 Lexington Avenue","borough":"Manhattan","creation_date":"2017-08-21T11:38:11.000","latitude":"40.79335365944375","longitude":"-73.9454271248775"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"322 east 14 street","borough":"Manhattan","creation_date":"2019-12-09T14:21:45.000","latitude":"40.731872170806405","longitude":"-73.98400601319916"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Structural-Collapse","location":"1294 Park Pl","borough":"Brooklyn","creation_date":"2017-10-17T10:00:47.000"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-07-27T19:11:59.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Administration-OEM Involved MVA","borough":"Brooklyn","creation_date":"2017-10-26T07:08:23.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Structural-Partial Collapse","location":"109 Sherman Ave","borough":"Staten Island","creation_date":"2018-09-12T05:42:45.000","latitude":"40.638462631975294","longitude":"-74.08071906382372"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-2nd Alarm","location":"71 Vermilyea Avenue","borough":"Manhattan","creation_date":"2019-08-19T11:35:02.000","latitude":"40.865725823730216","longitude":"-73.92321583015469"}
+,{"incident_type":"Fire-4th Alarm","location":"259 Monitor Street","borough":"Brooklyn","creation_date":"2019-08-01T00:55:54.000","latitude":"40.72838802331353","longitude":"-73.94309536831317"}
+,{"incident_type":"Law Enforcement-Other","location":"410 Atlantic Avenue","borough":"Brooklyn","creation_date":"2018-02-22T12:44:04.000","latitude":"40.686761651393674","longitude":"-73.98453384638462"}
+,{"incident_type":"Utility-Steam Main","borough":"Brooklyn","creation_date":"2019-11-18T17:25:37.000"}
+,{"incident_type":"Structural-Stability Problem","location":"118-18 Union Turnpike","borough":"Queens","creation_date":"2018-02-10T16:44:26.000","latitude":"40.71260968549858","longitude":"-73.83408588450024"}
+,{"incident_type":"Structural-Falling Debris","location":"434 Broadway","borough":"New York","creation_date":"2018-02-16T14:04:45.000","latitude":"40.72001616902305","longitude":"-74.0012893591379"}
+,{"incident_type":"Fire-Haz Mat","location":"50-18 196th Street","borough":"Queens","creation_date":"2018-09-07T11:55:20.000","latitude":"40.74862336580302","longitude":"-73.78334184736558"}
+,{"incident_type":"Fire-Commercial","borough":"Brooklyn","creation_date":"2018-12-21T09:44:40.000"}
+,{"incident_type":"Structural-Crane","borough":"Brooklyn","creation_date":"2016-11-18T13:12:51.000"}
+,{"incident_type":"Utility-Gas High Pressure","location":"217-09 56th Avenue","borough":"Queens","creation_date":"2017-10-18T10:18:56.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Water Main","location":"193 Longview Road","borough":"Staten Island","creation_date":"2017-10-18T14:48:19.000"}
+,{"incident_type":"Utility-Water Main","location":"Todt Hill Road  & Circle Road","borough":"Staten Island","creation_date":"2017-10-18T17:19:50.000"}
+,{"incident_type":"Structural-Collapse","location":"1294 Park Pl","borough":"Brooklyn","creation_date":"2017-10-17T10:00:47.000"}
+,{"incident_type":"HazMat-High Carbon Monoxide","location":"1650 Broadway","borough":"Manhattan","creation_date":"2018-08-16T22:59:07.000","closed_date":"2018-08-28T19:04:48.000","latitude":"40.76192518789317","longitude":"-73.98368597264711"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Transportation-Other","borough":"Brooklyn","creation_date":"2018-08-11T21:12:15.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Water Main","location":"701 West 135 Street","borough":"Manhattan","creation_date":"2018-09-14T09:49:55.000","latitude":"40.82134655736019","longitude":"-73.95795374268586"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-Haz Mat","location":"50-18 196th Street","borough":"Queens","creation_date":"2018-09-07T11:55:20.000","latitude":"40.74862336580302","longitude":"-73.78334184736558"}
+,{"incident_type":"Fire-Collapse","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Transportation-Other","location":"West 19th Street & Neptune Ave","borough":"Brooklyn","creation_date":"2018-08-11T21:12:15.000","closed_date":"2018-08-13T12:55:58.000","latitude":"40.57881300000001","longitude":"-73.9862775"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Other","location":"98th Street & 38th Avenue","borough":"Queens","creation_date":"2018-08-17T00:57:49.000","latitude":"40.750181999999995","longitude":"-73.86798599999999"}
+,{"incident_type":"Fire-3rd Alarm","location":"291 Buffalo Avenue","borough":"Brooklyn","creation_date":"2018-08-17T06:19:24.000","latitude":"40.668977302679714","longitude":"-73.92550441739974"}
+,{"incident_type":"Utility-Water Main","location":"701 West 135 Street","borough":"Manhattan","creation_date":"2018-09-14T09:49:55.000","latitude":"40.82134655736019","longitude":"-73.95795374268586"}
+,{"incident_type":"Structural-Falling Debris","location":"Bennett Avenue & West 192nd Street","borough":"Manhattan","creation_date":"2018-09-07T17:25:41.000","latitude":"40.85810999999999","longitude":"-73.932993"}
+,{"incident_type":"Structural-Stability Problem","location":"223 South Avenue","borough":"Staten ISland","creation_date":"2018-09-17T06:31:13.000","latitude":"40.63430557507647","longitude":"-74.16621381513659"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-7th Alarm","location":"5100 Kings Plaza","borough":"Brooklyn","creation_date":"2018-09-17T09:19:47.000","latitude":"40.60850653346974","longitude":"-73.92083277058703"}
+,{"incident_type":"Structural-Other","location":"282 Scholes Street","borough":"Brooklyn","creation_date":"2018-08-13T10:33:16.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"HazMat-Other","location":"376 Hudson Street","borough":"Manhattan","creation_date":"2018-08-15T17:12:18.000","latitude":"40.728406913959276","longitude":"-74.00713762057833"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Water Main","location":"701 West 135 Street","borough":"Manhattan","creation_date":"2018-09-14T09:49:55.000","latitude":"40.82134655736019","longitude":"-73.95795374268586"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Other","location":"East 63 Street  & York Aveune","borough":"Manhattan","creation_date":"2019-07-06T16:51:31.000","latitude":"40.76115299999999","longitude":"-73.95786"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-Collapse","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Aviation-Passenger Aircraft","borough":"Queens","creation_date":"2018-09-05T09:25:22.000","latitude":"40.71668516036854","longitude":"-73.86194610595594"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-3rd Alarm","location":"134-14 Franklin Ave","borough":"Queens","creation_date":"2019-06-08T12:42:28.000","latitude":"40.75366153424913","longitude":"-73.8293131270992"}
+,{"incident_type":"Fire-4th Alarm","location":"453 Coney Island Ave","borough":"Brooklyn","creation_date":"2018-08-22T03:52:59.000","latitude":"40.64668520007244","longitude":"-73.97087853121435"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-Haz Mat","location":"50-18 196th Street","borough":"Queens","creation_date":"2018-09-07T11:55:20.000","latitude":"40.74862336580302","longitude":"-73.78334184736558"}
+,{"incident_type":"Law Enforcement-Other","borough":"Bronx","creation_date":"2019-02-11T02:55:00.000"}
+,{"incident_type":"Structural-Falling Debris","location":"Bennett Avenue & West 192nd Street","borough":"Manhattan","creation_date":"2018-09-07T17:25:41.000","latitude":"40.85810999999999","longitude":"-73.932993"}
+,{"incident_type":"Transportation-Other","location":"West 19th Street & Neptune Ave","borough":"Brooklyn","creation_date":"2018-08-11T21:12:15.000","latitude":"40.57881300000001","longitude":"-73.9862775"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Fire-Collapse","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Rescue-Technical","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Utility-Water Main","location":"701 West 135 Street","borough":"Manhattan","creation_date":"2018-09-14T09:49:55.000","latitude":"40.82134655736019","longitude":"-73.95795374268586"}
+,{"incident_type":"Fire-Manhole","location":"226 West 50 Street","borough":"Manhattan","creation_date":"2018-09-25T14:48:27.000","latitude":"40.7617818373536","longitude":"-73.98498213350449"}
+,{"incident_type":"Fire-5th Alarm","location":"2118 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-04-17T06:47:50.000","latitude":"40.61825505522539","longitude":"-73.93215402943036"}
+,{"incident_type":"Rescue-Technical","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Structural-Collapse","location":"48-15 25 avenue","borough":"queens","creation_date":"2018-09-26T04:25:24.000","latitude":"40.76473190787108","longitude":"-73.90474815638532"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Rescue-Technical","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Utility-Power Outage","borough":"Brooklyn","creation_date":"2018-08-30T14:28:53.000"}
+,{"incident_type":"Utility-Water Main","location":"701 West 135 Street","borough":"Manhattan","creation_date":"2018-09-14T09:49:55.000","latitude":"40.82134655736019","longitude":"-73.95795374268586"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-7th Alarm","location":"110-14 Liberty Avenue","borough":"Queens","creation_date":"2017-03-04T23:13:52.000","closed_date":"2017-03-20T12:45:26.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"1535 Broadway","borough":"Manhattan","creation_date":"2017-02-17T07:09:41.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Power Outage","location":"3301 Quentin Road","borough":"Brooklyn","creation_date":"2017-02-15T12:23:37.000","closed_date":"2017-02-15T19:59:09.000"}
+,{"incident_type":"Fire-3rd Alarm","location":"7 East 84 Street","borough":"Manhattan","creation_date":"2017-03-14T03:04:32.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Fire-3rd Alarm","location":"7 East 84 Street","borough":"Manhattan","creation_date":"2017-03-14T03:04:32.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"77 5th Avenue","borough":"Manhattan","creation_date":"2017-03-25T01:00:22.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-4th Alarm","location":"23-59 Borden Avenue","borough":"Queens","creation_date":"2018-09-29T20:21:24.000","closed_date":"2018-10-01T21:19:20.000","latitude":"40.73980334759674","longitude":"-73.94625169329478"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-4th Alarm","location":"2467 Webster Avenue","borough":"Bronx","creation_date":"2019-03-22T13:09:18.000"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Transportation-Other","location":"Major Deegan Expressway  & West 230th Street","borough":"Bronx","creation_date":"2019-12-17T07:10:12.000","latitude":"40.876497","longitude":"-73.904562"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Fire-2nd Alarm","location":"5710 Preston Court","borough":"Brooklyn","creation_date":"2019-11-14T15:11:37.000","latitude":"40.63962526726879","longitude":"-73.92197066166545"}
+,{"incident_type":"Utility-Steam Service Line","location":"East 36th Street & First Avenue","borough":"Manhattan","creation_date":"2019-10-08T05:52:32.000","latitude":"40.74507","longitude":"-73.9725795"}
+,{"incident_type":"Fire-7th Alarm","location":"1547 Commonwealth Avenue","borough":"Bronx","creation_date":"2018-01-02T05:49:15.000"}
+,{"incident_type":"Fire-7th Alarm","location":"5100 Kings Plaza","borough":"Brooklyn","creation_date":"2018-09-17T09:19:47.000","latitude":"40.60850653346974","longitude":"-73.92083277058703"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"10 East 40th Street","borough":"Manhattan","creation_date":"2018-09-18T07:22:35.000","latitude":"40.75181981181838","longitude":"-73.98100404968547"}
+,{"incident_type":"Fire-4th Alarm","location":"1163 Fulton Street","borough":"Brooklyn","creation_date":"2017-12-07T05:37:05.000","latitude":"40.68105021233186","longitude":"-73.95517661726011"}
+,{"incident_type":"Fire-2nd Alarm","location":"71 Vermilyea Avenue","borough":"Manhattan","creation_date":"2019-08-19T11:35:02.000","latitude":"40.865725823730216","longitude":"-73.92321583015469"}
+,{"incident_type":"Utility-Water Main","location":"37-63 58th Street","borough":"Queens","creation_date":"2018-10-08T12:53:54.000","latitude":"40.74844885622373","longitude":"-73.90506180042141"}
+,{"incident_type":"Structural-Scaffold","location":"30 Manhattan Avenue","borough":"Brooklyn","creation_date":"2019-10-30T01:32:00.000","latitude":"40.70322165528881","longitude":"-73.94421509449485"}
+,{"incident_type":"Fire-2nd Alarm","location":"814 Faile Street","borough":"Bronx","creation_date":"2019-08-13T23:25:50.000","closed_date":"2019-08-14T01:36:51.000","latitude":"40.817362903139234","longitude":"-73.88718567358201"}
+,{"incident_type":"Utility-Gas High Pressure","location":"4620 12th avenue","borough":"Brooklyn","creation_date":"2019-06-17T12:10:48.000","latitude":"40.63764021593855","longitude":"-73.99302288885674"}
+,{"incident_type":"Utility-Power Outage","location":"3159 Flatbush Avenue","borough":"Brooklyn","creation_date":"2019-10-29T20:11:03.000","latitude":"40.58908229199595","longitude":"-73.89950293254094"}
+,{"incident_type":"Fire-Haz Mat","location":"304 East 187 Street","borough":"Bronx","creation_date":"2019-12-18T20:42:30.000","latitude":"40.85989004134694","longitude":"-73.89650790091753"}
+,{"incident_type":"Structural-Falling Debris","location":"West 58th Street  & 7th Avenue","borough":"Manhattan","creation_date":"2019-12-18T10:50:43.000","latitude":"40.766192999999994","longitude":"-73.97955"}
+,{"incident_type":"Structural-Falling Debris","location":"West 58th Street  & 7th Avenue","borough":"Manhattan","creation_date":"2019-12-18T10:50:43.000","latitude":"40.766192999999994","longitude":"-73.97955"}
+,{"incident_type":"Transportation-Commuter Bus","location":"164th Street and Grand Central Parkway","borough":"Queens","creation_date":"2019-12-25T06:38:03.000","latitude":"40.716252","longitude":"-73.803141"}
+,{"incident_type":"Structural-Sidewalk Collapse","location":"Adams Street  & Tillary Street","borough":"Brooklyn","creation_date":"2019-12-26T09:53:41.000","latitude":"40.696281","longitude":"-73.9889505"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Other","location":"350 Beach 54th Street","borough":"Queens","creation_date":"2019-12-26T22:38:39.000","latitude":"40.59419322453689","longitude":"-73.78443518246881"}
+,{"incident_type":"Fire-4th Alarm","location":"78-17 101 Avenue","borough":"Queens","creation_date":"2020-01-05T11:35:55.000","latitude":"40.68059342299029","longitude":"-73.85901141771018"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"49 Thomas Street","borough":"Manhattan","creation_date":"2018-08-21T17:59:23.000","latitude":"40.716729911189326","longitude":"-74.00707830238332"}
+,{"incident_type":"HazMat-High Carbon Monoxide","location":"1650 Broadway","borough":"Manhattan","creation_date":"2018-08-16T22:59:07.000","closed_date":"2018-08-17T00:15:13.000","latitude":"40.76192518789317","longitude":"-73.98368597264711"}
+,{"incident_type":"Fire-6th Alarm","location":"188 1st Avenue","borough":"Manhattan","creation_date":"2018-10-03T02:23:13.000","latitude":"40.72964971051421","longitude":"-73.98376561045077"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Structural-Other","location":"500 Baychester Ave","borough":"Bronx","creation_date":"2019-12-30T14:06:16.000","latitude":"40.87005652288258","longitude":"-73.83229533008904"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"Structural-Sidewalk Collapse","location":"Adams Street  & Tillary Street","borough":"Brooklyn","creation_date":"2019-12-26T09:53:41.000","latitude":"40.696281","longitude":"-73.9889505"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"Structural-Sidewalk Collapse","location":"Adams Street  & Tillary Street","borough":"Brooklyn","creation_date":"2019-12-26T09:53:41.000","latitude":"40.696281","longitude":"-73.9889505"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"Fire-3rd Alarm","location":"26-19 Jackson Avenue","borough":"Queens","creation_date":"2020-01-09T13:53:56.000","latitude":"40.747409035258755","longitude":"-73.94171152706443"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"Utility-Water Main","location":"909 Beck Street","borough":"Bronx","creation_date":"2020-01-16T05:40:41.000","latitude":"40.81922740702277","longitude":"-73.89582255161588"}
+,{"incident_type":"Fire-5th Alarm","location":"70 Mulberry Street","borough":"Manhattan","creation_date":"2020-01-23T21:00:40.000","latitude":"40.71613914931621","longitude":"-73.99915328919734"}
+,{"incident_type":"Fire-Other","location":"120 East 56 Street","borough":"Manhattan","creation_date":"2018-09-19T16:40:33.000","closed_date":"2018-09-19T19:20:40.000"}
+,{"incident_type":"Fire-7th Alarm","location":"5100 Kings Plaza","borough":"Brooklyn","creation_date":"2018-09-17T09:19:47.000","latitude":"40.60850653346974","longitude":"-73.92083277058703"}
+,{"incident_type":"Fire-6th Alarm","location":"188 1st Avenue","borough":"Manhattan","creation_date":"2018-10-03T02:23:13.000","latitude":"40.72964971051421","longitude":"-73.98376561045077"}
+,{"incident_type":"Structural-Collapse","location":"39-49 29 Street","borough":"Queens","creation_date":"2018-10-28T03:10:43.000","latitude":"40.75239768774895","longitude":"-73.93546803300838"}
+,{"incident_type":"Utility-Water Main","location":"701 West 135 Street","borough":"Manhattan","creation_date":"2018-09-14T09:49:55.000","latitude":"40.82134655736019","longitude":"-73.95795374268586"}
+,{"incident_type":"Fire-6th Alarm","location":"188 1st Avenue","borough":"Manhattan","creation_date":"2018-10-03T02:23:13.000","latitude":"40.72964971051421","longitude":"-73.98376561045077"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Water Main","location":"701 West 135 Street","borough":"Manhattan","creation_date":"2018-09-14T09:49:55.000","latitude":"40.82134655736019","longitude":"-73.95795374268586"}
+,{"incident_type":"Fire-4th Alarm","location":"23-59 Borden Avenue","borough":"Queens","creation_date":"2018-09-29T20:21:24.000","latitude":"40.73980334759674","longitude":"-73.94625169329478"}
+,{"incident_type":"Utility-Water Main","location":"701 West 135 Street","borough":"Manhattan","creation_date":"2018-09-14T09:49:55.000","latitude":"40.82134655736019","longitude":"-73.95795374268586"}
+,{"incident_type":"Utility-Water Main","location":"Watchogue Road and Hawthorne Avenue","borough":"Staten Island","creation_date":"2019-11-20T05:25:42.000","latitude":"40.617045000000005","longitude":"-74.14710299999999"}
+,{"incident_type":"Rescue-Technical","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Fire-Collapse","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"HazMat-Other","borough":"Brooklyn","creation_date":"2018-09-21T06:05:10.000"}
+,{"incident_type":"Fire-6th Alarm","location":"188 1st Avenue","borough":"Manhattan","creation_date":"2018-10-03T02:23:13.000","latitude":"40.72964971051421","longitude":"-73.98376561045077"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Other","location":"434 Beach 54 Street","borough":"Queens","creation_date":"2017-01-09T12:54:45.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Fire-4th Alarm","location":"23-59 Borden Avenue","borough":"Queens","creation_date":"2018-09-29T20:21:24.000","latitude":"40.73980334759674","longitude":"-73.94625169329478"}
+,{"incident_type":"Fire-Sensitive Location","borough":"Brooklyn","creation_date":"2018-09-30T06:26:39.000"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Water Main","location":"701 West 135 Street","borough":"Manhattan","creation_date":"2018-09-14T09:49:55.000","latitude":"40.82134655736019","longitude":"-73.95795374268586"}
+,{"incident_type":"Rescue-Technical","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Utility-Power Outage","location":"811 Flushing Avenue","borough":"Brooklyn","creation_date":"2018-10-16T06:46:28.000","latitude":"40.701201125771526","longitude":"-73.93995590787108"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-2nd Alarm","borough":"Brooklyn","creation_date":"2018-10-18T18:06:54.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"123 East 54th Street","borough":"Manhattan","creation_date":"2018-11-27T06:28:39.000"}
+,{"incident_type":"Fire-5th Alarm","location":"70 Mulberry Street","borough":"Manhattan","creation_date":"2020-01-23T21:00:40.000","latitude":"40.71613914931621","longitude":"-73.99915328919734"}
+,{"incident_type":"Fire-5th Alarm","location":"70 Mulberry Street","borough":"Manhattan","creation_date":"2020-01-23T21:00:40.000","latitude":"40.71613914931621","longitude":"-73.99915328919734"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"Utility-Water Main","location":"4320 5th Avenue","borough":"Brooklyn","creation_date":"2019-11-24T06:14:27.000","latitude":"40.64863500000001","longitude":"-74.006847"}
+,{"incident_type":"Fire-3rd Alarm","location":"409 East 69th Street","borough":"Manhattan","creation_date":"2019-12-25T12:10:12.000","latitude":"40.76584284710218","longitude":"-73.95715140420253"}
+,{"incident_type":"Rescue-Technical","location":"714 39th street","borough":"Brooklyn","creation_date":"2018-09-12T14:09:41.000","latitude":"40.64821698860304","longitude":"-73.99890693479128"}
+,{"incident_type":"Fire-5th Alarm","location":"1920 Walton Street","borough":"Bronx","creation_date":"2017-09-27T06:44:58.000","latitude":"40.85053252400602","longitude":"-73.90891950415494"}
+,{"incident_type":"Fire-5th Alarm","location":"1486 Watson Avenue","borough":"Bronx","creation_date":"2017-10-01T14:50:56.000","latitude":"40.82577659449483","longitude":"-73.88016707063305"}
+,{"incident_type":"Utility-Electric Feeder Cable","location":"321 East 153rd Street","borough":"Bronx","creation_date":"2019-08-02T20:00:06.000","latitude":"40.81971300141364","longitude":"-73.91950363015762"}
+,{"incident_type":"Structural-Cracks","location":"1505 Morris Avenue","borough":"Bronx","creation_date":"2018-10-20T11:32:15.000","latitude":"40.841318336661125","longitude":"-73.90944550986774"}
+,{"incident_type":"Structural-Collapse","location":"1294 Park Pl","borough":"Brooklyn","creation_date":"2017-10-17T10:00:47.000"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Fire-2nd Alarm","location":"1527 Mermaid Avenue","borough":"Brooklyn","creation_date":"2017-10-21T06:07:29.000"}
+,{"incident_type":"Utility-Other","location":"20th Avenue  & 31st Street","borough":"Queens","creation_date":"2017-10-20T12:07:34.000"}
+,{"incident_type":"Structural-Bridge","location":"Van Wyck Expressway  & Rockaway Blvd","borough":"Queens","creation_date":"2018-11-12T03:37:51.000","latitude":"40.674375","longitude":"-73.8015525"}
+,{"incident_type":"Administration-Drill","borough":"Brooklyn","creation_date":"2018-10-30T07:02:42.000","closed_date":"2018-10-31T07:13:54.000"}
+,{"incident_type":"Fire-Manhole","location":"645 Broadway","borough":"New York","creation_date":"2018-11-19T18:19:45.000","latitude":"40.7267056305903","longitude":"-73.99573396892485"}
+,{"incident_type":"HazMat-Other","location":"2120 1st Avenue","borough":"Manhattan","creation_date":"2018-11-15T13:14:54.000","latitude":"40.79167489257898","longitude":"-73.9385148950605"}
+,{"incident_type":"Fire-Haz Mat","location":"2465 Broadway","borough":"Manhattan","creation_date":"2018-11-25T18:24:14.000","latitude":"40.791827901754246","longitude":"-73.97397612796458"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Fire-5th Alarm","location":"70 Mulberry Street","borough":"new york","creation_date":"2020-01-23T21:00:40.000","latitude":"40.71613914931621","longitude":"-73.99915328919734"}
+,{"incident_type":"Structural-Falling Debris","location":"41-28 Main Street","borough":"Queens","creation_date":"2020-01-16T11:00:06.000","latitude":"40.757311655837086","longitude":"-73.82908978533086"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Transportation-Other","location":"Lily Pond Avenue  & Major Avenue","borough":"Staten Island","creation_date":"2020-01-23T07:19:19.000","latitude":"40.600170000000006","longitude":"-74.064663"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"Structural-Falling Debris","borough":"Brooklyn","creation_date":"2018-11-09T18:37:54.000"}
+,{"incident_type":"Transportation-Car","location":"Grand Central Parkway  & Little Neck Parkway","borough":"Queens","creation_date":"2020-01-25T06:21:20.000","latitude":"40.754574000000005","longitude":"-73.723203"}
+,{"incident_type":"Fire-7th Alarm","location":"5100 Kings Plaza","borough":"Brooklyn","creation_date":"2018-09-17T09:19:47.000","latitude":"40.60850653346974","longitude":"-73.92083277058703"}
+,{"incident_type":"Fire-2nd Alarm","location":"100-26 67th Road","borough":"Queens","creation_date":"2020-01-17T06:01:19.000","latitude":"40.72610184595194","longitude":"-73.85301882832258"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"HazMat-Other","location":"2120 1st Avenue","borough":"Manhattan","creation_date":"2018-11-15T13:14:54.000","latitude":"40.79167489257898","longitude":"-73.9385148950605"}
+,{"incident_type":"Fire-2nd Alarm","location":"123 East 54th Street","borough":"Manhattan","creation_date":"2018-11-27T06:28:39.000","latitude":"40.75934418818163","longitude":"-73.9712828664955"}
+,{"incident_type":"Fire-5th Alarm","location":"1920 Walton Street","borough":"Bronx","creation_date":"2017-09-27T06:44:58.000","latitude":"40.85053252400602","longitude":"-73.90891950415494"}
+,{"incident_type":"Fire-5th Alarm","location":"1486 Watson Avenue","borough":"Bronx","creation_date":"2017-10-01T14:50:56.000","latitude":"40.82577659449483","longitude":"-73.88016707063305"}
+,{"incident_type":"HazMat-Other","borough":"Brooklyn","creation_date":"2018-11-28T15:44:24.000"}
+,{"incident_type":"Fire-3rd Alarm","location":"2649 East 23rd Street","borough":"Brooklyn","creation_date":"2018-11-29T00:46:07.000","latitude":"40.58758263131816","longitude":"-73.94653352382846"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"800 2nd ave","borough":"manhattan","creation_date":"2017-10-04T15:02:25.000","latitude":"40.75018796197129","longitude":"-73.97191430792324"}
+,{"incident_type":"Structural-Partial Collapse","location":"57 Caton Place","borough":"Brooklyn","creation_date":"2018-12-23T12:55:48.000","latitude":"40.649648290322524","longitude":"-73.97294218166076"}
+,{"incident_type":"Utility-Manhole","location":"Broadway  & West 111 St","borough":"Manhattan","creation_date":"2020-02-07T08:50:00.000","latitude":"40.804857","longitude":"-73.966302"}
+,{"incident_type":"Structural-Street Collapse","location":"219-05 99 Avenue","borough":"Queens","creation_date":"2020-01-27T19:59:58.000","latitude":"40.71588064169882","longitude":"-73.73362016985976"}
+,{"incident_type":"Fire-5th Alarm","location":"70 Mulberry Street","borough":"Manhattan","creation_date":"2020-01-23T21:00:40.000","latitude":"40.71613914931621","longitude":"-73.99915328919734"}
+,{"incident_type":"Structural-Collapse","location":"1357 Webster Avenue","borough":"Bronx","creation_date":"2020-01-28T00:32:29.000","latitude":"40.83542259201336","longitude":"-73.90789791869113"}
+,{"incident_type":"Structural-Street Collapse","location":"219-05 99 Avenue","borough":"Queens","creation_date":"2020-01-27T19:59:58.000","latitude":"40.71588064169882","longitude":"-73.73362016985976"}
+,{"incident_type":"Utility-Water Service Line","location":"1740 Madison Avenue","borough":"Manhattan","creation_date":"2020-02-23T22:16:30.000","latitude":"40.798970442387784","longitude":"-73.9456573290641"}
+,{"incident_type":"Utility-Gas Main Rupture","location":"Bayridge Parkway & 19th Avenue","borough":"Brooklyn","creation_date":"2020-01-28T10:38:51.000","latitude":"40.612176000000005","longitude":"-73.99395"}
+,{"incident_type":"Utility-Water Main","location":"West 81st Street & Central Park West","borough":"Manhattan","creation_date":"2017-01-14T00:15:09.000","latitude":"40.71442154062271","longitude":"-74.00607638041981"}
+,{"incident_type":"Structural-Collapse","location":"1357 Webster Avenue","borough":"Bronx","creation_date":"2020-01-28T00:32:29.000","latitude":"40.83542259201336","longitude":"-73.90789791869113"}
+,{"incident_type":"Structural-Falling Debris","location":"West 58th Street  & 7th Avenue","borough":"Manhattan","creation_date":"2019-12-18T10:50:43.000","latitude":"40.766192999999994","longitude":"-73.97955"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"East 61 street & Lexington avenue","borough":"Manhattan","creation_date":"2017-09-14T21:44:04.000","closed_date":"2017-09-14T22:34:40.000","latitude":"40.76254485517337","longitude":"-73.96508196407997"}
+,{"incident_type":"Utility-Other","location":"Eastburn Avenue","borough":"Bronx","creation_date":"2017-09-14T11:53:47.000","latitude":"40.84453919741746","longitude":"-73.90849457610696"}
+,{"incident_type":"Fire-2nd Alarm","location":"71 Vermilyea Avenue","borough":"Manhattan","creation_date":"2019-08-19T11:35:02.000","latitude":"40.865725823730216","longitude":"-73.92321583015469"}
+,{"incident_type":"Fire-5th Alarm","location":"70 Mulberry Street","borough":"new york","creation_date":"2020-01-23T21:00:40.000","latitude":"40.71613914931621","longitude":"-73.99915328919734"}
+,{"incident_type":"Law Enforcement-Suspicious Package","borough":"Brooklyn","creation_date":"2019-08-16T07:29:39.000"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Law Enforcement-Other","location":"100 centre street","borough":"Manhattan","creation_date":"2019-07-15T14:09:22.000","latitude":"40.71615238245143","longitude":"-74.00136262779168"}
+,{"incident_type":"Utility-Water Main","location":"78 street & 4 avenue","borough":"Brooklyn","creation_date":"2020-01-28T18:20:10.000","latitude":"40.62861899999999","longitude":"-74.02594950000001"}
+,{"incident_type":"Fire-5th Alarm","location":"70 Mulberry Street","borough":"Manhattan","creation_date":"2020-01-23T21:00:40.000","latitude":"40.71613914931621","longitude":"-73.99915328919734"}
+,{"incident_type":"Administration-OEM Involved MVA","location":"Red Cross Place & Cadman Plaza","borough":"Brooklyn","creation_date":"2020-03-02T12:44:39.000","latitude":"40.699521","longitude":"-73.989837"}
+,{"incident_type":"Utility-Water Main","location":"East 28th Street  & Park Avenue South","borough":"Manhattan","creation_date":"2020-02-20T03:39:26.000","latitude":"40.743333000000014","longitude":"-73.98410849999999"}
+,{"incident_type":"Utility-Water Main","location":"Catherine Slip & South Street","borough":"Manhattan","creation_date":"2020-02-10T17:28:52.000","latitude":"40.70919599999999","longitude":"-73.996218"}
+,{"incident_type":"Fire-Haz Mat","location":"41-12 12 Street","borough":"Queens","creation_date":"2017-06-12T13:36:36.000","latitude":"40.71400364095638","longitude":"-73.82998933154158"}
+,{"incident_type":"Structural-Collapse","location":"1294 Park Pl","borough":"Brooklyn","creation_date":"2017-10-17T10:00:47.000"}
+,{"incident_type":"Fire-3rd Alarm","location":"35 Sprague Avenue","borough":"Staten Island","creation_date":"2018-11-22T02:10:37.000","latitude":"40.51070939217495","longitude":"-74.23995856243876"}
+,{"incident_type":"Utility-Manhole","location":"East 110 street 2nd ave","borough":"manhattan","creation_date":"2017-07-29T14:55:29.000","closed_date":"2017-07-29T20:56:53.000","latitude":"40.794214168012374","longitude":"-73.94300569986946"}
+,{"incident_type":"Transportation-Payload Truck","location":"Bruckner expressway & Pelham Parkway","borough":"Brooklyn","creation_date":"2018-12-02T05:11:16.000","latitude":"40.85651700000001","longitude":"-73.826316"}
+,{"incident_type":"Fire-5th Alarm","location":"70 Mulberry Street","borough":"Manhattan","creation_date":"2020-01-23T21:00:40.000","latitude":"40.71613914931621","longitude":"-73.99915328919734"}
+,{"incident_type":"Utility-Water Main","location":"Farragut Road & East 78th Street","borough":"Brooklyn","creation_date":"2020-03-03T11:03:35.000","latitude":"40.63786200000001","longitude":"-73.91844"}
+,{"incident_type":"Utility-Power Outage","location":"2945 West 23 Street","borough":"Brooklyn","creation_date":"2020-02-06T00:50:32.000","latitude":"40.574967401061755","longitude":"-73.989856249755"}
+,{"incident_type":"Structural-Scaffold","location":"527 Grand Street","borough":"Brooklyn","creation_date":"2020-02-27T14:49:27.000","latitude":"40.71107496670317","longitude":"-73.95018395337296"}
+,{"incident_type":"Transportation-Tanker Truck","location":"Staten Island Expressway  & Bradley Avenue","borough":"Staten Island","creation_date":"2020-02-28T05:43:19.000","latitude":"40.60807199999999","longitude":"-74.13205049999999"}
+,{"incident_type":"Fire-2nd Alarm","location":"965 Belmont Avenue","borough":"Brooklyn","creation_date":"2020-03-03T03:27:33.000","latitude":"40.6739746094985","longitude":"-73.87292169317328"}
+,{"incident_type":"Utility-Water Main","location":"Bedford Avenue  & North 7th Street","borough":"Brooklyn","creation_date":"2020-03-04T05:13:27.000","latitude":"40.717827","longitude":"-73.9577295"}
+,{"incident_type":"Structural-Parapet","location":"61 East Mount Eden Avenue","borough":"Bronx","creation_date":"2020-03-21T09:09:33.000","latitude":"40.843935000000016","longitude":"-73.9134765"}
+,{"incident_type":"Fire-5th Alarm","location":"60 East 9th Street","borough":"Manhattan","creation_date":"2017-06-28T18:04:26.000","latitude":"40.73135779349652","longitude":"-73.99245451693689"}
+,{"incident_type":"Structural-Collapse","location":"1294 Park Pl","borough":"Brooklyn","creation_date":"2017-10-17T10:00:47.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"447 Wales Avenue","borough":"Bronx","creation_date":"2017-07-26T03:06:44.000","latitude":"40.81028097169481","longitude":"-73.90820617557257"}
+,{"incident_type":"Fire-1st Alarm","location":"95-32 150 Street","borough":"Queens","creation_date":"2018-12-23T15:35:01.000","latitude":"40.698722525391005","longitude":"-73.80269531476122"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"208 West 23rd Street","borough":"Manhattan","creation_date":"2018-12-19T11:18:18.000","latitude":"40.74432687731555","longitude":"-73.99628248710249"}
+,{"incident_type":"Fire-5th Alarm","location":"4502 Queens Boulevard","borough":"Queens","creation_date":"2018-12-13T02:44:36.000","latitude":"40.74304563056165","longitude":"-73.91929683833455"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Utility-Water Main","location":"73rd Avenue & 193rd Street","borough":"Queens","creation_date":"2019-11-23T23:18:18.000","latitude":"40.734278999999994","longitude":"-73.7795115"}
+,{"incident_type":"Utility-Water Main","location":"4320 5th Avenue","borough":"Brooklyn","creation_date":"2019-11-24T06:14:27.000","latitude":"40.64863500000001","longitude":"-74.006847"}
+,{"incident_type":"Fire-6th Alarm","location":"225 McClellan Street","borough":"Bronx","creation_date":"2019-08-05T05:48:49.000","latitude":"40.83227874216628","longitude":"-73.91658338106646"}
+,{"incident_type":"Fire-2nd Alarm","location":"700 Evergreen Avenue","borough":"Brooklyn","creation_date":"2019-08-04T05:22:40.000","latitude":"40.68761595974961","longitude":"-73.91082281432854"}
+,{"incident_type":"Structural-Collapse","location":"1357 Webster Avenue","borough":"Bronx","creation_date":"2020-01-28T00:32:29.000","latitude":"40.83542259201336","longitude":"-73.90789791869113"}
+,{"incident_type":"Fire-10-77 (Residential High Rise Fire)","location":"3080 Park Ave","borough":"Bronx","creation_date":"2019-07-10T16:12:05.000","latitude":"40.823142276703855","longitude":"-73.91862361045077"}
+,{"incident_type":"Structural-Street Collapse","location":"219-05 99 Avenue","borough":"Queens","creation_date":"2020-01-27T19:59:58.000","latitude":"40.71588064169882","longitude":"-73.73362016985976"}
+,{"incident_type":"Fire-5th Alarm","location":"376 Vernon Avenue","borough":"Brooklyn","creation_date":"2019-01-31T04:01:14.000","latitude":"40.6961096128167","longitude":"-73.93586734762538"}
+,{"incident_type":"Structural-Partial Collapse","location":"72 Hillside Avenue","borough":"Queens","creation_date":"2018-12-12T14:22:48.000","latitude":"40.56677652178431","longitude":"-73.88875358381902"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-2nd Alarm","location":"1966 Crotona Avenue","borough":"bronx","creation_date":"2018-08-25T18:55:31.000","latitude":"40.8457134276935","longitude":"-73.89082887065044"}
+,{"incident_type":"Fire-Collapse","location":"23 Park Place","borough":"Manhattan","creation_date":"2018-12-21T03:55:55.000","latitude":"40.71308992951118","longitude":"-74.0088408934157"}
+,{"incident_type":"Fire-Collapse","location":"316 West 135th Street","borough":"Manhattan","creation_date":"2018-11-29T12:21:19.000","latitude":"40.816858767961286","longitude":"-73.94747137483404"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"1231 Lafayette Avenue","borough":"Bronx","creation_date":"2018-12-04T14:35:11.000","latitude":"40.81646145657561","longitude":"-73.89081439508915"}
+,{"incident_type":"Fire-3rd Alarm","location":"2664 Grand Concourse","borough":"bronx","creation_date":"2018-12-04T16:11:05.000","latitude":"40.866376611691514","longitude":"-73.89389472312325"}
+,{"incident_type":"Utility-Other","location":"e 60th street & madison avenue","borough":"manhattan","creation_date":"2018-12-11T00:39:18.000","latitude":"40.76421300000001","longitude":"-73.97095499999999"}
+,{"incident_type":"Utility-Water Main","location":"East 64th Street & Madison Avenue","borough":"Manhattan","creation_date":"2018-12-28T06:18:00.000","latitude":"40.766715000000005","longitude":"-73.9691325"}
+,{"incident_type":"Fire-Collapse","location":"23 Park Place","borough":"Manhattan","creation_date":"2018-12-21T03:55:55.000"}
+,{"incident_type":"Fire-Commercial","borough":"Brooklyn","creation_date":"2018-12-21T09:44:40.000"}
+,{"incident_type":"Structural-Collapse","location":"915 ogden ave","borough":"Bronx","creation_date":"2018-12-21T16:14:56.000","latitude":"40.8309841043626","longitude":"-73.93049945380564"}
+,{"incident_type":"Fire-Collapse","location":"23 Park Place","borough":"Manhattan","creation_date":"2018-12-21T03:55:55.000","latitude":"40.71308992951118","longitude":"-74.0088408934157"}
+,{"incident_type":"Structural-Collapse","location":"244 Howard Avenue","borough":"Brooklyn","creation_date":"2019-01-09T15:40:16.000","latitude":"40.67961674049283","longitude":"-73.91937800028846"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Utility-Transformer","location":"20th Avenue & 31 Street","borough":"New York","creation_date":"2018-12-27T21:59:19.000","latitude":"40.779711","longitude":"-73.906326"}
+,{"incident_type":"Fire-3rd Alarm","location":"2664 Grand Concourse","borough":"bronx","creation_date":"2018-12-04T16:11:05.000","latitude":"40.866376611691514","longitude":"-73.89389472312325"}
+,{"incident_type":"HazMat-Other","location":"Bedford Park and Jerome Avenue","borough":"Brooklyn","creation_date":"2018-11-28T15:44:24.000","latitude":"40.58793938546869","longitude":"-73.94953795812528"}
+,{"incident_type":"Medical-Public Health","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-03-15T23:15:25.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Transportation-Other","borough":"Brooklyn","creation_date":"2018-12-05T16:49:24.000"}
+,{"incident_type":"Utility-Water Main","location":"East 64th Street & Madison Avenue","borough":"Manhattan","creation_date":"2018-12-28T06:18:00.000","latitude":"40.766715000000005","longitude":"-73.9691325"}
+,{"incident_type":"Fire-5th Alarm","location":"70 Mulberry Street","borough":"Manhattan","creation_date":"2020-01-23T21:00:40.000","latitude":"40.71613914931621","longitude":"-73.99915328919734"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"Fire-2nd Alarm","location":"79 Monroe Avenue","borough":"Staten Island","creation_date":"2019-01-01T06:26:57.000","latitude":"40.639803516792654","longitude":"-74.0791170792314"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Fire-4th Alarm","location":"259 Monitor Street","borough":"Brooklyn","creation_date":"2019-08-01T00:55:54.000","latitude":"40.72838802331353","longitude":"-73.94309536831317"}
+,{"incident_type":"Law Enforcement-Suspicious Package","location":"49 Thomas Street","borough":"Manhattan","creation_date":"2018-08-21T17:59:23.000","latitude":"40.716729911189326","longitude":"-74.00707830238332"}
+,{"incident_type":"HazMat-Other","location":"2120 1st Avenue","borough":"Manhattan","creation_date":"2018-11-15T13:14:54.000","latitude":"40.79167489257898","longitude":"-73.9385148950605"}
+,{"incident_type":"Utility-Steam Main","location":"141 5th Avenue","borough":"Manhattan","creation_date":"2018-07-19T07:02:24.000","latitude":"40.74003718789318","longitude":"-73.99063758200136"}
+,{"incident_type":"Fire-4th Alarm","location":"453 Coney Island Ave","borough":"Brooklyn","creation_date":"2018-08-22T03:52:59.000","latitude":"40.64668520007244","longitude":"-73.97087853121435"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"20 Hudson Yards","borough":"manhattan","creation_date":"2019-11-22T06:04:07.000","closed_date":"2019-11-22T07:19:37.000"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Structural-Partial Collapse","location":"2708 schurz ave","borough":"bronx","creation_date":"2019-07-21T14:58:50.000","latitude":"40.813564348866116","longitude":"-73.82180960407413"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"570 Lexington Avenue","borough":"Manhattan","creation_date":"2019-05-20T16:34:11.000","latitude":"40.7568190124935","longitude":"-73.9721686737549"}
+,{"incident_type":"Utility-Water Main","location":"East 180th Street  & Creston Avenue","borough":"Brooklyn","creation_date":"2019-07-18T08:02:36.000","latitude":"40.853907","longitude":"-73.90377"}
+,{"incident_type":"Medical-Public Health","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-03-15T23:15:25.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Fire-2nd Alarm","location":"93-34 43rd Avneue","borough":"Queens","creation_date":"2020-03-15T16:03:25.000","latitude":"40.744254604766624","longitude":"-73.87129164570952"}
+,{"incident_type":"Fire-2nd Alarm","location":"152 Parkside Avenue","borough":"Brooklyn","creation_date":"2020-03-18T05:10:11.000","latitude":"40.654212140429415","longitude":"-73.96346905384041"}
+,{"incident_type":"Medical-Public Health","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-03-15T23:15:25.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Structural-Collapse","location":"214 Patchen Avenue","borough":"Brooklyn","creation_date":"2018-12-30T06:13:09.000","latitude":"40.6834691909516","longitude":"-73.92622644491884"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114 street","borough":"Brooklyn","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"HazMat-Liquid","location":"West 132 Street & Broadway","borough":"Manhattan","creation_date":"2019-01-06T01:31:41.000","latitude":"40.818203999999994","longitude":"-73.956573"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Utility-Other","location":"Hylan Blvd & Arbutus Avenue","borough":"Staten Island","creation_date":"2016-11-29T06:49:45.000","latitude":"40.52609318085672","longitude":"-74.18029750962154"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Medical-Public Health","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-03-15T23:15:25.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Utility-Water Main","location":"East 64th Street & Madison Avenue","borough":"Manhattan","creation_date":"2018-12-28T06:18:00.000","latitude":"40.766715000000005","longitude":"-73.9691325"}
+,{"incident_type":"Fire-1st Alarm","location":"215 West 242 Street","borough":"Bronx","creation_date":"2020-03-06T09:50:06.000","latitude":"40.88955899584506","longitude":"-73.8990515903399"}
+,{"incident_type":"Medical-Public Health","borough":"Brooklyn","creation_date":"2020-03-25T12:48:12.000"}
+,{"incident_type":"Marine-CSO Advisory","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-03-15T23:15:25.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Fire-3rd Alarm","location":"2528 Cruger Avenue","borough":"Bronx","creation_date":"2020-03-27T21:22:13.000","latitude":"40.86395317929484","longitude":"-73.86636408866646"}
+,{"incident_type":"Fire-Collapse","location":"23 Park Place","borough":"Manhattan","creation_date":"2018-12-21T03:55:55.000","latitude":"40.71308992951118","longitude":"-74.0088408934157"}
+,{"incident_type":"Fire-3rd Alarm","location":"2528 Cruger Avenue","borough":"Bronx","creation_date":"2020-03-27T21:22:13.000","latitude":"40.86395317929484","longitude":"-73.86636408866646"}
+,{"incident_type":"Medical-Public Health","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-03-15T23:15:25.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Utility-Manhole","location":"3021 Brighton 8th Street","borough":"Brooklyn","creation_date":"2020-02-04T11:34:07.000","latitude":"40.57935971579433","longitude":"-73.96048233221771"}
+,{"incident_type":"Structural-Collapse","location":"244 Howard Avenue","borough":"Brooklyn","creation_date":"2019-01-09T15:40:16.000","latitude":"40.67961674049283","longitude":"-73.91937800028846"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Fire-Collapse","location":"23 Park Place","borough":"Manhattan","creation_date":"2018-12-21T03:55:55.000","latitude":"40.71308992951118","longitude":"-74.0088408934157"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"Utility-Water Main","location":"1881 Broadway","borough":"Manhattan","creation_date":"2020-01-13T05:23:05.000","latitude":"40.77066867099919","longitude":"-73.98230791651565"}
+,{"incident_type":"Fire-10-76 (Commercial High Rise Fire)","location":"55 Water Street","borough":"New York","creation_date":"2020-01-11T06:12:29.000","latitude":"40.703382000000005","longitude":"-74.0097585"}
+,{"incident_type":"Structural-Other","location":"1090 Rosedale Avenue","borough":"Brooklyn","creation_date":"2019-12-19T17:29:39.000","latitude":"40.82708090175426","longitude":"-73.86795828945714"}
+,{"incident_type":"Utility-Sewer Service","location":"529 kingsborough 5th walk","borough":"Brooklyn","creation_date":"2019-12-09T13:19:11.000","latitude":"40.67541907354727","longitude":"-73.92391440836202"}
+,{"incident_type":"Transportation-Car","location":"1431 Fulton Street","borough":"Brooklyn","creation_date":"2019-12-10T06:42:57.000","latitude":"40.6801055789716","longitude":"-73.94395703788447"}
+,{"incident_type":"Structural-Stability Problem","location":"32-49 97 Street","borough":"Queens","creation_date":"2017-08-23T13:20:47.000","latitude":"40.757446162646396","longitude":"-73.87136461668318"}
+,{"incident_type":"Utility-Water Main","location":"East 180th Street  & Creston Avenue","borough":"Brooklyn","creation_date":"2019-07-18T08:02:36.000","latitude":"40.853907","longitude":"-73.90377"}
+,{"incident_type":"Fire-4th Alarm","location":"1875 Carter Avenue","borough":"Bronx","creation_date":"2019-07-20T18:27:37.000","latitude":"40.84737550165673","longitude":"-73.90193213350007"}
+,{"incident_type":"Structural-Parapet","location":"729 7th Avenue","borough":"Manhattan","creation_date":"2019-12-17T11:38:47.000"}
+,{"incident_type":"Medical-Public Health","borough":"Brooklyn","creation_date":"2020-03-25T12:48:12.000"}
+,{"incident_type":"Fire-Collapse","location":"92 Madison Street","borough":"Brooklyn","creation_date":"2020-04-11T15:37:47.000","latitude":"40.684121518725895","longitude":"-73.95543673175025"}
+,{"incident_type":"Utility-Water Main","location":"87-71 lefferts blvd","borough":"queens","creation_date":"2019-01-09T18:15:38.000","latitude":"40.69837489814758","longitude":"-73.83008197818702"}
+,{"incident_type":"Fire-2nd Alarm","location":"90-43 204 st","borough":"queens","creation_date":"2019-01-10T05:31:05.000","latitude":"40.71630441716193","longitude":"-73.75810676698033"}
+,{"incident_type":"Fire-2nd Alarm","location":"166-11 91 Avenue","borough":"Queens","creation_date":"2019-01-16T23:45:13.000","latitude":"40.706735038865425","longitude":"-73.79397466195391"}
+,{"incident_type":"Medical-Public Health","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-03-15T23:15:25.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Medical-Public Health","borough":"Brooklyn","creation_date":"2020-04-13T06:43:21.000"}
+,{"incident_type":"Medical-Public Health","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-03-15T23:15:25.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Fire-2nd Alarm","location":"439 Beach 66 Street","borough":"Queens","creation_date":"2020-04-15T09:44:53.000","latitude":"40.59411142853023","longitude":"-73.79530021761198"}
+,{"incident_type":"Administration-Other","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-04-18T07:36:59.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Utility-Water Main","location":"Farragut Road & East 78th Street","borough":"Brooklyn","creation_date":"2020-03-03T11:03:35.000","latitude":"40.63786200000001","longitude":"-73.91844"}
+,{"incident_type":"Utility-Water Main","location":"Beach 81 Street  & Beach Channel Drive","borough":"Queens","creation_date":"2019-12-12T07:36:42.000","latitude":"40.589901","longitude":"-73.80747"}
+,{"incident_type":"Utility-Sewer Service","location":"130-40 Inwood street","borough":"Queens","creation_date":"2019-11-30T15:12:28.000","latitude":"40.669335848462104","longitude":"-73.7935971483639"}
+,{"incident_type":"Medical-Public Health","location":"165 Cadman Plaza East","borough":"Brooklyn","creation_date":"2020-03-15T23:15:25.000","latitude":"40.69979588336214","longitude":"-73.9897528974125"}
+,{"incident_type":"Fire-1st Alarm","location":"490 East 91 Street","borough":"Manhattan","creation_date":"2017-10-22T15:11:56.000"}
+,{"incident_type":"Structural-Street Collapse","location":"FDR Drive & East 14th Street","borough":"Manhattan","creation_date":"2017-09-28T19:44:57.000","latitude":"40.78499400000001","longitude":"-73.94091300000001"}
+,{"incident_type":"Utility-Water Main","location":"191 23rd Street","borough":"Brooklyn","creation_date":"2017-10-25T03:59:19.000"}
+,{"incident_type":"Structural-Collapse","location":"1294 Park Pl","borough":"Brooklyn","creation_date":"2017-10-17T10:00:47.000"}
+,{"incident_type":"Fire-2nd Alarm","location":"3269 3rd Avenue","borough":"Bronx","creation_date":"2018-03-29T05:20:43.000","latitude":"40.82483714654625","longitude":"-73.90843615335557"}
+,{"incident_type":"Fire-5th Alarm","location":"773 St. Nicholas Avenue","borough":"Manhattan","creation_date":"2018-03-22T23:11:10.000","latitude":"40.82653750735761","longitude":"-73.94317386914989"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Utility-Transformer","location":"42-49 Colden Street","borough":"Queens","creation_date":"2019-01-29T01:33:51.000","latitude":"40.75343448629443","longitude":"-73.82595002187122"}
+,{"incident_type":"Fire-3rd Alarm","location":"128-20 14th Avenue","borough":"Queens","creation_date":"2019-01-21T08:04:51.000","latitude":"40.78537396576683","longitude":"-73.84003050215502"}
+,{"incident_type":"Fire-4th Alarm","location":"13 Schenck Avenue","borough":"Brooklyn","creation_date":"2019-01-21T19:10:00.000","latitude":"40.68102443880201","longitude":"-73.89053892172089"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Utility-Water Main","location":"7th Avenue & W 14th Street","borough":"manhattan","creation_date":"2019-01-23T05:41:35.000","latitude":"40.738545000000016","longitude":"-73.999692"}
+,{"incident_type":"Fire-Collapse","location":"23 Park Place","borough":"Manhattan","creation_date":"2018-12-21T03:55:55.000","latitude":"40.71308992951118","longitude":"-74.0088408934157"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Fire-4th Alarm","location":"721 5th Avenue","borough":"Manhattan","creation_date":"2018-04-07T18:04:46.000","latitude":"40.76257247680206","longitude":"-73.9742043796528"}
+,{"incident_type":"Fire-Haz Mat","location":"Northern Boulevard & 114th Street","borough":"Queens","creation_date":"2019-01-04T14:23:28.000","latitude":"40.758309","longitude":"-73.85560199999999"}
+,{"incident_type":"Fire-5th Alarm","location":"376 Vernon Avenue","borough":"Brooklyn","creation_date":"2019-01-31T04:01:14.000","latitude":"40.6961096128167","longitude":"-73.93586734762538"}
+,{"incident_type":"Fire-5th Alarm","location":"376 Vernon Avenue","borough":"Brooklyn","creation_date":"2019-01-31T04:01:14.000","latitude":"40.6961096128167","longitude":"-73.93586734762538"}
+,{"incident_type":"Structural-Partial Collapse","location":"2708 schurz ave","borough":"bronx","creation_date":"2019-07-21T14:58:50.000","latitude":"40.813564348866116","longitude":"-73.82180960407413"}]

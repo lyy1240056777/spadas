@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   profiles:
     active: dev
@@ -7,25 +7,15 @@ spring:
     multipart:
       max-file-size: 100MB
       max-request-size: 100MB
-#  mvc:
-#    async:
-#      request-timeout: 100000
-#knife4j:
-#  enable: true
-#---
-#server:
-#  port: 8081
-#spring:
-#  config:
-#    activate:
-#      on-profile: dev
-#
-#---
-#server:
-#  port: 8082
-#spring:
-#  config:
-#    activate:
-#      on-profile: prod
-#server:
-#  port: 5040
+
+spadas:
+  dimension: 2
+  resolution: 10
+  leaf-capacity: 1000
+  cache-dataset: false
+  cache-index: true
+  save-index: false
+  frontend-limitation: 10000
+  file:
+    baseUri: ./dataset/
+    staticUri: /dataset/

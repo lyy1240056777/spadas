@@ -1,0 +1,10 @@
+"providertype","dfta_id","programname","sponsorname","programaddress","programcity","programstate","programzipcode","borough","programphone","dfta_funded","monhouropen","monhourclose","tuehouropen","tuehourclose","wedhouropen","wedhourclose","thuhouropen","thuhourclose","frihouropen","frihourclose","sathouropen","sathourclose","sunhouropen","sunhourclose","latitude","longitude","community_board","council_district","census_tract","bin","bbl","nta","geocoded_column"
+"OLDER ADULT CENTER CONTRACTS","C8001","SHORE HILL OLDER ADULT CENTER (C80)","SUNSET PARK HEALTH COUNCIL INC d/b/a FAMILY HEALTH CENTERS A","9000 Shore Road","BROOKLYN","NY","11209","BROOKLYN","347-377-5474","Y","09:00","05:00","09:00","05:00","09:00","05:00","09:00","05:00","09:00","05:00","00:00","00:00","00:00","00:00","40.622093","-74.040244","310","43","5201","3322532","3060780010","Bay Ridge","
+,  
+(40.622093, -74.040244)"
+"OLDER ADULT CENTER CONTRACTS","C5601","QCH FOREST HILLS OAC (C56)","QUEENS COMMUNITY HOUSE INC.","108-25 62nd Drive","FLUSHING","NY","11375","QUEENS","718-699-1010","Y","08:00","04:00","08:00","04:00","08:00","04:00","08:00","04:00","08:00","04:00","00:00","00:00","00:00","00:00","40.73591","-73.850212","406","29","745","4432108","4021590002","Forest Hills","
+,  
+(40.73591, -73.850212)"
+"OLDER ADULT CENTER CONTRACTS","C7601","STANLEY ISAACS NSC/HOLMES OLDER ADULT CENTER (C76)","STANLEY M ISAACS NEIGHBORHOOD CENTER INC","415 E 93rd Street","NEW YORK","NY","10128","MANHATTAN","212-360-7620","Y","09:00","05:00","09:00","05:00","09:00","05:00","09:00","05:00","09:00","05:00","00:00","00:00","00:00","00:00","40.780904","-73.945112","108","5","152","1082367","1015730001","Yorkville","
+,  
+(40.780904, -73.945112)"

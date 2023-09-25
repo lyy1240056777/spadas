@@ -1,0 +1,455 @@
+[{"dbn":"01M034","location_name":"P.S. 034 Franklin D. Roosevelt"}
+,{"dbn":"01M064","location_name":"P.S. 064 Robert Simon"}
+,{"dbn":"01M140","location_name":"P.S. 140 Nathan Straus"}
+,{"dbn":"01M142","location_name":"P.S. 142 Amalia Castro"}
+,{"dbn":"01M332","location_name":"University Neighborhood Middle School"}
+,{"dbn":"01M363","location_name":"Neighborhood School"}
+,{"dbn":"01M458","location_name":"Forsyth Satellite Academy"}
+,{"dbn":"02M003","location_name":"P.S. 003 Charrette School"}
+,{"dbn":"02M033","location_name":"P.S. 033 Chelsea Prep"}
+,{"dbn":"02M077","location_name":"P.S. 77 Lower Lab School"}
+,{"dbn":"02M217","location_name":"P.S./I.S. 217 Roosevelt Island"}
+,{"dbn":"02M225","location_name":"Ella Baker School"}
+,{"dbn":"02M308","location_name":"Lower Manhattan Arts Academy"}
+,{"dbn":"02M313","location_name":"James Baldwin School, The: A School for Expeditionary Learning"}
+,{"dbn":"02M393","location_name":"Business Of Sports School"}
+,{"dbn":"02M394","location_name":"Emma Lazarus High School"}
+,{"dbn":"02M399","location_name":"The High School For Language And Diplomacy"}
+,{"dbn":"02M400","location_name":"High School for Environmental Studies"}
+,{"dbn":"02M408","location_name":"Professional Performing Arts High School"}
+,{"dbn":"02M411","location_name":"Baruch College Campus High School"}
+,{"dbn":"02M419","location_name":"Landmark High School"}
+,{"dbn":"02M432","location_name":"Murray Hill Academy"}
+,{"dbn":"02M437","location_name":"Hudson High School of Learning Technologies"}
+,{"dbn":"02M519","location_name":"Talent Unlimited High School"}
+,{"dbn":"02M543","location_name":"New Design High School"}
+,{"dbn":"02M544","location_name":"Independence High School"}
+,{"dbn":"02M546","location_name":"Academy for Software Engineering"}
+,{"dbn":"02M550","location_name":"Liberty High School Academy for Newcomers"}
+,{"dbn":"02M560","location_name":"High School M560 - City As School"}
+,{"dbn":"02M565","location_name":"Urban Academy Laboratory High School"}
+,{"dbn":"02M586","location_name":"Harvey Milk High School"}
+,{"dbn":"02M605","location_name":"Humanities Preparatory Academy"}
+,{"dbn":"02M615","location_name":"Chelsea Career and Technical Education High School"}
+,{"dbn":"03M054","location_name":"J.H.S. 054 Booker T. Washington"}
+,{"dbn":"03M075","location_name":"P.S. 075 Emily Dickinson"}
+,{"dbn":"03M076","location_name":"P.S. 076 A. Philip Randolph"}
+,{"dbn":"03M149","location_name":"P.S. 149 Sojourner Truth"}
+,{"dbn":"03M163","location_name":"P.S. 163 Alfred E. Smith"}
+,{"dbn":"03M165","location_name":"P.S. 165 Robert E. Simon"}
+,{"dbn":"03M166","location_name":"P.S. 166 The Richard Rodgers School of The Arts and Technology"}
+,{"dbn":"03M180","location_name":"P.S. 180 Hugo Newman"}
+,{"dbn":"03M243","location_name":"M.S. 243 Center School"}
+,{"dbn":"03M299","location_name":"The Maxine Greene HS for Imaginative Inquiry"}
+,{"dbn":"03M333","location_name":"P.S. 333 Manhattan School for Children"}
+,{"dbn":"03M402","location_name":"The Urban Assembly School for Green Careers"}
+,{"dbn":"03M415","location_name":"Wadleigh Secondary School for the Performing & Visual Arts"}
+,{"dbn":"03M417","location_name":"Frank Mccourt High School"}
+,{"dbn":"03M479","location_name":"Beacon High School"}
+,{"dbn":"03M492","location_name":"High School for Law, Advocacy and Community Justice"}
+,{"dbn":"03M505","location_name":"Edward A. Reynolds West Side High School"}
+,{"dbn":"04M057","location_name":"James Weldon Johnson"}
+,{"dbn":"04M096","location_name":"P.S. 096 Joseph Lanzetta"}
+,{"dbn":"04M372","location_name":"Esperanza Preparatory Academy"}
+,{"dbn":"04M375","location_name":"Mosaic Preparatory Academy"}
+,{"dbn":"04M435","location_name":"Manhattan Center for Science and Mathematics"}
+,{"dbn":"04M497","location_name":"Central Park East I"}
+,{"dbn":"05M030","location_name":"P.S. 030 Hernandez/Hughes"}
+,{"dbn":"05M123","location_name":"P.S. 123 Mahalia Jackson"}
+,{"dbn":"05M194","location_name":"P.S. 194 Countee Cullen"}
+,{"dbn":"05M285","location_name":"Harlem Renaissance High School"}
+,{"dbn":"05M499","location_name":"Frederick Douglass Academy"}
+,{"dbn":"05M670","location_name":"Thurgood Marshall Academy for Learning and Social Change"}
+,{"dbn":"06M004","location_name":"P.S. 004 Duke Ellington"}
+,{"dbn":"06M005","location_name":"P.S. 005 Ellen Lurie"}
+,{"dbn":"06M008","location_name":"P.S. 008 Luis Belliard"}
+,{"dbn":"06M018","location_name":"P.S. 018 Park Terrace"}
+,{"dbn":"06M048","location_name":"P.S. 048 P.O. Michael J. Buczek"}
+,{"dbn":"06M115","location_name":"P.S. 115 Alexander Humboldt"}
+,{"dbn":"06M132","location_name":"P.S. 132 Juan Pablo Duarte"}
+,{"dbn":"06M152","location_name":"P.S. 152 Dyckman Valley"}
+,{"dbn":"06M189","location_name":"P.S. 189"}
+,{"dbn":"06M311","location_name":"Amistad Dual Language School"}
+,{"dbn":"06M322","location_name":"Middle School 322"}
+,{"dbn":"06M328","location_name":"Community Math & Science Prep"}
+,{"dbn":"06M348","location_name":"Washington Heights Expeditionary Learning School"}
+,{"dbn":"06M349","location_name":"Harbor Heights"}
+,{"dbn":"06M468","location_name":"High School for Health Careers and Sciences"}
+,{"dbn":"07X018","location_name":"P.S. 018 John Peter Zenger"}
+,{"dbn":"07X043","location_name":"P.S. 043 Jonas Bronck"}
+,{"dbn":"07X049","location_name":"P.S. 049 Willis Avenue"}
+,{"dbn":"07X151","location_name":"J.H.S. 151 Lou Gehrig"}
+,{"dbn":"07X179","location_name":"P.S. 179"}
+,{"dbn":"07X259","location_name":"H.E.R.O. High (Health, Education, and Research Occupations High School)"}
+,{"dbn":"07X334","location_name":"International Community High School"}
+,{"dbn":"07X379","location_name":"Jill Chaifetz Transfer High School"}
+,{"dbn":"07X527","location_name":"Bronx Leadership Academy II High School"}
+,{"dbn":"08X075","location_name":"P.S. 75 School of Research and Discovery"}
+,{"dbn":"08X101","location_name":"M.S. X101 Edward R. Byrne"}
+,{"dbn":"08X119","location_name":"The Dr. Emmett W. Bassett School"}
+,{"dbn":"08X123","location_name":"J.H.S. 123 James M. Kieran"}
+,{"dbn":"08X131","location_name":"J.H.S. 131 Albert Einstein"}
+,{"dbn":"08X146","location_name":"P.S. 146 Edward Collins"}
+,{"dbn":"08X152","location_name":"P.S. 152 Evergreen"}
+,{"dbn":"08X301","location_name":"M.S. 301 Paul L. Dunbar"}
+,{"dbn":"08X320","location_name":"Pelham Lab High School"}
+,{"dbn":"08X349","location_name":"Bronx River High School"}
+,{"dbn":"08X375","location_name":"The Bronx Mathematics Preparatory School"}
+,{"dbn":"08X377","location_name":"Bronx Community High School"}
+,{"dbn":"08X405","location_name":"Herbert H. Lehman High School"}
+,{"dbn":"08X424","location_name":"The Hunts Point School"}
+,{"dbn":"08X467","location_name":"Mott Hall Community School"}
+,{"dbn":"08X530","location_name":"Longwood Preparatory Academy"}
+,{"dbn":"08X537","location_name":"Bronx Arena High School"}
+,{"dbn":"09X004","location_name":"P.S./M.S. 004 Crotona Park West"}
+,{"dbn":"09X011","location_name":"P.S. 011 Highbridge"}
+,{"dbn":"09X022","location_name":"J.H.S. 022 Jordan L. Mott"}
+,{"dbn":"09X053","location_name":"P.S. 053 Basheer Quisim"}
+,{"dbn":"09X088","location_name":"P.S. X088 - S. Silverstein Little Sparrow School"}
+,{"dbn":"09X117","location_name":"I.S. 117 Joseph H. Wade"}
+,{"dbn":"09X218","location_name":"P.S./I.S. 218 Rafael Hernandez Dual Language Magnet School"}
+,{"dbn":"09X219","location_name":"I.S. 219 New Venture School"}
+,{"dbn":"09X227","location_name":"Bronx Collegiate Academy"}
+,{"dbn":"09X236","location_name":"P.S. 236 Langston Hughes"}
+,{"dbn":"09X252","location_name":"Mott Hall Bronx High School"}
+,{"dbn":"09X294","location_name":"The Walton Avenue School"}
+,{"dbn":"09X297","location_name":"Morris Academy for Collaborative Studies"}
+,{"dbn":"09X313","location_name":"I.S. 313 School of Leadership Development"}
+,{"dbn":"09X328","location_name":"New Millennium Business Academy Middle School"}
+,{"dbn":"09X339","location_name":"I.S. 339"}
+,{"dbn":"09X350","location_name":"New Directions Secondary School"}
+,{"dbn":"09X403","location_name":"Bronx International High School"}
+,{"dbn":"09X412","location_name":"Bronx High School of Business"}
+,{"dbn":"09X443","location_name":"The Family School"}
+,{"dbn":"09X449","location_name":"Grant Avenue Elementary School"}
+,{"dbn":"09X457","location_name":"Sheridan Academy for Young Leaders"}
+,{"dbn":"09X505","location_name":"Bronx School for Law, Government and Justice"}
+,{"dbn":"09X517","location_name":"Frederick Douglass Academy III Secondary School"}
+,{"dbn":"10X015","location_name":"P.S. X015 Institute for Environmental Learning"}
+,{"dbn":"10X024","location_name":"P.S. 024 Spuyten Duyvil"}
+,{"dbn":"10X033","location_name":"P.S. 033 Timothy Dwight"}
+,{"dbn":"10X037","location_name":"P.S. X037 - Multiple Intelligence School"}
+,{"dbn":"10X051","location_name":"P.S. 051 Bronx New School"}
+,{"dbn":"10X059","location_name":"P.S. 059 The Community School of Technology"}
+,{"dbn":"10X085","location_name":"P.S. 085 Great Expectations"}
+,{"dbn":"10X095","location_name":"P.S. 095 Sheila Mencher"}
+,{"dbn":"10X141","location_name":"Riverdale / Kingsbridge Academy (Middle School / High School 141)"}
+,{"dbn":"10X205","location_name":"P.S. 205 Fiorello LaGuardia"}
+,{"dbn":"10X207","location_name":"P.S. 207"}
+,{"dbn":"10X225","location_name":"Theatre Arts Production Company School"}
+,{"dbn":"10X226","location_name":"P.S. 226"}
+,{"dbn":"10X279","location_name":"P.S. 279 Captain Manuel Rivera, Jr."}
+,{"dbn":"10X319","location_name":"Providing Urban Learners Success In Education High School"}
+,{"dbn":"10X342","location_name":"International School for Liberal Arts"}
+,{"dbn":"10X344","location_name":"Ampark Neighborhood"}
+,{"dbn":"10X363","location_name":"Academy For Personal Leadership And Excellence"}
+,{"dbn":"10X368","location_name":"In-Tech Academy (M.S. / High School 368)"}
+,{"dbn":"10X391","location_name":"The Angelo Patri Middle School"}
+,{"dbn":"10X397","location_name":"English Language Learners and International Support Preparatory Academy (ELLIS)"}
+,{"dbn":"10X434","location_name":"Belmont Preparatory High School"}
+,{"dbn":"10X438","location_name":"Fordham Leadership Academy"}
+,{"dbn":"10X439","location_name":"Bronx High School for Law and Community Service"}
+,{"dbn":"10X440","location_name":"DeWitt Clinton High School"}
+,{"dbn":"10X549","location_name":"Discovery High School"}
+,{"dbn":"10X565","location_name":"High School for Energy and Technology"}
+,{"dbn":"11X016","location_name":"P.S. 016 Wakefield"}
+,{"dbn":"11X096","location_name":"P.S. 096 Richard Rodgers"}
+,{"dbn":"11X097","location_name":"P.S. 097 Bronx"}
+,{"dbn":"11X103","location_name":"P.S. 103 Hector Fontanez"}
+,{"dbn":"11X105","location_name":"P.S. 105 Sen Abraham Bernstein"}
+,{"dbn":"11X108","location_name":"P.S. 108 Philip J. Abinanti"}
+,{"dbn":"11X112","location_name":"P.S. 112 Bronxwood"}
+,{"dbn":"11X121","location_name":"P.S. 121 Throop"}
+,{"dbn":"11X127","location_name":"J.H.S. 127 The Castle Hill"}
+,{"dbn":"11X175","location_name":"P.S. 175 City Island"}
+,{"dbn":"11X180","location_name":"M.S. 180 Dr. Daniel Hale Williams"}
+,{"dbn":"11X270","location_name":"Academy for Scholarship and Entrepreneurship: A College Board School"}
+,{"dbn":"11X275","location_name":"High School of Computers and Technology"}
+,{"dbn":"11X290","location_name":"Bronx Academy of Health Careers"}
+,{"dbn":"11X357","location_name":"Young Voices Academy of the Bronx"}
+,{"dbn":"11X370","location_name":"Leaders of Tomorrow"}
+,{"dbn":"11X462","location_name":"Cornerstone Academy for Social Action Middle School (CASA)"}
+,{"dbn":"11X481","location_name":"The STEAM Bridge School"}
+,{"dbn":"11X483","location_name":"The Matilda Avenue School"}
+,{"dbn":"11X514","location_name":"The Bronxwood Preparatory Academy"}
+,{"dbn":"11X532","location_name":"Baychester Middle School"}
+,{"dbn":"11X542","location_name":"Pelham Preparatory Academy"}
+,{"dbn":"11X545","location_name":"Bronx Aerospace High School"}
+,{"dbn":"11X556","location_name":"Bronx Park Middle School"}
+,{"dbn":"11X566","location_name":"Pelham Gardens Middle School"}
+,{"dbn":"11X567","location_name":"Linden Tree Elementary School"}
+,{"dbn":"12X047","location_name":"P.S. 047 John Randolph"}
+,{"dbn":"12X057","location_name":"P.S. 057 Crescent"}
+,{"dbn":"12X134","location_name":"P.S. 134 George F. Bristow"}
+,{"dbn":"12X190","location_name":"E.S.M.T- I.S. 190"}
+,{"dbn":"12X211","location_name":"P.S. 211"}
+,{"dbn":"12X212","location_name":"P.S. 212"}
+,{"dbn":"12X214","location_name":"P.S. 214"}
+,{"dbn":"12X217","location_name":"School of Performing Arts"}
+,{"dbn":"12X251","location_name":"Explorations Academy H.S."}
+,{"dbn":"12X286","location_name":"Fannie Lou Hamer Middle School"}
+,{"dbn":"12X341","location_name":"Accion Academy"}
+,{"dbn":"12X480","location_name":"Bronx Regional High School"}
+,{"dbn":"12X511","location_name":"Bronx Envision Academy"}
+,{"dbn":"12X531","location_name":"Archer Elementary School"}
+,{"dbn":"12X691","location_name":"Bronx Little School"}
+,{"dbn":"13K020","location_name":"P.S. 020 Clinton Hill"}
+,{"dbn":"13K044","location_name":"P.S. 044 Marcus Garvey"}
+,{"dbn":"13K056","location_name":"P.S. 056 Lewis H. Latimer"}
+,{"dbn":"13K113","location_name":"M.S. 113 Ronald Edmonds Learning Center"}
+,{"dbn":"13K256","location_name":"P.S. 256 Benjamin Banneker"}
+,{"dbn":"13K301","location_name":"Satellite East Middle School"}
+,{"dbn":"13K307","location_name":"P.S. 307 Daniel Hale Williams"}
+,{"dbn":"13K412","location_name":"Brooklyn Community Arts & Media High School (BCAM)"}
+,{"dbn":"13K419","location_name":"Science Skills Center High School for Science, Technology and the Creative Arts"}
+,{"dbn":"13K527","location_name":"Urban Assembly Institute of Math and Science for Young Women"}
+,{"dbn":"13K605","location_name":"George Westinghouse Career and Technical Education High School"}
+,{"dbn":"13K616","location_name":"Brooklyn High School for Leadership and Community Service"}
+,{"dbn":"14K034","location_name":"P.S. 034 Oliver H. Perry"}
+,{"dbn":"14K071","location_name":"Juan Morel Campos Secondary School"}
+,{"dbn":"14K084","location_name":"P.S. 084 Jose De Diego"}
+,{"dbn":"14K110","location_name":"P.S. 110 The Monitor"}
+,{"dbn":"14K297","location_name":"P.S. 297 Abraham Stockton"}
+,{"dbn":"14K474","location_name":"PROGRESS High School for Professional Careers"}
+,{"dbn":"14K478","location_name":"The High School for Enterprise, Business and Technology"}
+,{"dbn":"14K610","location_name":"Automotive High School"}
+,{"dbn":"14K614","location_name":"Young Women's Leadership School of Brooklyn"}
+,{"dbn":"15K032","location_name":"P.S. 032 Samuel Mills Sprole"}
+,{"dbn":"15K051","location_name":"M.S. 51 William Alexander"}
+,{"dbn":"15K088","location_name":"J.H.S. 088 Peter Rouget"}
+,{"dbn":"15K094","location_name":"P.S. 094 The Henry Longfellow"}
+,{"dbn":"15K423","location_name":"Brooklyn Frontiers High School"}
+,{"dbn":"15K497","location_name":"The Boerum Hill School for International Studies"}
+,{"dbn":"15K519","location_name":"Cobble Hill School of American Studies"}
+,{"dbn":"15K667","location_name":"Sunset Park High School"}
+,{"dbn":"15K821","location_name":"Sunset Park Prep"}
+,{"dbn":"15K839","location_name":"M.S. 839"}
+,{"dbn":"16K021","location_name":"P.S. 021 Crispus Attucks"}
+,{"dbn":"16K040","location_name":"P.S. 040 George W. Carver"}
+,{"dbn":"16K081","location_name":"P.S. 081 Thaddeus Stevens"}
+,{"dbn":"16K262","location_name":"P.S. 262 El Hajj Malik El Shabazz Elementary School"}
+,{"dbn":"16K335","location_name":"P.S. 335 Granville T. Woods"}
+,{"dbn":"16K455","location_name":"Boys and Girls High School"}
+,{"dbn":"17K091","location_name":"P.S. 091 The Albany Avenue School"}
+,{"dbn":"17K221","location_name":"P.S. 221 Toussaint L'Ouverture"}
+,{"dbn":"17K340","location_name":"I.S. 340"}
+,{"dbn":"17K375","location_name":"P.S. 375 Jackie Robinson School"}
+,{"dbn":"17K382","location_name":"Academy for College Preparation and Career Exploration: A College Board School"}
+,{"dbn":"17K532","location_name":"New Bridges Elementary"}
+,{"dbn":"17K546","location_name":"High School for Public Service: Heroes of Tomorrow"}
+,{"dbn":"17K547","location_name":"Brooklyn Academy of Science and the Environment"}
+,{"dbn":"17K705","location_name":"Brooklyn Arts and Science Elementary School"}
+,{"dbn":"17K745","location_name":"Brooklyn Institute for Liberal Arts"}
+,{"dbn":"18K066","location_name":"P.S. 66"}
+,{"dbn":"18K068","location_name":"I.S. 068 Isaac Bildersee"}
+,{"dbn":"18K135","location_name":"P.S. 135 Sheldon A. Brookner"}
+,{"dbn":"18K208","location_name":"P.S. 208 Elsa Ebeling"}
+,{"dbn":"18K219","location_name":"P.S. 219 Kennedy-King"}
+,{"dbn":"18K233","location_name":"P.S. 233 Langston Hughes"}
+,{"dbn":"18K235","location_name":"P.S. 235 Janice Marie Knight School"}
+,{"dbn":"18K244","location_name":"P.S. 244 Richard R. Green"}
+,{"dbn":"18K276","location_name":"P.S. 276 Louis Marshall"}
+,{"dbn":"18K279","location_name":"P.S. 279 Herman Schreiber"}
+,{"dbn":"18K366","location_name":"The Science And Medicine Middle School"}
+,{"dbn":"18K567","location_name":"Brooklyn Theatre Arts High School"}
+,{"dbn":"18K588","location_name":"Middle School for Art and Philosophy"}
+,{"dbn":"18K635","location_name":"Olympus Academy"}
+,{"dbn":"19K013","location_name":"P.S. 013 Roberto Clemente"}
+,{"dbn":"19K089","location_name":"P.S. 089 Cypress Hills"}
+,{"dbn":"19K202","location_name":"P.S. 202 Ernest S. Jenkyns"}
+,{"dbn":"19K214","location_name":"P.S. 214 Michael Friedsam"}
+,{"dbn":"19K224","location_name":"P.S. 224 Hale A. Woodruff"}
+,{"dbn":"19K290","location_name":"P.S. 290 Juan Morel Campos"}
+,{"dbn":"19K292","location_name":"J.H.S. 292 Margaret S. Douglas"}
+,{"dbn":"19K306","location_name":"P.S. 306 Ethan Allen"}
+,{"dbn":"19K364","location_name":"I.S. 364 Gateway"}
+,{"dbn":"19K404","location_name":"Academy for Young Writers"}
+,{"dbn":"19K409","location_name":"East New York Family Academy"}
+,{"dbn":"19K422","location_name":"Spring Creek Community School"}
+,{"dbn":"19K502","location_name":"FDNY - Captain Vernon A. Richard High School for Fire and Life Safety"}
+,{"dbn":"19K583","location_name":"Multicultural High School"}
+,{"dbn":"19K660","location_name":"W. H. Maxwell Career and Technical Education High School"}
+,{"dbn":"19K677","location_name":"East New York Elementary School of Excellence"}
+,{"dbn":"20K062","location_name":"J.H.S. 062 Ditmas"}
+,{"dbn":"20K200","location_name":"P.S. 200 Benson School"}
+,{"dbn":"20K205","location_name":"P.S. 205 Clarion"}
+,{"dbn":"20K223","location_name":"J.H.S. 223 The Montauk"}
+,{"dbn":"20K227","location_name":"J.H.S. 227 Edward B. Shallow"}
+,{"dbn":"20K445","location_name":"New Utrecht High School"}
+,{"dbn":"20K503","location_name":"P.S. 503: The School of Discovery"}
+,{"dbn":"21K128","location_name":"P.S. 128 Bensonhurst"}
+,{"dbn":"21K303","location_name":"I.S. 303 Herbert S. Eisenberg"}
+,{"dbn":"21K329","location_name":"P.S. 329 Surfside"}
+,{"dbn":"21K337","location_name":"International High School at Lafayette"}
+,{"dbn":"21K344","location_name":"Rachel Carson High School for Coastal Studies"}
+,{"dbn":"21K525","location_name":"Edward R. Murrow High School"}
+,{"dbn":"21K559","location_name":"Life Academy High School for Film and Music"}
+,{"dbn":"22K119","location_name":"P.S. 119 Amersfort"}
+,{"dbn":"22K193","location_name":"P.S. 193 Gil Hodges"}
+,{"dbn":"22K198","location_name":"P.S. 198 Brooklyn"}
+,{"dbn":"22K251","location_name":"P.S. 251 Paerdegat"}
+,{"dbn":"22K315","location_name":"P.S. K315"}
+,{"dbn":"22K381","location_name":"I. S. 381"}
+,{"dbn":"22K405","location_name":"Midwood High School"}
+,{"dbn":"22K425","location_name":"James Madison High School"}
+,{"dbn":"22K611","location_name":"Origins High School"}
+,{"dbn":"23K137","location_name":"P.S./I.S. 137 Rachel Jean Mitchell"}
+,{"dbn":"23K155","location_name":"P.S./ I.S. 155 Nicholas Herkimer"}
+,{"dbn":"23K156","location_name":"P.S. 156 Waverly"}
+,{"dbn":"23K165","location_name":"P.S. 165 Ida Posner"}
+,{"dbn":"23K284","location_name":"The Gregory Jocko Jackson School of Sports, Art, and Technology"}
+,{"dbn":"23K298","location_name":"P.S. 298 Dr. Betty Shabazz"}
+,{"dbn":"23K493","location_name":"Brooklyn Collegiate: A College Board School"}
+,{"dbn":"23K518","location_name":"Kappa V (Knowledge and Power Preparatory Academy)"}
+,{"dbn":"23K522","location_name":"Mott Hall IV"}
+,{"dbn":"23K668","location_name":"Riverdale Avenue Middle School"}
+,{"dbn":"24Q007","location_name":"P.S. 007 Louis F. Simeone"}
+,{"dbn":"24Q013","location_name":"P.S. 013 Clement C. Moore"}
+,{"dbn":"24Q061","location_name":"I.S. 061 Leonardo Da Vinci"}
+,{"dbn":"24Q088","location_name":"P.S. 088 Seneca"}
+,{"dbn":"24Q091","location_name":"P.S. 091 Richard Arkwright"}
+,{"dbn":"31R440","location_name":"New Dorp High School"}
+,{"dbn":"24Q128","location_name":"P.S. 128 The Lorraine Tuzzo, Juniper Valley Elementary School"}
+,{"dbn":"24Q143","location_name":"P.S. 143 Louis Armstrong"}
+,{"dbn":"24Q239","location_name":"P.S. 239"}
+,{"dbn":"24Q290","location_name":"A.C.E. Academy for Scholars at the Geraldine Ferraro Campus"}
+,{"dbn":"24Q307","location_name":"Pioneer Academy"}
+,{"dbn":"24Q455","location_name":"Newtown High School"}
+,{"dbn":"24Q520","location_name":"Middle College High School at LaGuardia Community College"}
+,{"dbn":"24Q600","location_name":"Queens Vocational and Technical High School"}
+,{"dbn":"24Q744","location_name":"VOYAGES Preparatory"}
+,{"dbn":"25Q163","location_name":"P.S. 163 Flushing Heights"}
+,{"dbn":"25Q165","location_name":"P.S. 165 Edith K. Bergtraum"}
+,{"dbn":"25Q214","location_name":"P.S. 214 Cadwallader Colden"}
+,{"dbn":"25Q219","location_name":"P.S. 219 Paul Klapper"}
+,{"dbn":"25Q237","location_name":"I.S. 237"}
+,{"dbn":"25Q242","location_name":"P.S. 242 Leonard P. Stavisky Early Childhood School"}
+,{"dbn":"25Q263","location_name":"Flushing International High School"}
+,{"dbn":"25Q285","location_name":"World Journalism Preparatory: A College Board School"}
+,{"dbn":"25Q460","location_name":"Flushing High School"}
+,{"dbn":"26Q067","location_name":"J.H.S. 067 Louis Pasteur"}
+,{"dbn":"26Q162","location_name":"P.S. 162 John Golden"}
+,{"dbn":"26Q172","location_name":"Irwin Altman Middle School 172"}
+,{"dbn":"26Q186","location_name":"P.S. 186 Castlewood"}
+,{"dbn":"26Q205","location_name":"P.S. 205 Alexander Graham Bell"}
+,{"dbn":"26Q435","location_name":"Martin Van Buren High School"}
+,{"dbn":"26Q566","location_name":"Queens High School of Teaching, Liberal Arts and the Sciences"}
+,{"dbn":"27Q042","location_name":"P.S./M.S 042 R. Vernam"}
+,{"dbn":"27Q053","location_name":"M.S. 053 Brian Piccolo"}
+,{"dbn":"27Q104","location_name":"P.S. 104 The Bays Water"}
+,{"dbn":"27Q207","location_name":"P.S. 207 Rockwood Park"}
+,{"dbn":"27Q210","location_name":"J.H.S. 210 Elizabeth Blackwell"}
+,{"dbn":"27Q223","location_name":"P.S. 223 Lyndon B. Johnson"}
+,{"dbn":"27Q282","location_name":"Knowledge and Power Preparatory Academy VI"}
+,{"dbn":"27Q309","location_name":"Academy of Medical Technology: A College Board School"}
+,{"dbn":"27Q314","location_name":"Epic High School - South"}
+,{"dbn":"27Q324","location_name":"Rockaway Park High School for Environmental Sustainability"}
+,{"dbn":"27Q333","location_name":"Goldie Maple Academy"}
+,{"dbn":"27Q334","location_name":"Epic High School - North"}
+,{"dbn":"27Q351","location_name":"Rockaway Collegiate High School"}
+,{"dbn":"27Q400","location_name":"August Martin High School"}
+,{"dbn":"27Q475","location_name":"Richmond Hill High School"}
+,{"dbn":"28Q050","location_name":"P.S. 050 Talfourd Lawn Elementary School"}
+,{"dbn":"28Q054","location_name":"P.S. 054 Hillside"}
+,{"dbn":"28Q055","location_name":"P.S. 055 Maure"}
+,{"dbn":"28Q080","location_name":"PS 80  The Thurgood Marshall Magnet School of Multimedia and Communication"}
+,{"dbn":"28Q174","location_name":"P.S. 174 William Sidney Mount"}
+,{"dbn":"28Q175","location_name":"P.S. 175 The Lynn Gross Discovery School"}
+,{"dbn":"28Q182","location_name":"P.S. 182 Samantha Smith"}
+,{"dbn":"28Q190","location_name":"J.H.S. 190 Russell Sage"}
+,{"dbn":"28Q310","location_name":"Queens Collegiate: A College Board School"}
+,{"dbn":"28Q338","location_name":"Queens Satellite High School for Opportunity"}
+,{"dbn":"28Q349","location_name":"The Queens School for Leadership and Excellence"}
+,{"dbn":"28Q354","location_name":"The Jermaine L. Green STEM Institute of Queens"}
+,{"dbn":"28Q358","location_name":"M.S. 358"}
+,{"dbn":"28Q680","location_name":"Queens Gateway to Health Sciences Secondary School"}
+,{"dbn":"28Q686","location_name":"Queens Metropolitan High School"}
+,{"dbn":"28Q687","location_name":"Queens High School for the Sciences at York College"}
+,{"dbn":"29Q033","location_name":"P.S. 033 Edward M. Funk"}
+,{"dbn":"29Q034","location_name":"P.S. 034 John Harvard"}
+,{"dbn":"29Q036","location_name":"P.S. 036 Saint Albans School"}
+,{"dbn":"29Q052","location_name":"P.S. 052 Queens"}
+,{"dbn":"29Q116","location_name":"P.S./I.S. 116 William C. Hughley"}
+,{"dbn":"29Q132","location_name":"P.S. 132 Ralph Bunche"}
+,{"dbn":"29Q134","location_name":"P.S. 134 Hollis"}
+,{"dbn":"29Q136","location_name":"P.S. 136 Roy Wilkins"}
+,{"dbn":"29Q147","location_name":"P.S./M.S. 147 Ronald McNair"}
+,{"dbn":"29Q156","location_name":"P.S. 156 Laurelton"}
+,{"dbn":"29Q251","location_name":"P.S. 251 Queens"}
+,{"dbn":"29Q268","location_name":"P.S./I.S. 268"}
+,{"dbn":"29Q270","location_name":"The Gordon Parks School"}
+,{"dbn":"29Q272","location_name":"George Washington Carver High School for the Sciences"}
+,{"dbn":"29Q326","location_name":"Cambria Heights Academy"}
+,{"dbn":"29Q327","location_name":"Eagle Academy for Young Men III"}
+,{"dbn":"29Q355","location_name":"Collaborative Arts Middle School"}
+,{"dbn":"29Q360","location_name":"P.S. 360"}
+,{"dbn":"29Q498","location_name":"Humanities & Arts Magnet High School"}
+,{"dbn":"30Q010","location_name":"I.S. 010 Horace Greeley"}
+,{"dbn":"30Q070","location_name":"P.S. 070"}
+,{"dbn":"30Q084","location_name":"P.S. 084 Steinway"}
+,{"dbn":"30Q111","location_name":"P.S. 111 Jacob Blackwell"}
+,{"dbn":"30Q127","location_name":"P.S. 127 Aerospace Science Magnet School"}
+,{"dbn":"30Q171","location_name":"P.S. 171 Peter G. Van Alst"}
+,{"dbn":"30Q222","location_name":"P.S. Q222 - Fire Fighter Christopher A. Santora School"}
+,{"dbn":"30Q361","location_name":"The Woodside Community School"}
+,{"dbn":"30Q450","location_name":"Long Island City High School"}
+,{"dbn":"30Q575","location_name":"Academy of American Studies"}
+,{"dbn":"30Q580","location_name":"Baccalaureate School for Global Education"}
+,{"dbn":"31R011","location_name":"P.S. 11 Thomas Dongan School"}
+,{"dbn":"31R019","location_name":"P.S. 019 The Curtis School"}
+,{"dbn":"31R020","location_name":"P.S. 020 Port Richmond"}
+,{"dbn":"31R021","location_name":"P.S. 21 Margaret Emery-Elm Park"}
+,{"dbn":"31R026","location_name":"P.S. 026 The Carteret School"}
+,{"dbn":"31R036","location_name":"P.S. 036 J. C. Drumgoole"}
+,{"dbn":"31R038","location_name":"P.S. 038 George Cromwell"}
+,{"dbn":"31R039","location_name":"P.S. 39 Francis J. Murphy Jr."}
+,{"dbn":"31R046","location_name":"P.S. 046 Albert V. Maniscalco"}
+,{"dbn":"31R057","location_name":"P.S. 057 Hubert H. Humphrey"}
+,{"dbn":"31R058","location_name":"Space Shuttle Columbia School"}
+,{"dbn":"31R060","location_name":"P.S. 060 Alice Austen"}
+,{"dbn":"31R062","location_name":"The Kathleen Grimm School for Leadership and Sustainability"}
+,{"dbn":"31R064","location_name":"Gaynor McCown Expeditionary Learning School"}
+,{"dbn":"31R068","location_name":"Port Richmond School for Visionary Learning"}
+,{"dbn":"31R072","location_name":"I.S. 072 Rocco Laurie"}
+,{"dbn":"31R074","location_name":"P.S. 74 Future Leaders Elementary School"}
+,{"dbn":"31R445","location_name":"Port Richmond High School"}
+,{"dbn":"31R450","location_name":"Curtis High School"}
+,{"dbn":"31R455","location_name":"Tottenville High School"}
+,{"dbn":"31R460","location_name":"Susan E. Wagner High School"}
+,{"dbn":"31R470","location_name":"Concord High School"}
+,{"dbn":"31R861","location_name":"Staten Island School of Civic Leadership"}
+,{"dbn":"32K075","location_name":"P.S. 075 Mayda Cortiella"}
+,{"dbn":"32K106","location_name":"P.S. 106 Edward Everett Hale"}
+,{"dbn":"32K123","location_name":"P.S. 123 Suydam"}
+,{"dbn":"32K162","location_name":"J.H.S. 162 The Willoughby"}
+,{"dbn":"32K274","location_name":"P.S. 274 Kosciusko"}
+,{"dbn":"32K291","location_name":"J.H.S. 291 Roland Hayes"}
+,{"dbn":"32K349","location_name":"I.S. 349 Math, Science & Tech."}
+,{"dbn":"32K384","location_name":"P.S. /I.S. 384 Frances E. Carter"}
+,{"dbn":"32K549","location_name":"The Brooklyn School for Social Justice"}
+,{"dbn":"32K552","location_name":"The Academy of Urban Planning and Engineering"}
+,{"dbn":"32K556","location_name":"Bushwick Leaders High School for Academic Excellence"}
+,{"dbn":"32K564","location_name":"Bushwick Community High School"}
+,{"dbn":"75K004","location_name":"P.S. K004"}
+,{"dbn":"75K077","location_name":"P.S. K077"}
+,{"dbn":"75K140","location_name":"P.S. K140"}
+,{"dbn":"75K141","location_name":"P.S. K141"}
+,{"dbn":"75K231","location_name":"P.S. K231"}
+,{"dbn":"75K369","location_name":"P.S. K369 - Coy L. Cox School"}
+,{"dbn":"75K753","location_name":"P.S. K753 - School for Career Development"}
+,{"dbn":"75M035","location_name":"P.S. 035"}
+,{"dbn":"75M079","location_name":"P.S. M079 - Horan School"}
+,{"dbn":"75M138","location_name":"P.S. 138"}
+,{"dbn":"75M226","location_name":"P.S. M226"}
+,{"dbn":"75Q075","location_name":"Robert E. Peary School"}
+,{"dbn":"75Q256","location_name":"P.S. Q256"}
+,{"dbn":"75Q752","location_name":"Queens Transition Center"}
+,{"dbn":"75R037","location_name":"P.S. R037"}
+,{"dbn":"75X012","location_name":"P.S. X012 Lewis and Clark School"}
+,{"dbn":"75X017","location_name":"P.S. X017"}
+,{"dbn":"75X168","location_name":"P.S. 168"}
+,{"dbn":"75X188","location_name":"P.S. X188"}
+,{"dbn":"75X352","location_name":"The Vida Bogart School for All Children"}
+,{"dbn":"75X469","location_name":"P469X - The Bronx School for Continuous Learners"}
+,{"dbn":"75X723","location_name":"P.S. 723"}
+,{"dbn":"75X754","location_name":"J. M. Rapport School Career Development"}]

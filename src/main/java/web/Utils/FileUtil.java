@@ -1,18 +1,20 @@
-package main.java.web.Utils;
+package web.Utils;
 
 import edu.nyu.dss.similarity.Framework;
 import org.apache.commons.lang3.tuple.Pair;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import main.java.web.exception.FileException;
+import web.exception.FileException;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
 import java.io.*;
 import java.net.MalformedURLException;
+import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -29,11 +31,14 @@ import java.util.List;
 @Service
 public class FileUtil {
 
+    @Value("${spadas.file.baseUri}")
+    private String basePath;
+
     private final Path fileStorageLocation;
 
     private final FileProperties fileProperties;
 
-//    @Autowired
+    //    @Autowired
     public FileUtil(FileProperties fileProperties) {
         this.fileProperties = fileProperties;
         this.fileStorageLocation = Paths.get(fileProperties.getBaseUri()).toAbsolutePath().normalize();
@@ -116,32 +121,9 @@ public class FileUtil {
 //     Load file as Resource
         Resource resource = loadFileAsResource(file);
         String fileName = file.getName();
-        System.out.println("file name = " + fileName);
-
         try {
-            //????????ContentType
-            String suffix = fileName.substring(fileName.lastIndexOf('.') + 1);
-            switch (suffix) {
-                case "csv":
-                    response.setContentType("text/csv");
-                    break;
-                case "xls":
-                case "xlsx":
-                    response.setContentType("application/vnd.ms-excel");
-                    break;
-                case "pdf":
-                    response.setContentType("application/pdf");
-                    break;
-                case "docx":
-                case "doc":
-                    response.setContentType("application/msword");
-                    break;
-                //????????????????
-                default:
-                    response.setContentType("application/octet-stream");
-                    break;
-
-            }
+            String mimeType = URLConnection.guessContentTypeFromName(fileName);
+            response.setContentType(mimeType);
             response.setCharacterEncoding("UTF-8");
             fileName = URLEncoder.encode(fileName, "UTF-8").replaceAll("\\+", "%20");
             response.setHeader("Content-disposition", "attachment;filename*=utf-8''" + fileName);
@@ -169,7 +151,7 @@ public class FileUtil {
      */
     public Pair<String[], String[][]> readPreviewDataset(String filename, int max, double[][] data) throws IOException {
 //        File file = findFiles(Framework.aString, filename);
-        File file = new File(Framework.aString + "\\" + filename);
+        File file = new File(basePath + "\\" + filename);
         if (file.exists()) {
             System.out.println();
         }
