@@ -24,7 +24,7 @@ public class Hausdorff {
 	static double weight[];// indicate the weight on each dimension
 	
 	
-	static void setBoundChoice(int boundChoice) {
+	public static void setBoundChoice(int boundChoice) {
 		tightBound = boundChoice;
 	}
 	
@@ -45,7 +45,6 @@ public class Hausdorff {
 		weight = new double[dimension];
 		for(int i=0; i<dimension;i++) {
 			weight[i] =  weightHashMap.get(i);
-			System.out.println(weight[i]);
 		}
 	}
 	

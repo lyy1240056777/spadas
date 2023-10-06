@@ -9,16 +9,12 @@ import java.util.Set;
 import edu.rmit.trajectory.clustering.kpaths.Util;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
-
-//@JsonIgnoreProperties({"nodelist","assignedCluster","bounds","prunedCounter"})
 @JsonIgnoreProperties({"assignedCluster", "bounds", "prunedCounter"})
-@ApiModel(value = "indexNode", description = "dataset index node")
+@Data
 // this class will build the index based on the
 public class indexNode {
-    @ApiModelProperty("dataset type, 0 for trajactory 1 for point set")
     int type; // 0 for line , 1 for point
     //    有些属性不能传
     @JsonIgnore
@@ -571,29 +567,7 @@ public class indexNode {
 //    建议改成Min(O/Q, O/D)
 //    灵感来自李禛的毕业论文第10页
     public double intersectedArea(double querymax[], double querymin[], int dim, boolean nonselectedDimension[], boolean dimensionAll) {
-        if (nonselectedDimension != null && !dimensionAll) {
-            /*if (!intersected(querymax, querymin, dim, nonselectedDimension, dimensionAll)) {
-                return 0;
-            } else {
-                double area = 1, areaQ = 1, areaD = 1;
-                for (int i = 0; i < dim; i++) {
-                    if (!nonselectedDimension[i]) {//
-                        if (querymin[i] < mbrmin[i])
-                            area *= Math.min(querymax[i], mbrmax[i]) - mbrmin[i];
-                        else
-                            area *= Math.min(querymax[i], mbrmax[i]) - querymin[i];
-                        areaD *= mbrmax[i] - mbrmin[i];
-                        areaQ *= querymax[i] - querymin[i];
-                    }
-                }
-                double dist = Math.min(area / areaD, area / areaQ);
-                return Math.abs(dist);
-            }*/
-//            暂时不考虑需要选择维度的情况，不然太复杂了
-            return 0;
-        } else { // 选择全部维度
-            return intersectedArea(querymax, querymin, dim);
-        }
+        return intersectedArea(querymax, querymin, dim);
     }
 
     /*
@@ -1055,19 +1029,7 @@ public class indexNode {
             this.sum[i] += sum[i] * 1 / userNumber.get(userID[traidx - 1]);
     }
 
-    public double getTotalCoveredPointsFair() {
-        return totalCoveredPointsFair;
-    }
-
     public void setTotalCoveredPointsFair(double totalCoveredPointsFair) {
         this.totalCoveredPointsFair = totalCoveredPointsFair;
-    }
-
-    public int getType() {
-        return type;
-    }
-
-    public void setType(int i) {
-        this.type = i;
     }
 }

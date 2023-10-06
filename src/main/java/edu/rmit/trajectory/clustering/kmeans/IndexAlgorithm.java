@@ -206,13 +206,10 @@ public class IndexAlgorithm {
 
     // with weight to build index
     public indexNode buildBalltree2(double[][] itemMatrix, int dimension, int capacity, int userID[], Map<Integer, Integer> userNumber, double[] weight) {
-        //	System.out.println("Building Ball-tree using Matrix...");
-        //long startTime1 = System.nanoTime();
-//		int deepth = (int) (Math.log(itemMatrix.length)/Math.log(2));//the deepth is computed based on binary tree
+//		int depth = (int) (Math.log(itemMatrix.length)/Math.log(2));//the depth is computed based on binary tree
 //		试一下深度多少能不栈溢出
-//		在这里设置深度可还行
-        int deepth = 8;
-        indexNode rootKmeans = BallTreeMatrix.create(itemMatrix, capacity, deepth, weight, dimension);//we should not set the deepth too deep
+        int depth = 8;
+        indexNode rootKmeans = BallTreeMatrix.create(itemMatrix, capacity, depth, weight, dimension);//we should not set the deepth too deep
         if (userNumber == null)
             updateSum(rootKmeans, dimension);
         else {// for the fair clustering
@@ -222,10 +219,6 @@ public class IndexAlgorithm {
         updateNodeId(rootKmeans, 1);
         calculateMaxBoundBox(rootKmeans, dimension, itemMatrix);
         calculateMinBoundBox(rootKmeans, dimension, itemMatrix);
-        long endtime = System.nanoTime();
-        //	System.out.println("index time cost: "+(endtime-startTime1)/1000000000.0);
-        //	System.out.println("the count of Ball-tree using Matrix is " +
-        //		rootKmeans.getTotalCoveredPoints()+", the radius is "+rootKmeans.getRadius());
         return rootKmeans;
     }
 

@@ -12,9 +12,8 @@ spadas:
   leaf-capacity: 1000
   cache-dataset: true
   cache-index: true
-  save-index: false
+  save-index: true
   frontend-limitation: 10000
   file:
     baseUri: ./dataset-mini/
-    # 网页请求路径
     staticUri: /dataset-mini/

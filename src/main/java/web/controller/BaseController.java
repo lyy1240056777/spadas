@@ -1,19 +1,11 @@
 package web.controller;
 
 import edu.rmit.trajectory.clustering.kmeans.indexNode;
-import com.github.xiaoymin.knife4j.annotations.DynamicParameter;
-import com.github.xiaoymin.knife4j.annotations.DynamicResponseParameters;
-import edu.nyu.dss.similarity.Framework;
-import edu.nyu.dss.similarity.SSSData;
-import edu.nyu.dss.similarity.SSSOperate;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import web.DTO.*;
+import web.param.*;
 import web.Utils.FileU;
 import web.Utils.FileUtil;
 import web.VO.DatasetVo;
@@ -22,19 +14,12 @@ import web.VO.PreviewVO;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import web.service.FrameworkService;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.*;
 import java.util.List;
 
-
-/**
- * @author Tian Qi Qing
- * @version 1.0
- **/
-
-@Api
 @RestController
 @CrossOrigin
 public class BaseController {
@@ -42,24 +27,30 @@ public class BaseController {
     private FileUtil fileService;
 
     @Autowired
-    private Framework framework;
+    private FrameworkService framework;
 
     //    本来是设计的只传cityNode，但对于不存在城市形式的数据集集来说，需要重新设计传参
 //    直接传List<indexNode>，因为indexNode中有些属性会被忽略，所以对象大小不会太大
     @RequestMapping(value = "spadas/api/load", method = RequestMethod.GET)
-    public List<indexNode> loadData(@RequestParam int id) {
+    public List<indexNode> loadData() {
         return framework.indexNodes;
     }
 
-    @ApiOperation("get dataset by id")
     @RequestMapping(value = "/spadas/api/getds", method = RequestMethod.GET)
-    @ApiImplicitParam(name = "id", value = "dataset id")
-    @DynamicResponseParameters(name = "SingleDatasetDataVO", properties = {
-            @DynamicParameter(name = "node", value = "node summary", dataTypeClass = DatasetVo.class),
-    })
-
     public Map<String, Object> getDatasetById(@RequestParam int id) {
-        DatasetVo vo = framework.getDatasetVO(id);
+//        DatasetVo vo = framework.getDatasetVO(id);
+        // set options
+        DatasetQueryParams options = new DatasetQueryParams();
+        options.setK(10);
+        options.setDim(2);
+        options.setQuerydata(new double[1][]);
+        options.setDatasetId(-1);
+        //    0: Haus, 1: IA, 2: GBO, 3: EMD
+        options.setMode(0);
+        options.setError(0.0);
+        options.setApproxi(true);
+        options.setUseIndex(true);
+        DatasetVo vo = framework.datasetAugment(id, 2, 1, options);
         HashMap<String, Object> res = new HashMap<>();
         res.put("node", vo);
         return res;
@@ -72,62 +63,22 @@ public class BaseController {
      * @param qo
      * @return
      */
-    @ApiOperation("range query")
-    @DynamicResponseParameters(name = "RangeQueryModel", properties = {
-            @DynamicParameter(name = "nodes", value = "list of indexNode", dataTypeClass = indexNode.class),
-    })
     @RequestMapping(value = "spadas/api/rangequery", method = RequestMethod.POST)
-    public Map<String, Object> rangequery(@RequestBody rangequeryDTO qo) {
+    public Map<String, Object> rangequery(@RequestBody RangeQueryParams qo) {
         HashMap<String, Object> result = new HashMap();
-//        范围查询承担了查找对应城市的数据集的工作，所以当qo的city name为空时才是范围查询，否则直接返回对应city name下的节点
-//        需要更改对应的前端state属性
-//        专家建议：最好不要传索引结构
-//        不需要城市查询了
-        /*if (qo.getCityName() != "") {
-//            result.put("nodes", Framework.cityIndexNodeMap.get(qo.getCityName()));
-            List<indexNode> nodes = Framework.cityIndexNodeMap.get(qo.getCityName());
-            List<DatasetVo> vos = new ArrayList<>();
-            for (indexNode node : nodes) {
-                vos.add(new DatasetVo(node));
-            }
-            result.put("nodes", vos);
-        } else {
-//            范围查询的算法函数
-            result.put("nodes", Framework.rangequery(qo));
-        }*/
-//        直接调用范围查询方法
         result.put("nodes", framework.rangequery(qo));
         return result;
     }
 
-    @ApiOperation("keywords query")
-    @DynamicResponseParameters(name = "KeywordsQueryModel", properties = {
-            @DynamicParameter(name = "nodes", value = "list of indexNode", dataTypeClass = indexNode.class),
-    })
     @RequestMapping(value = "spadas/api/keywordsquery", method = RequestMethod.POST)
-    public Map<String, Object> keywordsquery(@RequestBody keywordsDTO qo) {
+    public Map<String, Object> keywordsquery(@RequestBody KeywordsParams qo) {
         return new HashMap() {{
             put("nodes", framework.keywordsQuery(qo));
         }};
     }
 
-
-    @ApiOperation("upload dataset")
-    @DynamicResponseParameters(name = "UploadModel", properties = {
-            @DynamicParameter(name = "matrix", value = "2d array of uploaded dataset matrix", dataTypeClass = indexNode.class),
-    })
     @RequestMapping(value = "spadas/api/uploaddataset", method = RequestMethod.POST)
-//    public Map<String,Object> uploadDataset(@RequestParam("file") MultipartFile file) throws IOException {
-//        String filename = fileService.uploadFile(file);
-////        argo: 4
-////        poi: 5
-//        Framework.datalakeID=4;
-////        call readSingleFile method
-//        double [][] matrix = Framework.readSingleFile("/argoverse/"+filename);
-//        return new HashMap(){{put("matrix",matrix);}};
-//    }
     public Map<String, Object> uploadDataset(@RequestParam("file") MultipartFile file, @RequestParam("filename") String filename, @RequestParam("k") int k) throws IOException {
-        System.out.println(file.getName());
         Pair<indexNode, double[][]> pair = framework.readNewFile(file, filename);
         List<DatasetVo> result = framework.datasetQuery(pair.getLeft(), pair.getRight(), k);
         if (pair == null) {
@@ -140,50 +91,23 @@ public class BaseController {
             put("querynode", pair.getLeft());
             put("queryData", pair.getRight());
         }};
-//        comment for safety
-//        for (MultipartFile file : files) {
-//            String fileName = fileService.uploadFile(file);
-//        }
-
-
-//        String fileName = fileService.uploadFile(file);
-//        File[] files = fileFolder.listFiles();
-//        Framework.readFolder(fileFolder, 270000);
-//        String filename = fileService.uploadFile(file);
-//        argo: 4
-//        poi: 5
-//        Framework.datalakeID=4;
-//        call readSingleFile method
-//        double [][] matrix = Framework.readSingleFile("/argoverse/"+filename);
-//        return new HashMap(){{put("matrix",matrix);}};
     }
 
-    @ApiOperation("query by dataset")
-    @DynamicResponseParameters(name = "DatasetSearchModel", properties = {
-            @DynamicParameter(name = "nodes", value = "list of DatasetVO", dataTypeClass = DatasetVo.class),
-    })
     @RequestMapping(value = "spadas/api/dsquery", method = RequestMethod.POST)
-//    样例查询
-    public Map<String, Object> datasetQuery(@RequestBody dsqueryDTO qo) throws IOException, CloneNotSupportedException {
+    public Map<String, Object> datasetQuery(@RequestBody DatasetQueryParams qo) throws IOException {
         List<DatasetVo> result = framework.datasetQuery(qo);
         return new HashMap() {{
             put("nodes", result);
         }};
     }
 
-    @ApiOperation("download dataset")
     @GetMapping("spadas/api/file/{id}")
     public void downloadFile(@PathVariable int id, HttpServletRequest request, HttpServletResponse response) {
         fileService.downloadFile(framework.fileIDMap.get(id), request, response);
     }
 
-    @ApiOperation("data preview after join or union")
-    @DynamicResponseParameters(name = "PreviewModel", properties = {
-            @DynamicParameter(name = "headers", value = "headers of csv, Type: List<String[]>"),
-            @DynamicParameter(name = "bodies", value = "bodies of csv, Type: List<String[][]>"),
-    })
     @PostMapping("spadas/api/preview")
-    public Map<String, Object> datasetPreview(@RequestBody PreviewDTO dto) {
+    public Map<String, Object> datasetPreview(@RequestBody PreviewParams dto) {
         List<String[]> headers = new ArrayList<>();
         List<String[][]> bodies = new ArrayList<>();
         dto.getIds().forEach(id -> {
@@ -201,25 +125,13 @@ public class BaseController {
         }};
     }
 
-
-    @ApiOperation("dataset join")
     @RequestMapping(value = "spadas/api/join", method = RequestMethod.GET)
     public JoinVO datasetJoin(@RequestParam int queryId, @RequestParam int datasetId, @RequestParam int rows) throws IOException {
         return framework.join(queryId, datasetId, rows);
     }
 
-//    Union操作
-//    @RequestMapping(value = "spadas/api/union", method = RequestMethod.POST)
-//    public Map<String, indexNode> datasetUnion(@RequestBody dsqueryDTO qo) throws IOException {
-//        Framework.UnionRangeQuery(qo.getQuerydata(), qo.getDatasetId(), 2);
-////        为啥返回这种东西？？？
-//        Map<String, indexNode> res = new HashMap<>();
-//        res.put("nodes", Framework.indexMap.get(1));
-//        return res;
-//    }
-
     @PostMapping("spadas/api/union")
-    public PreviewVO datasetUnion(@RequestBody UnionDTO dto) {
+    public PreviewVO datasetUnion(@RequestBody UnionParams dto) {
         String type = "union";
         List<String> headers = Arrays.asList("lat", "lng");
         List<List<double[]>> body = framework.union(dto);
@@ -227,33 +139,10 @@ public class BaseController {
     }
 
     @PostMapping("spadas/api/unionRangeQuery")
-    public PreviewVO datasetUnionRangeQuery(@RequestBody UnionRangeQueryDTO dto) {
+    public PreviewVO datasetUnionRangeQuery(@RequestBody UnionRangeQueryParams dto) {
         String type = "union";
         List<String> headers = Arrays.asList("lat", "lng");
         List<List<double[]>> body = framework.unionRangeQuery(dto);
         return new PreviewVO(type, headers, body);
-    }
-
-    @GetMapping("spadas/api/sss/load")
-    public Map<Integer, Double[]> loadSSS() throws IOException {
-        if (SSSOperate.placeIDMap.isEmpty()) {
-            SSSOperate.initSSS();
-        }
-        return SSSOperate.placeIDMap;
-    }
-
-    @GetMapping("spadas/api/sss/get/{param}")
-    public List<SSSData> getSSSData(@PathVariable int param) throws IOException {
-        return SSSOperate.selectSSSData(param);
-    }
-
-    @GetMapping("spadas/api/sss/file/{id}")
-    public void downloadSSSFile(@PathVariable int id, HttpServletRequest request, HttpServletResponse response) {
-        System.out.println("call downloadFile method, id = " + id);
-        SSSData sss = SSSOperate.sssDataList.get(id);
-        String fileName = sss.getName();
-        File downloadFile = new File(SSSOperate.rootDir, fileName);
-        System.out.println(downloadFile.isFile());
-        fileService.downloadFile(downloadFile, request, response);
     }
 }
