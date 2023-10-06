@@ -1,17 +1,13 @@
-package web.DTO;
+package web.param;
 
-import io.swagger.annotations.ApiModel;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-
-/**
- * @author Tian Qi Qing
- * @version 1.0
- * @date 2022/03/04/14:33
- **/
 @Data
-@ApiModel("dataset query DTO")
-public class dsqueryDTO {
+@NoArgsConstructor
+@AllArgsConstructor
+public class DatasetQueryParams {
     int k=10; //top-k
     int dim; //dimension
     double[][] querydata;

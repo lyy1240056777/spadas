@@ -11,6 +11,8 @@ import org.springframework.stereotype.Component;
 public class SpadasConfig {
     private int dimension;
 
+    //    对于中国地图，resolution设置为7或8比较好
+//    static int resolution = 3; // also a parameter to test the grid-based overlap, and the approximate hausdorff, and range query
     private int resolution;
 
     private int leafCapacity;

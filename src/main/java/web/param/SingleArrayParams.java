@@ -1,4 +1,4 @@
-package web.DTO;
+package web.param;
 
 import lombok.Data;
 
@@ -8,10 +8,9 @@ import java.util.List;
 /**
  * @author Tian Qi Qing
  * @version 1.0
- * @date 2022/03/20/20:51
+ * @date 2022/03/16/18:21
  **/
 @Data
-public class PreviewDTO {
-    List<Integer> ids = new ArrayList<>();
-    int rows;
+public class SingleArrayParams<T> {
+    List<T> list = new ArrayList<>();
 }

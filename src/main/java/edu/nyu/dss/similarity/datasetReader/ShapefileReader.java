@@ -60,14 +60,11 @@ public class ShapefileReader {
         file.setReadOnly();
         FileDataStore store = FileDataStoreFinder.getDataStore(file);
         SimpleFeatureSource featureSource = store.getFeatureSource();
-        log.info("{}", featureSource.getInfo().getDescription());
         try (SimpleFeatureIterator i = featureSource.getFeatures().features()) {
             SimpleFeature feature;
             List<double[]> locations = new ArrayList<>();
             while (i.hasNext()) {
                 feature = i.next();
-                int count = feature.getAttributeCount();
-                log.info("Entity {} contains {} items", feature.getID(), count);
 
                 String latKey = "Y";
                 String lonKey = "X";

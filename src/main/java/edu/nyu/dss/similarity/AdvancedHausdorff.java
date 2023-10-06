@@ -333,7 +333,6 @@ public class AdvancedHausdorff extends Hausdorff{
 			    	Map<Integer, Pair<double[], double[]>> segmentA = generateSegment(mbrA.getLeft(), mbrA.getRight(), dimension);
 			    	newlb = computeMBRLowerBound(segmentA,segmentB,dimension);
 					newub = computeMBRUpperBound(segmentA,segmentB,dimension);
-				//	System.out.println(newlb+","+newub);
 				}
 				if(join && newlb>joinThreshold) {//if new lb is bigger than a given threshold, filter
 					continue;
@@ -407,7 +406,6 @@ public class AdvancedHausdorff extends Hausdorff{
 			else
 				segmentA = generateSegment(point1xys[apoint], point1xys[apoint], dimension);
 		}
-	//	System.out.println(segmentA.size());
 		for (int i=0; i<length; i++) {
 			double pivot_distance, bradius = 0;
 			EuclideanCounter++;
@@ -491,7 +489,6 @@ public class AdvancedHausdorff extends Hausdorff{
 //	need to modify, compare with 0
 //	lower bound should not be less than 0
     static double computeNewLowerBound(double pivotDis, double radiusA, double radiusB) {
-		//System.out.println(pivotDis-radiusB);
 //    	return pivotDis-radiusB;
 		return Math.max(pivotDis - radiusB, 0);
     }

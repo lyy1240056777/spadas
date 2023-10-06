@@ -84,7 +84,7 @@ public class ChinaReader {
                 }
             }
             data = list.toArray(new double[i][]);
-            log.info("File {} has {} lines", file.getName(), list.size());
+            log.debug("File {} has {} lines", file.getName(), list.size());
             pointCounter.put(list.size());
         } catch (IOException e) {
             throw e;

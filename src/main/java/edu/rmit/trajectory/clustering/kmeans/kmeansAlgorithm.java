@@ -1852,7 +1852,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 		//	System.out.println("aaaaa "+indexkmeans.getdistanceCompute());
 			numComputeEuc += indexkmeans.getdistanceCompute();
 			nodeReach += indexkmeans.getNodeAccess();
-			dataReach += indexkmeans.getdataAccess();
+			dataReach += indexkmeans.getDataAccess();
 			CENTERSEuc.get(i).setcoveredPoints(result);
 			assigned.addAll(result);
 		}

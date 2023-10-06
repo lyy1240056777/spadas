@@ -2,7 +2,6 @@ package edu.nyu.dss.similarity;
 
 import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import io.swagger.annotations.ApiModel;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +9,6 @@ import java.util.List;
 
 //a temporary data structure for demo,
 //to show a city node before showing all the dataset nodes
-@ApiModel(value = "cityNode", description = "city index node")
 public class CityNode {
     public String cityName;
     @JsonIgnore

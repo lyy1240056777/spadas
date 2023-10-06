@@ -20,6 +20,10 @@ public class EffectivenessStudy {
 
     @Autowired
     private SingleFileReader singleFileReader;
+
+    @Autowired
+    private Search search;
+
     /*
      * combine two integers to produce a new value
      */
@@ -113,7 +117,6 @@ public class EffectivenessStudy {
                 int x = (int) ((dataset[i][0] - minx) / unit);
                 int y = (int) ((dataset[i][1] - miny) / unit);
                 long zcode = combine(x, y, resolution);
-                //	System.out.println(zcode);
 //				if(!zcodeaArrayList.contains(zcode))
 //					zcodeaArrayList.add(zcode);
             }
@@ -151,7 +154,7 @@ public class EffectivenessStudy {
     }
 
     public HashMap<Integer, ArrayList<Integer>> storeZcurveFile(double minx, double miny, double range,
-                                                                       int dimension, int resolution, String zcodeFile, int limit, Map<Integer, String> DatasetMapping) throws FileNotFoundException, IOException {
+                                                                int dimension, int resolution, String zcodeFile, int limit, Map<Integer, String> DatasetMapping) throws FileNotFoundException, IOException {
         HashMap<Integer, ArrayList<Integer>> zcodeMap = new HashMap<Integer, ArrayList<Integer>>();// using the z-curve to store the encoding based on binary of x, y
         int numberCells = (int) Math.pow(2, resolution);
         double unit = range / numberCells;
@@ -175,7 +178,7 @@ public class EffectivenessStudy {
     /*
      * scan every dataset to find the top-k
      */
-    static HashMap<Integer, Double> topkAlgorithmZcurveHashMap(Map<Integer, ArrayList<Integer>> bitMap, ArrayList<Integer> query, int k) {
+    public HashMap<Integer, Double> topkAlgorithmZcurveHashMap(Map<Integer, ArrayList<Integer>> bitMap, ArrayList<Integer> query, int k) {
         HashMap<Integer, Double> result = new HashMap<Integer, Double>();
         HashMap<Integer, PriorityQueue<queueMain>> queues = new HashMap<Integer, PriorityQueue<queueMain>>();
         for (int datasetid : bitMap.keySet()) {
@@ -187,7 +190,7 @@ public class EffectivenessStudy {
                 }
             }
             double reverseoverlapRatio = 1 - counter / (double) query.size();
-            result = Search.holdingTopK(result, datasetid, reverseoverlapRatio, k, queues, null);
+            result = search.holdingTopK(result, datasetid, reverseoverlapRatio, k, queues, null);
         }
         return result;
     }

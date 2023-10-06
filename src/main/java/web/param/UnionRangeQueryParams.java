@@ -1,9 +1,9 @@
-package web.DTO;
+package web.param;
 
 import lombok.Data;
 
 @Data
-public class UnionRangeQueryDTO {
+public class UnionRangeQueryParams {
     int queryId;
     double[] rangeMax;
     double[] rangeMin;

@@ -24,7 +24,6 @@ public class Join {
             indexDSS.NearestNeighborSearchBall(queryPoint, idxDataset, dimension, dataset, minDistNearestID);
             joinNearestMap.put(i++, (int) minDistNearestID[1]);
         }
-        System.out.println(joinNearestMap.get(1));
     }
 
     // TODS paper of Hanan
@@ -154,7 +153,7 @@ public class Join {
                 continue;
             boolean asplit = AdvancedHausdorff.stopSplitCondition(anode, splitOption);
             boolean bsplit = AdvancedHausdorff.stopSplitCondition(bnode, splitOption);
-            if (asplit == true && bsplit == true) {//if two nodes are null, i.e., they are points // we can change it to radius threshold
+            if (asplit && bsplit) {//if two nodes are null, i.e., they are points // we can change it to radius threshold
                 //	System.out.println(secondq.getPointId());
                 //TODO mod
                 aHeaps.poll();

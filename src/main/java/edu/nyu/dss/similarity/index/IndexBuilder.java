@@ -2,12 +2,10 @@ package edu.nyu.dss.similarity.index;
 
 import edu.nyu.dss.similarity.CityNode;
 import edu.nyu.dss.similarity.EffectivenessStudy;
-import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
-import edu.nyu.dss.similarity.statistics.PointCounter;
+import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.indexNode;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -18,46 +16,8 @@ import java.util.List;
 
 @Component
 public class IndexBuilder {
-
-
-    @Value("${spadas.dimension}")
-    private int dimension;
-
-    @Value("${spadas.cache-dataset}")
-    private boolean cacheDataset;
-
-    @Value("${spadas.leaf-capacity}")
-    private int capacity;
-
-    @Value("${spadas.cache-index}")
-    private boolean cacheIndex;
-
-    @Value("${spadas.save-index}")
-    private boolean saveIndex;
-
-    @Value("${spadas.resolution}")
-    public int resolution;
-
-    @Value("${spadas.frontend-limitation}")
-    public int datasetLimitation;
-
     @Autowired
-    private DatasetSizeCounter datasetSizeCounter;
-
-    @Autowired
-    private PointCounter pointCounter;
-
-    @Autowired
-    private DatasetPerDir datasetPerDir;
-
-    @Autowired
-    private DatasetIDMapping datasetIDMapping;
-
-    @Autowired
-    private FileIDMap fileIDMap;
-
-    @Autowired
-    private DataMapPorto dataMapPorto;
+    private SpadasConfig config;
 
     @Autowired
     private IndexAlgorithm indexDSS;
@@ -80,7 +40,7 @@ public class IndexBuilder {
     private double[] weight = null;
 
     @Deprecated
-    private String indexString = "";
+    private final String indexString = "index/";
 
     @Deprecated
     static double minx = -90, miny = -180;
@@ -89,38 +49,17 @@ public class IndexBuilder {
     @Deprecated
     static double spaceRange = 100;
 
-    // create index for a single dataset in a datalake
-    public void createDatasetIndex(int a, double[][] dataset) {
-        indexNode rootBall;
-        if (buildOnlyRoots) {// just create the root node, for datalake creation
-            rootBall = createRootsDataset(dataset, dimension, a);
-        } else {// create the full tree
-            rootBall = indexDSS.buildBalltree2(dataset, dimension, capacity, null, null, weight);
-            String indexFileName = indexString + a + ".txt";
-            File tempFile = new File(indexFileName);
-            if (!tempFile.exists() && saveIndex)//&& !aString.contains("porto") && !aString.contains("beijing")
-                indexDSS.storeIndex(rootBall, 1, indexFileName, 0);
-            if (indexMap == null)
-                indexMap = new IndexMap();
-            indexMap.put(a, rootBall);
-        }
-        indexDSS.setGloabalid();
-        rootBall.setroot(a);// set an id to identify which dataset it belongs to
-        if (a < datasetLimitation)
-            indexNodes.add(rootBall);
-    }
-
     public indexNode createDatasetIndex(int a, double[][] dataset, int type, CityNode cityNode) {
         indexNode rootBall;
         if (buildOnlyRoots) {// just create the root node, for datalake creation（只建下层索引的根节点，作为上层索引的叶子节点）
-            rootBall = createRootsDataset(dataset, dimension, a);
+            rootBall = createRootsDataset(dataset, config.getDimension());
         } else {// create the full tree
 //            核心核心核心算法，建树
-            rootBall = indexDSS.buildBalltree2(dataset, dimension, capacity, null, null, weight);
+            rootBall = indexDSS.buildBalltree2(dataset, config.getDimension(), config.getLeafCapacity(), null, null, weight);
             rootBall.setType(type);
-            String indexFileName = indexString + String.valueOf(a) + ".txt";
+            String indexFileName = indexString + a + ".txt";
             File tempFile = new File(indexFileName);
-            if (!tempFile.exists() && saveIndex)//&& !aString.contains("porto") && !aString.contains("beijing")
+            if (!tempFile.exists() && config.isSaveIndex())//&& !aString.contains("porto") && !aString.contains("beijing")
                 indexDSS.storeIndex(rootBall, 1, indexFileName, 0);
             if (indexMap == null)
                 indexMap = new IndexMap();
@@ -143,8 +82,11 @@ public class IndexBuilder {
     /*
      * just create a root node to cover all the points
      */
-    private indexNode createRootsDataset(double[][] dataset, int dimension, int datasetid) {
-        double max[], min[], pivot[], radius = 0;
+    private indexNode createRootsDataset(double[][] dataset, int dimension) {
+        double[] max;
+        double[] min;
+        double[] pivot;
+        double radius = 0;
         max = new double[dimension];
         min = new double[dimension];
         for (int i = 0; i < dimension; i++) {
@@ -181,8 +123,8 @@ public class IndexBuilder {
     public void samplingDataByGrid(double[][] data, int id, indexNode node) {
         double xMin = node.getPivot()[0] - node.getRadius();
         double yMin = node.getPivot()[1] - node.getRadius();
-        double unit = node.getRadius() * 2 / Math.pow(2, resolution);
-        int len = (int) Math.pow(2, resolution);
+        double unit = node.getRadius() * 2 / Math.pow(2, config.getResolution());
+        int len = (int) Math.pow(2, config.getResolution());
         HashMap<Integer, Integer> dataSamp = new HashMap<>();
         for (double[] d : data) {
             int xSamp = (int) ((d[0] - xMin) / unit);
@@ -210,7 +152,7 @@ public class IndexBuilder {
 
     //    旧的z-order生成方法，
     public void storeZcurve(double[][] dataset, int datasetid) {
-        int numberCells = (int) Math.pow(2, resolution);
+        int numberCells = (int) Math.pow(2, config.getResolution());
         double unit = spaceRange / numberCells;
         ArrayList<Integer> zcodeaArrayList = new ArrayList<>();
         for (double[] doubles : dataset) {
@@ -218,7 +160,7 @@ public class IndexBuilder {
             int y = (int) ((doubles[1] - miny) / unit);
 //            图省事，日后要修改，可能导致精度丢失
 //            resolution + 1才能保证combine过程不丢失x和y的精度
-            int zcode = (int) EffectivenessStudy.combine(x, y, resolution + 1);
+            int zcode = (int) EffectivenessStudy.combine(x, y, config.getResolution() + 1);
             if (!zcodeaArrayList.contains(zcode))
                 zcodeaArrayList.add(zcode);
         }

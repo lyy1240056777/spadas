@@ -1,16 +1,9 @@
-package web.DTO;
+package web.param;
 
-import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
-/**
- * @author Tian Qi Qing
- * @version 1.0
- * @date 2022/03/03/12:06
- **/
 @Data
-@ApiModel("range query DTO")
-public class rangequeryDTO {
+public class RangeQueryParams {
     int k=10; //top-k
     int dim; //dimension
     double[] querymax;    //[lat,lng]
