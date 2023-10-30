@@ -3,7 +3,7 @@ package edu.nyu.dss.similarity;
 import edu.nyu.dss.similarity.datasetReader.SingleFileReader;
 import edu.nyu.dss.similarity.index.DataMapPorto;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -12,7 +12,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 import java.util.Map.Entry;
-import java.util.stream.Collectors;
 
 /*
  * this is for top-k dataset search based on similarity search, for evaluation paper
@@ -81,10 +80,10 @@ public class Search {
      * lower bounds one by one, integrating a bound into the algorithm, as we know the gap between lower and upper, a+2b, then we
      * we can prune by infering the lower bound, need to debug this function.
      */
-    public void hausdorffEarylyAbandonging(Map<Integer, double[][]> dataMap, int querySet, Map<Integer, indexNode> indexMap,
+    public void hausdorffEarylyAbandonging(Map<Integer, double[][]> dataMap, int querySet, Map<Integer, IndexNode> indexMap,
                                            int dimension, int limit, boolean topkEarlyBreaking, boolean saveDatasetIndex,
                                            boolean nonselectedDimension[], boolean dimensionAll, double querydata[][],
-                                           Map<Integer, String> argoDataMap, int capacity, double weight[], Map<Integer, indexNode> queryindexmap, indexNode querynode, String indexString) throws FileNotFoundException, IOException {
+                                           Map<Integer, String> argoDataMap, int capacity, double weight[], Map<Integer, IndexNode> queryindexmap, IndexNode querynode, String indexString) throws FileNotFoundException, IOException {
         double min_dis = Double.MAX_VALUE;
         int datasetid = 0;
         double error = 0;
@@ -101,8 +100,8 @@ public class Search {
                 dataset = singleFileReader.readSingleFile(argoDataMap.get(a));
                 //	System.out.println("aaa"+argoDataMap.get(a));
             }
-            indexNode datanode;
-            Map<Integer, indexNode> datasetNodes = null;
+            IndexNode datanode;
+            Map<Integer, IndexNode> datasetNodes = null;
             if (indexMap != null) {
                 querynode = indexMap.get(querySet);
                 datanode = indexMap.get(a);
@@ -132,11 +131,11 @@ public class Search {
     /*
      * lower bounds one by one, compute the lower bound first, rank them, then scan one by one
      */
-    public int HausdorffEarylyAbandongingRanking(Map<Integer, double[][]> dataMap, int querySet, Map<Integer, indexNode> indexMap,
+    public int HausdorffEarylyAbandongingRanking(Map<Integer, double[][]> dataMap, int querySet, Map<Integer, IndexNode> indexMap,
                                                  int dimension, int limit, Map<Integer, Pair<Double, PriorityQueue<queueMain>>> resultPair,
-                                                 Map<Integer, indexNode> nodelist, boolean saveDatasetIndex, boolean nonselectedDimension[],
+                                                 Map<Integer, IndexNode> nodelist, boolean saveDatasetIndex, boolean nonselectedDimension[],
                                                  boolean dimensionAll, double error, double[][] query, Map<Integer, String> argoDataMap,
-                                                 indexNode querynode, int capacity, double[] weight, String indexString) throws FileNotFoundException, IOException {
+                                                 IndexNode querynode, int capacity, double[] weight, String indexString) throws FileNotFoundException, IOException {
         Map<Integer, Double> setBound = new HashMap<Integer, Double>();
         double[][] dataset;
         IndexAlgorithm indexDSS = new IndexAlgorithm();
@@ -150,8 +149,8 @@ public class Search {
             } else {
                 dataset = singleFileReader.readSingleFile(argoDataMap.get(a));
             }
-            indexNode datanode;
-            Map<Integer, indexNode> datasetNodes = null;
+            IndexNode datanode;
+            Map<Integer, IndexNode> datasetNodes = null;
             if (indexMap != null) {
                 querynode = indexMap.get(querySet);
                 datanode = indexMap.get(a);
@@ -180,8 +179,8 @@ public class Search {
             } else {
                 dataset = singleFileReader.readSingleFile(argoDataMap.get(a));
             }
-            indexNode datanode;
-            Map<Integer, indexNode> datasetNodes = null;
+            IndexNode datanode;
+            Map<Integer, IndexNode> datasetNodes = null;
             if (saveDatasetIndex) {// load from disk
                 datasetNodes = indexDSS.restoreSingleIndex(indexString, a, dimension);
                 datanode = datasetNodes.get(1);
@@ -213,15 +212,15 @@ public class Search {
     /*
      * scanning with index, prune if no intersection at all.
      */
-    ArrayList<Integer> rangeQuery(indexNode datalakeRoot, ArrayList<Integer> result, double querymax[], double querymin[], int dim,
-                                  Map<Integer, indexNode> datalakeIndex) {
+    ArrayList<Integer> rangeQuery(IndexNode datalakeRoot, ArrayList<Integer> result, double querymax[], double querymin[], int dim,
+                                  Map<Integer, IndexNode> datalakeIndex) {
         //give a range, find all the dataset that intersect, we just need the data lake tree
-        if (datalakeRoot.isrootLeaf()) {
+        if (datalakeRoot.isRootLeaf()) {
             if (datalakeRoot.intersected(querymax, querymin, dim)) {
                 result.add(datalakeRoot.getDatasetID());// add the results into, and ranked by intersected area.
             }
         } else {
-            for (indexNode childNode : datalakeRoot.getNodelist(datalakeIndex)) {
+            for (IndexNode childNode : datalakeRoot.getNodelist(datalakeIndex)) {
                 if (scanning || childNode.intersected(querymax, querymin, dim)) {
                     result = rangeQuery(childNode, result, querymax, querymin, dim, datalakeIndex);
                 }
@@ -236,11 +235,11 @@ public class Search {
 //	看前人的注释感觉是用的IA度量
 //    增加一个条件：结果数据集必须存在点在range当中，而不仅仅是两者范围有交集，这是为了union range query功能做准备
 //    增加该条件的坏处是：如果range画得太偏，将不会搜索到结果，因为没有点落在该range里面
-    public HashMap<Integer, Double> rangeQueryRankingArea(indexNode datalakeRoot, HashMap<Integer, Double> result, double querymax[], double querymin[],
-                                                          double min_dis, int k, HashMap<Integer, PriorityQueue<queueMain>> queues, int dim, Map<Integer, indexNode> datalakeIndex) {
+    public HashMap<Integer, Double> rangeQueryRankingArea(IndexNode datalakeRoot, HashMap<Integer, Double> result, double querymax[], double querymin[],
+                                                          double min_dis, int k, HashMap<Integer, PriorityQueue<queueMain>> queues, int dim, Map<Integer, IndexNode> datalakeIndex) {
         //give a range, find all the dataset that intersect, we just need the data lake tree and ranked by intersected areas
 //		只需要data lake tree?
-        if (datalakeRoot.isrootLeaf()) { // 永远为真
+        if (datalakeRoot.isRootLeaf()) { // 永远为真
             double distance = datalakeRoot.intersectedArea(querymax, querymin, dim);
             if (distance < min_dis) {
 //                增加一个判断，若存在点在range中，则加入结果集
@@ -253,7 +252,7 @@ public class Search {
                     min_dis = Double.MAX_VALUE;
             }
         } else {
-            for (indexNode childNode : datalakeRoot.getNodelist(datalakeIndex)) {
+            for (IndexNode childNode : datalakeRoot.getNodelist(datalakeIndex)) {
                 double bound = 0;
                 if (!scanning) {
                     bound = childNode.intersectedArea(querymax, querymin, dim);
@@ -269,14 +268,14 @@ public class Search {
     /*
      * scanning with index, compute the intersection, and rank by overlapped range, or number of points.
      */
-    public HashMap<Integer, Double> rangeQueryRankingNumberPoints(indexNode datalakeRoot, HashMap<Integer, Double> result,
+    public HashMap<Integer, Double> rangeQueryRankingNumberPoints(IndexNode datalakeRoot, HashMap<Integer, Double> result,
                                                                   double querymax[], double querymin[],
                                                                   double min_dis, int k, HashMap<Integer, PriorityQueue<queueMain>> queues, int dim,
-                                                                  Map<Integer, double[][]> dataMap, Map<Integer, indexNode> datalakeIndex,
-                                                                  Map<Integer, Map<Integer, indexNode>> datasetindex, Map<Integer, String> DatasetMapping,
+                                                                  Map<Integer, double[][]> dataMap, Map<Integer, IndexNode> datalakeIndex,
+                                                                  Map<Integer, Map<Integer, IndexNode>> datasetindex, Map<Integer, String> DatasetMapping,
                                                                   String indexString, IndexAlgorithm indexDSS, boolean dimSelected[], boolean dimensionAll,
-                                                                  ArrayList<double[]> points, Map<Integer, indexNode> indexMap, int capacity, double weight[], boolean saveDatasetIndex) throws FileNotFoundException, IOException {
-        if (datalakeRoot.isrootLeaf()) {
+                                                                  ArrayList<double[]> points, Map<Integer, IndexNode> indexMap, int capacity, double weight[], boolean saveDatasetIndex) throws FileNotFoundException, IOException {
+        if (datalakeRoot.isRootLeaf()) {
             int datasetid = datalakeRoot.getDatasetID();
             double[][] dataset;
             if (dataMap == null) {
@@ -284,8 +283,8 @@ public class Search {
             } else {
                 dataset = dataMap.get(datasetid);
             }
-            Map<Integer, indexNode> dataindex = null;
-            indexNode dataseNode;
+            Map<Integer, IndexNode> dataindex = null;
+            IndexNode dataseNode;
             if (indexMap != null) {// memory mode, all have been created
                 dataseNode = indexMap.get(datasetid);
                 dataindex = null;
@@ -306,7 +305,7 @@ public class Search {
                     min_dis = Double.MAX_VALUE;
             }
         } else {
-            for (indexNode childNode : datalakeRoot.getNodelist(datalakeIndex)) {
+            for (IndexNode childNode : datalakeRoot.getNodelist(datalakeIndex)) {
                 int threshold = 0;
                 if (!scanning) {
                     threshold = childNode.coveredPOints(querymax, querymin, dim, dimSelected, dimensionAll);
@@ -346,10 +345,10 @@ public class Search {
      * we design an inverted index to accelerate the pair-wise and top-k, for node,
      * we can get a upper bound, and it is more efficient then the inverted index only
      */
-    public HashMap<Integer, Double> gridOverlap(indexNode datalakeRoot, HashMap<Integer, Double> result, int[] query,
-                                                double min_dis, int k, HashMap<Integer, PriorityQueue<queueMain>> queues, Map<Integer, indexNode> datalakeIndex) {
+    public HashMap<Integer, Double> gridOverlap(IndexNode datalakeRoot, HashMap<Integer, Double> result, int[] query,
+                                                double min_dis, int k, HashMap<Integer, PriorityQueue<queueMain>> queues, Map<Integer, IndexNode> datalakeIndex) {
         // give a query signature, find all the dataset that has a ratio,
-        if (datalakeRoot.isrootLeaf()) {
+        if (datalakeRoot.isRootLeaf()) {
             int datasetid = datalakeRoot.getDatasetID();
             double distance = datalakeRoot.GridOverlap(query);
             if (distance < min_dis) {
@@ -361,7 +360,7 @@ public class Search {
 //                    min_dis = Double.MAX_VALUE;
             }
         } else {
-            for (indexNode childNode : datalakeRoot.getNodelist(datalakeIndex)) {
+            for (IndexNode childNode : datalakeRoot.getNodelist(datalakeIndex)) {
                 if (scanning || childNode.GridOverlap(query) < min_dis) {
                     result = gridOverlap(childNode, result, query, min_dis, k, queues, datalakeIndex);
                 }
@@ -434,9 +433,9 @@ public class Search {
      * Hausdorff, we prune those index and return candidates for further purning using sequential methods
      * 样例查询的算法
      */
-    public HashMap<Integer, Double> pruneByIndex(Map<Integer, double[][]> dataMap, indexNode datalakeRoot, indexNode query,
-                                                 int dimension, Map<Integer, indexNode> indexMap,
-                                                 Map<Integer, Map<Integer, indexNode>> nodelist1, Map<Integer, indexNode> queryindexmap, Map<Integer, indexNode> datalakeIndex,
+    public HashMap<Integer, Double> pruneByIndex(Map<Integer, double[][]> dataMap, IndexNode datalakeRoot, IndexNode query,
+                                                 int dimension, Map<Integer, IndexNode> indexMap,
+                                                 Map<Integer, Map<Integer, IndexNode>> nodelist1, Map<Integer, IndexNode> queryindexmap, Map<Integer, IndexNode> datalakeIndex,
                                                  Map<Integer, String> argoDataMap, int k, String indexString, boolean nonselectedDimension[], boolean dimensionAll,
                                                  double error, int capacity, double weight[], boolean saveDatasetIndex, double[][] querydata) throws FileNotFoundException, IOException {
 //        为了提高查询准确度，不管前端提供的k为多少，统一查询前100个近邻数据集，然后再取前k个
@@ -456,12 +455,12 @@ public class Search {
         HashMap<Integer, PriorityQueue<queueMain>> queues = new HashMap<>();
         while (!aForNodes.isEmpty()) {
             queueForNode aForNodes2 = aForNodes.poll();
-            indexNode aIndexNode = aForNodes2.getNode();
+            IndexNode aIndexNode = aForNodes2.getNode();
             double lowerbound = aForNodes2.getbound();
             if (lowerbound > min_dis) {
                 break;
             }
-            if (aIndexNode.isrootLeaf()) {//we get to the dataset level
+            if (aIndexNode.isRootLeaf()) {//we get to the dataset level
                 int datasetid = aIndexNode.getDatasetID();
                 double[][] dataset;
                 if (dataMap != null) {
@@ -479,11 +478,11 @@ public class Search {
                                 indexMap.get(datasetid), 0, 1, error, true, min_dis, true, null, null, nonselectedDimension, dimensionAll);
                     else {// index not in memory
                         if (saveDatasetIndex) {// load from disk
-                            Map<Integer, indexNode> dataindexMap = indexDSS.restoreSingleIndex(indexString, datasetid, dimension);
+                            Map<Integer, IndexNode> dataindexMap = indexDSS.restoreSingleIndex(indexString, datasetid, dimension);
                             aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, query,
                                     dataindexMap.get(1), 0, 1, error, false, min_dis, false, queryindexmap, dataindexMap, nonselectedDimension, dimensionAll);
                         } else {    // create index if both memory and disk version are not available
-                            indexNode rootBall = indexDSS.buildBalltree2(dataset, dimension, capacity, null, null, weight);
+                            IndexNode rootBall = indexDSS.buildBalltree2(dataset, dimension, capacity, null, null, weight);
                             aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, query,
                                     rootBall, 0, 1, error, false, min_dis, false, null, null, nonselectedDimension, dimensionAll);
                         }
@@ -497,7 +496,7 @@ public class Search {
                     min_dis = Double.MAX_VALUE;
                 counter++;
             } else {
-                for (indexNode childIndexNode : aIndexNode.getNodelist(datalakeIndex)) {
+                for (IndexNode childIndexNode : aIndexNode.getNodelist(datalakeIndex)) {
                     //	System.out.println(childIndexNode.getRadius());
                     qNodes = new queueForNode(query, childIndexNode);
                     aForNodes.add(qNodes);
@@ -523,11 +522,11 @@ public class Search {
 
     // My custom method
 //    Union算法，不知道还有没有别的功能在里面
-    public List<double[]> UnionRangeQueryForPoints(double[] querymax, double[] querymin, int unionDatasetId, indexNode unionDatasetNode, List<double[]> result, int dim,
+    public List<double[]> UnionRangeQueryForPoints(double[] querymax, double[] querymin, int unionDatasetId, IndexNode unionDatasetNode, List<double[]> result, int dim,
                                                    boolean nonselectedDimension[], boolean dimensionAll) {
         // not leaf node
         if (unionDatasetNode.getpointIdList() == null || unionDatasetNode.getpointIdList().size() == 0) {
-            for (indexNode childNode : unionDatasetNode.getNodelist()) {
+            for (IndexNode childNode : unionDatasetNode.getNodelist()) {
                 if (childNode.intersected(querymax, querymin, dim, nonselectedDimension, dimensionAll))
                     result = UnionRangeQueryForPoints(querymax, querymin, unionDatasetId, childNode, result, dim, nonselectedDimension, dimensionAll);
             }
@@ -564,7 +563,7 @@ public class Search {
     }
 
     //    判断一个数据集中有没有点在range中
-    private boolean isDatasetPointInRange(indexNode root, double[] mbrmax, double[] mbrmin, int dim) {
+    private boolean isDatasetPointInRange(IndexNode root, double[] mbrmax, double[] mbrmin, int dim) {
         double[][] data = dataMapPorto.get(root.getDatasetID());
         List<double[]> dataList = Arrays.asList(data);
         Collections.shuffle(dataList);

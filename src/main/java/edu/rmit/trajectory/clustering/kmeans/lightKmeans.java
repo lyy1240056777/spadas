@@ -26,7 +26,7 @@ public class lightKmeans<T> extends kmeansAlgorithm<T>{
 	/*
 	 * we compute the inner bound using self-join operation, to avoid compute k*k distance, this is a lot when k is large
 	 */
-	void innerBound(indexNode centroidNode, double [][]centroidMatrix) {
+	void innerBound(IndexNode centroidNode, double [][]centroidMatrix) {
 		// it share the same framework with dual-tree, we can call our join method to do this.
 	}
 
@@ -42,8 +42,8 @@ public class lightKmeans<T> extends kmeansAlgorithm<T>{
 		unitQuantization = 0.01;
 	}
 	
-	public void recursivePICKmeans(indexNode dataRoot, indexNode centroidNode, double [][]dataMatrix, 
-			double [][]centroidMatrix, double ubfather, int centroid, double group_drift[], double interMinimumCentoridDis[]) {
+	public void recursivePICKmeans(IndexNode dataRoot, IndexNode centroidNode, double [][]dataMatrix,
+                                   double [][]centroidMatrix, double ubfather, int centroid, double group_drift[], double interMinimumCentoridDis[]) {
 		// traverse the datapoint index, and get the assginment
 		if(iterationTimes==1)
 			initializationPICKmeans();
@@ -74,8 +74,8 @@ public class lightKmeans<T> extends kmeansAlgorithm<T>{
 	 * 
 	 * when k is small, we put all the points into the centroidnode.
 	 */
-	void dualTreeKmeans(indexNode dataRoot, indexNode centroidNode, double [][]dataMatrix, 
-			double [][]centroidMatrix, double unit, double ubfather, int centroid, double interMinimumCentoridDis[]) {
+	void dualTreeKmeans(IndexNode dataRoot, IndexNode centroidNode, double [][]dataMatrix,
+                        double [][]centroidMatrix, double unit, double ubfather, int centroid, double interMinimumCentoridDis[]) {
 		int scannedCentrorid = dataRoot.getPrunedCounter();
 		if(scannedCentrorid == k)
 			return;
@@ -157,13 +157,13 @@ public class lightKmeans<T> extends kmeansAlgorithm<T>{
 							dualTreeKmeans(dataRoot, null, dataMatrix, centroidMatrix, unit, pivotDis+centroidNode.getRadius(), childpoint, interMinimumCentoridDis);
 					else
 						if(radius < dataRoot.getRadius() && !dataRoot.isLeaf())// which one is good, check which node to split by comparing the radius
-							for (indexNode childNode : dataRoot.getNodelist())
+							for (IndexNode childNode : dataRoot.getNodelist())
 								dualTreeKmeans(childNode, centroidNode, dataMatrix, centroidMatrix, unit, pivotDis+childNode.getDisFather(), centroid, interMinimumCentoridDis);//sort by the distance
 						else
-							for (indexNode childNode : centroidNode.getNodelist())
+							for (IndexNode childNode : centroidNode.getNodelist())
 								dualTreeKmeans(dataRoot, childNode, dataMatrix, centroidMatrix, unit, pivotDis+childNode.getDisFather(), centroid, interMinimumCentoridDis);
 				} else
-					for (indexNode childNode : dataRoot.getNodelist())
+					for (IndexNode childNode : dataRoot.getNodelist())
 						dualTreeKmeans(childNode, null, dataMatrix, centroidMatrix, unit, pivotDis + childNode.getDisFather(), centroid, interMinimumCentoridDis);
 			}
 		}
@@ -173,8 +173,8 @@ public class lightKmeans<T> extends kmeansAlgorithm<T>{
 	 * this function we search by 2nn and nn in varius iterations, with bound on the range
 	 * we implement our pruning based on two nearest neighbor search and bound-based similarity search
 	 */
-	void dualTreeKmeansNN(indexNode dataRoot, indexNode centroidNode, double [][]dataMatrix, 
-			double [][]centroidMatrix, double unit, double ubfather, int centroid) {
+	void dualTreeKmeansNN(IndexNode dataRoot, IndexNode centroidNode, double [][]dataMatrix,
+                          double [][]centroidMatrix, double unit, double ubfather, int centroid) {
 		// use our 
 	}
 	
@@ -187,7 +187,7 @@ public class lightKmeans<T> extends kmeansAlgorithm<T>{
 	}
 
 	// when to split the centroid index, whether we should split all, update the bound of each node
-	void cleanIndex(indexNode dataRoot) {
+	void cleanIndex(IndexNode dataRoot) {
 		// update the ub and lb by the drift based on their assignment
 		int assignedID = dataRoot.getAssignedCluster();
 		double drift = 0, otherDrift = 0;

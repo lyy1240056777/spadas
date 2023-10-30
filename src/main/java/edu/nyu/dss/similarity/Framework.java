@@ -8,13 +8,16 @@ import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
 import edu.nyu.dss.similarity.utils.FileUtil;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
+import edu.whu.index.TrajectorySpatialIndex;
+import edu.whu.structure.Trajectory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Component
 @Slf4j
@@ -39,6 +42,9 @@ public class Framework {
     private ChinaReader chinaReader;
 
     @Autowired
+    private PureLocationReader pureLocationReader;
+
+    @Autowired
     private OpenNycReader openNycReader;
 
     @Autowired
@@ -48,25 +54,23 @@ public class Framework {
     private IndexAlgorithm indexDSS;
 
     private String indexString = "";
+
     @Autowired
     public DatasetIDMapping datasetIdMapping;
-    // 存储数据集文件id到数据集文件名的映射，每个目录独立映射
-    @Autowired
-    public DataSamplingMap dataSamplingMap;
 
     // 每遍历一个目录文件（如城市）生成一个新的map，value总共组成了dataMapPorto，用于计算emd
     @Autowired
     public DataMapPorto dataMapPorto;
 
     @Autowired
-    public FileIDMap fileIDMap;
+    private TrajectorySpatialIndex trajectorySpatialIndex;
 
     private int fileNo = 0;
     //	store the data of every point of the whole data lake
     public static List<double[]> dataPoint = new ArrayList<>();
     public static List<CityNode> cityNodeList = new ArrayList<>();
 
-    public static Map<String, List<indexNode>> cityIndexNodeMap = new HashMap<>();
+    public static Map<String, List<IndexNode>> cityIndexNodeMap = new HashMap<>();
     /*
      * z-curve for grid-based overlap
      */
@@ -78,10 +82,10 @@ public class Framework {
 
     @Autowired
     public IndexMap indexMap;// root node of dataset's index
-    static Map<Integer, indexNode> datalakeIndex = null;// the global datalake index
+    static Map<Integer, IndexNode> datalakeIndex = null;// the global datalake index
     @Autowired
     public IndexNodes indexNodes;// store the root nodes of all datasets in the lake
-    public indexNode datasetRoot = null; // the root node of datalake index in memory mode
+    public IndexNode datasetRoot = null; // the root node of datalake index in memory mode
 
     static double[] weight = null; // the weight in all dimensions
 
@@ -122,6 +126,7 @@ public class Framework {
 //                选择使用哪种读取方法
 
                 switch (type) {
+                    case PURE_LOCATION -> pureLocationReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
                     case BAIDU_POI -> chinaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
                     case BUS_LINE, MOVE_BANK, USA -> usaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
                     case POI -> poiReader.read(file, fileNo++, cityNode);
@@ -271,6 +276,20 @@ public class Framework {
         clearAll();
         readDatalake(config.getFrontendLimitation());
         createDatalake(config.getFrontendLimitation());
+        testInit();
         log.info("All data loaded.");
+    }
+
+    private void testInit() {
+        initTrajectory();
+
+    }
+
+    private void initTrajectory() {
+        if (trajectorySpatialIndex.isEmpty()){
+            log.warn("There's no trajectory data. skip for create test dataset.");
+            return;
+        }
+        trajectorySpatialIndex.put(0, (ArrayList<Trajectory>) trajectorySpatialIndex.get(trajectorySpatialIndex.keySet().stream().findFirst().get()).stream().limit(10000).collect(Collectors.toList()));
     }
 }

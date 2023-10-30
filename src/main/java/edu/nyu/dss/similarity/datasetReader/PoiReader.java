@@ -7,7 +7,7 @@ import edu.nyu.dss.similarity.index.FileIDMap;
 import edu.nyu.dss.similarity.index.IndexBuilder;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -83,7 +83,7 @@ public class PoiReader {
             if (cacheDataset)
                 dataMapPorto.put(fileNo, a);
             if (cacheIndex) {
-                indexNode node = indexBuilder.createDatasetIndex(fileNo, a, 1, cityNode);
+                IndexNode node = indexBuilder.createDatasetIndex(fileNo, a, 1, cityNode);
                 node.setFileName(file.getName());
                 indexBuilder.samplingDataByGrid(a, fileNo, node);
             }

@@ -7,14 +7,13 @@ import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.nyu.dss.similarity.index.*;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
@@ -156,9 +155,9 @@ public class OpenNycReader {
             dataMapPorto.put(id, spatialData);
         }
         if (config.isCacheIndex()) {
-            indexNode node = indexBuilder.createDatasetIndex(id, spatialData, 1, cityNode);
+            IndexNode node = indexBuilder.createDatasetIndex(id, spatialData, 1, cityNode);
             indexBuilder.samplingDataByGrid(spatialData, id, node);
-            node.setFileName(file.getParent());
+            node.setFileName(file.getParentFile().getName());
         }
         datasetIDMapping.put(id, file.getName());
         fileIDMap.put(id, file);

@@ -14,13 +14,13 @@ import lombok.Data;
 @JsonIgnoreProperties({"assignedCluster", "bounds", "prunedCounter"})
 @Data
 // this class will build the index based on the
-public class indexNode {
+public class IndexNode {
     int type; // 0 for line , 1 for point
     //    有些属性不能传
     @JsonIgnore
     protected Set<Integer> pointIdList;
     @JsonIgnore// the leaf node, the index node is a leaf node when this is not empty, we can
-    protected Set<indexNode> nodeList; // the internal node
+    protected Set<IndexNode> nodeList; // the internal node
     protected Set<Integer> nodeIDList;//check whether the root is empty before use, for seralization
     protected double[] pivot;// the mean value
     protected double radius;// the radius from the pivot to the furthest point
@@ -28,10 +28,6 @@ public class indexNode {
     protected double[] sum;// the sum of all the points inside this node.
     double[] bounds;//the lower bound distance to the non nearest neighbor;
     private int totalCoveredPoints;
-//    @JsonIgnore
-//    double[][] matrixPivot;
-//    @JsonIgnore
-//    double EMDRadius;
 
     //    用来计算EMD
 //    EMDRadius = radius + minUbMove
@@ -117,7 +113,7 @@ public class indexNode {
     }
 
 
-    public indexNode(int dimension) {
+    public IndexNode(int dimension) {
         pointIdList = new HashSet<>();
         nodeList = new HashSet<>();
         pivot = new double[dimension];
@@ -203,7 +199,7 @@ public class indexNode {
         nodeIDList.add(nodeid);
     }
 
-    public void addNodes(indexNode newNode) {
+    public void addNodes(IndexNode newNode) {
         nodeList.add(newNode);
     }
 
@@ -212,7 +208,7 @@ public class indexNode {
     }
 
     public void clearNodes() {
-        nodeList = new HashSet<indexNode>();
+        nodeList = new HashSet<IndexNode>();
     }
 
     public void addPoint(Set<Integer> newPoint) {
@@ -243,7 +239,7 @@ public class indexNode {
         return this.fileName;
     }
 
-    public boolean isrootLeaf() {
+    public boolean isRootLeaf() {
         if (rootToDataset > 0)
             return true;
         else {
@@ -274,9 +270,8 @@ public class indexNode {
     }
 
 
-    public void setPivot(double pivot[]) {
-        for (int i = 0; i < pivot.length; i++)
-            this.pivot[i] = pivot[i];
+    public void setPivot(double[] pivot) {
+        System.arraycopy(pivot, 0, this.pivot, 0, pivot.length);
     }
 
     public void setTotalCoveredPoints(int totalCoveredPoints) {
@@ -291,7 +286,6 @@ public class indexNode {
     }
 
     public void updateBoundPick(double bound) {
-        //	this.upperbound = bound + distanceToFarther; //we verify using the radius distance only
         this.upperbound = bound;
     }
 
@@ -346,16 +340,16 @@ public class indexNode {
             return true;
     }
 
-    public Set<indexNode> getNodelist() {
+    public Set<IndexNode> getNodelist() {
         return nodeList;
     }
 
-    public Set<indexNode> getNodelist(Map<Integer, indexNode> nodelists) {
+    public Set<IndexNode> getNodelist(Map<Integer, IndexNode> nodelists) {
         if (nodelists == null)
             return nodeList;
         if (nodeIDList == null)
-            return new HashSet<indexNode>();
-        Set<indexNode> nodelistIndexNodes = new HashSet<indexNode>();
+            return new HashSet<>();
+        Set<IndexNode> nodelistIndexNodes = new HashSet<>();
         for (int nodeid : nodeIDList) {
             nodelistIndexNodes.add(nodelists.get(nodeid));
         }
@@ -410,30 +404,30 @@ public class indexNode {
         if (isLeaf()) {
             arrayList.addAll(pointIdList);
         } else {
-            for (indexNode child : nodeList) {
+            for (IndexNode child : nodeList) {
                 child.getAllCoveredPoints(arrayList);
             }
         }
     }
 
-    public void getAllCoveredNodes(ArrayList<indexNode> arrayList) {
+    public void getAllCoveredNodes(ArrayList<IndexNode> arrayList) {
         if (!nodeList.isEmpty())
             arrayList.addAll(nodeList);
-        for (indexNode child : nodeList) {
+        for (IndexNode child : nodeList) {
             child.getAllCoveredNodes(arrayList);
         }
     }
 
     public void increaseCounter() {
         counter++;
-        for (indexNode child : nodeList) {
+        for (IndexNode child : nodeList) {
             child.increaseCounter();
         }
     }
 
     public void decreaseCounter() {
         counter++;
-        for (indexNode child : nodeList) {
+        for (IndexNode child : nodeList) {
             child.decreaseCounter();
         }
     }
@@ -489,7 +483,7 @@ public class indexNode {
         return mbrmax;
     }
 
-    public void removeNode(indexNode tempIndexNode) {
+    public void removeNode(IndexNode tempIndexNode) {
         nodeList.remove(tempIndexNode);
     }
 
@@ -621,7 +615,7 @@ public class indexNode {
     /*
      * get the number of covered points exactly
      */
-    public int coveredPOints(double querymax[], double querymin[], double dis, int dim, double[][] dataset, Map<Integer, indexNode> nodelist) {
+    public int coveredPOints(double querymax[], double querymin[], double dis, int dim, double[][] dataset, Map<Integer, IndexNode> nodelist) {
         if (!intersected(querymax, querymin, dim)) {
             return 0;
         } else {
@@ -642,7 +636,7 @@ public class indexNode {
                         cover++;
                 }
             } else {
-                for (indexNode child : getNodelist(nodelist)) {
+                for (IndexNode child : getNodelist(nodelist)) {
                     cover += child.coveredPOints(querymax, querymin, dis, dim, dataset, nodelist);
                 }
             }
@@ -653,7 +647,7 @@ public class indexNode {
     /*
      * get the number of covered points exactly
      */
-    public int coveredPOints(double querymax[], double querymin[], double dis, int dim, double[][] dataset, Map<Integer, indexNode> nodelist,
+    public int coveredPOints(double querymax[], double querymin[], double dis, int dim, double[][] dataset, Map<Integer, IndexNode> nodelist,
                              boolean nonselectedDimension[], boolean dimensionAll, ArrayList<double[]> points) {
         if (nonselectedDimension != null && dimensionAll == false) {
             if (!intersected(querymax, querymin, dim, nonselectedDimension, dimensionAll)) {
@@ -685,7 +679,7 @@ public class indexNode {
                         }
                     }
                 } else {
-                    for (indexNode child : getNodelist(nodelist)) {
+                    for (IndexNode child : getNodelist(nodelist)) {
                         cover += child.coveredPOints(querymax, querymin, dis, dim, dataset, nodelist, nonselectedDimension, dimensionAll, points);
                     }
                 }
@@ -700,7 +694,7 @@ public class indexNode {
      * get all the points, not a number, for selected dimensions
      */
     public ArrayList<Integer> coveredPOintsAll(double querymax[], double querymin[], double dis, int dim, double[][] dataset,
-                                               Map<Integer, indexNode> nodelist, boolean nonselectedDimension[], boolean dimensionAll) {
+                                               Map<Integer, IndexNode> nodelist, boolean nonselectedDimension[], boolean dimensionAll) {
         if (nonselectedDimension != null && dimensionAll == false) {
             ArrayList<Integer> cover = new ArrayList<Integer>();
             if (!intersected(querymax, querymin, dim, nonselectedDimension, dimensionAll)) {
@@ -723,7 +717,7 @@ public class indexNode {
                             cover.add(pointid);
                     }
                 } else {
-                    for (indexNode child : getNodelist(nodelist)) {
+                    for (IndexNode child : getNodelist(nodelist)) {
                         cover.addAll(child.coveredPOintsAll(querymax, querymin, dis, dim, dataset, nodelist, nonselectedDimension, dimensionAll));
                     }
                 }
@@ -738,7 +732,7 @@ public class indexNode {
      * get all the points, not a number
      */
     public ArrayList<Integer> coveredPOintsAll(double querymax[], double querymin[], double dis, int dim,
-                                               double[][] dataset, Map<Integer, indexNode> nodelist) {
+                                               double[][] dataset, Map<Integer, IndexNode> nodelist) {
         ArrayList<Integer> cover = new ArrayList<Integer>();
         if (!intersected(querymax, querymin, dim)) {
             return null;
@@ -760,7 +754,7 @@ public class indexNode {
                         cover.add(pointid);
                 }
             } else {
-                for (indexNode child : getNodelist(nodelist)) {
+                for (IndexNode child : getNodelist(nodelist)) {
                     cover.addAll(child.coveredPOintsAll(querymax, querymin, dis, dim, dataset, nodelist));
                 }
             }
@@ -807,7 +801,7 @@ public class indexNode {
     public double[] setUpperBound(double ub, double unit, double quantilizedUpperBound[]) {
         upperbound = ub;
         if (nodeList != null) {
-            for (indexNode child : nodeList) {
+            for (IndexNode child : nodeList) {
                 quantilizedUpperBound = child.setUpperBound(ub, unit, quantilizedUpperBound);
             }
         } else {
@@ -852,7 +846,7 @@ public class indexNode {
     public void setPrunedCounter(short prundNum, short pointcounterPruned[]) {
         counterPruned += prundNum;
         if (nodeList != null) {
-            for (indexNode child : nodeList) {
+            for (IndexNode child : nodeList) {
                 child.setPrunedCounter(prundNum, pointcounterPruned);
             }
         } else {
@@ -864,7 +858,7 @@ public class indexNode {
     public void setAssign(short nearest, short newassign[]) {
         this.newassign = nearest;
         if (nodeList != null) {
-            for (indexNode child : nodeList) {
+            for (IndexNode child : nodeList) {
                 child.setAssign(nearest, newassign);
             }
         } else {
@@ -876,7 +870,7 @@ public class indexNode {
     public short[] setAssignPICK(short nearest, short newassign[]) {
         this.assignedClusterID = nearest;
         if (nodeList != null) {
-            for (indexNode child : nodeList) {
+            for (IndexNode child : nodeList) {
                 child.setAssignPICK(nearest, newassign);
             }
         } else {
@@ -898,7 +892,7 @@ public class indexNode {
     public void setAllPrune(short prundNum, short pointcounterPruned[]) {
         counterPruned = prundNum;
         if (nodeList != null) {
-            for (indexNode child : nodeList) {
+            for (IndexNode child : nodeList) {
                 child.setAllPrune(prundNum, pointcounterPruned);
             }
         } else {
@@ -920,7 +914,7 @@ public class indexNode {
         assignedClusterID = newassign;
         counterPruned = 0;
         if (!nodeList.isEmpty()) {
-            for (indexNode childNode : nodeList) {
+            for (IndexNode childNode : nodeList) {
                 childNode.cleanIndex(k, group_drift, maxdrift, unitQuantization);
             }
         }
@@ -945,9 +939,9 @@ public class indexNode {
     /*
      * build the signature for the whole data lake
      */
-    public int[] buildsignarture(HashMap<Integer, ArrayList<Integer>> dataset, Map<Integer, indexNode> nodelists) {
+    public int[] buildsignarture(HashMap<Integer, ArrayList<Integer>> dataset, Map<Integer, IndexNode> nodelists) {
         ArrayList<Integer> signauture = new ArrayList<Integer>();
-        if (isrootLeaf()) {
+        if (isRootLeaf()) {
             int datasetid = rootToDataset;
             ArrayList<Integer> arrayList = dataset.get(datasetid);
             if (arrayList != null) {
@@ -957,7 +951,7 @@ public class indexNode {
                 }
             }
         } else {
-            for (indexNode dataseNode : getNodelist(nodelists)) {
+            for (IndexNode dataseNode : getNodelist(nodelists)) {
                 int[] signa = dataseNode.buildsignarture(dataset, nodelists);
                 for (int sig : signa) {
                     if (!signauture.contains(sig))
@@ -972,12 +966,12 @@ public class indexNode {
     /*
      * set the maximum covered points
      */
-    public void setMaxCovertpoint(Map<Integer, indexNode> nodelists) {
-        if (isrootLeaf()) {
+    public void setMaxCovertpoint(Map<Integer, IndexNode> nodelists) {
+        if (isRootLeaf()) {
             maxCoverpoints = totalCoveredPoints;
         } else {
             maxCoverpoints = 0;
-            for (indexNode dataseNode : getNodelist(nodelists)) {
+            for (IndexNode dataseNode : getNodelist(nodelists)) {
                 dataseNode.setMaxCovertpoint(nodelists);
                 if (dataseNode.getmaxCoverpoints() > maxCoverpoints) {
                     maxCoverpoints = dataseNode.getmaxCoverpoints();
@@ -989,20 +983,20 @@ public class indexNode {
     /*
      * build the bounding box for the whole data lake
      */
-    public void buildBoundingBox(Map<Integer, indexNode> nodelists,
-                                 Map<Integer, Map<Integer, indexNode>> datasetIndex, int dimension) {
+    public void buildBoundingBox(Map<Integer, IndexNode> nodelists,
+                                 Map<Integer, Map<Integer, IndexNode>> datasetIndex, int dimension) {
         mbrmax = new double[dimension];
         mbrmin = new double[dimension];
-        if (isrootLeaf()) {
+        if (isRootLeaf()) {
             int datasetid = rootToDataset;
-            indexNode root = datasetIndex.get(datasetid).get(1);
+            IndexNode root = datasetIndex.get(datasetid).get(1);
             mbrmax = root.getMBRmax();
             mbrmin = root.getMBRmin();
         } else {
             for (int i = 0; i < dimension; i++) {
                 mbrmin[i] = Double.MAX_VALUE;
             }
-            for (indexNode dataseNode : getNodelist(nodelists)) {
+            for (IndexNode dataseNode : getNodelist(nodelists)) {
                 dataseNode.buildBoundingBox(nodelists, datasetIndex, dimension);
                 double nodembrmax[] = dataseNode.getMBRmax();
                 double nodembrmin[] = dataseNode.getMBRmin();

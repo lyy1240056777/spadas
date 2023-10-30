@@ -14,6 +14,9 @@ public enum DataLakeType {
     USA(8, true, (file) -> !file.getName().isEmpty() && Character.isUpperCase(file.getName().charAt(0))), // POIs
     POI(10, false, (file) -> file.getName().equals("poi")), // BAIDU POI
     BAIDU_POI(7, true, (file) -> true),
+
+    PURE_LOCATION(13, true, (file) -> file.getName().contains("ywz") || file.getParent().contains("ywz")),
+
     OPEN_NYC(11, true, (file) -> file.getName().contains("nyc") && file.getName().contains("open")),
 
     // if a folder contains shapefile(.shp), we extract it with SHAPEFILE_READER

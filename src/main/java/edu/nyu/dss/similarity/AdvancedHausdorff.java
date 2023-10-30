@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import org.paukov.combinatorics3.Generator;
 
 public class AdvancedHausdorff extends Hausdorff{
@@ -31,7 +31,7 @@ public class AdvancedHausdorff extends Hausdorff{
 	/*
      * based on radius, leaf (capacity), or depth, or covered points
      */
-    static boolean stopSplitCondition(indexNode a, int option, int dimension, boolean nonselectedDimension[], boolean dimensionAll) {
+    static boolean stopSplitCondition(IndexNode a, int option, int dimension, boolean nonselectedDimension[], boolean dimensionAll) {
     	if(a==null)
     		return true;
     	
@@ -60,7 +60,7 @@ public class AdvancedHausdorff extends Hausdorff{
     /*
      * split the first node, or the second node based on 
      */
-    static boolean splitPriority(indexNode a, indexNode b, int option, boolean asplit, boolean bsplit, int dimension, boolean nonselectedDimension[], boolean dimensionAll) {    	
+    static boolean splitPriority(IndexNode a, IndexNode b, int option, boolean asplit, boolean bsplit, int dimension, boolean nonselectedDimension[], boolean dimensionAll) {
     	if(asplit == true)
     		return false;
     	else if(bsplit == true)
@@ -132,8 +132,8 @@ public class AdvancedHausdorff extends Hausdorff{
      * 
      * this is not efficient version, we need to have fast version without constructing the matrix
      */
-    static double computeNodeDistance(indexNode a, indexNode b, int dimension, double[][] dataMatrixa, double[][] dataMatrixb, 
-    		boolean direction, int apointid, int bpointid) {
+    static double computeNodeDistance(IndexNode a, IndexNode b, int dimension, double[][] dataMatrixa, double[][] dataMatrixb,
+                                      boolean direction, int apointid, int bpointid) {
     	// get all the covered points of two nodes
     	ArrayList<Integer> aCoveredPoints = new ArrayList<Integer>();
     	if(apointid>0)
@@ -156,11 +156,11 @@ public class AdvancedHausdorff extends Hausdorff{
      * 
      * we need to input the first pair back to the queue
      */
-    public static Pair<Double, PriorityQueue<queueMain>> IncrementalDistance(double [][]point1xys, double [][]point2xys, 
-    		int dimension, indexNode X, indexNode Y, int splitOption, int fastMode, 
-    		double error, boolean reverse, double directDis, boolean topkEarlyBreaking, 
-    		Map<Integer, indexNode> nodelist, Map<Integer, indexNode> nodelist1,
-    		boolean nonselectedDimension[], boolean dimensionAll) {
+    public static Pair<Double, PriorityQueue<queueMain>> IncrementalDistance(double [][]point1xys, double [][]point2xys,
+                                                                             int dimension, IndexNode X, IndexNode Y, int splitOption, int fastMode,
+                                                                             double error, boolean reverse, double directDis, boolean topkEarlyBreaking,
+                                                                             Map<Integer, IndexNode> nodelist, Map<Integer, IndexNode> nodelist1,
+                                                                             boolean nonselectedDimension[], boolean dimensionAll) {
     	radiusThreshold = error;// the error for approximate search
     	if(!reverse) {
     		disCompTime = 0;
@@ -188,13 +188,13 @@ public class AdvancedHausdorff extends Hausdorff{
 			mainq = aHeaps.peek();
     		secondHeaps = mainq.getQueue();
     		secondq = secondHeaps.peek();// we need to think about here peek k continuous points, or we just set k=1
-    		indexNode anode = mainq.getIndexNode();
+    		IndexNode anode = mainq.getIndexNode();
     		ub = mainq.getbound();
 //			<=改成了<, 不然直接终止了
 //			注释掉了这个方法出口，不知道他有什么意义
 //    		if(reverse && ub<directDis)// for the directed early breaking
 //    			return new MutablePair<>(directDis, aHeaps);
-    		indexNode bnode = secondq.getNode();
+    		IndexNode bnode = secondq.getNode();
     	//	if(topkEarlyBreaking && anode!=null && bnode!=null && directDis<secondq.getbound())//for top-k search and pruning, estimate the bound
     	//		continue;
     		boolean asplit = stopSplitCondition(anode, splitOption);
@@ -256,8 +256,8 @@ public class AdvancedHausdorff extends Hausdorff{
     /*
      * this is the directed version
      */
-    static double IncrementalDistanceDirected(double [][]point1xys, double [][]point2xys, int dimension, indexNode X, indexNode Y, 
-    		int splitOption, int fastMode, double error, Map<Integer, indexNode> nodelist, Map<Integer, indexNode> nodelist1, boolean nonselectedDimension[], boolean dimensionAll) {
+    static double IncrementalDistanceDirected(double [][]point1xys, double [][]point2xys, int dimension, IndexNode X, IndexNode Y,
+                                              int splitOption, int fastMode, double error, Map<Integer, IndexNode> nodelist, Map<Integer, IndexNode> nodelist1, boolean nonselectedDimension[], boolean dimensionAll) {
     	if(X.getRadius(nonselectedDimension, dimension, dimensionAll,weight)>Y.getRadius(nonselectedDimension, dimension, dimensionAll, weight)) {
     		Pair<Double, PriorityQueue<queueMain>> resultPair = IncrementalDistance(point1xys, point2xys, dimension, X, Y, 
     				splitOption, fastMode, error, false, 0, false, nodelist, nodelist1, nonselectedDimension, dimensionAll);
@@ -275,14 +275,14 @@ public class AdvancedHausdorff extends Hausdorff{
     
     // if it is outlier version, we exclude the self-pair
 //	before this function didn't have a return value, so i add one.
-    static void traverseX(indexNode anode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps,
-    		int dimension, PriorityQueue<queueMain> aHeaps, int fastMode, boolean topkEarlyBreaking, 
-    		double directDis, boolean join, double joinThreshold, Map<Integer, indexNode> nodelist, boolean nonselectedDimension[], boolean dimensionAll) {
+    static void traverseX(IndexNode anode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps,
+                          int dimension, PriorityQueue<queueMain> aHeaps, int fastMode, boolean topkEarlyBreaking,
+                          double directDis, boolean join, double joinThreshold, Map<Integer, IndexNode> nodelist, boolean nonselectedDimension[], boolean dimensionAll) {
     	ArrayList<double[]> pivtoList = new ArrayList<double[]>();
     	ArrayList<Pair<double[], double[]>> mbrList = new ArrayList<Pair<double[], double[]>>();
 		ArrayList<Double> radiusArrayList = new ArrayList<Double>();
 		ArrayList<Integer> arrayList = new ArrayList<Integer>(anode.getpointIdList());
-		ArrayList<indexNode> arrayListnode = new ArrayList<indexNode>(anode.getNodelist(nodelist));
+		ArrayList<IndexNode> arrayListnode = new ArrayList<IndexNode>(anode.getNodelist(nodelist));
 		double newlb, newub;
 		if(anode.isLeaf()) {
 			for (int a : anode.getpointIdList()) {
@@ -292,7 +292,7 @@ public class AdvancedHausdorff extends Hausdorff{
 					mbrList.add(new MutablePair<double[], double[]>(point1xys[a], point1xys[a]));
 			}
 		}else {
-			for (indexNode a : anode.getNodelist(nodelist)) {
+			for (IndexNode a : anode.getNodelist(nodelist)) {
 				pivtoList.add(a.getPivot());
 				radiusArrayList.add(a.getRadius(nonselectedDimension, dimension, dimensionAll, weight));
 				if(tightBound==2)
@@ -305,7 +305,7 @@ public class AdvancedHausdorff extends Hausdorff{
 			PriorityQueue<queueSecond> newsecondHeaps = new PriorityQueue<queueSecond>();
 
 			for (queueSecond aQueueSecond : secondHeaps) {
-				indexNode newnodeb = aQueueSecond.getNode();
+				IndexNode newnodeb = aQueueSecond.getNode();
 				Map<Integer, Pair<double[], double[]>> segmentB=null;
 				if(tightBound==2) {//using the MBR to prune
 					if(newnodeb != null)
@@ -374,13 +374,13 @@ public class AdvancedHausdorff extends Hausdorff{
 //		return minub;
     }
     
-    static double traverseY(indexNode bnode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps, 
-    		int dimension, PriorityQueue<queueMain> aHeaps, double ub, indexNode anode, int apoint, int fastMode, 
-    		boolean topkEarlyBreaking, double directDis, boolean join, double joinThreshold, Map<Integer, indexNode> nodelist,boolean nonselectedDimension[], boolean dimensionAll) {
+    static double traverseY(IndexNode bnode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps,
+                            int dimension, PriorityQueue<queueMain> aHeaps, double ub, IndexNode anode, int apoint, int fastMode,
+                            boolean topkEarlyBreaking, double directDis, boolean join, double joinThreshold, Map<Integer, IndexNode> nodelist, boolean nonselectedDimension[], boolean dimensionAll) {
     	ArrayList<double[]> pivtoList = new ArrayList<double[]>();
     	ArrayList<Pair<double[], double[]>> mbrList = new ArrayList<Pair<double[], double[]>>();
     	ArrayList<Integer> arrayList = new ArrayList<Integer>(bnode.getpointIdList());// this may cost much time
-    	ArrayList<indexNode> arrayListnode = new ArrayList<indexNode>(bnode.getNodelist(nodelist));
+    	ArrayList<IndexNode> arrayListnode = new ArrayList<IndexNode>(bnode.getNodelist(nodelist));
 		ArrayList<Double> radiusArrayList = new ArrayList<Double>();
 		double lb, newub;
 		if(bnode.isLeaf()) {
@@ -391,7 +391,7 @@ public class AdvancedHausdorff extends Hausdorff{
 					mbrList.add(new MutablePair<double[], double[]>(point2xys[a-1], point2xys[a-1]));
 			}
 		}else {
-			for (indexNode a : bnode.getNodelist(nodelist)) {
+			for (IndexNode a : bnode.getNodelist(nodelist)) {
 				pivtoList.add(a.getPivot());
 				radiusArrayList.add(a.getRadius(nonselectedDimension, dimension, dimensionAll, weight));
 				if(tightBound==2)

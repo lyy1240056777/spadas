@@ -21,7 +21,7 @@ import java.util.Set;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 import edu.rmit.mtree.SplitFunction.SplitResult;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import edu.rmit.trajectory.clustering.kpaths.ClusterPath;
 import edu.rmit.trajectory.clustering.kpaths.KPathsOptimization;
 import edu.rmit.trajectory.clustering.kpaths.Util;
@@ -130,7 +130,7 @@ public class MTree<DATA> {
 	}
 
 	// construct the tree for pruning, build 
-	public int traverseConvert(indexNode rootKmeans, Node node, int dimension) {
+	public int traverseConvert(IndexNode rootKmeans, Node node, int dimension) {
 		double []pivot = MTree.this.distanceFunction.getData1(node.data);
 		rootKmeans.setRadius(node.getRadius());
 		rootKmeans.setPivot(pivot);
@@ -153,7 +153,7 @@ public class MTree<DATA> {
 		}else {
 			int count = 0;
 			for(DATA centerdata : node.children.keySet()) {
-				indexNode childnodekmeans = new indexNode(dimension);
+				IndexNode childnodekmeans = new IndexNode(dimension);
 				rootKmeans.addNodes(childnodekmeans);
 				IndexItem child = node.children.get(centerdata);
 				Node childnode = (Node)child;
@@ -494,13 +494,13 @@ public class MTree<DATA> {
 						}
 						candiList.get(minId).add(child);//add the trajectory into the list of cluster
 						ClusterPath aClusterPath = CENTERS.get(minId);
-						aClusterPath.updateHistorgramGuava(data, 0);//histogram used for
+						aClusterPath.updateHistogramGuava(data, 0);//histogram used for
 					}else {// the node
 						Node childNode = (Node)child;//if this node cannot be pruned, we will further enqueue this to the queue with the bounds												
 						if(assignNode(childNode, centoridData, data, child.radius)) {//pruned
 							candiList.get(minId).add(child);
 							ClusterPath aClusterPath = CENTERS.get(minId);
-							aClusterPath.updateHistorgramGuava(childNode.edgeOcc,childNode.lengthOcc);
+							aClusterPath.updateHistogramGuava(childNode.edgeOcc,childNode.lengthOcc);
 						}else {									
 							pendingQueue.add(new ItemWithDistances<Node>(childNode, childNode.bounds, minUpperBound));
 						}
@@ -734,8 +734,8 @@ public class MTree<DATA> {
 								idxNeedsOut.put(centerID, idxlist);// temporal store, batch remove later
 								
 								ClusterPath aClusterPath = CENTERS.get(minId);
-								bClusterPath.removeHistorgramGuava(childNode.edgeOcc,childNode.lengthOcc);
-								aClusterPath.updateHistorgramGuava(childNode.edgeOcc,childNode.lengthOcc);								
+								bClusterPath.removeHistogramGuava(childNode.edgeOcc,childNode.lengthOcc);
+								aClusterPath.updateHistogramGuava(childNode.edgeOcc,childNode.lengthOcc);
 							}
 						}else {
 							ArrayList<IndexItem> idxlist;
@@ -745,7 +745,7 @@ public class MTree<DATA> {
 								idxlist = new ArrayList<IndexItem>();
 							idxlist.add(child);
 							idxNeedsOut.put(centerID, idxlist);// temporal store, batch remove later
-							bClusterPath.removeHistorgramGuava(childNode.edgeOcc,childNode.lengthOcc);//remove the histogram from original histogram
+							bClusterPath.removeHistogramGuava(childNode.edgeOcc,childNode.lengthOcc);//remove the histogram from original histogram
 							pendingQueue.add(new ItemWithDistances<Node>(childNode, childNode.bounds, minUpperBound));
 						}
 					}

@@ -1,6 +1,6 @@
 package emd;
 
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import es.saulvargas.balltrees.BallTreeMatrix;
 import es.saulvargas.balltrees.BinaryTree;
 import it.unimi.dsi.fastutil.ints.IntArrayList;
@@ -14,13 +14,13 @@ public class ball_tree extends BinaryTree {
     public BallTreeMatrix.Ball getRoot(){
         return (BallTreeMatrix.Ball) super.getRoot();
     }
-    public static indexNode create(double[] ubMove, double[][] iterMatrix, int leafThreshold, int maxDepth){
+    public static IndexNode create(double[] ubMove, double[][] iterMatrix, int leafThreshold, int maxDepth){
         int[] rows = new int[iterMatrix.length];
         for (int row = 0; row < iterMatrix.length; row++){
             rows[row] = row;
         }
         BallTreeMatrix.Ball root = new BallTreeMatrix.Ball(ubMove, rows, iterMatrix);
-        indexNode rootKmeans = new indexNode(iterMatrix[0].length);
+        IndexNode rootKmeans = new IndexNode(iterMatrix[0].length);
         int depth = 0;
         if (rows.length > leafThreshold && depth<maxDepth){
             createChildren(root, leafThreshold, depth+1, maxDepth);
@@ -30,14 +30,14 @@ public class ball_tree extends BinaryTree {
         return rootKmeans;
     }
 
-    public static indexNode create(double[] ubMove,double[][] itemMatrix, int leafThreshold, int maxDepth,  int dimension) {
+    public static IndexNode create(double[] ubMove, double[][] itemMatrix, int leafThreshold, int maxDepth, int dimension) {
         int[] rows = new int[itemMatrix.length];
         for (int row = 0; row < itemMatrix.length; row++) {
             rows[row] = row;
         }
 //        System.out.println("create function rows ===" + rows.length);
         BallTreeMatrix.Ball root = new BallTreeMatrix.Ball(ubMove, rows, itemMatrix);
-        indexNode rootKmeans = new indexNode(dimension);
+        IndexNode rootKmeans = new IndexNode(dimension);
 
         int depth = 0;
         if (rows.length > leafThreshold && depth < maxDepth) {

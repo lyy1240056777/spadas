@@ -1,7 +1,7 @@
 package edu.nyu.dss.similarity;
 
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import edu.rmit.trajectory.clustering.kpaths.Util;
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -15,7 +15,7 @@ import java.util.TreeMap;
 public class Join {
 
     // join two tables by finding nearest neighbor, can also be used in join
-    public static void joinTableBaseline(double[][] query, double[][] dataset, indexNode idxQuery, indexNode idxDataset, int dimension, IndexAlgorithm indexDSS) {
+    public static void joinTableBaseline(double[][] query, double[][] dataset, IndexNode idxQuery, IndexNode idxDataset, int dimension, IndexAlgorithm indexDSS) {
         int i = 1;
         Map<Integer, Integer> joinNearestMap = new TreeMap<Integer, Integer>();
         for (double[] queryPoint : query) {
@@ -74,9 +74,9 @@ public class Join {
      * 2 updating cost is high, avoid rebuilding the index again and again.
      * can be a pami paper, more theory, and combine with "Metric Space Similarity Joins"
      */
-    public static ArrayList<Double> IncrementalJoin(double[][] point1xys, double[][] point2xys, int dimension, indexNode X, indexNode Y, int splitOption, int fastMode,
+    public static ArrayList<Double> IncrementalJoin(double[][] point1xys, double[][] point2xys, int dimension, IndexNode X, IndexNode Y, int splitOption, int fastMode,
                                                     double error, boolean reverse, double directDis, boolean topkEarlyBreaking, double hausdorff, PriorityQueue<queueMain> aHeaps,
-                                                    Map<Integer, indexNode> nodelist, Map<Integer, indexNode> nodelist1, String folder, boolean nonselectedDimension[], boolean dimensionAll) {
+                                                    Map<Integer, IndexNode> nodelist, Map<Integer, IndexNode> nodelist1, String folder, boolean nonselectedDimension[], boolean dimensionAll) {
         if (splitOption == 0)
             fastMode = 0;
         File myObj = new File("./logs/spadas/" + folder + "/distance.txt");
@@ -88,9 +88,9 @@ public class Join {
             queueMain mainq = aHeaps.poll();
             PriorityQueue<queueSecond> secondHeaps = mainq.getQueue();
             queueSecond secondq = secondHeaps.peek();
-            indexNode anode = mainq.getIndexNode();
+            IndexNode anode = mainq.getIndexNode();
             double ub = mainq.getbound();
-            indexNode bnode;
+            IndexNode bnode;
             if (secondq != null)
                 bnode = secondq.getNode();
             else
@@ -129,9 +129,9 @@ public class Join {
         return distancearray;
     }
 
-    public static Pair<Double[], Map<Integer, Integer>> IncrementalJoinCustom(int rows, double[][] point1xys, double[][] point2xys, int dimension, indexNode X, indexNode Y, int splitOption, int fastMode,
+    public static Pair<Double[], Map<Integer, Integer>> IncrementalJoinCustom(int rows, double[][] point1xys, double[][] point2xys, int dimension, IndexNode X, IndexNode Y, int splitOption, int fastMode,
                                                                               double error, boolean reverse, double directDis, boolean topkEarlyBreaking, double hausdorff, PriorityQueue<queueMain> aHeaps,
-                                                                              Map<Integer, indexNode> nodelist, Map<Integer, indexNode> nodelist1, String folder, boolean nonselectedDimension[], boolean dimensionAll) {
+                                                                              Map<Integer, IndexNode> nodelist, Map<Integer, IndexNode> nodelist1, String folder, boolean nonselectedDimension[], boolean dimensionAll) {
         if (splitOption == 0)
             fastMode = 0;
         File myObj = new File("./logs/spadas/" + folder + "/distance.txt");
@@ -144,9 +144,9 @@ public class Join {
             queueMain mainq = aHeaps.peek();
             PriorityQueue<queueSecond> secondHeaps = mainq.getQueue();
             queueSecond secondq = secondHeaps.peek();
-            indexNode anode = mainq.getIndexNode();
+            IndexNode anode = mainq.getIndexNode();
             double ub = mainq.getbound();
-            indexNode bnode;
+            IndexNode bnode;
             if (secondq != null)
                 bnode = secondq.getNode();
             else

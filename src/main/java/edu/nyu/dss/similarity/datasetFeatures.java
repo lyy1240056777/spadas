@@ -1,7 +1,7 @@
 package edu.nyu.dss.similarity;
 
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import edu.rmit.trajectory.clustering.kpaths.Util;
 
 import java.text.DecimalFormat;
@@ -21,15 +21,15 @@ public class datasetFeatures {
 	/*
 	 * get the count of nodes in the tree.
 	 */
-	static public int getNodesCount(indexNode root) {
+	static public int getNodesCount(IndexNode root) {
 		if(root == null)
 			return 0;
 		if(root.isLeaf()) {	
 			return 1;
 		}else {
-			Set<indexNode> listnode = root.getNodelist();
+			Set<IndexNode> listnode = root.getNodelist();
 			int max = listnode.size();
-			for(indexNode aIndexNode: listnode) {
+			for(IndexNode aIndexNode: listnode) {
 				max += getNodesCount(aIndexNode);
 			}
 			return max;
@@ -40,7 +40,7 @@ public class datasetFeatures {
 	/*
 	 * the features of index tree, which will be used, we need to solve the N/A problem
 	 */
-	static public double[] getFeature(String filename, indexNode root, int scale, int capacity, int id) {
+	static public double[] getFeature(String filename, IndexNode root, int scale, int capacity, int id) {
 		ArrayList<Double> raidus = new ArrayList<Double>();
 		ArrayList<Double> fatherdis = new ArrayList<Double>();
 		ArrayList<Double> numPoints = new ArrayList<Double>();

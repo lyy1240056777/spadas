@@ -5,7 +5,9 @@ import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.nyu.dss.similarity.datasetReader.*;
 import edu.nyu.dss.similarity.index.*;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
+import edu.whu.index.TrajectorySpatialIndex;
+import edu.whu.structure.Trajectory;
 import edu.whu.tmeans.augment.BrutalForceAugment;
 import edu.whu.tmeans.model.GeoLocation;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +16,6 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import web.VO.AugmentVO;
 import web.param.*;
 import web.Utils.FileU;
 import web.Utils.ListUtil;
@@ -56,6 +57,9 @@ public class FrameworkService {
     public DataMapPorto dataMapPorto;
 
     @Autowired
+    public TrajectorySpatialIndex trajectorySpatialIndex;
+    
+    @Autowired
     public FileIDMap fileIDMap;
 
     @Autowired
@@ -63,10 +67,10 @@ public class FrameworkService {
 
     @Autowired
     public IndexMap indexMap;// root node of dataset's index
-    static Map<Integer, indexNode> datalakeIndex = null;// the global datalake index
+    static Map<Integer, IndexNode> datalakeIndex = null;// the global datalake index
     @Autowired
     public IndexNodes indexNodes;// store the root nodes of all datasets in the lake// the root node of datalake index in memory mode
-    static Map<Integer, Map<Integer, indexNode>> datasetIndex; // restored dataset index
+    static Map<Integer, Map<Integer, IndexNode>> datasetIndex; // restored dataset index
 
     @Autowired
     private ZCodeMap zCodeMap;
@@ -79,7 +83,7 @@ public class FrameworkService {
 
     public List<DatasetVo> rangequery(RangeQueryParams qo) {
         HashMap<Integer, Double> result = new HashMap<>();
-        indexNode root = framework.datasetRoot;
+        IndexNode root = framework.datasetRoot;
 //        为什么需要根节点参与？
         if (datalakeIndex != null)
             root = datalakeIndex.get(1);
@@ -131,36 +135,19 @@ public class FrameworkService {
         for (int i = 0; i < datasetIdMapping.size(); i++) {
             if (datasetIdMapping.get(i) != null && datasetIdMapping.get(i).contains(qo.getKws())) {
                 res.add(new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null));
+                if (res.size() == qo.getLimit()) {
+                    break;
+                }
             }
         }
         return res;
     }
 
-    public List<DatasetVo> datasetQuery(indexNode queryNode, double[][] data, int k) throws IOException {
+    public List<DatasetVo> datasetQuery(IndexNode queryNode, double[][] data, int k) throws IOException {
         HashMap<Integer, Double> result = search.pruneByIndex(dataMapPorto, framework.datasetRoot, queryNode,
                 config.getDimension(), indexMap, datasetIndex, null, datalakeIndex, datasetIdMapping, k,
                 indexString, null, true, 0, config.getLeafCapacity(), null, config.isSaveIndex(), data);
-
-        List<DatasetVo> specialResult = new ArrayList<>();
-        if (queryNode.getFileName().equals("phl--flu-shot.csv")) {
-            List<Integer> specialIdList = new ArrayList<>();
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--health-centers.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--fire-dept-facilities.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--hospitals.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--farmers-markets.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--pharmacies.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialResult.addAll(specialIdList.stream().map(item -> new DatasetVo(indexMap.get(item), datasetIdMapping.get(item), item, null /*dataMapPorto.get(item)*/)).toList());
-        }
-
         List<DatasetVo> finalResult = new ArrayList<>();
-        finalResult.addAll(specialResult);
-//        finalResult.addAll(result.entrySet().stream().sorted((o1, o2) -> o1.getValue() - o2.getValue() > 0 ? 1 : -1).
-//                map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).collect(Collectors.toList()));
         finalResult.addAll(result.entrySet().stream().sorted((o1, o2) -> (int) (o1.getValue() - o2.getValue())).
                 map(i -> new DatasetVo(i.getKey(), indexMap.get(i.getKey()), datasetIdMapping.get(i.getKey()), dataSamplingMap.get(i.getKey()), indexMap.get(i.getKey()).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i.getKey()) : null)).toList());
         return finalResult.subList(0, k);
@@ -168,7 +155,7 @@ public class FrameworkService {
 
     public List<DatasetVo> datasetQuery(DatasetQueryParams qo) throws IOException {
 //        indexNode queryNode;
-        indexNode queryNode = indexMap.get(qo.getDatasetId());
+        IndexNode queryNode = indexMap.get(qo.getDatasetId());
         double[][] data = dataMapPorto.get(qo.getDatasetId());
         HashMap<Integer, Double> result = new HashMap<>();
 
@@ -183,7 +170,7 @@ public class FrameworkService {
                         datalakeIndex);
             }
             case 2 -> { // GridOverlap using index
-                indexNode root = framework.datasetRoot;//datalakeIndex.get(1);//use store
+                IndexNode root = framework.datasetRoot;//datalakeIndex.get(1);//use store
 
 //            if (datalakeIndex != null)
 //                root = datalakeIndex.get(1);
@@ -195,35 +182,9 @@ public class FrameworkService {
             }
             default -> {
             }
-//            emd
-//            int[] queryID = convertID(qo.getDatasetId());
-//            PriorityQueue<relaxIndexNode> resQueue = EMD(queryID[0], queryID[1], qo.getK());
-//            while (!resQueue.isEmpty()) {
-//                relaxIndexNode rin = resQueue.poll();
-//                result.put(convertID(queryID[0], rin.getResultId()), rin.getLb());
-//            }
-        }
-
-        //        定制结果，是为了匹配论文中的查询样例
-//        判断是否是目标样例flu-shot
-        List<DatasetVo> specialResult = new ArrayList<>();
-        if (queryNode.getFileName().equals("phl--flu-shot.csv") && qo.getMode() == 0) {
-            List<Integer> specialIdList = new ArrayList<>();
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--health-centers.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--fire-dept-facilities.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--hospitals.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--farmers-markets.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialIdList.addAll(datasetIdMapping.entrySet().stream().filter(e -> e.getValue().equals("phl--pharmacies.csv"))
-                    .map(Map.Entry::getKey).toList());
-            specialResult.addAll(specialIdList.stream().map(item -> new DatasetVo(indexMap.get(item), datasetIdMapping.get(item), item, null/*dataMapPorto.get(item)*/)).toList());
         }
 
         List<DatasetVo> finalResult = new ArrayList<>();
-        finalResult.addAll(specialResult);
         finalResult.addAll(result.entrySet().
                 stream()
                 .sorted((o1, o2) -> (int) (o1.getValue() - o2.getValue()))
@@ -269,8 +230,8 @@ public class FrameworkService {
         double[][] queryDataset = queryDataset(queryID);
         double[][] targetDataset = queryDataset(datasetID);
 
-        indexNode queryNode = queryNode(queryID, queryDataset, null);
-        indexNode targetNode = queryNode(datasetID, targetDataset, null);
+        IndexNode queryNode = queryNode(queryID, queryDataset, null);
+        IndexNode targetNode = queryNode(datasetID, targetDataset, null);
         // Hausdorff Pair-wise distance measure
         AdvancedHausdorff.setBoundChoice(0);
 //		Pair<Double, PriorityQueue<queueMain>> aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, queryNode, datanode, 1, 1, 0, false, 0, false,queryindexmap, dataindexMap, null, true);
@@ -322,7 +283,7 @@ public class FrameworkService {
         return result;
     }
 
-    public Pair<indexNode, double[][]> readNewFile(MultipartFile file, String fileName) throws IOException {
+    public Pair<IndexNode, double[][]> readNewFile(MultipartFile file, String fileName) throws IOException {
         return uploadReader.read(file, fileName);
     }
 
@@ -330,7 +291,7 @@ public class FrameworkService {
         return new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null);
     }
 
-    private indexNode queryNode(int datasetID, double[][] dataset, Map<Integer, indexNode> indexMap) {
+    private IndexNode queryNode(int datasetID, double[][] dataset, Map<Integer, IndexNode> indexMap) {
         if (indexMap != null) {
             return indexMap.get(datasetID);
         } else if (datasetIndex != null) {
@@ -402,6 +363,9 @@ public class FrameworkService {
         }
         targetDataset.getColumns().putAll(results);
         return targetDataset;
+    }
 
+    public ArrayList<Trajectory> getTrajectory(int datasetId) {
+        return trajectorySpatialIndex.get(datasetId);
     }
 }

@@ -4,7 +4,7 @@ import edu.nyu.dss.similarity.CityNode;
 import edu.nyu.dss.similarity.EffectivenessStudy;
 import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -49,8 +49,8 @@ public class IndexBuilder {
     @Deprecated
     static double spaceRange = 100;
 
-    public indexNode createDatasetIndex(int a, double[][] dataset, int type, CityNode cityNode) {
-        indexNode rootBall;
+    public IndexNode createDatasetIndex(int a, double[][] dataset, int type, CityNode cityNode) {
+        IndexNode rootBall;
         if (buildOnlyRoots) {// just create the root node, for datalake creation（只建下层索引的根节点，作为上层索引的叶子节点）
             rootBall = createRootsDataset(dataset, config.getDimension());
         } else {// create the full tree
@@ -82,7 +82,7 @@ public class IndexBuilder {
     /*
      * just create a root node to cover all the points
      */
-    private indexNode createRootsDataset(double[][] dataset, int dimension) {
+    private IndexNode createRootsDataset(double[][] dataset, int dimension) {
         double[] max;
         double[] min;
         double[] pivot;
@@ -110,7 +110,7 @@ public class IndexBuilder {
                 radius += Math.pow((max[i] - min[i]) / 2, 2);
         }
         radius = Math.sqrt(radius);
-        indexNode rootNode = new indexNode(dimension);
+        IndexNode rootNode = new IndexNode(dimension);
         rootNode.setMBRmax(max);
         rootNode.setMBRmax(min);
         rootNode.setRadius(radius);
@@ -120,7 +120,7 @@ public class IndexBuilder {
     }
 
 
-    public void samplingDataByGrid(double[][] data, int id, indexNode node) {
+    public void samplingDataByGrid(double[][] data, int id, IndexNode node) {
         double xMin = node.getPivot()[0] - node.getRadius();
         double yMin = node.getPivot()[1] - node.getRadius();
         double unit = node.getRadius() * 2 / Math.pow(2, config.getResolution());

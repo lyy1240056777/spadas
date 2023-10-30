@@ -1,13 +1,13 @@
 package edu.nyu.dss.similarity;
 
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 
 /*
  * this class is for the heap method
  */
 public class queueSecond implements Comparable<queueSecond>{
 	double bound;
-	indexNode anode;
+	IndexNode anode;
 	int pointid;
 
 	
@@ -15,7 +15,7 @@ public class queueSecond implements Comparable<queueSecond>{
 		return bound;
 	}
 	
-	public indexNode getNode() {
+	public IndexNode getNode() {
 		return anode;
 	}
 	
@@ -23,7 +23,7 @@ public class queueSecond implements Comparable<queueSecond>{
 		return pointid;
 	}
 	
-	public queueSecond(indexNode a, double b, int id) {
+	public queueSecond(IndexNode a, double b, int id) {
 		this.anode = a;
 		this.bound = b;
 		this.pointid = id;

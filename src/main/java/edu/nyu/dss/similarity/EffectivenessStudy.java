@@ -1,7 +1,7 @@
 package edu.nyu.dss.similarity;
 
 import edu.nyu.dss.similarity.datasetReader.SingleFileReader;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import edu.rmit.trajectory.clustering.kpaths.Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -141,7 +141,7 @@ public class EffectivenessStudy {
 
     }
 
-    void BuildIndex(indexNode root) {
+    void BuildIndex(IndexNode root) {
         // compute pivot and radius
 
         //

@@ -12,7 +12,7 @@ import edu.rmit.trajectory.clustering.kpaths.Util;
 
 public class cluster {
     protected Set<Integer> coveredPoints;
-    protected Set<indexNode> covertedNodes;
+    protected Set<IndexNode> covertedNodes;
     int dimension = 0;//the dimension of the Euclidean dataset
     protected double[] finalCentroid;
     protected double[] sumTotal;//this records the sum
@@ -66,7 +66,7 @@ public class cluster {
             coveredPoints.addAll(arrayList);
     }
 
-    public Set<indexNode> getcoveredNodes() {
+    public Set<IndexNode> getcoveredNodes() {
         return covertedNodes;
     }
 
@@ -85,8 +85,8 @@ public class cluster {
     /*
      * add the trajectory into the clusters
      */
-    void mergeNodesToCluster(ArrayList<indexNode> nodes) {
-        for (indexNode ad : nodes) {
+    void mergeNodesToCluster(ArrayList<IndexNode> nodes) {
+        for (IndexNode ad : nodes) {
             addNode(ad);
             //	addSum(ad.getSum());
         }
@@ -178,7 +178,7 @@ public class cluster {
         heap = new PriorityQueue<kmeansHeap>();//this is for storing the bounds, Harmly
     }
 
-    public cluster(double[] cluster, indexNode node, int dimen) {
+    public cluster(double[] cluster, IndexNode node, int dimen) {
         dimension = dimen;
         finalCentroid = new double[dimension];
         sumTotal = new double[dimension];
@@ -188,7 +188,7 @@ public class cluster {
         }
         coveredPoints = new HashSet<>();
         covertedNodes = new HashSet<>();
-        for (indexNode child : node.getNodelist()) {//add all the children
+        for (IndexNode child : node.getNodelist()) {//add all the children
             covertedNodes.add(child);
             addSum(child.getSum());
         }
@@ -228,7 +228,7 @@ public class cluster {
                 newfinalCentroid[i] += point[i];
             }
         }
-        for (indexNode nodes : covertedNodes) {
+        for (IndexNode nodes : covertedNodes) {
             numberPoints += nodes.getTotalCoveredPoints();
             double[] sum = nodes.getSum();
             for (int i = 0; i < dimension; i++) {
@@ -256,7 +256,7 @@ public class cluster {
      */
     double extractNewCentroidByMeansIncremental() {
         int numberPoints = coveredPoints.size();
-        for (indexNode aIndexNode : covertedNodes) {
+        for (IndexNode aIndexNode : covertedNodes) {
             numberPoints += aIndexNode.getTotalCoveredPoints();//all the points in the cluster
         }
         double[] newfinalCentroid = new double[dimension];
@@ -342,14 +342,14 @@ public class cluster {
         return sumTotal;
     }
 
-    void removeNode(indexNode node) {//remove specific node from index
+    void removeNode(IndexNode node) {//remove specific node from index
         if (covertedNodes.contains(node)) {
             covertedNodes.remove(node);
             minusSum(node.getSum());
         }
     }
 
-    void addNode(indexNode node) {//remove specific node from index
+    void addNode(IndexNode node) {//remove specific node from index
         if (!covertedNodes.contains(node)) {// this node never exists
             covertedNodes.add(node);
             addSum(node.getSum());
@@ -366,9 +366,9 @@ public class cluster {
     public double computeSum(double[][] datamapEuc, Set<Integer> allPointsAll) {
         //	System.out.println(Arrays.toString(finalCentroid));
         Set<Integer> allPoints = new HashSet<>(coveredPoints);
-        Queue<indexNode> nodeq = new LinkedList<>(covertedNodes);
+        Queue<IndexNode> nodeq = new LinkedList<>(covertedNodes);
         while (!nodeq.isEmpty()) {
-            indexNode aIndexNode = nodeq.poll();
+            IndexNode aIndexNode = nodeq.poll();
             if (aIndexNode.getNodelist().isEmpty()) {
                 allPoints.addAll(aIndexNode.getpointIdList());
             } else {
@@ -390,9 +390,9 @@ public class cluster {
     public double computeFairSum(double[][] datamapEuc, Set<Integer> allPointsAll, int userID[], Map<Integer, Integer> userNumber) {
         //	System.out.println(Arrays.toString(finalCentroid));
         Set<Integer> allPoints = new HashSet<>(coveredPoints);
-        Queue<indexNode> nodeq = new LinkedList<>(covertedNodes);
+        Queue<IndexNode> nodeq = new LinkedList<>(covertedNodes);
         while (!nodeq.isEmpty()) {
-            indexNode aIndexNode = nodeq.poll();
+            IndexNode aIndexNode = nodeq.poll();
             if (aIndexNode.getNodelist().isEmpty()) {
                 allPoints.addAll(aIndexNode.getpointIdList());
             } else {
@@ -408,14 +408,14 @@ public class cluster {
         return sum;
     }
 
-    public void reset(indexNode node) {
+    public void reset(IndexNode node) {
         coveredPoints = new HashSet<>();
         covertedNodes = new HashSet<>();
         sumTotal = new double[dimension];
         if (node != null) {
             //	covertedNodes.add(node);// add the node into candidates
             //the sum should be set
-            for (indexNode child : node.getNodelist()) {//add all the children
+            for (IndexNode child : node.getNodelist()) {//add all the children
                 covertedNodes.add(child);
                 addSum(child.getSum());
             }
@@ -442,7 +442,7 @@ public class cluster {
                 newfinalCentroid[i] += point[i] / userNumber.get(userID[traidx - 1]);// the update needs to consider the 1/|o|, where o is the owner
             }
         }
-        for (indexNode nodes : covertedNodes) {
+        for (IndexNode nodes : covertedNodes) {
             numberPoints += nodes.getTotalCoveredPointsFair();// the number also needs to be normalized
             double[] sum = nodes.getSum();
             for (int i = 0; i < dimension; i++) {
