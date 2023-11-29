@@ -10,17 +10,17 @@ public class pooling {
         return ub_move;
     }
 
-    public static signature_t poolingOperature1(signature_t s1, int t) throws CloneNotSupportedException{
+    public SignatureT poolingOperature1(SignatureT s1, int t) throws CloneNotSupportedException{
         int T = t;
         Object obj = s1.clone();
         ub_move = 0.0;
-        signature_t s2 = (signature_t) obj;
-        signature_t s3 = new signature_t();
+        SignatureT s2 = (SignatureT) obj;
+        SignatureT s3 = new SignatureT();
         HashMap<Integer, double[]> hm = new HashMap<>();
         double[] d= new double[s2.n];
 //        double totalWeights = 0.0;
         if (s2.n == 1){
-            s3 = (signature_t) s2.clone();
+            s3 = (SignatureT) s2.clone();
         }else{
             for (int i = 0; i<s2.n; i++){
 //            totalWeights += s2.Weights[i];
@@ -49,15 +49,15 @@ public class pooling {
         return s3;
     }
 
-    public signature_t poolingOperature (signature_t s1, int t) throws CloneNotSupportedException{
+    public SignatureT poolingOperature (SignatureT s1, int t) throws CloneNotSupportedException{
         Object obj = s1.clone();
         ub_move = 0.0;
-        signature_t s2 = (signature_t) obj;
+        SignatureT s2 = (SignatureT) obj;
         double totalWeights = 0.0;
         for (int i = 0; i<s2.n; i++){
             totalWeights += s2.Weights[i];
         }
-        signature_t s3 = new signature_t();
+        SignatureT s3 = new SignatureT();
         int minIndex = 100000000;
         int secIndex = 100000000;
         while(numberOfNoneZero(s2) > t){
@@ -89,11 +89,11 @@ public class pooling {
         return s3;
     }
 
-    public signature_t pooling3DOperature (signature_t s1, int t) throws CloneNotSupportedException{
+    public SignatureT pooling3DOperature (SignatureT s1, int t) throws CloneNotSupportedException{
         Object obj = s1.clone();
 //        System.out.println("s1.n = "+s1.n);
         ub_move = 0.0;
-        signature_t s2 = (signature_t) obj;
+        SignatureT s2 = (SignatureT) obj;
 //        for (int i = 0; i<s2.n; i++){
 //            System.out.println(s2.Features[i].X+","+ s2.Features[i].Y+","+s2.Features[i].Z+","+ s2.Weights[i]);
 //        }
@@ -104,7 +104,7 @@ public class pooling {
         }
 
 //        System.out.println("totalWeights = "+totalWeights);
-        signature_t s3 = new signature_t();
+        SignatureT s3 = new SignatureT();
         int minIndex = 100000000;
         int secIndex = 100000000;
         while(numberOfNoneZero(s2) > t){
@@ -137,31 +137,31 @@ public class pooling {
     }
 
 
-    public static signature_t deleteZeroBin(signature_t s1){
-        signature_t s2;
+    public static SignatureT deleteZeroBin(SignatureT s1){
+        SignatureT s2;
         ArrayList<Double> weights = new ArrayList<>();
-        ArrayList<feature_t> features = new ArrayList<>();
+        ArrayList<FeatureT> features = new ArrayList<>();
         for(int i = 0; i<s1.n; i++){
             if (s1.Weights[i] >0){
                 weights.add(s1.Weights[i]);
                 features.add(s1.Features[i]);
             }
         }
-        feature_t[] features2 = new feature_t[weights.size()];
+        FeatureT[] features2 = new FeatureT[weights.size()];
         double[] weights2 = new double[weights.size()];
         for (int i = 0; i<weights.size(); i++){
             weights2[i] = weights.get(i);
         }
-        s2 = new signature_t((int)weights.size(),features.toArray(features2),weights2);
+        s2 = new SignatureT((int)weights.size(),features.toArray(features2),weights2);
 
         return s2;
     }
-    public static double disBetweenTwoPoint(feature_t F1, feature_t F2) {
+    public static double disBetweenTwoPoint(FeatureT F1, FeatureT F2) {
         double dX = F1.X - F2.X;
         double dY = F1.Y - F2.Y;
         return Math.sqrt((double)(dX*dX + dY*dY));
     }
-    public static double disBetween3DPoint(feature_t F1, feature_t F2){
+    public static double disBetween3DPoint(FeatureT F1, FeatureT F2){
 
         double dX = F1.X - F2.X;
         double dY = F1.Y - F2.Y;
@@ -176,7 +176,7 @@ public class pooling {
         return Math.sqrt((double)(dX*dX + dY*dY));
     }
 
-    public static int numberOfNoneZero(signature_t s1){
+    public static int numberOfNoneZero(SignatureT s1){
         int number = 0;
         for (int i = 0; i<s1.n; i++){
             if (s1.Weights[i] > 0 ){

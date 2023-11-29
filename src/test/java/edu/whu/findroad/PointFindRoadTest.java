@@ -97,16 +97,16 @@ public class PointFindRoadTest {
     private int findNearestRoadBrutalForce(double[] point, ArrayList<Trajectory> roads, TrajectoryDistanceType type) {
         double min = 999;
         int index = -1;
-        for (int j = 0; j < roads.size(); j++) {
-            double currentDistance = switch (type) {
-                case SEGMENT -> calculateDistanceWithSegmentMode(point, roads.get(j));
-                case POINT, default -> calculateDistanceWithPointMode(point, roads.get(j));
-            };
-            if (currentDistance < min) {
-                min = currentDistance;
-                index = j;
-            }
-        }
+//        for (int j = 0; j < roads.size(); j++) {
+//            double currentDistance = switch (type) {
+//                case SEGMENT -> calculateDistanceWithSegmentMode(point, roads.get(j));
+//                case POINT, default -> calculateDistanceWithPointMode(point, roads.get(j));
+//            };
+//            if (currentDistance < min) {
+//                min = currentDistance;
+//                index = j;
+//            }
+//        }
         return index;
     }
 

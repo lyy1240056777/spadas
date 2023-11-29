@@ -58,8 +58,12 @@ public class ShapefileReader {
     @Autowired
     private TrajectoryDataIndex trajectoryDataIndex;
 
-    private double[] latRange = new double[]{-74.214328, -73.726123};
-    private double[] lonRange = new double[]{40.622748, 40.884902};
+    private double[] latRangeForNYC = new double[]{-74.214328, -73.726123};
+    private double[] lonRangeForNYC = new double[]{40.622748, 40.884902};
+
+
+    private double[] latRangeForPittsburgh = new double[]{-80.0363, -79.9310};
+    private double[] lonRangeForPittsburgh = new double[]{40.4191, 40.4773};
 
     public void read(File file, int id, CityNode cityNode) throws IOException {
         if (!file.getName().endsWith("shp")) {
@@ -157,7 +161,7 @@ public class ShapefileReader {
 
     private ArrayList<Trajectory> getMultiLineString(MultiLineString lineString) {
         int size = lineString.getNumGeometries();
-        boolean insideNyc = false;
+        boolean inside = false;
         int count = 0;
         ArrayList<Trajectory> tras = new ArrayList<>();
         for (int i = 0; i < size; i++) {
@@ -168,14 +172,14 @@ public class ShapefileReader {
                 double[] point = new double[2];
                 point[1] = co[j].x;
                 point[0] = co[j].y;
-                if (point[1] >= latRange[0] && point[1] <= latRange[1] && point[0] >= lonRange[0] && point[0] <= lonRange[1]) {
-                    insideNyc = true;
+                if (point[1] >= latRangeForPittsburgh[0] && point[1] <= latRangeForPittsburgh[1] && point[0] >= lonRangeForPittsburgh[0] && point[0] <= lonRangeForPittsburgh[1]) {
+                    inside = true;
                     count += 1;
                 }
                 tra.add(point);
             }
             tras.add(tra);
         }
-        return insideNyc ? tras : new ArrayList<>();
+        return inside ? tras : new ArrayList<>();
     }
 }

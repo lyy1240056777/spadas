@@ -4,10 +4,7 @@ import edu.whu.structure.DatasetID;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import web.VO.DatasetVo;
-import web.VO.JoinVO;
-import web.VO.PreviewVO;
-import web.VO.RoadMatchPair;
+import web.VO.*;
 import web.param.AugmentParams;
 import web.param.UnionParams;
 import web.param.UnionRangeQueryParams;
@@ -36,7 +33,7 @@ public class AugmentController {
 
 
     @RequestMapping(value = "spadas/api/join", method = RequestMethod.GET)
-    public JoinVO datasetJoin(@RequestParam int queryId, @RequestParam int datasetId, @RequestParam int rows) throws IOException {
+    public JoinResultVO datasetJoin(@RequestParam int queryId, @RequestParam int datasetId, @RequestParam int rows) throws IOException {
         return framework.join(queryId, datasetId, rows);
     }
 

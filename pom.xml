@@ -197,6 +197,11 @@
             <artifactId>org.apache.lucene.spatial</artifactId>
             <version>9.7.0</version>
         </dependency>
+        <dependency>
+            <groupId>javax.measure</groupId>
+            <artifactId>unit-api</artifactId>
+            <version>2.1</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
