@@ -3,18 +3,28 @@ package edu.nyu.dss.similarity;
 import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.nyu.dss.similarity.consts.DataLakeType;
 import edu.nyu.dss.similarity.datasetReader.*;
-import edu.nyu.dss.similarity.index.*;
+import edu.nyu.dss.similarity.index.DataMapPorto;
+import edu.nyu.dss.similarity.index.DatasetIDMapping;
+import edu.nyu.dss.similarity.index.IndexMap;
+import edu.nyu.dss.similarity.index.IndexNodes;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
 import edu.nyu.dss.similarity.utils.FileUtil;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
+import edu.whu.index.FilePathIndex;
+import edu.whu.index.GeoEncoder;
+import edu.whu.index.GridTrajectoryIndex;
+import edu.whu.index.TrajectoryDataIndex;
+import edu.whu.structure.Trajectory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Component
 @Slf4j
@@ -39,6 +49,15 @@ public class Framework {
     private ChinaReader chinaReader;
 
     @Autowired
+    private ArgoReader argoReader;
+
+    @Autowired
+    private FilePathIndex filePathIndex;
+
+    @Autowired
+    private PureLocationReader pureLocationReader;
+
+    @Autowired
     private OpenNycReader openNycReader;
 
     @Autowired
@@ -48,25 +67,27 @@ public class Framework {
     private IndexAlgorithm indexDSS;
 
     private String indexString = "";
+
     @Autowired
     public DatasetIDMapping datasetIdMapping;
-    // 存储数据集文件id到数据集文件名的映射，每个目录独立映射
-    @Autowired
-    public DataSamplingMap dataSamplingMap;
 
     // 每遍历一个目录文件（如城市）生成一个新的map，value总共组成了dataMapPorto，用于计算emd
     @Autowired
     public DataMapPorto dataMapPorto;
 
     @Autowired
-    public FileIDMap fileIDMap;
+    private TrajectoryDataIndex trajectoryDataIndex;
 
+    @Autowired
+    private GridTrajectoryIndex gridTrajectoryIndex;
     private int fileNo = 0;
     //	store the data of every point of the whole data lake
     public static List<double[]> dataPoint = new ArrayList<>();
     public static List<CityNode> cityNodeList = new ArrayList<>();
 
-    public static Map<String, List<indexNode>> cityIndexNodeMap = new HashMap<>();
+    public static Map<String, List<IndexNode>> cityIndexNodeMap = new HashMap<>();
+
+    private GeoEncoder geoEncoder;
     /*
      * z-curve for grid-based overlap
      */
@@ -76,12 +97,18 @@ public class Framework {
 //    说到底这个spaceRange到底有什么用
     private final double spaceRange = 100;
 
+
+    /**
+     * 每个维度划分成的网格份数
+     */
+    private final int SLIDE_PER_SIDE = 100;
+
     @Autowired
     public IndexMap indexMap;// root node of dataset's index
-    static Map<Integer, indexNode> datalakeIndex = null;// the global datalake index
+    static Map<Integer, IndexNode> datalakeIndex = null;// the global datalake index
     @Autowired
     public IndexNodes indexNodes;// store the root nodes of all datasets in the lake
-    public indexNode datasetRoot = null; // the root node of datalake index in memory mode
+    public IndexNode datasetRoot = null; // the root node of datalake index in memory mode
 
     static double[] weight = null; // the weight in all dimensions
 
@@ -122,11 +149,13 @@ public class Framework {
 //                选择使用哪种读取方法
 
                 switch (type) {
+                    case PURE_LOCATION -> pureLocationReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
                     case BAIDU_POI -> chinaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
                     case BUS_LINE, MOVE_BANK, USA -> usaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
                     case POI -> poiReader.read(file, fileNo++, cityNode);
                     case OPEN_NYC -> openNycReader.read(file, fileNo++, cityNode);
                     case SHAPE_FILE -> shapefileReader.read(file, fileNo++, cityNode);
+                    case ARGOVERSE -> argoReader.read(file, fileNo++, cityNode);
                     // impossible to be here, default type is BAIDU_POI
                     default -> throw new RuntimeException("Unknown dataset type:" + type.name());
                 }
@@ -267,10 +296,113 @@ public class Framework {
         }
     }
 
+    /**
+     * load the trajectory dataset's indexes
+     */
+    private void loadTrajectoryIndex(int datasetID) {
+        Long beforeEncodeTime = System.currentTimeMillis();
+        ArrayList<Trajectory> roadDataset = trajectoryDataIndex.get(datasetID);
+        double[] range = findGeoRange(roadDataset);
+        geoEncoder = new GeoEncoder(range[0], range[1], range[2], range[3], SLIDE_PER_SIDE, SLIDE_PER_SIDE);
+        HashMap<Integer, List<Integer>>[][] index = encodeRoadmap(roadDataset, geoEncoder);
+        gridTrajectoryIndex.setValue(index);
+        gridTrajectoryIndex.setGetEncoder(geoEncoder);
+        gridTrajectoryIndex.setSpatialRange(range);
+        gridTrajectoryIndex.setSpatialSplit(new int[]{SLIDE_PER_SIDE, SLIDE_PER_SIDE});
+        log.info("Loaded a grid based trajectory index with {} trajectories.", roadDataset.size());
+        Long afterEncodeTime = System.currentTimeMillis();
+        log.info("Total encode cost {} ms", (afterEncodeTime - beforeEncodeTime));
+    }
+
+    public HashMap<Integer, List<Integer>>[][] getGridIndex() {
+        return gridTrajectoryIndex.getValue();
+    }
+
+    private double[] findGeoRange(ArrayList<Trajectory> roads) {
+        double lat_min = 180, lat_max = -180, lng_min = 180, lng_max = -180;
+        Long beforeEncodeTime = System.currentTimeMillis();
+        for (Trajectory road : roads) {
+            for (double[] seg : road) {
+                if (seg[0] < lat_min) {
+                    lat_min = seg[0];
+                }
+                if (seg[0] > lat_max) {
+                    lat_max = seg[0];
+                }
+                if (seg[1] < lng_min) {
+                    lng_min = seg[1];
+                }
+                if (seg[1] > lng_max) {
+                    lng_max = seg[1];
+                }
+            }
+        }
+        log.info("The roadmap lat range from {} to {}, lng range from {} to {}", lat_min, lat_max, lng_min, lng_max);
+        return new double[]{lat_min, lng_min, lat_max, lng_max};
+    }
+
+    private HashMap<Integer, List<Integer>>[][] encodeRoadmap(ArrayList<Trajectory> roads, GeoEncoder encoder) {
+        // map key=road index, map value = segment number
+        HashMap<Integer, List<Integer>>[][] grids = new HashMap[SLIDE_PER_SIDE][SLIDE_PER_SIDE];
+        for (int i = 0; i < roads.size(); i++) {
+            HashSet<Integer> gridRecord = new HashSet<>();
+            for (int j = 0; j < roads.get(i).size(); j++) {
+                double[] seg = roads.get(i).get(j);
+                int[] indexes = encoder.encode(seg);
+                gridRecord.add(indexes[0] * 100 + indexes[1]);
+                if (grids[indexes[0]] == null) {
+                    grids[indexes[0]] = new HashMap[SLIDE_PER_SIDE];
+                }
+                HashMap<Integer, List<Integer>> grid = grids[indexes[0]][indexes[1]];
+                if (grid == null) {
+                    grids[indexes[0]][indexes[1]] = new HashMap<>();
+                    grid = grids[indexes[0]][indexes[1]];
+                }
+                if (grid.containsKey(i)) {
+                    grid.get(i).add(j);
+                } else {
+                    ArrayList<Integer> list = new ArrayList<>();
+                    list.add(j);
+                    grid.put(i, list);
+                }
+            }
+            log.debug("encode road {} with {} points in {} grids", i, roads.get(i).size(), gridRecord.size());
+        }
+        return grids;
+    }
+
+    public int defaultTrajectoryDataset() {
+        return findNameContains("new-york-road");
+    }
+
+    public int findNameContains(String seg) {
+        Optional<Map.Entry<String, Integer>> e = filePathIndex.entrySet().stream().filter(entry -> entry.getKey().contains(seg)).findFirst();
+        if (e.isPresent()) {
+            return e.get().getValue();
+        }
+        throw new RuntimeException(seg + " is not present.");
+    }
+
+    /**
+     * init all datasets
+     * 1. read the directory
+     * 2. load the datasets index with points
+     * 3. load the datasets index with trajectories
+     */
     public void init() throws IOException {
         clearAll();
         readDatalake(config.getFrontendLimitation());
         createDatalake(config.getFrontendLimitation());
+        loadTrajectoryIndex(defaultTrajectoryDataset());
+        initTestRoadmap(10000);
         log.info("All data loaded.");
+    }
+
+    private void initTestRoadmap(int limit) {
+        if (trajectoryDataIndex.isEmpty()) {
+            log.warn("There's no trajectory data. skip for create test dataset.");
+            return;
+        }
+        trajectoryDataIndex.put(0, (ArrayList<Trajectory>) trajectoryDataIndex.get(trajectoryDataIndex.keySet().stream().findFirst().get()).stream().limit(limit).collect(Collectors.toList()));
     }
 }

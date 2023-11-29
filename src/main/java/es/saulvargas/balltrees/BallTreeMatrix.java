@@ -26,7 +26,7 @@ import java.util.Random;
 import java.util.Set;
 
 
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 
 /**
  * Ball tree.
@@ -56,7 +56,7 @@ public class BallTreeMatrix extends BinaryTree {
         return (Ball) super.getRoot();
     }
 
-    public static indexNode create(double[][] itemMatrix, int leafThreshold, int maxDepth) {
+    public static IndexNode create(double[][] itemMatrix, int leafThreshold, int maxDepth) {
         int[] rows = new int[itemMatrix.length];
         for (int row = 0; row < itemMatrix.length; row++) {
             rows[row] = row;
@@ -64,7 +64,7 @@ public class BallTreeMatrix extends BinaryTree {
         Ball root = new Ball(rows, itemMatrix);
         //TODO
         //indexNode rootKmeans = new indexNode(itemMatrix[0].length);
-        indexNode rootKmeans = new indexNode(2);
+        IndexNode rootKmeans = new IndexNode(2);
         setWeight(itemMatrix[0].length, null);// set all as 1
         int depth = 0;
         if (rows.length > leafThreshold && depth < maxDepth) {
@@ -77,13 +77,13 @@ public class BallTreeMatrix extends BinaryTree {
         return rootKmeans;
     }
     
-    public static indexNode create(double[][] itemMatrix, int leafThreshold, int maxDepth, double []weightinput, int dimension) {
+    public static IndexNode create(double[][] itemMatrix, int leafThreshold, int maxDepth, double []weightinput, int dimension) {
         int[] rows = new int[itemMatrix.length];
         for (int row = 0; row < itemMatrix.length; row++) {
             rows[row] = row;
         }
         Ball root = new Ball(rows, itemMatrix);
-        indexNode rootKmeans = new indexNode(dimension);
+        IndexNode rootKmeans = new IndexNode(dimension);
         setWeight(dimension, weightinput);
         //TODO set custom wetght for argo
         //weight[2]=0;
@@ -307,7 +307,7 @@ public class BallTreeMatrix extends BinaryTree {
             return itemMatrix;
         }
         
-        public int traverseConvert(indexNode rootKmeans, int dimension) {
+        public int traverseConvert(IndexNode rootKmeans, int dimension) {
     		rootKmeans.setRadius(radius);
             rootKmeans.setPivot(center);//
     		if(rows != null){//for the leaf node
@@ -326,11 +326,11 @@ public class BallTreeMatrix extends BinaryTree {
     			return aIntegers.size();
     		}else {   			
     			int count = 0;
-				indexNode childleftnodekmeans = new indexNode(dimension);
+				IndexNode childleftnodekmeans = new IndexNode(dimension);
 				rootKmeans.addNodes(childleftnodekmeans);
 				count += getLeftChild().traverseConvert(childleftnodekmeans, dimension);
 				
-				indexNode childrightnodekmeans = new indexNode(dimension);
+				IndexNode childrightnodekmeans = new IndexNode(dimension);
 				rootKmeans.addNodes(childrightnodekmeans);
 				count += getRightChild().traverseConvert(childrightnodekmeans, dimension);
     			rootKmeans.setTotalCoveredPoints(count);
@@ -338,7 +338,7 @@ public class BallTreeMatrix extends BinaryTree {
     		}		
     	}
 
-        public int traverseConvert2(indexNode rootKmeans, int dimension) {
+        public int traverseConvert2(IndexNode rootKmeans, int dimension) {
             double[] d = new double[this.rowsID.length];
             int index = 0;
             int[] var5 = this.rowsID;
@@ -356,10 +356,10 @@ public class BallTreeMatrix extends BinaryTree {
             rootKmeans.setPivot(this.center);
             if (this.rows == null) {
                 count = 0;
-                indexNode childleftnodekmeans = new indexNode(dimension);
+                IndexNode childleftnodekmeans = new IndexNode(dimension);
                 count = count + this.getLeftChild().traverseConvert2(childleftnodekmeans, dimension);
                 rootKmeans.addNodes(childleftnodekmeans);
-                indexNode childrightnodekmeans = new indexNode(dimension);
+                IndexNode childrightnodekmeans = new IndexNode(dimension);
                 count += this.getRightChild().traverseConvert2(childrightnodekmeans, dimension);
                 rootKmeans.addNodes(childrightnodekmeans);
                 rootKmeans.setTotalCoveredPoints(count);

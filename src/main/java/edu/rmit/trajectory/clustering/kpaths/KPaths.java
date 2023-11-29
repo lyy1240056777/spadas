@@ -608,7 +608,7 @@ public class KPaths extends Thread {
 			ClusterPath newCluster = new_CENTERS.get(min_id);
 			Time1 = System.nanoTime();
 			if(distanceModel==0)
-				newCluster.updateHistorgramGuava(tra, idx); //update the edge histogram using every new trajectory			
+				newCluster.updateHistogramGuava(tra, idx); //update the edge histogram using every new trajectory
 			Time2 = System.nanoTime();						
 			newCluster.addTrajectoryToCluster(idx);	// update the new trajectory to this cluster.
 			runrecord.addHistorgramTime((Time2-Time1)/1000000000.0);
@@ -634,7 +634,7 @@ public class KPaths extends Thread {
 			int []tra = datamap.get(idx);
 			sum += Util.Intersection(tra, clustData.get(minid));// update the sum distance
 			numCompute++;
-			newCluster.updateHistorgramGuava(tra, idx); //update the edge histogram using every new trajectory		
+			newCluster.updateHistogramGuava(tra, idx); //update the edge histogram using every new trajectory
 			newCluster.addTrajectoryToCluster(idx);
 		}
 		return sum;
@@ -733,7 +733,7 @@ public class KPaths extends Thread {
 			}
 			ClusterPath newCluster = new_CENTERS.get(min_id);
 			Time1 = System.nanoTime();
-			newCluster.updateHistorgramGuava(tra, idx); //update the edge histogram using every new trajectory			
+			newCluster.updateHistogramGuava(tra, idx); //update the edge histogram using every new trajectory
 			Time2 = System.nanoTime();						
 			newCluster.addTrajectoryToCluster(idx);	// update the new trajectory to this cluster.
 			if(pivotGroup.containsKey(idx) && pivotGroup.get(idx)!=null) {// call the batch assigning if there is an index

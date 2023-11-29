@@ -3,14 +3,14 @@ package edu.nyu.dss.similarity;
 
 import java.util.PriorityQueue;
 
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 
 /*
  * this class is for the heap method
  */
 public class queueMain implements Comparable<queueMain>{
 	double ub;
-	indexNode anode;
+	IndexNode anode;
 	int pointid;
 	PriorityQueue<queueSecond> aSecond;
 
@@ -19,7 +19,7 @@ public class queueMain implements Comparable<queueMain>{
 		return ub;
 	}
 	
-	public indexNode getIndexNode() {
+	public IndexNode getIndexNode() {
 		return anode;
 	}
 	
@@ -31,7 +31,7 @@ public class queueMain implements Comparable<queueMain>{
 		return aSecond;
 	}
 	
-	public queueMain(indexNode a, PriorityQueue<queueSecond> bSecond, double ub, int pointid) {
+	public queueMain(IndexNode a, PriorityQueue<queueSecond> bSecond, double ub, int pointid) {
 		this.anode = a;
 		this.aSecond = bSecond;
 		this.ub = ub;

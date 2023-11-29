@@ -5,10 +5,11 @@ import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.nyu.dss.similarity.index.*;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
+import edu.whu.index.FilePathIndex;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -45,6 +46,10 @@ public class ChinaReader {
 
     @Autowired
     private IndexBuilder indexBuilder;
+
+    @Autowired
+    private FilePathIndex filePathIndex;
+
 
     public Map<Integer, double[][]> read(File file, int fileNo, CityNode cityNode, int datasetIDForOneDir) throws IOException {
         if (!file.getName().endsWith("csv")) {
@@ -90,6 +95,7 @@ public class ChinaReader {
             throw e;
         }
         if (i > 0) {
+            String shortName =FilenameUtils.removeExtension(file.getName());
             datasetSizeCounter.put(i);
             if (config.isCacheDataset()) {
                 dataMapPorto.put(fileNo, data);
@@ -97,15 +103,14 @@ public class ChinaReader {
             }
             if (config.isCacheIndex()) {
 //				createDatasetIndex(fileNo, xxx,1);
-                indexNode node = indexBuilder.createDatasetIndex(fileNo, data, 1, cityNode);
+                IndexNode node = indexBuilder.createDatasetIndex(fileNo, data, 1, cityNode);
 //                对数据进行基于网格的取样，减小数据量
                 indexBuilder.samplingDataByGrid(data, fileNo, node);
-                node.setFileName(file.getName());
+                node.setFileName(shortName);
             }
-            datasetIDMapping.put(fileNo, file.getName());
+            datasetIDMapping.put(fileNo, shortName);
             fileIDMap.put(fileNo, file);
-//          storeZcurve(xxx, fileNo, 5, 5, 30, 100);
-////        EffectivenessStudy.SerializedZcurve(zcodemap);
+            filePathIndex.put(file.getAbsolutePath(), fileNo);
         }
         return dataMapPorto;
     }

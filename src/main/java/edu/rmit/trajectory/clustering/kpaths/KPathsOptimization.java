@@ -329,9 +329,9 @@ public class KPathsOptimization<T> extends KPaths {
 			tra = datamap.get(idx);// the trajectory data is read in the first time in this iteration
 		}
 		ClusterPath newCluster = CENTERS.get(newCenter);//update the entry in min_id						
-		newCluster.updateHistorgramGuava(tra, idx);// add the new trajectory in
+		newCluster.updateHistogramGuava(tra, idx);// add the new trajectory in
 		ClusterPath oldCluster = CENTERS.get(oldCenter);
-		oldCluster.removeHistorgramGuava(tra, idx);//remove the old trajectory out
+		oldCluster.removeHistogramGuava(tra, idx);//remove the old trajectory out
 	}
 	
 	/*

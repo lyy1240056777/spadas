@@ -45,8 +45,8 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	String split = null;	/*use to split the colume of dataset*/
 	
 	IndexAlgorithm indexkmeans;
-	indexNode root;// the root node
-	indexNode rootCentroids;// the root node of centroid index
+	IndexNode root;// the root node
+	IndexNode rootCentroids;// the root node of centroid index
 	int capacity=30;
 	
 	int prunenode=0;
@@ -533,8 +533,8 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	 * use the k-means to build the index HKM-tree, when a group has a radius less than the 
 	 * threshold use the capacity as k to run kmeans
 	 */
-	public indexNode runIndexbuildQueuePoint(double radius, int capacity, int fanout) throws IOException {
-		root = new indexNode(dimension);// this will store the 
+	public IndexNode runIndexbuildQueuePoint(double radius, int capacity, int fanout) throws IOException {
+		root = new IndexNode(dimension);// this will store the
 		k = fanout;
 		GroupedTrajectory = new HashSet<>();
 		System.out.println("Building Hiarachical k-means tree...");
@@ -544,11 +544,11 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 		String groupFilename = datafile+"_"+Integer.toString(trajectoryNumber)+"_"+Double.toString(radius)+"_"+Integer.toString(capacity)+"_index";
 		String pivotname = groupFilename+".all";
 		pivotGroup = new HashMap<>();
-		Queue<Pair<Set<Integer>, indexNode>> queue = new LinkedList<>();//queue with
+		Queue<Pair<Set<Integer>, IndexNode>> queue = new LinkedList<>();//queue with
 		Set<Integer> KeySet = new HashSet<>();
 		for(int i=1; i<=trajectoryNumber; i++)
 			KeySet.add(i);
-		Pair<Set<Integer>, indexNode> aPair = new ImmutablePair<>(KeySet, root);// build the index using a queue
+		Pair<Set<Integer>, IndexNode> aPair = new ImmutablePair<>(KeySet, root);// build the index using a queue
 		queue.add(aPair);
 		usingIndex = false;
 		assBoundSign = true;// we use the bound here to accelerate the indexing building.
@@ -558,7 +558,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 		while(!queue.isEmpty()) {
 			aPair = queue.poll();
 			Set<Integer> candidates = aPair.getKey();
-			indexNode fatherNode = aPair.getValue();// the nodes 
+			IndexNode fatherNode = aPair.getValue();// the nodes
 			CENTERSEuc = new ArrayList<cluster>();	
 			interMinimumCentoridDis = new double[k];
 			innerCentoridDis = new double[k][];								
@@ -573,7 +573,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 			}
 			int num = 0;
 			for(int i = 0; i<fanout; i++) {
-				indexNode childNode = new indexNode(dimension);
+				IndexNode childNode = new IndexNode(dimension);
 				cluster node = CENTERSEuc.get(i);
 				candidates = node.getcoveredPoints();
 				int nodeCapacity = candidates.size();
@@ -606,7 +606,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 					}*/
 					childNode.addPoint(candidates);	// this is the leaf node				
 				}else {
-					aPair = new ImmutablePair<Set<Integer>, indexNode>(candidates, childNode);
+					aPair = new ImmutablePair<Set<Integer>, IndexNode>(candidates, childNode);
 					queue.add(aPair);// conduct the iteration again
 				}
 				fatherNode.addNodes(childNode);//add the nodes.
@@ -669,7 +669,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * use 1nn and 2nn to assign when centroid is big, we can argumented with a bound.
 	 */
-	double[] assignPCKmenas(double pivot[], indexNode centroidRoot, double centerMatrix[][], boolean isNode) {
+	double[] assignPCKmenas(double pivot[], IndexNode centroidRoot, double centerMatrix[][], boolean isNode) {
 		IndexAlgorithm algorithm = new IndexAlgorithm();
 		double[] minDistnearestID;
 		if(isNode) {
@@ -689,7 +689,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * use 1nn and 2nn to assign when centroid is big, we augmented with multiple bounds to accelerate nn over the centroid index
 	 */
-	double[] assignPCKmenasBound(double pivot[], indexNode centroidRoot, double centerMatrix[][], boolean isNode, indexNode node, int idx, double radius) {
+	double[] assignPCKmenasBound(double pivot[], IndexNode centroidRoot, double centerMatrix[][], boolean isNode, IndexNode node, int idx, double radius) {
 		double[] minDistnearestID;
 		if(isNode) {
 			minDistnearestID = new double[4];
@@ -752,9 +752,9 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * use 1nn and 2nn to assign when centroid is big, we use a lightweight recursive approach to accelerate
 	 */
-	double[] assignPCKmenasBoundRecursive(double pivot[], indexNode centroidRoot, double centerMatrix[][], boolean isNode, 
-			indexNode node, int idx, double radius, double knnbound, Map<Integer, ArrayList<Integer>> idxNeedsIn, 
-			Map<Integer, ArrayList<Integer>> idxNeedsOut, Map<Integer, ArrayList<indexNode>> nodeNeedsIn) {
+	double[] assignPCKmenasBoundRecursive(double pivot[], IndexNode centroidRoot, double centerMatrix[][], boolean isNode,
+                                          IndexNode node, int idx, double radius, double knnbound, Map<Integer, ArrayList<Integer>> idxNeedsIn,
+                                          Map<Integer, ArrayList<Integer>> idxNeedsOut, Map<Integer, ArrayList<IndexNode>> nodeNeedsIn) {
 		double[] minDistnearestID;
 		if(isNode) {
 			minDistnearestID = new double[4];
@@ -827,8 +827,8 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	}
 		
 	//using recursive way to traversal
-	void lightweight(double[] minDistnearestID, double radius, double pivot[], indexNode centroidRoot, double centerMatrix[][], boolean isNode, indexNode node, int idx, Map<Integer, ArrayList<Integer>> idxNeedsIn, 
-			Map<Integer, ArrayList<Integer>> idxNeedsOut, Map<Integer, ArrayList<indexNode>> nodeNeedsIn) {
+	void lightweight(double[] minDistnearestID, double radius, double pivot[], IndexNode centroidRoot, double centerMatrix[][], boolean isNode, IndexNode node, int idx, Map<Integer, ArrayList<Integer>> idxNeedsIn,
+                     Map<Integer, ArrayList<Integer>> idxNeedsOut, Map<Integer, ArrayList<IndexNode>> nodeNeedsIn) {
 		if(node.isLeaf()) {
 			double knnbound = minDistnearestID[2] + radius;
 			for(int pointid :node.getpointIdList()) {
@@ -836,7 +836,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 			}
 		}else {
 			double knnbound= minDistnearestID[0] + radius;
-			for(indexNode childnode :node.getNodelist()) {
+			for(IndexNode childnode :node.getNodelist()) {
 				minDistnearestID = assignPCKmenasBoundRecursive(childnode.getPivot(), rootCentroids, centroidsData, true, childnode, 0, childnode.getRadius(), knnbound, idxNeedsIn, idxNeedsOut, nodeNeedsIn);
 			}
 		}
@@ -855,7 +855,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 		long start = System.nanoTime();
 		Map<Integer, ArrayList<Integer>> idxNeedsIn = new HashMap<>();//it stores all the idxs of trajectories that move in
 		Map<Integer, ArrayList<Integer>> idxNeedsOut = new HashMap<>();
-		Map<Integer, ArrayList<indexNode>> nodeNeedsIn = new HashMap<>();
+		Map<Integer, ArrayList<IndexNode>> nodeNeedsIn = new HashMap<>();
 		storeCentroid();//read from every cluster
 		// pami20 compute radius here, later
 		if(pami20){// and not stable
@@ -897,7 +897,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 		for (int group_i = 0; group_i < groupNumber && !pckmeanspointboundRecursive; group_i++) {//check each group
 			ArrayList<Integer> centers = group.get(group_i);//get the belonging 
 			for (int centerID : centers){ //check each center in the group
-				Set<indexNode> nodeList = CENTERSEuc.get(centerID).getcoveredNodes();		
+				Set<IndexNode> nodeList = CENTERSEuc.get(centerID).getcoveredNodes();
 				Set<Integer> pointlist = CENTERSEuc.get(centerID).getcoveredPoints();	// the list of points
 				if(pointlist.isEmpty() && nodeList.isEmpty()) //there is no point or node in this cluster
 					continue;
@@ -905,7 +905,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 				if(iterationTimes>0 && pami20 && PAMI20ClusterNeedScanningArrayList.get(centerID))
 					continue;
 				Queue<Object> queue = new LinkedList<>(pointlist);// create a queue to store all the candidates node or point			
-				for(indexNode aIndexNode: nodeList)
+				for(IndexNode aIndexNode: nodeList)
 					queue.add(aIndexNode);//add all the nodes
 				while(!queue.isEmpty()) {
 					int idx=0;
@@ -914,7 +914,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 					double [] bounds = null;
 					double radius = 0;
 					
-					indexNode node = null;
+					IndexNode node = null;
 					if(aObject instanceof Integer) {// point
 						idx = (int) aObject;
 						tra = accessPointById(idx);
@@ -922,7 +922,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 							bounds = allBounds[idx-1];
 					}else {// node
 						nodeReach++;
-						node = (indexNode)aObject;
+						node = (IndexNode)aObject;
 						tra = node.getPivot();
 						radius = node.getRadius();
 						bounds = node.getBounds();// get the bounds for index node which has considered the father distance 	
@@ -1070,7 +1070,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 					}else
 					{//brute force if do not use bounds
 						if(pckmeans) {// search the two nearest neighbor
-							boolean isnode = aObject instanceof indexNode;
+							boolean isnode = aObject instanceof IndexNode;
 							double[] minDistnearestID;
 							if(!pckmeansbound)
 								minDistnearestID = assignPCKmenas(tra, rootCentroids, centroidsData, isnode);// no bound and optimizations
@@ -1141,10 +1141,10 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 							refinetime[counter] += (endtime-startTime1)/1000000000.0;
 						}
 					}
-					if(aObject instanceof indexNode) {// this is a node
+					if(aObject instanceof IndexNode) {// this is a node
 						if (allPrune == false) {//this node cannot be pruned
 							if(!node.getNodelist().isEmpty())
-								for (indexNode childnode : node.getNodelist()) {
+								for (IndexNode childnode : node.getNodelist()) {
 									if(assBoundSign && node.getBounds()!=null) {
 										boundUpdate++;
 										childnode.setBounds(node.getBounds(), boundNumber);
@@ -1308,9 +1308,9 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * update the nodes in each cluster
 	 */
-	public void updateNodesToCluster(Map<Integer, ArrayList<indexNode>> nodeNeedsIn) {
+	public void updateNodesToCluster(Map<Integer, ArrayList<IndexNode>> nodeNeedsIn) {
 		for(int idx: nodeNeedsIn.keySet()) {
-			ArrayList<indexNode> idxs = nodeNeedsIn.get(idx);
+			ArrayList<IndexNode> idxs = nodeNeedsIn.get(idx);
 			cluster newCluster = CENTERSEuc.get(idx);
 			newCluster.mergeNodesToCluster(idxs);
 		}
@@ -2015,15 +2015,15 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * get the count of nodes in the tree.
 	 */
-	public int getNodesCount(indexNode root) {
+	public int getNodesCount(IndexNode root) {
 		if(root == null)
 			return 0;
 		if(root.isLeaf()) {	
 			return 1;
 		}else {
-			Set<indexNode> listnode = root.getNodelist();
+			Set<IndexNode> listnode = root.getNodelist();
 			int max = listnode.size();
-			for(indexNode aIndexNode: listnode) {
+			for(IndexNode aIndexNode: listnode) {
 				max += getNodesCount(aIndexNode);
 			}
 			return max;
@@ -2033,15 +2033,15 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * get the count of nodes in the tree.
 	 */
-	public long getIndexSize(indexNode root) {
+	public long getIndexSize(IndexNode root) {
 		if(root == null)
 			return 0;
 		if(root.isLeaf()) {	
 			return root.getMemory(dimension);
 		}else {
-			Set<indexNode> listnode = root.getNodelist();
+			Set<IndexNode> listnode = root.getNodelist();
 			long max = 0;
-			for(indexNode aIndexNode: listnode) {
+			for(IndexNode aIndexNode: listnode) {
 				max += aIndexNode.getMemory(dimension);
 				max += getIndexSize(aIndexNode);
 			}
@@ -2052,15 +2052,15 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * get the count of nodes in the lightweight tree.
 	 */
-	public long getIndexSizePiCK(indexNode root, boolean centorid) {
+	public long getIndexSizePiCK(IndexNode root, boolean centorid) {
 		if(root == null)
 			return 0;
 		if(root.isLeaf()) {	
 			return root.getMemoryPick(dimension, centorid);
 		}else {
-			Set<indexNode> listnode = root.getNodelist();
+			Set<IndexNode> listnode = root.getNodelist();
 			long max = 0;
-			for(indexNode aIndexNode: listnode) {
+			for(IndexNode aIndexNode: listnode) {
 				max += aIndexNode.getMemoryPick(dimension, centorid);
 				max += getIndexSizePiCK(aIndexNode, centorid);
 			}
@@ -2071,10 +2071,10 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * initialize the bounds of node
 	 */
-	public void setBoundsEmpty(indexNode root) {
+	public void setBoundsEmpty(IndexNode root) {
 		root.setBoundsEmpty();
-		Set<indexNode> listnode = root.getNodelist();
-		for (indexNode aIndexNode : listnode) {
+		Set<IndexNode> listnode = root.getNodelist();
+		for (IndexNode aIndexNode : listnode) {
 			setBoundsEmpty(aIndexNode);
 		}
 	}
@@ -2082,10 +2082,10 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * initialize the bounds of node for regrouping
 	 */
-	public void setBoundsforRegrouping(indexNode root, int groupNumber) {
+	public void setBoundsforRegrouping(IndexNode root, int groupNumber) {
 		root.setLowerBoundForRegroup(groupNumber);
-		Set<indexNode> listnode = root.getNodelist();
-		for (indexNode aIndexNode : listnode) {
+		Set<IndexNode> listnode = root.getNodelist();
+		for (IndexNode aIndexNode : listnode) {
 			setBoundsforRegrouping(aIndexNode, groupNumber);
 		}
 	}
@@ -2093,7 +2093,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * compute the distance from child (node or point) to father node
 	 */
-	public void computeFartherToChild(indexNode root) {
+	public void computeFartherToChild(IndexNode root) {
 		double[] pivot = root.getPivot();
 		if(root.isLeaf()) {
 			Set<Integer> listpoints = root.getpointIdList();
@@ -2103,8 +2103,8 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 				distanceToFather[pointid-1] = distance; //create a map to store this value
 			}
 		}else {
-			Set<indexNode> listnode = root.getNodelist();
-			for(indexNode aIndexNode: listnode) {
+			Set<IndexNode> listnode = root.getNodelist();
+			for(IndexNode aIndexNode: listnode) {
 				double[] childPivot = aIndexNode.getPivot();
 				double distance = Util.EuclideanDis(pivot, childPivot, dimension);
 				aIndexNode.setdistanceToFarther(distance);
@@ -2605,7 +2605,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	//	plotData.runPlot("");
 		loadDataEuc(datafile, trajectoryNumber);	// load the data and create index
 		indexkmeans = new IndexAlgorithm();
-		indexNode rootHKT=null, rootMtree=null, rootBall=null, rootCover=null, rootkd = null;
+		IndexNode rootHKT=null, rootMtree=null, rootBall=null, rootCover=null, rootkd = null;
 		if(runBalltreeOnly)
 			rootHKT = runIndexbuildQueuePoint(0, capacity, 10);//load the dataset and build one index for all testing methods
 	//	String LOG_DIR = "./logs/vldb_logs1_pami20/"+datafilename+"_"+trajectoryNumber+"_"+dimension+"_"+capacity+"_index.log";
@@ -2645,14 +2645,14 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 		long starttime = System.nanoTime();
 		for(int kvalue: setK) {//test various k
 			k = kvalue;
-			ArrayList<Pair<indexNode, String>> roots =  new ArrayList<>();
+			ArrayList<Pair<IndexNode, String>> roots =  new ArrayList<>();
 			roots.add(new ImmutablePair<>(rootHKT, "HKT"));
 			roots.add(new ImmutablePair<>(rootBall, "BallMetric"));
 			roots.add(new ImmutablePair<>(rootMtree, "Mtree"));	
 			roots.add(new ImmutablePair<>(rootCover, "CoverTree"));
 			InitializeAllUnifiedCentroid(kvalue, testTime);//maximum k, time time
 			boolean LloydandSeq = runIndexMethodOnly;
-			for(Pair<indexNode, String> newroot: roots) { 
+			for(Pair<IndexNode, String> newroot: roots) {
 				root = newroot.getLeft();
 				if(root==null)
 					continue;
@@ -2704,7 +2704,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	}
 	
 	void rankings(ArrayList<Double> raidus, ArrayList<Double> fatherdis, ArrayList<Double> numPoints, ArrayList<Double> nodeDepth,
-			indexNode rootBall, double leafnode, boolean LloydandSeq, int testTime, String indexname ) throws FileNotFoundException {
+                  IndexNode rootBall, double leafnode, boolean LloydandSeq, int testTime, String indexname ) throws FileNotFoundException {
 		String aString = generateRank(time, numberofComparison);
 		DecimalFormat dec = new DecimalFormat("#0.0000");
 		double mean = Util.calculateMean(raidus);//
@@ -3233,7 +3233,7 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	/*
 	 * we compute the inner bound using self-join operation, to avoid compute k*k distance, this is a lot when k is large
 	 */
-	void innerBound(indexNode centroidNode, double [][]centroidMatrix) {
+	void innerBound(IndexNode centroidNode, double [][]centroidMatrix) {
 		// it share the same framework with dual-tree, we can call our join method to do this.
 	}
 
@@ -3255,8 +3255,8 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	}
 	
 	// traverse the datapoint index, and get the assginment
-	public void recursivePICKmeans(indexNode dataRoot, indexNode centroidNode, double [][]dataMatrix, 
-			double [][]centroidMatrix, double ubfather, int centroid) {
+	public void recursivePICKmeans(IndexNode dataRoot, IndexNode centroidNode, double [][]dataMatrix,
+                                   double [][]centroidMatrix, double ubfather, int centroid) {
 		storeCentroid();
 		System.out.println("covered points: "+ centroidNode.getTotalCoveredPoints());
 		if(iterationTimes==0)
@@ -3299,12 +3299,12 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 		}
 	}
 	
-	public short[] setAssign(indexNode datarNode, short nearest) {
+	public short[] setAssign(IndexNode datarNode, short nearest) {
 		// we can also update the upper bound from lb
 		datarNode.setNearestCluster(nearest);
 	//	System.out.println(nearest);
 		if(!datarNode.isLeaf()) {
-			for(indexNode child: datarNode.getNodelist()) {
+			for(IndexNode child: datarNode.getNodelist()) {
 				newassigned = setAssign(child, nearest);
 			}
 		}else {
@@ -3314,10 +3314,10 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 		return newassigned;
 	}
 	
-	public short[] setAllPrune(indexNode datarNode, short prundNum) {
+	public short[] setAllPrune(IndexNode datarNode, short prundNum) {
 		datarNode.setPrunedCounterSingle(prundNum);
 		if(!datarNode.isLeaf()) {
-			for(indexNode child: datarNode.getNodelist()) {
+			for(IndexNode child: datarNode.getNodelist()) {
 				pointcounterPruned = setAllPrune(child, prundNum);
 			}
 		}else {
@@ -3331,8 +3331,8 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 	 * A Dual-Tree Algorithm for Fast k-means Clustering With Large k, SDM 2017, we use multiple quantilized bounds
 	 * when k is small, we put all the points into the centroid node.
 	 */
-	void dualTreeKmeans(indexNode dataRoot, indexNode centroidNode, double [][]dataMatrix, 
-			double [][]centroidMatrix, double unit, double ubfather, int centroid) {
+	void dualTreeKmeans(IndexNode dataRoot, IndexNode centroidNode, double [][]dataMatrix,
+                        double [][]centroidMatrix, double unit, double ubfather, int centroid) {
 		int scannedCentrorid = dataRoot.getPrunedCounter();
 		if(scannedCentrorid == k) {
 			System.out.println("aaaaaaaaaa");
@@ -3423,14 +3423,14 @@ public class kmeansAlgorithm<T> extends KPathsOptimization<T>{
 						for (int childpoint : centroidNode.getpointIdList())
 							dualTreeKmeans(dataRoot, null, dataMatrix, centroidMatrix, unit, pivotDis+centroidNode.getRadius(), childpoint);
 					else if (dataRoot.isLeaf())
-						for (indexNode childNode : centroidNode.getNodelist())
+						for (IndexNode childNode : centroidNode.getNodelist())
 							dualTreeKmeans(dataRoot, childNode, dataMatrix, centroidMatrix, unit, pivotDis+centroidNode.getRadius(), 0);
 					else
-						for (indexNode childNode : dataRoot.getNodelist())
-							for (indexNode childNode1 : centroidNode.getNodelist())
+						for (IndexNode childNode : dataRoot.getNodelist())
+							for (IndexNode childNode1 : centroidNode.getNodelist())
 								dualTreeKmeans(childNode, childNode1, dataMatrix, centroidMatrix, unit, pivotDis+childNode.getDisFather(), 0);//sort by the distance
 				} else
-					for (indexNode childNode : dataRoot.getNodelist())
+					for (IndexNode childNode : dataRoot.getNodelist())
 						dualTreeKmeans(childNode, null, dataMatrix, centroidMatrix, unit, pivotDis + childNode.getDisFather(), centroid);
 			}
 		}

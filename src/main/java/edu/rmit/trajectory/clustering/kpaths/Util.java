@@ -68,14 +68,6 @@ public class Util {
         }
 
         distance = Math.sqrt(distance);
-
-        Double x = new Double(distance);
-        boolean isNan = x.isNaN();
-        if (isNan) {
-		/*	System.out.println(Arrays.toString(b));
-			System.out.println(Arrays.toString(a));
-			System.out.println(distance);*/
-        }
         return distance;
     }
 

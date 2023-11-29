@@ -1,6 +1,7 @@
 package web.controller;
 
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
+import edu.whu.structure.Trajectory;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,8 +10,6 @@ import web.param.*;
 import web.Utils.FileU;
 import web.Utils.FileUtil;
 import web.VO.DatasetVo;
-import web.VO.JoinVO;
-import web.VO.PreviewVO;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -29,17 +28,13 @@ public class BaseController {
     @Autowired
     private FrameworkService framework;
 
-    //    本来是设计的只传cityNode，但对于不存在城市形式的数据集集来说，需要重新设计传参
-//    直接传List<indexNode>，因为indexNode中有些属性会被忽略，所以对象大小不会太大
     @RequestMapping(value = "spadas/api/load", method = RequestMethod.GET)
-    public List<indexNode> loadData() {
+    public List<IndexNode> loadData() {
         return framework.indexNodes;
     }
 
     @RequestMapping(value = "/spadas/api/getds", method = RequestMethod.GET)
     public Map<String, Object> getDatasetById(@RequestParam int id) {
-//        DatasetVo vo = framework.getDatasetVO(id);
-        // set options
         DatasetQueryParams options = new DatasetQueryParams();
         options.setK(10);
         options.setDim(2);
@@ -50,28 +45,26 @@ public class BaseController {
         options.setError(0.0);
         options.setApproxi(true);
         options.setUseIndex(true);
-        DatasetVo vo = framework.datasetAugment(id, 2, 1, options);
+//        DatasetVo vo = framework.datasetAugment(id, 2, 1, options);
+        DatasetVo vo = framework.getDatasetVO(id);
         HashMap<String, Object> res = new HashMap<>();
         res.put("node", vo);
         return res;
     }
 
     /**
-     * range query 范围查询
-     * 之前把城市查询和范围查询集成在了一起，现在不需要城市查询了，所以需要修改代码逻辑
-     *
      * @param qo
      * @return
      */
     @RequestMapping(value = "spadas/api/rangequery", method = RequestMethod.POST)
-    public Map<String, Object> rangequery(@RequestBody RangeQueryParams qo) {
+    public Map<String, Object> rangeQuery(@RequestBody RangeQueryParams qo) {
         HashMap<String, Object> result = new HashMap();
         result.put("nodes", framework.rangequery(qo));
         return result;
     }
 
     @RequestMapping(value = "spadas/api/keywordsquery", method = RequestMethod.POST)
-    public Map<String, Object> keywordsquery(@RequestBody KeywordsParams qo) {
+    public HashMap<String, Object> keywordsQuery(@RequestBody KeywordsParams qo) {
         return new HashMap() {{
             put("nodes", framework.keywordsQuery(qo));
         }};
@@ -79,7 +72,7 @@ public class BaseController {
 
     @RequestMapping(value = "spadas/api/uploaddataset", method = RequestMethod.POST)
     public Map<String, Object> uploadDataset(@RequestParam("file") MultipartFile file, @RequestParam("filename") String filename, @RequestParam("k") int k) throws IOException {
-        Pair<indexNode, double[][]> pair = framework.readNewFile(file, filename);
+        Pair<IndexNode, double[][]> pair = framework.readNewFile(file, filename);
         List<DatasetVo> result = framework.datasetQuery(pair.getLeft(), pair.getRight(), k);
         if (pair == null) {
             return new HashMap() {{
@@ -125,24 +118,10 @@ public class BaseController {
         }};
     }
 
-    @RequestMapping(value = "spadas/api/join", method = RequestMethod.GET)
-    public JoinVO datasetJoin(@RequestParam int queryId, @RequestParam int datasetId, @RequestParam int rows) throws IOException {
-        return framework.join(queryId, datasetId, rows);
+
+    @GetMapping("spadas/api/trajectory")
+    public ArrayList<Trajectory> getTrajectory(@RequestParam(name = "id") int datasetID) {
+        return framework.getTrajectory(datasetID);
     }
 
-    @PostMapping("spadas/api/union")
-    public PreviewVO datasetUnion(@RequestBody UnionParams dto) {
-        String type = "union";
-        List<String> headers = Arrays.asList("lat", "lng");
-        List<List<double[]>> body = framework.union(dto);
-        return new PreviewVO(type, headers, body);
-    }
-
-    @PostMapping("spadas/api/unionRangeQuery")
-    public PreviewVO datasetUnionRangeQuery(@RequestBody UnionRangeQueryParams dto) {
-        String type = "union";
-        List<String> headers = Arrays.asList("lat", "lng");
-        List<List<double[]>> body = framework.unionRangeQuery(dto);
-        return new PreviewVO(type, headers, body);
-    }
 }

@@ -1,7 +1,7 @@
 package edu.nyu.dss.similarity;
 
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 
 import java.util.*;
 
@@ -183,7 +183,7 @@ public class Hausdorff {
      * we compute the initial point by randomly selecting a point.
      * //do the sampling to get a bigger lb for pruning, it is updated when a point shows in the end.
      */
-    static double computeInitialLowerBound(double [][]point1xys, double [][]point2xys, int dimension, indexNode X, indexNode Y, int option) {
+    static double computeInitialLowerBound(double [][]point1xys, double [][]point2xys, int dimension, IndexNode X, IndexNode Y, int option) {
     	double lb = 0;
     	if(option==1) {// random selected points can be a choice
     		Random rand = new Random();
@@ -203,7 +203,7 @@ public class Hausdorff {
     /*
      * based on radius, leaf (capacity), or depth, or covered points
      */
-    static boolean stopSplitCondition(indexNode a, int option) {
+    static boolean stopSplitCondition(IndexNode a, int option) {
     	if(a==null)
     		return true;
     	if(option==0) {
@@ -227,7 +227,7 @@ public class Hausdorff {
     /*
      * split the first node, or the second node
      */
-    static boolean splitPriority(indexNode a, indexNode b, int option) {
+    static boolean splitPriority(IndexNode a, IndexNode b, int option) {
     	/*
     	if(a.isLeaf())
     		return false;
@@ -259,7 +259,7 @@ public class Hausdorff {
     /*
      * using a brute force to compute the distance
      */
-    static double computeNodeDistance(indexNode a, indexNode b, int dimension, double[][] dataMatrixa, double[][] dataMatrixb, boolean direction) {
+    static double computeNodeDistance(IndexNode a, IndexNode b, int dimension, double[][] dataMatrixa, double[][] dataMatrixb, boolean direction) {
     	// get all the covered points of two nodes
     	ArrayList<Integer> aCoveredPoints = new ArrayList<Integer>();
     	a.getAllCoveredPoints(aCoveredPoints);
@@ -285,9 +285,9 @@ public class Hausdorff {
      * and min in each dimension, the cost to update is high
      * directed version currently
      */
-    public static double HausdorffWithIndexBFS(double [][]point1xys, double [][]point2xys, int dimension, indexNode X, indexNode Y, int splitOption) {
+    public static double HausdorffWithIndexBFS(double [][]point1xys, double [][]point2xys, int dimension, IndexNode X, IndexNode Y, int splitOption) {
     	double lb = computeInitialLowerBound(point1xys, point2xys, dimension, X, Y, 1);
-    	ArrayList<indexNode> checkList = new ArrayList<indexNode>();
+    	ArrayList<IndexNode> checkList = new ArrayList<IndexNode>();
     	PriorityQueue<queueForNodes> aHeaps = new PriorityQueue<queueForNodes>();
     	queueForNodes qnode = new queueForNodes(X, Y);
     	X.increaseCounter();
@@ -295,8 +295,8 @@ public class Hausdorff {
     	int iteration_times = 0;
     	while(!aHeaps.isEmpty()) {
     		queueForNodes nodePair = aHeaps.poll();
-    		indexNode anode = nodePair.anode;
-    		indexNode bnode = nodePair.bnode;
+    		IndexNode anode = nodePair.anode;
+    		IndexNode bnode = nodePair.bnode;
     		if(checkList.contains(anode))//check whether node is in the checked list, continue if yes.
     			continue;
     		double ub = nodePair.getbound();
@@ -322,13 +322,13 @@ public class Hausdorff {
     		}else {
     			boolean splitPriority = splitPriority(anode, bnode, splitOption);
     			if(splitPriority) {
-    				for(indexNode a: anode.getNodelist()) {
+    				for(IndexNode a: anode.getNodelist()) {
     					qnode = new queueForNodes(a, bnode);
     					aHeaps.add(qnode);
     					a.increaseCounter();
     				}
     			}else {
-    				for(indexNode b: bnode.getNodelist()) {
+    				for(IndexNode b: bnode.getNodelist()) {
     					qnode = new queueForNodes(anode, b);
     					aHeaps.add(qnode);
     					anode.increaseCounter();
@@ -344,7 +344,7 @@ public class Hausdorff {
      * An incremental Hausdorff distance calculation algorithm
      * 
      */
-    public static double IncrementalDistance(double [][]point1xys, double [][]point2xys, int dimension, indexNode X, indexNode Y, int splitOption) {
+    public static double IncrementalDistance(double [][]point1xys, double [][]point2xys, int dimension, IndexNode X, IndexNode Y, int splitOption) {
     	PriorityQueue<queueMain> aHeaps = new PriorityQueue<queueMain>();
     	PriorityQueue<queueSecond> secondHeaps = new PriorityQueue<queueSecond>();
     	queueSecond secondq = new queueSecond(Y, 0, 0);
@@ -356,9 +356,9 @@ public class Hausdorff {
     		mainq = aHeaps.poll();
     		secondHeaps = mainq.getQueue();
     		secondq = secondHeaps.peek();
-    		indexNode anode = mainq.getIndexNode();
+    		IndexNode anode = mainq.getIndexNode();
     		double ub = mainq.getbound();
-    		indexNode bnode = secondq.getNode();
+    		IndexNode bnode = secondq.getNode();
     		if(anode==null && bnode==null) {//if two nodes are null, i.e., they are points // we can change it to radius threshold
     			distance = ub;
     			break;
@@ -375,8 +375,8 @@ public class Hausdorff {
     	return distance;
     }
     
-    static void traverseX(indexNode anode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps, 
-    		int dimension, PriorityQueue<queueMain> aHeaps) {
+    static void traverseX(IndexNode anode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps,
+						  int dimension, PriorityQueue<queueMain> aHeaps) {
     	ArrayList<double[]> pivtoList = new ArrayList<double[]>();
 		ArrayList<Double> radiusArrayList = new ArrayList<Double>();
 		if(anode.isLeaf()) {
@@ -385,7 +385,7 @@ public class Hausdorff {
 				radiusArrayList.add(0.0);
 			}
 		}else {
-			for (indexNode a : anode.getNodelist()) {
+			for (IndexNode a : anode.getNodelist()) {
 				pivtoList.add(a.getPivot());
 				radiusArrayList.add(a.getRadius());
 			}
@@ -395,7 +395,7 @@ public class Hausdorff {
 			PriorityQueue<queueSecond> newsecondHeaps = new PriorityQueue<queueSecond>();
 			double minub = Double.MAX_VALUE;
 			for (queueSecond aQueueSecond : secondHeaps) {
-				indexNode newnodeb = aQueueSecond.getNode();
+				IndexNode newnodeb = aQueueSecond.getNode();
 				double pivot_distance, bradius = 0;
 				if (newnodeb != null) {
 					pivot_distance = newnodeb.getPivotdistance(pivtoList.get(i));
@@ -415,15 +415,15 @@ public class Hausdorff {
 				queueMain mainqa = new queueMain(null, newsecondHeaps, minub, arrayList.get(i));
 				aHeaps.add(mainqa);
 			}else {
-				ArrayList<indexNode> arrayList = new ArrayList<indexNode>(anode.getNodelist());
+				ArrayList<IndexNode> arrayList = new ArrayList<IndexNode>(anode.getNodelist());
 				queueMain mainqa = new queueMain(arrayList.get(i), newsecondHeaps, minub, 0);
 				aHeaps.add(mainqa);
 			}
 		}
     }
     
-    static double traverseY(indexNode bnode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps, 
-    		int dimension, PriorityQueue<queueMain> aHeaps, double ub, indexNode anode, int apoint) {
+    static double traverseY(IndexNode bnode, double[][] point1xys, double[][] point2xys, PriorityQueue<queueSecond> secondHeaps,
+							int dimension, PriorityQueue<queueMain> aHeaps, double ub, IndexNode anode, int apoint) {
     	ArrayList<double[]> pivtoList = new ArrayList<double[]>();
 		ArrayList<Double> radiusArrayList = new ArrayList<Double>();
 		if(bnode.isLeaf()) {
@@ -432,7 +432,7 @@ public class Hausdorff {
 				radiusArrayList.add(0.0);
 			}
 		}else {
-			for (indexNode a : bnode.getNodelist()) {
+			for (IndexNode a : bnode.getNodelist()) {
 				pivtoList.add(a.getPivot());
 				radiusArrayList.add(a.getRadius());
 			}
@@ -451,7 +451,7 @@ public class Hausdorff {
 				queueSecond mainqa = new queueSecond(null, pivot_distance-bradius-radiusArrayList.get(i), arrayList.get(i));
 				secondHeaps.add(mainqa);
 			}else {
-				ArrayList<indexNode> arrayList = new ArrayList<indexNode>(bnode.getNodelist());
+				ArrayList<IndexNode> arrayList = new ArrayList<IndexNode>(bnode.getNodelist());
 				queueSecond mainqa = new queueSecond(arrayList.get(i), pivot_distance-bradius-radiusArrayList.get(i), 0);
 				secondHeaps.add(mainqa);
 			}
@@ -467,8 +467,8 @@ public class Hausdorff {
     /*
      * depth first, scan another tree again and again using the nearest neighbor search
      */
-    public static double HausdorffWithIndexDFS(double [][]point1xys, double [][]point2xys, int dimension, indexNode X, 
-    		indexNode Y, double cmin, double ub, IndexAlgorithm indexDSS) {
+    public static double HausdorffWithIndexDFS(double [][]point1xys, double [][]point2xys, int dimension, IndexNode X,
+											   IndexNode Y, double cmin, double ub, IndexAlgorithm indexDSS) {
     	if(ub<=cmin) {
     		return cmin;
     	}else if (X.isLeaf()) {
@@ -480,7 +480,7 @@ public class Hausdorff {
     				cmin=minDistnearestID[0];
     		}
     	}else {
-    		for(indexNode child: X.getNodelist()) {
+    		for(IndexNode child: X.getNodelist()) {
     			double radius = child.getRadius();
     			double[] pivot = child.getPivot();
     			double []minDistnearestID = {Double.MAX_VALUE,0};

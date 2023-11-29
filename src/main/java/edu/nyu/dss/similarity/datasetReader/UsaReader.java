@@ -5,9 +5,8 @@ import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.nyu.dss.similarity.index.*;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -52,7 +51,7 @@ public class UsaReader {
         if (!dataFile.getName().endsWith("csv")) {
             return null;
         }
-        indexNode node = new indexNode(2);
+        IndexNode node = new IndexNode(2);
         int i = 0;
         List<double[]> list = new ArrayList<>();
         double[][] data;

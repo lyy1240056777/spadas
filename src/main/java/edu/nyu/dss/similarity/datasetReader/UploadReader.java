@@ -2,7 +2,7 @@ package edu.nyu.dss.similarity.datasetReader;
 
 import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ public class UploadReader {
     @Autowired
     private IndexAlgorithm indexAlgo;
 
-    public Pair<indexNode, double[][]> read(MultipartFile file, String filename) throws IOException {
+    public Pair<IndexNode, double[][]> read(MultipartFile file, String filename) throws IOException {
         if (!file.getContentType().equals("text/csv")) {
             return null;
         }
@@ -72,7 +72,7 @@ public class UploadReader {
         if (list.isEmpty()) {
             return null;
         }
-        indexNode node = buildNode(xxx);
+        IndexNode node = buildNode(xxx);
         node.setFileName(filename);
         node.setDatasetID(-3);
         return new MutablePair<>(node, xxx);
@@ -82,8 +82,8 @@ public class UploadReader {
     /*-*
 	build node and not insert
 	 */
-    private indexNode buildNode(double[][] data) {
-        indexNode newNode = indexAlgo.buildBalltree2(data, config.getDimension(), config.getDimension(), null, null);
+    private IndexNode buildNode(double[][] data) {
+        IndexNode newNode = indexAlgo.buildBalltree2(data, config.getDimension(), config.getDimension(), null, null);
         return newNode;
     }
 }

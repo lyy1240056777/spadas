@@ -1,7 +1,7 @@
 package edu.nyu.dss.similarity;
 
 
-import edu.rmit.trajectory.clustering.kmeans.indexNode;
+import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import edu.rmit.trajectory.clustering.kpaths.Util;
 
 /*
@@ -9,8 +9,8 @@ import edu.rmit.trajectory.clustering.kpaths.Util;
  */
 public class queueForNodes implements Comparable<queueForNodes>{
 	double bound;
-	indexNode anode;
-	indexNode bnode;
+	IndexNode anode;
+	IndexNode bnode;
 
 	
 	public double getbound() {
@@ -21,7 +21,7 @@ public class queueForNodes implements Comparable<queueForNodes>{
 		return bound - 2*anode.getRadius() - 2*bnode.getRadius();
 	}
 	
-	public queueForNodes(indexNode a, indexNode b) {
+	public queueForNodes(IndexNode a, IndexNode b) {
 		this.anode = a;
 		this.bnode = b;
 		double[] pivota = anode.getPivot();
