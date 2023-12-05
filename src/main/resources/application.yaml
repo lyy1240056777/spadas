@@ -1,8 +1,6 @@
 server:
   port: 8081
 spring:
-  profiles:
-    active: dev
   servlet:
     multipart:
       max-file-size: 100MB
@@ -12,24 +10,10 @@ spadas:
   dimension: 2
   resolution: 10
   leaf-capacity: 1000
-  cache-dataset: false
+  cache-dataset: true
   cache-index: true
-  save-index: false
+  save-index: true
   frontend-limitation: 10000
   file:
     baseUri: ./dataset/
     staticUri: /dataset/
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: prometheus
-  metrics:
-    distribution:
-      sla:
-        http:
-          server:
-            requests: 1ms,5ms,10ms,50ms,100ms,200ms,500ms,1s,5s
-    tags:
-      application: Spadas

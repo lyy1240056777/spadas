@@ -6,6 +6,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import web.consts.QueryMode;
 import web.param.*;
 import web.Utils.FileU;
 import web.Utils.FileUtil;
@@ -41,7 +42,7 @@ public class BaseController {
         options.setQuerydata(new double[1][]);
         options.setDatasetId(-1);
         //    0: Haus, 1: IA, 2: GBO, 3: EMD
-        options.setMode(0);
+        options.setMode(QueryMode.Haus);
         options.setError(0.0);
         options.setApproxi(true);
         options.setUseIndex(true);

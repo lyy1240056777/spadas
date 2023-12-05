@@ -147,17 +147,19 @@ public class Framework {
                 datasetIdMappingItem.put(datasetIDForOneDir, file.getName());
 //                datasetIdMapping.put(fileNo, fileName);
 //                选择使用哪种读取方法
-
-                switch (type) {
-                    case PURE_LOCATION -> pureLocationReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
-                    case BAIDU_POI -> chinaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
-                    case BUS_LINE, MOVE_BANK, USA -> usaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
-                    case POI -> poiReader.read(file, fileNo++, cityNode);
-                    case OPEN_NYC -> openNycReader.read(file, fileNo++, cityNode);
-                    case SHAPE_FILE -> shapefileReader.read(file, fileNo++, cityNode);
-                    case ARGOVERSE -> argoReader.read(file, fileNo++, cityNode);
-                    // impossible to be here, default type is BAIDU_POI
-                    default -> throw new RuntimeException("Unknown dataset type:" + type.name());
+                if (type.active) {
+                    log.info("Reading file {}/{} with Type {}", file.getParentFile().getName(), file.getName(), type.name());
+                    switch (type) {
+                        case PURE_LOCATION -> pureLocationReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
+                        case BAIDU_POI -> chinaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
+                        case BUS_LINE, MOVE_BANK, USA -> usaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
+                        case POI -> poiReader.read(file, fileNo++, cityNode);
+                        case OPEN_NYC -> openNycReader.read(file, fileNo++, cityNode);
+                        case SHAPE_FILE -> shapefileReader.read(file, fileNo++, cityNode);
+                        case ARGOVERSE -> argoReader.read(file, fileNo++, cityNode);
+                        // impossible to be here, default type is BAIDU_POI
+                        default -> throw new RuntimeException("Unknown dataset type:" + type.name());
+                    }
                 }
 //                一个数据集集中的索引
                 datasetIDForOneDir++;
@@ -223,6 +225,7 @@ public class Framework {
     private void readDatalake(int limit) throws IOException {
         File folder = new File(config.getFile().getBaseUri());
         String[] files = folder.list();
+        HashMap<Integer, String> datasetIdMappingItem = null;
         for (File subFolder : Objects.requireNonNull(folder.listFiles())) {
             if (subFolder.isFile()) {
                 continue;
@@ -230,8 +233,9 @@ public class Framework {
             String pre_str = "./index/dss/index/";
             indexString = pre_str + subFolder.getName() + "/";
 
-            HashMap<Integer, String> datasetIdMappingItem = new HashMap<>();
+            datasetIdMappingItem = new HashMap<>();
             DataLakeType type = DataLakeType.matchType(subFolder);
+            log.info("Match {} as type {}", subFolder.getName(), type.name());
             File myFolder = new File(config.getFile().getBaseUri() + "/" + subFolder.getName());
             CityNode cityNode = new CityNode(subFolder.getName(), config.getDimension());
 
@@ -242,6 +246,13 @@ public class Framework {
             cityNodeList.add(cityNode);
             cityIndexNodeMap.put(cityNode.cityName, cityNode.nodeList);
         }
+//        datasetIdMappingList.add(datasetIdMappingItem);
+//        HashMap<Integer, HashMap<Long, Double>> zcodeMapTmp = new HashMap<>();
+//        dataMapForEachDir.forEach((k, v) -> {
+//            storeZcurveForEMD(v, k, cityNode.radius * 2, cityNode.radius * 2, cityNode.pivot[0] - cityNode.radius, cityNode.pivot[1] - cityNode.radius, zcodeMapTmp);
+//        });
+//        dataMapForEachDir.clear();
+//        zcodeMapForLake.add(zcodeMapTmp);
         log.info("Totally {} files/folders and {} lines", files.length, pointCounter.get());
         // can modify weight by `normalizationWeight` method
         TreeMap<Integer, Integer> map = datasetSizeCounter.get();
@@ -262,7 +273,7 @@ public class Framework {
             datalakeIndex = indexDSS.restoreDatalakeIndex(indexString + "datalake" + N + "-" + config.getLeafCapacity() + "-" + config.getDimension() + ".txt", config.getDimension());//the datalake index
         }
 
-        if (datalakeIndex != null) {
+        if (datalakeIndex != null && datalakeIndex.get(1) != null) {
             datalakeIndex.get(1).setMaxCovertpoint(datalakeIndex); // for the query that measures how many points in the intersected range
         } else {
             datasetRoot.setMaxCovertpoint(datalakeIndex);
@@ -372,7 +383,7 @@ public class Framework {
     }
 
     public int defaultTrajectoryDataset() {
-        return findNameContains("new-york-road");
+        return findNameContains("Pittsburgh");
     }
 
     public int findNameContains(String seg) {
@@ -403,6 +414,6 @@ public class Framework {
             log.warn("There's no trajectory data. skip for create test dataset.");
             return;
         }
-        trajectoryDataIndex.put(0, (ArrayList<Trajectory>) trajectoryDataIndex.get(trajectoryDataIndex.keySet().stream().findFirst().get()).stream().limit(limit).collect(Collectors.toList()));
+        trajectoryDataIndex.put(0, (ArrayList<Trajectory>) trajectoryDataIndex.get(defaultTrajectoryDataset()).stream().limit(limit).collect(Collectors.toList()));
     }
 }

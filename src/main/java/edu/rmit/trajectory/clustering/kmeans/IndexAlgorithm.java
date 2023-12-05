@@ -8,6 +8,7 @@ import edu.wlu.cs.levy.cg.KeyDuplicateException;
 import edu.wlu.cs.levy.cg.KeySizeException;
 import es.saulvargas.balltrees.BallTreeMatrix;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -21,6 +22,7 @@ import java.util.Set;
 
 @Data
 @Component
+@Slf4j
 public class IndexAlgorithm {
 
     int distanceCompute = 0;
@@ -602,26 +604,26 @@ public class IndexAlgorithm {
     public Map<Integer, IndexNode> restoreDatalakeIndex(String foldername, int dimension) {
         // restore the index based on the index files, store every node in a hash and later set up
         Map<Integer, IndexNode> nodeidIndexnodesMap = new HashMap<Integer, IndexNode>();
-        try {
-            try (BufferedReader br = new BufferedReader(new FileReader(foldername))) {
-                String strLine;
-                while ((strLine = br.readLine()) != null) {
-                    String[] splitString = strLine.split(":");
-                    if (splitString.length < 4) {
-                        System.out.println("wrong index line " + strLine);
-                        continue;
-                    }
-                    String[] basicInfo = splitString[0].split(",");
-                    String[] liString = splitString[1].split(",");
-                    String[] centerString = splitString[2].split(",");
-                    String[] mbr = splitString[3].split(",");
-                    IndexNode aIndexNode = new IndexNode(dimension);
-                    aIndexNode.addEveryThingDatalake(centerString, basicInfo, liString, mbr, dimension);//
-                    int nodeid = Integer.valueOf(basicInfo[0]);
-                    nodeidIndexnodesMap.put(nodeid, aIndexNode);
+        try (BufferedReader br = new BufferedReader(new FileReader(foldername))) {
+            String strLine;
+            while ((strLine = br.readLine()) != null) {
+                String[] splitString = strLine.split(":");
+                if (splitString.length < 4) {
+                    System.out.println("wrong index line " + strLine);
+                    continue;
                 }
+                String[] basicInfo = splitString[0].split(",");
+                String[] liString = splitString[1].split(",");
+                String[] centerString = splitString[2].split(",");
+                String[] mbr = splitString[3].split(",");
+                IndexNode aIndexNode = new IndexNode(dimension);
+                aIndexNode.addEveryThingDatalake(centerString, basicInfo, liString, mbr, dimension);//
+                int nodeid = Integer.valueOf(basicInfo[0]);
+                nodeidIndexnodesMap.put(nodeid, aIndexNode);
             }
+
         } catch (IOException e) {
+            log.error("Restore dataset failed, {}", e.getMessage());
             e.printStackTrace();
         }
         return nodeidIndexnodesMap;

@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class relax_EMD {
-    double Dist(feature_t F1, feature_t F2) {
+    double Dist(FeatureT F1, FeatureT F2) {
         double dX = F1.X - F2.X, dY = F1.Y - F2.Y;//F1.Z - F2.Z;
         return Math.pow(dX * dX + dY * dY, 0.5);
     }
@@ -17,13 +17,13 @@ public class relax_EMD {
         }
         return Math.sqrt(d);
     }
-    public static double disBetweenTwoPoint(feature_t F1, feature_t F2) {
+    public static double disBetweenTwoPoint(FeatureT F1, FeatureT F2) {
         double dX = F1.X - F2.X;
         double dY = F1.Y - F2.Y;
         return Math.sqrt((double)(dX*dX + dY*dY));
     }
 
-    public static double getMinWeights(signature_t s1,signature_t s2){
+    public static double getMinWeights(SignatureT s1, SignatureT s2){
         double totalWeights1 = 0.0;
         double totalWeights2 = 0.0;
         for (int i = 0; i < s1.n; i++){
@@ -71,9 +71,9 @@ public class relax_EMD {
 //        total_cost = total_cost;
 //        return total_cost;
 //    }
-    public double ICT(signature_t s1, signature_t s2) throws CloneNotSupportedException{
-        signature_t p = (signature_t) s1.clone();
-        signature_t query = (signature_t) s2.clone();
+    public double ICT(SignatureT s1, SignatureT s2) throws CloneNotSupportedException{
+        SignatureT p = (SignatureT) s1.clone();
+        SignatureT query = (SignatureT) s2.clone();
         double total_cost = 0.0;
         ArrayList<HashMap<Integer, Double>> DistMatrix = new ArrayList<>();
         double[][] distanceMatrix = new double[p.n][query.n];
@@ -107,9 +107,9 @@ public class relax_EMD {
     }
 
 
-    public double tighter_sort_ICT(signature_t s1, signature_t s2) throws CloneNotSupportedException{
-        signature_t p = (signature_t) s1.clone();
-        signature_t query = (signature_t) s2.clone();
+    public double tighter_sort_ICT(SignatureT s1, SignatureT s2) throws CloneNotSupportedException{
+        SignatureT p = (SignatureT) s1.clone();
+        SignatureT query = (SignatureT) s2.clone();
         double total_cost = 0.0;
 
         double[] weighrs_array = new double[p.n];
@@ -150,9 +150,9 @@ public class relax_EMD {
         total_cost = total_cost;
         return total_cost;
     }
-    public double tighter_ICT(signature_t s1, signature_t s2) throws CloneNotSupportedException{
-        signature_t p = (signature_t) s1.clone();
-        signature_t query = (signature_t) s2.clone();
+    public double tighter_ICT(SignatureT s1, SignatureT s2) throws CloneNotSupportedException{
+        SignatureT p = (SignatureT) s1.clone();
+        SignatureT query = (SignatureT) s2.clone();
         double total_cost = 0.0;
 
         ArrayList<HashMap<Integer, Double>> DistMatrix = new ArrayList<>();
@@ -188,9 +188,9 @@ public class relax_EMD {
         return total_cost;
     }
 
-    public double IM_SIG_star(signature_t s1, signature_t s2) throws CloneNotSupportedException{
-        signature_t p = (signature_t) s1.clone();
-        signature_t query = (signature_t) s2.clone();
+    public double IM_SIG_star(SignatureT s1, SignatureT s2) throws CloneNotSupportedException{
+        SignatureT p = (SignatureT) s1.clone();
+        SignatureT query = (SignatureT) s2.clone();
         double total_cost = 0.0;
         double distance[][] = new double[p.n][query.n];
         for(int i=0;i<p.n;i++){
@@ -234,9 +234,9 @@ public class relax_EMD {
         return total_cost/minWeight;
     }
 
-    public double upper_bound_test_ICT(signature_t s1, signature_t s2) throws CloneNotSupportedException{
-        signature_t p = (signature_t) s1.clone();
-        signature_t query = (signature_t) s2.clone();
+    public double upper_bound_test_ICT(SignatureT s1, SignatureT s2) throws CloneNotSupportedException{
+        SignatureT p = (SignatureT) s1.clone();
+        SignatureT query = (SignatureT) s2.clone();
         double total_cost = 0.0;
 
         double[] weighrs_array = new double[p.n];
@@ -279,9 +279,9 @@ public class relax_EMD {
         return total_cost;
     }
 
-    public double centroid_WMD(signature_t s1, signature_t s2) throws CloneNotSupportedException{ //WCD is fast to compute, it is not very tight
-        signature_t p = (signature_t) s1.clone();
-        signature_t query = (signature_t) s2.clone();
+    public double centroid_WMD(SignatureT s1, SignatureT s2) throws CloneNotSupportedException{ //WCD is fast to compute, it is not very tight
+        SignatureT p = (SignatureT) s1.clone();
+        SignatureT query = (SignatureT) s2.clone();
         double total_cost = 0.0;
         double[] centroid_p = new double[2];
         double[] centroid_query = new double[2];
@@ -297,9 +297,9 @@ public class relax_EMD {
         total_cost = EuclideanDistance(centroid_p, centroid_query);
         return total_cost;
     }
-    public double removeOneConstraintEMD(signature_t s1, signature_t s2) throws CloneNotSupportedException{
-        signature_t p = (signature_t) s1.clone();
-        signature_t query = (signature_t) s2.clone();
+    public double removeOneConstraintEMD(SignatureT s1, SignatureT s2) throws CloneNotSupportedException{
+        SignatureT p = (SignatureT) s1.clone();
+        SignatureT query = (SignatureT) s2.clone();
 
         double[][] distanceMatrix1 = new double[p.n][query.n];
         for (int i = 0; i< p.n; i++){

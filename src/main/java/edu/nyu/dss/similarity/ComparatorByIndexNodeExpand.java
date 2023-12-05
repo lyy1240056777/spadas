@@ -4,7 +4,7 @@ import emd.IndexNodeExpand;
 
 import java.util.Comparator;
 
-class ComparatorByIndexNodeExpand implements Comparator { //ordered by distance
+public class ComparatorByIndexNodeExpand implements Comparator { //ordered by distance
     public int compare(Object o1, Object o2) {
         IndexNodeExpand in1 = (IndexNodeExpand) o1;
         IndexNodeExpand in2 = (IndexNodeExpand) o2;

@@ -21,7 +21,7 @@ import java.util.Map;
 
 @Slf4j
 @Component
-public class PureLocationReader {
+public class PureLocationReader extends AbsReader {
     @Autowired
     private SpadasConfig config;
 

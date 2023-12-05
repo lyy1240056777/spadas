@@ -58,7 +58,6 @@ public class ChinaReader {
         int i = 0;
         List<double[]> list = new ArrayList<>();
         double[][] data;
-        log.info("Reading File {}", file.getName());
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String strLine;
             br.readLine();// skip first row

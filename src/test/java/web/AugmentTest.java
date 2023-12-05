@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import web.VO.DatasetVo;
+import web.consts.QueryMode;
 import web.param.DatasetQueryParams;
 import web.service.FrameworkService;
 
@@ -30,7 +31,7 @@ public class AugmentTest {
         options.setQuerydata(new double[1][]);
         options.setDatasetId(-1);
         //    0: Haus, 1: IA, 2: GBO, 3: EMD
-        options.setMode(0);
+        options.setMode(QueryMode.Haus);
         options.setError(0.0);
         options.setApproxi(true);
         options.setUseIndex(true);

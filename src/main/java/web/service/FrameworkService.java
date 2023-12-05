@@ -12,15 +12,18 @@ import edu.whu.index.TrajectoryDataIndex;
 import edu.whu.structure.Trajectory;
 import edu.whu.tmeans.augment.BrutalForceAugment;
 import edu.whu.tmeans.model.GeoLocation;
+import emd.*;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
 import web.Utils.ListUtil;
 import web.VO.DatasetVo;
-import web.VO.JoinVO;
+import web.VO.JoinPair;
+import web.VO.JoinPoint;
+import web.VO.JoinResultVO;
 import web.param.*;
 
 import java.io.IOException;
@@ -85,6 +88,9 @@ public class FrameworkService {
     @Autowired
     private DatasetProperties datasetProperties;
 
+    @Autowired
+    private ZCodeMapForLake zCodeMapForLake;
+
     public List<DatasetVo> rangequery(RangeQueryParams qo) {
         HashMap<Integer, Double> result = new HashMap<>();
         IndexNode root = framework.datasetRoot;
@@ -136,8 +142,9 @@ public class FrameworkService {
 
     public List<DatasetVo> keywordsQuery(KeywordsParams qo) {
         List<DatasetVo> res = new ArrayList<>();
+        String kwd = qo.getKws().toLowerCase();
         for (int i = 0; i < datasetIdMapping.size(); i++) {
-            if (datasetIdMapping.get(i) != null && datasetIdMapping.get(i).contains(qo.getKws())) {
+            if (datasetIdMapping.get(i) != null && datasetIdMapping.get(i).toLowerCase().contains(kwd)) {
                 res.add(new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null));
                 if (res.size() == qo.getLimit()) {
                     break;
@@ -164,16 +171,16 @@ public class FrameworkService {
         HashMap<Integer, Double> result = new HashMap<>();
 
         switch (qo.getMode()) {
-            case 0 -> // HausDist
+            case Haus -> // HausDist
                     result = search.pruneByIndex(dataMapPorto, framework.datasetRoot, queryNode,
                             qo.getDim(), indexMap, datasetIndex, null, datalakeIndex, datasetIdMapping, qo.getK(),
                             indexString, null, true, qo.getError(), config.getLeafCapacity(), null, config.isSaveIndex(), data);
-            case 1 -> { // Intersecting Area
+            case IA -> { // Intersecting Area
                 search.setScanning(false);
                 search.rangeQueryRankingArea(framework.datasetRoot, result, queryNode.getMBRmax(), queryNode.getMBRmin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
                         datalakeIndex);
             }
-            case 2 -> { // GridOverlap using index
+            case GBO -> { // GridOverlap using index
                 IndexNode root = framework.datasetRoot;//datalakeIndex.get(1);//use store
 
 //            if (datalakeIndex != null)
@@ -183,6 +190,15 @@ public class FrameworkService {
 //            for (int i = 0; i < zcodemap.get(queryid).size(); i++)
 //                queryzcurve[i] = zcodemap.get(queryid).get(i);
                 result = search.gridOverlap(root, result, queryzcurve, Double.MAX_VALUE, qo.getK(), null, datalakeIndex);
+            }
+            case EMD -> {
+//            emd
+//                int[] queryID = convertID(qo.getDatasetId());
+//                PriorityQueue<relaxIndexNode> resQueue = EMD(queryID[0], queryID[1], qo.getK());
+//                while (!resQueue.isEmpty()) {
+//                    relaxIndexNode rin = resQueue.poll();
+//                    result.put(convertID(queryID[0], rin.getResultId()), rin.getLb());
+//                }
             }
             default -> {
             }
@@ -251,41 +267,24 @@ public class FrameworkService {
     }
 
 
-    public JoinVO join(int queryId, int datasetId, int rowLimit) throws IOException {
+    public JoinResultVO join(int queryId, int datasetId, int rowLimit) throws IOException {
         Pair<Double[], Map<Integer, Integer>> pair = pairwiseJoin(queryId, datasetId, rowLimit);
-
-//        Map<Integer, Integer> map = pair.getRight();
-//        double[][] datasetData = dataMapPorto.get(datasetId);
-////        Pair<String[], String[][]> querydata = FileU.readPreviewDataset(fileIDMap.get(queryId), rowLimit, queryData);
-////        Pair<String[], String[][]> basedata = FileU.readPreviewDataset(fileIDMap.get(datasetId), Integer.MAX_VALUE, datasetData);
-//
-//        double[][] queryData = Arrays.copyOfRange(dataMapPorto.get(queryId), 0, 100);
-//        double[][] targetData = Arrays.copyOfRange(dataMapPorto.get(datasetId), 0, 100);
-//        //int len = querydata.getRight()[0].length+basedata.getRight()[0].length;
-//        String[] distHeader = {"distance(km)"};
-//        String[] joinHeaderTemp = ArrayUtils.addAll(querydata.getLeft(), distHeader);
-//        String[] joinHeader = ArrayUtils.addAll(joinHeaderTemp, basedata.getLeft());
-////        List<String[]> joindata = pair.getRight().entrySet().stream()
-////                .map(idPair -> ArrayUtils.addAll(querydata.getRight()[idPair.getValue()], basedata.getRight()[idPair.getValue()])).collect(Collectors.toList());
-//        List<List<String>> joinData = new ArrayList<>();
-//        String[] queryEntry;
-//        String[] baseEntry;
-//        Double[] distEntry = pair.getLeft();
-//        String[] distEntryTemp;
-//        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-//            int queryIndex = entry.getKey();
-//            int datasetIndex = entry.getValue();
-//            queryEntry = querydata.getRight()[queryIndex];
-//            baseEntry = basedata.getRight()[datasetIndex];
-//            double tmp = Math.round(distEntry[queryIndex] * 1000) / 1000.000;
-//
-//            String tmpStr = tmp < 5 ? String.valueOf(tmp) : "INVALID";
-//            distEntryTemp = new String[]{tmpStr};
-//            joinData.add(Arrays.stream(ArrayUtils.addAll(ArrayUtils.addAll(queryEntry, distEntryTemp), baseEntry)).toList());
-//        }
-        JoinVO result = new JoinVO();
-//        result.setHeader(Arrays.stream(joinHeader).toList());
-//        result.setBody(joinData);
+        double[][] queryDataset = dataMapPorto.get(queryId);
+        double[][] targetDataset = dataMapPorto.get(datasetId);
+        List<JoinPair> list = new ArrayList<>();
+        Double[] distances = pair.getLeft();
+        Map<Integer, Integer> combine = pair.getRight();
+        int index = 0;
+        for (Map.Entry<Integer, Integer> entry : combine.entrySet()) {
+            JoinPoint queryPoint = new JoinPoint(entry.getKey(), queryDataset[entry.getKey()]);
+            JoinPoint targetPoint = new JoinPoint(entry.getValue(), targetDataset[entry.getValue()]);
+            JoinPair pairResult = new JoinPair(queryPoint, targetPoint, distances[entry.getKey()]);
+            list.add(pairResult);
+        }
+        JoinResultVO result = new JoinResultVO();
+        result.setList(list);
+        result.setQueryDatasetID(queryId);
+        result.setTargetDatasetID(datasetId);
         return result;
     }
 
@@ -374,4 +373,267 @@ public class FrameworkService {
     public ArrayList<Trajectory> getTrajectory(int datasetId) {
         return trajectoryDataIndex.get(datasetId);
     }
+
+    public PriorityQueue<relaxIndexNode> EMD(int dataDirID, int datasetQueryID, int topk) throws CloneNotSupportedException {
+        HashMap<Integer, HashMap<Long, Double>> mapForDir = zCodeMapForLake.get(dataDirID);
+        HashMap<Long, Double> mapQuery = mapForDir.get(datasetQueryID);
+        HashMap<Integer, ArrayList<double[]>> allHistogram = new HashMap<>();
+        double[][] iterMatrix = new double[mapForDir.size()][config.getDimension()];
+        double[] ubMove = new double[mapForDir.size()];
+        int[] histogram_name = new int[mapForDir.size()];
+//        signature_t querySignature = new signature_t();
+        double[] query = new double[config.getDimension()];
+        double radiusQuery = 0;
+        SignatureT querySignature = getAllData(mapForDir, datasetQueryID, allHistogram, iterMatrix, ubMove, histogram_name, query, radiusQuery);
+        int leafThreshold = 10;
+        int maxDepth = 15;
+        IndexNode ballTree = ball_tree.create(ubMove, iterMatrix, leafThreshold, maxDepth, config.getDimension());
+        ArrayList<Integer> firstFlterResult = getBranchAndBoundResultID(ballTree, query);
+        PriorityQueue<relaxIndexNode> resultApprox = new PriorityQueue<>(new ComparatorByRelaxIndexNode());
+        relax_EMD re = new relax_EMD();
+
+        int filterCount = 0;
+        int refineCount = 0;
+
+        for (int id : firstFlterResult) {
+            SignatureT data = getSignature(id - 1, allHistogram);
+            double emdLB = re.tighter_ICT(data, querySignature);
+            if (resultApprox.size() < topk) {
+                relaxIndexNode in = new relaxIndexNode(id, emdLB);
+                resultApprox.add(in);
+                refineCount++;
+            } else {
+                double best = resultApprox.peek().lb;
+                double lowerbound = emdLB;
+                if (lowerbound >= best) {
+                    filterCount++;
+                    continue;
+                }//被过滤
+                else {
+                    relaxIndexNode in = new relaxIndexNode(id, emdLB);
+                    resultApprox.poll();
+                    resultApprox.add(in);
+                    refineCount++;
+                }
+            }
+        }
+//        System.out.println("query dataset is " +.get(dataDirID).get(datasetQueryID));
+        System.out.println("EMD result:");
+        System.out.println("top " + topk + " results:");
+//        for (relaxIndexNode item : resultApprox) {
+//            System.out.println("id = " + item.resultId + ", name = " + datasetIdMappingList.get(dataDirID).get(item.resultId));
+//        }
+        System.out.println("EMD finished");
+        return resultApprox;
+    }
+
+    public SignatureT getAllData(HashMap<Integer, HashMap<Long, Double>> mapForDir, int datasetQueryID, HashMap<Integer, ArrayList<double[]>> allHistogram,
+                                 double[][] iterMatrix, double[] ubMove, int[] histogram_name, double[] query, double queryRadius) {
+        ArrayList<double[]> l = new ArrayList<>();
+        DoubleArrayList ub = new DoubleArrayList();
+        ArrayList<String[]> datasetList_after_pooling = getPooling(mapForDir);
+        ArrayList<Integer> his = new ArrayList(); //his coresponding to the all histogram_name
+        ArrayList<Integer> datasetID = new ArrayList<>();
+        int numberOfLine = 0;
+        SignatureT querySignature = null;
+        while (numberOfLine < mapForDir.size()) {
+            ArrayList<double[]> allPoints = new ArrayList<>();
+            HashMap<Long, Double> map1 = mapForDir.get(numberOfLine);
+            for (long key : map1.keySet()) {
+                long[] coord = resolve(key);
+                double[] d = new double[3];
+                d[0] = Double.parseDouble(String.valueOf(coord[0]));
+                d[1] = Double.parseDouble(String.valueOf(coord[1]));
+                d[2] = map1.get(key);
+                allPoints.add(d);
+            }
+            //sampleData
+            String[] buf = datasetList_after_pooling.get(numberOfLine);
+            allHistogram.put(numberOfLine, allPoints);
+//            datasetID.add(numberOfLine);
+            if (numberOfLine == datasetQueryID) {
+                //sampleData
+//                query = new double[dimension];
+                query[0] = Double.parseDouble(buf[1]);
+                query[1] = Double.parseDouble(buf[2]);
+                queryRadius = Double.parseDouble(buf[3]);
+
+                int n = allPoints.size();
+                FeatureT[] features = new FeatureT[n];
+                double[] weights = new double[n];
+                for (int i = 0; i < n; i++) {
+                    features[i] = new FeatureT(allPoints.get(i)[0], allPoints.get(i)[1]);
+                    weights[i] = allPoints.get(i)[2];
+                }
+                querySignature = new SignatureT(n, features, weights);
+            }
+            //sampleData
+            double[] corrd = new double[config.getDimension()];
+            corrd[0] = Double.parseDouble(buf[1]);
+            corrd[1] = Double.parseDouble(buf[2]);
+            l.add(corrd);
+            his.add(Integer.parseInt(buf[0]));
+            ub.add(Double.parseDouble(buf[3]));
+            numberOfLine++;
+        }
+        //sampleData
+        int countOfRow = numberOfLine;
+//        iterMatrix = new double[countOfRow][dimension];
+//        ubMove = new double[countOfRow];
+//        histogram_name = new int[countOfRow];
+        ubMove = ub.toDoubleArray();
+        for (int i = 0; i < countOfRow; i++) {
+            iterMatrix[i][0] = l.get(i)[0];
+            iterMatrix[i][1] = l.get(i)[1];
+            histogram_name[i] = his.get(i);
+        }
+//        return datasetID;
+        return querySignature;
+    }
+
+    public ArrayList<String[]> getPooling(HashMap<Integer, HashMap<Long, Double>> mapForDir) {
+        ArrayList<String[]> dataSetList_after_pooling = new ArrayList<>();
+        pooling p = new pooling();
+        mapForDir.forEach((k, v) -> {
+            HashMap<Long, Double> map1 = v;
+            SignatureT s1 = getSignature(map1);
+            SignatureT s1_pooling = null;
+            try {
+                s1_pooling = p.poolingOperature(s1, 1);
+            } catch (CloneNotSupportedException e) {
+                throw new RuntimeException(e);
+            }
+            double ub_move = p.getUb();
+            String[] string = new String[4];
+            string[0] = String.valueOf(k);
+            string[1] = String.valueOf(s1_pooling.Features[0].X);
+            string[2] = String.valueOf(s1_pooling.Features[0].Y);
+            string[3] = String.valueOf(ub_move);
+            dataSetList_after_pooling.add(string);
+        });
+        return dataSetList_after_pooling;
+    }
+
+    public SignatureT getSignature(HashMap<Long, Double> map) {
+        int n = map.size();
+        FeatureT[] Features = new FeatureT[n];
+        double[] Weights = new double[n];
+        long[] Coordinates;
+        double unit = 1.0;
+        int i = 0;
+        for (long key : map.keySet()) {
+            Coordinates = resolve(key);
+            Features[i] = new FeatureT(Coordinates[0] * unit, Coordinates[1] * unit);
+            Weights[i] = map.get(key);
+            i++;
+        }
+        SignatureT s = new SignatureT(n, Features, Weights);
+        return s;
+    }
+
+    public static SignatureT getSignature(int id, HashMap<Integer, ArrayList<double[]>> allHistogram) {
+        ArrayList<double[]> a = allHistogram.get(id);
+        int n = a.size();
+        FeatureT[] features = new FeatureT[n];
+        double[] weights = new double[n];
+        for (int i = 0; i < n; i++) {
+            features[i] = new FeatureT(a.get(i)[0], a.get(i)[1]);
+            weights[i] = a.get(i)[2];
+        }
+        SignatureT dataSignature = new SignatureT(n, features, weights);
+        return dataSignature;
+    }
+
+    public long[] resolve(long code) {
+        long[] Coordinates = new long[2];
+        String str = Long.toBinaryString(code);
+
+        while (str.length() < 2 * config.getResolution()) {
+            str = "0" + str;
+        }
+
+        StringBuilder c = new StringBuilder();
+        StringBuilder d = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            if (i % 2 == 0)
+                c.append(str.charAt(i));
+            else
+                d.append(str.charAt(i));
+        }
+
+        Coordinates[0] = Long.parseLong(c.toString(), 2);
+        Coordinates[1] = Long.parseLong(d.toString(), 2);
+        return Coordinates;
+    }
+
+    public ArrayList<Integer> getBranchAndBoundResultID(IndexNode root, double[] query) {
+        ArrayList<Integer> resultID = new ArrayList<>();
+        BranchAndBound(root, query);
+        while (!PQ_Branch.isEmpty()) {
+            IndexNodeExpand in = PQ_Branch.poll();
+            resultID.addAll(in.getIn().getpointIdList());
+//            System.out.println("LB = "+ in.lb+"  UB==  "+in.ub);
+        }
+        return resultID;
+    }
+
+    public double distance(double[] x, double[] y) {
+        double d = 0.0;
+        for (int i = 0; i < x.length; i++) {
+            d += (x[i] - y[i]) * (x[i] - y[i]);
+        }
+        return Math.sqrt(d);
+    }
+
+    public static PriorityQueue<IndexNodeExpand> PQ_Branch = new PriorityQueue<>(new ComparatorByIndexNodeExpand());
+    public static double LB_Branch = 1000000000;
+    public static double UB_Branch = 1000000000;
+
+    public void BranchAndBound(IndexNode root, double[] query) {
+        if (root.isLeaf()) {//leaf node
+//            System.out.println("distance(root.getPivot(), query)======"+distance(root.getPivot(), query));
+//            System.out.println("root.getEMDRadius()====="+root.getEMDRadius());
+            double LowerBound = distance(root.getPivot(), query) - root.getEMDRadius();
+            double UpperBound = distance(root.getPivot(), query) + root.getEMDRadius();
+//            System.out.print(LowerBound < 0);
+
+            IndexNodeExpand in = new IndexNodeExpand(root, LowerBound, UpperBound);
+            if (PQ_Branch.isEmpty()) {
+                PQ_Branch.add(in);
+            } else if (in.getLb() > UB_Branch) {
+                //Pruning
+            } else if (in.getUb() < LB_Branch) {
+//                PQ_Branch.poll();
+//                PQ_Branch.add(in);
+                while (in.getUb() < LB_Branch) {
+                    PQ_Branch.poll();
+                    if (!PQ_Branch.isEmpty()) {
+                        LB_Branch = PQ_Branch.peek().lb;
+                        UB_Branch = PQ_Branch.peek().ub;
+                    } else {
+                        break;
+                    }
+                }
+                PQ_Branch.add(in);
+            } else {
+                PQ_Branch.add(in);
+            }
+            LB_Branch = PQ_Branch.peek().lb;
+            UB_Branch = PQ_Branch.peek().ub;
+        } else {//internal node
+            Set<IndexNode> listnode = root.getNodelist();
+            for (IndexNode aListNode : listnode) {
+                double LowerBound = distance(aListNode.getPivot(), query) - aListNode.getEMDRadius();
+                double UpperBound = distance(aListNode.getPivot(), query) + aListNode.getEMDRadius();
+                if (LowerBound > UB_Branch) {
+                }//no sense looking here
+                else {// if (LowerBound <= UB_Branch )
+                    BranchAndBound(aListNode, query);
+                }
+            }
+
+        }
+    }
+
 }
