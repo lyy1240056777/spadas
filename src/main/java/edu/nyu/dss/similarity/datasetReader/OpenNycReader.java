@@ -159,7 +159,7 @@ public class OpenNycReader {
             indexBuilder.samplingDataByGrid(spatialData, id, node);
             node.setFileName(file.getParentFile().getName());
         }
-        datasetIDMapping.put(id, file.getName());
+        datasetIDMapping.put(id, file.getAbsolutePath() + "/" + file.getName());
         fileIDMap.put(id, file);
         filePathIndex.put(file.getAbsolutePath(), id);
     }

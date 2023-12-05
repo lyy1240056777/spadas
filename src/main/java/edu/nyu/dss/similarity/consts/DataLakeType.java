@@ -20,6 +20,7 @@ public enum DataLakeType {
 
     public final int id;
     public final boolean active;
+    // file here is the direct directory under the %DATASET% directory.
     public final Function<File, Boolean> func;
 
     private static final DataLakeType DEFAULT = BAIDU_POI;

@@ -148,6 +148,7 @@ public class Framework {
 //                datasetIdMapping.put(fileNo, fileName);
 //                选择使用哪种读取方法
                 if (type.active) {
+                    log.info("Reading file {}/{} with Type {}", file.getParentFile().getName(), file.getName(), type.name());
                     switch (type) {
                         case PURE_LOCATION -> pureLocationReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
                         case BAIDU_POI -> chinaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
@@ -234,6 +235,7 @@ public class Framework {
 
             datasetIdMappingItem = new HashMap<>();
             DataLakeType type = DataLakeType.matchType(subFolder);
+            log.info("Match {} as type {}", subFolder.getName(), type.name());
             File myFolder = new File(config.getFile().getBaseUri() + "/" + subFolder.getName());
             CityNode cityNode = new CityNode(subFolder.getName(), config.getDimension());
 
@@ -244,13 +246,13 @@ public class Framework {
             cityNodeList.add(cityNode);
             cityIndexNodeMap.put(cityNode.cityName, cityNode.nodeList);
         }
-        datasetIdMappingList.add(datasetIdMappingItem);
-        HashMap<Integer, HashMap<Long, Double>> zcodeMapTmp = new HashMap<>();
-        dataMapForEachDir.forEach((k, v) -> {
-            storeZcurveForEMD(v, k, cityNode.radius * 2, cityNode.radius * 2, cityNode.pivot[0] - cityNode.radius, cityNode.pivot[1] - cityNode.radius, zcodeMapTmp);
-        });
-        dataMapForEachDir.clear();
-        zcodeMapForLake.add(zcodeMapTmp);
+//        datasetIdMappingList.add(datasetIdMappingItem);
+//        HashMap<Integer, HashMap<Long, Double>> zcodeMapTmp = new HashMap<>();
+//        dataMapForEachDir.forEach((k, v) -> {
+//            storeZcurveForEMD(v, k, cityNode.radius * 2, cityNode.radius * 2, cityNode.pivot[0] - cityNode.radius, cityNode.pivot[1] - cityNode.radius, zcodeMapTmp);
+//        });
+//        dataMapForEachDir.clear();
+//        zcodeMapForLake.add(zcodeMapTmp);
         log.info("Totally {} files/folders and {} lines", files.length, pointCounter.get());
         // can modify weight by `normalizationWeight` method
         TreeMap<Integer, Integer> map = datasetSizeCounter.get();
@@ -271,7 +273,7 @@ public class Framework {
             datalakeIndex = indexDSS.restoreDatalakeIndex(indexString + "datalake" + N + "-" + config.getLeafCapacity() + "-" + config.getDimension() + ".txt", config.getDimension());//the datalake index
         }
 
-        if (datalakeIndex != null) {
+        if (datalakeIndex != null && datalakeIndex.get(1) != null) {
             datalakeIndex.get(1).setMaxCovertpoint(datalakeIndex); // for the query that measures how many points in the intersected range
         } else {
             datasetRoot.setMaxCovertpoint(datalakeIndex);

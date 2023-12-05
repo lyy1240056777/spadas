@@ -142,8 +142,9 @@ public class FrameworkService {
 
     public List<DatasetVo> keywordsQuery(KeywordsParams qo) {
         List<DatasetVo> res = new ArrayList<>();
+        String kwd = qo.getKws().toLowerCase();
         for (int i = 0; i < datasetIdMapping.size(); i++) {
-            if (datasetIdMapping.get(i) != null && datasetIdMapping.get(i).contains(qo.getKws())) {
+            if (datasetIdMapping.get(i) != null && datasetIdMapping.get(i).toLowerCase().contains(kwd)) {
                 res.add(new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null));
                 if (res.size() == qo.getLimit()) {
                     break;
@@ -170,16 +171,16 @@ public class FrameworkService {
         HashMap<Integer, Double> result = new HashMap<>();
 
         switch (qo.getMode()) {
-            case 0 -> // HausDist
+            case Haus -> // HausDist
                     result = search.pruneByIndex(dataMapPorto, framework.datasetRoot, queryNode,
                             qo.getDim(), indexMap, datasetIndex, null, datalakeIndex, datasetIdMapping, qo.getK(),
                             indexString, null, true, qo.getError(), config.getLeafCapacity(), null, config.isSaveIndex(), data);
-            case 1 -> { // Intersecting Area
+            case IA -> { // Intersecting Area
                 search.setScanning(false);
                 search.rangeQueryRankingArea(framework.datasetRoot, result, queryNode.getMBRmax(), queryNode.getMBRmin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
                         datalakeIndex);
             }
-            case 2 -> { // GridOverlap using index
+            case GBO -> { // GridOverlap using index
                 IndexNode root = framework.datasetRoot;//datalakeIndex.get(1);//use store
 
 //            if (datalakeIndex != null)
@@ -190,7 +191,7 @@ public class FrameworkService {
 //                queryzcurve[i] = zcodemap.get(queryid).get(i);
                 result = search.gridOverlap(root, result, queryzcurve, Double.MAX_VALUE, qo.getK(), null, datalakeIndex);
             }
-            case 3 -> {
+            case EMD -> {
 //            emd
 //                int[] queryID = convertID(qo.getDatasetId());
 //                PriorityQueue<relaxIndexNode> resQueue = EMD(queryID[0], queryID[1], qo.getK());
@@ -416,12 +417,12 @@ public class FrameworkService {
                 }
             }
         }
-        System.out.println("query dataset is " +.get(dataDirID).get(datasetQueryID));
+//        System.out.println("query dataset is " +.get(dataDirID).get(datasetQueryID));
         System.out.println("EMD result:");
         System.out.println("top " + topk + " results:");
-        for (relaxIndexNode item : resultApprox) {
-            System.out.println("id = " + item.resultId + ", name = " + datasetIdMappingList.get(dataDirID).get(item.resultId));
-        }
+//        for (relaxIndexNode item : resultApprox) {
+//            System.out.println("id = " + item.resultId + ", name = " + datasetIdMappingList.get(dataDirID).get(item.resultId));
+//        }
         System.out.println("EMD finished");
         return resultApprox;
     }
@@ -490,7 +491,7 @@ public class FrameworkService {
         return querySignature;
     }
 
-    public static ArrayList<String[]> getPooling(HashMap<Integer, HashMap<Long, Double>> mapForDir) {
+    public ArrayList<String[]> getPooling(HashMap<Integer, HashMap<Long, Double>> mapForDir) {
         ArrayList<String[]> dataSetList_after_pooling = new ArrayList<>();
         pooling p = new pooling();
         mapForDir.forEach((k, v) -> {
@@ -513,7 +514,7 @@ public class FrameworkService {
         return dataSetList_after_pooling;
     }
 
-    public static SignatureT getSignature(HashMap<Long, Double> map) {
+    public SignatureT getSignature(HashMap<Long, Double> map) {
         int n = map.size();
         FeatureT[] Features = new FeatureT[n];
         double[] Weights = new double[n];
@@ -543,7 +544,7 @@ public class FrameworkService {
         return dataSignature;
     }
 
-    public static long[] resolve(long code) {
+    public long[] resolve(long code) {
         long[] Coordinates = new long[2];
         String str = Long.toBinaryString(code);
 
