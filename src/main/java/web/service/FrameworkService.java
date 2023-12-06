@@ -91,7 +91,7 @@ public class FrameworkService {
     @Autowired
     private DatasetProperties datasetProperties;
 
-    public List<DatasetVo> rangequery(RangeQueryParams qo) {
+    public List<DatasetVo> rangeQuery(RangeQueryParams qo) {
         HashMap<Integer, Double> result = new HashMap<>();
         IndexNode root = framework.datasetRoot;
 //        为什么需要根节点参与？
@@ -415,13 +415,6 @@ public class FrameworkService {
                 }
             }
         }
-//        System.out.println("query dataset is " +.get(dataDirID).get(datasetQueryID));
-        System.out.println("EMD result:");
-        System.out.println("top " + topk + " results:");
-//        for (relaxIndexNode item : resultApprox) {
-//            System.out.println("id = " + item.resultId + ", name = " + datasetIdMappingList.get(dataDirID).get(item.resultId));
-//        }
-        System.out.println("EMD finished");
         return resultApprox;
     }
 
