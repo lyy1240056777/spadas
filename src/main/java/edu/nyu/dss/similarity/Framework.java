@@ -124,7 +124,8 @@ public class Framework {
         }
         for (File file : fileNames) {
             if (file.isDirectory()) {
-                readFolder(file, limit, cityNode, datasetIDForOneDir++, datasetIdMappingItem, type);
+//                datasetIDForOneDir++ -> datasetIDForOneDir
+                readFolder(file, limit, cityNode, datasetIDForOneDir, datasetIdMappingItem, type);
             } else {
 //				if (!isfolderVisited) {
 //					dataLakeMapping.put(index, new ArrayList<>());
@@ -172,8 +173,8 @@ public class Framework {
     /*
      * storing the z-curve
      */
-    @SuppressWarnings("unused")
-    public void storeZcurveForEMD(double[][] dataset, int datasetId, double xRange, double yRange, double minx, double miny, HashMap<Integer, HashMap<Long, Double>> zcodeMapTmp) {
+    /*@SuppressWarnings("unused")
+    public void storeZCurveForEMD(double[][] dataset, int datasetId, double xRange, double yRange, double minx, double miny, HashMap<Integer, HashMap<Long, Double>> zcodeMapTmp) {
         int pointCnt = dataset.length;
         int numberCells = (int) Math.pow(2, config.getResolution());
         double xUnit = xRange / numberCells;
@@ -192,7 +193,7 @@ public class Framework {
             }
         }
         zcodeMapTmp.put(datasetId, zcodeItemMap);
-    }
+    }*/
 
     public int[] generateZcurveForRange(double[] minRange, double[] maxRange) {
         int numberCells = (int) Math.pow(2, config.getResolution());
@@ -225,7 +226,7 @@ public class Framework {
     private void readDatalake(int limit) throws IOException {
         File folder = new File(config.getFile().getBaseUri());
         String[] files = folder.list();
-        HashMap<Integer, String> datasetIdMappingItem = null;
+        HashMap<Integer, String> datasetIdMappingItem;
         for (File subFolder : Objects.requireNonNull(folder.listFiles())) {
             if (subFolder.isFile()) {
                 continue;
@@ -404,8 +405,8 @@ public class Framework {
         clearAll();
         readDatalake(config.getFrontendLimitation());
         createDatalake(config.getFrontendLimitation());
-        loadTrajectoryIndex(defaultTrajectoryDataset());
-        initTestRoadmap(10000);
+//        loadTrajectoryIndex(defaultTrajectoryDataset());
+//        initTestRoadmap(10000);
         log.info("All data loaded.");
     }
 

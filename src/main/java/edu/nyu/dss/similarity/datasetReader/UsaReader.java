@@ -106,7 +106,11 @@ public class UsaReader {
             fileIDMap.put(fileNo, dataFile);
             indexBuilder.storeZcurve(data, fileNo);
             node.setSignautre(zCodeMap.get(fileNo).stream().mapToInt(Integer::intValue).toArray());
+            indexBuilder.storeZCurveForEMD(data, fileNo, 180, 360, -90, -180);
 //                EffectivenessStudy.SerializedZcurve(zcodemap);
+        }
+        if (list.isEmpty()) {
+            System.out.println(fileNo + " " + dataFile.getName());
         }
         return dataMapPorto;
     }

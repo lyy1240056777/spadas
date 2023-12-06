@@ -34,6 +34,9 @@ public class IndexBuilder {
     @Autowired
     private ZCodeMap zCodeMap;
 
+    @Autowired
+    private ZCodeMapEmd zCodeMapEmd;
+
     private boolean buildOnlyRoots = false;
 
     @Deprecated
@@ -166,5 +169,29 @@ public class IndexBuilder {
         }
         Collections.sort(zcodeaArrayList);
         zCodeMap.put(datasetid, zcodeaArrayList);
+    }
+
+    /*
+     * storing the z-curve
+     */
+    public void storeZCurveForEMD(double[][] dataset, int datasetId, double xRange, double yRange, double minx, double miny) {
+        int pointCnt = dataset.length;
+        int numberCells = (int) Math.pow(2, config.getResolution());
+        double xUnit = xRange / numberCells;
+        double yUnit = yRange / numberCells;
+        double weightUnit = 1.0 / pointCnt;
+        HashMap<Long, Double> zCodeItemMap = new HashMap<>();
+        for (double[] doubles : dataset) {
+            int x = (int) ((doubles[0] - minx) / xUnit);
+            int y = (int) ((doubles[1] - miny) / yUnit);
+            long zCode = EffectivenessStudy.combine(x, y, config.getResolution());
+            if (zCodeItemMap.containsKey(zCode)) {
+                double val = zCodeItemMap.get(zCode);
+                zCodeItemMap.put(zCode, val + weightUnit);
+            } else {
+                zCodeItemMap.put(zCode, weightUnit);
+            }
+        }
+        zCodeMapEmd.put(datasetId, zCodeItemMap);
     }
 }

@@ -101,6 +101,7 @@ public class PureLocationReader extends AbsReader {
             }
             datasetIDMapping.put(fileNo, shortName);
             fileIDMap.put(fileNo, file);
+            indexBuilder.storeZCurveForEMD(data, fileNo, 180, 360, -90, -180);
 //          storeZcurve(xxx, fileNo, 5, 5, 30, 100);
 ////        EffectivenessStudy.SerializedZcurve(zcodemap);
         }
