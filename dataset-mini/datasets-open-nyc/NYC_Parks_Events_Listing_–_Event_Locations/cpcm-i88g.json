@@ -1,0 +1,1000 @@
+[{"event_id":"100073","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.66170120239258","long":"-73.9708023071289","borough":"B"}
+,{"event_id":"100074","name":"Wolfes Pond Park at Hylan Blvd","park_id":"R031","lat":"40.521690368652344","long":"-74.19256591796875","borough":"R"}
+,{"event_id":"100075","name":"Williamsbridge Oval Recreation Center","park_id":"X104","lat":"40.876696912441","long":"-73.87855219841","address":"3225 Reservoir Oval East","zip":"10467","borough":"X"}
+,{"event_id":"100076","name":"St. Mary's Recreation Center","park_id":"X045","lat":"40.811407668807","long":"-73.914220571518","address":"St. Ann's Avenue and 145th Street","zip":"10454","borough":"X","accessible":"1"}
+,{"event_id":"100144","name":"Washington Square Park","park_id":"M098","lat":"40.73149871826172","long":"-73.99749755859375","borough":"M"}
+,{"event_id":"100158","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100159","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100160","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100161","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100162","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100163","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100164","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100165","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100166","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100167","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100168","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100169","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100170","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100171","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100172","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100173","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100174","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100175","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100176","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100177","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100178","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100179","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100180","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100181","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100182","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100183","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100184","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100185","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100186","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100187","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100188","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100189","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100190","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100191","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100192","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100193","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100194","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100195","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100196","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100197","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100198","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100199","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100200","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100201","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100202","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100203","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100204","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100205","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100206","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100207","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100208","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100209","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100210","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100211","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100212","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100213","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100214","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100215","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100216","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100217","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100218","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100219","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100220","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100221","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100222","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100223","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100224","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100225","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100226","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100227","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100228","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100229","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100230","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100231","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100232","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100233","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100234","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100235","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100236","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100237","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100238","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100239","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100240","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100241","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100242","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100243","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100244","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100245","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100246","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100247","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100248","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100249","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100250","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100251","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100252","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100253","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100254","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100255","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100256","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100257","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100258","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100259","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100260","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100261","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100262","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100263","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100264","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100265","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100266","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100267","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100268","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100269","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100270","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100271","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100272","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100273","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100274","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100275","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100276","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100277","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100278","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100279","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100280","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100281","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100282","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100283","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100284","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100285","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100286","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100287","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100288","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100289","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100290","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100291","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100292","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100293","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100294","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100295","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100296","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100297","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100298","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100299","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100300","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100301","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100302","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100303","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100304","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100305","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100306","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100307","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100308","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100309","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100310","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100311","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100312","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100313","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100314","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100315","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100316","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100317","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100318","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100319","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100320","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100321","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100322","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100323","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100324","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100325","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100326","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100327","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100328","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100329","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100330","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100331","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100332","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100333","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100334","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100335","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100336","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100337","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100338","name":"Peninsula","park_id":"B073","lat":"40.65719985961914","long":"-73.96890258789062","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100339","name":"16th Street Entrance","park_id":"B073","lat":"40.65739822387695","long":"-73.9738998413086","address":"Prospect Park Southwest and 16th Street","borough":"B","accessible":"1"}
+,{"event_id":"100340","name":"The Nethermead","park_id":"B073","lat":"40.66109848022461","long":"-73.96859741210938","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100340","name":"Lookout Hill","park_id":"B073","lat":"40.657901763916016","long":"-73.97109985351562","zip":"11215","borough":"B"}
+,{"event_id":"100340","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100341","name":"The Nethermead","park_id":"B073","lat":"40.66109848022461","long":"-73.96859741210938","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100341","name":"Lookout Hill","park_id":"B073","lat":"40.657901763916016","long":"-73.97109985351562","zip":"11215","borough":"B"}
+,{"event_id":"100341","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"100342","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100343","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100344","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100345","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100346","name":"150th and 90th Avenue, right by the Gazebo","park_id":"Q023","lat":"40.70366287231445","long":"-73.80522918701172","borough":"Q"}
+,{"event_id":"100347","name":"20th Avenue and 38th Street","park_id":"Q332","lat":"40.777000427246094","long":"-73.90239715576172","borough":"Q"}
+,{"event_id":"100348","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100349","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100350","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100351","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100352","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100353","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100354","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100355","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100356","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100357","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100358","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100359","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100360","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100361","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100362","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100363","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100364","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100365","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100366","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100367","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100368","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100369","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100370","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100371","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100372","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100373","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100374","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100375","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100376","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100377","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100378","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100379","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100380","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100381","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100382","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100383","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100384","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100385","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100386","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100387","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100388","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100389","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100390","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100391","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100392","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100393","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100394","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100398","name":"Montefiore Park","park_id":"M055","lat":"40.82160186767578","long":"-73.95359802246094","address":"West 137th Street & Broadway","zip":"10031","borough":"M"}
+,{"event_id":"100399","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100400","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100401","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100402","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100403","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100404","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100405","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100406","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100407","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100408","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100409","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100410","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100411","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100412","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100413","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100414","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100415","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100416","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100417","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100418","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100419","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100420","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100421","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100422","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100423","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100424","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100425","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100426","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100427","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100428","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100429","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100430","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100431","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100432","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100433","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100434","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100435","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100436","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100437","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100438","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100439","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100440","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100441","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100442","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100443","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100444","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100445","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100446","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100447","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100448","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100449","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100450","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100451","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100452","name":"Joe Michaels Mile: Western Entrance","park_id":"Q012","lat":"40.78879928588867","long":"-73.78209686279297","borough":"Q"}
+,{"event_id":"100453","name":"Sylvan Grove Cemetery","park_id":"R156","lat":"40.591400146484375","long":"-74.19210052490234","zip":"10314","borough":"R"}
+,{"event_id":"100454","name":"35th Avenue and Cross Island Parkway","park_id":"Q012","lat":"40.77134323120117","long":"-73.76530456542969","borough":"Q","accessible":"1"}
+,{"event_id":"100455","name":"33rd Road and 215th Place","park_id":"Q012","lat":"40.772098541259766","long":"-73.76940155029297","borough":"Q","accessible":"1"}
+,{"event_id":"100456","name":"South Beach Gazebo","park_id":"R046","lat":"40.58959197998047","long":"-74.06551361083984","borough":"R"}
+,{"event_id":"100457","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100458","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100459","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100460","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100461","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100462","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100463","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100464","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100465","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100466","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100467","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100468","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100469","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100470","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100471","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100472","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100473","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100474","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100475","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100476","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100477","name":"Dyckman Farmhouse Museum","park_id":"M026","lat":"40.86750030517578","long":"-73.92289733886719","address":"4881 Broadway at 204th Street","zip":"10034","borough":"M","accessible":"0"}
+,{"event_id":"100478","name":"Meadow Lake North","park_id":"Q099","lat":"40.7406005859375","long":"-73.8406982421875","zip":"11368","borough":"Q"}
+,{"event_id":"100479","name":"Chelsea Recreation Center","park_id":"M260","lat":"40.74829864502","long":"-74.002197265625","address":"430 W. 25th Street","zip":"10001","borough":"M","accessible":"1"}
+,{"event_id":"100480","name":"Chelsea Recreation Center","park_id":"M260","lat":"40.74829864502","long":"-74.002197265625","address":"430 W. 25th Street","zip":"10001","borough":"M","accessible":"1"}
+,{"event_id":"100481","name":"Chelsea Recreation Center","park_id":"M260","lat":"40.74829864502","long":"-74.002197265625","address":"430 W. 25th Street","zip":"10001","borough":"M","accessible":"1"}
+,{"event_id":"100482","name":"Chelsea Recreation Center","park_id":"M260","lat":"40.74829864502","long":"-74.002197265625","address":"430 W. 25th Street","zip":"10001","borough":"M","accessible":"1"}
+,{"event_id":"100483","name":"Across the Street from 222-18 56th Ave","park_id":"Q001","lat":"40.752899169921875","long":"-73.7593002319336","borough":"Q"}
+,{"event_id":"100484","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100485","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100486","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100487","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100488","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100489","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100490","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100491","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100492","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100493","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100494","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100495","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100496","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100497","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100498","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100499","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100500","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100501","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100502","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100503","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100504","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100505","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100506","name":"Garibaldi Plaza","park_id":"M098","lat":"40.730499267578125","long":"-73.99700164794922","borough":"M"}
+,{"event_id":"100507","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100508","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100509","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100510","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100511","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100512","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100513","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100514","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100515","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100516","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100517","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100518","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100519","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100520","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100521","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100522","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100523","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100524","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100525","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100526","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100527","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100528","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100529","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100530","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100531","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100532","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100533","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100534","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100535","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100536","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100537","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100538","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100539","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100540","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100541","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100542","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100543","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100544","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100545","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100546","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100547","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100548","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100549","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100550","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100551","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100552","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100553","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100554","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100555","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100556","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100557","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100558","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100559","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100560","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"100561","name":"Washington Square Park","park_id":"M098","lat":"40.73149871826172","long":"-73.99749755859375","borough":"M"}
+,{"event_id":"100562","name":"Washington Square Park","park_id":"M098","lat":"40.73149871826172","long":"-73.99749755859375","borough":"M"}
+,{"event_id":"100563","name":"Washington Square Park","park_id":"M098","lat":"40.73149871826172","long":"-73.99749755859375","borough":"M"}
+,{"event_id":"100564","name":"Poe Park Visitor Center","park_id":"X040","lat":"40.8650016784668","long":"-73.89469909667969","address":"2640 Grand Concourse","borough":"X","accessible":"1"}
+,{"event_id":"100565","name":"Brownsville Recreation Center","park_id":"B270","lat":"40.65660095214844","long":"-73.9020004272461","address":"1555 Linden Boulevard","zip":"11212","borough":"B"}
+,{"event_id":"100566","name":"Brownsville Recreation Center","park_id":"B270","lat":"40.65660095214844","long":"-73.9020004272461","address":"1555 Linden Boulevard","zip":"11212","borough":"B"}
+,{"event_id":"100567","name":"Brownsville Recreation Center","park_id":"B270","lat":"40.65660095214844","long":"-73.9020004272461","address":"1555 Linden Boulevard","zip":"11212","borough":"B"}
+,{"event_id":"100568","name":"Hunt's Point Recreation Center","lat":"40.81549835205078","long":"-73.88909912109375","address":"765 Manida Street","zip":"10474","borough":"X","accessible":"1"}
+,{"event_id":"100569","name":"St. James Recreation Center","park_id":"X044","lat":"40.86470031738281","long":"-73.89920043945312","address":"2530 Jerome Avenue","zip":"10468","borough":"X","accessible":"1"}
+,{"event_id":"100570","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100571","name":"Cedar Grove Avenue at Waterside Street","park_id":"R016","lat":"40.563789367676","long":"-74.098258972168","address":"Cedar Grove Avenue at Waterside Street, Staten Island","zip":"10306","borough":"R"}
+,{"event_id":"100572","name":"Playground for All Children","park_id":"Q099","lat":"40.74089813232422","long":"-73.8490982055664","borough":"Q"}
+,{"event_id":"100573","name":"Village Hall","park_id":"R028","lat":"40.6265983581543","long":"-74.07779693603516","address":"Canal Street and Wright Street","borough":"R"}
+,{"event_id":"100574","name":"Jackie Robinson Recreation Center","park_id":"M014","lat":"40.82419967651367","long":"-73.94249725341797","address":"85 Bradhurst Avenue","zip":"10039","borough":"M","accessible":"1"}
+,{"event_id":"100575","name":"Green Map System","lat":"40.72348403930664","long":"-73.98360443115234","address":"220A E. 4th Street","zip":"10009","borough":"M"}
+,{"event_id":"100576","name":"Creations Gallery","lat":"40.72370147705078","long":"-73.97940063476562","address":"89 Avenue C","zip":"10009","borough":"M"}
+,{"event_id":"100577","name":"Icahn Stadium","park_id":"M104","lat":"40.79322814941406","long":"-73.9254150390625","zip":"10007","borough":"M"}
+,{"event_id":"100578","name":"Bed Stuy Farm","lat":"40.68220138549805","long":"-73.9269027709961","address":"404 Decatur Street","zip":"11233","borough":"B"}
+,{"event_id":"100579","name":"Eibs Pond Park","park_id":"R124","lat":"40.611000061035156","long":"-74.0824966430664","zip":"10304","borough":"R","accessible":"1"}
+,{"event_id":"100580","name":"Eibs Pond Park","park_id":"R124","lat":"40.611000061035156","long":"-74.0824966430664","zip":"10304","borough":"R","accessible":"1"}
+,{"event_id":"100581","name":"Graniteville Quarry Park","park_id":"R150","lat":"40.625450134277344","long":"-74.15241241455078","address":"Eunice Place and Van Name Avenue","zip":"10303","borough":"R"}
+,{"event_id":"100582","name":"Graniteville Quarry Park","park_id":"R150","lat":"40.625450134277344","long":"-74.15241241455078","address":"Eunice Place and Van Name Avenue","zip":"10303","borough":"R"}
+,{"event_id":"100585","name":"Tappen Park","park_id":"R028","lat":"40.626800537109375","long":"-74.07689666748047","zip":"10304","borough":"R","accessible":"1"}
+,{"event_id":"100586","name":"Tappen Park","park_id":"R028","lat":"40.626800537109375","long":"-74.07689666748047","zip":"10304","borough":"R","accessible":"1"}
+,{"event_id":"100587","name":"Westerleigh Park","park_id":"R029","lat":"40.61980056762695","long":"-74.1344985961914","zip":"10314","borough":"R","accessible":"1"}
+,{"event_id":"100588","name":"Westerleigh Park","park_id":"R029","lat":"40.61980056762695","long":"-74.1344985961914","zip":"10314","borough":"R","accessible":"1"}
+,{"event_id":"100589","name":"High Rock Park","park_id":"R088","lat":"40.582801818847656","long":"-74.12409973144531","zip":"10306","borough":"R","accessible":"1"}
+,{"event_id":"100590","name":"High Rock Park","park_id":"R088","lat":"40.582801818847656","long":"-74.12409973144531","zip":"10306","borough":"R","accessible":"1"}
+,{"event_id":"100591","name":"Schmul Park","park_id":"R045","lat":"40.589900970459","long":"-74.187698364258","zip":"10314","borough":"R"}
+,{"event_id":"100592","name":"Schmul Park","park_id":"R045","lat":"40.589900970459","long":"-74.187698364258","zip":"10314","borough":"R"}
+,{"event_id":"100593","name":"Conference House Park","park_id":"R006","lat":"40.50279998779297","long":"-74.25250244140625","borough":"R"}
+,{"event_id":"100594","name":"Conference House Park","park_id":"R006","lat":"40.50279998779297","long":"-74.25250244140625","borough":"R"}
+,{"event_id":"100595","name":"Conference House Park","park_id":"R006","lat":"40.50279998779297","long":"-74.25250244140625","borough":"R"}
+,{"event_id":"100596","name":"Conference House Park","park_id":"R006","lat":"40.50279998779297","long":"-74.25250244140625","borough":"R"}
+,{"event_id":"100599","name":"Conference House Park","park_id":"R006","lat":"40.50279998779297","long":"-74.25250244140625","borough":"R"}
+,{"event_id":"100600","name":"Conference House Park","park_id":"R006","lat":"40.50279998779297","long":"-74.25250244140625","borough":"R"}
+,{"event_id":"100601","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100602","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100603","name":"Cadman Plaza Park","park_id":"B113A","lat":"40.69810104370117","long":"-73.9906005859375","zip":"11201","borough":"B","accessible":"1"}
+,{"event_id":"100604","name":"Cadman Plaza Park","park_id":"B113A","lat":"40.69810104370117","long":"-73.9906005859375","zip":"11201","borough":"B","accessible":"1"}
+,{"event_id":"100607","name":"Herbert Von King Park","park_id":"B088","lat":"40.690101623535156","long":"-73.94650268554688","zip":"11216","borough":"B","accessible":"1"}
+,{"event_id":"100608","name":"Herbert Von King Park","park_id":"B088","lat":"40.690101623535156","long":"-73.94650268554688","zip":"11216","borough":"B","accessible":"1"}
+,{"event_id":"100609","name":"Nehemiah Park","park_id":"B396","lat":"40.661800384521484","long":"-73.90540313720703","address":"Mother Gaston Boulevard and Livonia Avenue","zip":"11212","borough":"B"}
+,{"event_id":"100610","name":"Nehemiah Park","park_id":"B396","lat":"40.661800384521484","long":"-73.90540313720703","address":"Mother Gaston Boulevard and Livonia Avenue","zip":"11212","borough":"B"}
+,{"event_id":"100613","name":"Thomas Boyland Park","park_id":"B381","lat":"40.68190002441406","long":"-73.90779876708984","zip":"11207","borough":"B"}
+,{"event_id":"100614","name":"Thomas Boyland Park","park_id":"B381","lat":"40.68190002441406","long":"-73.90779876708984","zip":"11207","borough":"B"}
+,{"event_id":"100617","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100618","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100619","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100620","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100621","name":"Monsignor McGolrick Park","park_id":"B114","lat":"40.72439956665039","long":"-73.94339752197266","zip":"11222","borough":"B","accessible":"1"}
+,{"event_id":"100622","name":"Monsignor McGolrick Park","park_id":"B114","lat":"40.72439956665039","long":"-73.94339752197266","zip":"11222","borough":"B","accessible":"1"}
+,{"event_id":"100623","name":"Parham Playground","park_id":"B253","lat":"40.69029998779297","long":"-73.9708023071289","zip":"11205","borough":"B"}
+,{"event_id":"100624","name":"Parham Playground","park_id":"B253","lat":"40.69029998779297","long":"-73.9708023071289","zip":"11205","borough":"B"}
+,{"event_id":"100625","name":"Shore Road Park","park_id":"B082","lat":"40.614601135253906","long":"-74.03820037841797","zip":"11209","borough":"B","accessible":"1"}
+,{"event_id":"100626","name":"Shore Road Park","park_id":"B082","lat":"40.614601135253906","long":"-74.03820037841797","zip":"11209","borough":"B","accessible":"1"}
+,{"event_id":"100629","name":"Wingate Park","park_id":"B254","lat":"40.658599853515625","long":"-73.94429779052734","zip":"11203","borough":"B","accessible":"1"}
+,{"event_id":"100630","name":"Wingate Park","park_id":"B254","lat":"40.658599853515625","long":"-73.94429779052734","zip":"11203","borough":"B","accessible":"1"}
+,{"event_id":"100631","name":"Commodore Barry Park","park_id":"B021","lat":"40.69729995727539","long":"-73.97889709472656","zip":"11201","borough":"B","accessible":"1"}
+,{"event_id":"100632","name":"Commodore Barry Park","park_id":"B021","lat":"40.69729995727539","long":"-73.97889709472656","zip":"11201","borough":"B","accessible":"1"}
+,{"event_id":"100633","name":"Cooper Park","park_id":"B025","lat":"40.71590042114258","long":"-73.93730163574219","zip":"11211","borough":"B","accessible":"1"}
+,{"event_id":"100634","name":"Cooper Park","park_id":"B025","lat":"40.71590042114258","long":"-73.93730163574219","zip":"11211","borough":"B","accessible":"1"}
+,{"event_id":"100637","name":"Harmony Park","park_id":"B403","lat":"40.67789840698242","long":"-73.93440246582031","zip":"11213","borough":"B"}
+,{"event_id":"100638","name":"Harmony Park","park_id":"B403","lat":"40.67789840698242","long":"-73.93440246582031","zip":"11213","borough":"B"}
+,{"event_id":"100641","name":"Lincoln Terrace Park","park_id":"B054","lat":"40.66680145263672","long":"-73.92720031738281","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100642","name":"Lincoln Terrace Park","park_id":"B054","lat":"40.66680145263672","long":"-73.92720031738281","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100645","name":"St. John's Recreation Center","lat":"40.673948857689","long":"-73.934933304787","address":"1251 Prospect Place","borough":"B","accessible":"1"}
+,{"event_id":"100646","name":"St. John's Recreation Center","lat":"40.673948857689","long":"-73.934933304787","address":"1251 Prospect Place","borough":"B","accessible":"1"}
+,{"event_id":"100647","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100648","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100649","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100650","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100651","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100652","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100653","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100654","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100660","name":"Joseph Rodman Drake Park","park_id":"X015","lat":"40.810298919677734","long":"-73.88240051269531","zip":"10474","borough":"X"}
+,{"event_id":"100662","name":"St. Mary's Park","park_id":"X045","lat":"40.81169891357422","long":"-73.91259765625","zip":"10455","borough":"X","accessible":"1"}
+,{"event_id":"100663","name":"East River Esplanade","park_id":"M289","lat":"40.744998931884766","long":"-73.97049713134766","zip":"10007","borough":"M"}
+,{"event_id":"100664","name":"East River Esplanade","park_id":"M289","lat":"40.744998931884766","long":"-73.97049713134766","zip":"10007","borough":"M"}
+,{"event_id":"100673","name":"Washington Market Park","park_id":"M308","lat":"40.717098236083984","long":"-74.0115966796875","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100674","name":"Washington Market Park","park_id":"M308","lat":"40.717098236083984","long":"-74.0115966796875","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100675","name":"Charlton Plaza","lat":"40.727027893066406","long":"-74.00344848632812","address":"Charlton Street and 6th Avenue","zip":"10014","borough":"M"}
+,{"event_id":"100676","name":"Charlton Plaza","lat":"40.727027893066406","long":"-74.00344848632812","address":"Charlton Street and 6th Avenue","zip":"10014","borough":"M"}
+,{"event_id":"100677","name":"Christopher Park","park_id":"M012","lat":"40.73360061645508","long":"-74.002197265625","zip":"10014","borough":"M","accessible":"1"}
+,{"event_id":"100678","name":"Christopher Park","park_id":"M012","lat":"40.73360061645508","long":"-74.002197265625","zip":"10014","borough":"M","accessible":"1"}
+,{"event_id":"100679","name":"Washington Square Park","park_id":"M098","lat":"40.73149871826172","long":"-73.99749755859375","borough":"M"}
+,{"event_id":"100680","name":"Washington Square Park","park_id":"M098","lat":"40.73149871826172","long":"-73.99749755859375","borough":"M"}
+,{"event_id":"100681","name":"Little Red Square","park_id":"MZ06","lat":"40.72930145263672","long":"-74.0020980834961","zip":"10014","borough":"M","accessible":"1"}
+,{"event_id":"100682","name":"Little Red Square","park_id":"MZ06","lat":"40.72930145263672","long":"-74.0020980834961","zip":"10014","borough":"M","accessible":"1"}
+,{"event_id":"100683","name":"Downing Street Playground","park_id":"M027","lat":"40.729801177978516","long":"-74.00270080566406","address":"Downing Street and 6th Avenue","zip":"10014","borough":"M"}
+,{"event_id":"100684","name":"Downing Street Playground","park_id":"M027","lat":"40.729801177978516","long":"-74.00270080566406","address":"Downing Street and 6th Avenue","zip":"10014","borough":"M"}
+,{"event_id":"100685","name":"Father Fagan Square","park_id":"M207","lat":"40.72669982910156","long":"-74.00340270996094","zip":"10013","borough":"M"}
+,{"event_id":"100686","name":"Father Fagan Square","park_id":"M207","lat":"40.72669982910156","long":"-74.00340270996094","zip":"10013","borough":"M"}
+,{"event_id":"100687","name":"Juan Pablo Duarte Square","lat":"40.841976165771484","long":"-73.93914794921875","address":"169th Street and Broadway","zip":"10032","borough":"M"}
+,{"event_id":"100688","name":"Juan Pablo Duarte Square","lat":"40.841976165771484","long":"-73.93914794921875","address":"169th Street and Broadway","zip":"10032","borough":"M"}
+,{"event_id":"100689","name":"Minetta Green","park_id":"M125A","lat":"40.73030090332031","long":"-74.00160217285156","zip":"10014","borough":"M"}
+,{"event_id":"100690","name":"Minetta Green","park_id":"M125A","lat":"40.73030090332031","long":"-74.00160217285156","zip":"10014","borough":"M"}
+,{"event_id":"100691","name":"Vesuvio Playground","park_id":"M069","lat":"40.72529983520508","long":"-74.00260162353516","zip":"10012","borough":"M"}
+,{"event_id":"100692","name":"Vesuvio Playground","park_id":"M069","lat":"40.72529983520508","long":"-74.00260162353516","zip":"10012","borough":"M"}
+,{"event_id":"100693","name":"Columbus Park","park_id":"M015","lat":"40.7151985168457","long":"-74","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100694","name":"Columbus Park","park_id":"M015","lat":"40.7151985168457","long":"-74","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100695","name":"First Park","park_id":"M124","lat":"40.7234992980957","long":"-73.98979949951172","zip":"10002","borough":"M"}
+,{"event_id":"100696","name":"First Park","park_id":"M124","lat":"40.7234992980957","long":"-73.98979949951172","zip":"10002","borough":"M"}
+,{"event_id":"100697","name":"Peretz Square","park_id":"M123","lat":"40.72298812866211","long":"-73.98760223388672","address":"Houston Street between First Avenue and Avenue A","zip":"10009","borough":"M"}
+,{"event_id":"100698","name":"Peretz Square","park_id":"M123","lat":"40.72298812866211","long":"-73.98760223388672","address":"Houston Street between First Avenue and Avenue A","zip":"10009","borough":"M"}
+,{"event_id":"100703","name":"St. Vartan Park","park_id":"M076","lat":"40.74509811401367","long":"-73.97370147705078","address":"E. 35th Street between 1st and 2nd Avenues","zip":"10007","borough":"M"}
+,{"event_id":"100704","name":"St. Vartan Park","park_id":"M076","lat":"40.74509811401367","long":"-73.97370147705078","address":"E. 35th Street between 1st and 2nd Avenues","zip":"10007","borough":"M"}
+,{"event_id":"100709","name":"Carl Schurz Park","park_id":"M081","lat":"40.774898529052734","long":"-73.94380187988281","borough":"M"}
+,{"event_id":"100710","name":"Carl Schurz Park","park_id":"M081","lat":"40.774898529052734","long":"-73.94380187988281","borough":"M"}
+,{"event_id":"100713","name":"Samuel Seabury Playground","park_id":"M236","lat":"40.785400390625","long":"-73.95079803466797","zip":"10128","borough":"M"}
+,{"event_id":"100714","name":"Samuel Seabury Playground","park_id":"M236","lat":"40.785400390625","long":"-73.95079803466797","zip":"10128","borough":"M"}
+,{"event_id":"100715","name":"Convent Garden","park_id":"M284","lat":"40.82830047607422","long":"-73.94270324707031","zip":"10031","borough":"M","accessible":"1"}
+,{"event_id":"100716","name":"Convent Garden","park_id":"M284","lat":"40.82830047607422","long":"-73.94270324707031","zip":"10031","borough":"M","accessible":"1"}
+,{"event_id":"100717","name":"Morningside Park","park_id":"M056","lat":"40.805051726374","long":"-73.95910859108","borough":"M"}
+,{"event_id":"100718","name":"Morningside Park","park_id":"M056","lat":"40.805051726374","long":"-73.95910859108","borough":"M"}
+,{"event_id":"100719","name":"St. Nicholas Park","park_id":"M077","lat":"40.816898345947266","long":"-73.9489974975586","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100720","name":"St. Nicholas Park","park_id":"M077","lat":"40.816898345947266","long":"-73.9489974975586","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100723","name":"Collyer Brothers Park","park_id":"M305","lat":"40.80849838256836","long":"-73.94110107421875","zip":"10027","borough":"M","accessible":"1"}
+,{"event_id":"100724","name":"Collyer Brothers Park","park_id":"M305","lat":"40.80849838256836","long":"-73.94110107421875","zip":"10027","borough":"M","accessible":"1"}
+,{"event_id":"100727","name":"Jackie Robinson Park","park_id":"B294","lat":"40.680198669433594","long":"-73.92769622802734","borough":"B"}
+,{"event_id":"100728","name":"Jackie Robinson Park","park_id":"B294","lat":"40.680198669433594","long":"-73.92769622802734","borough":"B"}
+,{"event_id":"100729","name":"Jackie Robinson Park","park_id":"B294","lat":"40.680198669433594","long":"-73.92769622802734","borough":"B"}
+,{"event_id":"100730","name":"Jackie Robinson Park","park_id":"B294","lat":"40.680198669433594","long":"-73.92769622802734","borough":"B"}
+,{"event_id":"100731","name":"Marcus Garvey Park","park_id":"M058","lat":"40.804508209228516","long":"-73.94366455078125","borough":"M"}
+,{"event_id":"100732","name":"Marcus Garvey Park","park_id":"M058","lat":"40.804508209228516","long":"-73.94366455078125","borough":"M"}
+,{"event_id":"100733","name":"Marcus Garvey Park","park_id":"M058","lat":"40.804508209228516","long":"-73.94366455078125","borough":"M"}
+,{"event_id":"100734","name":"Marcus Garvey Park","park_id":"M058","lat":"40.804508209228516","long":"-73.94366455078125","borough":"M"}
+,{"event_id":"100735","name":"Thomas Jefferson Park","park_id":"M047","lat":"40.79312515258789","long":"-73.93525695800781","zip":"10029","borough":"M","accessible":"1"}
+,{"event_id":"100736","name":"Thomas Jefferson Park","park_id":"M047","lat":"40.79312515258789","long":"-73.93525695800781","zip":"10029","borough":"M","accessible":"1"}
+,{"event_id":"100737","name":"Fort Washington Park","park_id":"M028","lat":"40.849459929509","long":"-73.946592330933","zip":"10033","borough":"M","accessible":"1"}
+,{"event_id":"100738","name":"Fort Washington Park","park_id":"M028","lat":"40.849459929509","long":"-73.946592330933","zip":"10033","borough":"M","accessible":"1"}
+,{"event_id":"100741","name":"Inwood Hill Park","park_id":"M042","lat":"40.87300109863281","long":"-73.92539978027344","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100742","name":"Inwood Hill Park","park_id":"M042","lat":"40.87300109863281","long":"-73.92539978027344","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100743","name":"Inwood Hill Park","park_id":"M042","lat":"40.87300109863281","long":"-73.92539978027344","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100744","name":"Inwood Hill Park","park_id":"M042","lat":"40.87300109863281","long":"-73.92539978027344","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100747","name":"Sherman Creek Park","park_id":"M300","lat":"40.861087799072266","long":"-73.9179916381836","zip":"10033","borough":"M","accessible":"1"}
+,{"event_id":"100748","name":"Sherman Creek Park","park_id":"M300","lat":"40.861087799072266","long":"-73.9179916381836","zip":"10033","borough":"M","accessible":"1"}
+,{"event_id":"100751","name":"Riverside Oval Greenstreet","lat":"40.83440017700195","long":"-73.94770050048828","address":"West 156th Street and Riverside Drive","zip":"10032","borough":"M"}
+,{"event_id":"100752","name":"Riverside Oval Greenstreet","lat":"40.83440017700195","long":"-73.94770050048828","address":"West 156th Street and Riverside Drive","zip":"10032","borough":"M"}
+,{"event_id":"100753","name":"DeLury Square","park_id":"M385","lat":"40.709098815918","long":"-74.00520324707","borough":"M"}
+,{"event_id":"100754","name":"DeLury Square","park_id":"M385","lat":"40.709098815918","long":"-74.00520324707","borough":"M"}
+,{"event_id":"100759","name":"Luther Gulick Playground","park_id":"M065","lat":"40.71590042114258","long":"-73.98190307617188","zip":"10002","borough":"M","accessible":"1"}
+,{"event_id":"100760","name":"Luther Gulick Playground","park_id":"M065","lat":"40.71590042114258","long":"-73.98190307617188","zip":"10002","borough":"M","accessible":"1"}
+,{"event_id":"100761","name":"East River Esplanade","park_id":"M289","lat":"40.744998931884766","long":"-73.97049713134766","zip":"10007","borough":"M"}
+,{"event_id":"100762","name":"East River Esplanade","park_id":"M289","lat":"40.744998931884766","long":"-73.97049713134766","zip":"10007","borough":"M"}
+,{"event_id":"100763","name":"West 181st Street Community Garden","lat":"40.851200103759766","long":"-73.93920135498047","address":"West 181st Street and Pinehurst Avenue","zip":"10033","borough":"M"}
+,{"event_id":"100764","name":"West 181st Street Community Garden","lat":"40.851200103759766","long":"-73.93920135498047","address":"West 181st Street and Pinehurst Avenue","zip":"10033","borough":"M"}
+,{"event_id":"100767","name":"Samuel Seabury Playground","park_id":"M236","lat":"40.785400390625","long":"-73.95079803466797","zip":"10128","borough":"M"}
+,{"event_id":"100768","name":"Samuel Seabury Playground","park_id":"M236","lat":"40.785400390625","long":"-73.95079803466797","zip":"10128","borough":"M"}
+,{"event_id":"100769","name":"West 88th Street Trees","lat":"40.78459930419922","long":"-73.96980285644531","address":"West 88th Street between Columbus Avenue and Central Park West","zip":"10007","borough":"M"}
+,{"event_id":"100770","name":"West 88th Street Trees","lat":"40.78459930419922","long":"-73.96980285644531","address":"West 88th Street between Columbus Avenue and Central Park West","zip":"10007","borough":"M"}
+,{"event_id":"100771","name":"Clement Clarke Moore Park","park_id":"M257","lat":"40.74660110473633","long":"-74.00430297851562","address":"10th Avenue between 21st and 22nd Streets","zip":"10011","borough":"M","accessible":"1"}
+,{"event_id":"100772","name":"Clement Clarke Moore Park","park_id":"M257","lat":"40.74660110473633","long":"-74.00430297851562","address":"10th Avenue between 21st and 22nd Streets","zip":"10011","borough":"M","accessible":"1"}
+,{"event_id":"100773","name":"Carl Schurz Park","park_id":"M081","lat":"40.774898529052734","long":"-73.94380187988281","borough":"M"}
+,{"event_id":"100774","name":"Carl Schurz Park","park_id":"M081","lat":"40.774898529052734","long":"-73.94380187988281","borough":"M"}
+,{"event_id":"100775","name":"Carl Schurz Park","park_id":"M081","lat":"40.774898529052734","long":"-73.94380187988281","borough":"M"}
+,{"event_id":"100776","name":"Carl Schurz Park","park_id":"M081","lat":"40.774898529052734","long":"-73.94380187988281","borough":"M"}
+,{"event_id":"100777","name":"Astoria Park","park_id":"Q004","lat":"40.779102012899","long":"-73.922377586365","borough":"Q"}
+,{"event_id":"100778","name":"Astoria Heights Playground (JHS 10)","park_id":"Q014","lat":"40.760398864746094","long":"-73.91179656982422","zip":"11103","borough":"Q","accessible":"1"}
+,{"event_id":"100779","name":"Doughboy Plaza","park_id":"Q031A","lat":"40.74639892578125","long":"-73.90889739990234","zip":"11377","borough":"Q"}
+,{"event_id":"100782","name":"Springfield Park","park_id":"Q107","lat":"40.661800384521484","long":"-73.7615966796875","zip":"11413","borough":"Q"}
+,{"event_id":"100785","name":"Queensbridge Park","park_id":"Q104","lat":"40.75659942626953","long":"-73.94860076904297","zip":"11101","borough":"Q","accessible":"1"}
+,{"event_id":"100786","name":"Sherry Park","park_id":"Q341C","lat":"40.74140167236328","long":"-73.8988037109375","zip":"11377","borough":"Q"}
+,{"event_id":"100787","name":"Travers Park","park_id":"Q303","lat":"40.75400161743164","long":"-73.88929748535156","zip":"11372","borough":"Q","accessible":"0"}
+,{"event_id":"100789","name":"Juniper Valley Park","park_id":"Q102","lat":"40.720298767089844","long":"-73.88040161132812","zip":"11379","borough":"Q","accessible":"1"}
+,{"event_id":"100791","name":"Russell Sage Playground","park_id":"Q335","lat":"40.723899841308594","long":"-73.85150146484375","zip":"11375","borough":"Q"}
+,{"event_id":"100793","name":"Cunningham Park","park_id":"Q021","lat":"40.72809982299805","long":"-73.77269744873047","zip":"11364","borough":"Q","accessible":"1"}
+,{"event_id":"100794","name":"Cunningham Park","park_id":"Q021","lat":"40.72809982299805","long":"-73.77269744873047","zip":"11364","borough":"Q","accessible":"1"}
+,{"event_id":"100795","name":"Hoover Playground","park_id":"Q220G","lat":"40.712100982666016","long":"-73.82170104980469","address":"Main and Manton Streets","borough":"Q"}
+,{"event_id":"100797","name":"Brookville Park","park_id":"Q008","lat":"40.652198791503906","long":"-73.75070190429688","borough":"Q"}
+,{"event_id":"100798","name":"Idlewild Park","park_id":"Q392","lat":"40.65250015258789","long":"-73.75489807128906","zip":"11413","borough":"Q","accessible":"1"}
+,{"event_id":"100799","name":"Redfern Playground","park_id":"Q345","lat":"40.61130142211914","long":"-73.74949645996094","zip":"11096","borough":"Q"}
+,{"event_id":"100816","name":"Al Oerter Recreation Center","park_id":"Q099","lat":"40.75149917602539","long":"-73.83439636230469","address":"131-40 Fowler Ave.","zip":"11355","borough":"Q","accessible":"1"}
+,{"event_id":"100817","name":"Al Oerter Recreation Center","park_id":"Q099","lat":"40.75149917602539","long":"-73.83439636230469","address":"131-40 Fowler Ave.","zip":"11355","borough":"Q","accessible":"1"}
+,{"event_id":"100836","name":"Hylan Boulevard and Satterlee Street","park_id":"R006","lat":"40.50279998779297","long":"-74.25189971923828","zip":"10307","borough":"R","accessible":"1"}
+,{"event_id":"100837","name":"P.S. 154X","lat":"40.80830001831055","long":"-73.9259033203125","address":"Alexander Ave between E 135th St and E 137th St"}
+,{"event_id":"100838","name":"PS 7","lat":"40.80099868774414","long":"-73.9395980834961","address":"160 E. 120th Street","zip":"10035","borough":"M"}
+,{"event_id":"100839","name":"City Hall Garden","park_id":"M013","lat":"40.71290969848633","long":"-74.00507354736328","borough":"M"}
+,{"event_id":"100840","name":"Bronx Trolley Tour Pickup","lat":"40.82659912109375","long":"-73.92949676513672","address":"153rd Street and Macombs Dam Park, Bronx","zip":"10451","borough":"X"}
+,{"event_id":"100841","name":"Weeksville Heritage Center","lat":"40.674598693847656","long":"-73.92579650878906","address":"1698 Bergen Street, Brooklyn, NY","zip":"11213","borough":"B"}
+,{"event_id":"100842","name":"PS 57","park_id":"R124","lat":"40.61119842529297","long":"-74.08380126953125","address":"140 Palma Drive","zip":"10304","borough":"R"}
+,{"event_id":"100843","name":"Forest Avenue Park Entrance","park_id":"R150","lat":"40.625598907471","long":"-74.153900146484","address":"1940 Forest Avenue","borough":"R"}
+,{"event_id":"100844","name":"Liotti Ikefugi Playgound","park_id":"R037","lat":"40.63869857788086","long":"-74.08390045166016","zip":"10301","borough":"R","accessible":"1"}
+,{"event_id":"100845","name":"111 Canal Street","park_id":"R028","lat":"40.62699890136719","long":"-74.07759857177734","borough":"R"}
+,{"event_id":"100846","name":"Maine Avenue and Neal Dow Avenue","park_id":"R029","lat":"40.620498657227","long":"-74.134902954102","borough":"R"}
+,{"event_id":"100847","name":"Parking Lot","park_id":"R088","lat":"40.584556817034","long":"-74.124981164932","address":"200 Nevada Avenue","zip":"10306","borough":"R"}
+,{"event_id":"100848","name":"Wild and Melvin Avenues","park_id":"R045","lat":"40.590099334717","long":"-74.188598632812","borough":"R"}
+,{"event_id":"100849","name":"Visitor Center","park_id":"R006","lat":"40.502601623535156","long":"-74.25180053710938","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"100850","name":"Bottom of Page Avenue","lat":"40.50230026245117","long":"-74.22830200195312"}
+,{"event_id":"100851","name":"Richmond Terrace and Hamilton Avenue","lat":"40.64550018310547","long":"-74.07769775390625","zip":"10301","borough":"R"}
+,{"event_id":"100852","name":"Billop Avenue and Brighton Street","park_id":"R006","lat":"40.49919891357422","long":"-74.24169921875","borough":"R"}
+,{"event_id":"100853","name":"Brower Park","park_id":"B012","lat":"40.67359924316406","long":"-73.94309997558594","address":"Prospect Place & Kingston Avenue","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100854","name":"Brooklyn War Memorial","park_id":"B113A","lat":"40.69841766357422","long":"-73.9906997680664","borough":"B"}
+,{"event_id":"100855","name":"Sunset Park Pool","park_id":"B087","lat":"40.6468620300293","long":"-74.00198364257812","borough":"B"}
+,{"event_id":"100856","name":"Monroe Street at Marcus Garvey Boulevard","park_id":"B216","lat":"40.68669891357422","long":"-73.93890380859375"}
+,{"event_id":"100857","name":"Nehemiah Park","park_id":"B396","lat":"40.661800384521484","long":"-73.90540313720703","address":"Mother Gaston Boulevard and Livonia Avenue","zip":"11212","borough":"B"}
+,{"event_id":"100858","name":"St. Marks Children's Playground","lat":"40.674720764160156","long":"-73.94152069091797"}
+,{"event_id":"100859","name":"Furman Avenue","park_id":"B381","lat":"40.68190002441406","long":"-73.90779876708984","borough":"B"}
+,{"event_id":"100860","name":"Entrance at Third Avenue and Douglass Street","park_id":"B145","lat":"40.680198669434","long":"-73.984199523926","borough":"B"}
+,{"event_id":"100861","name":"Entrance at Brooklyn Avenue and Prospect Place","park_id":"B012","lat":"40.67399978637695","long":"-73.94450378417969","borough":"B"}
+,{"event_id":"100862","name":"Entrance at Brooklyn Avenue and Prospect Place","park_id":"B012","lat":"40.67399978637695","long":"-73.94450378417969","borough":"B"}
+,{"event_id":"100863","name":"Monsignor McGolrick Park","park_id":"B114","lat":"40.72439956665039","long":"-73.94339752197266","zip":"11222","borough":"B","accessible":"1"}
+,{"event_id":"100864","name":"Parham Playground","park_id":"B253","lat":"40.69029998779297","long":"-73.9708023071289","zip":"11205","borough":"B"}
+,{"event_id":"100865","name":"90th Street and Shore Road","park_id":"B082","lat":"40.622398376464844","long":"-74.04029846191406","zip":"11209","borough":"B"}
+,{"event_id":"100866","name":"St. Marks Children's Playground","lat":"40.674720764160156","long":"-73.94152069091797"}
+,{"event_id":"100867","name":"Rutland Road and Brooklyn Avenue","park_id":"B254","lat":"40.65959930419922","long":"-73.94519805908203","borough":"B"}
+,{"event_id":"100868","name":"Near Park Avenue and North Elliot Place","park_id":"B021","lat":"40.696300506592","long":"-73.977401733398","borough":"B"}
+,{"event_id":"100869","name":"Cooper Park","park_id":"B025","lat":"40.71590042114258","long":"-73.93730163574219","zip":"11211","borough":"B","accessible":"1"}
+,{"event_id":"100870","name":"Dr Ronald McNair Park","park_id":"B044","lat":"40.670501708984375","long":"-73.96199798583984","address":"Washington Ave. and Classon St.","zip":"11225","borough":"B"}
+,{"event_id":"100871","name":"Entrance at Hattie Jones Court","park_id":"B403","lat":"40.6779899597168","long":"-73.93473052978516","borough":"B"}
+,{"event_id":"100872","name":"Kaiser Park Parkhouse","lat":"40.57849884033203","long":"-73.99539947509766","borough":"B"}
+,{"event_id":"100873","name":"Lincoln Terrace Park","park_id":"B054","lat":"40.66680145263672","long":"-73.92720031738281","zip":"11213","borough":"B","accessible":"1"}
+,{"event_id":"100874","name":"Carmine Carro Community Center","park_id":"B057","lat":"40.607943945573","long":"-73.937465012074","address":"3000 Fillmore Ave","borough":"B"}
+,{"event_id":"100875","name":"St. John's Recreation Center","lat":"40.673948857689","long":"-73.934933304787","address":"1251 Prospect Place","borough":"B","accessible":"1"}
+,{"event_id":"100876","name":"Entrance at Brooklyn Avenue and Prospect Place","park_id":"B012","lat":"40.67399978637695","long":"-73.94450378417969","borough":"B"}
+,{"event_id":"100877","name":"Entrance at Brooklyn Avenue and Prospect Place","park_id":"B012","lat":"40.67399978637695","long":"-73.94450378417969","borough":"B"}
+,{"event_id":"100878","name":"Entrance at Brooklyn Avenue and Prospect Place","park_id":"B012","lat":"40.67399978637695","long":"-73.94450378417969","borough":"B"}
+,{"event_id":"100879","name":"Entrance at Brooklyn Avenue and Prospect Place","park_id":"B012","lat":"40.67399978637695","long":"-73.94450378417969","borough":"B"}
+,{"event_id":"100880","name":"Hunt's Point Recreation Center","lat":"40.81549835205078","long":"-73.88909912109375","address":"765 Manida Street","zip":"10474","borough":"X","accessible":"1"}
+,{"event_id":"100880","name":"Hunts Point","lat":"40.81549835205078","long":"-73.88909912109375","address":"765 Manida Street Bronx, 10474","zip":"10474","borough":"X"}
+,{"event_id":"100881","name":"Park Entrance","park_id":"X055","lat":"40.889301300049","long":"-73.902900695801","address":"Manhattan College Parkway and Waldo Avenue","borough":"X"}
+,{"event_id":"100882","name":"Soundview Park Field House","park_id":"X118","lat":"40.819400787353516","long":"-73.87779998779297","address":"1650 Lafayette Avenue","zip":"10473","borough":"X"}
+,{"event_id":"100883","name":"Mosholu Parkway and Webster Avenue","lat":"40.86859893798828","long":"-73.88140106201172","zip":"10467","borough":"X"}
+,{"event_id":"100884","name":"Hunt's Point Recreation Center","lat":"40.81549835205078","long":"-73.88909912109375","address":"765 Manida Street","zip":"10474","borough":"X","accessible":"1"}
+,{"event_id":"100885","name":"Joseph Rodman Drake Park","park_id":"X015","lat":"40.810298919677734","long":"-73.88240051269531","zip":"10474","borough":"X"}
+,{"event_id":"100886","name":"Claremont Park Gazebo","park_id":"X008","lat":"40.841596055134","long":"-73.907168626785","borough":"X"}
+,{"event_id":"100887","name":"St. Anns Avenue and East 149th Street","park_id":"X045","lat":"40.8140983581543","long":"-73.91290283203125","borough":"X"}
+,{"event_id":"100888","name":"96th Street and FDR Drive","park_id":"M289","lat":"40.782901763916016","long":"-73.94390106201172","borough":"M"}
+,{"event_id":"100889","name":"Stuyvesant Square","park_id":"M086","lat":"40.73379898071289","long":"-73.9843978881836","zip":"10007","borough":"M"}
+,{"event_id":"100890","name":"Second Avenue Entrance","park_id":"M086","lat":"40.73320007324219","long":"-73.9844970703125","zip":"10007","borough":"M"}
+,{"event_id":"100891","name":"Matthews-Palmer Playground","park_id":"M154","lat":"40.76139831543","long":"-73.992698669434","address":"West 45th or West 46th Streets, between 9th and 10th Avenues","borough":"M"}
+,{"event_id":"100892","name":"East River Esplanade","park_id":"M289","lat":"40.744998931884766","long":"-73.97049713134766","zip":"10007","borough":"M"}
+,{"event_id":"100893","name":"Southeast Corner at Washington Market Park","park_id":"M308","lat":"40.71659851074219","long":"-74.01110076904297","borough":"M"}
+,{"event_id":"100894","name":"Charlton Plaza","lat":"40.727027893066406","long":"-74.00344848632812","address":"Charlton Street and 6th Avenue","zip":"10014","borough":"M"}
+,{"event_id":"100895","name":"Christopher Street and 7th Avenue","park_id":"M012","lat":"40.73356628417969","long":"-74.00276947021484","borough":"M"}
+,{"event_id":"100896","name":"Washington Square South and Thompson Street","park_id":"M098","lat":"40.73030090332031","long":"-73.99810028076172","zip":"10012","borough":"M"}
+,{"event_id":"100897","name":"Little Red Square","park_id":"MZ06","lat":"40.72930145263672","long":"-74.0020980834961","zip":"10014","borough":"M","accessible":"1"}
+,{"event_id":"100898","name":"Downing Street Playground","park_id":"M027","lat":"40.729801177978516","long":"-74.00270080566406","address":"Downing Street and 6th Avenue","zip":"10014","borough":"M"}
+,{"event_id":"100899","name":"Father Fagan Square","park_id":"M207","lat":"40.72669982910156","long":"-74.00340270996094","zip":"10013","borough":"M"}
+,{"event_id":"100900","name":"169th Street and St. Nicholas Avenue","lat":"40.84189987182617","long":"-73.93910217285156","borough":"M"}
+,{"event_id":"100901","name":"Minetta Green","park_id":"M125A","lat":"40.73030090332031","long":"-74.00160217285156","zip":"10014","borough":"M"}
+,{"event_id":"100902","name":"Vesuvio Playground","park_id":"M069","lat":"40.72529983520508","long":"-74.00260162353516","zip":"10012","borough":"M"}
+,{"event_id":"100903","name":"Worth and Baxter Streets","park_id":"M015","lat":"40.71440124511719","long":"-74.00039672851562","zip":"10013","borough":"M"}
+,{"event_id":"100904","name":"1st Street between First and Second Avenue","park_id":"M124","lat":"40.72367858886719","long":"-73.98942565917969","borough":"M"}
+,{"event_id":"100905","name":"Houston Street and 1st Avenue","park_id":"M123","lat":"40.722957611083984","long":"-73.988525390625","borough":"M"}
+,{"event_id":"100906","name":"Rivington Street between Chrystie and Forsyth Streets","park_id":"M105","lat":"40.72114181518555","long":"-73.99191284179688","borough":"M"}
+,{"event_id":"100907","name":"Hells Kitchen Park","park_id":"M277","lat":"40.76300048828125","long":"-73.99259948730469","address":"10th Avenue between 47th and 48th Streets","zip":"10036","borough":"M","accessible":"1"}
+,{"event_id":"100908","name":"St. Vartan Park","park_id":"M076","lat":"40.74509811401367","long":"-73.97370147705078","address":"E. 35th Street between 1st and 2nd Avenues","zip":"10007","borough":"M"}
+,{"event_id":"100909","name":"Entrance at East 54th Street and Sutton Place","park_id":"M108P","lat":"40.755401611328","long":"-73.962097167969","borough":"M"}
+,{"event_id":"100910","name":"2nd Avenue and 29th Street","park_id":"M265","lat":"40.741600036621","long":"-73.978202819824","borough":"M"}
+,{"event_id":"100911","name":"East 86th Street and East End Avenue","park_id":"M081","lat":"40.774910716171","long":"-73.944703102112","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100912","name":"St. Catherine's Park","park_id":"M079","lat":"40.765201568603516","long":"-73.95870208740234","zip":"10065","borough":"M","accessible":"1"}
+,{"event_id":"100913","name":"Samuel Seabury Playground","park_id":"M236","lat":"40.785400390625","long":"-73.95079803466797","zip":"10128","borough":"M"}
+,{"event_id":"100914","name":"151st Street and St. Nicholas Avenue","park_id":"M284","lat":"40.827999114990234","long":"-73.94249725341797","borough":"M"}
+,{"event_id":"100915","name":"114 Street and Morningside Drive","park_id":"M056","lat":"40.80459976196289","long":"-73.95999908447266","zip":"10026","borough":"M"}
+,{"event_id":"100916","name":"St. Nicholas Park Dog Run","park_id":"M077","lat":"40.817901611328","long":"-73.949699401855","address":"West 135th Street and St. Nicholas Terrace","borough":"M"}
+,{"event_id":"100917","name":"West 152nd Street and Adam Clayton Powell Jr. Boulevard","lat":"40.82569885253906","long":"-73.93599700927734","zip":"10039","borough":"M"}
+,{"event_id":"100918","name":"Collyer Brothers Park","park_id":"M305","lat":"40.80849838256836","long":"-73.94110107421875","zip":"10027","borough":"M","accessible":"1"}
+,{"event_id":"100919","name":"Samuel Playground","park_id":"M160","lat":"40.81719970703125","long":"-73.93920135498047","zip":"10030","borough":"M","accessible":"1"}
+,{"event_id":"100920","name":"Jackie Robinson Recreation Center","lat":"40.826801300049","long":"-73.941497802734","address":"West 150th Street and Edgecombe Avenue","zip":"10039","borough":"M"}
+,{"event_id":"100921","name":"Jackie Robinson Recreation Center","park_id":"M014","lat":"40.82419967651367","long":"-73.94249725341797","address":"85 Bradhurst Avenue","zip":"10039","borough":"M","accessible":"1"}
+,{"event_id":"100922","name":"Pelham Fritz Recreation Center","park_id":"M058","lat":"40.805023193359","long":"-73.944984436035","zip":"10027","borough":"M","accessible":"1"}
+,{"event_id":"100923","name":"Marcus Garvey Park Dog Run","park_id":"M058","lat":"40.802799224853516","long":"-73.94309997558594","address":"120th Street & Madison Avenue","zip":"10035","borough":"M"}
+,{"event_id":"100924","name":"Thomas Jefferson Recreation Center","park_id":"M047","lat":"40.79349899291992","long":"-73.93669891357422","address":"2180 First Avenue, New York, NY","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100925","name":"Rocky Run Dog Run","park_id":"M028","lat":"40.840999603271","long":"-73.944602966309","address":"West 165th Street and Riverside Drive","zip":"10032","borough":"M"}
+,{"event_id":"100926","name":"Highbridge Park Dog Run","park_id":"M037","lat":"40.8557014465332","long":"-73.92500305175781","address":"193 Street and Amsterdam Avenue","zip":"10040","borough":"M"}
+,{"event_id":"100927","name":"Homers Dog Run","park_id":"M042","lat":"40.87108612060547","long":"-73.92183685302734","borough":"M"}
+,{"event_id":"100928","name":"Seaman Avenue and Isham Street Entrance","park_id":"M042","lat":"40.869998931884766","long":"-73.92109680175781","zip":"10007","borough":"M"}
+,{"event_id":"100929","name":"J. Hood Wright Recreation Center","park_id":"M099","lat":"40.846576301764","long":"-73.940825939178","address":"351 Fort Washington Avenue","zip":"10033","borough":"M"}
+,{"event_id":"100930","name":"203rd Street and 9th Avenue Entrance","park_id":"M300","lat":"40.861099243164","long":"-73.918998718262","borough":"M"}
+,{"event_id":"100931","name":"Payson Playground Facility","park_id":"M042","lat":"40.86720275878906","long":"-73.9286117553711","borough":"M","accessible":"1"}
+,{"event_id":"100932","name":"Riverside Oval Greenstreet","lat":"40.83440017700195","long":"-73.94770050048828","address":"West 156th Street and Riverside Drive","zip":"10032","borough":"M"}
+,{"event_id":"100933","name":"Delury Square","lat":"40.7091064453125","long":"-74.00516510009766","address":"Entrance at Fulton Street and Gold Street","zip":"10038","borough":"M"}
+,{"event_id":"100934","name":"Entrance on W 52nd Street","park_id":"M022","lat":"40.7677001953125","long":"-73.99479675292969","borough":"M"}
+,{"event_id":"100935","name":"Audubon Playground","park_id":"M240","lat":"40.841499328613","long":"-73.938102722168","zip":"10032","borough":"M"}
+,{"event_id":"100936","name":"Willett Street and Delancey Street","park_id":"M065","lat":"40.71630096435547","long":"-73.98259735107422","borough":"M"}
+,{"event_id":"100937","name":"96th Street and FDR Drive","park_id":"M289","lat":"40.782901763916016","long":"-73.94390106201172","borough":"M"}
+,{"event_id":"100938","name":"West 181st Street Community Garden","lat":"40.851200103759766","long":"-73.93920135498047","address":"West 181st Street and Pinehurst Avenue","zip":"10033","borough":"M"}
+,{"event_id":"100939","name":"Dr Gertrude B Kelly Playground","park_id":"M066","lat":"40.74169921875","long":"-74.00199890136719","zip":"10011","borough":"M","accessible":"1"}
+,{"event_id":"100941","name":"50 West 88th street","lat":"40.78710174560547","long":"-73.96990203857422","accessible":"1"}
+,{"event_id":"100942","name":"Clement Clarke Moore Park","park_id":"M257","lat":"40.74660110473633","long":"-74.00430297851562","address":"10th Avenue between 21st and 22nd Streets","zip":"10011","borough":"M","accessible":"1"}
+,{"event_id":"100943","name":"East 86th Street and East End Avenue","park_id":"M081","lat":"40.774910716171","long":"-73.944703102112","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100944","name":"East 86th Street and East End Avenue","park_id":"M081","lat":"40.774910716171","long":"-73.944703102112","zip":"10007","borough":"M","accessible":"1"}
+,{"event_id":"100945","name":"Park House","lat":"40.77598571777344","long":"-73.92515563964844"}
+,{"event_id":"100946","name":"Astoria Heights Playground (JHS 10)","park_id":"Q014","lat":"40.760398864746094","long":"-73.91179656982422","zip":"11103","borough":"Q","accessible":"1"}
+,{"event_id":"100947","name":"Doughboy Plaza","park_id":"Q031A","lat":"40.74639892578125","long":"-73.90889739990234","zip":"11377","borough":"Q"}
+,{"event_id":"100948","name":"Center Boulevard and Borden Avenue","park_id":"Q471","lat":"40.7422981262207","long":"-73.95989990234375","borough":"Q"}
+,{"event_id":"100949","name":"Lawrence Virgilio Playground","park_id":"Q031","lat":"40.747501373291","long":"-73.910697937012","zip":"11377","borough":"Q","accessible":"1"}
+,{"event_id":"100950","name":"Springfield Park Park House","park_id":"Q107","lat":"40.659698486328","long":"-73.763397216797","address":"184th Street and 147th Avenue","borough":"Q"}
+,{"event_id":"100951","name":"Bowne House","park_id":"Q022","lat":"40.762901306152344","long":"-73.82520294189453","address":"37-01 Bowne Street","zip":"11354","borough":"Q","accessible":"1"}
+,{"event_id":"100952","name":"Sunnyside Arch","lat":"40.74290084838867","long":"-73.9188003540039","address":"46th Street and Queens Boulevard","zip":"11104","borough":"Q"}
+,{"event_id":"100953","name":"41st Avenue Entrance","park_id":"Q104","lat":"40.756500244141","long":"-73.947303771973","address":"Vernon Boulevard and 41st Avenue","zip":"11101","borough":"Q"}
+,{"event_id":"100954","name":"Sherry Park","park_id":"Q341C","lat":"40.74140167236328","long":"-73.8988037109375","zip":"11377","borough":"Q"}
+,{"event_id":"100955","name":"78th Street Entrance","park_id":"Q303","lat":"40.75450134277344","long":"-73.88899993896484","borough":"Q"}
+,{"event_id":"100956","name":"Clement Clarke Moore Homestead Park","park_id":"Q361","lat":"40.74209976196289","long":"-73.8822021484375","zip":"11373","borough":"Q","accessible":"1"}
+,{"event_id":"100957","name":"Juniper Valley Park 80th Street Entrance","park_id":"Q102","lat":"40.721500396728516","long":"-73.87650299072266","address":"80th Street and Juniper Boulevard North","zip":"11379","borough":"Q"}
+,{"event_id":"100958","name":"MacDonald Park Entrance","park_id":"Q207","lat":"40.722198486328125","long":"-73.84750366210938","address":"Queens Boulevard and 69th Road","borough":"Q"}
+,{"event_id":"100959","name":"Russell Sage Playground","park_id":"Q335","lat":"40.723899841308594","long":"-73.85150146484375","zip":"11375","borough":"Q"}
+,{"event_id":"100960","name":"The Painter's Playground","park_id":"Q306","lat":"40.72050094604492","long":"-73.86009979248047","address":"Alderton Street between Dieterle and Ellwell Crescents","zip":"11374","borough":"Q"}
+,{"event_id":"100961","name":"193rd Street and Union Turnpike","park_id":"Q021","lat":"40.730159759521","long":"-73.777381896973","zip":"11366","borough":"Q"}
+,{"event_id":"100962","name":"Redwood Playground","park_id":"Q021","lat":"40.72700119018555","long":"-73.77549743652344","zip":"11423","borough":"Q"}
+,{"event_id":"100963","name":"Manton Avenue and Main street","park_id":"Q220G","lat":"40.71030044555664","long":"-73.8197021484375","borough":"Q"}
+,{"event_id":"100964","name":"106th Avenue and 173rd Street","park_id":"Q121","lat":"40.70209884643555","long":"-73.78299713134766","zip":"11433","borough":"Q","accessible":"1"}
+,{"event_id":"100965","name":"Brookville Park Field House","park_id":"Q008","lat":"40.661800384521484","long":"-73.74199676513672","zip":"11422","borough":"Q"}
+,{"event_id":"100966","name":"Idlewild Park","park_id":"Q392","lat":"40.65250015258789","long":"-73.75489807128906","zip":"11413","borough":"Q","accessible":"1"}
+,{"event_id":"100966","name":"EQA Trailer","park_id":"Q392","lat":"40.65787887573242","long":"-73.7599105834961","borough":"Q"}
+,{"event_id":"100967","name":"Redfern Playground","park_id":"Q345","lat":"40.61130142211914","long":"-73.74949645996094","zip":"11096","borough":"Q"}
+,{"event_id":"100968","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100969","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100970","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100971","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100972","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100973","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100974","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100975","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100976","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100977","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100978","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100979","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100980","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100981","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100982","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100983","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100984","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100985","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100986","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100987","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100988","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100989","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100990","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100991","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100992","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100993","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100994","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100995","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100996","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100997","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100998","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"100999","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"101000","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"101001","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"101002","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"101003","name":"West Bronx Recreation Center","park_id":"X261","lat":"40.84410095214844","long":"-73.9188003540039","zip":"10452","borough":"X","accessible":"1"}
+,{"event_id":"101004","name":"Brookville Playground","park_id":"Q008","lat":"40.662601470947266","long":"-73.74199676513672","zip":"11422","borough":"Q"}
+,{"event_id":"101005","name":"Joseph P. Addabbo Memorial Park","park_id":"Q094","lat":"40.67319869995117","long":"-73.85469818115234","zip":"11417","borough":"Q","accessible":"1"}
+,{"event_id":"101006","name":"Electric Playground","park_id":"Q342","lat":"40.73590087890625","long":"-73.8053970336914","zip":"11365","borough":"Q"}
+,{"event_id":"101007","name":"Evergreen Lots Community Garden","lat":"40.69960021972656","long":"-73.93070220947266","address":"120 Jefferson Street Brooklyn, NY 11237","zip":"11206","borough":"B"}
+,{"event_id":"101008","name":"Intersection of Westchester Avenue and Wheeler Avenue","lat":"40.82849884033203","long":"-73.88009643554688","address":"Bronx"}
+,{"event_id":"101012","name":"McCarren Play Center","park_id":"B058","lat":"40.72010040283203","long":"-73.94999694824219","address":"776 Lorimer Street","zip":"11222","borough":"B","accessible":"1"}
+,{"event_id":"101013","name":"McCarren Play Center","park_id":"B058","lat":"40.72010040283203","long":"-73.94999694824219","address":"776 Lorimer Street","zip":"11222","borough":"B","accessible":"1"}
+,{"event_id":"101014","name":"McCarren Play Center","park_id":"B058","lat":"40.72010040283203","long":"-73.94999694824219","address":"776 Lorimer Street","zip":"11222","borough":"B","accessible":"1"}
+,{"event_id":"101015","name":"John Purroy Mitchel","park_id":"M010","lat":"40.784400939941406","long":"-73.95899963378906","address":"90th Street and 5th Avenue","borough":"M"}
+,{"event_id":"101016","name":"Strauss Street and Livonia Avenue","park_id":"B008","lat":"40.661800384521484","long":"-73.91419982910156","borough":"B"}
+,{"event_id":"101017","name":"Ridgewood Reservoir","lat":"40.6864013671875","long":"-73.88919830322266","borough":"Q","accessible":"1"}
+,{"event_id":"101018","name":"60th Street","park_id":"M289","lat":"40.75885009765625","long":"-73.95852661132812","borough":"M"}
+,{"event_id":"101019","name":"219th Street and Bronx Boulevard","lat":"40.884201049805","long":"-73.866897583008","address":"in Shoelace Park","borough":"X"}
+,{"event_id":"101020","name":"Webster Avenue and East 233rd Street","park_id":"X002","lat":"40.89540100097656","long":"-73.86370086669922","borough":"X"}
+,{"event_id":"101021","name":"Muskrat Cove","lat":"40.89630126953125","long":"-73.86299896240234","address":"4220 Webster Avenue Bronx, NY","zip":"10470","borough":"X","accessible":"1"}
+,{"event_id":"101022","name":"Miles Avenue and Fairfield Street","park_id":"R140","lat":"40.562599182128906","long":"-74.1532974243164","zip":"10308","borough":"R"}
+,{"event_id":"101023","name":"Battery Urban Farm","park_id":"M005","lat":"40.70328903198242","long":"-74.01482391357422","borough":"M"}
+,{"event_id":"101024","name":"McCarren Recreation Center","park_id":"B058","lat":"40.72011184692383","long":"-73.9499282836914","borough":"B"}
+,{"event_id":"101025","name":"ARROW Field House","lat":"40.755760192871094","long":"-73.92633819580078","address":"35-30 35th","zip":"11106","borough":"Q","accessible":"1"}
+,{"event_id":"101026","name":"Brookville Boulevard and 143rd Avenue","park_id":"Q008","lat":"40.66340637207031","long":"-73.7408447265625","borough":"Q"}
+,{"event_id":"101027","name":"Brownsville Recreation Center","park_id":"B270","lat":"40.65660095214844","long":"-73.9020004272461","address":"1555 Linden Boulevard","zip":"11212","borough":"B"}
+,{"event_id":"101028","name":"Westerleigh Park","park_id":"R029","lat":"40.61980056762695","long":"-74.1344985961914","zip":"10314","borough":"R","accessible":"1"}
+,{"event_id":"101029","name":"Turtle Circle","park_id":"R046","lat":"40.57360076904297","long":"-74.08529663085938","address":"at Jefferson Avenue off Father Capodanno Boulevard","borough":"R"}
+,{"event_id":"101030","name":"Brownsville Recreation Center","park_id":"B270","lat":"40.65660095214844","long":"-73.9020004272461","address":"1555 Linden Boulevard","zip":"11212","borough":"B"}
+,{"event_id":"101031","name":"Faber Park Field House","park_id":"R008","lat":"40.641009309661","long":"-74.135387182236","address":"2175 Richmond Terrace","zip":"10302","borough":"R"}
+,{"event_id":"101032","name":"Pelham Fritz Recreation Center","park_id":"M058","lat":"40.805023193359","long":"-73.944984436035","zip":"10027","borough":"M","accessible":"1"}
+,{"event_id":"101033","name":"St. John's Recreation Center","lat":"40.673948857689","long":"-73.934933304787","address":"1251 Prospect Place","borough":"B","accessible":"1"}
+,{"event_id":"101034","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101035","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101036","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101037","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101038","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101039","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101040","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101041","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101042","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101043","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101044","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101045","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101046","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101047","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101048","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101049","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101050","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101051","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101052","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101053","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101054","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101055","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101056","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101057","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101058","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101059","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101060","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101061","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101062","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101063","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101064","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101065","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101066","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101067","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101068","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101069","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101070","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101071","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101072","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101073","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101074","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101075","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101076","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101077","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101078","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101079","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101080","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101081","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101082","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101083","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101084","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101085","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101086","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101087","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101088","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101089","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101090","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101091","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101092","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101093","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101094","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101095","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101096","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101097","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101098","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101099","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101100","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101101","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101102","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101103","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101104","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101105","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101106","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101107","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101108","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101109","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101110","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101111","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101112","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101113","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101114","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101115","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101116","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101117","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101118","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101119","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101120","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101121","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101122","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101123","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101124","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101125","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101126","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101127","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101128","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101129","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101130","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101131","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101132","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101133","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101134","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101135","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101136","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101137","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101138","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101139","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101140","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101141","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101142","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101143","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101144","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101145","name":"Conference House Park Visitor Center","park_id":"R006","lat":"40.502257029653","long":"-74.251725435257","address":"298 Satterlee Street","borough":"R","accessible":"1"}
+,{"event_id":"101146","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101147","name":"Wave Hill","park_id":"X209","lat":"40.89870071411133","long":"-73.9124984741211","zip":"10471","borough":"X","accessible":"1"}
+,{"event_id":"101148","name":"Wave Hill","park_id":"X209","lat":"40.89870071411133","long":"-73.9124984741211","zip":"10471","borough":"X","accessible":"1"}
+,{"event_id":"101149","name":"Wave Hill","park_id":"X209","lat":"40.89870071411133","long":"-73.9124984741211","zip":"10471","borough":"X","accessible":"1"}
+,{"event_id":"101150","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101151","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101152","name":"Wave Hill","park_id":"X209","lat":"40.89870071411133","long":"-73.9124984741211","zip":"10471","borough":"X","accessible":"1"}
+,{"event_id":"101153","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101154","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101155","name":"Glyndor Gallery","park_id":"X209","lat":"40.89886474609375","long":"-73.911865234375","borough":"X","accessible":"1"}
+,{"event_id":"101156","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101157","name":"Hylan Boulevard and Satterlee Street","park_id":"R006","lat":"40.50299835205078","long":"-74.25170135498047","borough":"R"}
+,{"event_id":"101158","name":"Wave Hill","park_id":"X209","lat":"40.89870071411133","long":"-73.9124984741211","zip":"10471","borough":"X","accessible":"1"}
+,{"event_id":"101159","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101160","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101161","name":"Glyndor Gallery","park_id":"X209","lat":"40.89886474609375","long":"-73.911865234375","borough":"X","accessible":"1"}
+,{"event_id":"101162","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101163","name":"Wave Hill","park_id":"X209","lat":"40.89870071411133","long":"-73.9124984741211","zip":"10471","borough":"X","accessible":"1"}
+,{"event_id":"101164","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101165","name":"Perkins Visitors Center","park_id":"X209","lat":"40.89910125732422","long":"-73.91190338134766","zip":"10471","borough":"X"}
+,{"event_id":"101166","name":"Faber Park Field House","park_id":"R008","lat":"40.641009309661","long":"-74.135387182236","address":"2175 Richmond Terrace","zip":"10302","borough":"R"}
+,{"event_id":"101167","name":"Synergi Urban Farm","park_id":"X270","lat":"40.8291015625","long":"-73.89119720458984","zip":"10459","borough":"X"}
+,{"event_id":"101168","name":"South Brooklyn Childrens Garden","lat":"40.68519973754883","long":"-74.00240325927734","address":"204 Columbia St., Brooklyn, NY 11231","zip":"11231","borough":"B"}
+,{"event_id":"101169","name":"Synergi Urban Farm","park_id":"X270","lat":"40.8291015625","long":"-73.89119720458984","zip":"10459","borough":"X"}
+,{"event_id":"101170","name":"GrowNYC Conference Room","lat":"40.71369934082031","long":"-74.00550079345703","address":"49 Chambers St, Room 1225","zip":"10007","borough":"M"}
+,{"event_id":"101171","name":"Paradise on Earth","lat":"40.826900482178","long":"-73.893898010254","address":"1106 Fox Street, Bronx, NY","zip":"10459","borough":"X"}
+,{"event_id":"101172","name":"Slosson Avenue & Drake Avenue","park_id":"R005","lat":"40.61917495727539","long":"-74.11846160888672","borough":"R"}
+,{"event_id":"101173","name":"Redwood Playground","park_id":"Q021","lat":"40.72700119018555","long":"-73.77549743652344","zip":"11423","borough":"Q"}
+,{"event_id":"101174","name":"Raoul Wallenberg Forest at 232 Street","park_id":"X142","lat":"40.885799407958984","long":"-73.918701171875","borough":"X"}
+,{"event_id":"101175","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"101176","name":"Margaret Corbin Circle","park_id":"M029","lat":"40.85929870605469","long":"-73.93409729003906","zip":"10007","borough":"M"}
+,{"event_id":"101177","name":"Payson Park House","park_id":"M042","lat":"40.8672981262207","long":"-73.92900085449219","address":"Dyckman Street and Payson Avenue","borough":"M"}
+,{"event_id":"101178","name":"Payson Center","park_id":"M042","lat":"40.8671989440918","long":"-73.92890167236328","address":"Payson Avenue and Dyckman Street","borough":"M","accessible":"1"}
+,{"event_id":"101179","name":"Payson Center","park_id":"M042","lat":"40.8671989440918","long":"-73.92890167236328","address":"Payson Avenue and Dyckman Street","borough":"M","accessible":"1"}
+,{"event_id":"101180","name":"Highbridge Recreation Center","park_id":"M037","lat":"40.84260177612305","long":"-73.9343032836914","address":"2301 Amsterdam Avenue","zip":"10032","borough":"M"}
+,{"event_id":"101181","name":"Lost Battalion Hall Recreation Center","park_id":"Q401","lat":"40.732200622558594","long":"-73.86519622802734","address":"93-29 Queens Boulevard","zip":"11374","borough":"Q","accessible":"1"}
+,{"event_id":"101182","name":"Pavilion & Astral Fountain","park_id":"Q099","lat":"40.743477380574","long":"-73.844197273254","zip":"11368","borough":"Q"}
+,{"event_id":"101183","name":"Lookout Hill","park_id":"B073","lat":"40.657901763916016","long":"-73.97109985351562","zip":"11215","borough":"B"}
+,{"event_id":"101184","name":"The Nethermead","park_id":"B073","lat":"40.66109848022461","long":"-73.96859741210938","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"101185","name":"The Carousel","park_id":"B073","lat":"40.663700103759766","long":"-73.96419525146484","borough":"B"}
+,{"event_id":"101186","name":"The Carousel","park_id":"B073","lat":"40.663700103759766","long":"-73.96419525146484","borough":"B"}
+,{"event_id":"101187","name":"The Carousel","park_id":"B073","lat":"40.663700103759766","long":"-73.96419525146484","borough":"B"}
+,{"event_id":"101188","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"101189","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"101190","name":"Audubon Center at the Boathouse","park_id":"B073","lat":"40.660701751709","long":"-73.965400695801","zip":"11215","borough":"B","accessible":"1"}
+,{"event_id":"101191","name":"Lefferts Historic House","park_id":"B073","lat":"40.66429901123047","long":"-73.96389770507812","zip":"11225","borough":"B","accessible":"1"}
+,{"event_id":"101192","name":"The Zoo, Lefferts Homestead, Carousel","park_id":"B073","lat":"40.66463088989258","long":"-73.96473693847656","zip":"11215","borough":"B"}
+,{"event_id":"101193","name":"The Zoo, Lefferts Homestead, Carousel","park_id":"B073","lat":"40.66463088989258","long":"-73.96473693847656","zip":"11215","borough":"B"}
+,{"event_id":"101194","name":"The Zoo, Lefferts Homestead, Carousel","park_id":"B073","lat":"40.66463088989258","long":"-73.96473693847656","zip":"11215","borough":"B"}
+,{"event_id":"101195","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101196","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101197","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101198","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101199","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101200","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101201","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101202","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101203","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101204","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101205","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101206","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101207","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101208","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101209","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101210","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101211","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101212","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101213","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101214","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101215","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101216","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101217","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101218","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101219","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101220","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101221","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101222","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101223","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101224","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101225","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101226","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101227","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101228","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101229","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101230","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101231","name":"Asser Levy Recreation Center","park_id":"M164","lat":"40.73609924316406","long":"-73.97570037841797","address":"392 Asser Levy Place","zip":"10010","borough":"M","accessible":"1"}
+,{"event_id":"101232","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101233","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101234","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101235","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101236","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101237","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101238","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101239","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101240","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101241","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101242","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101243","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101244","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101245","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101246","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101247","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101248","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101249","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101250","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101251","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101252","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}
+,{"event_id":"101253","name":"Flushing Meadows Corona Park Aquatics Center","park_id":"Q099","lat":"40.7515983581543","long":"-73.83719635009766","borough":"Q","accessible":"1"}]

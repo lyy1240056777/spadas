@@ -1,0 +1,227 @@
+[{"on_street":"Dawson Street","from_st":"Intervale Ave","to_street":"Longwood Ave","completion_date":"2015-07-21T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"EB-WB","boro":"(BX)"}
+,{"on_street":"Home St","from_st":"Intervale Ave","to_street":"Southern Blvd","completion_date":"2015-10-13T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"EB","boro":"(BX)"}
+,{"on_street":"Bogart St","from_st":"Johnson Ave","to_street":"Flushing Ave","completion_date":"2015-07-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(K)"}
+,{"on_street":"E 8th Street","from_st":"Ocean Pkwy","to_street":"Canton Ave","completion_date":"2015-08-03T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(K)"}
+,{"on_street":"E 7th Street","from_st":"Canton Ave","to_street":"Kermit Pl","completion_date":"2015-08-03T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(K)"}
+,{"on_street":"Ellwood St","from_st":"Sherman Ave","to_street":"Nagle Ave","completion_date":"2015-10-26T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"WB","boro":"(M)"}
+,{"on_street":"172 St","from_st":"93 Ave","to_street":"Jamaica Ave","completion_date":"2015-07-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"173 St","from_st":"93Ave","to_street":"Jamaica Ave","completion_date":"2015-07-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"155 St","from_st":"109 Ave","to_street":"108 Ave","completion_date":"2015-04-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"168th St","from_st":"Highland Ave","to_street":"Gothic Drive","completion_date":"2015-04-09T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"242nd St","from_st":"Jamaica Ave","to_street":"Braddock Ave","completion_date":"2015-05-19T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Hawtree Creek Rd","from_st":"Linden Blvd","to_street":"111 Ave","completion_date":"2015-06-22T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"208 St","from_st":"47 Ave","to_street":"48 Ave","completion_date":"2015-10-20T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Wiman Ave","from_st":"Hillcrest St","to_street":"Presley St","completion_date":"2015-03-11T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(SI)"}
+,{"on_street":"Fort Hill Circle","from_st":"Daniel Low Terrace","completion_date":"2015-07-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"Hornaday Pl","from_st":"Crotona Pkwy","to_street":"Honeywell Ave","completion_date":"2016-03-12T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(BX)"}
+,{"on_street":"W Mt Eden Ave","from_st":"Jerome Ave","to_street":"Macombs Rd","completion_date":"2016-04-23T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"Hall of Fame Terr","from_st":"Sedgwick Ave","to_street":"University Ave","completion_date":"2016-08-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"E 34 St","from_st":"Flatbush Ave","to_street":"Ave I","completion_date":"2016-03-30T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(K)"}
+,{"on_street":"Union Ave","from_st":"Richardson St","to_street":"N 12 St","completion_date":"2016-04-21T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(K)"}
+,{"on_street":"Roebling St","from_st":"Union Ave","to_street":"N 11 St","completion_date":"2016-04-21T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(K)"}
+,{"on_street":"156 St","from_st":"Cross Island Pkwy N S/R","to_street":"14 Ave","completion_date":"2016-06-29T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"77 St","from_st":"30 Ave","to_street":"25 Ave","completion_date":"2016-10-25T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Humphreys St","from_st":"Astoria Blvd","to_street":"29 Ave","completion_date":"2016-03-21T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"31 Ave","from_st":"Slip Rd","to_street":"103 St","completion_date":"2016-03-21T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"81 St","from_st":"77 Ave","to_street":"78 Ave","completion_date":"2016-06-08T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Larue Ave","from_st":"102 St","to_street":"103 St","completion_date":"2016-06-16T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"48 St","from_st":"Northern Blvd","to_street":"Braodway","completion_date":"2016-07-21T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"49 St","from_st":"Newtown Rd","to_street":"Northern Blvd","completion_date":"2016-07-21T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"70th st","from_st":"51st Ave","to_street":"54th Ave","completion_date":"2016-10-29T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Fillmore Pl","from_st":"Garfield Ave","to_street":"Brown Pl","completion_date":"2016-04-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"Brown Pl","from_st":"Fillmore Pl","to_street":"Harvey St","completion_date":"2016-04-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(SI)"}
+,{"on_street":"Seminole St","from_st":"Stillwell Ave","to_street":"Eastchester Rd","completion_date":"2017-05-06T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(BX)"}
+,{"on_street":"E 187 St","from_st":"Webster Ave","to_street":"Marion Ave","completion_date":"2017-08-24T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"E 187 St","from_st":"Webster Ave","to_street":"Park Ave","completion_date":"2017-08-24T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(BX)"}
+,{"on_street":"E 140 St","from_st":"Bruckner Blvd","to_street":"Walnut Ave","completion_date":"2017-08-26T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(BX)"}
+,{"on_street":"Conklin Ave","from_st":"Rockaway Pkwy","to_street":"Remsen Ave","completion_date":"2017-04-25T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"WB","boro":"(K)"}
+,{"on_street":"Dunham Pl","from_st":"S 6 St","to_street":"Bway","completion_date":"2017-05-02T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(K)"}
+,{"on_street":"Cobek Ct","from_st":"Shell Rd","to_street":"W 3 St","completion_date":"2017-10-11T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(K)"}
+,{"on_street":"Junius St","from_st":"New Lots Ave","to_street":"Linden Blvd","completion_date":"2017-08-03T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(K)"}
+,{"on_street":"W 211 St","from_st":"10 Avenue","to_street":"Bway","completion_date":"2017-07-29T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"WB","boro":"(M)"}
+,{"on_street":"21 Rd","from_st":"166 St","to_street":"Francis Lewis Blvd","completion_date":"2017-04-11T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"21 Ave","from_st":"166 St","to_street":"163 St","completion_date":"2017-04-11T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"Lewis Ave","from_st":"103 St","to_street":"100 St","completion_date":"2017-04-20T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"97 Ave","from_st":"Lefferts Blvd","to_street":"117 St","completion_date":"2017-04-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"117 Rd","from_st":"Farmers Blvd","to_street":"192 St","completion_date":"2017-06-08T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"76 St","from_st":"45 Ave","to_street":"47 Ave","completion_date":"2017-05-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"160 St","from_st":"Goethals Ave","to_street":"Union Tkpe","completion_date":"2017-05-23T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Camp Rd","from_st":"Beach 22nd St","to_street":"Edgemere Ave","completion_date":"2017-06-20T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"Edgemere Ave","from_st":"Camp Rd","to_street":"Ferndale Pl","completion_date":"2017-06-20T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"Remington St","from_st":"Liberty Ave","to_street":"95 Ave","completion_date":"2017-09-22T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Sanders Pl","from_st":"97 Ave","to_street":"101 Ave","completion_date":"2017-09-23T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Cresskill Pl","from_st":"101 Ave","to_street":"95 Ave","completion_date":"2017-09-23T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Brisbin St","from_st":"95 Ave","to_street":"Liberty Ave","completion_date":"2017-09-21T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Allendale St","from_st":"102 Ave","to_street":"95 Ave","completion_date":"2017-09-21T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Liverpool St","from_st":"95 Ave","to_street":"101 Ave","completion_date":"2017-09-21T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Waltham St","from_st":"101 Ave","to_street":"95 Ave","completion_date":"2017-09-21T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"102 Ave","from_st":"Van Wyck Epwy Srv Rd","to_street":"Allendale St","completion_date":"2017-09-22T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"Lloyd Rd","from_st":"Liberty Ave","to_street":"Van Wyck Epwy Srv Rd","completion_date":"2017-09-22T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"104 Ave","from_st":"Van Wyck Epwy Srv Rd","to_street":"Remington St","completion_date":"2017-09-26T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"105 Ave","from_st":"Inwood St","to_street":"Remington St","completion_date":"2017-09-26T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"106 Ave","from_st":"Pinegrove St","to_street":"Inwood St","completion_date":"2017-09-26T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"89 Ave","from_st":"191 St","to_street":"181 St","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"90 Ave","from_st":"187 St","to_street":"191 St","completion_date":"2017-10-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"36 St","from_st":"Hunters Point Ave","to_street":"48 Ave","completion_date":"2017-06-28T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"256 St","from_st":"82 Ave","to_street":"81 Ave","completion_date":"2017-07-11T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"257 St","from_st":"81 Ave","to_street":"83 Ave","completion_date":"2017-07-11T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"202 St","from_st":"53 Ave","to_street":"56 Ave","completion_date":"2017-07-13T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Lucas Street","from_st":"122","to_street":"120 Ave","completion_date":"2017-07-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"28 Ave","from_st":"122 St","to_street":"120 St","completion_date":"2017-05-10T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"29 Ave","from_st":"120 St","to_street":"122 St","completion_date":"2017-05-10T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"120 St","from_st":"28 Ave","to_street":"30 Ave","completion_date":"2017-05-10T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Croydon Rd","from_st":"Edgerton Blvd","to_street":"Charlecote Ridge","completion_date":"2017-09-19T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"EB-WB","boro":"(Q)"}
+,{"on_street":"Crescent St","from_st":"43 Ave","to_street":"42 Rd","completion_date":"2017-10-31T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"54 Ave","from_st":"69 St","to_street":"71 St","completion_date":"2017-11-11T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"St Lawrence Ave","from_st":"Soundview Ave","to_street":"Seward Ave","completion_date":"2018-08-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(BX)"}
+,{"on_street":"Underhill Ave","from_st":"Soundview Ave","to_street":"Patterson Ave","completion_date":"2018-08-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(BX)"}
+,{"on_street":"Cornell Ave","from_st":"Soundview Ave","to_street":"Pugsley Ave","completion_date":"2018-08-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"Pugsley Ave","from_st":"Soundview Ave","to_street":"Cornell Ave","completion_date":"2018-08-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(BX)"}
+,{"on_street":"S 11 St","from_st":"Kent Ave","to_street":"Berry St","completion_date":"2018-04-11T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(K)"}
+,{"on_street":"Hooper St","from_st":"Bway","to_street":"Harrison Ave","completion_date":"2018-08-31T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(K)"}
+,{"on_street":"Montrose Ave","from_st":"Union Ave","to_street":"Bway","completion_date":"2018-09-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(K)"}
+,{"on_street":"Horatio St","from_st":"8 Ave","to_street":"Greenwich Ave","completion_date":"2018-09-17T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(M)"}
+,{"on_street":"Horatio St","from_st":"W 4 St","to_street":"8 Ave","completion_date":"2018-09-17T00:00:00.000","type_of_change":"Street closure","new_direction":"N/A","boro":"(M)","notes":"Closed to vehicular traffic"}
+,{"on_street":"W 60 St","from_st":"Columbus Ave","to_street":"West End Ave","completion_date":"2018-08-22T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"WB","boro":"(M)"}
+,{"on_street":"W 62 St","from_st":"Amsterdam Ave","to_street":"Columbus Ave","completion_date":"2018-08-22T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"EB-WB","boro":"(M)"}
+,{"on_street":"25 Drive","from_st":"147 St","to_street":"149 St","completion_date":"2018-04-03T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"27 Ave","from_st":"147 St","to_street":"149 St","completion_date":"2018-04-03T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"147 St","from_st":"29 Ave","to_street":"25 Dr","completion_date":"2018-04-03T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"72 Rd","from_st":"110 Ave","to_street":"GCP Service Rd","completion_date":"2018-07-24T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"Gates Ave","from_st":"Forest Ave","to_street":"Grandview Ave","completion_date":"2018-04-19T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"95 Ave","from_st":"109 St","to_street":"100 St","completion_date":"2018-06-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"220 Pl","from_st":"Northern Blvd","to_street":"43 Ave","completion_date":"2018-04-24T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"94 Ave","from_st":"100 St","to_street":"106 St","completion_date":"2018-06-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"97 Ave","from_st":"97 St","to_street":"104 St","completion_date":"2018-06-14T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"97 Ave","from_st":"104 St","to_street":"109 St","completion_date":"2018-06-15T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"Main Ave","from_st":"Vernon Blvd","to_street":"30 Ave","completion_date":"2018-06-19T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"159 St","from_st":"Horace Harding Expwy","to_street":"Booth Memorial Ave","completion_date":"2018-07-17T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"160 St","from_st":"Booth Memorial Ave","to_street":"Horace Harding Expwy","completion_date":"2018-07-17T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Bayview Ave","from_st":"Shore Rd","to_street":"West Dr","completion_date":"2018-07-26T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"EB-WB","boro":"(Q)"}
+,{"on_street":"Far Rockaway Blvd","from_st":"Bay 32 St","to_street":"Beach Channel Dr","completion_date":"2018-08-14T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"Bay 32 St","from_st":"Far Rockaway Blvd","to_street":"Beach Channel Dr","completion_date":"2018-08-14T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"NB-SB","boro":"(Q)"}
+,{"on_street":"Beach 92 St","from_st":"Rockaway Fwy","to_street":"Rockaway Beach Blvd","completion_date":"2018-08-16T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"De Sota Rd","from_st":"B 94 St","to_street":"B92 St","completion_date":"2018-08-16T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"135 Ave","from_st":"224 St","to_street":"Springfield Blvd","completion_date":"2018-11-17T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"Marion Ave","from_st":"Mosholu Pkwy","to_street":"E Mosholu Pkwy South","completion_date":"2018-12-11T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"136 Ave","from_st":"Springfield Blvd","to_street":"222 St","completion_date":"2019-04-10T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"Sigourney St","from_st":"Columbia St","to_street":"Otsego St","completion_date":"2019-04-24T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(K)"}
+,{"on_street":"Richards St","from_st":"Walcott St","to_street":"van Dyke St","completion_date":"2019-04-24T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(K)"}
+,{"on_street":"Hylan Blvd","from_st":"Narrows Rd South","to_street":"Olga Pl","completion_date":"2019-04-25T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"SB","boro":"(SI)"}
+,{"on_street":"Village Rd S","from_st":"Van Sicklen St","to_street":"McDonald Ave","completion_date":"2019-05-01T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(K)"}
+,{"on_street":"91 Ave","from_st":"146 St","to_street":"Sutphin Blvd","completion_date":"2019-05-08T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"144 Pl","from_st":"Archer Ave","to_street":"91 Ave","completion_date":"2019-05-08T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"103 Ave","from_st":"225 St","to_street":"223 St","completion_date":"2018-05-15T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"N Henry St","from_st":"Greenpoint Ave","to_street":"Norman Ave","completion_date":"2019-05-16T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"SB","boro":"(K)"}
+,{"on_street":"N Henry St","from_st":"Richardson St","to_street":"Meeker Ave","completion_date":"2019-05-16T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(K)"}
+,{"on_street":"Washington St","from_st":"Front St","to_street":"York St","completion_date":"2019-05-22T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(K)"}
+,{"on_street":"11 Ave","from_st":"W 52 St","to_street":"W 40 St","completion_date":"2019-06-05T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(M)"}
+,{"on_street":"142 St","from_st":"106 Ave","to_street":"Van Wyck Expressway","completion_date":"2019-06-05T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Newburg St","from_st":"Murdock Ave","to_street":"Dunkirk St","completion_date":"2019-06-12T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"113 Ave","from_st":"Mayville St","to_street":"Murdock Ave","completion_date":"2019-06-13T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Mayville St","from_st":"Murdock Ave","to_street":"113 St","completion_date":"2019-06-13T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"114 Rd","from_st":"Murdock Ave","to_street":"Farmers Blvd","completion_date":"2019-06-13T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"Ovid Pl","from_st":"Murdock Ave","to_street":"Quencer Rd","completion_date":"2019-06-13T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"114 Dr","from_st":"Farmers Blvd","to_street":"Murdock Ave","completion_date":"2019-06-13T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"62 St","from_st":"New Utrecht Ave","to_street":"15 Ave","completion_date":"2019-06-26T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(K)"}
+,{"on_street":"Beaumont Ave","from_st":"E 187 St","to_street":"E 189 St","completion_date":"2019-07-08T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(BX)"}
+,{"on_street":"E 189 St","from_st":"Beaumont Ave","to_street":"Crotona Ave","completion_date":"2019-07-08T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"EB","boro":"(BX)"}
+,{"on_street":"Remignton St","from_st":"Liberty Ave","to_street":"Lakewood Ave","completion_date":"2019-07-10T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Pleasant Ave","from_st":"E 114 St","to_street":"E 115 St","completion_date":"2019-07-23T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(M)"}
+,{"on_street":"W 219 St","from_st":"9 Ave","to_street":"Bway","completion_date":"2019-07-24T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(M)"}
+,{"on_street":"W 220 St","from_st":"Bway","to_street":"9 Ave","completion_date":"2019-07-24T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(M)"}
+,{"on_street":"Hegeman Ave","from_st":"Louisiana Ave","to_street":"Williams Ave","completion_date":"2019-08-20T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(K)"}
+,{"on_street":"Van Sinderen Ave","from_st":"Linden Blvd","to_street":"New Lots Ave","completion_date":"2019-08-20T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(K)"}
+,{"on_street":"Ave V","from_st":"Bedford Ave","to_street":"Nostrand Ave","completion_date":"2019-08-23T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"EB-WB","boro":"(K)"}
+,{"on_street":"96 St","from_st":"Atlantic Ave","to_street":"95 Ave","completion_date":"2019-08-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"50 Ave","from_st":"65 Pl","to_street":"60 St","completion_date":"2019-08-29T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"E Bway","from_st":"Samuel Dickstein Plaza","to_street":"Grand St","completion_date":"2019-09-21T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(M)"}
+,{"on_street":"130 Ave","from_st":"14 Ave","to_street":"7 Ave","completion_date":"2019-09-30T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"7 Ave","from_st":"13 St","to_street":"129 St","completion_date":"2019-09-30T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"129 St","from_st":"7 Ave","to_street":"14 Ave","completion_date":"2019-10-01T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Stanwix Street","from_st":"Montieth St","to_street":"Melrose St","completion_date":"2019-10-02T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"SB","boro":"(K)"}
+,{"on_street":"Noll St","from_st":"Evergreen Ave","to_street":"Bushwick Ave","completion_date":"2019-10-02T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"WB","boro":"(K)"}
+,{"on_street":"Forrest St","from_st":"Bushwick Ave","to_street":"Stanwix St","completion_date":"2019-10-02T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"EB","boro":"(K)"}
+,{"on_street":"71 Pl","from_st":"Myrtle Ave","to_street":"Cooper Ave","completion_date":"2019-11-14T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"17 Ave","from_st":"150 St","to_street":"Francis Lewis Blvd","completion_date":"2020-06-23T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"17 Rd","from_st":"157 St","to_street":"150 St","completion_date":"2020-06-24T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"157 St","from_st":"16 Ave","to_street":"17 Rd","completion_date":"2020-06-23T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Edgegrove Ave","from_st":"Arden Ave","to_street":"Jefferson Blvd","completion_date":"2020-07-06T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(SI)"}
+,{"on_street":"Water St","from_st":"Water St","to_street":"Old Fulton St","completion_date":"2020-07-10T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(K)"}
+,{"on_street":"14 St","from_st":"30 ave","to_street":"Bway","completion_date":"2020-07-14T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"NB-SB","boro":"(Q)"}
+,{"on_street":"E 183 St","from_st":"Washington Ave","to_street":"3 Ave","completion_date":"2020-07-28T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(BX)"}
+,{"on_street":"E 184 St","from_st":"bathgate Ave","to_street":"Park Ave","completion_date":"2020-07-28T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"Westwood Avenue","from_st":"Stewart Avenue","to_street":"Willowbrook Road","completion_date":"2015-09-23T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"Brown Place","from_st":"Fillmore Place","to_street":"Harvey Street","completion_date":"2016-04-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(SI)"}
+,{"on_street":"Fillmore Place","from_st":"Garfield Avenue","to_street":"Brown Place","completion_date":"2016-04-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"Gulf Avenue","from_st":"Forest Avenue","to_street":"Edward Curry Avenue","completion_date":"2018-12-31T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"NB-SB","boro":"(SI)"}
+,{"on_street":"Forest Ave","from_st":"Gulf Ave","to_street":"Goethals Road North","completion_date":"2018-12-31T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(SI)"}
+,{"on_street":"Revere Street","from_st":"Oakwood Ave","to_street":"Sharon Ave","completion_date":"2018-12-31T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"Richmond Terrace Slip","from_st":"Broadway","to_street":"N Burger Ave","completion_date":"2018-12-31T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(SI)"}
+,{"on_street":"Gulf Ave","from_st":"Forest Ave","to_street":"Edward Curry Ave","completion_date":"2018-06-30T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"NB-SB","boro":"(SI)"}
+,{"on_street":"Edith Ave","from_st":"Swaim Ave","to_street":"Huguenot Ave","completion_date":"2019-01-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"Swaim Ave","from_st":"Chester Ave","to_street":"Edith Ave","completion_date":"2019-01-07T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(SI)"}
+,{"on_street":"Hylan Blvd (Eastern Most Leg)","from_st":"Narrows Road South","to_street":"Olga Place","completion_date":"2019-04-25T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(SI)"}
+,{"on_street":"Olga Place","from_st":"Hylan Blvd","to_street":"Pouch Terrace","completion_date":"2019-04-25T00:00:00.000","type_of_change":"Two-way Conversion","new_direction":"EB-WB","boro":"(SI)"}
+,{"on_street":"John Street","from_st":"Innis Street","to_street":"Eaton Place","completion_date":"2020-03-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(SI)"}
+,{"on_street":"Edgegrove Ave","from_st":"Arden Ave","to_street":"Jefferson Blvd","completion_date":"2020-07-06T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"N. 14 St","from_st":"Kent Av","to_street":"Berry St","completion_date":"2020-08-14T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(K)"}
+,{"on_street":"37 St","from_st":"Review Ave","to_street":"Bradley Ave","completion_date":"2020-08-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Bradley Ave","from_st":"37 St","to_street":"Greenpoint Ave","completion_date":"2020-08-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"St. Nicholas Ave","from_st":"W 166 St","to_street":"W 168 St","completion_date":"2020-08-18T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(M)"}
+,{"on_street":"E 156 St","from_st":"Concourse Village West","to_street":"Morris Ave","completion_date":"2020-08-20T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"EB","boro":"(BX)"}
+,{"on_street":"Howe Ave","from_st":"Hart St","to_street":"Barrett Ave","completion_date":"2020-08-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(BX)"}
+,{"on_street":"Barrett Ave","from_st":"Howe Ave","to_street":"Olmstead Ave","completion_date":"2020-08-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"Olmstead Ave","from_st":"Barrett Ave","to_street":"Norton Ave","completion_date":"2020-08-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(BX)"}
+,{"on_street":"Norton Ave","from_st":"Olmstead Ave","to_street":"Screvin Ave","completion_date":"2020-08-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"Screvin Ave","from_st":"Norton Ave","to_street":"Lacombe Ave","completion_date":"2020-08-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"NB","boro":"(BX)"}
+,{"on_street":"Crescent St","from_st":"Newtown Ave","to_street":"30 Ave","completion_date":"2020-08-27T00:00:00.000","type_of_change":"One-way Conversion","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Crescent St","from_st":"Newtown Ave","to_street":"30 Ave","completion_date":"2020-08-27T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"E 59 St","from_st":"2 Ave","to_street":"3 Ave","completion_date":"2020-10-13T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"EB","boro":"(K)"}
+,{"on_street":"E 153 St","from_st":"Grand Concourse","to_street":"Concourse Village West","completion_date":"2020-10-21T00:00:00.000","type_of_change":"One-way","new_direction":"EB","boro":"(BX)"}
+,{"on_street":"E 156 St","from_st":"Concourse Village West","to_street":"Grand Concourse","completion_date":"2020-10-22T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"E 158 St","from_st":"Concourse Village West","to_street":"Grand Concourse","completion_date":"2020-10-22T00:00:00.000","type_of_change":"Two-way","new_direction":"EB-WB","boro":"(BX)"}
+,{"on_street":"B 61 St","from_st":"Larkin Ave","to_street":"Rockaway Beach Blvd","completion_date":"2020-11-16T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"B 61 St","from_st":"Larkin Ave","to_street":"Beach Front Rd","completion_date":"2020-11-16T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"B 60 St","from_st":"Larkin Ave","to_street":"Beach Front Rd","completion_date":"2020-11-16T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Larkin Ave","from_st":"B 60 St","to_street":"B 59 St","completion_date":"2020-11-16T00:00:00.000","type_of_change":"One-way","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"E 178 St","from_st":"Park Ave","to_street":"Webster Ave","completion_date":"2021-04-05T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(BX)"}
+,{"on_street":"59 St","from_st":"Roosevelt Ave","to_street":"41 Ave","completion_date":"2021-04-26T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"127 St","from_st":"25 Ave","to_street":"23 Ave","completion_date":"2021-05-05T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"Madison Pl","from_st":"Ave P","to_street":"Nostrand Ave","completion_date":"2021-05-12T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(K)"}
+,{"on_street":"Eckford St","from_st":"Manhattan Ave","to_street":"Driggs Ave","completion_date":"2021-05-27T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(K)"}
+,{"on_street":"118 Rd","from_st":"Farmers Blvd","to_street":"Montauk St","completion_date":"2021-06-28T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"Riverton St","from_st":"118 Rd","to_street":"119 Rd","completion_date":"2021-06-28T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Sneden Ave","from_st":"Barclay Ave","to_street":"Annadale Rd","completion_date":"2021-07-06T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"145 Rd","from_st":"Farmers Blvd","to_street":"Guy R. Brewer Blvd","completion_date":"2021-07-15T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"Boynton Ave","from_st":"Story Ave","to_street":"Lafayette Ave","completion_date":"2021-09-13T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(BX)"}
+,{"on_street":"Taylor Ave","from_st":"Lafayette Ave","to_street":"Bruckner Blvd","completion_date":"2021-09-13T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(BX)"}
+,{"on_street":"39 Ave","from_st":"Woodside Ave","to_street":"52 St","completion_date":"2021-09-20T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"39 Ave","from_st":"51 St","to_street":"50 St","completion_date":"2021-09-20T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"39 Ave","from_st":"49 St","to_street":"50 St","completion_date":"2021-09-20T00:00:00.000","type_of_change":"One-way","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"39 Ave","from_st":"47 St","to_street":"45 St","completion_date":"2021-09-20T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(Q)"}
+,{"on_street":"Barnett Ave","from_st":"39 Ave","to_street":"48 St","completion_date":"2021-09-20T00:00:00.000","type_of_change":"One-way","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"20 St","from_st":"10 Ave","to_street":"3 Ave","completion_date":"2021-10-08T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(K)"}
+,{"on_street":"Jackson Ave","from_st":"E 138 St","to_street":"St. Marys St","completion_date":"2021-10-18T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(BX)"}
+,{"on_street":"Jackson Ave","from_st":"149 St","to_street":"St. Marys St","completion_date":"2021-10-18T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(BX)"}
+,{"on_street":"Jackson Ave","from_st":"149 St","to_street":"Westchester Ave","completion_date":"2021-10-18T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(BX)"}
+,{"on_street":"155 St","from_st":"Foch Blvd","to_street":"Linden Blvd","completion_date":"2022-04-04T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"41 St","from_st":"36 Ave","to_street":"Northern Blvd","completion_date":"2022-05-02T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Bronx Blvd","from_st":"E 233 St","to_street":"Bronx River Pkwy on-ramp","completion_date":"2022-05-16T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(BX)"}
+,{"on_street":"Bronx Blvd","from_st":"Bronx River Pkwy on-ramp","to_street":"Bronx Blvd","completion_date":"2022-05-16T00:00:00.000","type_of_change":"Two-way","new_direction":"NB -SB","boro":"(BX)"}
+,{"on_street":"Kessel St","from_st":"75 Rd","to_street":"Union Tpke","completion_date":"2022-06-06T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Hughes Ave","from_st":"E 191 St","to_street":"E Fordham Rd","completion_date":"2022-06-14T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(BX)"}
+,{"on_street":"171 St","from_st":"Baisley Blvd","to_street":"120 Ave","completion_date":"2022-07-11T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"172 St","from_st":"120 Ave","to_street":"Baisley Blvd","completion_date":"2022-07-11T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Brook St","from_st":"Fremont St","to_street":"Westtervelt Ave","completion_date":"2022-08-01T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"Fremont St","from_st":"Victory Blvd","to_street":"Brook St","completion_date":"2022-08-01T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(SI)"}
+,{"on_street":"Seaman Ave","from_st":"Dyckman St","to_street":"Riverside Dr","completion_date":"2022-08-18T00:00:00.000","type_of_change":"Two-way","new_direction":"NB -SB","boro":"(M)"}
+,{"on_street":"Schermerhorn St","from_st":"Smith St","to_street":"3 Ave","completion_date":"2022-09-10T00:00:00.000","type_of_change":"One-way","new_direction":"EB","boro":"(K)"}
+,{"on_street":"56 Dr","from_st":"56 St","to_street":"Maurice Ave","completion_date":"2022-10-03T00:00:00.000","type_of_change":"One-way","new_direction":"EB","boro":"(Q)"}
+,{"on_street":"63 St","from_st":"50 Ave","to_street":"Laurel Hill Blvd","completion_date":"2022-11-01T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"65 St","from_st":"48 Ave","to_street":"Laurel Hill Blvd","completion_date":"2022-11-01T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(Q)"}
+,{"on_street":"River St","from_st":"Metropolitan Ave","to_street":"N 3 St","completion_date":"2022-11-01T00:00:00.000","type_of_change":"One-way","new_direction":"NB","boro":"(K)"}
+,{"on_street":"N 3 St","from_st":"River St","to_street":"Kent Ave","completion_date":"2022-11-01T00:00:00.000","type_of_change":"One-way","new_direction":"EB","boro":"(K)"}
+,{"on_street":"5 St","from_st":"50 Ave","to_street":"Borden Ave","completion_date":"2022-11-14T00:00:00.000","type_of_change":"One-way","new_direction":"SB","boro":"(Q)"}
+,{"on_street":"Waverly Pl","from_st":"Wiederer Pl","to_street":"Targee St","completion_date":"2022-11-25T00:00:00.000","type_of_change":"One-way","new_direction":"WB","boro":"(SI)"}
+,{"on_street":"Bond St","from_st":"Schermerhorn St","to_street":"Livingston St","completion_date":"2022-12-10T00:00:00.000","type_of_change":"One-way Reversal","new_direction":"NB","boro":"(K)"}]

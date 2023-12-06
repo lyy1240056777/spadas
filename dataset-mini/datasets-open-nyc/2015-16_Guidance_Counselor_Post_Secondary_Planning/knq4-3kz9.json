@@ -1,0 +1,578 @@
+[{"school_year":"2015-16","location_name":"Henry Street School for International Studies","dbn":"01M292","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"University Neighborhood High School","dbn":"01M448","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"East Side Community School","dbn":"01M450","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Forsyth Satellite Academy","dbn":"01M458","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Marta Valle High School","dbn":"01M509","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Lower East Side Preparatory High School","dbn":"01M515","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"New Explorations into Science, Technology and Math High School","dbn":"01M539","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Cascades High School","dbn":"01M650","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Bard High School Early College","dbn":"01M696","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"47 The American Sign Language and English Secondary School","dbn":"02M047","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Food and Finance High School","dbn":"02M288","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Essex Street Academy","dbn":"02M294","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"High School of Hospitality Management","dbn":"02M296","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Pace High School","dbn":"02M298","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Urban Assembly School of Design and Construction, The","dbn":"02M300","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Facing History School, The","dbn":"02M303","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Urban Assembly Academy of Government and Law, The","dbn":"02M305","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Lower Manhattan Arts Academy","dbn":"02M308","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"James Baldwin School, The: A School for Expeditionary Learning","dbn":"02M313","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Urban Assembly School of Business for Young Women, the","dbn":"02M316","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Gramercy Arts High School","dbn":"02M374","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"NYC iSchool","dbn":"02M376","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"MANHATTAN BUSINESS ACADEMY","dbn":"02M392","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"BUSINESS OF SPORTS SCHOOL","dbn":"02M393","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"EMMA LAZARUS HIGH SCHOOL","dbn":"02M394","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"THE HIGH SCHOOL FOR LANGUAGE AND DIPLOMACY","dbn":"02M399","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"High School for Environmental Studies","dbn":"02M400","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Institute for Collaborative Education","dbn":"02M407","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Professional Performing Arts High School","dbn":"02M408","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Baruch College Campus High School","dbn":"02M411","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"N.Y.C. Lab School for Collaborative Studies","dbn":"02M412","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"School of the Future High School","dbn":"02M413","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"N.Y.C. Museum School","dbn":"02M414","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Eleanor Roosevelt High School","dbn":"02M416","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Millennium High School","dbn":"02M418","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Landmark High School","dbn":"02M419","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"High School for Health Professions and Human Services","dbn":"02M420","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Quest to Learn","dbn":"02M422","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Leadership and Public Service High School","dbn":"02M425","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"MANHATTAN ACADEMY FOR ARTS & LANGUAGE","dbn":"02M427","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Legacy School for Integrated Studies","dbn":"02M429","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Murray Hill Academy","dbn":"02M432","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Hudson High School of Learning Technologies","dbn":"02M437","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"International High School at Union Square","dbn":"02M438","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Manhattan Village Academy","dbn":"02M439","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Ballet Tech, NYC Public School for Dance","dbn":"02M442","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Vanguard High School","dbn":"02M449","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Manhattan International High School","dbn":"02M459","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Washington Irving High School","dbn":"02M460","staff_completing_training":"9"}
+,{"school_year":"2015-16","location_name":"Washington Irving YABC","dbn":"02M473","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Stuyvesant High School","dbn":"02M475","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"High School of Economics and Finance","dbn":"02M489","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Unity Center for Urban Technologies","dbn":"02M500","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Urban Assembly Gateway School for Technology","dbn":"02M507","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Talent Unlimited High School","dbn":"02M519","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Murry Bergtraum High School for Business Careers","dbn":"02M520","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"Jacqueline Kennedy Onassis High School","dbn":"02M529","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Repertory Company High School for Theatre Arts","dbn":"02M531","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Manhattan Bridges High School","dbn":"02M542","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"New Design High School","dbn":"02M543","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Independence High School","dbn":"02M544","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"High School for Dual Language and Asian Studies","dbn":"02M545","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Liberty High School Academy for Newcomers","dbn":"02M550","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Urban Assembly New York Harbor School","dbn":"02M551","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"High School M560 - City As School","dbn":"02M560","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"Urban Academy Laboratory High School","dbn":"02M565","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Satellite Academy High School","dbn":"02M570","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Manhattan Comprehensive Night and Day High School","dbn":"02M575","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Richard R. Green High School of Teaching","dbn":"02M580","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Harvey Milk High School","dbn":"02M586","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"The High School of Fashion Industries","dbn":"02M600","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"Humanities Preparatory Academy","dbn":"02M605","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Chelsea Career and Technical Education High School","dbn":"02M615","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"High School of Graphic Communication Arts","dbn":"02M625","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Art and Design High School","dbn":"02M630","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Life Sciences Secondary School","dbn":"02M655","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Manhattan Theatre Lab High School","dbn":"03M283","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"High School for Arts, Imagination and Inquiry","dbn":"03M299","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Urban Assembly School for Media Studies, The","dbn":"03M307","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"The Urban Assembly School for Green Careers","dbn":"03M402","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"The Global Learning Collaborative","dbn":"03M403","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Innovation Diploma Plus","dbn":"03M404","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Wadleigh Secondary School for the Performing & Visual Arts","dbn":"03M415","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"FRANK McCOURT HIGH SCHOOL","dbn":"03M417","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Beacon High School","dbn":"03M479","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Fiorello H. LaGuardia High School of Music & Art and Performing Arts","dbn":"03M485","staff_completing_training":"9"}
+,{"school_year":"2015-16","location_name":"High School for Law, Advocacy and Community Justice","dbn":"03M492","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"High School of Arts and Technology","dbn":"03M494","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Edward A. Reynolds West Side High School","dbn":"03M505","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Manhattan / Hunter Science High School","dbn":"03M541","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Frederick Douglass Academy II Secondary School","dbn":"03M860","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"ESPERANZA PREPARATORY ACADEMY","dbn":"04M372","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Coalition School for Social Change","dbn":"04M409","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Manhattan Center for Science and Mathematics","dbn":"04M435","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Park East High School","dbn":"04M495","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Central Park East High School","dbn":"04M555","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Young Women's Leadership School","dbn":"04M610","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Heritage School, The","dbn":"04M680","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Harlem Renaissance High School","dbn":"05M285","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Mott Hall High School","dbn":"05M304","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Academy for Social Action: A College Board School","dbn":"05M367","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Urban Assembly School for the Performing Arts","dbn":"05M369","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Choir Academy of Harlem","dbn":"05M469","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Frederick Douglass Academy","dbn":"05M499","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Thurgood Marshall Academy for Learning and Social Change","dbn":"05M670","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bread & Roses Integrated Arts High School","dbn":"05M685","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School for Mathematics, Science and Engineering at City College","dbn":"05M692","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"City College Academy of the Arts","dbn":"06M293","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Community Health Academy of the Heights","dbn":"06M346","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Washington Heights Expeditionary Learning School","dbn":"06M348","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"High School for Excellence and Innovation","dbn":"06M423","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"The College Academy","dbn":"06M462","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"High School for Media and Communications","dbn":"06M463","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"High School for Law and Public Service","dbn":"06M467","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"High School for Health Careers and Sciences","dbn":"06M468","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"A. Philip Randolph Campus High School","dbn":"06M540","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Gregorio Luperon High School for Science and Mathematics","dbn":"06M552","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"South Bronx Preparatory: A College Board School","dbn":"07X221","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Crotona Academy High School","dbn":"07X321","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"International Community High School","dbn":"07X334","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Jill Chaifetz Transfer High School","dbn":"07X379","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bronx Haven High School","dbn":"07X381","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Community School for Social Justice","dbn":"07X427","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Alfred E. Smith Campus YABC","dbn":"07X456","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Mott Haven Village Preparatory High School","dbn":"07X473","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"University Heights Secondary School","dbn":"07X495","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Hostos-Lincoln Academy of Science","dbn":"07X500","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Foreign Language Academy of Global Studies","dbn":"07X520","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx Design and Construction Academy","dbn":"07X522","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx Leadership Academy II High School","dbn":"07X527","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"New Explorers High School","dbn":"07X547","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Urban Assembly School for Careers in Sports","dbn":"07X548","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"The Urban Assembly Bronx Academy of Letters","dbn":"07X551","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Mott Haven Community High School","dbn":"07X557","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Alfred E. Smith Career and Technical Education High School","dbn":"07X600","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Samuel Gompers Career and Technical Education High School","dbn":"07X655","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Health Opportunities High School","dbn":"07X670","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Women's Academy of Excellence","dbn":"08X282","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Renaissance High School for Musical Theater & Technology","dbn":"08X293","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Gateway School for Environmental Research and Technology","dbn":"08X295","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Pablo Neruda Academy","dbn":"08X305","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Millennium Art Academy","dbn":"08X312","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Holcombe L. Rucker School of Community Research","dbn":"08X332","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Bronx Community High School","dbn":"08X377","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Herbert H. Lehman High School","dbn":"08X405","staff_completing_training":"8"}
+,{"school_year":"2015-16","location_name":"BRONX BRIDGES HIGH SCHOOL","dbn":"08X432","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx Guild","dbn":"08X452","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Felisa Rincon de Gautier Institute for Law and Public Policy, The","dbn":"08X519","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Banana Kelly High School","dbn":"08X530","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx Arena High School","dbn":"08X537","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Jane Addams High School for Academic Careers","dbn":"08X650","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx Collegiate Academy","dbn":"09X227","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Eagle Academy for Young Men","dbn":"09X231","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Urban Assembly School for Applied Math and Science, The","dbn":"09X241","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Eximius College Preparatory Academy: A College Board School","dbn":"09X250","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Mott Hall Bronx High School","dbn":"09X252","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bronx Center for Science and Mathematics","dbn":"09X260","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Validus Preparatory Academy: An Expeditionary Learning School","dbn":"09X263","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Leadership Institute","dbn":"09X276","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Morris Academy for Collaborative Studies","dbn":"09X297","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"DreamYard Preparatory School","dbn":"09X329","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Academy for Language and Technology","dbn":"09X365","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Bronx International High School","dbn":"09X403","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"School for Excellence","dbn":"09X404","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bronx High School of Business","dbn":"09X412","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Bronx High School for Medical Science","dbn":"09X413","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Jonathan Levin High School for Media and Communications","dbn":"09X414","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx School for Law, Government and Justice","dbn":"09X505","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Frederick Douglass Academy III Secondary School","dbn":"09X517","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Bronx Leadership Academy High School","dbn":"09X525","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"High School for Violin and Dance","dbn":"09X543","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Riverdale / Kingsbridge Academy (Middle School / High School 141)","dbn":"10X141","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx Engineering and Technology Academy","dbn":"10X213","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Theatre Arts Production Company School","dbn":"10X225","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"The Marie Curie School for Medicine, Nursing, and Health Professions","dbn":"10X237","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"West Bronx Academy for the Future","dbn":"10X243","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Kingsbridge International High School","dbn":"10X268","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bronx School of Law and Finance","dbn":"10X284","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Providing Urban Learners Success In Education High School","dbn":"10X319","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"International School for Liberal Arts","dbn":"10X342","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"In-Tech Academy (M.S. / High School 368)","dbn":"10X368","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Knowledge and Power Preparatory Academy International High School (Kappa)","dbn":"10X374","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"English Language Learners and International Support Preparatory Academy (ELLIS)","dbn":"10X397","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"High School for Teaching and the Professions","dbn":"10X433","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Belmont Preparatory High School","dbn":"10X434","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Fordham High School for the Arts","dbn":"10X437","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Fordham Leadership Academy for Business and Technology","dbn":"10X438","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Bronx High School for Law and Community Service","dbn":"10X439","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"DeWitt Clinton High School","dbn":"10X440","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Celia Cruz Bronx High School of Music, The","dbn":"10X442","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Bronx High School of Science","dbn":"10X445","staff_completing_training":"6"}
+,{"school_year":"2015-16","location_name":"Marble Hill High School for International Studies","dbn":"10X477","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Kennedy YABC","dbn":"10X504","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Crotona International High School","dbn":"10X524","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx Theatre High School","dbn":"10X546","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Discovery High School","dbn":"10X549","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Grace Dodge Career and Technical Education High School","dbn":"10X660","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School of American Studies at Lehman College","dbn":"10X696","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bronx Health Sciences High School","dbn":"11X249","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bronx High School for Writing and Communication Arts","dbn":"11X253","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Bronx Lab School","dbn":"11X265","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Academy for Scholarship and Entrepreneurship: A College Board School","dbn":"11X270","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"High School of Computers and Technology","dbn":"11X275","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Collegiate Institute for Math and Science","dbn":"11X288","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Bronx Academy of Health Careers","dbn":"11X290","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Astor Collegiate Academy","dbn":"11X299","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Bronx High School for the Visual Arts","dbn":"11X418","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Harry S Truman High School","dbn":"11X455","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Bronxdale High School","dbn":"11X508","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School of Language and Innovation","dbn":"11X509","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"New World High School","dbn":"11X513","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"The Bronxwood Preparatory Academy","dbn":"11X514","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Pelham Preparatory Academy","dbn":"11X542","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School for Contemporary Arts","dbn":"11X544","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx Aerospace High School","dbn":"11X545","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Metropolitan High School, The","dbn":"12X248","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Explorations Academy","dbn":"12X251","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Bronx Latin","dbn":"12X267","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"East Bronx Academy for the Future","dbn":"12X271","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Peace and Diversity Academy","dbn":"12X278","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Urban Assembly School for Wildlife Conservation","dbn":"12X372","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Pan American International High School at Monroe","dbn":"12X388","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Arturo A. Schomburg Satellite Academy Bronx","dbn":"12X446","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"THE CINEMA SCHOOL","dbn":"12X478","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bronx Career and College Preparatory High School","dbn":"12X479","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Bronx Regional High School","dbn":"12X480","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Bronx Envision Academy","dbn":"12X511","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"The Metropolitan Soundview High School","dbn":"12X521","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School of World Cultures","dbn":"12X550","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Fannie Lou Hamer Freedom High School","dbn":"12X682","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Wings Academy","dbn":"12X684","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Monroe Academy for Visual Arts & Design","dbn":"12X692","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Dr. Susan S. McKinney Secondary School of the Arts","dbn":"13K265","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Urban Assembly High School of Music and Art","dbn":"13K350","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brooklyn Community High School of Communication, Arts and Media","dbn":"13K412","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Science Skills Center High School for Science, Technology and the Creative Arts","dbn":"13K419","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Brooklyn Technical High School","dbn":"13K430","staff_completing_training":"14"}
+,{"school_year":"2015-16","location_name":"Brooklyn International High School","dbn":"13K439","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"The Urban Assembly School for Law and Justice","dbn":"13K483","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"ACORN Community High School","dbn":"13K499","staff_completing_training":"6"}
+,{"school_year":"2015-16","location_name":"Brooklyn Academy High School","dbn":"13K553","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bedford Stuyvesant Preparatory High School","dbn":"13K575","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Bedford Academy High School","dbn":"13K595","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"George Westinghouse Career and Technical Education High School","dbn":"13K605","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Brooklyn High School for Leadership and Community Service","dbn":"13K616","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Benjamin Banneker Academy","dbn":"13K670","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"City Polytechnic High School of Engineering, Architecture, and Technology","dbn":"13K674","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Juan Morel Campos Secondary School","dbn":"14K071","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Foundations Academy","dbn":"14K322","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brooklyn Latin School, The","dbn":"14K449","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Green School: An Academy for Environmental Careers","dbn":"14K454","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"PROGRESS High School for Professional Careers","dbn":"14K474","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"School for Legal Studies","dbn":"14K477","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"The High School for Enterprise, Business and Technology","dbn":"14K478","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brooklyn Preparatory High School","dbn":"14K488","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Williamsburg High School for Architecture and Design","dbn":"14K558","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Williamsburg Preparatory School","dbn":"14K561","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Lyons Community School","dbn":"14K586","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Automotive High School","dbn":"14K610","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"Young Women's Leadership School of Brooklyn","dbn":"14K614","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Frances Perkins Academy","dbn":"14K632","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"El Puente Academy for Peace and Justice","dbn":"14K685","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Brooklyn Frontiers High School","dbn":"15K423","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Brooklyn School for Global Studies","dbn":"15K429","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Brooklyn Secondary School for Collaborative Studies","dbn":"15K448","staff_completing_training":"9"}
+,{"school_year":"2015-16","location_name":"Secondary School for Law","dbn":"15K462","staff_completing_training":"6"}
+,{"school_year":"2015-16","location_name":"Secondary School for Journalism","dbn":"15K463","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Park Slope Collegiate","dbn":"15K464","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"School for International Studies","dbn":"15K497","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Cobble Hill School of American Studies","dbn":"15K519","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"West Brooklyn Community High School","dbn":"15K529","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Khalil Gibran International Academy","dbn":"15K592","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brooklyn High School of the Arts","dbn":"15K656","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Sunset Park High School","dbn":"15K667","staff_completing_training":"6"}
+,{"school_year":"2015-16","location_name":"Millennium Brooklyn HS","dbn":"15K684","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"South Brooklyn Community High School","dbn":"15K698","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Frederick Douglass Academy IV Secondary School","dbn":"16K393","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Boys and Girls High School","dbn":"16K455","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Brooklyn High School for Law and Technology","dbn":"16K498","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Gotham Professional Arts Academy","dbn":"16K594","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Research and Service High School","dbn":"16K669","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"The Brooklyn Academy of Global Finance","dbn":"16K688","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Pathways in Technology Early College High School (P-Tech)","dbn":"17K122","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Academy for College Preparation and Career Exploration: A College Board School","dbn":"17K382","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Academy of Hospitality and Tourism","dbn":"17K408","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Eramus YABC","dbn":"17K467","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"W.E.B. Dubois Academic High School","dbn":"17K489","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"International High School at Prospect Heights","dbn":"17K524","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"The High School for Global Citizenship","dbn":"17K528","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"School for Human Rights, The","dbn":"17K531","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"School for Democracy and Leadership","dbn":"17K533","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School for Youth and Community Development at Erasmus","dbn":"17K537","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"High School for Service & Learning at Erasmus","dbn":"17K539","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Science, Technology and Research Early College High School at Erasmus","dbn":"17K543","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"International Arts Business School","dbn":"17K544","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School for Public Service: Heroes of Tomorrow","dbn":"17K546","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brooklyn Academy of Science and the Environment","dbn":"17K547","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Brooklyn School for Music & Theatre","dbn":"17K548","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brownsville Academy High School","dbn":"17K568","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Medgar Evers College Preparatory School","dbn":"17K590","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Clara Barton High School","dbn":"17K600","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Academy for Health Careers","dbn":"17K751","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"It Takes a Village Academy","dbn":"18K563","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Brooklyn Generation School","dbn":"18K566","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Brooklyn Theatre Arts High School","dbn":"18K567","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Kurt Hahn Expeditionary Learning School","dbn":"18K569","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Victory Collegiate High School","dbn":"18K576","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Brooklyn Bridge Academy","dbn":"18K578","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Arts & Media Preparatory Academy","dbn":"18K589","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School for Innovation in Advertising and Media","dbn":"18K617","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Cultural Academy for the Arts and Sciences","dbn":"18K629","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"High School for Medical Professions","dbn":"18K633","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Olympus Academy","dbn":"18K635","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Academy for Conservation and the Environment","dbn":"18K637","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Urban Action Academy","dbn":"18K642","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"East Brooklyn Community High School","dbn":"18K673","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"South Shore Educational Complex YABC","dbn":"18K922","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Academy for Young Writers","dbn":"19K404","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"East New York Family Academy","dbn":"19K409","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Thomas Jefferson YABC","dbn":"19K431","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"FDNY High School for Fire and Life Safety","dbn":"19K502","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"High School for Civil Rights","dbn":"19K504","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Performing Arts and Technology High School","dbn":"19K507","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"World Academy for Total Community Health High School","dbn":"19K510","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Multicultural High School","dbn":"19K583","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Transit Tech Career and Technical Education High School","dbn":"19K615","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Academy of Innovative Technology","dbn":"19K618","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brooklyn Lab School","dbn":"19K639","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Cypress Hills Collegiate Preparatory School","dbn":"19K659","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"W. H. Maxwell Career and Technical Education High School","dbn":"19K660","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"The School for Classics: An Academy of Thinkers, Writers and Peformers","dbn":"19K683","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"New Utrecht High School","dbn":"20K445","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"High School of Telecommunication Arts and Technology","dbn":"20K485","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Fort Hamilton High School","dbn":"20K490","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Franklin Delano Roosevelt High School","dbn":"20K505","staff_completing_training":"12"}
+,{"school_year":"2015-16","location_name":"Urban Assembly School for Criminal Justice","dbn":"20K609","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"International High School at Lafayette","dbn":"21K337","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"P.S. 035","dbn":"75M035","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Rachel Carson High School for Coastal Studies","dbn":"21K344","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School of Sports Management","dbn":"21K348","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Abraham Lincoln High School","dbn":"21K410","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Abraham Lincoln YABC","dbn":"21K411","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Kingsborough Early College School","dbn":"21K468","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Edward R. Murrow High School","dbn":"21K525","staff_completing_training":"8"}
+,{"school_year":"2015-16","location_name":"John Dewey High School","dbn":"21K540","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Life Academy High School for Film and Music","dbn":"21K559","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Expeditionary Learning School for Community Leaders","dbn":"21K572","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"William E. Grady Career and Technical Education High School","dbn":"21K620","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brooklyn Studio Secondary School","dbn":"21K690","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Liberation Diploma Plus","dbn":"21K728","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Midwood High School","dbn":"22K405","staff_completing_training":"13"}
+,{"school_year":"2015-16","location_name":"James Madison High School","dbn":"22K425","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"Sheepshead Bay High School","dbn":"22K495","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Leon M. Goldstein High School for the Sciences","dbn":"22K535","staff_completing_training":"6"}
+,{"school_year":"2015-16","location_name":"Brooklyn College Academy","dbn":"22K555","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Professional Pathways High School","dbn":"22K630","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Brooklyn Collegiate: A College Board School","dbn":"23K493","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Frederick Douglass Academy VII High School","dbn":"23K514","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Brooklyn Democracy Academy","dbn":"23K643","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Eagle Academy for Young Men II","dbn":"23K644","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Aspirations Diploma Plus High School","dbn":"23K646","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Metropolitan Diploma Plus High School","dbn":"23K647","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Teachers Preparatory High School","dbn":"23K697","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Academy of Finance and Enterprise","dbn":"24Q264","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"High School of Applied Communication","dbn":"24Q267","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Civic Leadership Academy","dbn":"24Q293","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Pan American International High School","dbn":"24Q296","staff_completing_training":"10"}
+,{"school_year":"2015-16","location_name":"Bard High School Early College Queens","dbn":"24Q299","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Newtown High School","dbn":"24Q455","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"HS Arts & Business YABC","dbn":"24Q457","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Grover Cleveland High School","dbn":"24Q485","staff_completing_training":"9"}
+,{"school_year":"2015-16","location_name":"Middle College High School at LaGuardia Community College","dbn":"24Q520","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"International High School at LaGuardia Community College","dbn":"24Q530","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School for Arts and Business","dbn":"24Q550","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Robert F. Wagner, Jr. Secondary School for Arts and Technology","dbn":"24Q560","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Maspeth High School","dbn":"24Q585","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Queens Vocational and Technical High School","dbn":"24Q600","staff_completing_training":"9"}
+,{"school_year":"2015-16","location_name":"Aviation Career & Technical Education High School","dbn":"24Q610","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"VOYAGES Preparatory","dbn":"24Q744","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Queens School of Inquiry, The","dbn":"25Q252","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Flushing International High School","dbn":"25Q263","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"East-West School of International Studies","dbn":"25Q281","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"World Journalism Preparatory: A College Board School","dbn":"25Q285","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"John Bowne High School","dbn":"25Q425","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Flushing High School","dbn":"25Q460","staff_completing_training":"11"}
+,{"school_year":"2015-16","location_name":"Townsend Harris High School","dbn":"25Q525","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Queens Academy High School","dbn":"25Q540","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Robert F. Kennedy Community High School","dbn":"25Q670","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"North Queens Community High School","dbn":"25Q792","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Benjamin N. Cardozo High School","dbn":"26Q415","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Francis Lewis High School","dbn":"26Q430","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Martin Van Buren High School","dbn":"26Q435","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bayside High School","dbn":"26Q495","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Queens High School of Teaching, Liberal Arts and the Sciences","dbn":"26Q566","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Frederick Douglass Academy VI High School","dbn":"27Q260","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"Voyages Prep - South Queens","dbn":"27Q261","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Channel View School for Research","dbn":"27Q262","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Queens High School for Information, Research, and Technology","dbn":"27Q302","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Robert H. Goddard High School of Communication Arts and Technology","dbn":"27Q308","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Academy of Medical Technology: A College Board School","dbn":"27Q309","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Epic High School - South","dbn":"27Q314","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Scholars' Academy","dbn":"27Q323","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Rockaway Park High School for Environmental Sustainability","dbn":"27Q324","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Rockaway Collegiate High School","dbn":"27Q351","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"August Martin High School","dbn":"27Q400","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Richmond Hill High School","dbn":"27Q475","staff_completing_training":"13"}
+,{"school_year":"2015-16","location_name":"John Adams High School","dbn":"27Q480","staff_completing_training":"9"}
+,{"school_year":"2015-16","location_name":"High School for Construction Trades, Engineering and Architecture","dbn":"27Q650","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Metropolitan Expeditionary Learning School","dbn":"28Q167","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Queens Collegiate: A College Board School","dbn":"28Q310","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Hillside Arts & Letters Academy","dbn":"28Q325","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"High School for Community Leadership","dbn":"28Q328","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Queens Satellite High School for Opportunity","dbn":"28Q338","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Jamaica Gateway to the Sciences","dbn":"28Q350","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"Forest Hills High School","dbn":"28Q440","staff_completing_training":"10"}
+,{"school_year":"2015-16","location_name":"Hillcrest High School","dbn":"28Q505","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Thomas A. Edison Career and Technical Education High School","dbn":"28Q620","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Queens Gateway to Health Sciences Secondary School","dbn":"28Q680","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"QUEENS METROPOLITAN HIGH SCHOOL","dbn":"28Q686","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Queens High School for the Sciences at York College","dbn":"28Q687","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"High School for Law Enforcement and Public Safety","dbn":"28Q690","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Young Women's Leadership School, Queens","dbn":"28Q896","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Queens Preparatory Academy","dbn":"29Q248","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Pathways College Preparatory School: A College Board School","dbn":"29Q259","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Excelsior Preparatory High School","dbn":"29Q265","staff_completing_training":"3"}
+,{"school_year":"2015-16","location_name":"George Washington Carver High School for the Sciences","dbn":"29Q272","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Preparatory Academy for Writers: A College Board School","dbn":"29Q283","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Cambria Heights Academy","dbn":"29Q326","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Eagle Academy for Young Men III","dbn":"29Q327","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Mathematics, Science Research and Technology Magnet High School","dbn":"29Q492","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Law, Government and Community Service High School","dbn":"29Q494","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Business, Computer Applications & Entrepreneurship High School","dbn":"29Q496","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Humanities & Arts Magnet High School","dbn":"29Q498","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Young Women's Leadership School, Astoria","dbn":"30Q286","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Academy for Careers in Television and Film","dbn":"30Q301","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"William Cullen Bryant High School","dbn":"30Q445","staff_completing_training":"8"}
+,{"school_year":"2015-16","location_name":"Long Island City High School","dbn":"30Q450","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Frank Sinatra School of the Arts High School","dbn":"30Q501","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"Information Technology High School","dbn":"30Q502","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Newcomers High School","dbn":"30Q555","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Academy of American Studies","dbn":"30Q575","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Baccalaureate School for Global Education","dbn":"30Q580","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"CSI High School for International Studies","dbn":"31R047","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Gaynor McCown Expeditionary Learning School","dbn":"31R064","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"The Michael J. Petrides School","dbn":"31R080","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"New Dorp High School","dbn":"31R440","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Port Richmond High School","dbn":"31R445","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Curtis High School","dbn":"31R450","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Tottenville High School","dbn":"31R455","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"Susan E. Wagner High School","dbn":"31R460","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Concord High School","dbn":"31R470","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Ralph R. McKee Career and Technical Education High School","dbn":"31R600","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Staten Island Technical High School","dbn":"31R605","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"The Brooklyn School for Math and Research","dbn":"32K168","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Academy for Environmental Leadership","dbn":"32K403","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"EBC High School for Public Service - Bushwick","dbn":"32K545","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"Bushwick School for Social Justice","dbn":"32K549","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Academy of Urban Planning","dbn":"32K552","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"All City Leadership Secondary School","dbn":"32K554","staff_completing_training":"7"}
+,{"school_year":"2015-16","location_name":"Bushwick Leaders High School for Academic Excellence","dbn":"32K556","staff_completing_training":"8"}
+,{"school_year":"2015-16","location_name":"Bushwick Community High School","dbn":"32K564","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. 36","dbn":"75K036","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. K053","dbn":"75K053","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. K077","dbn":"75K077","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. K141","dbn":"75K141","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. 368","dbn":"75K368","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. K369 - Coy L. Cox School","dbn":"75K369","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. 370","dbn":"75K370","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. 371 - Lillian L. Rashkis","dbn":"75K371","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. 373 - Brooklyn Transition Center","dbn":"75K373","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. K396","dbn":"75K396","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. K721 - Brooklyn Occupational Training Center","dbn":"75K721","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. K753 - School for Career Development","dbn":"75K753","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"P.S. K771","dbn":"75K771","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. K811 Connie Lekas School","dbn":"75K811","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"P.S. M079 - Horan School","dbn":"75M079","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. 138","dbn":"75M138","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. M169 - Robert F. Kennedy","dbn":"75M169","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. M226","dbn":"75M226","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Hospital Schools","dbn":"75M401","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Home Instruction","dbn":"75M501","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. M721 - Manhattan Occupational Training Center","dbn":"75M721","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Manhattan School for Career Development","dbn":"75M751","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. Q004","dbn":"75Q004","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. 009","dbn":"75Q009","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. Q023 @ Queens Children Center","dbn":"75Q023","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Robert E. Peary School","dbn":"75Q075","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. Q177","dbn":"75Q177","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. Q233","dbn":"75Q233","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. Q255","dbn":"75Q255","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. Q256","dbn":"75Q256","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"John F. Kennedy Jr. School","dbn":"75Q721","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Queens Transition Center","dbn":"75Q752","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. Q811","dbn":"75Q811","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. Q993","dbn":"75Q993","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"South Richmond High School I.S./P.S. 25","dbn":"75R025","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"P.S. R037","dbn":"75R037","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"THE RICHARD H. HUNGERFORD SCHOOL","dbn":"75R721","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. X010","dbn":"75X010","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. X012 Lewis and Clark School","dbn":"75X012","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. 168","dbn":"75X168","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. X176","dbn":"75X176","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P186X Walter J. Damrosch School","dbn":"75X186","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. X188","dbn":"75X188","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. X721 - Stephen McSweeney School","dbn":"75X721","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"P.S. 723","dbn":"75X723","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"J. M. Rapport School Career Development","dbn":"75X754","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"P.S. X811","dbn":"75X811","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"D79","dbn":"79M585","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"D79","dbn":"79M645","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"D79","dbn":"79M973","staff_completing_training":"12"}
+,{"school_year":"2015-16","location_name":"D79","dbn":"79M984","staff_completing_training":"24"}
+,{"school_year":"2015-16","location_name":"D79","dbn":"79Q344","staff_completing_training":"9"}
+,{"school_year":"2015-16","location_name":"D79","dbn":"79Q950","staff_completing_training":"21"}
+,{"school_year":"2015-16","location_name":"D79","dbn":"79X695","staff_completing_training":"11"}
+,{"school_year":"2015-16","location_name":"Achievement First Crown Heights Charter School","dbn":"84K356","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"KIPP AMP Charter School","dbn":"84K357","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Achievement First East New York Charter School","dbn":"84K358","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"The Uft Charter School","dbn":"84K359","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Urban Dove Charter School","dbn":"84K417","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Urban Dove Charter School","dbn":"84K417","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Williamsburg Charter High School","dbn":"84K473","staff_completing_training":"14"}
+,{"school_year":"2015-16","location_name":"New Dawn Charter High School","dbn":"84K486","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Achievement First Endeavor Charter School","dbn":"84K508","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Achievement First Bushwick Charter School","dbn":"84K538","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Excellence Boys Charter School","dbn":"84K593","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Kings Collegiate Charter School","dbn":"84K608","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bedford Stuyvesant Collegiate Charter School","dbn":"84K648","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brooklyn Ascend Charter School","dbn":"84K652","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Northside Charter High School","dbn":"84K693","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Brooklyn Prospect Charter School","dbn":"84K707","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brownsville Collegiate Charter School","dbn":"84K710","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Excellence Girls Charter School","dbn":"84K712","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Fahari Academy Charter School","dbn":"84K726","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Summit Academy Charter School","dbn":"84K730","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brownsville Ascend Charter School","dbn":"84K737","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Coney Island Preparatory Public Charter School","dbn":"84K744","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Hyde Leadership Charter School- Brooklyn","dbn":"84K769","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Achievement First Apollo Charter School","dbn":"84K774","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Ocean Hill Collegiate Charter School","dbn":"84K777","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Brooklyn East Collegiate Charter School","dbn":"84K780","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"The Cultural Arts Academy at Spring Creek Charter School","dbn":"84K792","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bushwick Ascend Charter School","dbn":"84K793","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"The Opportunity Charter School","dbn":"84M279","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Harlem Children's Zone Promise Academy 1 Charter School","dbn":"84M284","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Harlem Village Academy Leadership Charter School","dbn":"84M335","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"KIPP Infinity Charter School","dbn":"84M336","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"New York Center for Autism Charter School","dbn":"84M337","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Democracy Prep Charter School","dbn":"84M350","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"New Heights Academy Charter School","dbn":"84M353","staff_completing_training":"2"}
+,{"school_year":"2015-16","location_name":"Renaissance Charter High School for Innovation","dbn":"84M433","staff_completing_training":"5"}
+,{"school_year":"2015-16","location_name":"New York French American Charter School","dbn":"84M483","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Broome Street Academy Charter School","dbn":"84M522","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"John V. Lindsay Wildcat Academy Charter School","dbn":"84M707","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Harlem Village Academy Charter School","dbn":"84M709","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"KIPP STAR College Prep Charter School","dbn":"84M726","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Renaissance Charter School","dbn":"84Q705","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"John W. Lavelle Preparatory Charter School","dbn":"84R067","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bronx Lighthouse Charter School","dbn":"84X185","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Bronx Charter School for Excellence","dbn":"84X255","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Hyde Leadership Charter School","dbn":"84X345","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"International Leadership Charter High School","dbn":"84X347","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"University Prep Charter High School","dbn":"84X393","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"NYC Charter High School for Architecture, Engineering and Construction Industries (AECI)","dbn":"84X395","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Metropolitan Lighthouse Charter School","dbn":"84X461","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Dr. Richard Izquierdo Health and Science Charter School","dbn":"84X482","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"The Equality Charter School","dbn":"84X488","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"New Visions Charter High School for Advanced Math and Science","dbn":"84X539","staff_completing_training":"4"}
+,{"school_year":"2015-16","location_name":"New Visions Charter High School for the Humanities","dbn":"84X553","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Bronx Preparatory Charter School","dbn":"84X703","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"KIPP Academy Charter School","dbn":"84X704","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Alternative Learning Center- Brooklyn East","dbn":"88K987","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Alternative Learning Center- Brooklyn East","dbn":"88K988","staff_completing_training":"0"}
+,{"school_year":"2015-16","location_name":"Alternative Learning Center- Manhattan","dbn":"88M994","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Alternative Learning Center- Queens","dbn":"88Q988","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Alternative Learning Center- Brooklyn West/Staten Island","dbn":"88R971","staff_completing_training":"1"}
+,{"school_year":"2015-16","location_name":"Alternative Learning Center - Queens/Sutphin","dbn":"88Q994","staff_completing_training":"1"}
+,{"dbn":"Total","staff_completing_training":"1074"}]

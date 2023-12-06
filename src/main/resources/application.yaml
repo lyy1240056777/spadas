@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+spadas:
+  dimension: 2
+  resolution: 10
+  leaf-capacity: 1000
+  cache-dataset: true
+  cache-index: true
+  save-index: true
+  frontend-limitation: 10000
+  file:
+    baseUri: ./dataset/
+    staticUri: /dataset/

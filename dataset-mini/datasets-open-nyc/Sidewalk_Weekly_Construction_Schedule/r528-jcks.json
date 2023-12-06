@@ -1,0 +1,75 @@
+[{"borough":"Bus Pad","location":"No Contract"}
+,{"borough":"Manhattan/Bronx","cb":"Complex HWP2013MX","contract_no":"7(X)","location":"SEC E. Gun Hill Rd & Hull Ave"}
+,{"contract_no":"6","location":"Columbia St and W 9th St"}
+,{"cb":"HWS2016Q2","contract_no":"7","location":"Various Expedited locations"}
+,{"contract_no":"7","location":"NWC 74th St & Broadway"}
+,{"contract_no":"9","location":"Jamaica Ave and 125th St"}
+,{"contract_no":"7","location":"NW/SWC 89th St. and Central Park West"}
+,{"contract_no":"7(X)","location":"SEC East Mosholu Pkwy N. & Webster Ave"}
+,{"cb":"Complex HWP14RTA","location":"No Work Scheduled"}
+,{"borough":"Manhattan","cb":"HWPR16M","location":"Construction has not yet started"}
+,{"contract_no":"9","location":"Jamaica Ave and 95th St"}
+,{"contract_no":"8","location":"NEC 5th Ave & 81St St"}
+,{"borough":"\"","contract_no":"3,6,7,8,9","location":"Expedited Locations"}
+,{"borough":"Pedestrian Ramp New Installation Contracts:"}
+,{"borough":"Staten Island","cb":"Landmark HWP14RLM","contract_no":"1","location":"NWC, NEC, SEC of Westervelt Ave and, Carroll Pl"}
+,{"contract_no":"2","location":"SWC and SEC of Christopher St and Gay St"}
+,{"cb":"Landmark HWP15XMTA","location":"Contract has not yet started"}
+,{"contract_no":"9","location":"Jamaica Ave and 96th St"}
+,{"contract_no":"7(X)","location":"SEC Bainbridge Ave & East 213 St"}
+,{"contract_no":"7(M)","location":"NEC W. 63 St & West End Ave"}
+,{"contract_no":"6(M)","location":"SEC E. 30 St & 2 Ave"}
+,{"borough":"Brooklyn","cb":"Complex HWP15KTA","contract_no":"1","location":"Ten Eyck St and Union Ave"}
+,{"borough":"Curb - Citywide","location":"No Contract"}
+,{"cb":"Complex HWP14MTA","contract_no":"8","location":"SWC E 73 St and Lexington Ave"}
+,{"contract_no":"2","location":"NEC of North Borden Ave & 30 St"}
+,{"contract_no":"2","location":"SWC of North Borden Ave & 30 St"}
+,{"contract_no":"2","location":"NEC, SEC , NC, SC of Richmond Ave and Richmond Hill Rd"}
+,{"borough":"Manhattan","cb":"Landmark HWP2013LM","contract_no":"2","location":"NEC, SEC,  NWC of Bedford St and Morton St"}
+,{"cb":"Complex HWP14QC","contract_no":"2","location":"NWC of 43 Rd and Vernon Blvd"}
+,{"contract_no":"2","location":"SEC of South Borden Ave & 30 St"}
+,{"cb":"Complex HWP15QTA","contract_no":"9","location":"Jamaica Ave and 126th St"}
+,{"contract_no":"7(X)","location":"NWC E. Gun Hill Rd & Putnam Pl"}
+,{"contract_no":"7(X)","location":"NEC E. Gun Hill Rd & Dekalb Ave"}
+,{"contract_no":"11","location":"NWC of Shiloh Ave & Little Neck Pkwy"}
+,{"cb":"Complex HWP16KC","location":"Contract has not yet started"}
+,{"contract_no":"2","location":"NWC, NEC, SEC of West Broadway and Grand St"}
+,{"contract_no":"6(M)","location":"SEC E. 39 St & Lexington Ave"}
+,{"borough":"Queens","cb":"HWS2016Q1","contract_no":"13","location":"1-3 Family Properties & 4+ Claims"}
+,{"contract_no":"2","location":"NWC of South Borden Ave & 30 St"}
+,{"borough":"Manhattan/Bronx","cb":"HWS2016XM","location":"No construction scheduled"}
+,{"borough":"Pedestrian Ramp Upgrade Contracts:"}
+,{"cb":"Complex HWP14MLM","contract_no":"8","location":"NEC 5th Ave & 86th St"}
+,{"cb":"HWPR17M","location":"Construction has not yet started"}
+,{"contract_no":"7(X)","location":"NEC E. Gun Hill Road & Kings College Pl"}
+,{"borough":"Queens","cb":"Complex HWP14QTA","location":"No Work Scheduled"}
+,{"borough":"Staten Island","cb":"HWS2016R1","contract_no":"1","location":"NYCHA Construction - Housing Development \"Richmond Terrace\""}
+,{"contract_no":"2","location":"SWC of South Borden Ave & 30 St"}
+,{"borough":"\"","cb":"HWS2016R2","contract_no":"3","location":"1-3 Family Properties"}
+,{"cb":"Landmark HWP15XMCL","location":"Contract has not yet started"}
+,{"contract_no":"2","location":"SWC, SEC, NWC, NEC of Grove St and Bedford St"}
+,{"contract_no":"3","location":"NEC of Amboy Rd and Montreal Ave"}
+,{"contract_no":"7(X)","location":"NWC Bainbridge Ave & East 211 St"}
+,{"cb":"HWS2016K2","contract_no":"12","location":"1 - 3 family houses"}
+,{"cb":"Simple Complex HWP15RSC","location":"Contract has not yet started"}
+,{"cb":"Landmark HWP15KCL","contract_no":"7","location":"Bond St and Pacific St"}
+,{"cb":"Complex HWP16MTAL","location":"Construction has not yet started"}
+,{"contract_no":"6","location":"Visitation Pl and Richards St"}
+,{"borough":"Manhattan","cb":"HWS2016M","location":"NYCHA Construction - Housing Development \"Smith Houses\""}
+,{"borough":"Citywide","cb":"HWPR17CW","location":"Construction has not yet started"}
+,{"contract_no":"2","location":"NWC, SWC, NC, SC of Richmond Ave and Rockland Ave"}
+,{"contract_no":"2","location":"SWC, NWC, SEC of Charles St and Waverly Pl"}
+,{"contract_no":"1","location":"SEC, SWC of Hamilton Ave and, Curtis Pl"}
+,{"borough":"Brooklyn","cb":"HWS2016K1","contract_no":"3","location":"NYCHA Construction - Housing Development \"Wycoff Houses\""}
+,{"contract_no":"2","location":"SWC, NWC, SEC of Christopher St and Waverly Pl"}
+,{"contract_no":"2","location":"NEC, SEC, SWC, NWC Bedford St and Commerce St"}
+,{"cb":"HWS2017Q1","location":"Construction has not yet started"}
+,{"contract_no":"1","location":"SEC of Westervelt Ave and, Richmond Terr"}
+,{"contract_no":"11","location":"Expedited"}
+,{"borough":"Sidewalk Contracts:"}
+,{"borough":"Bronx","location":"No Contract"}
+,{"borough":"Bronx","location":"No Contract"}
+,{"contract_no":"8","location":"SEC E 73 St and Lexington Ave"}
+,{"contract_no":"7","location":"NW/SWC 88th St. and Central Park West"}
+,{"borough":"Staten Island","cb":"HWPR17R","location":"Construction has not yet started"}
+,{"contract_no":"1","location":"NEC, SEC of Westervelt Ave and, St. Marks Pl"}]

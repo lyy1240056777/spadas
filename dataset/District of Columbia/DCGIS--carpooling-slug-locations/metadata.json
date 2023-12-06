@@ -1,0 +1,16 @@
+{
+    "Title": "Carpooling Slug Locations [District of Columbia--Washington]",
+    "Description": "This layer shows slugging locations (pick-up and drop-off points) for casual carpooling. The data was originally obtained from Sluglines.com.",
+    "Creator": "D.C. Office of the Chief Technology Officer",
+    "Provider": "Open Data DC",
+    "Resource Class": "Datasets and Web services",
+    "Resource Type": "Vector data",
+    "Temporal Coverage": "Continually updated resource",
+    "Date Issued": "2017-03-08",
+    "Place": "District of Columbia--Washington, District of Columbia",
+    "Rights": "http://creativecommons.org/licenses/by/4.0",
+    "Access Rights": "Public",
+    "Format": "Shapefile",
+    "Language": "English",
+    "Date Added": "2023-03-08"
+}
