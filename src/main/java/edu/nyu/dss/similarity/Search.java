@@ -435,7 +435,7 @@ public class Search {
      */
     public HashMap<Integer, Double> pruneByIndex(Map<Integer, double[][]> dataMap, IndexNode datalakeRoot, IndexNode query,
                                                  int dimension, Map<Integer, IndexNode> indexMap,
-                                                 Map<Integer, Map<Integer, IndexNode>> nodelist1, Map<Integer, IndexNode> queryindexmap, Map<Integer, IndexNode> datalakeIndex,
+                                                 Map<Integer, Map<Integer, IndexNode>> nodelist1, Map<Integer, IndexNode> datalakeIndex,
                                                  Map<Integer, String> argoDataMap, int k, String indexString, boolean nonselectedDimension[], boolean dimensionAll,
                                                  double error, int capacity, double weight[], boolean saveDatasetIndex, double[][] querydata) throws FileNotFoundException, IOException {
 //        为了提高查询准确度，不管前端提供的k为多少，统一查询前100个近邻数据集，然后再取前k个
@@ -471,7 +471,7 @@ public class Search {
                 Pair<Double, PriorityQueue<queueMain>> aPair;
                 if (nodelist1 != null) // index loaded from disk
                     aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, query,
-                            nodelist1.get(datasetid).get(1), 0, 1, error, false, min_dis, false, queryindexmap, nodelist1.get(datasetid), nonselectedDimension, dimensionAll);
+                            nodelist1.get(datasetid).get(1), 0, 1, error, false, min_dis, false, null, nodelist1.get(datasetid), nonselectedDimension, dimensionAll);
                 else {// index not loaded in disk
                     if (indexMap != null)// index in memory
                         aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, query,
@@ -480,7 +480,7 @@ public class Search {
                         if (saveDatasetIndex) {// load from disk
                             Map<Integer, IndexNode> dataindexMap = indexDSS.restoreSingleIndex(indexString, datasetid, dimension);
                             aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, query,
-                                    dataindexMap.get(1), 0, 1, error, false, min_dis, false, queryindexmap, dataindexMap, nonselectedDimension, dimensionAll);
+                                    dataindexMap.get(1), 0, 1, error, false, min_dis, false, null, dataindexMap, nonselectedDimension, dimensionAll);
                         } else {    // create index if both memory and disk version are not available
                             IndexNode rootBall = indexDSS.buildBalltree2(dataset, dimension, capacity, null, null, weight);
                             aPair = AdvancedHausdorff.IncrementalDistance(querydata, dataset, dimension, query,

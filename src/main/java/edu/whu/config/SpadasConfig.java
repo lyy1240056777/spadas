@@ -1,8 +1,7 @@
-package edu.nyu.dss.similarity.config;
+package edu.whu.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -22,6 +21,15 @@ public class SpadasConfig {
     private boolean saveIndex;
 
     private int frontendLimitation;
+
+    /**
+     * 指定数据文件夹创建对应的路网
+     */
+    private String defaultRoadmap;
+
+    private int slidePerSide;
+    
+    private RoadmapConfig[] roadMaps;
 
     private FileConfig file;
 

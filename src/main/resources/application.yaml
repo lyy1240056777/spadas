@@ -14,6 +14,15 @@ spadas:
   cache-index: true
   save-index: true
   frontend-limitation: 10000
+  default-roadmap: Pittsburgh
+  slide-per-side: 100
+  roadmaps:
+    - name: Pittsburgh
+      lat-range: -80.0363, -79.9310
+      lng-range: 40.4191, 40.4773
+    - name: new-york-road
+      lat-range: -74.214328, -73.726123
+      lng-range: 40.622748, 40.884902
   file:
     baseUri: ./dataset/
     staticUri: /dataset/

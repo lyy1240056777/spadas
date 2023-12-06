@@ -1,17 +1,13 @@
 package edu.nyu.dss.similarity.datasetReader;
 
-import edu.nyu.dss.similarity.config.SpadasConfig;
+import edu.whu.config.SpadasConfig;
 import edu.nyu.dss.similarity.index.IndexBuilder;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 
 @Component

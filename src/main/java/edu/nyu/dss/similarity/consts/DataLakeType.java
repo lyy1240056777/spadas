@@ -36,7 +36,7 @@ public enum DataLakeType {
         Object[] types = Arrays.stream(DataLakeType.values()).sorted(Comparator.comparingInt(a -> a.id)).toArray();
         for (int i = types.length - 1; i >= 0; i--) {
             if ((((DataLakeType) types[i]).func.apply(folder))) {
-                System.out.println(String.format("we match the file %s with type %s", folder.getName(), ((DataLakeType) types[i]).name()));
+                System.out.println(String.format("Match the directory %s with type %s", folder.getName(), ((DataLakeType) types[i]).name()));
                 return (DataLakeType) types[i];
             }
         }

@@ -2,7 +2,7 @@ package edu.nyu.dss.similarity.index;
 
 import edu.nyu.dss.similarity.CityNode;
 import edu.nyu.dss.similarity.EffectivenessStudy;
-import edu.nyu.dss.similarity.config.SpadasConfig;
+import edu.whu.config.SpadasConfig;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -72,7 +72,7 @@ public class IndexBuilder {
             cityNode.nodeList.add(rootBall);
             cityNode.nodeCount += 1;
         }
-        indexDSS.setGloabalid();
+        indexDSS.ResetGlobalID();
         rootBall.setroot(a);// set an id to identify which dataset it belongs to
 //        if (a < limit) {
 //            indexNodes.add(rootBall);
