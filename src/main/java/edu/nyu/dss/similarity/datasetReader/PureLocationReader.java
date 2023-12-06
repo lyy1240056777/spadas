@@ -32,9 +32,6 @@ public class PureLocationReader extends AbsReader {
     private PointCounter pointCounter;
 
     @Autowired
-    private DatasetPerDir datasetPerDir;
-
-    @Autowired
     private DatasetIDMapping datasetIDMapping;
 
     @Autowired
@@ -90,7 +87,6 @@ public class PureLocationReader extends AbsReader {
             datasetSizeCounter.put(i);
             if (config.isCacheDataset()) {
                 dataMapPorto.put(fileNo, data);
-                datasetPerDir.put(datasetIDForOneDir, data);
             }
             if (config.isCacheIndex()) {
 //				createDatasetIndex(fileNo, xxx,1);

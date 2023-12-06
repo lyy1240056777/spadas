@@ -91,9 +91,6 @@ public class FrameworkService {
     @Autowired
     private DatasetProperties datasetProperties;
 
-    @Autowired
-    private ZCodeMapForLake zCodeMapForLake;
-
     public List<DatasetVo> rangequery(RangeQueryParams qo) {
         HashMap<Integer, Double> result = new HashMap<>();
         IndexNode root = framework.datasetRoot;

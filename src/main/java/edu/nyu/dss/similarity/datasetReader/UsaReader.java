@@ -30,9 +30,6 @@ public class UsaReader {
     private PointCounter pointCounter;
 
     @Autowired
-    private DatasetPerDir datasetPerDir;
-
-    @Autowired
     private DataMapPorto dataMapPorto;
 
     @Autowired
@@ -91,7 +88,6 @@ public class UsaReader {
             datasetSizeCounter.put(i);
             if (config.isCacheDataset()) {
                 dataMapPorto.put(fileNo, data);
-                datasetPerDir.put(datasetIDForOneDir, data);
             }
             if (config.isCacheIndex()) {
 //				createDatasetIndex(fileNo, xxx,1);
@@ -108,9 +104,6 @@ public class UsaReader {
             node.setSignautre(zCodeMap.get(fileNo).stream().mapToInt(Integer::intValue).toArray());
             indexBuilder.storeZCurveForEMD(data, fileNo, 180, 360, -90, -180);
 //                EffectivenessStudy.SerializedZcurve(zcodemap);
-        }
-        if (list.isEmpty()) {
-            System.out.println(fileNo + " " + dataFile.getName());
         }
         return dataMapPorto;
     }

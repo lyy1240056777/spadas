@@ -170,31 +170,6 @@ public class Framework {
         }
     }
 
-    /*
-     * storing the z-curve
-     */
-    /*@SuppressWarnings("unused")
-    public void storeZCurveForEMD(double[][] dataset, int datasetId, double xRange, double yRange, double minx, double miny, HashMap<Integer, HashMap<Long, Double>> zcodeMapTmp) {
-        int pointCnt = dataset.length;
-        int numberCells = (int) Math.pow(2, config.getResolution());
-        double xUnit = xRange / numberCells;
-        double yUnit = yRange / numberCells;
-        double weightUnit = 1.0 / pointCnt;
-        HashMap<Long, Double> zcodeItemMap = new HashMap<>();
-        for (double[] doubles : dataset) {
-            int x = (int) ((doubles[0] - minx) / xUnit);
-            int y = (int) ((doubles[1] - miny) / yUnit);
-            long zcode = EffectivenessStudy.combine(x, y, config.getResolution());
-            if (zcodeItemMap.containsKey(zcode)) {
-                double val = zcodeItemMap.get(zcode);
-                zcodeItemMap.put(zcode, val + weightUnit);
-            } else {
-                zcodeItemMap.put(zcode, weightUnit);
-            }
-        }
-        zcodeMapTmp.put(datasetId, zcodeItemMap);
-    }*/
-
     public int[] generateZcurveForRange(double[] minRange, double[] maxRange) {
         int numberCells = (int) Math.pow(2, config.getResolution());
         double unit = spaceRange / numberCells;
@@ -405,8 +380,8 @@ public class Framework {
         clearAll();
         readDatalake(config.getFrontendLimitation());
         createDatalake(config.getFrontendLimitation());
-//        loadTrajectoryIndex(defaultTrajectoryDataset());
-//        initTestRoadmap(10000);
+        loadTrajectoryIndex(defaultTrajectoryDataset());
+        initTestRoadmap(10000);
         log.info("All data loaded.");
     }
 
