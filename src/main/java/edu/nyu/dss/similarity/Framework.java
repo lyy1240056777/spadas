@@ -124,7 +124,8 @@ public class Framework {
         }
         for (File file : fileNames) {
             if (file.isDirectory()) {
-                readFolder(file, limit, cityNode, datasetIDForOneDir++, datasetIdMappingItem, type);
+//                datasetIDForOneDir++ -> datasetIDForOneDir
+                readFolder(file, limit, cityNode, datasetIDForOneDir, datasetIdMappingItem, type);
             } else {
 //				if (!isfolderVisited) {
 //					dataLakeMapping.put(index, new ArrayList<>());
@@ -169,31 +170,6 @@ public class Framework {
         }
     }
 
-    /*
-     * storing the z-curve
-     */
-    @SuppressWarnings("unused")
-    public void storeZcurveForEMD(double[][] dataset, int datasetId, double xRange, double yRange, double minx, double miny, HashMap<Integer, HashMap<Long, Double>> zcodeMapTmp) {
-        int pointCnt = dataset.length;
-        int numberCells = (int) Math.pow(2, config.getResolution());
-        double xUnit = xRange / numberCells;
-        double yUnit = yRange / numberCells;
-        double weightUnit = 1.0 / pointCnt;
-        HashMap<Long, Double> zcodeItemMap = new HashMap<>();
-        for (double[] doubles : dataset) {
-            int x = (int) ((doubles[0] - minx) / xUnit);
-            int y = (int) ((doubles[1] - miny) / yUnit);
-            long zcode = EffectivenessStudy.combine(x, y, config.getResolution());
-            if (zcodeItemMap.containsKey(zcode)) {
-                double val = zcodeItemMap.get(zcode);
-                zcodeItemMap.put(zcode, val + weightUnit);
-            } else {
-                zcodeItemMap.put(zcode, weightUnit);
-            }
-        }
-        zcodeMapTmp.put(datasetId, zcodeItemMap);
-    }
-
     public int[] generateZcurveForRange(double[] minRange, double[] maxRange) {
         int numberCells = (int) Math.pow(2, config.getResolution());
         double unit = spaceRange / numberCells;
@@ -225,7 +201,7 @@ public class Framework {
     private void readDatalake(int limit) throws IOException {
         File folder = new File(config.getFile().getBaseUri());
         String[] files = folder.list();
-        HashMap<Integer, String> datasetIdMappingItem = null;
+        HashMap<Integer, String> datasetIdMappingItem;
         for (File subFolder : Objects.requireNonNull(folder.listFiles())) {
             if (subFolder.isFile()) {
                 continue;

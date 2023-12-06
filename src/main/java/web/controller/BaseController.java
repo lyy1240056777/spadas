@@ -88,7 +88,7 @@ public class BaseController {
     }
 
     @RequestMapping(value = "spadas/api/dsquery", method = RequestMethod.POST)
-    public Map<String, Object> datasetQuery(@RequestBody DatasetQueryParams qo) throws IOException {
+    public Map<String, Object> datasetQuery(@RequestBody DatasetQueryParams qo) throws IOException, CloneNotSupportedException {
         List<DatasetVo> result = framework.datasetQuery(qo);
         return new HashMap() {{
             put("nodes", result);

@@ -33,9 +33,6 @@ public class ArgoReader {
     private PointCounter pointCounter;
 
     @Autowired
-    private DatasetPerDir datasetPerDir;
-
-    @Autowired
     private DatasetIDMapping datasetIDMapping;
 
     @Autowired

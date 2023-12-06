@@ -33,9 +33,6 @@ public class ChinaReader {
     private PointCounter pointCounter;
 
     @Autowired
-    private DatasetPerDir datasetPerDir;
-
-    @Autowired
     private DatasetIDMapping datasetIDMapping;
 
     @Autowired
@@ -49,7 +46,6 @@ public class ChinaReader {
 
     @Autowired
     private FilePathIndex filePathIndex;
-
 
     public Map<Integer, double[][]> read(File file, int fileNo, CityNode cityNode, int datasetIDForOneDir) throws IOException {
         if (!file.getName().endsWith("csv")) {
@@ -98,7 +94,6 @@ public class ChinaReader {
             datasetSizeCounter.put(i);
             if (config.isCacheDataset()) {
                 dataMapPorto.put(fileNo, data);
-                datasetPerDir.put(datasetIDForOneDir, data);
             }
             if (config.isCacheIndex()) {
 //				createDatasetIndex(fileNo, xxx,1);
@@ -110,6 +105,7 @@ public class ChinaReader {
             datasetIDMapping.put(fileNo, shortName);
             fileIDMap.put(fileNo, file);
             filePathIndex.put(file.getAbsolutePath(), fileNo);
+            indexBuilder.storeZCurveForEMD(data, fileNo, 180, 360, -90, -180);
         }
         return dataMapPorto;
     }

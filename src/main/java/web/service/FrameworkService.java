@@ -83,13 +83,13 @@ public class FrameworkService {
     private ZCodeMap zCodeMap;
 
     @Autowired
+    private ZCodeMapEmd zCodeMapEmd;
+
+    @Autowired
     private EffectivenessStudy effectivenessStudy;
 
     @Autowired
     private DatasetProperties datasetProperties;
-
-    @Autowired
-    private ZCodeMapForLake zCodeMapForLake;
 
     public List<DatasetVo> rangequery(RangeQueryParams qo) {
         HashMap<Integer, Double> result = new HashMap<>();
@@ -164,7 +164,7 @@ public class FrameworkService {
         return finalResult.subList(0, k);
     }
 
-    public List<DatasetVo> datasetQuery(DatasetQueryParams qo) throws IOException {
+    public List<DatasetVo> datasetQuery(DatasetQueryParams qo) throws IOException, CloneNotSupportedException {
 //        indexNode queryNode;
         IndexNode queryNode = indexMap.get(qo.getDatasetId());
         double[][] data = dataMapPorto.get(qo.getDatasetId());
@@ -194,11 +194,11 @@ public class FrameworkService {
             case EMD -> {
 //            emd
 //                int[] queryID = convertID(qo.getDatasetId());
-//                PriorityQueue<relaxIndexNode> resQueue = EMD(queryID[0], queryID[1], qo.getK());
-//                while (!resQueue.isEmpty()) {
-//                    relaxIndexNode rin = resQueue.poll();
-//                    result.put(convertID(queryID[0], rin.getResultId()), rin.getLb());
-//                }
+                PriorityQueue<relaxIndexNode> resQueue = EMD(qo.getDatasetId(), qo.getK());
+                while (!resQueue.isEmpty()) {
+                    relaxIndexNode rin = resQueue.poll();
+                    result.put(rin.getResultId(), rin.getLb());
+                }
             }
             default -> {
             }
@@ -348,7 +348,7 @@ public class FrameworkService {
         // find related datasets
         try {
             relatedDatasets = datasetQuery(options);
-        } catch (IOException e) {
+        } catch (IOException | CloneNotSupportedException e) {
             log.warn("Error finding related datasets for {}", datasetID);
         }
         // prepare the data
@@ -374,17 +374,17 @@ public class FrameworkService {
         return trajectoryDataIndex.get(datasetId);
     }
 
-    public PriorityQueue<relaxIndexNode> EMD(int dataDirID, int datasetQueryID, int topk) throws CloneNotSupportedException {
-        HashMap<Integer, HashMap<Long, Double>> mapForDir = zCodeMapForLake.get(dataDirID);
-        HashMap<Long, Double> mapQuery = mapForDir.get(datasetQueryID);
+    public PriorityQueue<relaxIndexNode> EMD(int queryId, int topk) throws CloneNotSupportedException {
+//        HashMap<Integer, HashMap<Long, Double>> mapForDir =
+//        HashMap<Long, Double> mapQuery = mapForDir.get(datasetQueryID);
         HashMap<Integer, ArrayList<double[]>> allHistogram = new HashMap<>();
-        double[][] iterMatrix = new double[mapForDir.size()][config.getDimension()];
-        double[] ubMove = new double[mapForDir.size()];
-        int[] histogram_name = new int[mapForDir.size()];
+        double[][] iterMatrix = new double[zCodeMapEmd.size()][config.getDimension()];
+        double[] ubMove = new double[zCodeMapEmd.size()];
+        int[] histogram_name = new int[zCodeMapEmd.size()];
 //        signature_t querySignature = new signature_t();
         double[] query = new double[config.getDimension()];
         double radiusQuery = 0;
-        SignatureT querySignature = getAllData(mapForDir, datasetQueryID, allHistogram, iterMatrix, ubMove, histogram_name, query, radiusQuery);
+        SignatureT querySignature = getAllData(queryId, allHistogram, iterMatrix, ubMove, histogram_name, query, radiusQuery);
         int leafThreshold = 10;
         int maxDepth = 15;
         IndexNode ballTree = ball_tree.create(ubMove, iterMatrix, leafThreshold, maxDepth, config.getDimension());
@@ -396,7 +396,8 @@ public class FrameworkService {
         int refineCount = 0;
 
         for (int id : firstFlterResult) {
-            SignatureT data = getSignature(id - 1, allHistogram);
+//            id - 1 -> id
+            SignatureT data = getSignature(id, allHistogram);
             double emdLB = re.tighter_ICT(data, querySignature);
             if (resultApprox.size() < topk) {
                 relaxIndexNode in = new relaxIndexNode(id, emdLB);
@@ -427,31 +428,32 @@ public class FrameworkService {
         return resultApprox;
     }
 
-    public SignatureT getAllData(HashMap<Integer, HashMap<Long, Double>> mapForDir, int datasetQueryID, HashMap<Integer, ArrayList<double[]>> allHistogram,
+    public SignatureT getAllData(int datasetQueryId, HashMap<Integer, ArrayList<double[]>> allHistogram,
                                  double[][] iterMatrix, double[] ubMove, int[] histogram_name, double[] query, double queryRadius) {
         ArrayList<double[]> l = new ArrayList<>();
         DoubleArrayList ub = new DoubleArrayList();
-        ArrayList<String[]> datasetList_after_pooling = getPooling(mapForDir);
+        Map<Integer, String[]> datasetList_after_pooling = getPooling(zCodeMapEmd);
         ArrayList<Integer> his = new ArrayList(); //his coresponding to the all histogram_name
         ArrayList<Integer> datasetID = new ArrayList<>();
         int numberOfLine = 0;
         SignatureT querySignature = null;
-        while (numberOfLine < mapForDir.size()) {
+        for (Map.Entry<Integer, HashMap<Long, Double>> entry : zCodeMapEmd.entrySet()) {
             ArrayList<double[]> allPoints = new ArrayList<>();
-            HashMap<Long, Double> map1 = mapForDir.get(numberOfLine);
-            for (long key : map1.keySet()) {
+            int id = entry.getKey();
+            HashMap<Long, Double> map = entry.getValue();
+            for (long key : map.keySet()) {
                 long[] coord = resolve(key);
                 double[] d = new double[3];
                 d[0] = Double.parseDouble(String.valueOf(coord[0]));
                 d[1] = Double.parseDouble(String.valueOf(coord[1]));
-                d[2] = map1.get(key);
+                d[2] = map.get(key);
                 allPoints.add(d);
             }
             //sampleData
-            String[] buf = datasetList_after_pooling.get(numberOfLine);
-            allHistogram.put(numberOfLine, allPoints);
+            String[] buf = datasetList_after_pooling.get(id);
+            allHistogram.put(id, allPoints);
 //            datasetID.add(numberOfLine);
-            if (numberOfLine == datasetQueryID) {
+            if (id == datasetQueryId) {
                 //sampleData
 //                query = new double[dimension];
                 query[0] = Double.parseDouble(buf[1]);
@@ -475,7 +477,47 @@ public class FrameworkService {
             his.add(Integer.parseInt(buf[0]));
             ub.add(Double.parseDouble(buf[3]));
             numberOfLine++;
-        }
+        };
+        /*while (numberOfLine < zCodeMapEmd.size()) {
+            ArrayList<double[]> allPoints = new ArrayList<>();
+            HashMap<Long, Double> map1 = zCodeMapEmd.get(numberOfLine);
+            for (long key : map1.keySet()) {
+                long[] coord = resolve(key);
+                double[] d = new double[3];
+                d[0] = Double.parseDouble(String.valueOf(coord[0]));
+                d[1] = Double.parseDouble(String.valueOf(coord[1]));
+                d[2] = map1.get(key);
+                allPoints.add(d);
+            }
+            //sampleData
+            String[] buf = datasetList_after_pooling.get(numberOfLine);
+            allHistogram.put(numberOfLine, allPoints);
+//            datasetID.add(numberOfLine);
+            if (numberOfLine == datasetQueryId) {
+                //sampleData
+//                query = new double[dimension];
+                query[0] = Double.parseDouble(buf[1]);
+                query[1] = Double.parseDouble(buf[2]);
+                queryRadius = Double.parseDouble(buf[3]);
+
+                int n = allPoints.size();
+                FeatureT[] features = new FeatureT[n];
+                double[] weights = new double[n];
+                for (int i = 0; i < n; i++) {
+                    features[i] = new FeatureT(allPoints.get(i)[0], allPoints.get(i)[1]);
+                    weights[i] = allPoints.get(i)[2];
+                }
+                querySignature = new SignatureT(n, features, weights);
+            }
+            //sampleData
+            double[] corrd = new double[config.getDimension()];
+            corrd[0] = Double.parseDouble(buf[1]);
+            corrd[1] = Double.parseDouble(buf[2]);
+            l.add(corrd);
+            his.add(Integer.parseInt(buf[0]));
+            ub.add(Double.parseDouble(buf[3]));
+            numberOfLine++;
+        }*/
         //sampleData
         int countOfRow = numberOfLine;
 //        iterMatrix = new double[countOfRow][dimension];
@@ -491,8 +533,8 @@ public class FrameworkService {
         return querySignature;
     }
 
-    public ArrayList<String[]> getPooling(HashMap<Integer, HashMap<Long, Double>> mapForDir) {
-        ArrayList<String[]> dataSetList_after_pooling = new ArrayList<>();
+    public Map<Integer, String[]> getPooling(HashMap<Integer, HashMap<Long, Double>> mapForDir) {
+        Map<Integer, String[]> datasetMap_after_pooling = new HashMap<>();
         pooling p = new pooling();
         mapForDir.forEach((k, v) -> {
             HashMap<Long, Double> map1 = v;
@@ -504,14 +546,14 @@ public class FrameworkService {
                 throw new RuntimeException(e);
             }
             double ub_move = p.getUb();
-            String[] string = new String[4];
-            string[0] = String.valueOf(k);
-            string[1] = String.valueOf(s1_pooling.Features[0].X);
-            string[2] = String.valueOf(s1_pooling.Features[0].Y);
-            string[3] = String.valueOf(ub_move);
-            dataSetList_after_pooling.add(string);
+            String[] strings = new String[4];
+            strings[0] = String.valueOf(k);
+            strings[1] = String.valueOf(s1_pooling.Features[0].X);
+            strings[2] = String.valueOf(s1_pooling.Features[0].Y);
+            strings[3] = String.valueOf(ub_move);
+            datasetMap_after_pooling.put(k, strings);
         });
-        return dataSetList_after_pooling;
+        return datasetMap_after_pooling;
     }
 
     public SignatureT getSignature(HashMap<Long, Double> map) {

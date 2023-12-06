@@ -27,6 +27,7 @@ import java.util.Set;
 
 
 import edu.rmit.trajectory.clustering.kmeans.IndexNode;
+import lombok.Getter;
 
 /**
  * Ball tree.
@@ -199,6 +200,7 @@ public class BallTreeMatrix extends BinaryTree {
         public double radius;
         public int[] rows;//it
         public final double[][] itemMatrix;
+        @Getter
         public double[] ubMove;
 
         public void setCenter(double[] center) {
@@ -225,10 +227,6 @@ public class BallTreeMatrix extends BinaryTree {
             this.rowsID = rows;
             this.calculateCenter();
             this.calculateRadius();
-        }
-
-        public double[] getUbMove() {
-            return ubMove;
         }
 
         @Override
