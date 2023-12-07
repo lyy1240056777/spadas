@@ -1,7 +1,7 @@
 package edu.nyu.dss.similarity;
 
 import edu.nyu.dss.similarity.index.DatasetIDMapping;
-import lombok.val;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +14,9 @@ import web.param.DatasetQueryParams;
 import web.service.FrameworkService;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SpadasWebApplication.class)
 public class DatasetQueryTest {
@@ -25,40 +25,36 @@ public class DatasetQueryTest {
 
     @Autowired
     private DatasetIDMapping datasetIdMapping;
-    
+
     @Test
     public void generalDatasetQueryTest() throws IOException, CloneNotSupportedException {
-        DatasetQueryParams params = new DatasetQueryParams();
-        List<DatasetVo> vos = new ArrayList<>();
         int queryId = 300;
-        params.setMode(QueryMode.Haus);
+
+        DatasetQueryParams params = new DatasetQueryParams();
         params.setDatasetId(queryId);
-        datasetIdMapping.get(queryId);
-        vos = frameworkService.datasetQuery(params);
-        for (DatasetVo vo : vos) {
-            System.out.println(vo.getId() + " " + vo.getFilename());
-        }
-        System.out.println("*************");
+        
+        String datasetName = datasetIdMapping.get(queryId);
+        log.info("current dataset name is {}, id is {}", datasetName, queryId);
 
+        params.setMode(QueryMode.Haus);
+        query(params);
         params.setMode(QueryMode.IA);
-        vos = frameworkService.datasetQuery(params);
-        for (DatasetVo vo : vos) {
-            System.out.println(vo.getId() + " " + vo.getFilename());
-        }
-        System.out.println("*************");
-
-//        params.setMode(QueryMode.GBO);
-//        vos = frameworkService.datasetQuery(params);
-//        for (DatasetVo vo : vos) {
-//            System.out.println(vo.getId() + " " + vo.getFilename());
-//        }
-//        System.out.println("*************");
-
+        query(params);
+        params.setMode(QueryMode.GBO);
+        query(params);
         params.setMode(QueryMode.EMD);
-        vos = frameworkService.datasetQuery(params);
+        query(params);
+    }
+
+    private void query(DatasetQueryParams params) throws IOException, CloneNotSupportedException {
+        List<DatasetVo> vos = frameworkService.datasetQuery(params);
+        log.info("EMD:");
+        printDatasetVo(vos);
+    }
+
+    private void printDatasetVo(List<DatasetVo> vos) {
         for (DatasetVo vo : vos) {
             System.out.println(vo.getId() + " " + vo.getFilename());
         }
-        System.out.println("*************");
     }
 }

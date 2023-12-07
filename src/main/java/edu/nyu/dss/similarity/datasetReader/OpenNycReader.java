@@ -3,7 +3,7 @@ package edu.nyu.dss.similarity.datasetReader;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import edu.nyu.dss.similarity.CityNode;
-import edu.nyu.dss.similarity.config.SpadasConfig;
+import edu.whu.config.SpadasConfig;
 import edu.nyu.dss.similarity.index.*;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;

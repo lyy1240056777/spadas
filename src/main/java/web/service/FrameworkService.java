@@ -1,7 +1,7 @@
 package web.service;
 
 import edu.nyu.dss.similarity.*;
-import edu.nyu.dss.similarity.config.SpadasConfig;
+import edu.whu.config.SpadasConfig;
 import edu.nyu.dss.similarity.datasetReader.SingleFileReader;
 import edu.nyu.dss.similarity.datasetReader.UploadReader;
 import edu.nyu.dss.similarity.index.*;
@@ -91,7 +91,7 @@ public class FrameworkService {
     @Autowired
     private DatasetProperties datasetProperties;
 
-    public List<DatasetVo> rangequery(RangeQueryParams qo) {
+    public List<DatasetVo> rangeQuery(RangeQueryParams qo) {
         HashMap<Integer, Double> result = new HashMap<>();
         IndexNode root = framework.datasetRoot;
 //        为什么需要根节点参与？
@@ -156,10 +156,9 @@ public class FrameworkService {
 
     public List<DatasetVo> datasetQuery(IndexNode queryNode, double[][] data, int k) throws IOException {
         HashMap<Integer, Double> result = search.pruneByIndex(dataMapPorto, framework.datasetRoot, queryNode,
-                config.getDimension(), indexMap, datasetIndex, null, datalakeIndex, datasetIdMapping, k,
+                config.getDimension(), indexMap, datasetIndex, datalakeIndex, datasetIdMapping, k,
                 indexString, null, true, 0, config.getLeafCapacity(), null, config.isSaveIndex(), data);
-        List<DatasetVo> finalResult = new ArrayList<>();
-        finalResult.addAll(result.entrySet().stream().sorted((o1, o2) -> (int) (o1.getValue() - o2.getValue())).
+        List<DatasetVo> finalResult = new ArrayList<>(result.entrySet().stream().sorted((o1, o2) -> (int) (o1.getValue() - o2.getValue())).
                 map(i -> new DatasetVo(i.getKey(), indexMap.get(i.getKey()), datasetIdMapping.get(i.getKey()), dataSamplingMap.get(i.getKey()), indexMap.get(i.getKey()).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i.getKey()) : null)).toList());
         return finalResult.subList(0, k);
     }
@@ -173,7 +172,7 @@ public class FrameworkService {
         switch (qo.getMode()) {
             case Haus -> // HausDist
                     result = search.pruneByIndex(dataMapPorto, framework.datasetRoot, queryNode,
-                            qo.getDim(), indexMap, datasetIndex, null, datalakeIndex, datasetIdMapping, qo.getK(),
+                            qo.getDim(), indexMap, datasetIndex, datalakeIndex, datasetIdMapping, qo.getK(),
                             indexString, null, true, qo.getError(), config.getLeafCapacity(), null, config.isSaveIndex(), data);
             case IA -> { // Intersecting Area
                 search.setScanning(false);
@@ -204,8 +203,7 @@ public class FrameworkService {
             }
         }
 
-        List<DatasetVo> finalResult = new ArrayList<>();
-        finalResult.addAll(result.entrySet().
+        List<DatasetVo> finalResult = new ArrayList<>(result.entrySet().
                 stream()
                 .sorted((o1, o2) -> (int) (o1.getValue() - o2.getValue()))
                 .map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).
@@ -274,7 +272,6 @@ public class FrameworkService {
         List<JoinPair> list = new ArrayList<>();
         Double[] distances = pair.getLeft();
         Map<Integer, Integer> combine = pair.getRight();
-        int index = 0;
         for (Map.Entry<Integer, Integer> entry : combine.entrySet()) {
             JoinPoint queryPoint = new JoinPoint(entry.getKey(), queryDataset[entry.getKey()]);
             JoinPoint targetPoint = new JoinPoint(entry.getValue(), targetDataset[entry.getValue()]);
@@ -418,13 +415,6 @@ public class FrameworkService {
                 }
             }
         }
-//        System.out.println("query dataset is " +.get(dataDirID).get(datasetQueryID));
-        System.out.println("EMD result:");
-        System.out.println("top " + topk + " results:");
-//        for (relaxIndexNode item : resultApprox) {
-//            System.out.println("id = " + item.resultId + ", name = " + datasetIdMappingList.get(dataDirID).get(item.resultId));
-//        }
-        System.out.println("EMD finished");
         return resultApprox;
     }
 

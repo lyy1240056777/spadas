@@ -1,6 +1,6 @@
 package edu.nyu.dss.similarity.datasetReader;
 
-import edu.nyu.dss.similarity.config.SpadasConfig;
+import edu.whu.config.SpadasConfig;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import org.apache.commons.lang3.tuple.MutablePair;
@@ -27,7 +27,7 @@ public class UploadReader {
     private IndexAlgorithm indexAlgo;
 
     public Pair<IndexNode, double[][]> read(MultipartFile file, String filename) throws IOException {
-        if (!file.getContentType().equals("text/csv")) {
+        if (!"text/csv".equals(file.getContentType())) {
             return null;
         }
         List<String> headers = new ArrayList<>();

@@ -60,7 +60,7 @@ public class BaseController {
     @RequestMapping(value = "spadas/api/rangequery", method = RequestMethod.POST)
     public Map<String, Object> rangeQuery(@RequestBody RangeQueryParams qo) {
         HashMap<String, Object> result = new HashMap();
-        result.put("nodes", framework.rangequery(qo));
+        result.put("nodes", framework.rangeQuery(qo));
         return result;
     }
 

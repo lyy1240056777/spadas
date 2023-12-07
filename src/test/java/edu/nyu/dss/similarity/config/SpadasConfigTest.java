@@ -1,5 +1,6 @@
 package edu.nyu.dss.similarity.config;
 
+import edu.whu.config.SpadasConfig;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,14 +1,13 @@
 package edu.nyu.dss.similarity.datasetReader;
 
 import edu.nyu.dss.similarity.CityNode;
-import edu.nyu.dss.similarity.config.SpadasConfig;
+import edu.whu.config.SpadasConfig;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
 import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import edu.whu.index.FilePathIndex;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import edu.nyu.dss.similarity.index.*;

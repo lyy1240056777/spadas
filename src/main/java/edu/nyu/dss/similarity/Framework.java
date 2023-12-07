@@ -1,6 +1,5 @@
 package edu.nyu.dss.similarity;
 
-import edu.nyu.dss.similarity.config.SpadasConfig;
 import edu.nyu.dss.similarity.consts.DataLakeType;
 import edu.nyu.dss.similarity.datasetReader.*;
 import edu.nyu.dss.similarity.index.DataMapPorto;
@@ -12,6 +11,8 @@ import edu.nyu.dss.similarity.statistics.PointCounter;
 import edu.nyu.dss.similarity.utils.FileUtil;
 import edu.rmit.trajectory.clustering.kmeans.IndexAlgorithm;
 import edu.rmit.trajectory.clustering.kmeans.IndexNode;
+import edu.whu.config.RoadmapConfig;
+import edu.whu.config.SpadasConfig;
 import edu.whu.index.FilePathIndex;
 import edu.whu.index.GeoEncoder;
 import edu.whu.index.GridTrajectoryIndex;
@@ -87,30 +88,12 @@ public class Framework {
 
     public static Map<String, List<IndexNode>> cityIndexNodeMap = new HashMap<>();
 
-    private GeoEncoder geoEncoder;
-    /*
-     * z-curve for grid-based overlap
-     */
-    private final double minx = -90;
-    private final double miny = -180;
-    //    初试设为了4600，为什么？
-//    说到底这个spaceRange到底有什么用
-    private final double spaceRange = 100;
-
-
-    /**
-     * 每个维度划分成的网格份数
-     */
-    private final int SLIDE_PER_SIDE = 100;
-
     @Autowired
     public IndexMap indexMap;// root node of dataset's index
     static Map<Integer, IndexNode> datalakeIndex = null;// the global datalake index
     @Autowired
     public IndexNodes indexNodes;// store the root nodes of all datasets in the lake
     public IndexNode datasetRoot = null; // the root node of datalake index in memory mode
-
-    static double[] weight = null; // the weight in all dimensions
 
     /*
      * read a folder and extract the corresponding column of each file inside
@@ -149,7 +132,7 @@ public class Framework {
 //                datasetIdMapping.put(fileNo, fileName);
 //                选择使用哪种读取方法
                 if (type.active) {
-                    log.info("Reading file {}/{} with Type {}", file.getParentFile().getName(), file.getName(), type.name());
+                    log.debug("Reading file {}/{} with Type {}", file.getParentFile().getName(), file.getName(), type.name());
                     switch (type) {
                         case PURE_LOCATION -> pureLocationReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
                         case BAIDU_POI -> chinaReader.read(file, fileNo++, cityNode, datasetIDForOneDir);
@@ -172,9 +155,16 @@ public class Framework {
 
     public int[] generateZcurveForRange(double[] minRange, double[] maxRange) {
         int numberCells = (int) Math.pow(2, config.getResolution());
+        //    说到底这个spaceRange到底有什么用
+        double spaceRange = 100;
         double unit = spaceRange / numberCells;
         List<Integer> list = new ArrayList<>();
+        /*
+         * z-curve for grid-based overlap
+         */
+        double minx = -90;
         int minX = (int) ((minRange[0] - minx) / unit);
+        double miny = -180;
         int minY = (int) ((minRange[1] - miny) / unit);
         int maxX = (int) ((maxRange[0] - minx) / unit);
         int maxY = (int) ((maxRange[1] - miny) / unit);
@@ -240,9 +230,9 @@ public class Framework {
 
     // create datalake index based on the root nodes of all datasets, too slow
     void createDatalake(int N) {
-        indexDSS.setGloabalid();
+        indexDSS.ResetGlobalID();
         if (config.isSaveIndex()) {
-            datasetRoot = indexDSS.indexDatasetKD(indexNodes, config.getDimension(), config.getLeafCapacity(), weight);
+            datasetRoot = indexDSS.indexDatasetKD(indexNodes, config.getDimension(), config.getLeafCapacity());
             log.info("index created");
         } else {
             // FIXME exception when there's no directory.
@@ -290,12 +280,12 @@ public class Framework {
         Long beforeEncodeTime = System.currentTimeMillis();
         ArrayList<Trajectory> roadDataset = trajectoryDataIndex.get(datasetID);
         double[] range = findGeoRange(roadDataset);
-        geoEncoder = new GeoEncoder(range[0], range[1], range[2], range[3], SLIDE_PER_SIDE, SLIDE_PER_SIDE);
+        GeoEncoder geoEncoder = new GeoEncoder(range[0], range[1], range[2], range[3], config.getSlidePerSide(), config.getSlidePerSide());
         HashMap<Integer, List<Integer>>[][] index = encodeRoadmap(roadDataset, geoEncoder);
         gridTrajectoryIndex.setValue(index);
         gridTrajectoryIndex.setGetEncoder(geoEncoder);
         gridTrajectoryIndex.setSpatialRange(range);
-        gridTrajectoryIndex.setSpatialSplit(new int[]{SLIDE_PER_SIDE, SLIDE_PER_SIDE});
+        gridTrajectoryIndex.setSpatialSplit(new int[]{config.getSlidePerSide(), config.getSlidePerSide()});
         log.info("Loaded a grid based trajectory index with {} trajectories.", roadDataset.size());
         Long afterEncodeTime = System.currentTimeMillis();
         log.info("Total encode cost {} ms", (afterEncodeTime - beforeEncodeTime));
@@ -307,7 +297,6 @@ public class Framework {
 
     private double[] findGeoRange(ArrayList<Trajectory> roads) {
         double lat_min = 180, lat_max = -180, lng_min = 180, lng_max = -180;
-        Long beforeEncodeTime = System.currentTimeMillis();
         for (Trajectory road : roads) {
             for (double[] seg : road) {
                 if (seg[0] < lat_min) {
@@ -330,7 +319,7 @@ public class Framework {
 
     private HashMap<Integer, List<Integer>>[][] encodeRoadmap(ArrayList<Trajectory> roads, GeoEncoder encoder) {
         // map key=road index, map value = segment number
-        HashMap<Integer, List<Integer>>[][] grids = new HashMap[SLIDE_PER_SIDE][SLIDE_PER_SIDE];
+        HashMap<Integer, List<Integer>>[][] grids = new HashMap[config.getSlidePerSide()][config.getSlidePerSide()];
         for (int i = 0; i < roads.size(); i++) {
             HashSet<Integer> gridRecord = new HashSet<>();
             for (int j = 0; j < roads.get(i).size(); j++) {
@@ -338,7 +327,7 @@ public class Framework {
                 int[] indexes = encoder.encode(seg);
                 gridRecord.add(indexes[0] * 100 + indexes[1]);
                 if (grids[indexes[0]] == null) {
-                    grids[indexes[0]] = new HashMap[SLIDE_PER_SIDE];
+                    grids[indexes[0]] = new HashMap[config.getSlidePerSide()];
                 }
                 HashMap<Integer, List<Integer>> grid = grids[indexes[0]][indexes[1]];
                 if (grid == null) {
@@ -359,7 +348,7 @@ public class Framework {
     }
 
     public int defaultTrajectoryDataset() {
-        return findNameContains("Pittsburgh");
+        return findNameContains(config.getDefaultRoadmap());
     }
 
     public int findNameContains(String seg) {
@@ -381,15 +370,40 @@ public class Framework {
         readDatalake(config.getFrontendLimitation());
         createDatalake(config.getFrontendLimitation());
         loadTrajectoryIndex(defaultTrajectoryDataset());
-        initTestRoadmap(10000);
+        initRoadmap(config.getFrontendLimitation());
         log.info("All data loaded.");
     }
 
-    private void initTestRoadmap(int limit) {
+    private void initRoadmap(int limit) {
         if (trajectoryDataIndex.isEmpty()) {
             log.warn("There's no trajectory data. skip for create test dataset.");
             return;
         }
-        trajectoryDataIndex.put(0, (ArrayList<Trajectory>) trajectoryDataIndex.get(defaultTrajectoryDataset()).stream().limit(limit).collect(Collectors.toList()));
+        String datasetName = config.getDefaultRoadmap();
+        if (datasetName == null) {
+            log.warn("There's no config for default roadmap, no roadmap will be init.");
+            return;
+        }
+        int rawDatasetID = defaultTrajectoryDataset();
+        RoadmapConfig currentConfig;
+        RoadmapConfig[] configs = config.getRoadMaps();
+        currentConfig = Arrays.stream(configs)
+                .filter(config -> config.getName().toLowerCase().contains(datasetName.toLowerCase()) || datasetName.toLowerCase().contains(config.getName().toLowerCase()))
+                .findFirst().orElse(null);
+        if (currentConfig == null) {
+            log.warn("There's no config for current roadmap {}, the roadmap will contains all trajectories, please specify the default roadmap in config file.", datasetName);
+            trajectoryDataIndex.put(0, trajectoryDataIndex.get(rawDatasetID));
+            return;
+        }
+        ArrayList<Trajectory> sampledTrajectoryDataset = (ArrayList<Trajectory>) trajectoryDataIndex.get(rawDatasetID).stream().filter(tra -> {
+            for (double[] point : tra) {
+                if (point[0] >= currentConfig.getLatRange()[0] && point[0] <= currentConfig.getLatRange()[1] &&
+                        point[1] >= currentConfig.getLngRange()[0] && point[1] <= currentConfig.getLngRange()[1]) {
+                    return true;
+                }
+            }
+            return false;
+        }).limit(limit).collect(Collectors.toList());
+        trajectoryDataIndex.put(0, sampledTrajectoryDataset);
     }
 }

@@ -8,6 +8,7 @@ import edu.wlu.cs.levy.cg.KeyDuplicateException;
 import edu.wlu.cs.levy.cg.KeySizeException;
 import es.saulvargas.balltrees.BallTreeMatrix;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -23,32 +24,30 @@ import java.util.Set;
 @Data
 @Component
 @Slf4j
+@NoArgsConstructor
 public class IndexAlgorithm {
 
-    int distanceCompute = 0;
+    private int distanceCompute = 0;
 
-    int NodeAccess = 0;
+    private int nodeAccess = 0;
 
-    int dataAccess = 0;
-    int globalNodeid = 1;
+    private int dataAccess = 0;
 
+    private int globalNodeID = 1;
 
-    public IndexAlgorithm() {
-    }
-
-    public void buildKDtree(int dims, double[][] itemMatrix) throws KeySizeException, KeyDuplicateException {
+    public void buildKDTree(int dims, double[][] itemMatrix) throws KeySizeException, KeyDuplicateException {
         KDTree<Long> kt = new KDTree<>(dims);
         long idx = 1;
         for (double[] point : itemMatrix) {
             kt.insert(point, idx++);//fast construction: point, value
             //	System.out.println("inset kd"+idx);
         }
-        IndexNode rootKmeans = new IndexNode(dims);
-        //	kt.traverseConvert(rootKmeans, kt.getroot(), dims);	// traversing the index is hard for kd-tree
+        IndexNode rootKMeans = new IndexNode(dims);
+        //	kt.traverseConvert(rootKMeans, kt.getRoot(), dims);	// traversing the index is hard for kd-tree
     }
 
-    public void setGloabalid() {
-        globalNodeid = 1;
+    public void ResetGlobalID() {
+        globalNodeID = 1;
     }
 
     /*
@@ -58,13 +57,13 @@ public class IndexAlgorithm {
         if (root.isLeaf()) {
             return root.getSum();
         } else {
-            Set<IndexNode> listnode = root.getNodelist();
-            //	System.out.println(listnode.size());
+            Set<IndexNode> listNode = root.getNodelist();
+            //	System.out.println(listNode.size());
             double[] sum = new double[dimension];
-            for (IndexNode aIndexNode : listnode) {
-                double[] sumd = updateSum(aIndexNode, dimension);
+            for (IndexNode aIndexNode : listNode) {
+                double[] sumD = updateSum(aIndexNode, dimension);
                 for (int i = 0; i < dimension; i++)
-                    sum[i] += sumd[i];
+                    sum[i] += sumD[i];
             }
             root.setSum(sum);
             return sum;
@@ -82,7 +81,7 @@ public class IndexAlgorithm {
                 double[] sumd = datamapDouble[aIndexNode - 1];//this needs to be fixed
                 //	System.out.println(aIndexNode + "," +userID.length);
                 for (int i = 0; i < dimension; i++) {
-                    sum[i] += sumd[i] * 1.0 / userNumber.get(userID[aIndexNode - 1]);
+                    sum[i] += sumd[i] / userNumber.get(userID[aIndexNode - 1]);
                 }
             }
             root.setSum(sum);
@@ -103,7 +102,7 @@ public class IndexAlgorithm {
     /*
      * update the number of points for fair clustering
      */
-    public double updateCoveredPointsFair(IndexNode root, int dimension, int[] userID, Map<Integer, Integer> userNumber, double[][] datamapDouble) {
+    public double updateCoveredPointsFair(IndexNode root, int[] userID, Map<Integer, Integer> userNumber) {
         if (root.isLeaf()) {
             Set<Integer> listnode = root.getpointIdList();
             double coveredpints = 0;
@@ -116,7 +115,7 @@ public class IndexAlgorithm {
             Set<IndexNode> listnode = root.getNodelist();
             double coveredpints = 0;
             for (IndexNode aIndexNode : listnode) {
-                coveredpints += updateCoveredPointsFair(aIndexNode, dimension, userID, userNumber, datamapDouble);
+                coveredpints += updateCoveredPointsFair(aIndexNode, userID, userNumber);
             }
             root.setTotalCoveredPointsFair(coveredpints);
             return coveredpints;
@@ -193,20 +192,19 @@ public class IndexAlgorithm {
             updateSum(rootKmeans, dimension);
         else {
             updateSumFair(rootKmeans, dimension, userID, userNumber, itemMatrix);// update sum fair for useage.
-            double a = updateCoveredPointsFair(rootKmeans, dimension, userID, userNumber, itemMatrix);
+            double a = updateCoveredPointsFair(rootKmeans, userID, userNumber);
         }
         updateNodeId(rootKmeans, 1);
         calculateMaxBoundBox(rootKmeans, dimension, itemMatrix);
         calculateMinBoundBox(rootKmeans, dimension, itemMatrix);
         long endtime = System.nanoTime();
-        //	System.out.println("index time cost: "+(endtime-startTime1)/1000000000.0);
-        //	System.out.println("the count of Ball-tree using Matrix is " +
-        //		rootKmeans.getTotalCoveredPoints()+", the radius is "+rootKmeans.getRadius());
+        log.debug("index time cost: {}", (endtime - startTime1) / 1000000000.0);
+        log.debug("the count of Ball-tree using Matrix is {}, the radius is {}", rootKmeans.getTotalCoveredPoints(), rootKmeans.getRadius());
         return rootKmeans;
     }
 
     // with weight to build index
-    public IndexNode buildBalltree2(double[][] itemMatrix, int dimension, int capacity, int userID[], Map<Integer, Integer> userNumber, double[] weight) {
+    public IndexNode buildBalltree2(double[][] itemMatrix, int dimension, int capacity, int[] userID, Map<Integer, Integer> userNumber, double[] weight) {
 //		int depth = (int) (Math.log(itemMatrix.length)/Math.log(2));//the depth is computed based on binary tree
 //		试一下深度多少能不栈溢出
         int depth = 8;
@@ -215,7 +213,7 @@ public class IndexAlgorithm {
             updateSum(rootKmeans, dimension);
         else {// for the fair clustering
             updateSumFair(rootKmeans, dimension, userID, userNumber, itemMatrix);// update sum fair for useage.
-            double a = updateCoveredPointsFair(rootKmeans, dimension, userID, userNumber, itemMatrix);
+            double a = updateCoveredPointsFair(rootKmeans, userID, userNumber);
         }
         updateNodeId(rootKmeans, 1);
         calculateMaxBoundBox(rootKmeans, dimension, itemMatrix);
@@ -242,23 +240,6 @@ public class IndexAlgorithm {
         return result;
     }
 
-    public void setdistanceCompute(int distanceCompute) {
-        this.distanceCompute = distanceCompute;
-    }
-
-    public int getdistanceCompute() {
-        return distanceCompute;
-    }
-
-    public void setNodeAccess(int nodeAccess) {
-        this.NodeAccess = nodeAccess;
-    }
-
-
-    public void setdataAccess(int dataAccess) {
-        this.dataAccess = dataAccess;
-    }
-
     /*
      * search all the points within a distance radius, known as similarity search, using M-tree may be better.
      */
@@ -276,7 +257,7 @@ public class IndexAlgorithm {
         } else {
             Set<IndexNode> listnode = root.getNodelist();
             for (IndexNode aIndexNode : listnode) {
-                NodeAccess++;
+                nodeAccess++;
                 double distance = Hausdorff.EuclideanDis(aIndexNode.getPivot(), point, dimension);
                 distanceCompute++;
                 if (radius - distance >= aIndexNode.getRadius()) {
@@ -292,7 +273,7 @@ public class IndexAlgorithm {
     /*
      * search the nearest neighbor, used for point
      */
-    public void NearestNeighborSearchBall(double point[], IndexNode root, int dimension,
+    public void NearestNeighborSearchBall(double[] point, IndexNode root, int dimension,
                                           double[][] itemMatrix, double[] minDistnearestID) {
         if (root.isLeaf()) {
             for (int id : root.getpointIdList()) {
@@ -300,7 +281,7 @@ public class IndexAlgorithm {
                 distanceCompute++;
                 if (distance <= minDistnearestID[0]) {
                     minDistnearestID[0] = distance;
-                    minDistnearestID[1] = (double) id;
+                    minDistnearestID[1] = id;
                 }
             }
         } else {
@@ -316,7 +297,7 @@ public class IndexAlgorithm {
     }
 
     // search two nearest neighbors, minDistnearestID stores two points
-    public void TwoNearestNeighborSearchBall(double point[], IndexNode root, int dimension,
+    public void TwoNearestNeighborSearchBall(double[] point, IndexNode root, int dimension,
                                              double[][] itemMatrix, double[] minDistnearestID) {
         if (root.isLeaf()) {
             for (int id : root.getpointIdList()) {
@@ -324,7 +305,7 @@ public class IndexAlgorithm {
                 distanceCompute++;
                 if (distance <= minDistnearestID[0]) {
                     minDistnearestID[0] = distance;
-                    minDistnearestID[1] = (double) id;
+                    minDistnearestID[1] = id;
                     if (minDistnearestID[0] < minDistnearestID[2]) {
                         double temp = minDistnearestID[2];
                         minDistnearestID[2] = minDistnearestID[0];
@@ -430,27 +411,27 @@ public class IndexAlgorithm {
      */
     public void storeFeatures(IndexNode root, int nodeid, int depth, String edge, String node, int datasetID) {
         // assign an id to the node
-        String contentString = Integer.toString(datasetID) + "," + Integer.toString(nodeid) + "," + Integer.toString(root.getTotalCoveredPoints()) + "," +
-                Integer.toString(depth) + "," + Double.toString(root.getRadius());
+        StringBuilder contentString = new StringBuilder(datasetID + "," + nodeid + "," + root.getTotalCoveredPoints() + "," +
+                depth + "," + root.getRadius());
         if (root.isLeaf()) {
             //store the leaf node id
-            contentString += ",0";// leaf node
+            contentString.append(",0");// leaf node
         } else {
             Set<IndexNode> listnode = root.getNodelist();
-            contentString += ",1";//internal node
+            contentString.append(",1");//internal node
             for (IndexNode aIndexNode : listnode) {
-                int assignedNodeID = ++globalNodeid;
+                int assignedNodeID = ++globalNodeID;
                 double distance = Hausdorff.EuclideanDis(root.getPivot(), aIndexNode.getPivot(), root.getPivot().length);
                 aIndexNode.setdistanceToFarther(distance);
                 //	System.out.println(aIndexNode.getDisFather());
                 // write the edge information into files
-                Util.write(edge, Integer.toString(datasetID) + "," + Integer.toString(nodeid) + "," + Integer.toString(assignedNodeID) + "," + Double.toString(aIndexNode.getDisFather()) + "\n");
+                Util.write(edge, datasetID + "," + nodeid + "," + assignedNodeID + "," + aIndexNode.getDisFather() + "\n");
                 storeFeatures(aIndexNode, assignedNodeID, depth + 1, edge, node, datasetID);
             }
         }
         double[] pivot = root.getPivot();
         for (double a : pivot)
-            contentString += "," + Double.toString(a);
+            contentString.append(",").append(a);
         Util.write(node, contentString + "\n");
     }
 
@@ -461,31 +442,31 @@ public class IndexAlgorithm {
      */
     public void storeIndex(IndexNode root, int nodeid, String node, double fartherdis) {
         // assign an id to the node
-        String contentString = Integer.toString(nodeid) + "," + Integer.toString(root.getTotalCoveredPoints()) + ","
-                + Double.toString(fartherdis) + "," + Double.toString(root.getRadius());
+        StringBuilder contentString = new StringBuilder(nodeid + "," + root.getTotalCoveredPoints() + ","
+                + fartherdis + "," + root.getRadius());
         if (root.isLeaf()) {
-            contentString += ",0:";// leaf node
+            contentString.append(",0:");// leaf node
             for (int pointid : root.getpointIdList())
-                contentString += Integer.toString(pointid) + ",";
+                contentString.append(pointid).append(",");
         } else {
-            contentString += ",1:";//internal node
+            contentString.append(",1:");//internal node
         }
-        contentString += ":";// store the pivot
+        contentString.append(":");// store the pivot
         double[] pivot = root.getPivot();
         for (double a : pivot)
-            contentString += Double.toString(a) + ",";
-        contentString += ":";// store the max//add the max and min bounding box
+            contentString.append(a).append(",");
+        contentString.append(":");// store the max//add the max and min bounding box
         for (double max : root.getMBRmax())
-            contentString += Double.toString(max) + ",";
+            contentString.append(max).append(",");
         for (double min : root.getMBRmin())
-            contentString += Double.toString(min) + ",";
+            contentString.append(min).append(",");
         Util.write(node, contentString + "\n");
 
         if (!root.isLeaf()) {
             Set<IndexNode> listnode = root.getNodelist();
             for (IndexNode aIndexNode : listnode) {
-                int assignedNodeID = ++globalNodeid;
-                contentString += Integer.toString(assignedNodeID) + ",";
+                int assignedNodeID = ++globalNodeID;
+                contentString.append(assignedNodeID).append(",");
                 double distance = Util.EuclideanDis(root.getPivot(), aIndexNode.getPivot(), root.getPivot().length);
                 aIndexNode.setdistanceToFarther(distance);
                 storeIndex(aIndexNode, assignedNodeID, node, distance);
@@ -496,17 +477,17 @@ public class IndexAlgorithm {
     /*
      * restore the index structure from files, each dataset will have one index
      */
-    public Map<Integer, Map<Integer, IndexNode>> restoreIndex(String foldername, int dimension, Map<Integer, double[][]> dataMapPorto) {
+    public Map<Integer, Map<Integer, IndexNode>> restoreIndex(String foldername, int dimension) {
         // restore the index based on the index files, store every node in a hash and later set up
         File folder = new File(foldername);
         File[] fileNames = folder.listFiles();
         int numberIndex = fileNames.length - 2;
-        Map<Integer, Map<Integer, IndexNode>> roots = new HashMap<Integer, Map<Integer, IndexNode>>();
+        Map<Integer, Map<Integer, IndexNode>> roots = new HashMap<>();
         for (int ii = 1; ii < numberIndex; ii++) {
             try {
-                try (BufferedReader br = new BufferedReader(new FileReader(foldername + Integer.valueOf(ii) + ".txt"))) {
+                try (BufferedReader br = new BufferedReader(new FileReader(foldername + ii + ".txt"))) {
                     String strLine;
-                    Map<Integer, IndexNode> nodeidIndexnodesMap = new HashMap<Integer, IndexNode>();
+                    Map<Integer, IndexNode> nodeidIndexnodesMap = new HashMap<>();
                     while ((strLine = br.readLine()) != null) {
                         String[] splitString = strLine.split(":");
                         String[] basicInfo = splitString[0].split(",");
@@ -515,7 +496,7 @@ public class IndexAlgorithm {
                         String[] mbr = splitString[3].split(",");
                         IndexNode aIndexNode = new IndexNode(dimension);
                         aIndexNode.addEveryThing(centerString, basicInfo, liString, mbr, dimension);//
-                        int nodeid = Integer.valueOf(basicInfo[0]);
+                        int nodeid = Integer.parseInt(basicInfo[0]);
                         nodeidIndexnodesMap.put(nodeid, aIndexNode);
                     }
                     roots.put(ii, nodeidIndexnodesMap);//insert the root nodes,
@@ -532,9 +513,9 @@ public class IndexAlgorithm {
      */
     public Map<Integer, IndexNode> restoreSingleIndex(String foldername, int ii, int dimension) {
         // restore the index based on the index files, store every node in a hash and later set up
-        Map<Integer, IndexNode> nodeidIndexnodesMap = new HashMap<Integer, IndexNode>();
+        Map<Integer, IndexNode> nodeidIndexnodesMap = new HashMap<>();
         try {
-            try (BufferedReader br = new BufferedReader(new FileReader(foldername + Integer.valueOf(ii) + ".txt"))) {
+            try (BufferedReader br = new BufferedReader(new FileReader(foldername + ii + ".txt"))) {
                 String strLine;
                 while ((strLine = br.readLine()) != null) {// further improve the reading speed
                     String[] splitString = strLine.split(":");
@@ -549,7 +530,7 @@ public class IndexAlgorithm {
                     IndexNode aIndexNode = new IndexNode(dimension);
                     //add the bounding box
                     aIndexNode.addEveryThing(centerString, basicInfo, liString, mbr, dimension);//
-                    int nodeid = Integer.valueOf(basicInfo[0]);
+                    int nodeid = Integer.parseInt(basicInfo[0]);
                     nodeidIndexnodesMap.put(nodeid, aIndexNode);
                 }
             }
@@ -564,33 +545,33 @@ public class IndexAlgorithm {
      */
     public void storeDatalakeIndex(IndexNode root, int nodeid, String node, double fartherdis) {
         // assign an id to the node
-        String contentString = Integer.toString(nodeid) + "," + Integer.toString(root.getTotalCoveredPoints()) + ","
-                + Double.toString(fartherdis) + "," + Double.toString(root.getRadius());
+        StringBuilder contentString = new StringBuilder(nodeid + "," + root.getTotalCoveredPoints() + ","
+                + fartherdis + "," + root.getRadius());
         if (root.isRootLeaf()) {
-            contentString += ",0:";// leaf node
-            contentString += root.getDatasetID() + ",";
+            contentString.append(",0:");// leaf node
+            contentString.append(root.getDatasetID()).append(",");
         } else if (root.getDatasetID() < 0) {
             if (root.getDatasetID() == -1)
-                contentString += ",1:";//internal node
+                contentString.append(",1:");//internal node
             else
-                contentString += ",2:";//internal node
+                contentString.append(",2:");//internal node
         }
-        contentString += ":";// store the pivot
+        contentString.append(":");// store the pivot
         double[] pivot = root.getPivot();
         for (double a : pivot)
-            contentString += Double.toString(a) + ",";
-        contentString += ":";
+            contentString.append(a).append(",");
+        contentString.append(":");
         for (double max : root.getMBRmax()) //add the max and min bounding box
-            contentString += Double.toString(max) + ",";
+            contentString.append(max).append(",");
         for (double min : root.getMBRmin())
-            contentString += Double.toString(min) + ",";
+            contentString.append(min).append(",");
         Util.write(node, contentString + "\n");
 
         if (root.getDatasetID() < 0) {
-            Set<IndexNode> listnode = root.getNodelist();
-            for (IndexNode aIndexNode : listnode) {
-                int assignedNodeID = ++globalNodeid;
-                contentString += Integer.toString(assignedNodeID) + ",";
+            Set<IndexNode> listNode = root.getNodelist();
+            for (IndexNode aIndexNode : listNode) {
+                int assignedNodeID = ++globalNodeID;
+                contentString.append(assignedNodeID).append(",");
                 double distance = Hausdorff.EuclideanDis(root.getPivot(), aIndexNode.getPivot(), root.getPivot().length);
                 aIndexNode.setdistanceToFarther(distance);
                 storeDatalakeIndex(aIndexNode, assignedNodeID, node, distance);
@@ -603,7 +584,7 @@ public class IndexAlgorithm {
      */
     public Map<Integer, IndexNode> restoreDatalakeIndex(String foldername, int dimension) {
         // restore the index based on the index files, store every node in a hash and later set up
-        Map<Integer, IndexNode> nodeidIndexnodesMap = new HashMap<Integer, IndexNode>();
+        Map<Integer, IndexNode> nodeidIndexnodesMap = new HashMap<>();
         try (BufferedReader br = new BufferedReader(new FileReader(foldername))) {
             String strLine;
             while ((strLine = br.readLine()) != null) {
@@ -618,7 +599,7 @@ public class IndexAlgorithm {
                 String[] mbr = splitString[3].split(",");
                 IndexNode aIndexNode = new IndexNode(dimension);
                 aIndexNode.addEveryThingDatalake(centerString, basicInfo, liString, mbr, dimension);//
-                int nodeid = Integer.valueOf(basicInfo[0]);
+                int nodeid = Integer.parseInt(basicInfo[0]);
                 nodeidIndexnodesMap.put(nodeid, aIndexNode);
             }
 
@@ -635,7 +616,7 @@ public class IndexAlgorithm {
      */
     public Map<Integer, IndexNode> restoreDatalakeIndexGuava(String foldername, int dimension) {
         // restore the index based on the index files, store every node in a hash and later set up
-        Map<Integer, IndexNode> nodeidIndexnodesMap = new HashMap<Integer, IndexNode>();
+        Map<Integer, IndexNode> nodeidIndexnodesMap = new HashMap<>();
         try {
             try (BufferedReader br = new BufferedReader(new FileReader(foldername))) {
                 String strLine;
@@ -653,7 +634,7 @@ public class IndexAlgorithm {
 
                     IndexNode aIndexNode = new IndexNode(dimension);
                     aIndexNode.addEveryThingDatalake(centerString, basicInfo, liString, mbr, dimension);//
-                    int nodeid = Integer.valueOf(basicInfo[0]);
+                    int nodeid = Integer.parseInt(basicInfo[0]);
                     nodeidIndexnodesMap.put(nodeid, aIndexNode);
                 }
             }
@@ -667,17 +648,17 @@ public class IndexAlgorithm {
     /*
      * indexing the dataset using a kd-tree way
      */
-    public IndexNode indexDatasetKD(ArrayList<IndexNode> roots, int dimension, int leafSize, double[] weight) {
-        double minBox[] = new double[dimension];
-        double maxBox[] = new double[dimension];
+    public IndexNode indexDatasetKD(ArrayList<IndexNode> roots, int dimension, int leafSize) {
+        double[] minBox = new double[dimension];
+        double[] maxBox = new double[dimension];
         for (int dim = 0; dim < dimension; dim++) {
             minBox[dim] = Double.MAX_VALUE;
             maxBox[dim] = -Double.MAX_VALUE;
         }
         // get the bounding box of all the nodes first,
         for (IndexNode aIndexNode : roots) {
-            double nodeMax[] = aIndexNode.getMBRmax();
-            double nodeMin[] = aIndexNode.getMBRmin();
+            double[] nodeMax = aIndexNode.getMBRmax();
+            double[] nodeMin = aIndexNode.getMBRmin();
             for (int dim = 0; dim < dimension; dim++) {
                 if (nodeMax[dim] > maxBox[dim])
                     maxBox[dim] = nodeMax[dim];//need to revise, as the radius is small due to weight
@@ -686,16 +667,13 @@ public class IndexAlgorithm {
             }
         }
         // get the pivot point, and the range in multiple dimension, and the radius
-        double pivot[] = new double[dimension];
+        double[] pivot = new double[dimension];
         int d = 0;
         double maxrange = Double.MIN_VALUE;
         double radius = 0;
         for (int dim = 0; dim < dimension; dim++) {
             pivot[dim] = (maxBox[dim] + minBox[dim]) / 2;
-            if (weight != null)
-                radius += Math.pow((maxBox[dim] - minBox[dim]) * weight[dim] / 2, 2); // the radius should consider d dimension
-            else
-                radius += Math.pow((maxBox[dim] - minBox[dim]) / 2, 2);
+            radius += Math.pow((maxBox[dim] - minBox[dim]) / 2, 2);
             if ((maxBox[dim] - minBox[dim]) > maxrange) {
                 maxrange = maxBox[dim] - minBox[dim];
                 d = dim;
@@ -715,23 +693,23 @@ public class IndexAlgorithm {
             return a;
         } else {
             // dividing the space by the broadest dimension d
-            ArrayList<IndexNode> rootleft = new ArrayList<IndexNode>();
-            ArrayList<IndexNode> rootright = new ArrayList<IndexNode>();
+            ArrayList<IndexNode> rootLeft = new ArrayList<>();
+            ArrayList<IndexNode> rootRight = new ArrayList<>();
             for (IndexNode aIndexNode : roots) {
                 //	System.out.println(aIndexNode.getPivot()[d]+","+pivot[d]);
                 if (aIndexNode.getPivot()[d] < pivot[d]) {
-                    rootleft.add(aIndexNode);
+                    rootLeft.add(aIndexNode);
                 } else {
-                    rootright.add(aIndexNode);
+                    rootRight.add(aIndexNode);
                 }
             }
-            if (rootleft.isEmpty() || rootright.isEmpty()) {
+            if (rootLeft.isEmpty() || rootRight.isEmpty()) {
                 for (IndexNode root : roots) {
                     a.addNodes(root);
                 }
             } else {
-                a.addNodes(indexDatasetKD(rootleft, dimension, leafSize, weight));
-                a.addNodes(indexDatasetKD(rootright, dimension, leafSize, weight));
+                a.addNodes(indexDatasetKD(rootLeft, dimension, leafSize));
+                a.addNodes(indexDatasetKD(rootRight, dimension, leafSize));
             }
             a.setroot(-2);//label it as internal node
             return a;
@@ -741,11 +719,11 @@ public class IndexAlgorithm {
     // insert a new node into the index: finding the node that covers the ball most,
     // and insert to the leaf node, split if exceeding the maximum number of points,
     public IndexNode insertNewDataset(IndexNode newNode, IndexNode root, int capacity, int dimension) {
-        double minBox[] = new double[dimension];
-        double maxBox[] = new double[dimension];
-        double pivot[] = root.getPivot();
-        double pivotn[] = newNode.getPivot();
-        double newpivot[] = new double[dimension];
+        double[] minBox = new double[dimension];
+        double[] maxBox = new double[dimension];
+        double[] pivot = root.getPivot();
+        double[] pivotn = newNode.getPivot();
+        double[] newpivot = new double[dimension];
         double maxrange = Double.MIN_VALUE;
         int d = 0;
         for (int dim = 0; dim < dimension; dim++) {
@@ -808,7 +786,7 @@ public class IndexAlgorithm {
         //TODO
         // lat&lon likely to be minus ,so initialize it to be minus num
         for (int i = 0; i < dimension; i++) {
-            root.mbrmax[i] = -1000;
+            root.mbrmax[i] = Integer.MIN_VALUE;
         }
         if (root.isLeaf()) {
             for (int pointid : root.getpointIdList()) {

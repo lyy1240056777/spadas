@@ -25,6 +25,7 @@ public class AugmentController {
     @Autowired
     private TrajectoryAugmentService augmentService;
 
+    @SuppressWarnings("unused")
     @GetMapping("/spadas/api/augment")
     public DatasetVo getDatasetAugment(@RequestBody AugmentParams params) {
         log.info("you are querying augment for dataset {}", params.getDatasetID());
