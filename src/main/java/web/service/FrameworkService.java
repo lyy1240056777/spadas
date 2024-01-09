@@ -570,10 +570,6 @@ public class FrameworkService {
     }
 
     public static SignatureT getSignature(int id, HashMap<Integer, ArrayList<double[]>> allHistogram) {
-        if (!allHistogram.containsKey(id)) {
-            System.out.println("id = " + id);
-            System.out.println();
-        }
         ArrayList<double[]> a = allHistogram.get(id);
         int n = a.size();
         FeatureT[] features = new FeatureT[n];

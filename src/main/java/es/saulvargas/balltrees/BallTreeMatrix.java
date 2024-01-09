@@ -268,8 +268,6 @@ public class BallTreeMatrix extends BinaryTree {
         }
 
         private void calculateCenterEMD() {
-            //TODO set it 2, fix it afterwards
-            //center = new double[itemMatrix[0].length];
             center = new double[2];
 
             for (int row : rows) {
@@ -301,9 +299,6 @@ public class BallTreeMatrix extends BinaryTree {
                 radius = max(radius, distance2(center, itemMatrixMapping.get(row)));
             }
             radius = sqrt(radius);
-            if (radius > 100) {
-                System.out.println();
-            }
         }
 
         public double mip(double[] q) {

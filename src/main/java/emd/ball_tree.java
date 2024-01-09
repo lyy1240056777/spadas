@@ -14,21 +14,7 @@ public class ball_tree extends BinaryTree {
     public BallTreeMatrix.Ball getRoot(){
         return (BallTreeMatrix.Ball) super.getRoot();
     }
-//    public static IndexNode create(double[] ubMove, double[][] iterMatrix, int leafThreshold, int maxDepth){
-//        int[] rows = new int[iterMatrix.length];
-//        for (int row = 0; row < iterMatrix.length; row++){
-//            rows[row] = row;
-//        }
-//        BallTreeMatrix.Ball root = new BallTreeMatrix.Ball(ubMove, rows, iterMatrix);
-//        IndexNode rootKmeans = new IndexNode(iterMatrix[0].length);
-//        int depth = 0;
-//        if (rows.length > leafThreshold && depth<maxDepth){
-//            createChildren(root, leafThreshold, depth+1, maxDepth);
-//        }
-//        //???
-//        root.traverseConvert2(rootKmeans, iterMatrix[0].length);
-//        return rootKmeans;
-//    }
+
 
     public static IndexNode create(HashMap<Integer, Double> ubMove, HashMap<Integer, double[]> iterMatrix, int leafThreshold, int maxDepth, int dimension) {
 //        int[] rows = new int[itemMatrix.length];
