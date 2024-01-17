@@ -16,6 +16,8 @@ spadas:
   frontend-limitation: 10000
   default-roadmap: Pittsburgh
   slide-per-side: 100
+  distance-limit: 1
+  unit-price: 0.1
   roadmaps:
     - name: Pittsburgh
       lat-range: -80.0363, -79.9310

@@ -1,6 +1,7 @@
 package web.service;
 
 import edu.nyu.dss.similarity.*;
+import edu.rmit.trajectory.clustering.kmeans.RelaxIndexNode;
 import edu.whu.config.SpadasConfig;
 import edu.nyu.dss.similarity.datasetReader.SingleFileReader;
 import edu.nyu.dss.similarity.datasetReader.UploadReader;
@@ -14,6 +15,7 @@ import edu.whu.tmeans.augment.BrutalForceAugment;
 import edu.whu.tmeans.model.GeoLocation;
 import emd.*;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -91,6 +93,12 @@ public class FrameworkService {
     @Autowired
     private DatasetProperties datasetProperties;
 
+    @Autowired
+    private SubgraphMap subgraphMap;
+
+    @Autowired
+    private DatasetPriceMap datasetPriceMap;
+
     public List<DatasetVo> rangeQuery(RangeQueryParams qo) {
         HashMap<Integer, Double> result = new HashMap<>();
         IndexNode root = framework.datasetRoot;
@@ -117,16 +125,6 @@ public class FrameworkService {
                 result = effectivenessStudy.topkAlgorithmZcurveHashMap(zCodeMap, zCodeMap.get(queryid), qo.getK());
             }
         }//base on intersecting area
-//        干嘛用的？
-//        默认传值false
-//        更新静态变量scanning，在下面的核心算法中会用到
-
-//        这是IA度量方法
-//        Search.setScanning(!qo.isUseIndex());
-//        Search.setScanning(qo.isUseIndex());
-//        核心算法
-//        result = Search.rangeQueryRankingArea(root, result, qo.getQuerymax(), qo.getQuerymin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
-//                datalakeIndex, dimNonSelected, dimensionAll);
 
         return result.entrySet().stream()
                 .sorted((o1, o2) -> (int) (o1.getValue() - o2.getValue()))
@@ -473,7 +471,8 @@ public class FrameworkService {
 //            his.add(Integer.parseInt(buf[0]));
 //            ub.add(Double.parseDouble(buf[3]));
 //            numberOfLine++;
-        };
+        }
+        ;
         /*while (numberOfLine < zCodeMapEmd.size()) {
             ArrayList<double[]> allPoints = new ArrayList<>();
             HashMap<Long, Double> map1 = zCodeMapEmd.get(numberOfLine);
@@ -674,4 +673,134 @@ public class FrameworkService {
         }
     }
 
+    //    Data Acquisition
+    public Map<Integer, Set<Integer>> getQueryConnectedSubgraph(Set<Integer> ids) {
+        Map<Integer, Set<Integer>> querySubgraphMap = new HashMap<>();
+        subgraphMap.forEach((id, subgraph) -> {
+            if (ids.contains(id)) {
+                Set<Integer> newSubgraph = new HashSet<>();
+                for (int i : subgraph) {
+                    if (ids.contains(i)) {
+                        newSubgraph.add(i);
+                    }
+                }
+                querySubgraphMap.put(id, newSubgraph);
+            }
+        });
+        return querySubgraphMap;
+    }
+
+    public int getQueryCoverage(Map<Integer, Set<Integer>> subgraph) {
+        Set<Integer> set = new HashSet<>();
+        for (Set<Integer> s : subgraph.values()) {
+            set.addAll(s);
+        }
+        return set.size();
+    }
+
+    public Pair<double[], Set<Integer>> acquireMaxSubsetWithinBudget(DataAcqParams qo, Set<Integer> ids) {
+        Map<Integer, Set<Integer>> querySubgraph = getQueryConnectedSubgraph(ids);
+        int queryCov = getQueryCoverage(querySubgraph);
+        Set<Integer> maxSubsetWithoutMaxRatio = new HashSet<>();
+        double[] resWithoutMaxRatio = calMaxSubsetWithinBudget(querySubgraph, maxSubsetWithoutMaxRatio, false, qo.getBudget(), queryCov);
+        Set<Integer> maxSubsetWithMaxRatio = new HashSet<>();
+        double[] resWithMaxRatio = calMaxSubsetWithinBudget(querySubgraph, maxSubsetWithMaxRatio, true, qo.getBudget(), queryCov);
+        return resWithoutMaxRatio[0] > resWithMaxRatio[0] ?
+                new ImmutablePair<>(resWithoutMaxRatio, maxSubsetWithoutMaxRatio) :
+                new ImmutablePair<>(resWithMaxRatio, maxSubsetWithMaxRatio);
+    }
+
+    public double[] calMaxSubsetWithinBudget(Map<Integer, Set<Integer>> subgraph, Set<Integer> maxSubset, boolean useMaxRatio, double budget, int queryCov) {
+        PriorityQueue<RelaxIndexNode> nodesInBudget = new PriorityQueue<>((o1, o2) -> Double.compare(o2.getLb(), o1.getLb()));
+        for (int id : subgraph.keySet()) {
+            int coverage = zCodeMap.get(id).size();
+            if (coverage * config.getUnitPrice() <= budget) {
+                if (useMaxRatio) {
+//                    nodesInBudget.add(new RelaxIndexNode(id, zCodeMap.get(id).size() / datasetPriceMap.get(id), coverage));
+                    nodesInBudget.add(new RelaxIndexNode(id, coverage, coverage));
+                } else {
+                    nodesInBudget.add(new RelaxIndexNode(id, coverage, coverage));
+                }
+            }
+        }
+        if (nodesInBudget.isEmpty()) {
+            return new double[]{0, 0};
+        }
+        RelaxIndexNode node = nodesInBudget.poll();
+//        maxSubset.add(node.getId());
+        int maxCov = (int) node.getUb();
+        double totalPrice = datasetPriceMap.get(node.getId());
+//        Set<Integer> resultSet = new HashSet<>();
+        maxSubset.add(node.getId());
+        int round = 1;
+        log.info("round {} : dataset id = {}, incremental coverage = {}, current price = {}", round, node.getId(), node.getUb(), totalPrice);
+        Set<Integer> zCode = new HashSet<>(zCodeMap.get(node.id));
+        boolean flag = true;
+        while (flag && totalPrice <= budget) {
+            round++;
+            PriorityQueue<RelaxIndexNode> hs = new PriorityQueue<>((o1, o2) -> Double.compare(o2.getLb(), o1.getLb()));
+            for (int id : maxSubset) {
+                if (subgraph.containsKey(id)) {
+                    Set<Integer> edges = subgraph.get(id);
+                    for (int e : edges) {
+                        int intersect = zCodeMap.get(e).size();
+                        if (!maxSubset.contains(e) && totalPrice + datasetPriceMap.get(e) <= budget) {
+                            for (int ee : zCodeMap.get(e)) {
+                                if (zCode.contains(ee)) {
+                                    intersect--;
+                                }
+                            }
+                            if (intersect > 0) {
+                                if (useMaxRatio) {
+                                    hs.add(new RelaxIndexNode(e, intersect / datasetPriceMap.get(e), intersect));
+                                } else {
+                                    hs.add(new RelaxIndexNode(e, intersect, intersect));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if (!hs.isEmpty()) {
+                RelaxIndexNode indexNode = hs.peek();
+                int id = indexNode.getId();
+                maxCov += (int) indexNode.getUb();
+                maxSubset.add(indexNode.getId());
+                totalPrice += datasetPriceMap.get(id);
+                log.info("round {} : dataset id = {}, incremental coverage = {}, current price = {}", round, id, indexNode.getUb(), totalPrice);
+                zCode.addAll(zCodeMap.get(id));
+            } else {
+                flag = false;
+            }
+        }
+        log.info("*******************");
+        log.info("max coverage = {}, total price = {}", maxCov, totalPrice);
+        log.info("*******************");
+        return new double[]{maxCov, totalPrice};
+    }
+
+    public Map<String, Object> dataAcquisition(DataAcqParams qo) {
+        RangeQueryParams rangeQueryParams = new RangeQueryParams();
+        rangeQueryParams.setMode(1);
+        rangeQueryParams.setQuerymax(qo.getQueryMax());
+        rangeQueryParams.setQuerymin(qo.getQueryMin());
+        rangeQueryParams.setDim(qo.getDim());
+//        将k设为足够大的值，使得第一步范围查询能返回所有可能结果，为下一步acquisition做准备
+        rangeQueryParams.setK(10000);
+        List<DatasetVo> rangeQueryRes = rangeQuery(rangeQueryParams);
+        Set<Integer> datasetIds = rangeQueryRes.stream().map(DatasetVo::getId).collect(Collectors.toSet());
+        Pair<double[], Set<Integer>> resultPair = acquireMaxSubsetWithinBudget(qo, datasetIds);
+        log.info("max coverage = {}, price = {}", resultPair.getKey()[0], resultPair.getKey()[1]);
+        Map<String, Object> res = new HashMap<>();
+        res.put("coverage", resultPair.getKey()[0]);
+        res.put("price", resultPair.getKey()[1]);
+        List<DatasetVo> list = new ArrayList<>();
+        for (int id : resultPair.getValue()) {
+            IndexNode node = indexMap.get(id);
+            DatasetVo vo = new DatasetVo(id, node, node.getFileName(), dataSamplingMap.get(id), dataMapPorto.get(id));
+            list.add(vo);
+        }
+        res.put("datasets", list);
+        return res;
+    }
 }

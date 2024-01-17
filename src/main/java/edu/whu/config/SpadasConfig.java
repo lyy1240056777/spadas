@@ -28,6 +28,10 @@ public class SpadasConfig {
     private String defaultRoadmap;
 
     private int slidePerSide;
+
+    private int distanceLimit;
+
+    private double unitPrice;
     
     private RoadmapConfig[] roadMaps;
 

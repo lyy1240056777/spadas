@@ -6,6 +6,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import web.VO.Result;
 import web.consts.QueryMode;
 import web.param.*;
 import web.Utils.FileU;
@@ -27,11 +28,11 @@ public class BaseController {
     private FileUtil fileService;
 
     @Autowired
-    private FrameworkService framework;
+    private FrameworkService frameworkService;
 
     @RequestMapping(value = "spadas/api/load", method = RequestMethod.GET)
     public List<IndexNode> loadData() {
-        return framework.indexNodes;
+        return frameworkService.indexNodes;
     }
 
     @RequestMapping(value = "/spadas/api/getds", method = RequestMethod.GET)
@@ -47,7 +48,7 @@ public class BaseController {
         options.setApproxi(true);
         options.setUseIndex(true);
 //        DatasetVo vo = framework.datasetAugment(id, 2, 1, options);
-        DatasetVo vo = framework.getDatasetVO(id);
+        DatasetVo vo = frameworkService.getDatasetVO(id);
         HashMap<String, Object> res = new HashMap<>();
         res.put("node", vo);
         return res;
@@ -60,21 +61,21 @@ public class BaseController {
     @RequestMapping(value = "spadas/api/rangequery", method = RequestMethod.POST)
     public Map<String, Object> rangeQuery(@RequestBody RangeQueryParams qo) {
         HashMap<String, Object> result = new HashMap();
-        result.put("nodes", framework.rangeQuery(qo));
+        result.put("nodes", frameworkService.rangeQuery(qo));
         return result;
     }
 
     @RequestMapping(value = "spadas/api/keywordsquery", method = RequestMethod.POST)
     public HashMap<String, Object> keywordsQuery(@RequestBody KeywordsParams qo) {
         return new HashMap() {{
-            put("nodes", framework.keywordsQuery(qo));
+            put("nodes", frameworkService.keywordsQuery(qo));
         }};
     }
 
     @RequestMapping(value = "spadas/api/uploaddataset", method = RequestMethod.POST)
     public Map<String, Object> uploadDataset(@RequestParam("file") MultipartFile file, @RequestParam("filename") String filename, @RequestParam("k") int k) throws IOException {
-        Pair<IndexNode, double[][]> pair = framework.readNewFile(file, filename);
-        List<DatasetVo> result = framework.datasetQuery(pair.getLeft(), pair.getRight(), k);
+        Pair<IndexNode, double[][]> pair = frameworkService.readNewFile(file, filename);
+        List<DatasetVo> result = frameworkService.datasetQuery(pair.getLeft(), pair.getRight(), k);
         if (pair == null) {
             return new HashMap() {{
                 put("nodes", null);
@@ -89,7 +90,7 @@ public class BaseController {
 
     @RequestMapping(value = "spadas/api/dsquery", method = RequestMethod.POST)
     public Map<String, Object> datasetQuery(@RequestBody DatasetQueryParams qo) throws IOException, CloneNotSupportedException {
-        List<DatasetVo> result = framework.datasetQuery(qo);
+        List<DatasetVo> result = frameworkService.datasetQuery(qo);
         return new HashMap() {{
             put("nodes", result);
         }};
@@ -97,7 +98,7 @@ public class BaseController {
 
     @GetMapping("spadas/api/file/{id}")
     public void downloadFile(@PathVariable int id, HttpServletRequest request, HttpServletResponse response) {
-        fileService.downloadFile(framework.fileIDMap.get(id), request, response);
+        fileService.downloadFile(frameworkService.fileIDMap.get(id), request, response);
     }
 
     @PostMapping("spadas/api/preview")
@@ -106,7 +107,7 @@ public class BaseController {
         List<String[][]> bodies = new ArrayList<>();
         dto.getIds().forEach(id -> {
             try {
-                Pair<String[], String[][]> pair = FileU.readPreviewDataset(framework.fileIDMap.get(id), dto.getRows(), framework.dataMapPorto.get(id));
+                Pair<String[], String[][]> pair = FileU.readPreviewDataset(frameworkService.fileIDMap.get(id), dto.getRows(), frameworkService.dataMapPorto.get(id));
                 headers.add(pair.getLeft());
                 bodies.add(pair.getRight());
             } catch (IOException e) {
@@ -122,7 +123,11 @@ public class BaseController {
 
     @GetMapping("spadas/api/trajectory")
     public ArrayList<Trajectory> getTrajectory(@RequestParam(name = "id") int datasetID) {
-        return framework.getTrajectory(datasetID);
+        return frameworkService.getTrajectory(datasetID);
     }
 
+    @PostMapping("spadas/api/data_acq")
+    public Result dataAcquisition(DataAcqParams qo) {
+        return Result.ok(frameworkService.dataAcquisition(qo));
+    }
 }

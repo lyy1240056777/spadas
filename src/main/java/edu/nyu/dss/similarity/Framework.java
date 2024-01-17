@@ -2,10 +2,7 @@ package edu.nyu.dss.similarity;
 
 import edu.nyu.dss.similarity.consts.DataLakeType;
 import edu.nyu.dss.similarity.datasetReader.*;
-import edu.nyu.dss.similarity.index.DataMapPorto;
-import edu.nyu.dss.similarity.index.DatasetIDMapping;
-import edu.nyu.dss.similarity.index.IndexMap;
-import edu.nyu.dss.similarity.index.IndexNodes;
+import edu.nyu.dss.similarity.index.*;
 import edu.nyu.dss.similarity.statistics.DatasetSizeCounter;
 import edu.nyu.dss.similarity.statistics.PointCounter;
 import edu.nyu.dss.similarity.utils.FileUtil;
@@ -24,6 +21,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.Inet4Address;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -94,6 +92,18 @@ public class Framework {
     @Autowired
     public IndexNodes indexNodes;// store the root nodes of all datasets in the lake
     public IndexNode datasetRoot = null; // the root node of datalake index in memory mode
+
+    @Autowired
+    private ZCodeMapEmd zCodeMapEmd;
+
+    @Autowired
+    private ZCodeMap zCodeMap;
+
+    @Autowired
+    private SubgraphMap subgraphMap;
+
+    @Autowired
+    private DatasetPriceMap datasetPriceMap;
 
     /*
      * read a folder and extract the corresponding column of each file inside
@@ -369,8 +379,8 @@ public class Framework {
         clearAll();
         readDatalake(config.getFrontendLimitation());
         createDatalake(config.getFrontendLimitation());
-        loadTrajectoryIndex(defaultTrajectoryDataset());
-        initRoadmap(config.getFrontendLimitation());
+//        loadTrajectoryIndex(defaultTrajectoryDataset());
+//        initRoadmap(config.getFrontendLimitation());
         log.info("All data loaded.");
     }
 
@@ -405,5 +415,54 @@ public class Framework {
             return false;
         }).limit(limit).collect(Collectors.toList());
         trajectoryDataIndex.put(0, sampledTrajectoryDataset);
+    }
+
+/* ----Data Acquisition--------------------------------- */
+//    预处理，包括建立索引，生成网格签名，给数据集定价
+    public void preprocessForDataAcq() {
+//        生成网格签名
+//        generateSignatureFile
+//        返回HashMap<Long, Double>
+//        使用现成的索引和网格签名zCodeMapEmd
+        for (Map.Entry<Integer, ArrayList<Integer>> e : zCodeMap.entrySet()) {
+            datasetPriceMap.put(e.getKey(), e.getValue().size() * config.getUnitPrice());
+        }
+    }
+
+//    生成全部连通子图
+    public void generateConnectedSubgraphMap() {
+//        IBBranchAndBound
+        for (Map.Entry<Integer, IndexNode> entry : indexMap.entrySet()) {
+            Set<Integer> subgraph = new HashSet<>();
+            generateConnectedSubgraph(datasetRoot, entry.getValue(), subgraph, config.getDistanceLimit());
+            subgraphMap.put(entry.getKey(), subgraph);
+        }
+    }
+
+//    生成连通子图
+    public void generateConnectedSubgraph(IndexNode root, IndexNode node, Set<Integer> subgraph, int distLimit) {
+        if (root.getRootToDataset() == 1379 && node.getRootToDataset() == 1380) {
+            System.out.println();
+        }
+        if (root.getFileName() != null) { // 判断是否为数据集根节点，因为数据集根节点的datasetId可能为0，所以换用文件名来判断
+            if (calDist(root.getPivot(), node.getPivot()) <= distLimit) {
+                subgraph.add(root.getRootToDataset());
+            }
+        } else {
+            for (IndexNode child : root.getNodelist()) {
+                if (calDist(child.getPivot(), node.getPivot()) - child.getRadius() <= distLimit) { // 注意和方法出口的判断条件不一样
+                    generateConnectedSubgraph(child, node, subgraph, distLimit);
+                }
+            }
+        }
+    }
+
+    public double calDist(double[] a, double[] b) {
+        double dist = 0.0;
+        for (int i = 0; i < a.length; i++) {
+            dist += Math.pow(a[i] - b[i], 2);
+        }
+        dist = Math.sqrt(dist);
+        return dist;
     }
 }
