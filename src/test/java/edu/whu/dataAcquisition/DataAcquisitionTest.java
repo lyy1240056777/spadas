@@ -27,8 +27,6 @@ public class DataAcquisitionTest {
     private SubgraphMap subgraphMap;
     @Test
     public void generalDataAcqTest() {
-        framework.preprocessForDataAcq();
-        framework.generateConnectedSubgraphMap();
         DataAcqParams qo = new DataAcqParams();
         qo.setDim(2);
         qo.setQueryMin(new double[]{21, 110});

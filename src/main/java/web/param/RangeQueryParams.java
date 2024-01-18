@@ -1,6 +1,7 @@
 package web.param;
 
 import lombok.Data;
+import web.consts.QueryMode;
 
 @Data
 public class RangeQueryParams {
@@ -10,7 +11,7 @@ public class RangeQueryParams {
     double[] querymin;
 //    可能跟索引有关，一般情况下都是使用索引的，所以为真
     boolean useIndex=true;
-    int mode=1;
-
+//    int mode=1;
+    QueryMode mode = QueryMode.IA;
     String cityName = "";
 }

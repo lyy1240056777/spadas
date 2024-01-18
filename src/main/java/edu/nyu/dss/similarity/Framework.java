@@ -381,6 +381,8 @@ public class Framework {
         createDatalake(config.getFrontendLimitation());
 //        loadTrajectoryIndex(defaultTrajectoryDataset());
 //        initRoadmap(config.getFrontendLimitation());
+        preprocessForDataAcq();
+        generateConnectedSubgraphMap();
         log.info("All data loaded.");
     }
 
@@ -425,7 +427,10 @@ public class Framework {
 //        返回HashMap<Long, Double>
 //        使用现成的索引和网格签名zCodeMapEmd
         for (Map.Entry<Integer, ArrayList<Integer>> e : zCodeMap.entrySet()) {
-            datasetPriceMap.put(e.getKey(), e.getValue().size() * config.getUnitPrice());
+            int id = e.getKey();
+            double price = e.getValue().size() * config.getUnitPrice();
+            indexMap.get(id).setPrice(price);
+            datasetPriceMap.put(id, price);
         }
     }
 

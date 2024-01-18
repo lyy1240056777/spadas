@@ -14,7 +14,7 @@ public enum DataLakeType {
     POI(10, false, (file) -> file.getName().equals("poi")), // BAIDU POI
     MOVE_BANK(9, false, (file) -> file.getName().contains("movebank")),
     BUS_LINE(8, false, "Bus_lines"::equals),
-    USA(8, true, (file) -> !file.getName().isEmpty() && Character.isUpperCase(file.getName().charAt(0))), // POIs
+    USA(8, false, (file) -> !file.getName().isEmpty() && Character.isUpperCase(file.getName().charAt(0))), // POIs
     BAIDU_POI(7, true, (file) -> true),
     ;
 

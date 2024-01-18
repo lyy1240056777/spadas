@@ -127,7 +127,7 @@ public class BaseController {
     }
 
     @PostMapping("spadas/api/data_acq")
-    public Result dataAcquisition(DataAcqParams qo) {
+    public Result dataAcquisition(@RequestBody DataAcqParams qo) {
         return Result.ok(frameworkService.dataAcquisition(qo));
     }
 }

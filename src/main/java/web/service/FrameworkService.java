@@ -26,6 +26,7 @@ import web.VO.DatasetVo;
 import web.VO.JoinPair;
 import web.VO.JoinPoint;
 import web.VO.JoinResultVO;
+import web.consts.QueryMode;
 import web.param.*;
 
 import java.io.IOException;
@@ -106,7 +107,7 @@ public class FrameworkService {
         if (datalakeIndex != null)
             root = datalakeIndex.get(1);
 //        IA
-        if (qo.getMode() == 1) {
+        if (qo.getMode() == QueryMode.IA) {
             //base on intersecting area
             search.setScanning(!qo.isUseIndex());
             search.rangeQueryRankingArea(root, result, qo.getQuerymax(), qo.getQuerymin(), Double.MAX_VALUE, qo.getK(), null, qo.getDim(),
@@ -126,16 +127,9 @@ public class FrameworkService {
             }
         }//base on intersecting area
 
-        return result.entrySet().stream()
-                .sorted((o1, o2) -> (int) (o1.getValue() - o2.getValue()))
-                .map(item -> new DatasetVo(
-                        indexMap.get(item.getKey()),
-                        datasetIdMapping.get(item.getKey()),
-                        item.getKey(),
-                        null
-//                        dataMapPorto.get(item.getKey())
-                ))
-                .collect(Collectors.toList());
+        return result.entrySet().stream().sorted(Comparator.comparingDouble(Map.Entry::getValue))
+                .map(i -> new DatasetVo(i.getKey(), indexMap.get(i.getKey()), datasetIdMapping.get(i.getKey()), dataSamplingMap.get(i.getKey()),
+                        indexMap.get(i.getKey()).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i.getKey()) : null, datasetPriceMap.get(i.getKey()))).toList();
     }
 
     public List<DatasetVo> keywordsQuery(KeywordsParams qo) {
@@ -143,7 +137,8 @@ public class FrameworkService {
         String kwd = qo.getKws().toLowerCase();
         for (int i = 0; i < datasetIdMapping.size(); i++) {
             if (datasetIdMapping.get(i) != null && datasetIdMapping.get(i).toLowerCase().contains(kwd)) {
-                res.add(new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null));
+                res.add(new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i),
+                        indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null, datasetPriceMap.get(i)));
                 if (res.size() == qo.getLimit()) {
                     break;
                 }
@@ -157,7 +152,8 @@ public class FrameworkService {
                 config.getDimension(), indexMap, datasetIndex, datalakeIndex, datasetIdMapping, k,
                 indexString, null, true, 0, config.getLeafCapacity(), null, config.isSaveIndex(), data);
         List<DatasetVo> finalResult = new ArrayList<>(result.entrySet().stream().sorted((o1, o2) -> (int) (o1.getValue() - o2.getValue())).
-                map(i -> new DatasetVo(i.getKey(), indexMap.get(i.getKey()), datasetIdMapping.get(i.getKey()), dataSamplingMap.get(i.getKey()), indexMap.get(i.getKey()).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i.getKey()) : null)).toList());
+                map(i -> new DatasetVo(i.getKey(), indexMap.get(i.getKey()), datasetIdMapping.get(i.getKey()), dataSamplingMap.get(i.getKey()),
+                        indexMap.get(i.getKey()).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i.getKey()) : null, datasetPriceMap.get(i.getKey()))).toList());
         return finalResult.subList(0, k);
     }
 
@@ -195,10 +191,16 @@ public class FrameworkService {
             }
         }
 
+//        List<DatasetVo> finalResult = new ArrayList<>(result.entrySet().
+//                stream()
+//                .sorted(Comparator.comparingDouble(Map.Entry::getValue))
+//                .map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).
+//                toList());
         List<DatasetVo> finalResult = new ArrayList<>(result.entrySet().
                 stream()
                 .sorted(Comparator.comparingDouble(Map.Entry::getValue))
-                .map(item -> new DatasetVo(indexMap.get(item.getKey()), datasetIdMapping.get(item.getKey()), item.getKey(), dataMapPorto.get(item.getKey()))).
+                .map(i -> new DatasetVo(i.getKey(), indexMap.get(i.getKey()), datasetIdMapping.get(i.getKey()), dataSamplingMap.get(i.getKey()),
+                        indexMap.get(i.getKey()).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i.getKey()) : null, datasetPriceMap.get(i.getKey()))).
                 toList());
 //        防止找不到k个候选结果
         return finalResult.size() > qo.getK() ? finalResult.subList(0, qo.getK()) : finalResult;
@@ -283,7 +285,8 @@ public class FrameworkService {
     }
 
     public DatasetVo getDatasetVO(int i) {
-        return new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i), indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null);
+        return new DatasetVo(i, indexMap.get(i), datasetIdMapping.get(i), dataSamplingMap.get(i),
+                indexMap.get(i).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(i) : null, datasetPriceMap.get(i));
     }
 
     private IndexNode queryNode(int datasetID, double[][] dataset, Map<Integer, IndexNode> indexMap) {
@@ -781,7 +784,7 @@ public class FrameworkService {
 
     public Map<String, Object> dataAcquisition(DataAcqParams qo) {
         RangeQueryParams rangeQueryParams = new RangeQueryParams();
-        rangeQueryParams.setMode(1);
+        rangeQueryParams.setMode(QueryMode.IA);
         rangeQueryParams.setQuerymax(qo.getQueryMax());
         rangeQueryParams.setQuerymin(qo.getQueryMin());
         rangeQueryParams.setDim(qo.getDim());
@@ -797,7 +800,8 @@ public class FrameworkService {
         List<DatasetVo> list = new ArrayList<>();
         for (int id : resultPair.getValue()) {
             IndexNode node = indexMap.get(id);
-            DatasetVo vo = new DatasetVo(id, node, node.getFileName(), dataSamplingMap.get(id), dataMapPorto.get(id));
+            DatasetVo vo = new DatasetVo(id, node, node.getFileName(), dataSamplingMap.get(id),
+                    indexMap.get(id).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(id) : null, datasetPriceMap.get(id));
             list.add(vo);
         }
         res.put("datasets", list);

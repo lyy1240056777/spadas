@@ -63,6 +63,8 @@ public class IndexNode {
     int[] signautre = new int[2]; // store the signature
     int maxCoverpoints;// store the maximum number of point under it, for data lake index only, this for pruning
 
+    double price;
+
     // used for fair clustering
     private double totalCoveredPointsFair = 0; //calculate the normalized
 

@@ -21,6 +21,8 @@ public class DatasetVo {
 
     private HashMap<String, List<Object>> columns;
 
+    private double price;
+
 
 
     public DatasetVo(IndexNode node, String filename, int id, double[][] matrix) {
@@ -32,12 +34,13 @@ public class DatasetVo {
         this.columns = new HashMap<>();
     }
 
-    public DatasetVo(int id, IndexNode node, String fileName, List<double[]> dataSample, double[][] matrix) {
+    public DatasetVo(int id, IndexNode node, String fileName, List<double[]> dataSample, double[][] matrix, double price) {
         this.id = id;
         this.node = node;
         this.filename = fileName;
         this.dataSamp = dataSample;
         this.matrix = matrix;
         this.columns = new HashMap<>();
+        this.price = price;
     }
 }
