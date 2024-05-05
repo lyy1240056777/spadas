@@ -3,11 +3,14 @@ package web.controller;
 import edu.rmit.trajectory.clustering.kmeans.IndexNode;
 import edu.whu.structure.Trajectory;
 import org.apache.commons.lang3.tuple.Pair;
+import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import web.Utils.UserHolder;
 import web.VO.Result;
 import web.consts.QueryMode;
+import web.entity.User;
 import web.param.*;
 import web.Utils.FileU;
 import web.Utils.FileUtil;
@@ -16,6 +19,8 @@ import web.VO.DatasetVo;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import web.service.FrameworkService;
+import web.service.OrderService;
+import web.service.UserService;
 
 import java.io.IOException;
 import java.util.*;
@@ -29,6 +34,12 @@ public class BaseController {
 
     @Autowired
     private FrameworkService frameworkService;
+
+    @Autowired
+    private UserService userService;
+
+    @Autowired
+    private OrderService orderService;
 
     @RequestMapping(value = "spadas/api/load", method = RequestMethod.GET)
     public List<IndexNode> loadData() {
@@ -101,6 +112,11 @@ public class BaseController {
         fileService.downloadFile(frameworkService.fileIDMap.get(id), request, response);
     }
 
+    @GetMapping("spadas/api/download/{orderId}")
+    public void downloadFiles(@PathVariable int orderId, HttpServletResponse response) {
+        orderService.downloadFiles(orderId, response);
+    }
+
     @PostMapping("spadas/api/preview")
     public Map<String, Object> datasetPreview(@RequestBody PreviewParams dto) {
         List<String[]> headers = new ArrayList<>();
@@ -129,5 +145,41 @@ public class BaseController {
     @PostMapping("spadas/api/data_acq")
     public Result dataAcquisition(@RequestBody DataAcqParams qo) {
         return Result.ok(frameworkService.dataAcquisition(qo));
+    }
+
+    @PostMapping("spadas/api/register")
+    public Result register(@RequestBody UserParams qo) {
+        return userService.register(qo.getUsername(), qo.getPassword());
+    }
+
+    @PostMapping("spadas/api/login")
+    public Result login(@RequestBody UserParams qo) {
+        return userService.login(qo.getUsername(), qo.getPassword());
+    }
+
+    @PostMapping("spadas/api/buy")
+    public Result buy(@RequestBody OrderParams qo) {
+        Result res = orderService.buy(qo);
+        return Result.ok(qo);
+    }
+
+    @GetMapping("spadas/api/logout")
+    public Result logout() {
+        return userService.logout();
+    }
+
+    @GetMapping("spadas/api/shop")
+    public Result showAllOrders() {
+        return orderService.showAllOrders();
+    }
+
+    @GetMapping("spadas/api/pay")
+    public Result pay(@RequestParam(name = "id") int orderId) {
+        return orderService.pay(orderId);
+    }
+
+    @GetMapping("spadas/api/delete")
+    public Result delete(@RequestParam(name = "id") int orderId) {
+        return orderService.deleteOrder(orderId);
     }
 }

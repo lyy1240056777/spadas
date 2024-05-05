@@ -22,6 +22,8 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 /**
  * @author Tian Qi Qing
@@ -139,6 +141,40 @@ public class FileUtil {
             }
         } catch (IOException e) {
             throw new FileException("??????", e);
+        }
+    }
+
+    public static void downloadFiles(List<File> files, HttpServletResponse response) {
+        try {
+            // 设置响应头，告诉浏览器响应内容为 zip 格式
+            response.setContentType("application/zip");
+            response.setHeader("Content-Disposition", "attachment; filename=\"files.zip\"");
+
+            // 创建 ZipOutputStream 对象，用于将文件写入 zip 包中
+            ZipOutputStream zos = new ZipOutputStream(response.getOutputStream());
+
+            for (File file : files) {
+                // 为每个文件创建一个 ZIP 条目
+                ZipEntry zipEntry = new ZipEntry(file.getName());
+                zos.putNextEntry(zipEntry);
+
+                // 读取文件内容并写入到 ZIP 包中
+                FileInputStream fis = new FileInputStream(file);
+                byte[] buffer = new byte[1024];
+                int length;
+                while ((length = fis.read(buffer)) > 0) {
+                    zos.write(buffer, 0, length);
+                }
+                fis.close();
+
+                zos.closeEntry();
+            }
+
+            // 关闭 ZipOutputStream
+            zos.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 

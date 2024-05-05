@@ -30,6 +30,7 @@ import web.consts.QueryMode;
 import web.param.*;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -701,23 +702,36 @@ public class FrameworkService {
         return set.size();
     }
 
-    public Pair<double[], Set<Integer>> acquireMaxSubsetWithinBudget(DataAcqParams qo, Set<Integer> ids) {
+    public Map<String, Object> acquireMaxSubsetWithinBudget(DataAcqParams qo, Set<Integer> ids) {
         Map<Integer, Set<Integer>> querySubgraph = getQueryConnectedSubgraph(ids);
         int queryCov = getQueryCoverage(querySubgraph);
         Set<Integer> maxSubsetWithoutMaxRatio = new HashSet<>();
-        double[] resWithoutMaxRatio = calMaxSubsetWithinBudget(querySubgraph, maxSubsetWithoutMaxRatio, false, qo.getBudget(), queryCov);
+        Map<String, Object> resWithoutMaxRatio = calMaxSubsetWithinBudget(querySubgraph, maxSubsetWithoutMaxRatio, false, qo.getBudget(), queryCov);
         Set<Integer> maxSubsetWithMaxRatio = new HashSet<>();
-        double[] resWithMaxRatio = calMaxSubsetWithinBudget(querySubgraph, maxSubsetWithMaxRatio, true, qo.getBudget(), queryCov);
-        return resWithoutMaxRatio[0] > resWithMaxRatio[0] ?
-                new ImmutablePair<>(resWithoutMaxRatio, maxSubsetWithoutMaxRatio) :
-                new ImmutablePair<>(resWithMaxRatio, maxSubsetWithMaxRatio);
+        Map<String, Object> resWithMaxRatio = calMaxSubsetWithinBudget(querySubgraph, maxSubsetWithMaxRatio, true, qo.getBudget(), queryCov);
+        double maxCov1 = Double.parseDouble(resWithoutMaxRatio.get("maxCoverage").toString());
+        double maxCov2 = Double.parseDouble(resWithMaxRatio.get("maxCoverage").toString());
+        Map<String, Object> map = new HashMap<>();
+        if (maxCov1 > maxCov2) {
+            map.put("maxCov", maxCov1);
+            map.put("totalPrice", resWithoutMaxRatio.get("totalPrice"));
+            map.put("datasetIds", maxSubsetWithoutMaxRatio);
+        } else {
+            map.put("maxCov", maxCov2);
+            map.put("totalPrice", resWithMaxRatio.get("totalPrice"));
+            map.put("datasetIds", maxSubsetWithMaxRatio);
+        }
+        return map;
+//        return maxCov1 > maxCov2 ?
+//                new ImmutablePair<>(resWithoutMaxRatio, maxSubsetWithoutMaxRatio) :
+//                new ImmutablePair<>(resWithMaxRatio, maxSubsetWithMaxRatio);
     }
 
-    public double[] calMaxSubsetWithinBudget(Map<Integer, Set<Integer>> subgraph, Set<Integer> maxSubset, boolean useMaxRatio, double budget, int queryCov) {
+    public Map<String, Object> calMaxSubsetWithinBudget(Map<Integer, Set<Integer>> subgraph, Set<Integer> maxSubset, boolean useMaxRatio, BigDecimal budget, int queryCov) {
         PriorityQueue<RelaxIndexNode> nodesInBudget = new PriorityQueue<>((o1, o2) -> Double.compare(o2.getLb(), o1.getLb()));
         for (int id : subgraph.keySet()) {
             int coverage = zCodeMap.get(id).size();
-            if (coverage * config.getUnitPrice() <= budget) {
+            if (BigDecimal.valueOf(coverage * config.getUnitPrice()).compareTo(budget) < 0) {
                 if (useMaxRatio) {
 //                    nodesInBudget.add(new RelaxIndexNode(id, zCodeMap.get(id).size() / datasetPriceMap.get(id), coverage));
                     nodesInBudget.add(new RelaxIndexNode(id, coverage, coverage));
@@ -727,19 +741,19 @@ public class FrameworkService {
             }
         }
         if (nodesInBudget.isEmpty()) {
-            return new double[]{0, 0};
+            return null;
         }
         RelaxIndexNode node = nodesInBudget.poll();
 //        maxSubset.add(node.getId());
         int maxCov = (int) node.getUb();
-        double totalPrice = datasetPriceMap.get(node.getId());
+        BigDecimal totalPrice = datasetPriceMap.get(node.getId());
 //        Set<Integer> resultSet = new HashSet<>();
         maxSubset.add(node.getId());
         int round = 1;
         log.info("round {} : dataset id = {}, incremental coverage = {}, current price = {}", round, node.getId(), node.getUb(), totalPrice);
         Set<Integer> zCode = new HashSet<>(zCodeMap.get(node.id));
         boolean flag = true;
-        while (flag && totalPrice <= budget) {
+        while (flag && totalPrice.compareTo(budget) < 0) {
             round++;
             PriorityQueue<RelaxIndexNode> hs = new PriorityQueue<>((o1, o2) -> Double.compare(o2.getLb(), o1.getLb()));
             for (int id : maxSubset) {
@@ -747,7 +761,7 @@ public class FrameworkService {
                     Set<Integer> edges = subgraph.get(id);
                     for (int e : edges) {
                         int intersect = zCodeMap.get(e).size();
-                        if (!maxSubset.contains(e) && totalPrice + datasetPriceMap.get(e) <= budget) {
+                        if (!maxSubset.contains(e) && totalPrice.add(datasetPriceMap.get(e)).compareTo(budget) < 0) {
                             for (int ee : zCodeMap.get(e)) {
                                 if (zCode.contains(ee)) {
                                     intersect--;
@@ -755,7 +769,7 @@ public class FrameworkService {
                             }
                             if (intersect > 0) {
                                 if (useMaxRatio) {
-                                    hs.add(new RelaxIndexNode(e, intersect / datasetPriceMap.get(e), intersect));
+                                    hs.add(new RelaxIndexNode(e, intersect / datasetPriceMap.get(e).doubleValue(), intersect));
                                 } else {
                                     hs.add(new RelaxIndexNode(e, intersect, intersect));
                                 }
@@ -769,7 +783,7 @@ public class FrameworkService {
                 int id = indexNode.getId();
                 maxCov += (int) indexNode.getUb();
                 maxSubset.add(indexNode.getId());
-                totalPrice += datasetPriceMap.get(id);
+                totalPrice = totalPrice.add(datasetPriceMap.get(id));
                 log.info("round {} : dataset id = {}, incremental coverage = {}, current price = {}", round, id, indexNode.getUb(), totalPrice);
                 zCode.addAll(zCodeMap.get(id));
             } else {
@@ -779,9 +793,14 @@ public class FrameworkService {
         log.info("*******************");
         log.info("max coverage = {}, total price = {}", maxCov, totalPrice);
         log.info("*******************");
-        return new double[]{maxCov, totalPrice};
+//        return new double[]{maxCov, totalPrice};
+        Map<String, Object> map = new HashMap<>();
+        map.put("maxCoverage", maxCov);
+        map.put("totalPrice", totalPrice);
+        return map;
     }
 
+    @SuppressWarnings("unchecked")
     public Map<String, Object> dataAcquisition(DataAcqParams qo) {
         RangeQueryParams rangeQueryParams = new RangeQueryParams();
         rangeQueryParams.setMode(QueryMode.IA);
@@ -792,13 +811,13 @@ public class FrameworkService {
         rangeQueryParams.setK(10000);
         List<DatasetVo> rangeQueryRes = rangeQuery(rangeQueryParams);
         Set<Integer> datasetIds = rangeQueryRes.stream().map(DatasetVo::getId).collect(Collectors.toSet());
-        Pair<double[], Set<Integer>> resultPair = acquireMaxSubsetWithinBudget(qo, datasetIds);
-        log.info("max coverage = {}, price = {}", resultPair.getKey()[0], resultPair.getKey()[1]);
+        Map<String, Object> resultMap = acquireMaxSubsetWithinBudget(qo, datasetIds);
+        log.info("max coverage = {}, price = {}", resultMap.get("maxCov"), resultMap.get("totalPrice"));
         Map<String, Object> res = new HashMap<>();
-        res.put("coverage", resultPair.getKey()[0]);
-        res.put("price", resultPair.getKey()[1]);
+        res.put("coverage", resultMap.get("maxCov"));
+        res.put("price", resultMap.get("totalPrice"));
         List<DatasetVo> list = new ArrayList<>();
-        for (int id : resultPair.getValue()) {
+        for (int id : (Set<Integer>) resultMap.get("datasetIds")) { // 可能报类型转换错误（但实际上不可能），所以用注解忽略了
             IndexNode node = indexMap.get(id);
             DatasetVo vo = new DatasetVo(id, node, node.getFileName(), dataSamplingMap.get(id),
                     indexMap.get(id).getTotalCoveredPoints() < config.getFrontendLimitation() ? dataMapPorto.get(id) : null, datasetPriceMap.get(id));

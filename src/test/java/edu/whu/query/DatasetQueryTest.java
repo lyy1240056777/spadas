@@ -28,8 +28,8 @@ public class DatasetQueryTest {
 
     @Test
     public void generalDatasetQueryTest() throws IOException, CloneNotSupportedException {
-        int queryId = 4000;
-        int k = 30;
+        int queryId = 2000;
+        int k = 10;
 
         DatasetQueryParams params = new DatasetQueryParams();
         params.setDatasetId(queryId);
@@ -43,19 +43,23 @@ public class DatasetQueryTest {
             query(params);
         }
 
-//        params.setMode(QueryMode.Haus);
-//        query(params);
-//        params.setMode(QueryMode.IA);
-//        query(params);
-//        params.setMode(QueryMode.GBO);
-//        query(params);
-//        params.setMode(QueryMode.EMD);
-//        query(params);
+        params.setMode(QueryMode.Haus);
+        query(params);
+        params.setMode(QueryMode.IA);
+        query(params);
+        params.setMode(QueryMode.GBO);
+        query(params);
+        params.setMode(QueryMode.EMD);
+        query(params);
         System.out.println();
     }
 
     private void query(DatasetQueryParams params) throws IOException, CloneNotSupportedException {
+        long startTime = System.currentTimeMillis();
         List<DatasetVo> vos = frameworkService.datasetQuery(params);
+        long endTime = System.currentTimeMillis();
+        long elapsedTime = endTime - startTime;
+        log.info("{} cost time: {}", params.getMode(), elapsedTime);
         log.info("result of {} : ", params.getMode());
         printDatasetVo(vos);
     }

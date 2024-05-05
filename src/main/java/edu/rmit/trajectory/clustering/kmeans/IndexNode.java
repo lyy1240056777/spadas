@@ -1,5 +1,7 @@
 package edu.rmit.trajectory.clustering.kmeans;
 
+import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -16,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 @JsonIgnoreProperties({"assignedCluster", "bounds", "prunedCounter"})
 @Data
 // this class will build the index based on the
-public class IndexNode {
+public class IndexNode implements Serializable {
     int type; // 0 for line , 1 for point
     //    有些属性不能传
     @JsonIgnore
@@ -63,7 +65,7 @@ public class IndexNode {
     int[] signautre = new int[2]; // store the signature
     int maxCoverpoints;// store the maximum number of point under it, for data lake index only, this for pruning
 
-    double price;
+    BigDecimal price;
 
     // used for fair clustering
     private double totalCoveredPointsFair = 0; //calculate the normalized
@@ -559,6 +561,7 @@ public class IndexNode {
             } else {
                 similarity = Math.abs(Math.max(area / areaD, area / areaQ));
             }
+            similarity = 2 * area / (areaD + areaQ);
             return 1 / similarity;
         }
     }

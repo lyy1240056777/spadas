@@ -5,7 +5,18 @@ spring:
     multipart:
       max-file-size: 100MB
       max-request-size: 100MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spadas?serverTimeZone=UTC&useSSL=false
+    username: root
+  profiles:
+    active: prod
 
+#mybatis-plus:
+#  configuration:
+#    map-underscore-to-camel-case: true
+#  type-aliases-package: web.entity
+##  mapper-locations: classpath:/mapper/*.xml
 spadas:
   dimension: 2
   resolution: 12

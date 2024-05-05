@@ -15,12 +15,15 @@ import edu.whu.index.GeoEncoder;
 import edu.whu.index.GridTrajectoryIndex;
 import edu.whu.index.TrajectoryDataIndex;
 import edu.whu.structure.Trajectory;
+import jakarta.persistence.Index;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.lucene.util.RamUsageEstimator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.net.Inet4Address;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -383,7 +386,35 @@ public class Framework {
 //        initRoadmap(config.getFrontendLimitation());
         preprocessForDataAcq();
         generateConnectedSubgraphMap();
+//        long byteCount = RamUsageEstimator.sizeOf(datasetRoot);
+//        double v = (double) byteCount / (1024 * 1024);
+        String path = "ser/node.ser";
+//        serializeIndexNode(datasetRoot, path);
+//        long startTime = System.currentTimeMillis();
+//        IndexNode node = deserializeIndexNode(path);
+//        long endTime = System.currentTimeMillis();
+//        long costTime = endTime - startTime;
+//        log.info("cost time = {}", costTime);
         log.info("All data loaded.");
+    }
+
+    public void serializeIndexNode(IndexNode node, String path) {
+        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(path))) {
+            outputStream.writeObject(node);
+            System.out.println("IndexNode 对象已成功序列化到文件 indexnode.ser");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public IndexNode deserializeIndexNode(String path) {
+        try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(path))) {
+            IndexNode node = (IndexNode) inputStream.readObject();
+            return node;
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     private void initRoadmap(int limit) {
@@ -428,7 +459,7 @@ public class Framework {
 //        使用现成的索引和网格签名zCodeMapEmd
         for (Map.Entry<Integer, ArrayList<Integer>> e : zCodeMap.entrySet()) {
             int id = e.getKey();
-            double price = e.getValue().size() * config.getUnitPrice();
+            BigDecimal price = BigDecimal.valueOf(e.getValue().size() * config.getUnitPrice()).setScale(2, RoundingMode.HALF_UP);
             indexMap.get(id).setPrice(price);
             datasetPriceMap.put(id, price);
         }
