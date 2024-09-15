@@ -1,0 +1,6 @@
+server:
+  port: 8081
+spadas:
+  file:
+    baseUri: ./dataset/
+    staticUri: /dataset/

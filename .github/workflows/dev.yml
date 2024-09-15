@@ -1,0 +1,22 @@
+env:
+  name: 'dev'
+name: Deploy on Dev
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  deploy:
+    name: integrate with maven
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy On Server
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          command_timeout: 5m
+          script: |
+            echo "${{ secrets.PASSWORD }}" | bash ~/update-spadas-dev.sh
